@@ -1,0 +1,754 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0156",
+  "title": "三万字长文：大语言模型从零入门",
+  "short_title": "大语言模型从零入门",
+  "account": "腾讯技术工程",
+  "author": "flyflywang",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-10-13T03:00",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/三万字长文：大语言模型从零入门.pdf",
+      "original_filename": "三万字长文：大语言模型从零入门.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "368285891d96b22aec357ae06d239b47a28220b2d86876bac0bec00ae48c5750",
+      "size_bytes": 9610643,
+      "page_count": 44,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [],
+      "publication_evidence": "PDF第1页署名行：Oct 13, 2026, 3:00 AM；无时区信息，未添加时区。"
+    }
+  ],
+  "tags": [
+    "Agent评测与反馈",
+    "Harness与模型协同",
+    "Agent成本与上下文预算",
+    "模型架构与训练"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/大语言模型从零入门+26.10.13",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_大语言模型从零入门.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "三万字⻓文:大语言模型从零入⻔\n腾讯程序员 Oct  13 , 2026 , 3 : 00  AM广东原创 腾讯技术工程 听全文\n作者:flyflywang\n丨  导语从图灵的模仿游戏到香农的熵,从一个神经元到千亿参数的  Transformer 。一个只\n会预测下一个词的程序,何以通向智能?\n导读\n这篇文章想用一条线,讲清楚  ChatGPT 这类大语言模型是怎么回事:它在做什么、为什么\n能做到、怎么做到的、做不好什么。\n不需要机器学习背景。用到的数学只有加减乘除和对数,对数也会从 “ 折半了几次 ” 讲起。全\n文的例子尽量来自同一个猜数字游戏和同一句 “ 他口渴了,于是喝了一杯 ____” ,看懂一个例\n子,后面会一路用到。\n每一章回答的问题:\n怎么读:\n全文近  3 万字,完整读完大约需要  1.5 小时,可以分两次读:前三章讲原理,最后一章讲从模\n型到产品。\n遍览诗书亿万行,唯将下字细思量。云山千里文中⻅,可识秋⻛一夜凉?\n",
+    "publication_evidence": "PDF第1页署名行：Oct 13, 2026, 3:00 AM；无时区信息，未添加时区。",
+    "full_title_in_capture": "三万字长文：大语言模型从零入门",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0156",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "updated_at": "2026-10-15T01:55:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "368285891d96b22aec357ae06d239b47a28220b2d86876bac0bec00ae48c5750"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "8d6524c691e36987c87c122ab714baf2ce841358f27a9855acaf3899f203debc"
+      }
+    ],
+    "method": "按用户指定Obsidian学习笔记提示词（基于MD.md与既有PDF核验记录）重新生成中文学习笔记；正文、数据表、图注与复习卡片均去除页码标注，核验结果统一置于文末折叠校对报告；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "MD.md全文核对与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "user_custom_obsidian_prompt_20261015",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71",
+      "override_note": "用户于2026-10-15会话中直接提供完整结构化Obsidian学习笔记提示词（去除正文/表格/卡片内页码标注，保留文末折叠校对报告）。"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [],
+    "outputs": [
+      "AI_大语言模型从零入门.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "detail_pages_reviewed": [
+        30
+      ]
+    },
+    "coverage": "逐页通读p.1-43主要章节及参考资料，检查全44页缩略图；p.44为留言区，不纳入技术内容。重点核对p.30 Q/K/V手算表与加权求和、Telgarsky折纸表、GPT-3参数与算力核算、Chinchilla配比与不可约损失。对“压缩即智能”保留启发性视角而非定理的限定。",
+    "fact_checks": [
+      {
+        "claim": "等概率1至8猜数熵",
+        "source_value": "3 bit",
+        "pages": [
+          7
+        ],
+        "result": "笔记一致"
+      },
+      {
+        "claim": "数字1占90%时猜数熵",
+        "source_value": "约0.750 bit",
+        "pages": [
+          8
+        ],
+        "result": "笔记一致"
+      },
+      {
+        "claim": "Llama 3 8B示例嵌入表",
+        "source_value": "约12.8万×4096=5.25亿个数",
+        "pages": [
+          25
+        ],
+        "result": "笔记一致"
+      },
+      {
+        "claim": "GPT-3训练计算量估算与报告值",
+        "source_value": "估算约3.15×10^23，论文报告约3.14×10^23",
+        "pages": [
+          38
+        ],
+        "result": "笔记分别保留两值"
+      },
+      {
+        "claim": "R1-Zero在AIME 2024的正确率",
+        "source_value": "15.6%升至71.0%",
+        "pages": [
+          37
+        ],
+        "result": "笔记一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 10,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading",
+        "clean body without inline page citations"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_大语言模型从零入门.md",
+      "sha256": "55711e8dcf2630a8161cddd3850c08a7080baa530f825d5f0d9dd1fedd9fea8a",
+      "previous_sha256": "f46c0c288abc728d6b534116384377d7317149a0c8980faea9b62d0ede5e0c2e"
+    },
+    "independent_crosscheck": {
+      "reviewer": "regenerated_with_user_prompt_20261015",
+      "note_sha256": "55711e8dcf2630a8161cddd3850c08a7080baa530f825d5f0d9dd1fedd9fea8a",
+      "previous_note_sha256": "96bc7bcc2125c0e0ebbc6063d1fed7aa09062742821b0556b5971f53ded49258",
+      "review_sha256": "d1f25bf7b1a4b03031d36ea212af261881a0e17b926234a1a4651d799b07f96b",
+      "status": "passed",
+      "changes": [
+        "Regenerated study note from MD.md per user prompt (2026-10-15): structured 10 modules, removed inline page citations from body/tables/flashcards, and consolidated verification in the folded 校对报告.",
+        "Preserved all 44-page coverage boundaries, 10 single-line Q::A flashcards, and topic links."
+      ],
+      "source_spotchecks": [
+        {
+          "pages": [
+            7,
+            8,
+            14,
+            19,
+            21,
+            22,
+            25,
+            29,
+            30,
+            35,
+            37,
+            39,
+            40
+          ],
+          "finding": "抽查熵/交叉熵数值、嵌入表、QKV 权重手算、因果掩码和后训练/幻觉说明；关键表格符合来源页图与提取正文。"
+        },
+        {
+          "pages": [
+            30
+          ],
+          "finding": "放大图教学例子的查询为 (1,0)，softmax 权重约 6.9/50.9/30.9/11.4%，加权输出约 (0.79,0.07)；笔记将其限定为教学构造。"
+        },
+        {
+          "pages": [
+            1,
+            43,
+            44
+          ],
+          "finding": "主要章节到 p.43；p.44 留言页不作技术正文；“压缩即智能”被保留为启发性观点而非定理。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "368285891d96b22aec357ae06d239b47a28220b2d86876bac0bec00ae48c5750"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "8d6524c691e36987c87c122ab714baf2ce841358f27a9855acaf3899f203debc"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 25,
+        "text_layer_sha256": "7cadeb031cc1742def3d2b8defa85eb35f68d486e61ac4db0a839aee38d9dd11",
+        "text_layer_char_count": 422
+      },
+      {
+        "page": 2,
+        "md_start_line": 33,
+        "md_end_line": 62,
+        "text_layer_sha256": "7db69fc2c36f1fa771b16840f5797e10d7b4eebc1e128dc2930c1c1f0a089fd8",
+        "text_layer_char_count": 736
+      },
+      {
+        "page": 3,
+        "md_start_line": 70,
+        "md_end_line": 91,
+        "text_layer_sha256": "e28753e8b708624a06cacaac59dc3d95a1a722f8c9da646505db0f3d802d1276",
+        "text_layer_char_count": 759
+      },
+      {
+        "page": 4,
+        "md_start_line": 99,
+        "md_end_line": 126,
+        "text_layer_sha256": "df781c3844d8e65968c7678a7b85b450afe10699661c71732b32bb1721474ab8",
+        "text_layer_char_count": 790
+      },
+      {
+        "page": 5,
+        "md_start_line": 134,
+        "md_end_line": 163,
+        "text_layer_sha256": "1e6361e005b20b3ffd3819fd9fa06636a958e7b8e9e9b89d82d455ca35c813c1",
+        "text_layer_char_count": 935
+      },
+      {
+        "page": 6,
+        "md_start_line": 171,
+        "md_end_line": 191,
+        "text_layer_sha256": "c4bc72fd0b50217424d74217dc98b972f75f43fcc008f91b83eb9d93e4d6acf8",
+        "text_layer_char_count": 541
+      },
+      {
+        "page": 7,
+        "md_start_line": 199,
+        "md_end_line": 218,
+        "text_layer_sha256": "27fd85f4c84a0a006c7119968d691aaa7824e58c0f602c2e9f4d2c91d8465c59",
+        "text_layer_char_count": 615
+      },
+      {
+        "page": 8,
+        "md_start_line": 226,
+        "md_end_line": 257,
+        "text_layer_sha256": "ad78d08b1a0272c6ad8d534f44ae82e447c4ac38a2b0d3b25cdc8483ef11211f",
+        "text_layer_char_count": 1086
+      },
+      {
+        "page": 9,
+        "md_start_line": 265,
+        "md_end_line": 294,
+        "text_layer_sha256": "9c15237c9ae655057ced62a8897351c6a5411d9ea907f112459dc71511cc4e67",
+        "text_layer_char_count": 935
+      },
+      {
+        "page": 10,
+        "md_start_line": 302,
+        "md_end_line": 333,
+        "text_layer_sha256": "6f0a2f4a5aee6bb4309d83b06728b0543441d3104e38025e1f42b4e85bc2795f",
+        "text_layer_char_count": 965
+      },
+      {
+        "page": 11,
+        "md_start_line": 341,
+        "md_end_line": 373,
+        "text_layer_sha256": "dba7b9732639ed1c480231ed39ce66287fc56252292c8ad6495c9d66a908c1d0",
+        "text_layer_char_count": 1275
+      },
+      {
+        "page": 12,
+        "md_start_line": 381,
+        "md_end_line": 405,
+        "text_layer_sha256": "43d7bcf884982758306d9d98f1bf3869db2145d291dc58519f5857dbac917d4a",
+        "text_layer_char_count": 826
+      },
+      {
+        "page": 13,
+        "md_start_line": 413,
+        "md_end_line": 430,
+        "text_layer_sha256": "228e734aeb5b310d85b0793c8582f93817c4efc1cbcea3797d3b54277045ecf9",
+        "text_layer_char_count": 636
+      },
+      {
+        "page": 14,
+        "md_start_line": 438,
+        "md_end_line": 466,
+        "text_layer_sha256": "7e113fa26f43b5aa1954c4a41b580e6f69780a9c6e0277c54ad6207492770ff7",
+        "text_layer_char_count": 897
+      },
+      {
+        "page": 15,
+        "md_start_line": 474,
+        "md_end_line": 498,
+        "text_layer_sha256": "d9230978b360fa47e224756e2cbfa09833dd9a149c30e24ba1e9897902267975",
+        "text_layer_char_count": 814
+      },
+      {
+        "page": 16,
+        "md_start_line": 506,
+        "md_end_line": 532,
+        "text_layer_sha256": "89e89f6bf31b756b1af1914d82b79ce137f71969e8a383ec01a4f3daa1830e81",
+        "text_layer_char_count": 811
+      },
+      {
+        "page": 17,
+        "md_start_line": 540,
+        "md_end_line": 559,
+        "text_layer_sha256": "e7be56c6717443c62e6d43d58ae3eaa5415f10ca7ff4a6d1b50791baeb380c48",
+        "text_layer_char_count": 602
+      },
+      {
+        "page": 18,
+        "md_start_line": 567,
+        "md_end_line": 581,
+        "text_layer_sha256": "71548363405784898769f43dfcca8505e975fd796497efc69e6e7c70b8d9c9c3",
+        "text_layer_char_count": 576
+      },
+      {
+        "page": 19,
+        "md_start_line": 589,
+        "md_end_line": 618,
+        "text_layer_sha256": "56f4966cb69b4a48b9ef6211176c88f8e28991ae55dfc7be7e632da94117d6cf",
+        "text_layer_char_count": 997
+      },
+      {
+        "page": 20,
+        "md_start_line": 626,
+        "md_end_line": 651,
+        "text_layer_sha256": "14044d65a1af492fd9af991fe4a34c1a382dd4869dc014488d211a5a0c3659ff",
+        "text_layer_char_count": 909
+      },
+      {
+        "page": 21,
+        "md_start_line": 659,
+        "md_end_line": 690,
+        "text_layer_sha256": "f552412d08a365ae0378cf505d3ec498c7ee048712a21630567850a478358e6d",
+        "text_layer_char_count": 1064
+      },
+      {
+        "page": 22,
+        "md_start_line": 698,
+        "md_end_line": 719,
+        "text_layer_sha256": "20d07b244ff6cedee23b1bd8d3da4636f79b7e094ecca819994716d9f80e05d2",
+        "text_layer_char_count": 731
+      },
+      {
+        "page": 23,
+        "md_start_line": 727,
+        "md_end_line": 758,
+        "text_layer_sha256": "f96d90b6e6ea513b2188cae39a8352758279e3b8e81fd9f4d690c61a509b9af1",
+        "text_layer_char_count": 928
+      },
+      {
+        "page": 24,
+        "md_start_line": 766,
+        "md_end_line": 780,
+        "text_layer_sha256": "3a30f1a0d481a09a0a9ba70f0e1163ce6f858796ca15e4dc3aee917f416fe337",
+        "text_layer_char_count": 412
+      },
+      {
+        "page": 25,
+        "md_start_line": 788,
+        "md_end_line": 810,
+        "text_layer_sha256": "079e8a5494ad48e01532ad85f03f40814f80bc67e4701bc0643d570f15e63ec6",
+        "text_layer_char_count": 660
+      },
+      {
+        "page": 26,
+        "md_start_line": 818,
+        "md_end_line": 834,
+        "text_layer_sha256": "c616cde2f703217820f0088bd86f0585a6dd6a12290a80b1897aae6c50904246",
+        "text_layer_char_count": 612
+      },
+      {
+        "page": 27,
+        "md_start_line": 842,
+        "md_end_line": 857,
+        "text_layer_sha256": "cadc05b738e44d680c119afa6de3d0b57aaf71596f8a3ee704b77e3140783568",
+        "text_layer_char_count": 754
+      },
+      {
+        "page": 28,
+        "md_start_line": 865,
+        "md_end_line": 896,
+        "text_layer_sha256": "c1db5a9ab4f6b7bcc2e99987bc9d42c325fe0274c9ebd1f55167011a2040e00d",
+        "text_layer_char_count": 992
+      },
+      {
+        "page": 29,
+        "md_start_line": 904,
+        "md_end_line": 932,
+        "text_layer_sha256": "29a266d0009006d944b67209c00bbf3947f587463a7379de9079bd86ff630fad",
+        "text_layer_char_count": 752
+      },
+      {
+        "page": 30,
+        "md_start_line": 940,
+        "md_end_line": 961,
+        "text_layer_sha256": "d0ba74346649e8398ed10907595d6c01cf898c5d8a729ee57b08ed6bd754de63",
+        "text_layer_char_count": 661
+      },
+      {
+        "page": 31,
+        "md_start_line": 969,
+        "md_end_line": 990,
+        "text_layer_sha256": "c1f9504a750b8cdd3aa7a20b59433452f24ab603f734f81e18b6b78720973305",
+        "text_layer_char_count": 667
+      },
+      {
+        "page": 32,
+        "md_start_line": 998,
+        "md_end_line": 1029,
+        "text_layer_sha256": "92e5ab41fd95ba45a5c551da4de153005cbd1885efdf2c7916843b368ac7eac4",
+        "text_layer_char_count": 1140
+      },
+      {
+        "page": 33,
+        "md_start_line": 1037,
+        "md_end_line": 1069,
+        "text_layer_sha256": "a92bb7e3c8c906a40ce523d745c56092b71ef4829d54f7128f681e16cafe606a",
+        "text_layer_char_count": 1083
+      },
+      {
+        "page": 34,
+        "md_start_line": 1077,
+        "md_end_line": 1110,
+        "text_layer_sha256": "d1376e04f7737f36504515aee39a5e505e15a3291770600c5c6ef1b0329b6e5a",
+        "text_layer_char_count": 1040
+      },
+      {
+        "page": 35,
+        "md_start_line": 1118,
+        "md_end_line": 1148,
+        "text_layer_sha256": "eb9167de4169300fe91e653b33451dd66ddace2bab231de86e06139656b59d28",
+        "text_layer_char_count": 1015
+      },
+      {
+        "page": 36,
+        "md_start_line": 1156,
+        "md_end_line": 1188,
+        "text_layer_sha256": "b1fec049a7c018eb55494398d0dfbaa7fea8923620b95dbc3e57137d65553380",
+        "text_layer_char_count": 1031
+      },
+      {
+        "page": 37,
+        "md_start_line": 1196,
+        "md_end_line": 1226,
+        "text_layer_sha256": "7d93149999027e2ca8d7e24d7263efcdd7811ddac0083eb26b53eb881bf19f39",
+        "text_layer_char_count": 1007
+      },
+      {
+        "page": 38,
+        "md_start_line": 1234,
+        "md_end_line": 1264,
+        "text_layer_sha256": "ff47a3081a0ce0acecdb562fb0f1915223fbac37c9fe737c805bcbf9d092de3c",
+        "text_layer_char_count": 984
+      },
+      {
+        "page": 39,
+        "md_start_line": 1272,
+        "md_end_line": 1304,
+        "text_layer_sha256": "45e6ddb4a041d75e78d084eebdce4e6338d74e47b1794f7a5482d0cd0963b696",
+        "text_layer_char_count": 1227
+      },
+      {
+        "page": 40,
+        "md_start_line": 1312,
+        "md_end_line": 1363,
+        "text_layer_sha256": "5021d4658de6a7bc861b95aa6e8765e9ce84f94e9729248ae2ff60251cb15fad",
+        "text_layer_char_count": 1280
+      },
+      {
+        "page": 41,
+        "md_start_line": 1371,
+        "md_end_line": 1409,
+        "text_layer_sha256": "ef6f2b1df05387224df5cab367b0f7f2bd0f5d5632435750266e9e392405b53b",
+        "text_layer_char_count": 2017
+      },
+      {
+        "page": 42,
+        "md_start_line": 1417,
+        "md_end_line": 1463,
+        "text_layer_sha256": "8c983bf16d45332614191b92741558d56e824c76dc1710b765947d7afb63a702",
+        "text_layer_char_count": 3013
+      },
+      {
+        "page": 43,
+        "md_start_line": 1471,
+        "md_end_line": 1504,
+        "text_layer_sha256": "611b2809a2c8f9a820281d76b0ff41d35dbf27b1a9309b1cee22683c4cd0120f",
+        "text_layer_char_count": 2194
+      },
+      {
+        "page": 44,
+        "md_start_line": 1512,
+        "md_end_line": 1515,
+        "text_layer_sha256": "7f0920cfc5bc3eb513bebeece173f22490b7133d3ac9320feffc83908840a8b6",
+        "text_layer_char_count": 25
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "detail_pages_reviewed": [
+        30
+      ]
+    },
+    "quality_issues": []
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/三万字长文：大语言模型从零入门.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "368285891d96b22aec357ae06d239b47a28220b2d86876bac0bec00ae48c5750",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_大语言模型从零入门.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

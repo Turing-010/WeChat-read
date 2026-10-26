@@ -1,0 +1,489 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0144",
+  "title": "DeepSeek Harness 拆解：一套能拼装的 Agent 架构",
+  "short_title": "DeepSeek Harness架构",
+  "account": "腾讯技术工程",
+  "author": "chino",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-14T02:20",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/DeepSeek Harness 拆解：一套能拼装的 Agent 架构.pdf",
+      "original_filename": "DeepSeek Harness 拆解：一套能拼装的 Agent 架构.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "09ac072892cd042beb8ff8ea7a7657d2fd6b2140cdc45b211af46b3a9404fc18",
+      "size_bytes": 5237139,
+      "page_count": 19,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "issue": "p.19为账号推广和留言区，正文架构内容结束于p.18。",
+          "pages": [
+            19
+          ],
+          "impact": "不影响正文主体；推广与留言未纳入总结。"
+        }
+      ],
+      "publication_evidence": "PDF p.1: 2026年8月14日 02:20; no timezone stated."
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "Agent任务恢复",
+    "异常监控与稳定性"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/DeepSeek Harness架构+26.8.14",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_DeepSeek Harness架构.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "DeepSeek  Harness  拆解:一套能拼装的 Agent  架构\n腾讯程序员 2026 年 8 月 14 日 02 : 20广东原创 腾讯技术工程 1086 人\n作者:chino ,腾讯 WXG 微信小店前端开发工程师\nDeepSeek 发布了第一款  Agent 产品,DeepSeek Harness。这次的重点放在了运行时架\n构上,官方给的关键词是 \"everything is a plugin\" ,模型接入、工具执行、会话记录、循环\n本身、界面,全部走插件机制。\n这篇文章跳过  agent 领域已经成为共识的那部分 —— 检测工具调用、执行、回填、循环,这\n套流程眼下几乎每个框架都⻓一个样,不值得再讲一遍。重点放在  DeepSeek Harness 真\n正跟别人不一样的几处设计:Cordis 这套插件运行时具体怎么管生命周期, preset 的\nscope 继承链为什么拆成两层, Code Mode 为什么选了一个听起来不太 \" 安全 \" 的隔离方\n案,工具注册的遮蔽算法怎么写。顺带会跟  Codex 的几个具体工程决策做对比,只挑不一\n样的地方讲。\n一、为什么是  Cordis\n\"everything is a plugin\" 的基础是  Shigma 的开源项目  Cordis 。定位是 \"Meta-\nFramework for Modern JavaScript Applications\" ,一个通用的插件框架,处理依赖注\n入、作用域服务、生命周期清理这几件事,与  agent 、与  LLM 都没有直接关系,在\nDeepSeek Harness 出现之前就已经存在。\nCordis 在开源社区有实际的使用者。最典型的是  Koishi,一个跨平台聊天机器人框架\n( QQ / Discord / Telegram / 微信都接)。聊天机器人场景天然是 \" 几十个插件拼在一起、\n热插拔、随时改配置 \" ,与  agent 的场景几乎相同,只是没有  LLM 。DeepSeek Harness 把\n整个框架的源码  vendor 进自己的仓库,改了个  scope 叫  @deepseek-ai/cordis,然后\n",
+    "publication_evidence": "PDF p.1: 2026年8月14日 02:20; no timezone stated.",
+    "full_title_in_capture": "DeepSeek Harness 拆解：一套能拼装的 Agent 架构",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0144",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "09ac072892cd042beb8ff8ea7a7657d2fd6b2140cdc45b211af46b3a9404fc18"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "issue": "p.19为账号推广和留言区，正文架构内容结束于p.18。",
+        "pages": [
+          19
+        ],
+        "impact": "不影响正文主体；推广与留言未纳入总结。"
+      }
+    ],
+    "outputs": [
+      "AI_DeepSeek Harness架构.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        7,
+        9,
+        10,
+        12,
+        14,
+        16
+      ]
+    },
+    "coverage": "全篇19页文本和缩略图已检查；放大核验Fiber状态机/effect、系统边界、Proxy服务查找、Agent Loop、worker_threads、scope和工具遮蔽。",
+    "fact_checks": [
+      {
+        "item": "Fiber状态",
+        "note_value": "PENDING、LOADING、ACTIVE、FAILED、DISPOSED、UNLOADING",
+        "source_value": "相同六种状态",
+        "pages": [
+          3
+        ],
+        "result": "一致。"
+      },
+      {
+        "item": "disposer执行顺序",
+        "note_value": "LIFO逆序",
+        "source_value": "disposables.splice(0).reverse()",
+        "pages": [
+          4
+        ],
+        "result": "一致。"
+      },
+      {
+        "item": "外部副作用恢复保证",
+        "note_value": "公共文件、全局变量及已发射数据不受自动恢复保证",
+        "source_value": "边界外操作不追踪/不恢复",
+        "pages": [
+          7,
+          8
+        ],
+        "result": "一致；系统边界按位置和独占控制划分。"
+      },
+      {
+        "item": "Preset实例复用",
+        "note_value": "预设插件树挂载一次，会话通过逻辑scope绑定复用",
+        "source_value": "ensureStanding加WeakMap绑定",
+        "pages": [
+          10,
+          11
+        ],
+        "result": "一致。"
+      },
+      {
+        "item": "工具scope遮蔽顺序",
+        "note_value": "全局→祖先scope→限制→当前scope自身注册项",
+        "source_value": "相同顺序",
+        "pages": [
+          12,
+          13
+        ],
+        "result": "一致。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_DeepSeek Harness架构.md",
+      "sha256": "c8d3c1b8bf41b0cac1134e962112ea01e4d21c4b71cf30fc335df056ca468a5f",
+      "size_bytes": 29480
+    },
+    "independent_crosscheck": {
+      "reviewer": "/root",
+      "note_sha256": "c8d3c1b8bf41b0cac1134e962112ea01e4d21c4b71cf30fc335df056ca468a5f",
+      "review_sha256": "40ad08daa92a1def4baab5fcb679077cff80ae10ad8d8486bc44798e689e0130",
+      "status": "passed",
+      "changes": [
+        "Converted Q/A cards and heading to the required single-line format; converted review record into the final folded report."
+      ],
+      "source_spotchecks": [
+        "p.3–8 lifecycle/effect teardown and external-side-effect limits; p.9 parent-visible/child-private service lookup; p.10–11 preset reuse; p.12–14 worker-thread host pipeline and tool-scope precedence; p.18–19 closing promo/comments checked visually."
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "09ac072892cd042beb8ff8ea7a7657d2fd6b2140cdc45b211af46b3a9404fc18"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "c9219c12c047e77f3af88114eac0a01f6fd76d1ff05fa57ef62f54f207ee0c1a"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 30,
+        "text_layer_sha256": "290d281aa945b3b1517f5304e576e7ee43eeef51721dda0b9e1e85bc93573013",
+        "text_layer_char_count": 934
+      },
+      {
+        "page": 2,
+        "md_start_line": 38,
+        "md_end_line": 70,
+        "text_layer_sha256": "566bf0fc2f95b9cdccfb17f3a463dcc7acb7cb9500ca3482387f1a567ce7ad44",
+        "text_layer_char_count": 1346
+      },
+      {
+        "page": 3,
+        "md_start_line": 78,
+        "md_end_line": 111,
+        "text_layer_sha256": "abc1d2f7909f7acfe95c965d2a728b9506c4bf7d02ba441d2276ecf0fec7a14d",
+        "text_layer_char_count": 1276
+      },
+      {
+        "page": 4,
+        "md_start_line": 119,
+        "md_end_line": 143,
+        "text_layer_sha256": "2bd9cc9197ff643d09b42c87e5122336f7a877e6869ebf076ff92be02a580550",
+        "text_layer_char_count": 1104
+      },
+      {
+        "page": 5,
+        "md_start_line": 151,
+        "md_end_line": 187,
+        "text_layer_sha256": "a7e9b0f4905143cf288c88c6b88e382c6bf5efd8632da4bbfac7f6b59e15de84",
+        "text_layer_char_count": 1414
+      },
+      {
+        "page": 6,
+        "md_start_line": 195,
+        "md_end_line": 227,
+        "text_layer_sha256": "c39c43a2d9ab2bd5fce7867dbec5a9186353bfd32379a159a0127eff499b0f57",
+        "text_layer_char_count": 1383
+      },
+      {
+        "page": 7,
+        "md_start_line": 235,
+        "md_end_line": 270,
+        "text_layer_sha256": "b571839ed7d12515913b62f932ee1df6c0116ea863e73807e46b263460eab15a",
+        "text_layer_char_count": 1275
+      },
+      {
+        "page": 8,
+        "md_start_line": 278,
+        "md_end_line": 313,
+        "text_layer_sha256": "0996a6d7a21c4276d96c96118db4541f4a5f662dbde02bc9c17bcc59bd7b97fa",
+        "text_layer_char_count": 1421
+      },
+      {
+        "page": 9,
+        "md_start_line": 321,
+        "md_end_line": 355,
+        "text_layer_sha256": "670dde758b08894bc42cc410ba65724cbb5eae22af383f4c2fcde949a3fd9986",
+        "text_layer_char_count": 1554
+      },
+      {
+        "page": 10,
+        "md_start_line": 363,
+        "md_end_line": 398,
+        "text_layer_sha256": "a9bfa75558ca7529c1731eb2543c870458059b20ddf08d057075028cba84a1d9",
+        "text_layer_char_count": 1436
+      },
+      {
+        "page": 11,
+        "md_start_line": 406,
+        "md_end_line": 439,
+        "text_layer_sha256": "5ab9ee056fe8977c424f393db3fc1d8aa8d3482567c56c04a3d07dd18125c9a5",
+        "text_layer_char_count": 1445
+      },
+      {
+        "page": 12,
+        "md_start_line": 447,
+        "md_end_line": 481,
+        "text_layer_sha256": "f577d73e2c49ae9d006805de138038120e00931e7f589c21bfc6f9d244390ef8",
+        "text_layer_char_count": 1610
+      },
+      {
+        "page": 13,
+        "md_start_line": 489,
+        "md_end_line": 525,
+        "text_layer_sha256": "5dd37eff1f8f0c634b6da939d8854999bdcb8dbd009f939a620b752e7a26a573",
+        "text_layer_char_count": 1695
+      },
+      {
+        "page": 14,
+        "md_start_line": 533,
+        "md_end_line": 548,
+        "text_layer_sha256": "069233ecfd6f3b26b5ab76d58253852d4f9c2fbebc109111dd465074b601eea4",
+        "text_layer_char_count": 549
+      },
+      {
+        "page": 15,
+        "md_start_line": 556,
+        "md_end_line": 567,
+        "text_layer_sha256": "79b05ba68f27709dc97523830dfb089216d1261d858b6f14355aa5a9aada9778",
+        "text_layer_char_count": 518
+      },
+      {
+        "page": 16,
+        "md_start_line": 575,
+        "md_end_line": 602,
+        "text_layer_sha256": "0fff1a373daddfcbb1e52265e5a9a645aaf3d843228b94493661579c9e6a2aff",
+        "text_layer_char_count": 1157
+      },
+      {
+        "page": 17,
+        "md_start_line": 610,
+        "md_end_line": 643,
+        "text_layer_sha256": "f103a2590a6eca64767928aa939e6936116c2ae59bf73412ed33367c5f626f68",
+        "text_layer_char_count": 1485
+      },
+      {
+        "page": 18,
+        "md_start_line": 651,
+        "md_end_line": 679,
+        "text_layer_sha256": "53546322aea2b1fdfec932475c4883d49f721f18445844a2155de8b8033786e6",
+        "text_layer_char_count": 1064
+      },
+      {
+        "page": 19,
+        "md_start_line": 687,
+        "md_end_line": 690,
+        "text_layer_sha256": "eb418bdfa84060beb53df3664ed1952e824a5b63959b09da1d24b258ee42f5d6",
+        "text_layer_char_count": 29
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        7,
+        9,
+        10,
+        12,
+        14,
+        16
+      ]
+    },
+    "quality_issues": [
+      {
+        "issue": "p.19为账号推广和留言区，正文架构内容结束于p.18。",
+        "pages": [
+          19
+        ],
+        "impact": "不影响正文主体；推广与留言未纳入总结。"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/DeepSeek Harness 拆解：一套能拼装的 Agent 架构.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "09ac072892cd042beb8ff8ea7a7657d2fd6b2140cdc45b211af46b3a9404fc18",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent安全与权限.md",
+      "../../20_topics/Harness与模型协同.md",
+      "../../20_topics/桌面Agent与工作流.md",
+      "../../20_topics/模型与开发工具发布.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_DeepSeek Harness架构.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

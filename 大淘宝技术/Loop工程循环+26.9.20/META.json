@@ -1,0 +1,361 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0013",
+  "title": "Loop engineering：把 agent 放进工程循环",
+  "short_title": "Loop工程循环",
+  "account": "大淘宝技术",
+  "author": "苏雄",
+  "author_byline": "本文作者苏雄,来自淘天集团-会员技术团队。业务上,我们负责 88VIP 、天猫积分、省钱",
+  "source_url": null,
+  "published_at": "2026-09-20",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "description": "PDF第1页标题、公众号和日期与下载总结的frontmatter、主题相符；署名取PDF团队介绍页。",
+    "pdf_page": 1,
+    "header_text": "Loop  engineering :把 agent  放进工程循环\n会员技术团队 2026 年 9 月 20 日 23 : 02浙江原创 大淘宝技术 33 人\n本文探讨了“Loop engineering”这一理念,即工程师不再逐轮提示agent,而是设计包\n含读取状态、判断任务、执行操作、验证结果、记录状态和判断停止条件的自动化循环系\n统。文章详细拆解了支撑该系统的六大组件:负责唤醒的自动化机制、隔离并行的\nworktrees、沉淀项目知识的skills、接入外部工具的插件、分离读写职责的子agent以及\n确保状态持久化的记忆层。作者强调,loop engineering并非盲目追求全自动,而是通\n过明确输入输出、严格权限分层与成本控制来保障工程可靠性。工程师的⻆色从单轮操作\n者转变为循",
+    "author_pdf_page": 13,
+    "download_summary_frontmatter": "title: Loop engineering：把 agent 放进工程循环\nsource: 大淘宝技术（微信公众号），作者苏雄（淘天集团-会员技术团队），原创，2026-09-20 发布\ndate: 2026-09-20\ntype: 方法论与案例型\ntags:\n  - agent\n  - coding-agent\n  - loop-engineering\n  - harness-engineering\n  - 工程实践\nstatus: 待复习"
+  },
+  "tags": [
+    "Agent工程循环",
+    "Agent任务恢复",
+    "Agent长期记忆"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/Loop engineering：把 agent 放进工程循环.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-12T00:38:05-07:00",
+      "provenance": "用户已收集的公众号PDF；本次从inbox复制归档，原采集方式与时间未知",
+      "sha256": "bfc3870b4b6c50d35c27574df6d869ef7eb53296ddc868c69193a16f4c49f498",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "原文URL、采集时间与显示时间的时区未确认；未联网核查来源或技术事实。",
+          "verification_status": "unverified"
+        },
+        {
+          "description": "全部页已提取文本层；图片内容、代码框长行与表格版面尚未逐页视觉核验。",
+          "verification_status": "pending_visual_review"
+        }
+      ],
+      "size_bytes": 3908011,
+      "page_count": 14
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-12T00:38:05-07:00",
+  "directory": "大淘宝技术/Loop工程循环+26.9.20",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Loop工程循环.md"
+  },
+  "received_artifacts": [
+    {
+      "artifact_id": "summary-001",
+      "kind": "external_ai_summary",
+      "path": "AI_Loop工程循环.md",
+      "original_path": "/Users/iw/Downloads/Loop engineering 26·09·20.md",
+      "received_at": "2026-10-12T00:38:05-07:00",
+      "generated_at": null,
+      "model": null,
+      "prompt_version": null,
+      "sha256": "29e2f1638e1dc4625f886202644b25f1f5f809b371893b98828d8aa457cbd5a0",
+      "size_bytes": 31861,
+      "provenance": "用户用其他模型生成并下载的AI总结；原样保存，未重新生成",
+      "verification_status": "identity_matched_content_not_fully_verified",
+      "candidate_wikilinks": [
+        "Agent 权限与护栏",
+        "Agent 记忆",
+        "Agent 评测",
+        "Context engineering",
+        "Git worktree",
+        "Harness engineering",
+        "Human-in-the-loop",
+        "LangGraph",
+        "MCP",
+        "Prompt engineering",
+        "Skills",
+        "Subagents"
+      ],
+      "wikilink_status": "保留原下载文本中的候选知识关联；并不表示目标笔记均已创建"
+    }
+  ],
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0013",
+    "created_at": "2026-10-12T00:38:05-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "bfc3870b4b6c50d35c27574df6d869ef7eb53296ddc868c69193a16f4c49f498"
+      },
+      {
+        "artifact_id": "summary-001",
+        "path": "AI_Loop工程循环.md",
+        "sha256": "51610ac384c6d845372f173933f7255ec7b1ef05854708f40ccb8d2ac5b525c2"
+      }
+    ],
+    "method": "本次导入外部AI总结，核对身份，并以PDF文本及收到的总结补充跨文章主题知识。原总结生成过程未知；本次不重写AI总结。",
+    "tools": [
+      "本地文件读取",
+      "pypdf",
+      "pdfplumber",
+      "Python标准库",
+      "pdftoppm（首面渲染并查看）"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages_for_MD_only",
+    "quality_issues": [
+      {
+        "description": "原文URL、采集时间与显示时间的时区未确认；未联网核查来源或技术事实。",
+        "verification_status": "unverified"
+      },
+      {
+        "description": "全部页已提取文本层；图片内容、代码框长行与表格版面尚未逐页视觉核验。",
+        "verification_status": "pending_visual_review"
+      },
+      {
+        "description": "外部AI总结的生成模型、提示词、原始输入版本与生成时间未知；其校对报告及图中解读属于外部总结的自述，不能直接视为本次核验结论。",
+        "verification_status": "external_summary_not_fully_verified"
+      },
+      {
+        "description": "下载总结含图中无法辨认、原文疑点或推断说明；原样保留。",
+        "verification_status": "reported_by_external_summary",
+        "report_path": "AI_Loop工程循环.md",
+        "reported_markers_count": 9
+      }
+    ],
+    "outputs": [
+      "AI_Loop工程循环.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "generated_summary": {
+      "path": "AI_Loop工程循环.md",
+      "sha256": "29e2f1638e1dc4625f886202644b25f1f5f809b371893b98828d8aa457cbd5a0"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-12T00:38:05-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "bfc3870b4b6c50d35c27574df6d869ef7eb53296ddc868c69193a16f4c49f498"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "6a486859e68112cb9027c75987024ff6e572db0975c27744c15669f71cedcec2"
+    },
+    "extractor": "pdfplumber 0.11.9; Page.extract_text",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "text_layer_extracted_layout_not_fully_verified",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 14,
+        "md_end_line": 38,
+        "text_layer_sha256": "f294db3178e2300f8ba27165debddc9f3e9852645f77e2948d9f66c3225d2354",
+        "text_layer_char_count": 936,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 2,
+        "md_start_line": 48,
+        "md_end_line": 69,
+        "text_layer_sha256": "0c2038dae4002669eff181352fe7be72b2a0d306d77ec35aaf93921ba555286f",
+        "text_layer_char_count": 985,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 3,
+        "md_start_line": 79,
+        "md_end_line": 99,
+        "text_layer_sha256": "91b6402f769d436ddda2d1c77fcdd6a26a069ca4b2cd464ab9041e94b8e4c552",
+        "text_layer_char_count": 859,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 4,
+        "md_start_line": 109,
+        "md_end_line": 136,
+        "text_layer_sha256": "6c36e97e6e7f7b4ff2f30831478e60c9715b384bbfe83a33c5b82caa1785f8cb",
+        "text_layer_char_count": 1157,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 5,
+        "md_start_line": 146,
+        "md_end_line": 162,
+        "text_layer_sha256": "f646efa372f5563f475940982ed707715c3ec3f3af99292aee43d476bb7ba9c1",
+        "text_layer_char_count": 529,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 6,
+        "md_start_line": 172,
+        "md_end_line": 202,
+        "text_layer_sha256": "0c5750eedac44a1ce8d20f1f44881606a89f25cb5fcc6d50ac0df2e199f64dd3",
+        "text_layer_char_count": 1137,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 7,
+        "md_start_line": 212,
+        "md_end_line": 241,
+        "text_layer_sha256": "711b2e6e58e7998190f74eb47a96b589c12cbdced49ff20895de7257bdf3539b",
+        "text_layer_char_count": 755,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 8,
+        "md_start_line": 251,
+        "md_end_line": 275,
+        "text_layer_sha256": "2139965b35105b665a4437a86475cd50ccce25f8e3c9fb44e06d2a412a9f94f6",
+        "text_layer_char_count": 586,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 9,
+        "md_start_line": 285,
+        "md_end_line": 313,
+        "text_layer_sha256": "c6c7169c6de169d44d1ecec17daf45b77244e0ea0dec52c3f301c1c19bb6b023",
+        "text_layer_char_count": 795,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 10,
+        "md_start_line": 323,
+        "md_end_line": 345,
+        "text_layer_sha256": "febb6f702baab6848883a5cb2862a9b290e676f3138d4b1bc433cb357654906e",
+        "text_layer_char_count": 733,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 11,
+        "md_start_line": 355,
+        "md_end_line": 377,
+        "text_layer_sha256": "cf64b9c1388b5e0bdbaeacda1c9cd87c2cfa58ac6976b2354ceafaf7525e96b7",
+        "text_layer_char_count": 523,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 12,
+        "md_start_line": 387,
+        "md_end_line": 411,
+        "text_layer_sha256": "dbb89088105ba3dc39b335a9c19a70e9308e61390250581b88ea84a6a9d0c81b",
+        "text_layer_char_count": 717,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 13,
+        "md_start_line": 421,
+        "md_end_line": 445,
+        "text_layer_sha256": "9e906336b777026ce433521f5700bbdf191d3cf4d936738c7953843637254428",
+        "text_layer_char_count": 863,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 14,
+        "md_start_line": 455,
+        "md_end_line": 460,
+        "text_layer_sha256": "6f36b2a9b809be0262763a0b9c6f55c0a1119453c7a8450a742e927107ad8f38",
+        "text_layer_char_count": 38,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_extracted": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "identity_text_pages_reviewed": [
+        1,
+        13
+      ],
+      "visual_pages_reviewed": [
+        1
+      ],
+      "detail_text_pages_reviewed": [
+        2,
+        8
+      ]
+    }
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent任务恢复.md",
+      "../../20_topics/Agent工程循环.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充主题知识；不改变本人记录或自动加入工具库",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed_sources_removed",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Loop engineering：把 agent 放进工程循环.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "bfc3870b4b6c50d35c27574df6d869ef7eb53296ddc868c69193a16f4c49f498",
+        "removed_at": "2026-10-12T00:44:57-07:00"
+      },
+      {
+        "original_path": "/Users/iw/Downloads/Loop engineering 26·09·20.md",
+        "destination_path": "AI_Loop工程循环.md",
+        "sha256": "51610ac384c6d845372f173933f7255ec7b1ef05854708f40ccb8d2ac5b525c2",
+        "removed_at": "2026-10-12T00:44:57-07:00"
+      }
+    ],
+    "copied_at": "2026-10-12T00:38:05-07:00",
+    "removed_at": "2026-10-12T00:44:57-07:00"
+  },
+  "ai_note": "AI_Loop工程循环.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

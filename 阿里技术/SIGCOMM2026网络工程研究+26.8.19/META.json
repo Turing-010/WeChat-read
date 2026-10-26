@@ -1,0 +1,492 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0048",
+  "title": "阿里巴巴 12 篇论文入选全球网络顶会 SIGCOMM 2026（内附下载）",
+  "short_title": "SIGCOMM2026网络工程研究",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "阿里学术",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-19T03:25",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "2026年8月19日 03:25",
+  "published_timezone": null,
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "text": [
+      "阿⾥巴巴 12 篇论⽂⼊选全球⽹络顶会 SIGCOMM 2026（内附下",
+      "载）",
+      "原创 阿⾥学术 阿⾥技术 2026年8⽉19⽇ 03:25 浙江 5⼈"
+    ]
+  },
+  "tags": [
+    "决策知识结构化",
+    "Agent长期记忆",
+    "云网络系统研究"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/阿里巴巴 12 篇论文入选全球网络顶会 SIGCOMM 2026（内附下载）.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:54:19-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "f5308eda7cd0dbe89501ab1b96e6e85e75889caff8ccd96b6db1c2dc8466dcfd",
+      "size_bytes": 8527923,
+      "page_count": 15,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "所有系统效果来自论文解读而非本次下载论文全文/实验复现，最大值与各自场景不可拼接",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "evidence_type": "source_scope",
+          "classification": "verification_scope"
+        },
+        {
+          "description": "专家并行EPIC和以太网协议EPIC同名、不同研究，已分开保留",
+          "pages": [
+            8,
+            9,
+            10
+          ],
+          "evidence_type": "text_and_diagram",
+          "classification": "terminology_boundary"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:54:19-07:00",
+  "directory": "阿里技术/SIGCOMM2026网络工程研究+26.8.19",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_SIGCOMM2026网络工程研究.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0048",
+    "created_at": "2026-10-13T02:54:19-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "f5308eda7cd0dbe89501ab1b96e6e85e75889caff8ccd96b6db1c2dc8466dcfd"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "所有系统效果来自论文解读而非本次下载论文全文/实验复现，最大值与各自场景不可拼接",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "evidence_type": "source_scope",
+        "classification": "verification_scope"
+      },
+      {
+        "description": "专家并行EPIC和以太网协议EPIC同名、不同研究，已分开保留",
+        "pages": [
+          8,
+          9,
+          10
+        ],
+        "evidence_type": "text_and_diagram",
+        "classification": "terminology_boundary"
+      }
+    ],
+    "outputs": [
+      "AI_SIGCOMM2026网络工程研究.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "coverage": [
+      {
+        "name": "网络验证配置",
+        "pages": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "AIOps",
+        "pages": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "AI集合通信",
+        "pages": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "数据中心网络",
+        "pages": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 9,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_SIGCOMM2026网络工程研究.md",
+      "sha256": "4d14e1b645efc910a1311d71684e38360388480bbdce751336c0e7e16015df7a"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:54:19-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "f5308eda7cd0dbe89501ab1b96e6e85e75889caff8ccd96b6db1c2dc8466dcfd"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "c10ba7f85fa8bd7b4f0a3181d4cbe431fa2e0f168f572722b4d12c4948979ffb"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 22,
+        "text_layer_sha256": "a83fed09a7bc7e1bd8b90ca65965c2f0d915498358cd6d084186dc6814243a20",
+        "text_layer_char_count": 344
+      },
+      {
+        "page": 2,
+        "md_start_line": 30,
+        "md_end_line": 51,
+        "text_layer_sha256": "7d84e056e1fe55cda64329bb1725711d4da9422437ba504a1c9fe03c24e8aa47",
+        "text_layer_char_count": 931
+      },
+      {
+        "page": 3,
+        "md_start_line": 59,
+        "md_end_line": 77,
+        "text_layer_sha256": "37b8cec7bb99170e19d37a091762c95b5d5f3c3a520a2d8c989a0635fb0448d7",
+        "text_layer_char_count": 757
+      },
+      {
+        "page": 4,
+        "md_start_line": 85,
+        "md_end_line": 101,
+        "text_layer_sha256": "9eb704c2ca750ac98f25feeb50552c62f0a6fe32ecfd1fb1d1d2d742f592a967",
+        "text_layer_char_count": 636
+      },
+      {
+        "page": 5,
+        "md_start_line": 109,
+        "md_end_line": 129,
+        "text_layer_sha256": "9bbf26f00eda48392a5d407121a085ace1f3737cae09183d03a4bc726125ef7c",
+        "text_layer_char_count": 913
+      },
+      {
+        "page": 6,
+        "md_start_line": 137,
+        "md_end_line": 156,
+        "text_layer_sha256": "cc80ed0fe457a2c3a628b887f2bb3ac68e926b41f71a4d2e61c1d3015b081f9d",
+        "text_layer_char_count": 810
+      },
+      {
+        "page": 7,
+        "md_start_line": 164,
+        "md_end_line": 183,
+        "text_layer_sha256": "02e610ea3eb5f9563a6853dc341a09af9a1098a86dcef183623f5b1bb3bbfac6",
+        "text_layer_char_count": 870
+      },
+      {
+        "page": 8,
+        "md_start_line": 191,
+        "md_end_line": 209,
+        "text_layer_sha256": "0ac97cf202f847ed087f7c1f246b1e6dcd3d8443a795a256ae33b58173272680",
+        "text_layer_char_count": 765
+      },
+      {
+        "page": 9,
+        "md_start_line": 217,
+        "md_end_line": 236,
+        "text_layer_sha256": "7a5f29ec046b218eac87de75aa4ce1fdcd2e69affbb7b1995449048a53a212ab",
+        "text_layer_char_count": 828
+      },
+      {
+        "page": 10,
+        "md_start_line": 244,
+        "md_end_line": 267,
+        "text_layer_sha256": "3f1b59960f7ef6ce634fa52ada8110a051cf0079a1e2966f9b2f43668f0ffc3c",
+        "text_layer_char_count": 1046
+      },
+      {
+        "page": 11,
+        "md_start_line": 275,
+        "md_end_line": 292,
+        "text_layer_sha256": "2f958a4fbb206236d369d20d5060901679275fa97744b300080172e800dca8d7",
+        "text_layer_char_count": 802
+      },
+      {
+        "page": 12,
+        "md_start_line": 300,
+        "md_end_line": 321,
+        "text_layer_sha256": "f4a1c38d133173763ee0915a4ec0e8851e2e348035775120e65c59b8b03c6d35",
+        "text_layer_char_count": 1120
+      },
+      {
+        "page": 13,
+        "md_start_line": 329,
+        "md_end_line": 343,
+        "text_layer_sha256": "c8c7dd7b7a16e2420805be4baae448f76a5d040d8d55729bb0ecdb593b5e429f",
+        "text_layer_char_count": 621
+      },
+      {
+        "page": 14,
+        "md_start_line": 351,
+        "md_end_line": 352,
+        "text_layer_sha256": "33861b68a67b57d145ddd0ef04b86bae7be800d97e70aa808a2fe02d0ecb3544",
+        "text_layer_char_count": 58
+      },
+      {
+        "page": 15,
+        "md_start_line": 360,
+        "md_end_line": 364,
+        "text_layer_sha256": "9ee818fd4a4abc364724cff7142d589591e73c536201efb96f5442128f4daf7c",
+        "text_layer_char_count": 51
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "所有系统效果来自论文解读而非本次下载论文全文/实验复现，最大值与各自场景不可拼接",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "evidence_type": "source_scope",
+        "classification": "verification_scope"
+      },
+      {
+        "description": "专家并行EPIC和以太网协议EPIC同名、不同研究，已分开保留",
+        "pages": [
+          8,
+          9,
+          10
+        ],
+        "evidence_type": "text_and_diagram",
+        "classification": "terminology_boundary"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/云网络系统研究.md"
+    ],
+    "proposed_topics": [
+      "决策知识结构化",
+      "Agent长期记忆",
+      "Harness与模型协同",
+      "Agent评测与反馈"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:54:19-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/阿里巴巴 12 篇论文入选全球网络顶会 SIGCOMM 2026（内附下载）.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "f5308eda7cd0dbe89501ab1b96e6e85e75889caff8ccd96b6db1c2dc8466dcfd",
+        "copied_at": "2026-10-13T02:54:19-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

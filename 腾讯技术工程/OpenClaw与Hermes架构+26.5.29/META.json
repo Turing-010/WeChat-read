@@ -1,0 +1,1627 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0100",
+  "title": "OpenClaw 与 Hermes：源码里的 AI Agent 架构知识大复盘",
+  "short_title": "OpenClaw与Hermes架构",
+  "account": "腾讯技术工程",
+  "author": "rianli",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-05-29T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0529 OpenClaw Hermes Architecture.pdf",
+      "original_filename": "0529 OpenClaw Hermes Architecture.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "517d0de01af9e56a988b4de5308af38db66aafbddcdbc457ff019c3ff4774864",
+      "size_bytes": 12818240,
+      "page_count": 115,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "PDF p.59-63 的 QQ Bot 位置、全链路、模块架构及消息场景图在随附页图中为空白/加载占位，放大后仍无图像细节；相关结构未能核验。",
+          "pages": [
+            59,
+            60,
+            61,
+            62,
+            63
+          ],
+          "status": "material_missing"
+        },
+        {
+          "description": "p.10 配置 JSON 与 p.39-40 预算实现代码在原文/抽取中截断或不完整，未补写。",
+          "pages": [
+            10,
+            39,
+            40
+          ],
+          "status": "source_truncated"
+        },
+        {
+          "description": "文中部分源码与命令仅作为说明阅读，没有执行；对比结论是作者针对注明版本的源码分析，不是本次独立复现。",
+          "pages": [
+            1,
+            115
+          ],
+          "status": "not_executed"
+        }
+      ],
+      "publication_evidence": "PDF 第1页标注 2026年5月29日 02:36；未见时区"
+    }
+  ],
+  "tags": [
+    "Agent成本与上下文预算",
+    "Agent长期记忆",
+    "Agent工程循环",
+    "Agent评测与反馈",
+    "Harness与模型协同",
+    "异常监控与稳定性"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/OpenClaw与Hermes架构+26.5.29",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_OpenClaw与Hermes架构.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "OpenClaw 与 Hermes :源码里的 AI  Agent  架构知识大复盘\n腾讯程序员 2026 年 5 月 29 日 02 : 36广东原创 腾讯技术工程 277 人\n作者: rianli\n2 月上旬我开始开发  QQBot 插件( openclaw-qqbot ),到  3 月  31 日正式合入  OpenClaw 主\n仓。这两个月里为了把插件做好,顺着源码把  Channel 契约、 Gateway 路由、记忆系统这些\n核心模块都摸了一遍。回头看这段经历,对  OpenClaw  的认知恰好经历了完整的 \" 看山三\n境 \"——\n看山是山:第一次见  OpenClaw ,所有人都被惊艳了 ——24/7 后台常驻、跨多  IM 通道无缝流\n转、有人格长期记忆、自主完成开放性复杂任务。 \"这就是  AI 时代的私人助理操作系统\" 。\n看山不是山:用了一段时间,光环褪色。 OpenClaw 这边 ——费  token( Bootstrap 每轮\npush 几万  token )、健忘( Compaction 默认有损  + Dreaming  默认关,长对话中段就断\n片)、复杂任务交付度低(多步骤任务常丢关键决策 —— 后来才明白这正是  Anthropic 所说\n的 \" 上下文焦虑症 \" 和 \" 自我评估偏差 \" 的典型表现)。Hermes  这边 ——多人仍有串扰风险\n( v0.13 加了多  Profile 隔离,但同  Profile 内  USER.md 还是共享的)、核心仍是单体(拆了\n不少模块,但  AIAgent 类依然是万事汇聚的枢纽)、记忆管理半自动(有  Memory Nudge 和\nSession Search ,但没有  Dreaming 那种全自动整理)。两个都还在路上。\n看山又是山:踩完坑再回头看源码,反而看懂了每个 \" 不完美 \" 背后的工程取舍。 OpenClaw\n用  4 个设计回答了  4 个重要问题 —— 多协议可插拔契约(Channel 25+ Adapter)、 LLM 上下\n文资源预算(可插拔  Context Engine + 多级  Compaction)、记忆自动沉淀不退化(Dreaming\n三阶段加权晋升)、凭证失败与业务失败分治。 Hermes 补充另一组启示 —— 经验自动复用\n(技能自创建、改进闭环)、安全审批先  LLM 分诊再叫人(Smart Approval 三态)、执行隔离\n覆盖本地到云端(8 种沙箱后端)。\n这篇文章前后断断续续写了三周,是对这一阶段工作的沉淀 —— 把上面这些取舍逐个拆开看清\n楚,给自己留个笔记,也作为  Agent 架构设计的参考。\nPart I, II  分别拆源码,Part III  正面对比,第  22 章( 7+1 节)直面两套方案仍未覆盖的\n落地难题 —— 从协议互通( 22.1 )、记忆分层( 22.2 )、上下文工程( 22.3 ,融合\nAnthropic\" 上下文焦虑症 \" 与 \" 上下文重置 \" 理论)、能力管理( 22.4 )、确定性编排\n( 22.5 )、多  Agent 协作( 22.6 , GAN-like 生成 - 对抗架构与  Sprint Contract )、 Harness\n全链路治理( 22.7 ,自我评估偏差的对抗性消除、模型与脚手架的动态平衡)到沙箱安全\n",
+    "publication_evidence": "PDF 第1页标注 2026年5月29日 02:36；未见时区",
+    "full_title_in_capture": "OpenClaw 与 Hermes：源码里的 AI Agent 架构知识大复盘",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0100",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "517d0de01af9e56a988b4de5308af38db66aafbddcdbc457ff019c3ff4774864"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "PDF p.59-63 的 QQ Bot 位置、全链路、模块架构及消息场景图在随附页图中为空白/加载占位，放大后仍无图像细节；相关结构未能核验。",
+        "pages": [
+          59,
+          60,
+          61,
+          62,
+          63
+        ],
+        "status": "material_missing"
+      },
+      {
+        "description": "p.10 配置 JSON 与 p.39-40 预算实现代码在原文/抽取中截断或不完整，未补写。",
+        "pages": [
+          10,
+          39,
+          40
+        ],
+        "status": "source_truncated"
+      },
+      {
+        "description": "文中部分源码与命令仅作为说明阅读，没有执行；对比结论是作者针对注明版本的源码分析，不是本次独立复现。",
+        "pages": [
+          1,
+          115
+        ],
+        "status": "not_executed"
+      }
+    ],
+    "outputs": [
+      "AI_OpenClaw与Hermes架构.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "detail_pages_reviewed": [
+        5,
+        22,
+        23,
+        49,
+        50,
+        51,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        107
+      ]
+    },
+    "coverage": "逐页阅读 p.1-115；实质覆盖 OpenClaw Gateway/插件/Runtime/预算/记忆/安全、Hermes 执行/技能/记忆/安全、对比及 Context Reset、跨 Agent 编排和 Harness 延伸。QQ Bot 实战图 p.59-63 缺失，不能完整覆盖其架构图；无关留言页未展开。",
+    "fact_checks": [
+      {
+        "item": "Gateway 默认端口",
+        "note_value": "18789",
+        "source_value": "18789",
+        "pages": [
+          5,
+          9
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "工具输出硬限制",
+        "note_value": "16000 字符",
+        "source_value": "DEFAULT_MAX_LIVE_TOOL_RESULT_CHARS = 16000",
+        "pages": [
+          38,
+          41
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "Deep 晋升最低分",
+        "note_value": "0.75",
+        "source_value": "DEFAULT_PROMOTION_MIN_SCORE = 0.75",
+        "pages": [
+          49
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "Deep 最低召回数与不同查询数",
+        "note_value": "3 次；2 个 query",
+        "source_value": "MIN_RECALL_COUNT=3; MIN_UNIQUE_QUERIES=2",
+        "pages": [
+          49
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "Memory Nudge 周期",
+        "note_value": "10 个用户轮次",
+        "source_value": "每 10 个用户轮次触发 review",
+        "pages": [
+          79
+        ],
+        "result": "一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_OpenClaw与Hermes架构.md",
+      "sha256": "91a3b517930535e76ec98316c17a6ae6843f3ceba9ccdd8a7494d5aa3b7d8d74"
+    },
+    "independent_crosscheck": {
+      "reviewer": "wechat_group1",
+      "note_sha256": "179c98e11d78f953a55f5b62f2ec7e90947dafcf34b17e42d4eb3459730b7009",
+      "review_sha256": "7e17daffbafaa9ce1e837c7efec03f22bc72e43e402a9c8b3fe3e5bc90b48b95",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "5–8",
+          "check": "核对 OpenClaw Gateway/Client/Channel/SessionKey 与 Hermes 执行层机制；笔记对两种架构职责的归纳一致。"
+        },
+        {
+          "pages": "12–13、45",
+          "check": "核对 OpenClaw session 与 agent workspace/记忆隔离边界；笔记指出同 Agent 共享记忆的多租户风险。"
+        },
+        {
+          "pages": "23–27",
+          "check": "核对 FailoverError、可恢复错误分类及外层恢复决策机制；笔记准确描述为结构化错误交由 Harness 处理。"
+        },
+        {
+          "pages": "59–63",
+          "check": "图页为缺失/占位图，review 已记载质量限制；笔记没有声称从缺失图恢复了内容。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "517d0de01af9e56a988b4de5308af38db66aafbddcdbc457ff019c3ff4774864"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "b41c1fe02975fb33a58482204c1b76c39987925b82373dbb9922dc5fca9a5739"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 38,
+        "text_layer_sha256": "09e9a8a35bbbaa48b1841a60edefe8a2575be822a3c5c0a190157be953edb6dc",
+        "text_layer_char_count": 1421
+      },
+      {
+        "page": 2,
+        "md_start_line": 46,
+        "md_end_line": 64,
+        "text_layer_sha256": "ab64d1363599c83d16afc0e6c8e6c502cc06ce4ef1f2128b85fe5efbb3a9a1ce",
+        "text_layer_char_count": 515
+      },
+      {
+        "page": 3,
+        "md_start_line": 72,
+        "md_end_line": 93,
+        "text_layer_sha256": "a7a200948d71def9a20dc60c539162fb61c5a6d65a6fe06fead8350d9e59465b",
+        "text_layer_char_count": 958
+      },
+      {
+        "page": 4,
+        "md_start_line": 101,
+        "md_end_line": 109,
+        "text_layer_sha256": "402ce24711d423e2eee46abd52e8f4e44609e6127287eb7b72c7f8d95d69ae8e",
+        "text_layer_char_count": 350
+      },
+      {
+        "page": 5,
+        "md_start_line": 117,
+        "md_end_line": 124,
+        "text_layer_sha256": "e3914d323ba007b94aa5a14929c740be435c4ae355e40c04876970843bbd36c1",
+        "text_layer_char_count": 237
+      },
+      {
+        "page": 6,
+        "md_start_line": 132,
+        "md_end_line": 154,
+        "text_layer_sha256": "ddf08ceb00c2d086735bbe32c5b0d92bb764a9811513bb7661349f3f4fe601de",
+        "text_layer_char_count": 1062
+      },
+      {
+        "page": 7,
+        "md_start_line": 162,
+        "md_end_line": 180,
+        "text_layer_sha256": "8aeedd6195f566e77bff22341d944a3f420921f1f76faf39450a6e0cb2f2b1d2",
+        "text_layer_char_count": 826
+      },
+      {
+        "page": 8,
+        "md_start_line": 188,
+        "md_end_line": 218,
+        "text_layer_sha256": "c5efb17307e1b8ee545536287698dae1abe7e6793bbcb091616eac8d9216a4a7",
+        "text_layer_char_count": 1168
+      },
+      {
+        "page": 9,
+        "md_start_line": 226,
+        "md_end_line": 255,
+        "text_layer_sha256": "09dfe5a36efde8e1dae01a68d1ee1313be03902e2640bd3ae5d4930b73cf1f03",
+        "text_layer_char_count": 1042
+      },
+      {
+        "page": 10,
+        "md_start_line": 263,
+        "md_end_line": 287,
+        "text_layer_sha256": "8097f94598a33cf42d24501d1fb248a733425fa9fe854759bb6696ba5ea6ba8c",
+        "text_layer_char_count": 988
+      },
+      {
+        "page": 11,
+        "md_start_line": 295,
+        "md_end_line": 334,
+        "text_layer_sha256": "4e6ecf3f8d4a326370109320e429e85838663bad223296c1da2017689a329411",
+        "text_layer_char_count": 1254
+      },
+      {
+        "page": 12,
+        "md_start_line": 342,
+        "md_end_line": 373,
+        "text_layer_sha256": "1b5dc179876a88216aca452ef3cf36ce3a1cd5f51fcc45f865fdd65471c15121",
+        "text_layer_char_count": 1131
+      },
+      {
+        "page": 13,
+        "md_start_line": 381,
+        "md_end_line": 411,
+        "text_layer_sha256": "8a39a4eed57d55e1df3127827fe707bd5e8c78c24e36932a5b6a418eaaf23ec4",
+        "text_layer_char_count": 913
+      },
+      {
+        "page": 14,
+        "md_start_line": 419,
+        "md_end_line": 452,
+        "text_layer_sha256": "5c8b8a8bca5281deeab2bf03db52c1bac319d2bb3667b6e92e2f6667059df2ba",
+        "text_layer_char_count": 1244
+      },
+      {
+        "page": 15,
+        "md_start_line": 460,
+        "md_end_line": 503,
+        "text_layer_sha256": "3b36c4bb4401880f1ea7ee6aae08d42ed4a41bb94c095cddc5f0f435bcee617e",
+        "text_layer_char_count": 1686
+      },
+      {
+        "page": 16,
+        "md_start_line": 511,
+        "md_end_line": 542,
+        "text_layer_sha256": "74cc57422c6a0ce3c010ed664f10dec77151dbf9d918a9b412596bf9e08e8d46",
+        "text_layer_char_count": 1313
+      },
+      {
+        "page": 17,
+        "md_start_line": 550,
+        "md_end_line": 562,
+        "text_layer_sha256": "324c4fcee28ca1c46d169f8807c3b549d831e535cb7f1bd808ea7de953c12c1a",
+        "text_layer_char_count": 502
+      },
+      {
+        "page": 18,
+        "md_start_line": 570,
+        "md_end_line": 576,
+        "text_layer_sha256": "59af280793de379da4f52465c9ed8034fbb4944f5dfd16f05d7d0be51f86600e",
+        "text_layer_char_count": 118
+      },
+      {
+        "page": 19,
+        "md_start_line": 584,
+        "md_end_line": 593,
+        "text_layer_sha256": "e67391337d21cae7077f10e6f3160de48a4bf8db31e1ee8b87a5ec64c705598e",
+        "text_layer_char_count": 317
+      },
+      {
+        "page": 20,
+        "md_start_line": 601,
+        "md_end_line": 640,
+        "text_layer_sha256": "4eebba8cdc2137dc022a2677aeeb99222439704d19b115876b73f4884b891ca6",
+        "text_layer_char_count": 1741
+      },
+      {
+        "page": 21,
+        "md_start_line": 648,
+        "md_end_line": 657,
+        "text_layer_sha256": "071774bc973a48866aa1791f7efb195a02a8b3d1d0b110fe3407c199e9f27ff7",
+        "text_layer_char_count": 513
+      },
+      {
+        "page": 22,
+        "md_start_line": 665,
+        "md_end_line": 700,
+        "text_layer_sha256": "932c94d9e4725628bf49724aa66a0b45374938c59304c1ab549ceab52086c975",
+        "text_layer_char_count": 1792
+      },
+      {
+        "page": 23,
+        "md_start_line": 708,
+        "md_end_line": 742,
+        "text_layer_sha256": "3853dbb442145510ab6b182284d616e909bddf34be96004659e7f6f7bf383415",
+        "text_layer_char_count": 1666
+      },
+      {
+        "page": 24,
+        "md_start_line": 750,
+        "md_end_line": 784,
+        "text_layer_sha256": "c91e3aa96a725c5885fb8d695a4f601aa4f4738a419379587ab637b720d8310f",
+        "text_layer_char_count": 1472
+      },
+      {
+        "page": 25,
+        "md_start_line": 792,
+        "md_end_line": 827,
+        "text_layer_sha256": "eb1e182d86060179fc71a45fda47e5033315b3a5e55a7ae29d004378d3216b38",
+        "text_layer_char_count": 1297
+      },
+      {
+        "page": 26,
+        "md_start_line": 835,
+        "md_end_line": 875,
+        "text_layer_sha256": "d5408823fc4cfdcb60706c406d212cbfb324e07b770e159045b0bb2c4875da0e",
+        "text_layer_char_count": 1360
+      },
+      {
+        "page": 27,
+        "md_start_line": 883,
+        "md_end_line": 925,
+        "text_layer_sha256": "b13257d6c8e10a9f6db3312e471a8a1f199af25859227efe12ee4911f182b2cd",
+        "text_layer_char_count": 1485
+      },
+      {
+        "page": 28,
+        "md_start_line": 933,
+        "md_end_line": 979,
+        "text_layer_sha256": "00b1e986389d38038ace8628e8a6d49d82b62592aa49e864745b1b7cc2d6bfab",
+        "text_layer_char_count": 1598
+      },
+      {
+        "page": 29,
+        "md_start_line": 987,
+        "md_end_line": 1026,
+        "text_layer_sha256": "95b27b686dbbab9655f0be89734181c3fc7edd0871855ff76d4dec78d7b87bb6",
+        "text_layer_char_count": 1576
+      },
+      {
+        "page": 30,
+        "md_start_line": 1034,
+        "md_end_line": 1083,
+        "text_layer_sha256": "4f6ed5445337cbfdbceffd82d9bb3981fabb8e79f7392a97fdddaaea4b186769",
+        "text_layer_char_count": 1835
+      },
+      {
+        "page": 31,
+        "md_start_line": 1091,
+        "md_end_line": 1125,
+        "text_layer_sha256": "a858f2799f918bfa0ee5136ef4bbceaae2f25f13ac68ff00ce499698fd38b54d",
+        "text_layer_char_count": 1427
+      },
+      {
+        "page": 32,
+        "md_start_line": 1133,
+        "md_end_line": 1171,
+        "text_layer_sha256": "e5a1cfa25644e6f115cf61016b4a7a4ac5c09c0ec258c5fcdcc523d6b922c2cc",
+        "text_layer_char_count": 1430
+      },
+      {
+        "page": 33,
+        "md_start_line": 1179,
+        "md_end_line": 1215,
+        "text_layer_sha256": "99a9bc2760b2850416df8000470b49e7f2f4eec493f294a1c0572558aa68dfee",
+        "text_layer_char_count": 1078
+      },
+      {
+        "page": 34,
+        "md_start_line": 1223,
+        "md_end_line": 1272,
+        "text_layer_sha256": "b393c4e0ad8bbb0e587290ce9a0e2196a2743dcc7984846c05bafa3802de95c3",
+        "text_layer_char_count": 1430
+      },
+      {
+        "page": 35,
+        "md_start_line": 1280,
+        "md_end_line": 1313,
+        "text_layer_sha256": "7ba037e7218fda3a0282eb04414abe5cbb046f5537337e393c3a0471a50606ad",
+        "text_layer_char_count": 1255
+      },
+      {
+        "page": 36,
+        "md_start_line": 1321,
+        "md_end_line": 1358,
+        "text_layer_sha256": "15bced405c2de5bdb70892139d3399a95e34ac1636adf2404fb20146f9ac4f95",
+        "text_layer_char_count": 1282
+      },
+      {
+        "page": 37,
+        "md_start_line": 1366,
+        "md_end_line": 1399,
+        "text_layer_sha256": "f9c5760e8d2bae50c51252cb7734a51443cb59b3de7f602d61bda29af41077aa",
+        "text_layer_char_count": 1729
+      },
+      {
+        "page": 38,
+        "md_start_line": 1407,
+        "md_end_line": 1475,
+        "text_layer_sha256": "4d5363ba0c279f64ffd1a5f1aafeccf9d0091002f8ad45668781a3dc5aabe39d",
+        "text_layer_char_count": 1657
+      },
+      {
+        "page": 39,
+        "md_start_line": 1483,
+        "md_end_line": 1529,
+        "text_layer_sha256": "25a8e983ea113fbe020c08c8b28b31fa00c5d5d226ec9efd28541bc1211e63f2",
+        "text_layer_char_count": 1374
+      },
+      {
+        "page": 40,
+        "md_start_line": 1537,
+        "md_end_line": 1566,
+        "text_layer_sha256": "851eaacbf09dbd2774754295eca7c7d9288c35cd615973c33a7febb613e211af",
+        "text_layer_char_count": 1269
+      },
+      {
+        "page": 41,
+        "md_start_line": 1574,
+        "md_end_line": 1614,
+        "text_layer_sha256": "7bc67e7c0dd9c84c56b2655382b0872531c6cc909b6c854167098f453886a4bb",
+        "text_layer_char_count": 1032
+      },
+      {
+        "page": 42,
+        "md_start_line": 1622,
+        "md_end_line": 1655,
+        "text_layer_sha256": "402ace46a3898eca9dd2493483b2672c338228712b6dd4011dfb27a2d63be48e",
+        "text_layer_char_count": 1579
+      },
+      {
+        "page": 43,
+        "md_start_line": 1663,
+        "md_end_line": 1685,
+        "text_layer_sha256": "06fb2abe7dca3e0786f19e8d6b01ae91b61ba77ed6ce3ab78d148849754bb8cd",
+        "text_layer_char_count": 793
+      },
+      {
+        "page": 44,
+        "md_start_line": 1693,
+        "md_end_line": 1724,
+        "text_layer_sha256": "924dece8cf7c430ba377babe8b9ba44720a05c99b06de03da0763e0ff47fdef8",
+        "text_layer_char_count": 1171
+      },
+      {
+        "page": 45,
+        "md_start_line": 1732,
+        "md_end_line": 1770,
+        "text_layer_sha256": "c6657c181a27c9cc5f28ec3caba03d5e14f82bf155df5eacd59c6d20f6ad7aa7",
+        "text_layer_char_count": 1302
+      },
+      {
+        "page": 46,
+        "md_start_line": 1778,
+        "md_end_line": 1822,
+        "text_layer_sha256": "0e4c8451248be78f86f1060973fba6e9e64056e84adc6a713395e1bb2d7ec68c",
+        "text_layer_char_count": 986
+      },
+      {
+        "page": 47,
+        "md_start_line": 1830,
+        "md_end_line": 1865,
+        "text_layer_sha256": "3794991b799a335422c165f88460b3966bbb889698bc4304a24b686cd35ac5d5",
+        "text_layer_char_count": 1373
+      },
+      {
+        "page": 48,
+        "md_start_line": 1873,
+        "md_end_line": 1904,
+        "text_layer_sha256": "844a711efcce46e9e75339d743d8ee28ffb1714f0ce8f22c6a0af5335e1f23c0",
+        "text_layer_char_count": 1198
+      },
+      {
+        "page": 49,
+        "md_start_line": 1912,
+        "md_end_line": 1942,
+        "text_layer_sha256": "897741ef3ad71bb78cc16384ff398c1f46753ce988740bba59c2ce7cf3c9e310",
+        "text_layer_char_count": 1392
+      },
+      {
+        "page": 50,
+        "md_start_line": 1950,
+        "md_end_line": 1979,
+        "text_layer_sha256": "871509872c6883ca1bd60ceb2c31939cfb54dfcdcd811643ba0b6e6ba09d6fc1",
+        "text_layer_char_count": 892
+      },
+      {
+        "page": 51,
+        "md_start_line": 1987,
+        "md_end_line": 2026,
+        "text_layer_sha256": "309ab41a1f23414a65d664a8003019306b9ec9172f2cede02e3a0f859c886113",
+        "text_layer_char_count": 1590
+      },
+      {
+        "page": 52,
+        "md_start_line": 2034,
+        "md_end_line": 2054,
+        "text_layer_sha256": "1fb95547a2f4ff47fac9cdda0ef4c808f600983ec5a127ba5da1d4a7ac8774dc",
+        "text_layer_char_count": 651
+      },
+      {
+        "page": 53,
+        "md_start_line": 2062,
+        "md_end_line": 2076,
+        "text_layer_sha256": "b8fb39ceb92c08425ea5263b7d2921e1a5d7526d4b758df728450a6db9ac99ea",
+        "text_layer_char_count": 379
+      },
+      {
+        "page": 54,
+        "md_start_line": 2084,
+        "md_end_line": 2086,
+        "text_layer_sha256": "eb18c510ae768de841ff08326bb660f9494bd9d93d134976b4c7b94886b6282a",
+        "text_layer_char_count": 48
+      },
+      {
+        "page": 55,
+        "md_start_line": 2094,
+        "md_end_line": 2110,
+        "text_layer_sha256": "636b3b702b78eb93dd6e99137667b976f9daae255d69a7efe2122e8441d39fa5",
+        "text_layer_char_count": 726
+      },
+      {
+        "page": 56,
+        "md_start_line": 2118,
+        "md_end_line": 2128,
+        "text_layer_sha256": "0408f6f3e949553436cd8ef25501ed9cbb500bbb481050f24909c01fded6f70d",
+        "text_layer_char_count": 262
+      },
+      {
+        "page": 57,
+        "md_start_line": 2136,
+        "md_end_line": 2144,
+        "text_layer_sha256": "48e630cc90f9818329de7642a2fed970412d0e358dc1d58d4424a3da109b64f4",
+        "text_layer_char_count": 352
+      },
+      {
+        "page": 58,
+        "md_start_line": 2152,
+        "md_end_line": 2163,
+        "text_layer_sha256": "c455bf78a7a258e95ac445498e534bfc56c58eb51b790fa47a85368b58330647",
+        "text_layer_char_count": 439
+      },
+      {
+        "page": 59,
+        "md_start_line": 2171,
+        "md_end_line": 2170,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 60,
+        "md_start_line": 2178,
+        "md_end_line": 2177,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 61,
+        "md_start_line": 2185,
+        "md_end_line": 2187,
+        "text_layer_sha256": "72f0949c3e6951f69d461dd5c550153062235f4de60b375be507be37073eb66a",
+        "text_layer_char_count": 57
+      },
+      {
+        "page": 62,
+        "md_start_line": 2195,
+        "md_end_line": 2196,
+        "text_layer_sha256": "123f247d9298ad5d3632c84586c286e298974af8c68d3ccdcddf151d7234bab3",
+        "text_layer_char_count": 28
+      },
+      {
+        "page": 63,
+        "md_start_line": 2204,
+        "md_end_line": 2209,
+        "text_layer_sha256": "347009f5754420f6b55b8ceecc0eef76d0b3ef86d8647baf66ef974b24467feb",
+        "text_layer_char_count": 214
+      },
+      {
+        "page": 64,
+        "md_start_line": 2217,
+        "md_end_line": 2235,
+        "text_layer_sha256": "f366cfac5ae1fc248fe5fa5d37a173ebbef085fe5645711f9919fa2fd80f1fdb",
+        "text_layer_char_count": 659
+      },
+      {
+        "page": 65,
+        "md_start_line": 2243,
+        "md_end_line": 2275,
+        "text_layer_sha256": "ea227e3947e9e902d20e9e444eedeb396c19bec1960227e7b815bef0ba1a74b6",
+        "text_layer_char_count": 1065
+      },
+      {
+        "page": 66,
+        "md_start_line": 2283,
+        "md_end_line": 2319,
+        "text_layer_sha256": "a970682e23e380fb25ec92af93698bf4c165be9760610d18aab1ecc0e053fa35",
+        "text_layer_char_count": 1596
+      },
+      {
+        "page": 67,
+        "md_start_line": 2327,
+        "md_end_line": 2368,
+        "text_layer_sha256": "a1f84b8b5ae0e9275d2d0a223f8a48c29bb6b8ebf968e96e3ca7010123a29937",
+        "text_layer_char_count": 1582
+      },
+      {
+        "page": 68,
+        "md_start_line": 2376,
+        "md_end_line": 2397,
+        "text_layer_sha256": "f8ea8ecd21209b957d3f4c420c22b430467c288eb4f98fae297c8d58b6abaf7b",
+        "text_layer_char_count": 946
+      },
+      {
+        "page": 69,
+        "md_start_line": 2405,
+        "md_end_line": 2428,
+        "text_layer_sha256": "8f7903ffda30d1c91663d7ff0ad479fdd54651659265effbd5a8697e8245e25b",
+        "text_layer_char_count": 870
+      },
+      {
+        "page": 70,
+        "md_start_line": 2436,
+        "md_end_line": 2436,
+        "text_layer_sha256": "bcfaf5f75cd06f7a5057614092c11f88651ae97611c0095efdf5c0170c169cc1",
+        "text_layer_char_count": 7
+      },
+      {
+        "page": 71,
+        "md_start_line": 2444,
+        "md_end_line": 2479,
+        "text_layer_sha256": "75c9a031021eea7d186a28d5841ad2016e322498285c7f8a58ee0ebb4e844e6c",
+        "text_layer_char_count": 1091
+      },
+      {
+        "page": 72,
+        "md_start_line": 2487,
+        "md_end_line": 2511,
+        "text_layer_sha256": "6f5e430fd133a0df469a2b2adc0aca6599c87e71c8d03d53da6ed3458f02cfcb",
+        "text_layer_char_count": 958
+      },
+      {
+        "page": 73,
+        "md_start_line": 2519,
+        "md_end_line": 2520,
+        "text_layer_sha256": "0aa78cc18eff45a949b559bdf5e1a38d6a091ee4fa895ee4624472aba9563489",
+        "text_layer_char_count": 81
+      },
+      {
+        "page": 74,
+        "md_start_line": 2528,
+        "md_end_line": 2562,
+        "text_layer_sha256": "7e6a65012969e6824b8a048d9769c5f268dca885d683651f12b809707f1e4b01",
+        "text_layer_char_count": 1278
+      },
+      {
+        "page": 75,
+        "md_start_line": 2570,
+        "md_end_line": 2604,
+        "text_layer_sha256": "6133f55a81ae91e71630e59a9201168eede09498fe4399234c3849a57a44ac43",
+        "text_layer_char_count": 1721
+      },
+      {
+        "page": 76,
+        "md_start_line": 2612,
+        "md_end_line": 2632,
+        "text_layer_sha256": "b52901addaf4de565ca19a07a07af9d5c46934a699a22983228d3f415d7c78e5",
+        "text_layer_char_count": 688
+      },
+      {
+        "page": 77,
+        "md_start_line": 2640,
+        "md_end_line": 2658,
+        "text_layer_sha256": "abf403f5618b737ec60744dce24189e75ea01100debee361bf5f5b760e30bb99",
+        "text_layer_char_count": 583
+      },
+      {
+        "page": 78,
+        "md_start_line": 2666,
+        "md_end_line": 2701,
+        "text_layer_sha256": "49f34f5feccf49c23f8ea69a977ad512fa3cbcf350ca95eeb9abe2c7bcc7e106",
+        "text_layer_char_count": 1427
+      },
+      {
+        "page": 79,
+        "md_start_line": 2709,
+        "md_end_line": 2740,
+        "text_layer_sha256": "a2f455c79ca1adeb6aad5428a0f53b8b426db8ea3fd9268c9a1ef0ed7d9e913b",
+        "text_layer_char_count": 1069
+      },
+      {
+        "page": 80,
+        "md_start_line": 2748,
+        "md_end_line": 2798,
+        "text_layer_sha256": "14f08d22fe174b5ea31debdc5e116e2d430f5474779d987733c6dce4ec8fb076",
+        "text_layer_char_count": 1240
+      },
+      {
+        "page": 81,
+        "md_start_line": 2806,
+        "md_end_line": 2842,
+        "text_layer_sha256": "d652e9870bd6c6947803164fb7918cb58f5de64c20ff47bbd82d43c9a8b23569",
+        "text_layer_char_count": 1020
+      },
+      {
+        "page": 82,
+        "md_start_line": 2850,
+        "md_end_line": 2873,
+        "text_layer_sha256": "57009403cc54eed9bdfa5583b25cea9e4386078ec99a44850e0b939d56f5ab11",
+        "text_layer_char_count": 715
+      },
+      {
+        "page": 83,
+        "md_start_line": 2881,
+        "md_end_line": 2915,
+        "text_layer_sha256": "fbcdfed466f6fb543176e084863a5b238906ed8bc3a62335c1dd85b11602b92f",
+        "text_layer_char_count": 1052
+      },
+      {
+        "page": 84,
+        "md_start_line": 2923,
+        "md_end_line": 2957,
+        "text_layer_sha256": "6f4ea2ec02b28999014c95dc24834db8ec82080aa2509d9a3aff0489e950badd",
+        "text_layer_char_count": 1406
+      },
+      {
+        "page": 85,
+        "md_start_line": 2965,
+        "md_end_line": 2998,
+        "text_layer_sha256": "17309ebba644d201d443f75c3875846091f157f4cc2f3879e4e497db69ac5468",
+        "text_layer_char_count": 1040
+      },
+      {
+        "page": 86,
+        "md_start_line": 3006,
+        "md_end_line": 3040,
+        "text_layer_sha256": "f74bc3aa5053a79e781b00b4e9f7a1180ce8d7527a9f0b0de24c356b038bbe5c",
+        "text_layer_char_count": 989
+      },
+      {
+        "page": 87,
+        "md_start_line": 3048,
+        "md_end_line": 3079,
+        "text_layer_sha256": "cd4fe5dfc2872fa3dc3a429e9aebc28f0c7f4eac013f69685729ca5590814853",
+        "text_layer_char_count": 1241
+      },
+      {
+        "page": 88,
+        "md_start_line": 3087,
+        "md_end_line": 3122,
+        "text_layer_sha256": "eaec50fd917591bda1ca36de18881448241610ce39af8d0fcf9f2b61c5bc1b41",
+        "text_layer_char_count": 1143
+      },
+      {
+        "page": 89,
+        "md_start_line": 3130,
+        "md_end_line": 3132,
+        "text_layer_sha256": "8c54434d7e8a16382688f5f80c9f5e31a39b54f654b11f91e5db4e827cc71c9a",
+        "text_layer_char_count": 68
+      },
+      {
+        "page": 90,
+        "md_start_line": 3140,
+        "md_end_line": 3168,
+        "text_layer_sha256": "9aa300b7aa5ea257f6ce04b265bd60aa7709a3ce6caea6ed03e1c983934fb6b1",
+        "text_layer_char_count": 906
+      },
+      {
+        "page": 91,
+        "md_start_line": 3176,
+        "md_end_line": 3207,
+        "text_layer_sha256": "a9360c8158186bad5eb2f62a6adbbe23252be9ef8cf2c61c6d3d36367b23fdb5",
+        "text_layer_char_count": 1010
+      },
+      {
+        "page": 92,
+        "md_start_line": 3215,
+        "md_end_line": 3224,
+        "text_layer_sha256": "6fdccefa6609dab33fe1106503dde0aa8e51b3d33d81e3b062118e11d8e0d208",
+        "text_layer_char_count": 273
+      },
+      {
+        "page": 93,
+        "md_start_line": 3232,
+        "md_end_line": 3265,
+        "text_layer_sha256": "d46323727ea2b04770d71f9359316bc7673c39bf17247b5bc3c6fdb7df8039cb",
+        "text_layer_char_count": 1194
+      },
+      {
+        "page": 94,
+        "md_start_line": 3273,
+        "md_end_line": 3302,
+        "text_layer_sha256": "e99c107b998d50bf6d8c2f76ac1aabab4e95aa8f317fac4ec5f76a5de3039f87",
+        "text_layer_char_count": 920
+      },
+      {
+        "page": 95,
+        "md_start_line": 3310,
+        "md_end_line": 3343,
+        "text_layer_sha256": "2fd168ae1a1c27741e96a85cc890eed00eb0f74681b1e1e622910bc93b2fe468",
+        "text_layer_char_count": 1462
+      },
+      {
+        "page": 96,
+        "md_start_line": 3351,
+        "md_end_line": 3400,
+        "text_layer_sha256": "91fe7eb907236624f48ef4e9f3eb8ac01c6509788cc3c8fbcbccd91f6046660e",
+        "text_layer_char_count": 1309
+      },
+      {
+        "page": 97,
+        "md_start_line": 3408,
+        "md_end_line": 3447,
+        "text_layer_sha256": "8288b27c51093c07eb30fdb525e66ccd3029889cf3e6a2ab6176375438dcdd4e",
+        "text_layer_char_count": 1275
+      },
+      {
+        "page": 98,
+        "md_start_line": 3455,
+        "md_end_line": 3492,
+        "text_layer_sha256": "4674d769f1fd85ac8be066c344d5f10f9e74cc69fd7de24035bf6064b2e6401c",
+        "text_layer_char_count": 1225
+      },
+      {
+        "page": 99,
+        "md_start_line": 3500,
+        "md_end_line": 3533,
+        "text_layer_sha256": "48a318be861ec47f952d6e0a2e4c092ecd9ca7ae3045275574935d505306137b",
+        "text_layer_char_count": 1238
+      },
+      {
+        "page": 100,
+        "md_start_line": 3541,
+        "md_end_line": 3578,
+        "text_layer_sha256": "f8f5484cc309ab4c113ab3797556bcbb0f07f924b3cfbb969953e0bec9ed3922",
+        "text_layer_char_count": 1335
+      },
+      {
+        "page": 101,
+        "md_start_line": 3586,
+        "md_end_line": 3605,
+        "text_layer_sha256": "dd0536ddcf8917576bd2d474af09829303a81c890db3d4f0a2fc7f881768ff08",
+        "text_layer_char_count": 1013
+      },
+      {
+        "page": 102,
+        "md_start_line": 3613,
+        "md_end_line": 3648,
+        "text_layer_sha256": "78162257beb13e75d23d8b2fc09e2497b6fc945bb11784dee849765e0b05541d",
+        "text_layer_char_count": 1646
+      },
+      {
+        "page": 103,
+        "md_start_line": 3656,
+        "md_end_line": 3694,
+        "text_layer_sha256": "4ba2802b2fdca15801eb0dbe174df757ea6f94965981b1f9a099ac922888dc46",
+        "text_layer_char_count": 1414
+      },
+      {
+        "page": 104,
+        "md_start_line": 3702,
+        "md_end_line": 3737,
+        "text_layer_sha256": "219a97a46e69e061bcf3a1ad10026ac46495490441d16e682afc8b344dbf4b52",
+        "text_layer_char_count": 1645
+      },
+      {
+        "page": 105,
+        "md_start_line": 3745,
+        "md_end_line": 3779,
+        "text_layer_sha256": "92b02345fdfc8a28e5ffa402c561ad364b88089fcd11e98446fa943a185d2e01",
+        "text_layer_char_count": 1690
+      },
+      {
+        "page": 106,
+        "md_start_line": 3787,
+        "md_end_line": 3833,
+        "text_layer_sha256": "5db923f53fdcd690b6273e4a0646cbba70d40d1f8c83ce1247e1668affc6ca6d",
+        "text_layer_char_count": 1680
+      },
+      {
+        "page": 107,
+        "md_start_line": 3841,
+        "md_end_line": 3877,
+        "text_layer_sha256": "c75f9616bdfd49ce586c77c85a1dcd35596bccc997c58c585256869415ce7b47",
+        "text_layer_char_count": 1564
+      },
+      {
+        "page": 108,
+        "md_start_line": 3885,
+        "md_end_line": 3925,
+        "text_layer_sha256": "92e4b67c96a33ca96230fe7e5b35c89a8d487c0a7beb4ac0c4a1517e816f2ee8",
+        "text_layer_char_count": 1291
+      },
+      {
+        "page": 109,
+        "md_start_line": 3933,
+        "md_end_line": 3971,
+        "text_layer_sha256": "cfbbee2978871c9a8d8e250f2cdd25e833a55751cb4b6f1254d6a6e2836691ba",
+        "text_layer_char_count": 1330
+      },
+      {
+        "page": 110,
+        "md_start_line": 3979,
+        "md_end_line": 3999,
+        "text_layer_sha256": "7e3f8c70efe968934e9a2c25316cbf4e6bd90ba6271a75a8765a7aebc9052c5c",
+        "text_layer_char_count": 898
+      },
+      {
+        "page": 111,
+        "md_start_line": 4007,
+        "md_end_line": 4025,
+        "text_layer_sha256": "c638e710b470e2334f4baf3991a3c4bec913f9a910af4bfdbd1d91ce223ba1a2",
+        "text_layer_char_count": 819
+      },
+      {
+        "page": 112,
+        "md_start_line": 4033,
+        "md_end_line": 4059,
+        "text_layer_sha256": "a86398031826b81517b8e5d19e86ad8e798c7887c4f4b904ae6156aa57a7c516",
+        "text_layer_char_count": 1523
+      },
+      {
+        "page": 113,
+        "md_start_line": 4067,
+        "md_end_line": 4119,
+        "text_layer_sha256": "777e5cb2b35d3421d229570cdf6893b29436e3ca5989e3d475d649cde0d02ede",
+        "text_layer_char_count": 1342
+      },
+      {
+        "page": 114,
+        "md_start_line": 4127,
+        "md_end_line": 4140,
+        "text_layer_sha256": "abb3c91d24fe15ce659767fccf551b87ef94326515a562bd58effc4b9360c3cb",
+        "text_layer_char_count": 394
+      },
+      {
+        "page": 115,
+        "md_start_line": 4148,
+        "md_end_line": 4148,
+        "text_layer_sha256": "c01129305e3f2701794b59ab978930dc476ea9901ce49f19b59c02b18c1e3171",
+        "text_layer_char_count": 11
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "detail_pages_reviewed": [
+        5,
+        22,
+        23,
+        49,
+        50,
+        51,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        107
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "PDF p.59-63 的 QQ Bot 位置、全链路、模块架构及消息场景图在随附页图中为空白/加载占位，放大后仍无图像细节；相关结构未能核验。",
+        "pages": [
+          59,
+          60,
+          61,
+          62,
+          63
+        ],
+        "status": "material_missing"
+      },
+      {
+        "description": "p.10 配置 JSON 与 p.39-40 预算实现代码在原文/抽取中截断或不完整，未补写。",
+        "pages": [
+          10,
+          39,
+          40
+        ],
+        "status": "source_truncated"
+      },
+      {
+        "description": "文中部分源码与命令仅作为说明阅读，没有执行；对比结论是作者针对注明版本的源码分析，不是本次独立复现。",
+        "pages": [
+          1,
+          115
+        ],
+        "status": "not_executed"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0529 OpenClaw Hermes Architecture.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "517d0de01af9e56a988b4de5308af38db66aafbddcdbc457ff019c3ff4774864",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Harness与模型协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_OpenClaw与Hermes架构.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

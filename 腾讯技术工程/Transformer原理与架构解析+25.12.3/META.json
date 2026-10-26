@@ -1,0 +1,150 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0323",
+  "title": "看懂这篇，你就能秒懂LLM底层秘密—Transformer原理解析",
+  "short_title": "Transformer原理与架构解析",
+  "account": "腾讯技术工程",
+  "author": "huaxing",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-12-03T05:04",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "看懂这  篇，你就能秒懂        LLM底层秘密—     Transformer原理解析\n\n腾讯技术⼯程   2025年12⽉3⽇   05:04⼴东229⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n作者：huaxing\n\n\n\n   本系列的⽂章由浅⼊深介绍LLM的基础知识，从⼤模型的使⽤，到原理解析，再到\n   LLM系统实战。 本⽂着重介绍LLM主流架构Transformer的原理，结合我近期阅读的⼏\n   本⼤模型原理书籍、浏览的相关⽂章做了深度总结+拓展阅读，希望能帮助⼤家理解\n   ⼤模型的原理。\n\n\n\n⽂末有礼（含腾讯视频⽉卡及深⼊浅出       LLM解析原版 PDF）\n\n\n      腾讯技术⼯程\n      腾讯技术官⽅号。腾讯技术创新、前沿领域发布解读平台。\n      690篇原创内容\n\n\n  公众号\n\n最近AI的发展实在是太快了，近期B站上AI⼆创视频、AI让西游记⾓⾊唱歌的视频很⽕，笔者\n也尝试做了简单复现，⽤银⾓⼤王唱个歌《奉命张狂》            ",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "大模型基础与推理优化",
+    "多模态与生成模型"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/看懂这篇，你就能秒懂LLM底层秘密—Transformer原理解析.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:38:58-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "a21717e641b6632cff238fb2d24f1b25180c39cc88c7a703c7aec12806f9f5b3",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "p6称句点不参与预测，p27却生成句号；普通标点token与特殊EOS不可混同。p20多头先后关系、p22把QK操作写求和/对应相乘，不能取代点积注意力公式。",
+        "p25文字声称GELU将输入映射到0—1，与该页曲线自身矛盾；4×48写92也错。已核页图22、25，错误在原文。",
+        "p28明确为模拟热图，按源词行归一而解码目标词的列未各和为1；不能据此证明模型真实关注或理解。已核页图28。",
+        "p16将self-attention与scaled-dot-product视为同义、p8将点积称距离、p17绝对数值敏感的说法都需限定；softmax对共同平移不变。",
+        "p3更深总更好、p12位置编码可处理任意长度、p31模型参数与p32TensorFlow被抛弃等不能照录为当前事实；架构规格和生态观点需官方核查。",
+        "p31模型比较与其他库内文章共同借鉴The Big LLM Architecture Comparison，不构成独立实验验证。翻译逐词说明是教学模拟；没有实际模型运行日志。",
+        "仅看页图5、22、25、28，图内公式、其他表格及模型规格未逐项核验。"
+      ],
+      "size_bytes": 20860089,
+      "page_count": 35
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:38:58-07:00",
+  "directory": "腾讯技术工程/Transformer原理与架构解析+25.12.3",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:38:58-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "a21717e641b6632cff238fb2d24f1b25180c39cc88c7a703c7aec12806f9f5b3",
+    "output_path": "MD.md",
+    "output_sha256": "a50adaf39f5c39305274d03e37b7054b6f88742a689c8e7a821ccfce7a871456",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 35,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "visual_pages": [
+        5,
+        22,
+        25,
+        28
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "p6称句点不参与预测，p27却生成句号；普通标点token与特殊EOS不可混同。p20多头先后关系、p22把QK操作写求和/对应相乘，不能取代点积注意力公式。",
+      "p25文字声称GELU将输入映射到0—1，与该页曲线自身矛盾；4×48写92也错。已核页图22、25，错误在原文。",
+      "p28明确为模拟热图，按源词行归一而解码目标词的列未各和为1；不能据此证明模型真实关注或理解。已核页图28。",
+      "p16将self-attention与scaled-dot-product视为同义、p8将点积称距离、p17绝对数值敏感的说法都需限定；softmax对共同平移不变。",
+      "p3更深总更好、p12位置编码可处理任意长度、p31模型参数与p32TensorFlow被抛弃等不能照录为当前事实；架构规格和生态观点需官方核查。",
+      "p31模型比较与其他库内文章共同借鉴The Big LLM Architecture Comparison，不构成独立实验验证。翻译逐词说明是教学模拟；没有实际模型运行日志。",
+      "仅看页图5、22、25、28，图内公式、其他表格及模型规格未逐项核验。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/看懂这篇，你就能秒懂LLM底层秘密—Transformer原理解析.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/Transformer原理与架构解析+25.12.3/RAW.pdf",
+    "sha256": "a21717e641b6632cff238fb2d24f1b25180c39cc88c7a703c7aec12806f9f5b3",
+    "copied_at": "2026-10-23T06:38:58-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

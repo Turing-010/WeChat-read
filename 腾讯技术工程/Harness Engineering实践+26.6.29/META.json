@@ -1,0 +1,531 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0147",
+  "title": "开启Harness Engineering探索之旅",
+  "short_title": "Harness Engineering实践",
+  "account": "腾讯技术工程",
+  "author": "fanniemeng",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-06-29T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Harness Engineering.pdf",
+      "original_filename": "Harness Engineering.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "11b6cb53cf9a78d8ad6361419417bfd3b2b09ee288a3211e7f41bf13e8172995",
+      "size_bytes": 5881259,
+      "page_count": 23,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "文章是团队实践探索，性能收益、可靠性变化未由本次独立复现。",
+          "pages": [
+            1,
+            14,
+            20
+          ],
+          "status": "pending_review"
+        }
+      ],
+      "publication_evidence": "PDF第1页日期与时间标注"
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "Agent评测与反馈",
+    "Agent长期记忆",
+    "Agent成本与上下文预算",
+    "Agent工程循环"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Harness Engineering实践+26.6.29",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Harness Engineering实践.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "开启 Harness  Engineering 探索之旅\n腾讯程序员 Jun  29 , 2026 , 2 : 36  AM广东原创 腾讯技术工程 216  listened\n作者: fanniemeng\n过去两年, AI Coding 从 \" 能写出能跑的代码 \" 走到 \" 能放手让它写一整段功能 \" 。但把这个能力\n放进真实业务、放进多人协作、放进存量系统里跑时我们发现一件怪事 ——AI 写得越快,整\n体节奏并没有同步加快。盘点下来,单看 \"AI 写出来的代码占比 \" 这个数字一路走高,可真正落\n到版本节奏上,提效却远没有这个数字好看。出码率和提效之间,裂开了一道缝。从  OpenAI\nCodex 团队那篇  Harness 工程博客里反复强调的一个观察 ——\" 早期进展比预期慢,并不是\n因为  Codex 不具备相应的能力,而是因为环境的规范不够明确 \"—— 开始,整个行业都在补同\n一件事:给模型搭一套能稳定干活的 \" 工作环境 \" 。这一层最近被业界命名为  Harness\nEngineering—— 它不是教模型怎么回答,而是设计模型怎么工作。  在这里,也分享下我们的\n探索之旅,是踩过的坑、做过的取舍、和到现在还没解决的问题。\n序章: Harness Engineering 是怎么 \" 结晶 \" 出来的\n0.1 先把话说清楚: Harness 到底是什么\nHarness Engineering 一句话能讲完:\n不是教模型 \" 怎么回答 \" ,而是设计模型 \" 怎么工作 \" 。\n用一个正在被广泛引用的等式表达就是:\nAgent = Model (模型) + Harness (模型外的运行框架)\n命名者  Mitchell Hashimoto 给出的定义更朴素,也更直指核心:\n\"It is the idea that anytime you find an agent makes a mistake, you take the time to engineer\na solution such that the agent never makes that mistake again.\"—— 每当你发现  Agent 犯了\n一个错,你就花时间在它外面工程化一个方案,让它永远不再犯同样的错。\n它把工程关注点从 \" 模型这一句说得对不对 \" ,挪到了 \" 模型这一整段活干得稳不稳 \" 。换个视角\n看,这其实是  AI 工程关注点连续迁移的第三站 ——\n",
+    "publication_evidence": "PDF第1页日期与时间标注",
+    "full_title_in_capture": "开启Harness Engineering探索之旅",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0147",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "11b6cb53cf9a78d8ad6361419417bfd3b2b09ee288a3211e7f41bf13e8172995"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "文章是团队实践探索，性能收益、可靠性变化未由本次独立复现。",
+        "pages": [
+          1,
+          14,
+          20
+        ],
+        "status": "pending_review"
+      }
+    ],
+    "outputs": [
+      "AI_Harness Engineering实践.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "detail_pages_reviewed": [
+        5,
+        6,
+        8,
+        9,
+        12,
+        14,
+        16,
+        17,
+        18,
+        20
+      ]
+    },
+    "coverage": "覆盖Harness定义、任务环境、执行与评审循环、状态恢复、记忆、成本和实践限制。",
+    "fact_checks": [
+      {
+        "topic": "定义",
+        "original_value": "Agent = Model + Harness",
+        "pages": [
+          1
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "演进阶段",
+        "original_value": "Prompt/Context/Harness关注点",
+        "pages": [
+          2
+        ],
+        "result": "与原文相符"
+      },
+      {
+        "topic": "任务流程",
+        "original_value": "P0–P6分层流程",
+        "pages": [
+          5
+        ],
+        "result": "图文相符"
+      },
+      {
+        "topic": "评审设计",
+        "original_value": "代码评审分层",
+        "pages": [
+          8
+        ],
+        "result": "图文相符"
+      },
+      {
+        "topic": "工程循环",
+        "original_value": "Plan→Work→Review→Compound",
+        "pages": [
+          14
+        ],
+        "result": "图文相符"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Harness Engineering实践.md",
+      "sha256": "4969eef219b537919ff797a71faaaee6eec899546c2b7c0e7e6de319546cda93"
+    },
+    "independent_crosscheck": {
+      "reviewer": "/root",
+      "note_sha256": "54a9cd4dd1fb1c157b2437119dac133cbb905f5afa3b6c552e163beb8e9b7dba",
+      "review_sha256": "a8b5fe1a8ba94e9bb14d3913d71c456303316c69b62db96fe7fad5a96690d932",
+      "status": "passed",
+      "changes": [
+        "Renamed heading to `## 复习卡片`; clarified the two thumbnail sheets cover pages 1–23."
+      ],
+      "source_spotchecks": [
+        "p.1 definition and publication date; p.2 prompt/context/harness distinction; p.5–8 phase pipeline and review rules; p.12 observability, p.14 Plan→Work→Review→Compound; p.20–21 reported limitations; p.22 promotion and p.23 comments visually checked."
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "11b6cb53cf9a78d8ad6361419417bfd3b2b09ee288a3211e7f41bf13e8172995"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "2c72cfeee5943395668bddbe35d07b692f77708b8d3d40ba0d9e0eec11751050"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 33,
+        "text_layer_sha256": "405501566b6f2c5e228e9f8e432c806e8ee58d42450e9c0cbbc883aaca3750c6",
+        "text_layer_char_count": 1044
+      },
+      {
+        "page": 2,
+        "md_start_line": 41,
+        "md_end_line": 64,
+        "text_layer_sha256": "209ed3ca07df7a099ec62cc98710467aa2de3b39f29a80df0872e913395d4138",
+        "text_layer_char_count": 1071
+      },
+      {
+        "page": 3,
+        "md_start_line": 72,
+        "md_end_line": 97,
+        "text_layer_sha256": "cd2e67af76e25952efd33952c25486da79a970d64dfc210ae847c8f8b6e4a95d",
+        "text_layer_char_count": 1077
+      },
+      {
+        "page": 4,
+        "md_start_line": 105,
+        "md_end_line": 117,
+        "text_layer_sha256": "0d344566daa0c3d300b235043211f5a1eef454acfa5ae7cd66c6003f06885e08",
+        "text_layer_char_count": 507
+      },
+      {
+        "page": 5,
+        "md_start_line": 125,
+        "md_end_line": 144,
+        "text_layer_sha256": "a95317a98a0077317435b1efaf710863b570aad4b00535721db354fb12c6c2b1",
+        "text_layer_char_count": 816
+      },
+      {
+        "page": 6,
+        "md_start_line": 152,
+        "md_end_line": 187,
+        "text_layer_sha256": "6b122b72dc598e1e2a30cff7f2dbc338fb9c9a3a22fa3ad4a915ea0bd7ef476d",
+        "text_layer_char_count": 1807
+      },
+      {
+        "page": 7,
+        "md_start_line": 195,
+        "md_end_line": 204,
+        "text_layer_sha256": "07d972035f763e2e810a23b9d693e50910946b21094321fb537ebe7fdf5b2959",
+        "text_layer_char_count": 491
+      },
+      {
+        "page": 8,
+        "md_start_line": 212,
+        "md_end_line": 238,
+        "text_layer_sha256": "f54c75ce9329422f85b9eb6006d70778927b055a35e8e6442caf2ec3ae9c264d",
+        "text_layer_char_count": 1140
+      },
+      {
+        "page": 9,
+        "md_start_line": 246,
+        "md_end_line": 273,
+        "text_layer_sha256": "1a8160d89b96fab7487a692921a10458c45ee10ae96a0e0bce4e75a846887095",
+        "text_layer_char_count": 1314
+      },
+      {
+        "page": 10,
+        "md_start_line": 281,
+        "md_end_line": 308,
+        "text_layer_sha256": "f3c3eb6b93f78df8404c3c5f626bd5dd6ed4c9b59e51f921ff15a3658b676342",
+        "text_layer_char_count": 1286
+      },
+      {
+        "page": 11,
+        "md_start_line": 316,
+        "md_end_line": 337,
+        "text_layer_sha256": "2ce8c66f30daaa9fb39c290d275239ef5cbebc8122294332e1862b0346c05626",
+        "text_layer_char_count": 851
+      },
+      {
+        "page": 12,
+        "md_start_line": 345,
+        "md_end_line": 390,
+        "text_layer_sha256": "841239338f6be66cd2f13b8ed44401579de87dfc2fd2999f8a5f3b1d1994f815",
+        "text_layer_char_count": 1418
+      },
+      {
+        "page": 13,
+        "md_start_line": 398,
+        "md_end_line": 408,
+        "text_layer_sha256": "205defae251f3b40700c4c3cbace5883ce7d29ffb3feb558d6ee373bf62ba8f1",
+        "text_layer_char_count": 393
+      },
+      {
+        "page": 14,
+        "md_start_line": 416,
+        "md_end_line": 435,
+        "text_layer_sha256": "4eb461a8c6465fa803b41bc5fe16e90cf20e1b54e252278caf70070368f920b9",
+        "text_layer_char_count": 788
+      },
+      {
+        "page": 15,
+        "md_start_line": 443,
+        "md_end_line": 471,
+        "text_layer_sha256": "99df147b932b55ad9488c5c506524f44f7cb6b17b24dd44e0943372c36a02eb7",
+        "text_layer_char_count": 1033
+      },
+      {
+        "page": 16,
+        "md_start_line": 479,
+        "md_end_line": 494,
+        "text_layer_sha256": "efb46b45baf67fd30d55d2b805a56d352cc2feb96ac4ad68b70ec34c33a56163",
+        "text_layer_char_count": 760
+      },
+      {
+        "page": 17,
+        "md_start_line": 502,
+        "md_end_line": 537,
+        "text_layer_sha256": "4f83f0da7dbff311bec1e3172b8034ad02d419d210d8d8f4e1b0bbd9738f10e8",
+        "text_layer_char_count": 1460
+      },
+      {
+        "page": 18,
+        "md_start_line": 545,
+        "md_end_line": 577,
+        "text_layer_sha256": "d7771dc24c146d28dee87598d715e8e4dbfede24e70c62c7ed52d26808169dbf",
+        "text_layer_char_count": 1273
+      },
+      {
+        "page": 19,
+        "md_start_line": 585,
+        "md_end_line": 617,
+        "text_layer_sha256": "447d081ad53cb865a7dba4f53d733261a0b67d7a4d92f925feb44eae8e3dcaa8",
+        "text_layer_char_count": 1122
+      },
+      {
+        "page": 20,
+        "md_start_line": 625,
+        "md_end_line": 655,
+        "text_layer_sha256": "404f3235b1a579cef53ad49482728b8a28e6521083d0c3c429233e4d28fa4ee3",
+        "text_layer_char_count": 1113
+      },
+      {
+        "page": 21,
+        "md_start_line": 663,
+        "md_end_line": 697,
+        "text_layer_sha256": "8ad656cb4cd52f250eea3cb45b01ce3623e838a61295593ef7fda28888f4b830",
+        "text_layer_char_count": 1414
+      },
+      {
+        "page": 22,
+        "md_start_line": 705,
+        "md_end_line": 718,
+        "text_layer_sha256": "af162a3eda02272ea4a1997c38567d1cbf2b69f65cc3e4425cca22fa15cb7914",
+        "text_layer_char_count": 476
+      },
+      {
+        "page": 23,
+        "md_start_line": 726,
+        "md_end_line": 733,
+        "text_layer_sha256": "a2774aae5413cc2390da886d7a4338ed17e80b4e2167b0494455aa04a8fc1697",
+        "text_layer_char_count": 77
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "detail_pages_reviewed": [
+        5,
+        6,
+        8,
+        9,
+        12,
+        14,
+        16,
+        17,
+        18,
+        20
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "文章是团队实践探索，性能收益、可靠性变化未由本次独立复现。",
+        "pages": [
+          1,
+          14,
+          20
+        ],
+        "status": "pending_review"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Harness Engineering.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "11b6cb53cf9a78d8ad6361419417bfd3b2b09ee288a3211e7f41bf13e8172995",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Harness Engineering实践.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

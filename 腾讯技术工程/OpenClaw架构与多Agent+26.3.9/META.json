@@ -1,0 +1,628 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0060",
+  "title": "玩转OpenClaw，你需要了解的：核心架构、运作原理、Agent部署步骤",
+  "short_title": "OpenClaw架构与多Agent",
+  "account": "腾讯技术工程",
+  "author": "冰以东",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-03-09T02:26",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0309 玩转OpenClaw核心架构部署.pdf",
+      "original_filename": "0309 玩转OpenClaw核心架构部署.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "8c044e705a07dfd51203943c5a4d4ff840db327344f9b10b79ee21f8bb0780eb",
+      "size_bytes": 6528961,
+      "page_count": 28,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.25整页空白，无法判断是否导出留白或原内容缺失；保留完整性待复核",
+          "pages": [
+            25
+          ],
+          "status": "unresolved"
+        },
+        {
+          "description": "源码/JSON包含省略号、截断签名、箭头标注或异常标点；按说明片段阅读，不声明可直接运行",
+          "pages": [
+            7,
+            8,
+            9,
+            14,
+            15,
+            16,
+            18
+          ],
+          "status": "retained"
+        },
+        {
+          "description": "callAgent示例未给对应工具实现，不将其推定为已定义API",
+          "pages": [
+            17
+          ],
+          "status": "unresolved"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区"
+    }
+  ],
+  "tags": [
+    "Agent长期记忆",
+    "Agent任务恢复",
+    "Harness与模型协同"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/OpenClaw架构与多Agent+26.3.9",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_OpenClaw架构与多Agent.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "玩转 OpenClaw ,你需要了解的:核心架构、运作原理、 Agent 部署\n步骤\n腾讯程序员 2026 年 3 月 9 日 02 : 26广东原创 腾讯技术工程 631 人\n作者:冰以东\n前言\n(一) OpenClaw 到底有什么不同?\n最近半年 AI 领域的产品层出不穷,在 OpenClaw 爆火之前比较类似的产品是 Claude 的 Happy( 一\n款 Claude code ssh 软件 ) 。\n喜欢使用 happy 的朋友经常问我的一句话是 :\"OpenClaw 那么好玩吗?跟 Happy 有什么区别? \"\n当初看到 OpenClaw 的功能之后我立马被吸引住,在面对这个问题后,我正好从抽象层面总结\n一下 OpenClaw 的优势所在。\n1 、 OpenClaw 技术框架不复杂,它的优势在于共识的推广\n作为程序员,为了让大家直观理解 OpenClaw 的项目架构强度。  在看完 OpenClaw 框架后,我\n先斗胆做个类比,大概说一下 OpenClaw 的技术难度:  大概就类似 AI Coding 诞生前,具备\n「初级推荐算法的前后端通信 App 」的难度。\n做过几年开发的同学都知道,这其实并不难,所以技术框架并不是 OpenClaw 的亮点。\nOpenClaw 的优势在于共识的推广,举个具体的例子,在没有 OpenClaw 之间,我们基本人手\n一个自己搭建的 Agent ,像我之前搭建的  L1~L5 5 层架构 Agent :\n建议有打算深入了解 OpenClaw 的同学优先看 OpenClaw 源码和官方文档,目前该项目正\n在高频迭代中。本文重点从核心框架、通信机制进行介绍,争取让你看完本文后知道\nOpenClaw 是怎么运作的,以及其能力边界在哪里。以及尤其希望大家注意的,是\nOpenClaw 的安全风险,如果选择部署 OpenClaw ,就按最坏的打算 ( 数据全 Open) 去对待\n自己机器上的数据。\n",
+    "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区",
+    "full_title_in_capture": "玩转OpenClaw，你需要了解的：核心架构、运作原理、Agent部署步骤",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0060",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "8c044e705a07dfd51203943c5a4d4ff840db327344f9b10b79ee21f8bb0780eb"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.25整页空白，无法判断是否导出留白或原内容缺失；保留完整性待复核",
+        "pages": [
+          25
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "源码/JSON包含省略号、截断签名、箭头标注或异常标点；按说明片段阅读，不声明可直接运行",
+        "pages": [
+          7,
+          8,
+          9,
+          14,
+          15,
+          16,
+          18
+        ],
+        "status": "retained"
+      },
+      {
+        "description": "callAgent示例未给对应工具实现，不将其推定为已定义API",
+        "pages": [
+          17
+        ],
+        "status": "unresolved"
+      }
+    ],
+    "outputs": [
+      "AI_OpenClaw架构与多Agent.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "detail_pages_reviewed": [
+        11,
+        14,
+        15,
+        25,
+        26
+      ]
+    },
+    "coverage": "覆盖部署条件、工作区与session生命周期、记忆图、两种通信、协作配置、技能快照、版本管理和七类应用；硬件价格与推广素材压缩，未抄录不可直接运行的源码截图。",
+    "fact_checks": [
+      {
+        "item": "健康探测",
+        "value": "60秒一次",
+        "pages": [
+          4
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "工作区文件",
+        "value": "8个核心文件",
+        "pages": [
+          7
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "记忆分块",
+        "value": "约400 token",
+        "pages": [
+          11
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "文件监听防抖",
+        "value": "1500ms",
+        "pages": [
+          11
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "会话监听条件",
+        "value": "deltaBytes > 100KB；deltaMessages > 50",
+        "pages": [
+          11
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "技能来源顺序",
+        "value": "workspace > shared > bundled",
+        "pages": [
+          18
+        ],
+        "result": "matches_pdf"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_OpenClaw架构与多Agent.md",
+      "sha256": "80b5e6638839731a0d90e729ac3b7da4f2fc088e7dc9ac0eb5d7a23c086e953e"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "8c044e705a07dfd51203943c5a4d4ff840db327344f9b10b79ee21f8bb0780eb"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "e294e661b24d848924250a95fd7e746a039d1347ab37e29f910d411c050a26ca"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 32,
+        "text_layer_sha256": "a12959589c770aa3fae896ce56f0271db5c069d784a2cf9e189478ea1a28e3ab",
+        "text_layer_char_count": 829
+      },
+      {
+        "page": 2,
+        "md_start_line": 40,
+        "md_end_line": 59,
+        "text_layer_sha256": "1765cf34d631174baa1b36aebd85a339637cc2bd33eae94e5bd0dc6396e1c508",
+        "text_layer_char_count": 736
+      },
+      {
+        "page": 3,
+        "md_start_line": 67,
+        "md_end_line": 96,
+        "text_layer_sha256": "13d84fc3765217f91bb63299e10314dd6641be7c5b236432c136d2195707eca2",
+        "text_layer_char_count": 926
+      },
+      {
+        "page": 4,
+        "md_start_line": 104,
+        "md_end_line": 132,
+        "text_layer_sha256": "e628f2903de371c390916837eb51b0c487b1b573f503e17a86a0489fdc300e47",
+        "text_layer_char_count": 978
+      },
+      {
+        "page": 5,
+        "md_start_line": 140,
+        "md_end_line": 166,
+        "text_layer_sha256": "a0dd99178b24aea2285cc3f53485d06a205e160e97876a04fa7bd29919a404b4",
+        "text_layer_char_count": 733
+      },
+      {
+        "page": 6,
+        "md_start_line": 174,
+        "md_end_line": 194,
+        "text_layer_sha256": "f86caaa6aeb0f7d1a2590f5ac81905fb7ddc73cec66a5b341084c7294a3f0974",
+        "text_layer_char_count": 733
+      },
+      {
+        "page": 7,
+        "md_start_line": 202,
+        "md_end_line": 233,
+        "text_layer_sha256": "e708a26c3f09ece2ac53c2d32c650d823d0ff3c36deaeb74d61e3f7bfefd403e",
+        "text_layer_char_count": 1203
+      },
+      {
+        "page": 8,
+        "md_start_line": 241,
+        "md_end_line": 273,
+        "text_layer_sha256": "299b38edf567a86207f2a556b4738738432a9781b55a3ed27db9c63ddbd156f1",
+        "text_layer_char_count": 895
+      },
+      {
+        "page": 9,
+        "md_start_line": 281,
+        "md_end_line": 307,
+        "text_layer_sha256": "6629d8c96a700124a4db5f5b2ca12fc301baeead3ca11b851df097330ce06789",
+        "text_layer_char_count": 907
+      },
+      {
+        "page": 10,
+        "md_start_line": 315,
+        "md_end_line": 340,
+        "text_layer_sha256": "984196b185ef4567985180071ac64e5c127763366ec0409a6fbe3ee112aa5cb9",
+        "text_layer_char_count": 865
+      },
+      {
+        "page": 11,
+        "md_start_line": 348,
+        "md_end_line": 352,
+        "text_layer_sha256": "7b94f61f777b7766e6d04fa215947c73e6ff22b0e7d106f396909b9400e16e8c",
+        "text_layer_char_count": 142
+      },
+      {
+        "page": 12,
+        "md_start_line": 360,
+        "md_end_line": 371,
+        "text_layer_sha256": "22fe208a78c335fce04527a097b0397130beb74694027cb788488726e3343340",
+        "text_layer_char_count": 419
+      },
+      {
+        "page": 13,
+        "md_start_line": 379,
+        "md_end_line": 399,
+        "text_layer_sha256": "234d3c62950f443e9792413ab3915c492d44f450974ce6d768b0434b3519d3c2",
+        "text_layer_char_count": 747
+      },
+      {
+        "page": 14,
+        "md_start_line": 407,
+        "md_end_line": 422,
+        "text_layer_sha256": "f53f6cf2458429c9c3f61b74a1127908c11bb7e9d72a3d6cb20a88acce219975",
+        "text_layer_char_count": 376
+      },
+      {
+        "page": 15,
+        "md_start_line": 430,
+        "md_end_line": 463,
+        "text_layer_sha256": "19c1b6149468b565a6c72aa8010fee61dc025343dd22f5c8fc26dba2bcc30fc3",
+        "text_layer_char_count": 1237
+      },
+      {
+        "page": 16,
+        "md_start_line": 471,
+        "md_end_line": 504,
+        "text_layer_sha256": "fa2cf917623da36fe429328ee9ec42e1237eed4e1c6c4d3deaa092b93e19df13",
+        "text_layer_char_count": 1301
+      },
+      {
+        "page": 17,
+        "md_start_line": 512,
+        "md_end_line": 538,
+        "text_layer_sha256": "54dea538c9a43da7bec27a1719d4f805fcb4672d5a56369848b29555f90ff050",
+        "text_layer_char_count": 860
+      },
+      {
+        "page": 18,
+        "md_start_line": 546,
+        "md_end_line": 575,
+        "text_layer_sha256": "14140fde2991b48c21cb5c43f88d96a1d8ff4154d67f37195e138e56fa3e8613",
+        "text_layer_char_count": 995
+      },
+      {
+        "page": 19,
+        "md_start_line": 583,
+        "md_end_line": 597,
+        "text_layer_sha256": "ba8e1e655acde28effd908122e7b8ce201f9c8c0184142b02819ccdaca2136fe",
+        "text_layer_char_count": 534
+      },
+      {
+        "page": 20,
+        "md_start_line": 605,
+        "md_end_line": 608,
+        "text_layer_sha256": "24aa97be4240f50cdbb5580ee50858dab1c12a82887dd72eb5e76d15b015b783",
+        "text_layer_char_count": 164
+      },
+      {
+        "page": 21,
+        "md_start_line": 616,
+        "md_end_line": 624,
+        "text_layer_sha256": "1cf4308483da1c8130ca3c61af83f6486c0d74035be51bf2997d8bd7de75cbe6",
+        "text_layer_char_count": 228
+      },
+      {
+        "page": 22,
+        "md_start_line": 632,
+        "md_end_line": 659,
+        "text_layer_sha256": "ec2bc2456dae684d7e21ebb698c1ea181a6b87b5da544b23b9faf79328c539be",
+        "text_layer_char_count": 827
+      },
+      {
+        "page": 23,
+        "md_start_line": 667,
+        "md_end_line": 684,
+        "text_layer_sha256": "7118b515b748ade464981b0bbf0b404bb2790a01290e17bcba1360517f1f7982",
+        "text_layer_char_count": 688
+      },
+      {
+        "page": 24,
+        "md_start_line": 692,
+        "md_end_line": 699,
+        "text_layer_sha256": "84c621827010570585d2d25eb20a4b0a0a53c1af9937257a64a547afc57b0dae",
+        "text_layer_char_count": 252
+      },
+      {
+        "page": 25,
+        "md_start_line": 707,
+        "md_end_line": 706,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 26,
+        "md_start_line": 714,
+        "md_end_line": 713,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 27,
+        "md_start_line": 721,
+        "md_end_line": 737,
+        "text_layer_sha256": "668fabe3b533d16306e5e1bc38b49839958be2d1a8d08810c3985a5eb142f3e4",
+        "text_layer_char_count": 488
+      },
+      {
+        "page": 28,
+        "md_start_line": 745,
+        "md_end_line": 748,
+        "text_layer_sha256": "d36baa250cb4d110de94d5670f5d3f0ecb9d4177ff6d518a8020c0a130430ca3",
+        "text_layer_char_count": 29
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "detail_pages_reviewed": [
+        11,
+        14,
+        15,
+        25,
+        26
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.25整页空白，无法判断是否导出留白或原内容缺失；保留完整性待复核",
+        "pages": [
+          25
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "源码/JSON包含省略号、截断签名、箭头标注或异常标点；按说明片段阅读，不声明可直接运行",
+        "pages": [
+          7,
+          8,
+          9,
+          14,
+          15,
+          16,
+          18
+        ],
+        "status": "retained"
+      },
+      {
+        "description": "callAgent示例未给对应工具实现，不将其推定为已定义API",
+        "pages": [
+          17
+        ],
+        "status": "unresolved"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0309 玩转OpenClaw核心架构部署.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "8c044e705a07dfd51203943c5a4d4ff840db327344f9b10b79ee21f8bb0780eb",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent成本与上下文预算.md",
+      "../../20_topics/Agent长期记忆.md",
+      "../../20_topics/Harness与模型协同.md",
+      "../../20_topics/Skill设计与治理.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_OpenClaw架构与多Agent.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

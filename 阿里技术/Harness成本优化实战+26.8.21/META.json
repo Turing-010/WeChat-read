@@ -1,0 +1,527 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0024",
+  "title": "Agent 终章（Harness 成本篇）：一次百炼账单降低 88% 实战",
+  "short_title": "Harness成本优化实战",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "景钊",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-21T03:18",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "page": 1,
+    "text": [
+      "Agent 终章（Harness 成本篇）：⼀次百炼账单降低 88% 实战",
+      "原创 景钊 阿⾥技术 2026年8⽉21⽇ 03:18 浙江 44⼈",
+      "这是2026年的第 54 篇⽂章",
+      "（ 本⽂阅读时间：约 20 分钟 ）",
+      "AI 编码半⼩时就可以完成⼀个 agent，但是⼀个没做过任何优化的 agent，跑⼀轮就是⼏⼗ M"
+    ]
+  },
+  "tags": [
+    "Harness与模型协同",
+    "Agent任务恢复",
+    "Agent成本与上下文预算"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/Agent 终章（Harness 成本篇）：一次百炼账单降低 88% 实战.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:37:19-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "ac870d77666ada33a94f5eef4599c3e9bb94045296ccb364179030b7efcf6313",
+      "size_bytes": 5600631,
+      "page_count": 19,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "p.5–10多处等宽示例右端超出版面被裁切；保留可读机制，不补齐截断代码或ASCII图。",
+          "pages": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "evidence_type": "image",
+          "classification": "cropped_code"
+        },
+        {
+          "description": "p.11显式表含首次创建0.000，“最低0.640”按创建后命中调用理解；不能称全部调用最低0.640。",
+          "pages": [
+            11
+          ],
+          "evidence_type": "text_and_image",
+          "classification": "scope_caveat"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:37:19-07:00",
+  "directory": "阿里技术/Harness成本优化实战+26.8.21",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Harness成本优化实战.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0024",
+    "created_at": "2026-10-13T02:37:19-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "ac870d77666ada33a94f5eef4599c3e9bb94045296ccb364179030b7efcf6313"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.5–10多处等宽示例右端超出版面被裁切；保留可读机制，不补齐截断代码或ASCII图。",
+        "pages": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "evidence_type": "image",
+        "classification": "cropped_code"
+      },
+      {
+        "description": "p.11显式表含首次创建0.000，“最低0.640”按创建后命中调用理解；不能称全部调用最低0.640。",
+        "pages": [
+          11
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "scope_caveat"
+      }
+    ],
+    "outputs": [
+      "AI_Harness成本优化实战.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [
+      {
+        "name": "Subagent委派与回传字段",
+        "pages": [
+          13,
+          14
+        ],
+        "completeness": "完整字段清单，非完整Prompt或Skill正文"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        5,
+        6,
+        9,
+        10,
+        11,
+        16
+      ]
+    },
+    "coverage": [
+      {
+        "name": "度量",
+        "pages": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "少发",
+        "pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "缓存",
+        "pages": [
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "思考与子Agent",
+        "pages": [
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Hook与模型路由",
+        "pages": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "name": "计费测算",
+        "pages": [
+          16,
+          17
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_Harness成本优化实战.md",
+      "sha256": "952dd58a59e2e5a754666fa6ea3fd500c293434ef363f70a48c892b5bac06025"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:37:19-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "ac870d77666ada33a94f5eef4599c3e9bb94045296ccb364179030b7efcf6313"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "52a25c7f9a36e85fdaf3d629f3ae67650aa0f4b27250dd1351b087b6d083e196"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 34,
+        "text_layer_sha256": "c5ce21f4bb58cb068fbbbad807c27e8bd2ecec0c46585d369ed8c79e2b7015ef",
+        "text_layer_char_count": 897
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 71,
+        "text_layer_sha256": "d1b80c28bb24e746333877ecdee14e481d655437f11204901968645833238435",
+        "text_layer_char_count": 1196
+      },
+      {
+        "page": 3,
+        "md_start_line": 79,
+        "md_end_line": 91,
+        "text_layer_sha256": "6bb9de4e810401f90b9f71ba9753dd88adc2d8d66aebe01166528cd452d92bd9",
+        "text_layer_char_count": 467
+      },
+      {
+        "page": 4,
+        "md_start_line": 99,
+        "md_end_line": 136,
+        "text_layer_sha256": "2523bd9da65b71dc84c697b1d61d2a7db81747e1efe56226d9feae0b81e45bc1",
+        "text_layer_char_count": 1605
+      },
+      {
+        "page": 5,
+        "md_start_line": 144,
+        "md_end_line": 180,
+        "text_layer_sha256": "b19812583dae0a3698ad24f4db092b8ee2a09d73db97ee64e1834d375fb846a2",
+        "text_layer_char_count": 1369
+      },
+      {
+        "page": 6,
+        "md_start_line": 188,
+        "md_end_line": 221,
+        "text_layer_sha256": "1415067e93bafe6d8292478063233271e2bf2849527659fe09349fde8d9e91ef",
+        "text_layer_char_count": 1344
+      },
+      {
+        "page": 7,
+        "md_start_line": 229,
+        "md_end_line": 263,
+        "text_layer_sha256": "a43c948f34cc3c453ba9ee4f2aceb0ead0a8b2464feaa163984cfcd855c65dbf",
+        "text_layer_char_count": 1544
+      },
+      {
+        "page": 8,
+        "md_start_line": 271,
+        "md_end_line": 308,
+        "text_layer_sha256": "867ca84b4bb27a78af168d6e946772e7c8e6064e2ec9cc2b05da7f63acfbed8a",
+        "text_layer_char_count": 1716
+      },
+      {
+        "page": 9,
+        "md_start_line": 316,
+        "md_end_line": 351,
+        "text_layer_sha256": "a3010da561872be6b418350d0ce837c7977e4ec41fdc95fac94a416ad9c07a0f",
+        "text_layer_char_count": 1521
+      },
+      {
+        "page": 10,
+        "md_start_line": 359,
+        "md_end_line": 391,
+        "text_layer_sha256": "fc4a41a810d54956eaf258fd2099f0f3bfe8820d0397bf8ecc71abb4e6888c1b",
+        "text_layer_char_count": 1253
+      },
+      {
+        "page": 11,
+        "md_start_line": 399,
+        "md_end_line": 433,
+        "text_layer_sha256": "fdb447b53776e53b35684d3edaa0fc886f739586ee7cabf25dda050ec0f885f0",
+        "text_layer_char_count": 1328
+      },
+      {
+        "page": 12,
+        "md_start_line": 441,
+        "md_end_line": 476,
+        "text_layer_sha256": "a52715d093ae95030df2d96b7426080adf655872d0e0238bacf1737081122133",
+        "text_layer_char_count": 1331
+      },
+      {
+        "page": 13,
+        "md_start_line": 484,
+        "md_end_line": 515,
+        "text_layer_sha256": "0f7746712aa24efccef496980db6310c6708172c42877deb9dfbf91947c52a18",
+        "text_layer_char_count": 1113
+      },
+      {
+        "page": 14,
+        "md_start_line": 523,
+        "md_end_line": 556,
+        "text_layer_sha256": "46a5a78cabda450fa886c85a03187dbdf4a6bef973c536544a1ce487e65ae7d6",
+        "text_layer_char_count": 1203
+      },
+      {
+        "page": 15,
+        "md_start_line": 564,
+        "md_end_line": 596,
+        "text_layer_sha256": "63c0098cb3c2673311facc32fd97d87258d60c26f421b7f77fb4449e01d767da",
+        "text_layer_char_count": 1179
+      },
+      {
+        "page": 16,
+        "md_start_line": 604,
+        "md_end_line": 634,
+        "text_layer_sha256": "4b1587414682518ceaacb5f1d4a4455ae9751790e3226f3c5ccd246d4effa966",
+        "text_layer_char_count": 1192
+      },
+      {
+        "page": 17,
+        "md_start_line": 642,
+        "md_end_line": 675,
+        "text_layer_sha256": "f15e932ec91d957a13a4c2310879dae23d7d23c1452b21c4b51ca09ec9c2a2b0",
+        "text_layer_char_count": 1370
+      },
+      {
+        "page": 18,
+        "md_start_line": 683,
+        "md_end_line": 699,
+        "text_layer_sha256": "3041520e9a1ae5fdf8d7b7519b07ed7f395cfd6b63920a80e805293a8f01a1a5",
+        "text_layer_char_count": 880
+      },
+      {
+        "page": 19,
+        "md_start_line": 707,
+        "md_end_line": 718,
+        "text_layer_sha256": "c3f1764effdf430e98035723c63d91b06c3c44c6b050fce729a93077e1ced011",
+        "text_layer_char_count": 118
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        5,
+        6,
+        9,
+        10,
+        11,
+        16
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.5–10多处等宽示例右端超出版面被裁切；保留可读机制，不补齐截断代码或ASCII图。",
+        "pages": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "evidence_type": "image",
+        "classification": "cropped_code"
+      },
+      {
+        "description": "p.11显式表含首次创建0.000，“最低0.640”按创建后命中调用理解；不能称全部调用最低0.640。",
+        "pages": [
+          11
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "scope_caveat"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent成本与上下文预算.md",
+      "../../20_topics/Harness与模型协同.md"
+    ],
+    "proposed_topics": [
+      "Harness与模型协同",
+      "Agent任务恢复",
+      "Agent评测与反馈"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:37:19-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/Agent 终章（Harness 成本篇）：一次百炼账单降低 88% 实战.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "ac870d77666ada33a94f5eef4599c3e9bb94045296ccb364179030b7efcf6313",
+        "copied_at": "2026-10-13T02:37:19-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  },
+  "publication_time_evidence": "2026年8月21日 03:18"
+}

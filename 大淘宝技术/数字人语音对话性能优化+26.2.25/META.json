@@ -1,0 +1,446 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0252",
+  "title": "AI真人数字人语音对话性能优化实践总结",
+  "short_title": "数字人语音对话性能优化",
+  "account": "大淘宝技术",
+  "author": "揽清",
+  "author_byline": "本文作者揽清，来自淘天集团-Meta技术团队。",
+  "source_url": null,
+  "published_at": "2026-02-25",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "Meta技术团队 2026年2月25日 01:37 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 16,
+      "text": "本文作者揽清，来自淘天集团-Meta技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "推荐系统与多模态评测",
+    "跨端开发与性能",
+    "操作系统与内存管理",
+    "异常监控与稳定性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/AI真人数字人语音对话性能优化实践总结.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T18:25:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "6ab0db53d096e4de5f8995426d253a7621f13c9b94ed60dfcebd2acfb96ad962",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.2, 10-11, 13-15含演示视频帧、架构流程图与实验对比截图（位于PDF图像层）；核心C++监控结构、AudioWindowQueue代码与31次请求毫秒级统计报表均在文本层完整收录。",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            11,
+            13,
+            14,
+            15
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 4906120,
+      "page_count": 17
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T18:25:00-07:00",
+  "directory": "大淘宝技术/数字人语音对话性能优化+26.2.25",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_数字人语音对话性能优化.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0252",
+    "created_at": "2026-10-20T18:25:00-07:00",
+    "updated_at": "2026-10-20T18:25:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "6ab0db53d096e4de5f8995426d253a7621f13c9b94ed60dfcebd2acfb96ad962"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "f776518337f96b434321fce0a49c6a6ae24ef96b4b5a9cde24097a7c4650470f"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.2, 10-11, 13-15含演示视频帧、架构流程图与实验对比截图（位于PDF图像层）；核心C++监控结构、AudioWindowQueue代码与31次请求毫秒级统计报表均在文本层完整收录。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          11,
+          13,
+          14,
+          15
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_数字人语音对话性能优化.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_数字人语音对话性能优化.md",
+      "sha256": "7bf6c55b23e9f5a5591929427d89a615c231d5231b0c63e46d40ec8fab4a5577"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T18:25:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "6ab0db53d096e4de5f8995426d253a7621f13c9b94ed60dfcebd2acfb96ad962"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "f776518337f96b434321fce0a49c6a6ae24ef96b4b5a9cde24097a7c4650470f"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 72,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 812,
+        "text_layer_sha256": "5810d9b66753292d23a28691448573909ee153de2d7531655ca2c15b3fdeebf8"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 114,
+        "md_start_line": 80,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 2,
+        "text_layer_char_count": 525,
+        "text_layer_sha256": "d9c784f7bac41f97bb233a24156316635450b61f7ed99e89a526103a9efe31be"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 155,
+        "md_start_line": 122,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 3,
+        "text_layer_char_count": 575,
+        "text_layer_sha256": "70953d21d21bc37a9d35c98d3d494cf14e3c1cdd6e227ecc75cfc9587fb4ab3e"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 317,
+        "md_start_line": 163,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 4,
+        "text_layer_char_count": 945,
+        "text_layer_sha256": "9ae427891b1ddc607fcd55a192db3181fb143d0682ed74fbcccc20483c5640b5"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 429,
+        "md_start_line": 325,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 5,
+        "text_layer_char_count": 598,
+        "text_layer_sha256": "36916e6c2713b765e218873cecda4e816b94eca604dfe84eee924c5a553dac5d"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 682,
+        "md_start_line": 437,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 6,
+        "text_layer_char_count": 1221,
+        "text_layer_sha256": "e30567927e64bde455b07befe205551580f31e796ffd92ab7894f12f53fc7fe1"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 833,
+        "md_start_line": 690,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 7,
+        "text_layer_char_count": 1055,
+        "text_layer_sha256": "fe6d3ff1b53ef362387e108424191637ed53197569df9ba319cd475c2342ac3b"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 938,
+        "md_start_line": 841,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 8,
+        "text_layer_char_count": 1034,
+        "text_layer_sha256": "9805c4b5941c5cb8a8f50a31a9eae3bb96e4942bf960c7ba4cd8338beaeba383"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1036,
+        "md_start_line": 946,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 9,
+        "text_layer_char_count": 1008,
+        "text_layer_sha256": "363db89ef9e86c2299aac9339c3f48542327034b887448233411bdeccd50afa0"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1056,
+        "md_start_line": 1044,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 10,
+        "text_layer_char_count": 59,
+        "text_layer_sha256": "f8dc45d66e9a2582bd8d80fa16cc0c8216abe8c6459443cd13a94d87dc3e439c"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 1066,
+        "md_start_line": 1064,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 11,
+        "text_layer_char_count": 0,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 1168,
+        "md_start_line": 1074,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 12,
+        "text_layer_char_count": 1280,
+        "text_layer_sha256": "e1aceb22e38343daa7276142feff0693dbb45b06537ee30253bd5fcf28fcfa6b"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 1204,
+        "md_start_line": 1176,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 13,
+        "text_layer_char_count": 343,
+        "text_layer_sha256": "501f633ac59ab73177cf9a6e9956f74acef5dfc41e34244c700eab39cc3f91f6"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 1241,
+        "md_start_line": 1212,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 14,
+        "text_layer_char_count": 392,
+        "text_layer_sha256": "26ded48c665a0108ab76f0e09ad745194b094151916b909e62e4ff3369416285"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 1282,
+        "md_start_line": 1249,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 15,
+        "text_layer_char_count": 369,
+        "text_layer_sha256": "2fc6bce96d523cd57368819df223dafad4f0172282f6b2fee74213b94e2b5f00"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1331,
+        "md_start_line": 1290,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 16,
+        "text_layer_char_count": 787,
+        "text_layer_sha256": "ba60f2f379c231e800ae5450f9c5b430e8cca39e102e47c39cb0695d21fdc0da"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1346,
+        "md_start_line": 1339,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 17,
+        "text_layer_char_count": 45,
+        "text_layer_sha256": "26e6da039683cd6b1555e0f0478a07619fa1b99896ad16ba5bfddae086df18af"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.2, 10-11, 13-15含演示视频帧、架构流程图与实验对比截图（位于PDF图像层）；核心C++监控结构、AudioWindowQueue代码与31次请求毫秒级统计报表均在文本层完整收录。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          11,
+          13,
+          14,
+          15
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/跨端开发与性能.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T18:25:00-07:00",
+    "removed_at": "2026-10-20T18:25:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI真人数字人语音对话性能优化实践总结.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "6ab0db53d096e4de5f8995426d253a7621f13c9b94ed60dfcebd2acfb96ad962",
+        "copied_at": "2026-10-20T18:25:00-07:00",
+        "removed_at": "2026-10-20T18:25:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_数字人语音对话性能优化.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

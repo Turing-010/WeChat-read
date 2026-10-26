@@ -1,0 +1,422 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0028",
+  "title": "Qoder CLI 上运行 Qwen3.8-Max：5 个硬核任务实测",
+  "short_title": "Qoder长程任务实测",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "陈成",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-12T03:18",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "Aug 12, 2026, 3:18 AM",
+  "published_timezone": null,
+  "identity_evidence": "p.1“陈成 阿里技术 Aug 12, 2026, 3:18 AM 浙江”，解析为2026-08-12，不猜时区",
+  "tags": [
+    "Agent评测与反馈"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/Qoder CLI 上运行 Qwen3.8-Max：5 个硬核任务实测.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:47:41-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "bed159bd33804170e23dd2347bcfca5ee409256bb6bf8c93f3a3dac85d7a14ae",
+      "size_bytes": 5443554,
+      "page_count": 12,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "动态视频与音频仅有静态封面/截图，无法独立验证播放和交互行为",
+          "pages": [
+            2,
+            7,
+            8,
+            9,
+            10
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "捕获限制"
+        },
+        {
+          "description": "chiptune图8位置仅保留图题，PDF未提供播放画面对照图",
+          "pages": [
+            8
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "材料缺失"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:47:41-07:00",
+  "directory": "阿里技术/Qoder长程任务实测+26.8.12",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Qoder长程任务实测.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0028",
+    "created_at": "2026-10-13T02:47:41-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "bed159bd33804170e23dd2347bcfca5ee409256bb6bf8c93f3a3dac85d7a14ae"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "动态视频与音频仅有静态封面/截图，无法独立验证播放和交互行为",
+        "pages": [
+          2,
+          7,
+          8,
+          9,
+          10
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "捕获限制"
+      },
+      {
+        "description": "chiptune图8位置仅保留图题，PDF未提供播放画面对照图",
+        "pages": [
+          8
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "材料缺失"
+      }
+    ],
+    "outputs": [
+      "AI_Qoder长程任务实测.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [
+      {
+        "kind": "Prompt题目摘要",
+        "complete": false,
+        "pages": [
+          2,
+          3,
+          8
+        ],
+        "scope": "PDF为题目摘要，完整Prompt仅仓库提及，未取得"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        1,
+        4,
+        8,
+        9
+      ]
+    },
+    "coverage": [
+      {
+        "name": "共用Harness与条件",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "name": "三维古画",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Rust KV",
+        "pages": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "四类前端设计",
+        "pages": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "OpenAlex证据分析",
+        "pages": [
+          8,
+          9
+        ]
+      },
+      {
+        "name": "叙事动画与结论",
+        "pages": [
+          9,
+          10
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_Qoder长程任务实测.md",
+      "sha256": "8648b78f1bcc5f2ed1efed53aad4dc82c4ab5f295422519019fe7f660ab65408"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:47:41-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "bed159bd33804170e23dd2347bcfca5ee409256bb6bf8c93f3a3dac85d7a14ae"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "9aa615bdabd54393d02a9db5b1330967ed177518c252eded558c345d7246e6d5"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 32,
+        "text_layer_sha256": "e2fdf472cff622cf000fe8e2112eaaf15ffa4d01832c711f8f59feec2f5c8f5f",
+        "text_layer_char_count": 716
+      },
+      {
+        "page": 2,
+        "md_start_line": 40,
+        "md_end_line": 63,
+        "text_layer_sha256": "995f170b6f6e42be62b1e7dab5a878539f4e3b0550b35f7586dab0725f8bc45b",
+        "text_layer_char_count": 908
+      },
+      {
+        "page": 3,
+        "md_start_line": 71,
+        "md_end_line": 94,
+        "text_layer_sha256": "0e9b209f24b709e4dc033c4902ddcf1d96bab51498a6f8d61dcf40e0179c3a07",
+        "text_layer_char_count": 655
+      },
+      {
+        "page": 4,
+        "md_start_line": 102,
+        "md_end_line": 126,
+        "text_layer_sha256": "d39b0af4e8567dfbddc48f80a51fb0f0a488f6ef7caceb2a6e0c662cd5b96ca3",
+        "text_layer_char_count": 1145
+      },
+      {
+        "page": 5,
+        "md_start_line": 134,
+        "md_end_line": 148,
+        "text_layer_sha256": "dad70efbbbc54b9d4e8d2b32bd06929b47e1ad2bde5863c603a8ca10e46f7d53",
+        "text_layer_char_count": 450
+      },
+      {
+        "page": 6,
+        "md_start_line": 156,
+        "md_end_line": 167,
+        "text_layer_sha256": "bf5b731f683d9182b825bb31f63b8366d4943396a6d94cf8aa423d4cae1d7551",
+        "text_layer_char_count": 304
+      },
+      {
+        "page": 7,
+        "md_start_line": 175,
+        "md_end_line": 184,
+        "text_layer_sha256": "61f6d53038c049600f6a5d9ac7ecc76f201389b4e9a8bab52ca1b51fb802e95c",
+        "text_layer_char_count": 256
+      },
+      {
+        "page": 8,
+        "md_start_line": 192,
+        "md_end_line": 211,
+        "text_layer_sha256": "0ec88a008347852d8856f4edd775cf040639b49ab37b618f34d55c0c052beaf9",
+        "text_layer_char_count": 680
+      },
+      {
+        "page": 9,
+        "md_start_line": 219,
+        "md_end_line": 237,
+        "text_layer_sha256": "38a98874456839c270d7b03c4442588de3ae91146676c36c6f69b31413426bd7",
+        "text_layer_char_count": 674
+      },
+      {
+        "page": 10,
+        "md_start_line": 245,
+        "md_end_line": 270,
+        "text_layer_sha256": "00bd6705665d24aae7fe04ec868f652317ed40ed3b4afbddaa323f27c4e198de",
+        "text_layer_char_count": 798
+      },
+      {
+        "page": 11,
+        "md_start_line": 278,
+        "md_end_line": 282,
+        "text_layer_sha256": "98e9afb0fc208a8a44a6f15a57c280bf2cb74bac7633b74c3ddc2612366aa2e7",
+        "text_layer_char_count": 37
+      },
+      {
+        "page": 12,
+        "md_start_line": 290,
+        "md_end_line": 290,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        1,
+        4,
+        8,
+        9
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "动态视频与音频仅有静态封面/截图，无法独立验证播放和交互行为",
+        "pages": [
+          2,
+          7,
+          8,
+          9,
+          10
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "捕获限制"
+      },
+      {
+        "description": "chiptune图8位置仅保留图题，PDF未提供播放画面对照图",
+        "pages": [
+          8
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "材料缺失"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent评测与反馈.md",
+      "../../20_topics/Harness与模型协同.md"
+    ],
+    "proposed_topics": [
+      "Harness与模型协同",
+      "Agent评测与反馈",
+      "Agent数据分析"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:47:41-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/Qoder CLI 上运行 Qwen3.8-Max：5 个硬核任务实测.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "bed159bd33804170e23dd2347bcfca5ee409256bb6bf8c93f3a3dac85d7a14ae",
+        "copied_at": "2026-10-13T02:47:41-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

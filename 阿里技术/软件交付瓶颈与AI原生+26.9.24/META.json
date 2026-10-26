@@ -1,0 +1,394 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0036",
+  "title": "代码生成越来越快，软件交付真正的瓶颈转向了哪里？",
+  "short_title": "软件交付瓶颈与AI原生",
+  "account": "阿里技术",
+  "source_account": "机器之心",
+  "author": "机器之心",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-09-24T03:02",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "2026年9月24日 03:02",
+  "published_timezone": null,
+  "identity_evidence": "p.1署名“机器之心 阿里技术 2026年9月24日 03:02 浙江”；仅按实际署名记录来源，不推个人作者",
+  "tags": [
+    "AI研发协同"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/代码生成越来越快，软件交付真正的瓶颈转向了哪里？.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:54:19-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "d02b02aea2260a052104522fedfa27c9dc9e40d1585ca0c66af3e9f8b087a5c3",
+      "size_bytes": 12202507,
+      "page_count": 10,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "各团队数据来自现场分享，统计对象不同，不直接横向比较",
+          "pages": [
+            1
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "原文统计边界"
+        },
+        {
+          "description": "编码1小时/交付21天案例原文明示非真实项目数据",
+          "pages": [
+            2
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "示例性质"
+        },
+        {
+          "description": "p.4现场演示右侧内容被照片构图截断，未补不可见部分",
+          "pages": [
+            4
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "版面裁切"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:54:19-07:00",
+  "directory": "阿里技术/软件交付瓶颈与AI原生+26.9.24",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_软件交付瓶颈与AI原生.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0036",
+    "created_at": "2026-10-13T02:54:19-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "d02b02aea2260a052104522fedfa27c9dc9e40d1585ca0c66af3e9f8b087a5c3"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "各团队数据来自现场分享，统计对象不同，不直接横向比较",
+        "pages": [
+          1
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文统计边界"
+      },
+      {
+        "description": "编码1小时/交付21天案例原文明示非真实项目数据",
+        "pages": [
+          2
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "示例性质"
+      },
+      {
+        "description": "p.4现场演示右侧内容被照片构图截断，未补不可见部分",
+        "pages": [
+          4
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "版面裁切"
+      }
+    ],
+    "outputs": [
+      "AI_软件交付瓶颈与AI原生.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        4,
+        5,
+        7
+      ]
+    },
+    "coverage": [
+      {
+        "name": "论坛与统计边界",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "name": "企业基础设施与事实",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "name": "上下文验证与沙箱",
+        "pages": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "需求入口与组织",
+        "pages": [
+          5,
+          6
+        ]
+      },
+      {
+        "name": "可驾驭性与内容生产",
+        "pages": [
+          6,
+          7,
+          8
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_软件交付瓶颈与AI原生.md",
+      "sha256": "c2f3cc42a05a8ce2e9962eb172f5333129ae4057ace60633580f6382859349d7"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:54:19-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "d02b02aea2260a052104522fedfa27c9dc9e40d1585ca0c66af3e9f8b087a5c3"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "1ca6d5c8fa2975a22411644834dd9955d344e6ad3a7a5f4b2cb0bb0dfb2a65ee"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 29,
+        "text_layer_sha256": "1f92aac4090b979151b41a85ad8fecd5ad43253ddcdcf7e19cfb54c673d28713",
+        "text_layer_char_count": 617
+      },
+      {
+        "page": 2,
+        "md_start_line": 37,
+        "md_end_line": 57,
+        "text_layer_sha256": "22527ec213592ad31c6f2fc5f854cb2af66d1bcc63f8b966d9622fed2dee0954",
+        "text_layer_char_count": 770
+      },
+      {
+        "page": 3,
+        "md_start_line": 65,
+        "md_end_line": 85,
+        "text_layer_sha256": "e47c4c3813a442335d2398242c745a98f0da6f5d1b0874928c42bdddabbeb2fd",
+        "text_layer_char_count": 769
+      },
+      {
+        "page": 4,
+        "md_start_line": 93,
+        "md_end_line": 109,
+        "text_layer_sha256": "b8d99ce28e264b191628a968ba90fa9dc30c5d41e0db198dad5c3ca695ca4b7e",
+        "text_layer_char_count": 545
+      },
+      {
+        "page": 5,
+        "md_start_line": 117,
+        "md_end_line": 131,
+        "text_layer_sha256": "bd047a73035f5c26d96b91e26264e21a7e2a5dbf494f8909cfc40f76d8102fb7",
+        "text_layer_char_count": 530
+      },
+      {
+        "page": 6,
+        "md_start_line": 139,
+        "md_end_line": 149,
+        "text_layer_sha256": "a759f25380ebe2811b68a1a2972c95445f71602358862cf338e2509253d684e3",
+        "text_layer_char_count": 351
+      },
+      {
+        "page": 7,
+        "md_start_line": 157,
+        "md_end_line": 167,
+        "text_layer_sha256": "a1cc14dbf17bcdfef2341800bb4cb4ba7c1cb6e868f89fe89191d5c20e480c78",
+        "text_layer_char_count": 320
+      },
+      {
+        "page": 8,
+        "md_start_line": 175,
+        "md_end_line": 192,
+        "text_layer_sha256": "c2fd79becf6346a3d649c8f08e4d7230d44a098b670424226da8ee9ff174b0de",
+        "text_layer_char_count": 667
+      },
+      {
+        "page": 9,
+        "md_start_line": 200,
+        "md_end_line": 207,
+        "text_layer_sha256": "4c56dc1061dee3b6e177f5177e5967deea80f8e6c7487adbc89df83424d49239",
+        "text_layer_char_count": 124
+      },
+      {
+        "page": 10,
+        "md_start_line": 215,
+        "md_end_line": 215,
+        "text_layer_sha256": "4d8cde442345c47ff6a1189defa2fdb2889794ffe4cc5541e2b9400280c157fc",
+        "text_layer_char_count": 10
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        4,
+        5,
+        7
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "各团队数据来自现场分享，统计对象不同，不直接横向比较",
+        "pages": [
+          1
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文统计边界"
+      },
+      {
+        "description": "编码1小时/交付21天案例原文明示非真实项目数据",
+        "pages": [
+          2
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "示例性质"
+      },
+      {
+        "description": "p.4现场演示右侧内容被照片构图截断，未补不可见部分",
+        "pages": [
+          4
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "版面裁切"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "proposed_topics": [
+      "AI研发协同",
+      "Harness与模型协同",
+      "决策知识结构化"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:54:19-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/代码生成越来越快，软件交付真正的瓶颈转向了哪里？.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "d02b02aea2260a052104522fedfa27c9dc9e40d1585ca0c66af3e9f8b087a5c3",
+        "copied_at": "2026-10-13T02:54:19-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

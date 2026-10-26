@@ -1,0 +1,298 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0083",
+  "title": "腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升",
+  "short_title": "混元Hy3发布",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-04-23T02:51",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0423 Tencent HY3 Preview.pdf",
+      "original_filename": "0423 Tencent HY3 Preview.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "034eea66379f84972c8b1f3a56d5226e736e1c01187ba3e7282d5dd572c74a5f",
+      "size_bytes": 1621896,
+      "page_count": 4,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "成功率分母、完整评测设置与部分相对提升口径未说明；“无幻觉”等仅保留特定场景发布方陈述。",
+          "pages": [
+            2,
+            3
+          ],
+          "status": "source_limitation"
+        }
+      ],
+      "publication_evidence": "PDF p.1 可见 2026-04-23T02:51"
+    }
+  ],
+  "tags": [
+    "模型与开发工具发布",
+    "Harness与模型协同",
+    "Agent评测与反馈"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/混元Hy3发布+26.4.23",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_混元Hy3发布.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "腾讯混元新里程碑: Hy3  preview  发布开源, Agent  表现全面提升\n2026 年 4 月 23 日 02 : 51广东腾讯技术工程 24 人\n4 月  23 日,腾讯混元 Hy3 preview  语言模型发布并开源。这是一个快慢思考融合的混合专家模\n型,总参数 295B ,激活参数  21B ,最大支持  256K 上下文长度。这是混元重建后训练的第一个\n模型,也是混元迄今最智能的模型,在复杂推理、指令遵循、上下文学习、代码、智能体等能力\n及推理性能上实现了大幅的提升。\n2026 年 2 月,腾讯混元重建了预训练和强化学习的基础设施,以及模型追求实用性的三个原则:\n1 、能力体系化:不推崇“ 偏科 ” ,因为即使是代码智能体的单一应用,也涉及推理、长文、指\n令、对话、代码、工具等多种能力的深度协同。\n2 、评测真实性:主动跳出易被“ 刷榜 ” 的公开榜单,通过自建题目、最新考试、人工评测、产品\n众测等多种方式评估和改进模型的“ 真实战斗力 ” 。\n3 、性价比追求:实用性离不开商业合理性,深度协同模型架构和推理框架的设计,大幅降低任\n务成本,让智能用得起、用得好。\nHy3 preview 可以视为混元快速探索实用性大模型、解决真实世界问题的一个开端。\n腾讯首席AI 科学家姚顺雨表示, Hy3 preview 是混元大模型重建的第一步。我们希望通过这次开\n源和发布,获得来自开源社区和用户的真实反馈,帮助我们提升  Hy3 正式版的实用性。与此同\n时,我们也在继续扩大预训练和强化学习的规模,提升模型的智能上限,并通过与腾讯众多产品\n的深度Co-Design ,持续提升模型在真实场景中的综合表现,并开始探索特色模型能力。\n目前,Hy3 preview 已在腾讯云、元宝、ima 、 CodeBuddy 、 WorkBuddy 、 QQ 、 QQ 浏览器、\n腾讯文档、腾讯乐享等首发上线,微信公众号、和平精英、腾讯新闻、腾讯自选股、腾讯客服、\n微信读书等多个主线产品也在陆续上线。另外,Hy3 preview 支持接入流行的开源智能体产品,\n如  OpenClaw 、 OpenCode 、 KiloCode 等,并已上架腾讯云大模型服务平台  TokenHub 。\nHy3 preview 主打全面实用性, Agent 能力大幅提升\n多个测评结果显示,Hy3 preview 模型能力全面提升。\n1、出色的上下文学习和指令遵循能力\n",
+    "publication_evidence": "PDF p.1 可见 2026-04-23T02:51",
+    "full_title_in_capture": "腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0083",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "034eea66379f84972c8b1f3a56d5226e736e1c01187ba3e7282d5dd572c74a5f"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "成功率分母、完整评测设置与部分相对提升口径未说明；“无幻觉”等仅保留特定场景发布方陈述。",
+        "pages": [
+          2,
+          3
+        ],
+        "status": "source_limitation"
+      }
+    ],
+    "outputs": [
+      "AI_混元Hy3发布.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3
+      ]
+    },
+    "coverage": "覆盖模型规格、实用性原则、评测入口、产品协同、延迟/成功率和历史价格；推广与留言省略",
+    "fact_checks": [
+      {
+        "item": "总参数",
+        "value": "295B",
+        "pages": [
+          1
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "激活参数",
+        "value": "21B",
+        "pages": [
+          1
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "上下文",
+        "value": "最大256K",
+        "pages": [
+          1
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "首token延迟",
+        "value": "降低54%",
+        "pages": [
+          2
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "端到端时长",
+        "value": "降低47%",
+        "pages": [
+          2
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "最长Agent流程",
+        "value": "495步",
+        "pages": [
+          2
+        ],
+        "result": "核对原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_混元Hy3发布.md",
+      "sha256": "4ae259b067eb6970cadbf7da488c92309c94c1b546c4f0b8246b9b63c4025069"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "034eea66379f84972c8b1f3a56d5226e736e1c01187ba3e7282d5dd572c74a5f"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "e866badbf89fff65a29c112b7344e2fd3553e787ce17b5c94a8d033873bc9f9e"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 34,
+        "text_layer_sha256": "fd9d6a2a7f54c3933b8997b7f8471717e2b8b91041e2645c68919db4f53ec303",
+        "text_layer_char_count": 1036
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 73,
+        "text_layer_sha256": "039fac48d2b22e62e1e117c98af690b54f0c14d5811e7d06712ab7f9e8b1183b",
+        "text_layer_char_count": 1381
+      },
+      {
+        "page": 3,
+        "md_start_line": 81,
+        "md_end_line": 105,
+        "text_layer_sha256": "23e07f53bc5ac673407de83e58d4d3eecc5acd4e53acf8bba5fcca7958e19120",
+        "text_layer_char_count": 1100
+      },
+      {
+        "page": 4,
+        "md_start_line": 113,
+        "md_end_line": 116,
+        "text_layer_sha256": "c313c323f0d0759f85bc7e7de9f33c911151fe8091fa52cae6e5f271f1685dca",
+        "text_layer_char_count": 26
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "成功率分母、完整评测设置与部分相对提升口径未说明；“无幻觉”等仅保留特定场景发布方陈述。",
+        "pages": [
+          2,
+          3
+        ],
+        "status": "source_limitation"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0423 Tencent HY3 Preview.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "034eea66379f84972c8b1f3a56d5226e736e1c01187ba3e7282d5dd572c74a5f",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/模型与开发工具发布.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_混元Hy3发布.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

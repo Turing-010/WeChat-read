@@ -1,0 +1,816 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0008",
+  "title": "错误码排查从 3～8 小时到分钟级，Agent怎么做到的？",
+  "account": "腾讯技术工程",
+  "author": "careylu",
+  "source_url": null,
+  "published_at": "2026-09-23T02:30",
+  "tags": [
+    "Agent工程",
+    "Skill",
+    "故障排查",
+    "Agent评测与反馈",
+    "异常监控与稳定性",
+    "Agent长期记忆",
+    "决策方法"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/错误码排查从 3～8 小时到分钟级，Agent怎么做到的？.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-04T00:59:35-07:00",
+      "provenance": "本次由00_inbox复制归档的本地PDF；原始采集方式和时间未知",
+      "sha256": "da48b5daab2ce87443edf0ef90f09d7e2e72d5d0305af1a177b5e7ed8016c42e",
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "PDF原文地址、采集时间和显示时间的时区未确认；外部事实及在线原文一致性未核查。",
+          "verification_status": "unverified",
+          "pages": []
+        },
+        {
+          "description": "渲染页面可见图片加载占位区，缺失内容无法从当前PDF恢复。",
+          "verification_status": "visually_observed",
+          "pages": [
+            3,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "description": "文章所述原始规则附件／完整Skill包未随PDF提供；提炼限于正文可见内容。",
+          "verification_status": "missing_attachment",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "size_bytes": 2861687,
+      "page_count": 13
+    },
+    {
+      "capture_id": "capture-002",
+      "path": "RAW_补采001.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/错误码排查从 3～8 小时到分钟级，Agent怎么做到的？.pdf",
+      "original_filename": "错误码排查从 3～8 小时到分钟级，Agent怎么做到的？.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "8a30ce3f00f289071928cbe1606405da63c307fba5446bca6edb164f8fd741da",
+      "size_bytes": 5047191,
+      "page_count": 11,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "文章中的线上效果和评测数据未独立核验；50条case不能说明未见错误码的泛化能力。",
+          "pages": [
+            7,
+            8,
+            9
+          ],
+          "status": "pending_review"
+        }
+      ],
+      "publication_evidence": "PDF第1页日期与时间标注"
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-04T00:59:35-07:00",
+  "author_byline": "careylu，AI Agent开发工程师",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "错误码排查从 3 ~ 8  小时到分钟级, Agent 怎么做到的?\n腾讯程序员 Sep  23 , 2026 , 2 : 30  AM广东原创 腾讯技术工程 94  listened\n作者:careylu , AI Agent 开发工程师\nSRE 每天面对去重后数百个错误码告警: retcode 含义不清、调用链难追、运行时证据分\n散。人工排查一个错误码需要  3 ~ 8 小时不等,大量时间花在跨系统检索和上下文拼凑上,\n推给开发后往往还要再查一遍。\n我们基于智能体编排平台搭建了错误码治理  Agent :将知识库、代码关系图谱、可观测平台\n数据和代码托管平台四类能力挂载到同一个  Agent ,由它自主编排排查流程,分钟级产出根\n因分析和修复建议。在  50 条  case 对比中,优化后的  action_type 与人工标注一致率从\n66% 提升到  88% ,硬冲突率从  20% 降至  0% 。\n这篇文章重点分享三个实践:如何组织多源证据、如何让⻓链路排查稳定产出,以及如何用\n案例和回归评测持续迭代  Skill 。\n一、从告警搬运到修复建议审核\n过去的治理链路是:告警推送给  SRE → 查文档、代码和日志  → 转给开发  → 开发再次排查\n→ 修复。难点不只是告警多,而是证据分散,单独查到其中一部分仍然无法确认根因。\n排查瓶颈 需要补⻬的信息\n错误码只是一个数字 错误码含义、业务规则、服务职责\n不知道在哪个仓库抛出 仓库映射、 handler 、上下游调用关系\n静态代码不能说明现场情况 错误日志、 trace 、实际耗时与链路\n只能转述现象 代码位置、根因分类、可执行的修复动作\n我们的目标是让  Agent 完成根因分析和修复建议, SRE 审核后再推送: high 置信度标注 “ 建\n议采纳 ” , medium 标注 “ 参考,需确认 ” , low 仅归档, P0/P1 例外推送。开发收到的不再只\n是 “ 这个错误码今天出现了  X 次 ” ,而是带证据和代码位置的排查结论。\n让  SRE 从 “ 告警搬运工 ” 升级为 “ 修复建议审核员 ” 。\n",
+    "publication_evidence": "PDF第1页日期与时间标注",
+    "full_title_in_capture": "错误码排查从3～8小时到分钟级，Agent怎么做到的？",
+    "identity_comparison": "same title/account/author/publication date and corresponding content; preserve permanent article ID"
+  },
+  "deduplication": {
+    "compared_article_ids": [
+      "art-0001",
+      "art-0002",
+      "art-0003",
+      "art-0004",
+      "art-0005",
+      "art-0006",
+      "art-0007"
+    ],
+    "compared_batch_sha256": [
+      "07b21eb800753fa51f86866bbd7f8d00504cb83d7f060b793f3d4fc32f34e9cc",
+      "da1f13f9d535340c5a47fa4569a8ec23a534363ecacf874aed9ff488888b6101",
+      "af7c929e1ad84758e890d53444ca14569755bf90822baf53415ed45d1a90c13d",
+      "ee6e81186109f2392b01022aa6c057b64aa52e4da17e6c4d1166e13982cfd4bb",
+      "fddcc0be82979dc2978d57059e5cf05704968fc67c472090a9deb9354aae92a8",
+      "7639af2660ba29f38667e80f54d51b94703d79c1f02b7b08be680ca911b9ef04",
+      "da48b5daab2ce87443edf0ef90f09d7e2e72d5d0305af1a177b5e7ed8016c42e"
+    ],
+    "result": "no_existing_identity_or_file_match"
+  },
+  "short_title": "错误码治理Agent",
+  "directory": "腾讯技术工程/错误码治理Agent+26.9.23",
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0008",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-002",
+        "path": "RAW_补采001.pdf",
+        "sha256": "8a30ce3f00f289071928cbe1606405da63c307fba5446bca6edb164f8fd741da"
+      },
+      {
+        "path": "MD_补采001.md",
+        "sha256": "f5d212542b0418186304c80f8191a6b7bc62cf40d7fd45f98ab7dfca005bebd0"
+      }
+    ],
+    "method": "按用户指定Obsidian学习笔记提示词（基于MD_补采001.md与既有PDF核验记录）重新生成中文学习笔记；正文、数据表、图注与复习卡片均去除页码标注，核验结果统一置于文末折叠校对报告；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对",
+      "MD_补采001.md全文核对与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "user_custom_obsidian_prompt_20261015",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71",
+      "override_note": "用户于2026-10-15会话中直接提供完整结构化Obsidian学习笔记提示词（去除正文/表格/卡片内页码标注，保留文末折叠校对报告）。"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "文章中的线上效果和评测数据未独立核验；50条case不能说明未见错误码的泛化能力。",
+        "pages": [
+          7,
+          8,
+          9
+        ],
+        "status": "pending_review"
+      }
+    ],
+    "outputs": [
+      "AI_错误码治理Agent_补充001.md",
+      "AI_错误码治理Agent.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "coverage": "覆盖目标与责任边界、四类证据源、单Agent选型、五步排查、双路解析、回归评测和线上报告。",
+    "fact_checks": [
+      {
+        "topic": "人工耗时",
+        "original_value": "3–8小时",
+        "pages": [
+          1
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "一致率",
+        "original_value": "66%（33/50）→88%（44/50）",
+        "pages": [
+          7
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "需人工介入",
+        "original_value": "34%（17/50）→12%（6/50）",
+        "pages": [
+          7
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "硬冲突",
+        "original_value": "20%（10/50）→0%（0/50）",
+        "pages": [
+          7
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "净改善",
+        "original_value": "11条case",
+        "pages": [
+          7
+        ],
+        "result": "一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 9,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading",
+        "clean body without inline page citations"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_错误码治理Agent_补充001.md",
+      "sha256": "c87ad39499bb9feff4563b8e387bf03d6c5e1bde27b0b3e0901cf0117f41939f",
+      "previous_sha256": "83d54ca73ce181991f157fabc15e7c1987aec67c1c00aca46516a70301ee38b7",
+      "synced_legacy_path": "AI_错误码治理Agent.md",
+      "synced_legacy_sha256": "13a6444e2dc5ae0c0c6cc0e075c0f1cb5cf9792e62b3fc2aa710b803a764a607"
+    },
+    "independent_crosscheck": {
+      "reviewer": "regenerated_with_user_prompt_20261015",
+      "note_sha256": "b56639229fd5e4fc0cbb7e1149e57798a77a3cca5a14bc27e57d0c39bd71fb94",
+      "review_sha256": "3c8099ccc27d9b97b715d91ab94bcfe57fc73170c4946806dd24a16fcf743e00",
+      "status": "passed",
+      "changes": [
+        "补入代表案例、正文页码与署名。",
+        "Regenerated study note from MD_补采001.md per user prompt (2026-10-15): structured 10 modules, removed inline page citations from body/tables/flashcards, and consolidated verification in the folded 校对报告."
+      ],
+      "source_spotchecks": [
+        {
+          "source": "reading.txt; sheet-001.jpg; review-page-07.jpg",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "finding": "核对四类证据能力、五步调查、解析兜底、50 case指标和限流/Redis案例；不外推至新错误码。"
+        }
+      ],
+      "previous_note_sha256": "e2ca2296801ac90810a6f0d481e2d1d1430ff561ab8891b5eeca8d572c002194"
+    },
+    "updated_at": "2026-10-15T08:21:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-002",
+    "input": {
+      "path": "RAW_补采001.pdf",
+      "sha256": "8a30ce3f00f289071928cbe1606405da63c307fba5446bca6edb164f8fd741da"
+    },
+    "output": {
+      "path": "MD_补采001.md",
+      "sha256": "f5d212542b0418186304c80f8191a6b7bc62cf40d7fd45f98ab7dfca005bebd0"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 33,
+        "text_layer_sha256": "9aa55fa5fcfdb0b0ba65c9b70f92163635af16450bb9cd1ef513363e3ed0be8f",
+        "text_layer_char_count": 902
+      },
+      {
+        "page": 2,
+        "md_start_line": 41,
+        "md_end_line": 82,
+        "text_layer_sha256": "1d204b2cf73d8c5ebe2fe7c377e9693350c6363a90e1746a1ceb285e8c546019",
+        "text_layer_char_count": 1086
+      },
+      {
+        "page": 3,
+        "md_start_line": 90,
+        "md_end_line": 108,
+        "text_layer_sha256": "299233ba6a505d50940250ae822ba4da77eef2b89dd4242b9b1c50bd9ab3ac86",
+        "text_layer_char_count": 525
+      },
+      {
+        "page": 4,
+        "md_start_line": 116,
+        "md_end_line": 134,
+        "text_layer_sha256": "7712f145c564be6477e48788a4e520fd7c766c19b5aef73c1c00fae8d25a225b",
+        "text_layer_char_count": 705
+      },
+      {
+        "page": 5,
+        "md_start_line": 142,
+        "md_end_line": 166,
+        "text_layer_sha256": "ba989bf75f63bb6c15b46c3d6c93914ab3737b3dbfaa20552005a632a6e1d98c",
+        "text_layer_char_count": 845
+      },
+      {
+        "page": 6,
+        "md_start_line": 174,
+        "md_end_line": 205,
+        "text_layer_sha256": "0c4ea6cdbd8ec17908283fa760a1b7c874d208df93cb223777a611ef20424707",
+        "text_layer_char_count": 1043
+      },
+      {
+        "page": 7,
+        "md_start_line": 213,
+        "md_end_line": 248,
+        "text_layer_sha256": "b2656db0c4cf65fc597f77e766c5de6dad429c2f513b270ee6312dbcccd4a111",
+        "text_layer_char_count": 767
+      },
+      {
+        "page": 8,
+        "md_start_line": 256,
+        "md_end_line": 260,
+        "text_layer_sha256": "dae220fb4eecfe0950a0f554e3fc44a842994addb95559a9cb7cdcb902fcd9be",
+        "text_layer_char_count": 191
+      },
+      {
+        "page": 9,
+        "md_start_line": 268,
+        "md_end_line": 292,
+        "text_layer_sha256": "572e34f1aff2bad5ef8823b366337d6d935510a0988c7f657d20b3fa60b4602d",
+        "text_layer_char_count": 827
+      },
+      {
+        "page": 10,
+        "md_start_line": 300,
+        "md_end_line": 309,
+        "text_layer_sha256": "7ba16daff269a94d844e33f1937ff1ca07063aae6e9c43eb8696164fbe141b18",
+        "text_layer_char_count": 312
+      },
+      {
+        "page": 11,
+        "md_start_line": 317,
+        "md_end_line": 320,
+        "text_layer_sha256": "d5ec9dab4199bf879a7fdef2040e270499acf59f1032b11434141f52db7499f2",
+        "text_layer_char_count": 29
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "文章中的线上效果和评测数据未独立核验；50条case不能说明未见错误码的泛化能力。",
+        "pages": [
+          7,
+          8,
+          9
+        ],
+        "status": "pending_review"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/错误码排查从 3～8 小时到分钟级，Agent怎么做到的？.pdf",
+        "destination_path": "RAW_补采001.pdf",
+        "sha256": "8a30ce3f00f289071928cbe1606405da63c307fba5446bca6edb164f8fd741da",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "files": {
+    "raw": "RAW_补采001.pdf",
+    "markdown": "MD_补采001.md",
+    "ai_summary": "AI_错误码治理Agent_补充001.md",
+    "skills": "SKILL.md"
+  },
+  "processing_history": [
+    {
+      "schema_version": 2,
+      "article_id": "art-0008",
+      "created_at": "2026-10-04T00:59:35-07:00",
+      "inputs": [
+        {
+          "capture_id": "capture-001",
+          "path": "RAW.pdf",
+          "sha256": "da48b5daab2ce87443edf0ef90f09d7e2e72d5d0305af1a177b5e7ed8016c42e"
+        }
+      ],
+      "method": "直接读取PDF文本层；全页缩略检查，重点页面视觉核对；按实际可见内容生成学习笔记及扁平合集。无全文整理产物，无代码执行或Skill安装。",
+      "tools": [
+        "pypdf（PDF文本与链接读取）",
+        "pypdf文本提取",
+        "pdftoppm（PDF页面渲染）",
+        "Pillow（临时缩略图）",
+        "视觉检查",
+        "Python标准库（复制与SHA-256校验）"
+      ],
+      "model": null,
+      "model_version": null,
+      "prompt_version": "本次读取的agent.md与90_templates，未修改",
+      "processing_status": "completed",
+      "source_completeness": "incomplete",
+      "page_mapping_status": "pdf_physical_pages",
+      "quality_issues": [
+        {
+          "description": "PDF原文地址、采集时间和显示时间的时区未确认；外部事实及在线原文一致性未核查。",
+          "verification_status": "unverified",
+          "pages": []
+        },
+        {
+          "description": "渲染页面可见图片加载占位区，缺失内容无法从当前PDF恢复。",
+          "verification_status": "visually_observed",
+          "pages": [
+            3,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "description": "文章所述原始规则附件／完整Skill包未随PDF提供；提炼限于正文可见内容。",
+          "verification_status": "missing_attachment",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "outputs": [
+        "AI_错误码治理Agent.md",
+        "SKILL.md"
+      ],
+      "personal_notes_modified": false,
+      "extracted_items": [
+        {
+          "type": "skill",
+          "name": "错误码治理Skill说明节选",
+          "path": "SKILL.md",
+          "heading": "1. 错误码治理Skill说明节选",
+          "capture_id": "capture-001",
+          "content_status": "description_excerpt_incomplete_package",
+          "locator": {
+            "type": "pdf_page_text_spans",
+            "page_numbering": "physical_pages_1_based",
+            "extractor": "pypdf.PageObject.extract_text",
+            "segments": [
+              {
+                "page": 3,
+                "start_char": 151,
+                "end_char": 414
+              },
+              {
+                "page": 4,
+                "start_char": 0,
+                "end_char": 446
+              },
+              {
+                "page": 4,
+                "start_char": 461,
+                "end_char": 661
+              }
+            ],
+            "joining": "按页面阅读顺序以一个换行连接各摘录段，未改写字符"
+          },
+          "excerpt_sha256": "be419725607261f56599d48551ace8ab2df1dc1547fcb4add1a67d3e148a449a",
+          "verification": "text_spans_exact; relevant_page_images_reviewed",
+          "personal_validation": "unconfirmed"
+        }
+      ],
+      "extraction_summary": {
+        "prompts": 0,
+        "skills": 1,
+        "categories": 0
+      },
+      "updated_at": "2026-10-04T00:59:35-07:00",
+      "review_scope": {
+        "text_pages_read": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "thumbnail_pages_reviewed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "detail_pages_reviewed": [
+          3,
+          4
+        ],
+        "limitations": "缩略检查用于识别空白、加载占位与版面异常；未逐字核验全部图片，未核对在线原文。"
+      },
+      "omitted_content": [
+        "图1—7及结果截图均有加载占位，无法读取图内细节；正文可读部分已单独提炼。",
+        "未附完整SKILL.md、脚本、15个输入字段定义、完整9字段schema及17项检查清单；内部平台与业务数据不可用。",
+        "skills.md只整理1条“错误码治理Skill说明节选”，不代表完整可安装Skill；kb-retriever仅有职责介绍，不单独虚构定义。"
+      ]
+    }
+  ],
+  "conversion_history": [
+    {
+      "created_at": "2026-10-08",
+      "source_capture_id": "capture-001",
+      "input": {
+        "path": "RAW.pdf",
+        "sha256": "da48b5daab2ce87443edf0ef90f09d7e2e72d5d0305af1a177b5e7ed8016c42e"
+      },
+      "output": {
+        "path": "MD.md",
+        "sha256": "6aecee92e239f053565e022083c0c1f1bbb587634d96ebe79c5f649d579d0f61"
+      },
+      "extractor": "pdfplumber 0.11.9; Page.extract_text_lines / Page.extract_text",
+      "page_numbering": "physical_pages_1_based",
+      "status": "text_layer_conversion_completed",
+      "verification_status": "text_extraction_checked; layout_images_and_online_original_not_fully_verified",
+      "pages": [
+        {
+          "page": 1,
+          "md_start_line": 15,
+          "md_end_line": 55,
+          "text_layer_sha256": "1897257bb6a1e423bb9fbd36e9f234fd4af2c495481efecfe79a00dd634cb943",
+          "text_layer_char_count": 822,
+          "image_objects": 1,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 2,
+          "md_start_line": 60,
+          "md_end_line": 133,
+          "text_layer_sha256": "c3f5d2330cc176f7444cfc35eb6d61f0ba4f18a7d7ff347ce438735cfcbe0327",
+          "text_layer_char_count": 1044,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 3,
+          "md_start_line": 138,
+          "md_end_line": 180,
+          "text_layer_sha256": "97a4c76b09ff78ca27e132b40bff54489096585ee15b454f56ff1e6d8c0ea2af",
+          "text_layer_char_count": 427,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 4,
+          "md_start_line": 185,
+          "md_end_line": 224,
+          "text_layer_sha256": "2373bc074f6669086733ae84c85141d97aae0e24a0c2d64fdc440fce6f81102e",
+          "text_layer_char_count": 652,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 5,
+          "md_start_line": 229,
+          "md_end_line": 282,
+          "text_layer_sha256": "ac00a77c9c1cfca1db77a8769e3ecb56401a1cdee9210e9be86c694ce1014917",
+          "text_layer_char_count": 681,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 6,
+          "md_start_line": 287,
+          "md_end_line": 347,
+          "text_layer_sha256": "9cc7cb3675b35823f3b4052f4bae5dc9f19c3916aa865ff50d262a60ed0727ca",
+          "text_layer_char_count": 1112,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 7,
+          "md_start_line": 352,
+          "md_end_line": 395,
+          "text_layer_sha256": "8f5e8f6d45c905e6133af93b328cdd22e77d382eb75ffb92e0a061c00991d5ab",
+          "text_layer_char_count": 780,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 8,
+          "md_start_line": 400,
+          "md_end_line": 409,
+          "text_layer_sha256": "e6f2e4e17b900a000e5cd7f8845532882803e2eece84c4adaf8b873e7f8ddad5",
+          "text_layer_char_count": 167,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 9,
+          "md_start_line": 414,
+          "md_end_line": 417,
+          "text_layer_sha256": "9a842754559f906f2eb6fe2d58c4a5ea97046010f4358d4fc951135163bd755d",
+          "text_layer_char_count": 20,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 10,
+          "md_start_line": 422,
+          "md_end_line": 448,
+          "text_layer_sha256": "f230d76cd5c62d9a33fd1a098178010131e71e793c69311ad3bc086fa2f52e1c",
+          "text_layer_char_count": 386,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 11,
+          "md_start_line": 453,
+          "md_end_line": 481,
+          "text_layer_sha256": "783fdcc2ce0a8677ba6fb3272a937d09846ba1b654699144b72d7ae70373f98f",
+          "text_layer_char_count": 600,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 12,
+          "md_start_line": 486,
+          "md_end_line": 494,
+          "text_layer_sha256": "07bb6e197c595ec93e8aae657b776d256e1f2c0824b899c51f977974e2d7f2e6",
+          "text_layer_char_count": 106,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 13,
+          "md_start_line": 499,
+          "md_end_line": 500,
+          "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text_layer_char_count": 0,
+          "image_objects": 0,
+          "status": "no_text_layer_content"
+        }
+      ],
+      "quality_issues": [
+        "图片未嵌入MD，使用各页RAW链接核对；保留原始材料的既有质量问题。",
+        "文字来自PDF文本层，字形、阅读顺序、代码缩进、表格结构及裁切显示一致性仍可能需人工核验。"
+      ],
+      "personal_notes_modified": false
+    }
+  ],
+  "migration_history": [
+    {
+      "date": "2026-10-08",
+      "previous_directory": "10_articles/腾讯技术工程/2026-09-23_错误码治理Agent实践__art-0008",
+      "current_directory": "腾讯技术工程/错误码治理Agent+26.9.23",
+      "previous_article_readme": "# 错误码排查从 3～8 小时到分钟级，Agent怎么做到的？\n\n公众号：腾讯技术工程；作者：careylu；页面日期：2026-09-23（时区未确认）。\n\n## 阅读与使用\n\n- [整篇学习笔记](run/learning_note.md)\n- [Skill说明合集](run/skills.md)\n\n## 原始材料\n\n- [归档PDF](source/capture-001.pdf)\n\n图片或附件有缺失，详见下文。已确认可读内容已整理，未将加工完成标为原文完整核验通过。\n",
+      "file_mapping": {
+        "source/capture-001.pdf": "RAW.pdf",
+        "metadata.json": "META.json",
+        "run/run.json": "META.json",
+        "README.md": "MD.md",
+        "run/learning_note.md": "AI_错误码治理Agent.md",
+        "run/skills.md": "SKILL.md"
+      },
+      "existing_ai_summaries": "preserved_with_link_updates; no_new_summary_generated",
+      "personal_note_template": "90_templates/个人笔记模板.md; create_only_on_user_request_or_start_of_personal_notes"
+    }
+  ],
+  "identity_evidence_history": [
+    {
+      "description": "PDF第1页可见标题、公众号、署名与日期；对照正文主题和篇章内容，7篇彼此不同，且均不同于已有art-0001。",
+      "pdf_page": 1,
+      "header_text": "错误码排查从 3 ～ 8  ⼩时到分钟级， Agent 怎么做到的？\n腾讯程序员 2026 年 9 ⽉ 23 ⽇ 02 : 30⼴东原创 腾讯技术⼯程 79 ⼈\n",
+      "source_url_status": "PDF未提供可确认的本篇原文URL，不使用引用文献链接代替。"
+    }
+  ],
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent评测与反馈.md",
+      "../../20_topics/决策方法.md",
+      "../../20_topics/决策知识结构化.md",
+      "../../20_topics/异常监控与稳定性.md",
+      "../../20_topics/解决问题.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_错误码治理Agent_补充001.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

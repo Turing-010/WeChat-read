@@ -1,0 +1,422 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0169",
+  "title": "精打细算虾养成指南：省 Token 和把 AI 用好，从来就是一件事",
+  "short_title": "精打细算虾养成指南",
+  "account": "腾讯技术工程",
+  "author": "Kario Chen",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-07-08T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/精打细算虾养成指南： 省 Token 和把 AI 用好，从来就是一件事.pdf",
+      "original_filename": "精打细算虾养成指南： 省 Token 和把 AI 用好，从来就是一件事.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "378a5bfa272e3f4b3796ce3bab32d08577c059e76051e731c55241c883683d66",
+      "size_bytes": 3794953,
+      "page_count": 9,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "长上下文能力、Transformer n²关联、缓存与成本收益为作者解释/经验描述，未提供统一实验条件。",
+          "pages": [
+            2,
+            3,
+            5,
+            6
+          ],
+          "status": "not_independently_verified"
+        },
+        {
+          "description": "第9页为空白。",
+          "pages": [
+            9
+          ],
+          "status": "no_content_on_page"
+        }
+      ],
+      "publication_evidence": "PDF p.1: Jul 8, 2026, 2:36 AM; timezone not shown."
+    }
+  ],
+  "tags": [
+    "Agent成本与上下文预算",
+    "Harness与模型协同",
+    "Agent长期记忆",
+    "Agent工程循环"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/精打细算虾养成指南+26.7.8",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_精打细算虾养成指南.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "精打细算虾养成指南: 省 Token  和把 AI  用好,从来就是一件事\nJul  8 , 2026 , 2 : 36  AM广东腾讯技术工程 303  listened\n作者:  Kario Chen\n为什么  AI 越用越贵,还越用越笨\n在ChatBot 时期,模型看到的输入基本就是官方预设的系统提示词,以及用户输入框\n里打字的提示词,再加上一些多轮对话的历史记忆。但是在进入⻰虾时代后,在\ntoken 看板上随便观测任何一个任务执行的 agent 调用链路,以及对照公开的  token 用\n量分析,才发现打字输入的提示词,仅仅只是模型输入的冰山一⻆了,工具在多次调\n用、 skills 在反复装载、本地文件在不断被读取 ...... 随之而来的是历史上下文的几何级\n膨胀。我们手打输入的那几个字,在整个  Token 账单里其实只是零头。\n我最开始用⻰虾,也是  Opus 从头到尾,觉得这样才算是释放了最大的生产力。随着\ntoken 越来越不够用,我开始持续探索节省  token 的方案,  越深入越发现:真正的省\ntoken 不是削减投入、不是降低预算,而是在保证效率和产能的前提下,用结构化的方\n式替代蛮力输入。本质上就是学会工程化地用  AI ,关键在于一个动作:在合适的时间,\n把合适的上下文,装载进合适的模型。这不仅省  token ,更重要的是让  AI 的每一分注意\n力都用在刀刃上。\n",
+    "publication_evidence": "PDF p.1: Jul 8, 2026, 2:36 AM; timezone not shown.",
+    "full_title_in_capture": "精打细算虾养成指南：省 Token 和把 AI 用好，从来就是一件事",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0169",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "378a5bfa272e3f4b3796ce3bab32d08577c059e76051e731c55241c883683d66"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "长上下文能力、Transformer n²关联、缓存与成本收益为作者解释/经验描述，未提供统一实验条件。",
+        "pages": [
+          2,
+          3,
+          5,
+          6
+        ],
+        "status": "not_independently_verified"
+      },
+      {
+        "description": "第9页为空白。",
+        "pages": [
+          9
+        ],
+        "status": "no_content_on_page"
+      }
+    ],
+    "outputs": [
+      "AI_精打细算虾养成指南.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "coverage": "覆盖成本来源、JIT按需检索、上下文卸载与缓存、目标/约束/示例、会话状态分段、主从Agent拆分和动态选型。p.7为视频/回放页，p.8公众号尾页，p.9空白。图表趋势已查看，未重建图中无法核读的精确点值。",
+    "fact_checks": [
+      {
+        "item": "作者会话分段",
+        "note_value": "FRESH前20轮；DRIFT20–60；ROT超过60",
+        "source_value": "同值",
+        "pages": [
+          4,
+          5
+        ],
+        "result": "match"
+      },
+      {
+        "item": "Prompt缓存成本表述",
+        "note_value": "最多降低90%输入成本",
+        "source_value": "启用缓存最多可降低90%输入成本",
+        "pages": [
+          3
+        ],
+        "result": "match"
+      },
+      {
+        "item": "主从Agent成本表述",
+        "note_value": "可能为全程Opus的20–30%",
+        "source_value": "成本降到原来的20–30%",
+        "pages": [
+          5,
+          6
+        ],
+        "result": "match"
+      },
+      {
+        "item": "上下文窗口说法",
+        "note_value": "作者称约1M",
+        "source_value": "上下文最大的模型也就是1M左右",
+        "pages": [
+          2
+        ],
+        "result": "match"
+      },
+      {
+        "item": "长任务会话分段",
+        "note_value": "FRESH前20轮、DRIFT 20–60轮、ROT超过60轮；属作者经验分段",
+        "source_value": "同笔记",
+        "pages": [
+          4,
+          5
+        ],
+        "result": "match"
+      },
+      {
+        "item": "主从Agent成本估计",
+        "note_value": "文章报告可降至全程Opus原成本的20%–30%，非普遍保证",
+        "source_value": "同笔记",
+        "pages": [
+          5,
+          6
+        ],
+        "result": "match"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_精打细算虾养成指南.md",
+      "sha256": "a979e627c58fd7b1579f55cbc5889e082c68ebe13b7475532f65d86f3cef6134"
+    },
+    "independent_crosscheck": {
+      "reviewer": "topic_models",
+      "note_sha256": "a979e627c58fd7b1579f55cbc5889e082c68ebe13b7475532f65d86f3cef6134",
+      "review_sha256": "521aba193b974d7a91d1d5573b41fdc92a1c2e426bb34f6df2e046d40aa8a911",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "2–3",
+          "check": "核对上下文膨胀/JIT/存储卸载/缓存论述；“最多降低90%输入成本”保留为作者经验，没有写成通用保证。"
+        },
+        {
+          "pages": "4–6",
+          "check": "核对示例/规则优先级、FRESH/DRIFT/ROT轮次、原子子任务和主从Agent成本20–30%；笔记标明阈值与收益是作者口径。"
+        },
+        {
+          "pages": "7–9",
+          "check": "查看视频/直播页、公众号尾页及空白p.9；笔记不从尾页视频推导新机制，review记录空白尾页。"
+        },
+        {
+          "pages": "1–9缩略图",
+          "check": "查看sheet-001全页缩略图；图表示意与笔记描述一致，未发现关键视觉证据缺页。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "378a5bfa272e3f4b3796ce3bab32d08577c059e76051e731c55241c883683d66"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "316d491c490c9421226b76a9d65d62ab51ba1ee4bcbee0a07157f36c4c5655c8"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 25,
+        "text_layer_sha256": "ff5d8a46f436984c6aa3c6cb10c7042ae9870045fae0e02f99ef4d4e4ebc02c9",
+        "text_layer_char_count": 604
+      },
+      {
+        "page": 2,
+        "md_start_line": 33,
+        "md_end_line": 51,
+        "text_layer_sha256": "24a051d4a6219dad5b3e952b8b6cff5af85fa820c1037fc63c163c6fcc5355a3",
+        "text_layer_char_count": 709
+      },
+      {
+        "page": 3,
+        "md_start_line": 59,
+        "md_end_line": 75,
+        "text_layer_sha256": "026f964376b729f09e6cd9d6c739b54847cc953660e524b493f366b2e6a2ef11",
+        "text_layer_char_count": 548
+      },
+      {
+        "page": 4,
+        "md_start_line": 83,
+        "md_end_line": 106,
+        "text_layer_sha256": "a9c9b3854a7bc146d9922d6c78f68c4777407982ffc8983546fc5ecf1b9b9bde",
+        "text_layer_char_count": 738
+      },
+      {
+        "page": 5,
+        "md_start_line": 114,
+        "md_end_line": 142,
+        "text_layer_sha256": "4c40ef83019c20d2d618f7eac39d52fd62ecc252c8ffa21d376f119d5e8c3623",
+        "text_layer_char_count": 935
+      },
+      {
+        "page": 6,
+        "md_start_line": 150,
+        "md_end_line": 173,
+        "text_layer_sha256": "9e1fccc073a71869e1703528ebf33f6b1a555fa2a0aa3cc8c5683caed1c4f763",
+        "text_layer_char_count": 772
+      },
+      {
+        "page": 7,
+        "md_start_line": 181,
+        "md_end_line": 189,
+        "text_layer_sha256": "9f0c272936d1b418708d6c3f2ea108092e4e80b2ed7cb41f2d6d233b4b025503",
+        "text_layer_char_count": 73
+      },
+      {
+        "page": 8,
+        "md_start_line": 197,
+        "md_end_line": 204,
+        "text_layer_sha256": "74df5ce3b2b1707175bbfdc8d1fd4bcb11caa552dc3035ac622a55dca35c4af6",
+        "text_layer_char_count": 74
+      },
+      {
+        "page": 9,
+        "md_start_line": 212,
+        "md_end_line": 211,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "长上下文能力、Transformer n²关联、缓存与成本收益为作者解释/经验描述，未提供统一实验条件。",
+        "pages": [
+          2,
+          3,
+          5,
+          6
+        ],
+        "status": "not_independently_verified"
+      },
+      {
+        "description": "第9页为空白。",
+        "pages": [
+          9
+        ],
+        "status": "no_content_on_page"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/精打细算虾养成指南： 省 Token 和把 AI 用好，从来就是一件事.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "378a5bfa272e3f4b3796ce3bab32d08577c059e76051e731c55241c883683d66",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent成本与上下文预算.md",
+      "../../20_topics/Harness与模型协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_精打细算虾养成指南.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

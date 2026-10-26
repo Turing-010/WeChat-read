@@ -1,0 +1,529 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0101",
+  "title": "深入解析 Chromium 的 AI Coding 开发体系",
+  "short_title": "Chromium AI Coding",
+  "account": "腾讯技术工程",
+  "author": "QQ 浏览器团队出品",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-06-01T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0601 Chromium AI Coding.pdf",
+      "original_filename": "0601 Chromium AI Coding.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "1783ed71717567e9d71a09db3f84493a1e152c16743ce32c692fc2bbfd8c083c",
+      "size_bytes": 3863698,
+      "page_count": 17,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.13–15的页面分屏过程为基于提交记录的逆向推演，原文明确说不代表真实工作流，且AI不能自主完成需求拆解。",
+          "pages": [
+            13,
+            14,
+            15
+          ],
+          "status": "noted"
+        },
+        {
+          "description": "知识检索与项目规模数字均为作者分析；chromium-docs索引被说明没有增量更新机制，需手动重建。",
+          "pages": [
+            8,
+            9,
+            12,
+            16
+          ],
+          "status": "unverified_claims"
+        },
+        {
+          "description": "PDF p.17为阅读和留言尾页。",
+          "pages": [
+            17
+          ],
+          "status": "noted"
+        }
+      ],
+      "publication_evidence": "PDF p.1: Jun 1, 2026, 2:36 AM; no timezone shown."
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "Prompt优化",
+    "Agent评测与反馈",
+    "检索与文档解析"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Chromium AI Coding+26.6.1",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Chromium AI Coding.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "深入解析 Chromium 的 AI  Coding  开发体系\n腾讯程序员 Jun  1 , 2026 , 2 : 36  AM广东原创 腾讯技术工程 310  listened\n作者: QQ 浏览器团队出品\n一、整体介绍\nChromium 是全球最大的开源  C++ 项目之一,代码量超过  3500 万行。面对如此庞大的代码\n库, Chromium 团队在源码仓库中构建了一整套  AI Agent 基础设施—— 不只是 \" 用  AI 写代\n码 \" ,而是建立了一套完整的提示词管理、技能系统、知识库、评估体系和大规模自动化项\n目。\nAI Coding 相关内容集中在   agents/  目录下:\nchromium/src/agents/\n├── ai_policy.md             # AI 使用政策\n├── prompts/                 # 🔥  提示词系统(分层组合设计)\n│   ├── common.minimal.md    # 核心指令层\n│   ├── common.md            # 完整工作流层\n│   ├── knowledge_base.md    # RAG 知识库\n│   ├── templates/           # 平台模板层( desktop/android/ios... )\n│   └── eval/                # 评估用例(15+ 个场景)\n├── skills/                  # 🔥  技能系统(18+ 个可复用技能)\n├── extensions/              # MCP 扩展(工具能力增强)\n├── projects/                # AI 驱动的大型项目\n└── testing/                 # Prompt 评估测试框架\nChromium 同时支持  Gemini CLI 、 Claude Code 、 GitHub Copilot 三种  AI 工具,核心的\nPrompts 和  Skills 设计为跨工具复用。 AI 使用政策(ai_policy.md)的核心原则是:AI\n是辅助工具,人类开发者始终是最终责任人。如果某位开发者违反了原则,则可能被剥夺提交\n代码的权限。\n笔者作为 QQ 浏览器的开发,研究了一下 Chromium 的 AI Coding 开发体系,希望从中学习\n到一些东西。\n",
+    "publication_evidence": "PDF p.1: Jun 1, 2026, 2:36 AM; no timezone shown.",
+    "full_title_in_capture": "深入解析 Chromium 的 AI Coding 开发体系",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0101",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "1783ed71717567e9d71a09db3f84493a1e152c16743ce32c692fc2bbfd8c083c"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.13–15的页面分屏过程为基于提交记录的逆向推演，原文明确说不代表真实工作流，且AI不能自主完成需求拆解。",
+        "pages": [
+          13,
+          14,
+          15
+        ],
+        "status": "noted"
+      },
+      {
+        "description": "知识检索与项目规模数字均为作者分析；chromium-docs索引被说明没有增量更新机制，需手动重建。",
+        "pages": [
+          8,
+          9,
+          12,
+          16
+        ],
+        "status": "unverified_claims"
+      },
+      {
+        "description": "PDF p.17为阅读和留言尾页。",
+        "pages": [
+          17
+        ],
+        "status": "noted"
+      }
+    ],
+    "outputs": [
+      "AI_Chromium AI Coding.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "detail_pages_reviewed": [
+        8,
+        9,
+        10,
+        11,
+        13,
+        15
+      ]
+    },
+    "coverage": "阅读全文p.1–16及尾页，复核全部17页缩略图，放大查看p.8–11、13、15。涵盖AI政策、四层提示词、8步编辑流程、Skills、三层知识路由、评估用例与Projects。未访问Chromium仓库或执行文中命令；分屏案例按作者声明视为推演。 已查看全部物理页图；p.17为阅读/留言尾页。",
+    "fact_checks": [
+      {
+        "item": "提示词层次",
+        "note_value": "最小指令、common工作流、平台模板、Task Prompts",
+        "source_value": "同笔记",
+        "pages": [
+          2,
+          3,
+          5
+        ],
+        "result": "match"
+      },
+      {
+        "item": "工作流步骤",
+        "note_value": "八步，先深读代码和调用点，后编辑、构建、测试迭代",
+        "source_value": "同笔记",
+        "pages": [
+          3,
+          4
+        ],
+        "result": "match"
+      },
+      {
+        "item": "文档索引",
+        "note_value": "三个JSON索引，作者称非向量搜索且无增量更新",
+        "source_value": "同笔记",
+        "pages": [
+          8,
+          9
+        ],
+        "result": "match"
+      },
+      {
+        "item": "Eval用例",
+        "note_value": "文章报告15个场景和Promptfoo断言框架",
+        "source_value": "同笔记",
+        "pages": [
+          10,
+          11,
+          12
+        ],
+        "result": "match"
+      },
+      {
+        "item": "分屏案例证据属性",
+        "note_value": "从提交逆向推演，不代表真实工作流",
+        "source_value": "同笔记",
+        "pages": [
+          13
+        ],
+        "result": "match"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Chromium AI Coding.md",
+      "sha256": "04a9c93d546baeeca0f1c31a7524c253bac353133595459dcd7d4970b4ea29bc"
+    },
+    "independent_crosscheck": {
+      "reviewer": "root",
+      "note_sha256": "000ff8afb0d43529c7fcc2784a77b6262221e11034de5805a55664e4b674934b",
+      "review_sha256": "edec6ea3745cb312087b1f02a470e83393c2405225112f8c5be7c32b93854d5d",
+      "status": "passed",
+      "changes": [
+        "staging format and page-coverage repair: standardized final audit callout and included all visually checked physical pages; no substantive note claims changed"
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "1–5",
+          "check": "核对 Chromium agents/ 目录、AI Policy、四层提示词、8步编辑流程和技能表；笔记按文章结构归纳。"
+        },
+        {
+          "pages": "8–12",
+          "check": "核对三类知识索引、检索与评估用例；作者报告的内存/检索优势未写成独立验证结论。"
+        },
+        {
+          "pages": "13–15、17",
+          "check": "核对分屏案例及其“逆向推演”说明；第17页缩略图为留言/阅读尾页，报告覆盖范围一致。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "1783ed71717567e9d71a09db3f84493a1e152c16743ce32c692fc2bbfd8c083c"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "8665dee7058b3e84186243c9978273026fc9a5d254cabaaeed78ace716b6318c"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 36,
+        "text_layer_sha256": "7dc4022824aab6f15e661bbcf4f8708c59291fb2b00ce74bba05c4038e128104",
+        "text_layer_char_count": 1059
+      },
+      {
+        "page": 2,
+        "md_start_line": 44,
+        "md_end_line": 82,
+        "text_layer_sha256": "b58c0522d419ac8bd7aa4bea0d164b0a6e034458da16fa18251cddee6b3a2ff5",
+        "text_layer_char_count": 1466
+      },
+      {
+        "page": 3,
+        "md_start_line": 90,
+        "md_end_line": 130,
+        "text_layer_sha256": "a2ca040bcf0bbda6231ff990d23f676f8e0b8be1325fa59a880c746efa1f2fb9",
+        "text_layer_char_count": 1412
+      },
+      {
+        "page": 4,
+        "md_start_line": 138,
+        "md_end_line": 169,
+        "text_layer_sha256": "9b9c26f664ee8d400d0bfa4ed2f15ae322f6d5ab1341ca332c2d026fd0de62df",
+        "text_layer_char_count": 1055
+      },
+      {
+        "page": 5,
+        "md_start_line": 177,
+        "md_end_line": 217,
+        "text_layer_sha256": "d11bf729b1d502ea795012eac45146ca41d94df5f7493aa4f0e005dac80a425a",
+        "text_layer_char_count": 1228
+      },
+      {
+        "page": 6,
+        "md_start_line": 225,
+        "md_end_line": 255,
+        "text_layer_sha256": "5ba03ce775b2dbe503dbfd53247ad807e40b4cf9a6f23d1792d58d7786c562c7",
+        "text_layer_char_count": 1281
+      },
+      {
+        "page": 7,
+        "md_start_line": 263,
+        "md_end_line": 298,
+        "text_layer_sha256": "4653b078d2e4a99eafae68a87b34f67843f3a3213cfd5f4ff432531f4a397ebb",
+        "text_layer_char_count": 1279
+      },
+      {
+        "page": 8,
+        "md_start_line": 306,
+        "md_end_line": 353,
+        "text_layer_sha256": "a0e8f5259923ee6407c524cbfb768faffc523a5b17140bd37df20c41de3d16a3",
+        "text_layer_char_count": 1350
+      },
+      {
+        "page": 9,
+        "md_start_line": 361,
+        "md_end_line": 405,
+        "text_layer_sha256": "9a95092927cf176747ebc84ea94feaf32262aca2b48e9e3e99e6a5afc4b44302",
+        "text_layer_char_count": 1088
+      },
+      {
+        "page": 10,
+        "md_start_line": 413,
+        "md_end_line": 445,
+        "text_layer_sha256": "c40f4d204a483faff3f240f42b478b78154981dc2887e57d34da2339160680e8",
+        "text_layer_char_count": 1047
+      },
+      {
+        "page": 11,
+        "md_start_line": 453,
+        "md_end_line": 490,
+        "text_layer_sha256": "c4b8b1ec55711c77803d0b1f28a8892432882863ad2a61d2ec49741e456ff6dd",
+        "text_layer_char_count": 1263
+      },
+      {
+        "page": 12,
+        "md_start_line": 498,
+        "md_end_line": 543,
+        "text_layer_sha256": "93a9ab29e342370cecab55566f22e4fc9dd70fdc307764ba66a88f872197d390",
+        "text_layer_char_count": 1360
+      },
+      {
+        "page": 13,
+        "md_start_line": 551,
+        "md_end_line": 581,
+        "text_layer_sha256": "233acb404384913756d4796eaa2e4e965310cba9cd007e51b7867565ff3969e3",
+        "text_layer_char_count": 991
+      },
+      {
+        "page": 14,
+        "md_start_line": 589,
+        "md_end_line": 623,
+        "text_layer_sha256": "23e65de0cb4668cbb9d73cecac5882608c9a8bf3f1a507ccc94db53624fce0b5",
+        "text_layer_char_count": 1187
+      },
+      {
+        "page": 15,
+        "md_start_line": 631,
+        "md_end_line": 668,
+        "text_layer_sha256": "a110864d698b0b559ac0663566211b6be39b2eee5bac4156d8a397714d6f3f1e",
+        "text_layer_char_count": 1506
+      },
+      {
+        "page": 16,
+        "md_start_line": 676,
+        "md_end_line": 693,
+        "text_layer_sha256": "adc94665b13596c50485949976819643fd1ac599383d3d79ae6c14d72a1aced2",
+        "text_layer_char_count": 660
+      },
+      {
+        "page": 17,
+        "md_start_line": 701,
+        "md_end_line": 704,
+        "text_layer_sha256": "d5ec9dab4199bf879a7fdef2040e270499acf59f1032b11434141f52db7499f2",
+        "text_layer_char_count": 29
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "detail_pages_reviewed": [
+        8,
+        9,
+        10,
+        11,
+        13,
+        15
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.13–15的页面分屏过程为基于提交记录的逆向推演，原文明确说不代表真实工作流，且AI不能自主完成需求拆解。",
+        "pages": [
+          13,
+          14,
+          15
+        ],
+        "status": "noted"
+      },
+      {
+        "description": "知识检索与项目规模数字均为作者分析；chromium-docs索引被说明没有增量更新机制，需手动重建。",
+        "pages": [
+          8,
+          9,
+          12,
+          16
+        ],
+        "status": "unverified_claims"
+      },
+      {
+        "description": "PDF p.17为阅读和留言尾页。",
+        "pages": [
+          17
+        ],
+        "status": "noted"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0601 Chromium AI Coding.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "1783ed71717567e9d71a09db3f84493a1e152c16743ce32c692fc2bbfd8c083c",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Skill设计与治理.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Chromium AI Coding.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

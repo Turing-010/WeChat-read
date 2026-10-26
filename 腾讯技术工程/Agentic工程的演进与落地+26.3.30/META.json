@@ -1,0 +1,974 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0071",
+  "title": "认知重建之后，步入Agentic Engineering的工程革命",
+  "short_title": "Agentic工程的演进与落地",
+  "account": "腾讯技术工程",
+  "author": "rickyshou",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-03-30T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0330 认知重建之后步入Agentic Engineering工程革命.pdf",
+      "original_filename": "0330 认知重建之后步入Agentic Engineering工程革命.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "4d082e62396d2fa6716176d3d4bc34dded25f59cb7e0c49c0d6f8cae7c8c4782",
+      "size_bytes": 7893095,
+      "page_count": 52,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "⚠️[原文疑点] Skill数量多处27而p.20为26，未明确对应版本，不统一为确定总数",
+          "pages": [
+            1,
+            20,
+            35
+          ],
+          "status": "unresolved"
+        },
+        {
+          "description": "⚠️[原文疑点] 需求评分≥80与60–80及major条件有交叉，原文未给优先级",
+          "pages": [
+            23
+          ],
+          "status": "unresolved"
+        },
+        {
+          "description": "⚠️[原文疑点] 三层验证表将L2标作S6运行时验证，十步计划S6为DB写入；保留机制不统一编号",
+          "pages": [
+            29,
+            31
+          ],
+          "status": "unresolved"
+        },
+        {
+          "description": "六步Skill与十步计划成熟度需区分；按p.29/34记录Skill仍迭代、MVP核心链路验证、分钟级为目标",
+          "pages": [
+            25,
+            29,
+            34
+          ],
+          "status": "clarified"
+        },
+        {
+          "description": "团队工具效果缺乏系统量化评估，作者在反思中明确承认；未将规模或外部案例当本项目收益",
+          "pages": [
+            43,
+            47,
+            48,
+            49
+          ],
+          "status": "attributed"
+        },
+        {
+          "description": "快速开始代码注释存在裁切，未执行原文删除示例或将其当通用可运行教程",
+          "pages": [
+            39
+          ],
+          "status": "retained"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区"
+    }
+  ],
+  "tags": [
+    "Agent工程循环",
+    "Agent任务恢复",
+    "Agent长期记忆",
+    "AI研发协同",
+    "Agent评测与反馈"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Agentic工程的演进与落地+26.3.30",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Agentic工程的演进与落地.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "认知重建之后,步入 Agentic  Engineering 的工程革命\n腾讯程序员 2026 年 3 月 30 日 02 : 36广东原创 腾讯技术工程 201 人\n作者: rickyshou\n一、从  Vibe Coding 到  Agentic Engineering :一个概念的诞生\n1.1 Karpathy 的一条推文\n2025 年  2 月, Andrej Karpathy 随手发了一条推文,发明了一个词:Vibe Coding(氛围编\n程)。\n这条推文火了。不是因为它严谨,恰恰因为它说出了很多人心里的真实状态 ——AI 写代码已\n经 \" 够用 \" 了,你只需要看看、说说、跑跑、粘贴粘贴,大部分时候它就是能工作。\n一年后, 2026 年  2 月, Karpathy 回顾这条推文时,说了一段更值得注意的话:\n从  speckit 踩坑到认知重建,从推翻精密架构到一个  AGENTS.md 文件重新出发。这篇\n讲的是 \" 我做了什么,以及它为什么有效 \" 。一个  AGENTS.md 文件,两个月后长成了拥\n有  22 个  Agent 、 27 个  Skill 、 28 个命令的工程体系。它不是设计出来的,而是被真实需\n求一步步逼出来的 —— 中间经历了场景路由的建设与推翻、方法论的沉淀、多  Agent 协\n同代码审查的实战、运营活动配置的端到端落地,以及从一个人用到一个团队用的完整过\n程。如果你正在思考 \"AI 辅助开发到底能走多远 \" ,这篇文章给出的不是理论答案,而是\n一份带着所有弯路和修正的实践记录。\n\" 我发明了一种新的编程方式,我称之为 ' 氛围编程 ' 。你完全沉浸在氛围之中,拥抱指数级\n增长,甚至忘记代码的存在 ...... 我总是 ' 全部接受 ' ,不再看差异对比。遇到错误信息时,\n我直接复制粘贴进去,不加任何注释,通常这样就能解决问题。 \"\n\" 如今,通过  LLM 智能体进行编程正日益成为专业人士的默认工作流程,只不过监管和审\n查更加严格。其目标是在不牺牲软件质量的前提下,充分利用智能体的优势。许多人试图\n为这种方法想出一个更好的名称,以区别于  Vibe Coding ,我个人目前最喜欢的\n是  Agentic Engineering。 \"\n",
+    "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区",
+    "full_title_in_capture": "认知重建之后，步入Agentic Engineering的工程革命",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0071",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "4d082e62396d2fa6716176d3d4bc34dded25f59cb7e0c49c0d6f8cae7c8c4782"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "⚠️[原文疑点] Skill数量多处27而p.20为26，未明确对应版本，不统一为确定总数",
+        "pages": [
+          1,
+          20,
+          35
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "⚠️[原文疑点] 需求评分≥80与60–80及major条件有交叉，原文未给优先级",
+        "pages": [
+          23
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "⚠️[原文疑点] 三层验证表将L2标作S6运行时验证，十步计划S6为DB写入；保留机制不统一编号",
+        "pages": [
+          29,
+          31
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "六步Skill与十步计划成熟度需区分；按p.29/34记录Skill仍迭代、MVP核心链路验证、分钟级为目标",
+        "pages": [
+          25,
+          29,
+          34
+        ],
+        "status": "clarified"
+      },
+      {
+        "description": "团队工具效果缺乏系统量化评估，作者在反思中明确承认；未将规模或外部案例当本项目收益",
+        "pages": [
+          43,
+          47,
+          48,
+          49
+        ],
+        "status": "attributed"
+      },
+      {
+        "description": "快速开始代码注释存在裁切，未执行原文删除示例或将其当通用可运行教程",
+        "pages": [
+          39
+        ],
+        "status": "retained"
+      }
+    ],
+    "outputs": [
+      "AI_Agentic工程的演进与落地.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "detail_pages_reviewed": [
+        16,
+        17,
+        21,
+        23,
+        24,
+        29,
+        31,
+        35
+      ]
+    },
+    "coverage": "覆盖全部十章主线：概念与认知、文件和路由演进、三级工具、迭代SOP、需求/代码评审/记忆能力域、十步活动案例及字段/验证/降级/隔离、团队推广、入门职责、反思与未来；省略重复口号与评论，外部案例明确为引用，完整附属Skill源码未取得。",
+    "fact_checks": [
+      {
+        "item": "Command约束",
+        "value": "少于100行",
+        "pages": [
+          15
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "Skill主入口",
+        "value": "少于2k token",
+        "pages": [
+          15
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "Subagent返回",
+        "value": "少于2k token，禁止相互嵌套调用",
+        "pages": [
+          15
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "人工活动基线",
+        "value": "3–5人天/活动，错误率15%–20%",
+        "pages": [
+          27
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "自检与修复",
+        "value": "10项自检，其中5项S5无法检测；最多修复3轮",
+        "pages": [
+          31
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "活动直写模式",
+        "value": "config_version=\"v2\"；config_content",
+        "pages": [
+          32
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "本地后端/代理",
+        "value": "127.0.0.1:8002 / 127.0.0.1:8899",
+        "pages": [
+          33
+        ],
+        "result": "matches_pdf"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Agentic工程的演进与落地.md",
+      "sha256": "8072e05869b53cd5c8c756a1c80c6b01aff44d179ab9112be744c534ac6e27dd"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "4d082e62396d2fa6716176d3d4bc34dded25f59cb7e0c49c0d6f8cae7c8c4782"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "e494bfc3d7a10c7634841277f81c58ec86121e5ea511a9a45238d83e9c2bd485"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 33,
+        "text_layer_sha256": "0e3af28995aea43f9120fc888400df333567022b3e2328f0bdf1a5eb88d89939",
+        "text_layer_char_count": 954
+      },
+      {
+        "page": 2,
+        "md_start_line": 41,
+        "md_end_line": 71,
+        "text_layer_sha256": "0269bb505999a2e339dbbbfa8e30a033915e3232651247b0b3909e36fe0c215e",
+        "text_layer_char_count": 1222
+      },
+      {
+        "page": 3,
+        "md_start_line": 79,
+        "md_end_line": 105,
+        "text_layer_sha256": "ad5e6fcfde47184d6a9acad7c9406849709c756bac1fdf602c1b3f6ab137ddb1",
+        "text_layer_char_count": 1032
+      },
+      {
+        "page": 4,
+        "md_start_line": 113,
+        "md_end_line": 140,
+        "text_layer_sha256": "7a00db396d9aabe52a30779b567b6556bab7447fabd0fbf1e4b5757bba0115d3",
+        "text_layer_char_count": 1292
+      },
+      {
+        "page": 5,
+        "md_start_line": 148,
+        "md_end_line": 180,
+        "text_layer_sha256": "b37b394ba5e2e938c31939f99a5c0a882f06301f6c5a1768fdd4bc1c5922ca2c",
+        "text_layer_char_count": 1351
+      },
+      {
+        "page": 6,
+        "md_start_line": 188,
+        "md_end_line": 222,
+        "text_layer_sha256": "e34287594689e4b9b532a421db64481cb4b2b8b5172f91a2c797005419e446a5",
+        "text_layer_char_count": 1478
+      },
+      {
+        "page": 7,
+        "md_start_line": 230,
+        "md_end_line": 263,
+        "text_layer_sha256": "1d6b6c34885f71fdf5491aaef4bab5fdeeae31157a040c79da9a6f6858fbab24",
+        "text_layer_char_count": 1349
+      },
+      {
+        "page": 8,
+        "md_start_line": 271,
+        "md_end_line": 301,
+        "text_layer_sha256": "c1f47cf31418c13e07a07b14467607b4f09601c34416933ba52ef50612b9d6b5",
+        "text_layer_char_count": 1166
+      },
+      {
+        "page": 9,
+        "md_start_line": 309,
+        "md_end_line": 341,
+        "text_layer_sha256": "8d1cb823308efda5c77df760aef8d23a202b4c10fd46f8a2fc7652ab8a3cfa69",
+        "text_layer_char_count": 1130
+      },
+      {
+        "page": 10,
+        "md_start_line": 349,
+        "md_end_line": 383,
+        "text_layer_sha256": "186eb0d6f1e94b12ed8dba9a8409c8586649802f1ab138e7c39a26c96b01c796",
+        "text_layer_char_count": 1292
+      },
+      {
+        "page": 11,
+        "md_start_line": 391,
+        "md_end_line": 424,
+        "text_layer_sha256": "33352bca9ff48454c94004996db1a0e070ea5ef8460c46cf740ddb7675f20765",
+        "text_layer_char_count": 1409
+      },
+      {
+        "page": 12,
+        "md_start_line": 432,
+        "md_end_line": 466,
+        "text_layer_sha256": "089f9cd913bfa779216cb7975e0a6d9fe33acbcb1c0ab7d8e150a9714499f4c5",
+        "text_layer_char_count": 1384
+      },
+      {
+        "page": 13,
+        "md_start_line": 474,
+        "md_end_line": 509,
+        "text_layer_sha256": "bfe28c3730f3dfbe857937205416252424b31ef9ce5cace9d87ee6c5fb5375d3",
+        "text_layer_char_count": 1620
+      },
+      {
+        "page": 14,
+        "md_start_line": 517,
+        "md_end_line": 544,
+        "text_layer_sha256": "9abad3771d1066da917d6bbb27e77a621fe707859ee2c96156b86d58613d01dd",
+        "text_layer_char_count": 1202
+      },
+      {
+        "page": 15,
+        "md_start_line": 552,
+        "md_end_line": 581,
+        "text_layer_sha256": "0d50aaaf1470e178e322cf0de43c44f58110e6f451078d4024f18a087d69c129",
+        "text_layer_char_count": 1366
+      },
+      {
+        "page": 16,
+        "md_start_line": 589,
+        "md_end_line": 614,
+        "text_layer_sha256": "18551b340f3ccf24106dcf523cc6b1ef48bea5e6aac9917437a06eb9fe4f5e29",
+        "text_layer_char_count": 983
+      },
+      {
+        "page": 17,
+        "md_start_line": 622,
+        "md_end_line": 649,
+        "text_layer_sha256": "2a452c509cbaa9f36e0acd730bc77ede9b5de0af1f940a577a8f40fb54b8a048",
+        "text_layer_char_count": 1116
+      },
+      {
+        "page": 18,
+        "md_start_line": 657,
+        "md_end_line": 689,
+        "text_layer_sha256": "ba2a7cdc61820f8f46985ba42304e6bcaa0a78e3d4c30f9704c8833dc6ff99e7",
+        "text_layer_char_count": 1170
+      },
+      {
+        "page": 19,
+        "md_start_line": 697,
+        "md_end_line": 723,
+        "text_layer_sha256": "b30ae17d72a30f618a426f73d2357bef23b1d627221644fc79f79641774fa695",
+        "text_layer_char_count": 1041
+      },
+      {
+        "page": 20,
+        "md_start_line": 731,
+        "md_end_line": 764,
+        "text_layer_sha256": "39644792e7168bd07d993930f3cfc708fa058358ade9afb33d4d09665d961b01",
+        "text_layer_char_count": 1135
+      },
+      {
+        "page": 21,
+        "md_start_line": 772,
+        "md_end_line": 797,
+        "text_layer_sha256": "d9cde1097446a28146719a7b1de7513a9eb19bb87d9bb82afd87fb769b31d6b4",
+        "text_layer_char_count": 1001
+      },
+      {
+        "page": 22,
+        "md_start_line": 805,
+        "md_end_line": 836,
+        "text_layer_sha256": "efcc46afec2a64be24081a481deb6f4928632d3afe8a589e40733c7862d70150",
+        "text_layer_char_count": 1203
+      },
+      {
+        "page": 23,
+        "md_start_line": 844,
+        "md_end_line": 871,
+        "text_layer_sha256": "f9fde96522bb1a61df94e3d21b272c6ef34333930923bd0060d7f9e527042c61",
+        "text_layer_char_count": 1071
+      },
+      {
+        "page": 24,
+        "md_start_line": 879,
+        "md_end_line": 904,
+        "text_layer_sha256": "5ecb5012450829010b2bf8f2bd40af75ac33b0fbbf58c13f0b3a9c567cda566d",
+        "text_layer_char_count": 1010
+      },
+      {
+        "page": 25,
+        "md_start_line": 912,
+        "md_end_line": 944,
+        "text_layer_sha256": "d9caa447f11c5263b7696a64654892bff3c31b9adecba5d4ff7ebf45b910ad7b",
+        "text_layer_char_count": 1336
+      },
+      {
+        "page": 26,
+        "md_start_line": 952,
+        "md_end_line": 983,
+        "text_layer_sha256": "283735f1c208e6d9f67d7f436f7324836ce9a9ac3ee5b0c5c69883bf2073bcb9",
+        "text_layer_char_count": 1198
+      },
+      {
+        "page": 27,
+        "md_start_line": 991,
+        "md_end_line": 1030,
+        "text_layer_sha256": "1bbfaa5bf935b172d677ed2268906c0ef0edcafd6ee32514290b239447bb0ed2",
+        "text_layer_char_count": 2009
+      },
+      {
+        "page": 28,
+        "md_start_line": 1038,
+        "md_end_line": 1070,
+        "text_layer_sha256": "424040182636a0eff1225c1acbb4d28578104a38a77e3e0c66a780036555a3da",
+        "text_layer_char_count": 1392
+      },
+      {
+        "page": 29,
+        "md_start_line": 1078,
+        "md_end_line": 1101,
+        "text_layer_sha256": "850f4420295f59dac4136b44fa2a93be45687a6adfc0e8f17fe5c927c235a9e5",
+        "text_layer_char_count": 1117
+      },
+      {
+        "page": 30,
+        "md_start_line": 1109,
+        "md_end_line": 1145,
+        "text_layer_sha256": "eaada5f83cd4ea8f4e2641c4e757ad4ad6ac3feea11cf8a7e09c472fb2c06534",
+        "text_layer_char_count": 1579
+      },
+      {
+        "page": 31,
+        "md_start_line": 1153,
+        "md_end_line": 1182,
+        "text_layer_sha256": "49e8bec9534f5b66552f47a1e25b962769ad4923dba044ec61bb66f7330017fb",
+        "text_layer_char_count": 1455
+      },
+      {
+        "page": 32,
+        "md_start_line": 1190,
+        "md_end_line": 1221,
+        "text_layer_sha256": "7f9cc84157cad69123029dcfb10af7f7e9877ecc4df5de93d54c082ab626d55c",
+        "text_layer_char_count": 1486
+      },
+      {
+        "page": 33,
+        "md_start_line": 1229,
+        "md_end_line": 1263,
+        "text_layer_sha256": "3a89cc0ab8f9150a878be2eedbc74fff672edefc06c49210be1b54a3ddd23928",
+        "text_layer_char_count": 1604
+      },
+      {
+        "page": 34,
+        "md_start_line": 1271,
+        "md_end_line": 1300,
+        "text_layer_sha256": "5ecba203bba2521a9d79ec5e14184c2f19a6729f189917ad89e4e6e6a2eb2892",
+        "text_layer_char_count": 1207
+      },
+      {
+        "page": 35,
+        "md_start_line": 1308,
+        "md_end_line": 1332,
+        "text_layer_sha256": "cc41fd792ad97b75d2da50744df3923f6052da0d4d2a384277b2e9223f6855ea",
+        "text_layer_char_count": 948
+      },
+      {
+        "page": 36,
+        "md_start_line": 1340,
+        "md_end_line": 1372,
+        "text_layer_sha256": "8df18a2fab869732a3c1d58600ffc022f15546c0095ccd13c31fdd793d724b2d",
+        "text_layer_char_count": 1159
+      },
+      {
+        "page": 37,
+        "md_start_line": 1380,
+        "md_end_line": 1412,
+        "text_layer_sha256": "325c562b9667b56b50ef3994995fad695979b3b7c8b30276831b2899ee1904af",
+        "text_layer_char_count": 1195
+      },
+      {
+        "page": 38,
+        "md_start_line": 1420,
+        "md_end_line": 1450,
+        "text_layer_sha256": "f4d6aa32d4bb6567aa4959350eef86945d2aa21d55b8aec6aadb32597ce2526b",
+        "text_layer_char_count": 1188
+      },
+      {
+        "page": 39,
+        "md_start_line": 1458,
+        "md_end_line": 1490,
+        "text_layer_sha256": "b4abeb3654cce9675e393da07ad4e44e2e73d6559165df13b8032ffab81de4bb",
+        "text_layer_char_count": 1160
+      },
+      {
+        "page": 40,
+        "md_start_line": 1498,
+        "md_end_line": 1530,
+        "text_layer_sha256": "d214c7fd5485769d4449fc5692d746ffc69b176890192b1195ab829ceb17d419",
+        "text_layer_char_count": 1067
+      },
+      {
+        "page": 41,
+        "md_start_line": 1538,
+        "md_end_line": 1570,
+        "text_layer_sha256": "dc07e30fb489b8cf30e6b94156d98b9b3661f2c44dd2b114a9aa75e4f7dc1fb1",
+        "text_layer_char_count": 1154
+      },
+      {
+        "page": 42,
+        "md_start_line": 1578,
+        "md_end_line": 1611,
+        "text_layer_sha256": "0bc4e7fb70214fc74c49ddd871fd056f89018567b774f40da742a2e69b2df1f2",
+        "text_layer_char_count": 1283
+      },
+      {
+        "page": 43,
+        "md_start_line": 1619,
+        "md_end_line": 1651,
+        "text_layer_sha256": "fd1fb79606b92fde2833e2e560082903859ed7337076a3d95c9d9efe9d6fae67",
+        "text_layer_char_count": 1396
+      },
+      {
+        "page": 44,
+        "md_start_line": 1659,
+        "md_end_line": 1689,
+        "text_layer_sha256": "6a3d3f258a382ac1c9a657489429bf41894d23d8a49d05ebd8223391ac6fe68a",
+        "text_layer_char_count": 1110
+      },
+      {
+        "page": 45,
+        "md_start_line": 1697,
+        "md_end_line": 1729,
+        "text_layer_sha256": "c541df0e2bc97d7486f338d84c35d7ff24c5494a4b9d42c198a60c8806eafd57",
+        "text_layer_char_count": 1408
+      },
+      {
+        "page": 46,
+        "md_start_line": 1737,
+        "md_end_line": 1770,
+        "text_layer_sha256": "e3fcc0248507f2655409db7e4b3637b80d9b276e21f305d8903ac69fbc4d552a",
+        "text_layer_char_count": 1368
+      },
+      {
+        "page": 47,
+        "md_start_line": 1778,
+        "md_end_line": 1812,
+        "text_layer_sha256": "b9b304e65ad03bc911330dbe47076910ebdc1826948db2b4125efb722550c490",
+        "text_layer_char_count": 1574
+      },
+      {
+        "page": 48,
+        "md_start_line": 1820,
+        "md_end_line": 1847,
+        "text_layer_sha256": "da87f565f10a4ceb8951f41247e11ef686a204c28b2e2579dc23abab478f5a45",
+        "text_layer_char_count": 1282
+      },
+      {
+        "page": 49,
+        "md_start_line": 1855,
+        "md_end_line": 1891,
+        "text_layer_sha256": "f0240911a44cf0b9afeffc75f5d96828271550736a4f7118e5e8ad0ed65ad500",
+        "text_layer_char_count": 1635
+      },
+      {
+        "page": 50,
+        "md_start_line": 1899,
+        "md_end_line": 1913,
+        "text_layer_sha256": "0627fa4c1e64de6592164c82afcad1632615b088631b07bcd6657922bc89ab4e",
+        "text_layer_char_count": 553
+      },
+      {
+        "page": 51,
+        "md_start_line": 1921,
+        "md_end_line": 1959,
+        "text_layer_sha256": "175734dfa6194c12cc3b7fe043a71a321d7a9da74bd9ed02f84bf3015cc58785",
+        "text_layer_char_count": 930
+      },
+      {
+        "page": 52,
+        "md_start_line": 1967,
+        "md_end_line": 1981,
+        "text_layer_sha256": "557ca552d019d1bec07b146f10cdf73199df09051825e7fe9aa90a7810badf6c",
+        "text_layer_char_count": 227
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "detail_pages_reviewed": [
+        16,
+        17,
+        21,
+        23,
+        24,
+        29,
+        31,
+        35
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "⚠️[原文疑点] Skill数量多处27而p.20为26，未明确对应版本，不统一为确定总数",
+        "pages": [
+          1,
+          20,
+          35
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "⚠️[原文疑点] 需求评分≥80与60–80及major条件有交叉，原文未给优先级",
+        "pages": [
+          23
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "⚠️[原文疑点] 三层验证表将L2标作S6运行时验证，十步计划S6为DB写入；保留机制不统一编号",
+        "pages": [
+          29,
+          31
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "六步Skill与十步计划成熟度需区分；按p.29/34记录Skill仍迭代、MVP核心链路验证、分钟级为目标",
+        "pages": [
+          25,
+          29,
+          34
+        ],
+        "status": "clarified"
+      },
+      {
+        "description": "团队工具效果缺乏系统量化评估，作者在反思中明确承认；未将规模或外部案例当本项目收益",
+        "pages": [
+          43,
+          47,
+          48,
+          49
+        ],
+        "status": "attributed"
+      },
+      {
+        "description": "快速开始代码注释存在裁切，未执行原文删除示例或将其当通用可运行教程",
+        "pages": [
+          39
+        ],
+        "status": "retained"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0330 认知重建之后步入Agentic Engineering工程革命.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "4d082e62396d2fa6716176d3d4bc34dded25f59cb7e0c49c0d6f8cae7c8c4782",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Agentic工程的演进与落地.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

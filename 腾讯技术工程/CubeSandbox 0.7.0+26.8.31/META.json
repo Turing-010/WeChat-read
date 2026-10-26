@@ -1,0 +1,348 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0142",
+  "title": "CubeSandbox v0.7.0 发布：沙箱跨机流动，集群平滑演进",
+  "short_title": "CubeSandbox 0.7.0",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-31T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/CubeSandbox v0.7.0 发布：沙箱跨机流动，集群平滑演进.pdf",
+      "original_filename": "CubeSandbox v0.7.0 发布：沙箱跨机流动，集群平滑演进.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "efbb4c642cee4da1db06730b303776c3fc27ee34f73338a649fd4a313c450cce",
+      "size_bytes": 2085983,
+      "page_count": 4,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "未署名，PDF 首页和正文中未找到作者姓名。",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "status": "来源缺失"
+        },
+        {
+          "description": "预览版跨机迁移的完整状态范围、迁移耗时和失败恢复语义未说明。",
+          "pages": [
+            2
+          ],
+          "status": "原文未提供"
+        },
+        {
+          "description": "组件版本兼容矩阵、详细回滚步骤及网络变更的量化基准未提供。",
+          "pages": [
+            2,
+            3
+          ],
+          "status": "原文未提供"
+        }
+      ],
+      "publication_evidence": "PDF 第1页标注 2026-08-31 02:36；未见时区"
+    }
+  ],
+  "tags": [
+    "模型与开发工具发布",
+    "云网络系统研究",
+    "异常监控与稳定性",
+    "分布式计算与数据管道",
+    "Agent安全与权限"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/CubeSandbox 0.7.0+26.8.31",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_CubeSandbox 0.7.0.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "CubeSandbox  v0 . 7 . 0  发布:沙箱跨机流动,集群平滑演进\n2026 年 8 月 31 日 02 : 36广东腾讯技术工程 7 人\n在 v0.6.0 中,我们把 CubeSandbox 送进了 Kubernetes,也交付了兼容 E2B 的 Volume 框\n架。控制面能以标准工作负载运行,计算节点作为可调度资源纳入集群,存储的选择权回到了用户\n手里。\n但不少团队真正把集群跑起来之后,会遇到一个最大的问题:沙箱只能待在一开始的那台机器上。\n暂停的沙箱换不了机器恢复,快照也只能在原节点用;更麻烦的是,组件一升级,之前做好的模板\n和快照就对不上了,只能重做。这两件事,正是生产用户最在意的。\n于是,在 v0.7.0 中,我们将这些“需求”正式推上了研发日程:让沙箱跨机器流动,让升级不再打断\n已有资产。\n◆四大核心特性◆\n1、跨机暂停恢复\n过去,沙箱的 pause/resume 与基于快照的创建都绑定在单台宿主机上,在哪台机器暂停,就只\n能在哪台机器恢复。v0.7.0 基于 S3 后端存储,将沙箱的内存与文件系统状态落到共享对象存储,\n从而支持在 A 节点暂停、在 B 节点恢复,也支持在任意已同步节点上用同一份快照拉起新沙箱。\n举个例子:一台计算节点要下线检修,上面还挂着一批暂停的沙箱。过去只能干等它们在本机恢\n复,或直接丢弃;现在可以把这些沙箱迁移到别的节点再恢复,节点排空不必再以牺牲沙箱为代\n价。再比如 Agent 训练这类需要大规模并行、频繁暂停恢复的场景,调度器可以按各节点的实时负\n载把沙箱放到最空闲的机器上。\n该能力当前为预览版,默认由内置 MinIO  承载 S3 后端,用户也可自行指定对象存储。\n2. 组件多版本共存\n跨机流动会涉及一个连带问题:不同节点、不同时间构建的模板和快照,可能依赖不同版本的运行\n时组件;组件一旦升级,老的模板、快照就对不上,只能重做。v0.7.0 让计算节点保留历史版本的\n组件,模板与快照不再因组件升级而失效,升级也不会打断已有实例的 pause/resume。\n在这之前,一个已经跑在生产上的集群,如果想升级到新版本修 bug,可能需要对现存的模板和快\n照集体作废,业务得停下来重新烤制。因此,对于需要⻓期迭代、持续升级的集群,v0.7.0 的这项\n",
+    "publication_evidence": "PDF 第1页标注 2026-08-31 02:36；未见时区",
+    "full_title_in_capture": "CubeSandbox v0.7.0 发布：沙箱跨机流动，集群平滑演进",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0142",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "efbb4c642cee4da1db06730b303776c3fc27ee34f73338a649fd4a313c450cce"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "未署名，PDF 首页和正文中未找到作者姓名。",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "status": "来源缺失"
+      },
+      {
+        "description": "预览版跨机迁移的完整状态范围、迁移耗时和失败恢复语义未说明。",
+        "pages": [
+          2
+        ],
+        "status": "原文未提供"
+      },
+      {
+        "description": "组件版本兼容矩阵、详细回滚步骤及网络变更的量化基准未提供。",
+        "pages": [
+          2,
+          3
+        ],
+        "status": "原文未提供"
+      }
+    ],
+    "outputs": [
+      "AI_CubeSandbox 0.7.0.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4
+      ]
+    },
+    "coverage": "覆盖 v0.7.0 跨机暂停恢复、版本并存、网络子系统调整、CubeOps 拆分、其他发布项与 Roadmap；发布摘要未提供完整兼容和性能资料。",
+    "fact_checks": [
+      {
+        "item": "跨机恢复流程和预览状态",
+        "note_value": "暂停、S3 保存、另一宿主机恢复；预览能力",
+        "source_value": "S3 保存状态并跨主机恢复，标注预览",
+        "pages": [
+          2
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "运维组件拆分",
+        "note_value": "CubeOps 从 CubeMaster 拆分",
+        "source_value": "CubeOps 拆分自 CubeMaster",
+        "pages": [
+          3
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "Roadmap 状态",
+        "note_value": "后续计划，不属于已交付项",
+        "source_value": "未来规划内容",
+        "pages": [
+          4
+        ],
+        "result": "一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_CubeSandbox 0.7.0.md",
+      "sha256": "cf20794dc5b3bbe3effb77eff8e4f62b4f9ce7c9cb92d99c3b8dce3b88e5d263",
+      "size_bytes": 20434
+    },
+    "independent_crosscheck": {
+      "reviewer": "/root",
+      "note_sha256": "cf20794dc5b3bbe3effb77eff8e4f62b4f9ce7c9cb92d99c3b8dce3b88e5d263",
+      "review_sha256": "b0f24ade3fade1d2a04304065ada33d0a8680c6cc56a7d43c7194b9969369d79",
+      "status": "passed",
+      "changes": [
+        "Converted the date/format line to the required folded report and normalized the review-card heading to `## 复习卡片`."
+      ],
+      "source_spotchecks": [
+        "p.2 identifies cross-host S3 save/restore as preview and version coexistence; p.3 reports network/RPC change without a quantitative performance measure and CubeOps split; p.4 marks future roadmap separately and includes closing promotion/comments; final-page contact sheet checked."
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "efbb4c642cee4da1db06730b303776c3fc27ee34f73338a649fd4a313c450cce"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "d6839f56e8a257fb1ef7736847de4d73194af5100aedb3d4d8dca711c26da9b2"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 35,
+        "text_layer_sha256": "29ab999eeb827917abf44abb413b691ab93c41023b28e552a3d7206552a29141",
+        "text_layer_char_count": 968
+      },
+      {
+        "page": 2,
+        "md_start_line": 43,
+        "md_end_line": 74,
+        "text_layer_sha256": "432d05bd17709fd8f2105b680f7aa2d8eee12e88d3d82954f428473bd0a03628",
+        "text_layer_char_count": 1295
+      },
+      {
+        "page": 3,
+        "md_start_line": 82,
+        "md_end_line": 103,
+        "text_layer_sha256": "fcdb69bd3f242393d6229921df5f3c2126803c24cc9fb61fdbb1e7f4fb767c3e",
+        "text_layer_char_count": 884
+      },
+      {
+        "page": 4,
+        "md_start_line": 111,
+        "md_end_line": 117,
+        "text_layer_sha256": "9617edb16d67c57dcefc79a3601af12d341cacec6858808a2ec0294dd9cb9445",
+        "text_layer_char_count": 166
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "未署名，PDF 首页和正文中未找到作者姓名。",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "status": "来源缺失"
+      },
+      {
+        "description": "预览版跨机迁移的完整状态范围、迁移耗时和失败恢复语义未说明。",
+        "pages": [
+          2
+        ],
+        "status": "原文未提供"
+      },
+      {
+        "description": "组件版本兼容矩阵、详细回滚步骤及网络变更的量化基准未提供。",
+        "pages": [
+          2,
+          3
+        ],
+        "status": "原文未提供"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/CubeSandbox v0.7.0 发布：沙箱跨机流动，集群平滑演进.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "efbb4c642cee4da1db06730b303776c3fc27ee34f73338a649fd4a313c450cce",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent任务恢复.md",
+      "../../20_topics/分布式计算与数据管道.md",
+      "../../20_topics/模型与开发工具发布.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_CubeSandbox 0.7.0.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

@@ -1,0 +1,508 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0093",
+  "title": "三个关键词，2026谷歌I/O大会全说透了",
+  "short_title": "谷歌IO的模型编程与Agent",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-05-20T00:25",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0520 Google IO 2026.pdf",
+      "original_filename": "0520 Google IO 2026.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "c22e83e373714ef541ec1f9067e9b0218b6d0d5958477f75560d3cc5f0a07de7",
+      "size_bytes": 5372475,
+      "page_count": 14,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "原文自标内容由AI生成；发布、基准、价格、人物身份与产品能力只按原文归因，未联网验证，不作当前可用性承诺",
+          "pages": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            8,
+            13
+          ],
+          "status": "source_attribution_limited"
+        },
+        {
+          "description": "抽取文本漏掉Ultra原价250；页8图可读250降到200/月，已据图补正",
+          "pages": [
+            8
+          ],
+          "status": "resolved_from_page_image"
+        },
+        {
+          "description": "性能、成本节省、深伪识别率与工程半年对比缺完整实验/研究条件，未外推",
+          "pages": [
+            3,
+            5,
+            6,
+            7
+          ],
+          "status": "qualified"
+        },
+        {
+          "description": "视频速览为静态封面，未读取视频；p.14空白页，正文结尾及评论可见，捕获完整性待复核",
+          "pages": [
+            12,
+            13,
+            14
+          ],
+          "status": "pending_review"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区"
+    }
+  ],
+  "tags": [
+    "模型与开发工具发布",
+    "Harness与模型协同",
+    "Agent成本与上下文预算",
+    "Agent安全与权限"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/谷歌IO的模型编程与Agent+26.5.20",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_谷歌IO的模型编程与Agent.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "三个关键词, 2026 谷歌 I / O 大会全说透了\nMay  20 , 2026 , 12 : 25  AM广东腾讯技术工程 81  listened\n导语\n\"There are three areas where I want to go deeper today to show you the progress in\neach: Models, coding, and agents.\"\n这不是日程表,这是谷歌交给  AI 下半场的答题卡。\n而这三块拼图最令人振奋的地方在于:\n模型: Gemini 3.5 Flash 一个  \"Flash 级 \" 的小模型,把谷歌自己三个月前的旗舰  Gemini 3.1\nPro 在几乎所有基准上正面打穿;\n编程: Antigravity 用  93 个子  Agent 、 12 小时、不到  1000 美元,从零造了一个能跑  Doom\n北京时间今天凌晨  1 点,谷歌  I/O 2026 在  Shoreline 圆形剧场落幕。整场  keynote 大约\n1 小时  51 分钟,涉及十几款产品、三代模型、一个新  IDE 、一个新  Agent 、一套新搜索\n范式\n但如果只能记一句话,那就是皮查伊( Sundar Pichai )在演讲第  16 分钟说的那一句。\n",
+    "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区",
+    "full_title_in_capture": "三个关键词，2026谷歌I/O大会全说透了",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0093",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "c22e83e373714ef541ec1f9067e9b0218b6d0d5958477f75560d3cc5f0a07de7"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "原文自标内容由AI生成；发布、基准、价格、人物身份与产品能力只按原文归因，未联网验证，不作当前可用性承诺",
+        "pages": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          8,
+          13
+        ],
+        "status": "source_attribution_limited"
+      },
+      {
+        "description": "抽取文本漏掉Ultra原价250；页8图可读250降到200/月，已据图补正",
+        "pages": [
+          8
+        ],
+        "status": "resolved_from_page_image"
+      },
+      {
+        "description": "性能、成本节省、深伪识别率与工程半年对比缺完整实验/研究条件，未外推",
+        "pages": [
+          3,
+          5,
+          6,
+          7
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "视频速览为静态封面，未读取视频；p.14空白页，正文结尾及评论可见，捕获完整性待复核",
+        "pages": [
+          12,
+          13,
+          14
+        ],
+        "status": "pending_review"
+      }
+    ],
+    "outputs": [
+      "AI_谷歌IO的模型编程与Agent.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        6,
+        8,
+        10,
+        13
+      ]
+    },
+    "coverage": "覆盖模型/Omni、Antigravity编排及演示、Spark时间表与权限、Search持续监控/生成界面、UCP、分发战略五章；没有转录视频内容或全部基准小字。",
+    "fact_checks": [
+      {
+        "item": "发布时刻",
+        "value": "2026-05-20 00:25，时区未知",
+        "pages": [
+          1
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "Flash摘录基准",
+        "value": "76.2%、1656 Elo、83.6%、84.2%",
+        "pages": [
+          3
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "操作系统演示",
+        "value": "93子Agent/12小时/超过15000请求/26亿token/<1000美元API",
+        "pages": [
+          6
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "Ultra图中文字",
+        "value": "新增100/月，最高档250降到200/月",
+        "pages": [
+          8
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "搜索生成界面时间",
+        "value": "原文预计当年夏天免费开放",
+        "pages": [
+          10
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "内容标识",
+        "value": "作者提示：内容由AI生成",
+        "pages": [
+          13
+        ],
+        "result": "matches_pdf"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_谷歌IO的模型编程与Agent.md",
+      "sha256": "b13cf363ec581a477203369e8141d27171ffe1b9fd81b3d3d30bad810cfaae52"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "c22e83e373714ef541ec1f9067e9b0218b6d0d5958477f75560d3cc5f0a07de7"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "bfd934a00ffdedea0826fcc66683edb09455f54191b1362d8f6a2558d78e4eb1"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 23,
+        "text_layer_sha256": "500347666c83b6490cc3b306161520bcf9fe5645c273dc47778ae9ce5d2a5786",
+        "text_layer_char_count": 564
+      },
+      {
+        "page": 2,
+        "md_start_line": 31,
+        "md_end_line": 51,
+        "text_layer_sha256": "02f82cfd3f20d5b81c758eaf5b82b7aa3825dc88ba2b86c3a1689a2ccf75ebcf",
+        "text_layer_char_count": 689
+      },
+      {
+        "page": 3,
+        "md_start_line": 59,
+        "md_end_line": 75,
+        "text_layer_sha256": "9038803bd11f1a9e96719b030bb1f4f61ab414d2f8ae424e7c4576b8de73db57",
+        "text_layer_char_count": 518
+      },
+      {
+        "page": 4,
+        "md_start_line": 83,
+        "md_end_line": 98,
+        "text_layer_sha256": "e26eb47fb4b48b2c06eaf408064d849bc2e1080747e5d4b3b70be4d290d771e1",
+        "text_layer_char_count": 653
+      },
+      {
+        "page": 5,
+        "md_start_line": 106,
+        "md_end_line": 125,
+        "text_layer_sha256": "2efbe41388224ec2b8101227f56a324e3468d88e05bbcc180b94b8937bb1f93b",
+        "text_layer_char_count": 815
+      },
+      {
+        "page": 6,
+        "md_start_line": 133,
+        "md_end_line": 155,
+        "text_layer_sha256": "028d8435072ce7de51c13b20b90d4f1acde033dd168d12824cf77eccd51d7fbf",
+        "text_layer_char_count": 680
+      },
+      {
+        "page": 7,
+        "md_start_line": 163,
+        "md_end_line": 178,
+        "text_layer_sha256": "7173f10fbe294af0a781339579382ea766b38036ee403769d739bcbcf98b43df",
+        "text_layer_char_count": 685
+      },
+      {
+        "page": 8,
+        "md_start_line": 186,
+        "md_end_line": 206,
+        "text_layer_sha256": "4ce6efc590eeab74821abd52c1e89139adc5b46d89d5420ae2e86bceeafb960f",
+        "text_layer_char_count": 752
+      },
+      {
+        "page": 9,
+        "md_start_line": 214,
+        "md_end_line": 232,
+        "text_layer_sha256": "7966f238129994a931d5d0d2989261e1637f8ce2cf0d9a52737fb668695168c9",
+        "text_layer_char_count": 618
+      },
+      {
+        "page": 10,
+        "md_start_line": 240,
+        "md_end_line": 252,
+        "text_layer_sha256": "7d111fdefa93c688abeb10a761b2f2d90e69bdcbed8524e2bba418aaf9612766",
+        "text_layer_char_count": 462
+      },
+      {
+        "page": 11,
+        "md_start_line": 260,
+        "md_end_line": 284,
+        "text_layer_sha256": "fdf83b3c729e05ce503c9e279db4065e2c72b290e94ece558679567836cbd2cb",
+        "text_layer_char_count": 923
+      },
+      {
+        "page": 12,
+        "md_start_line": 292,
+        "md_end_line": 305,
+        "text_layer_sha256": "8b2816178ef61b2e755c796d57a9850115148bc78d2ffd79fed263e9bd073cc2",
+        "text_layer_char_count": 335
+      },
+      {
+        "page": 13,
+        "md_start_line": 313,
+        "md_end_line": 321,
+        "text_layer_sha256": "d6a9e273bc6b18f9290a8de25ac01e50040935d8c342d82d2fea133a3aa19a11",
+        "text_layer_char_count": 108
+      },
+      {
+        "page": 14,
+        "md_start_line": 329,
+        "md_end_line": 328,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        6,
+        8,
+        10,
+        13
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "原文自标内容由AI生成；发布、基准、价格、人物身份与产品能力只按原文归因，未联网验证，不作当前可用性承诺",
+        "pages": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          8,
+          13
+        ],
+        "status": "source_attribution_limited"
+      },
+      {
+        "description": "抽取文本漏掉Ultra原价250；页8图可读250降到200/月，已据图补正",
+        "pages": [
+          8
+        ],
+        "status": "resolved_from_page_image"
+      },
+      {
+        "description": "性能、成本节省、深伪识别率与工程半年对比缺完整实验/研究条件，未外推",
+        "pages": [
+          3,
+          5,
+          6,
+          7
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "视频速览为静态封面，未读取视频；p.14空白页，正文结尾及评论可见，捕获完整性待复核",
+        "pages": [
+          12,
+          13,
+          14
+        ],
+        "status": "pending_review"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0520 Google IO 2026.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "c22e83e373714ef541ec1f9067e9b0218b6d0d5958477f75560d3cc5f0a07de7",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [],
+    "verification_status": "archive_retained_without_new_technical_claims",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_谷歌IO的模型编程与Agent.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

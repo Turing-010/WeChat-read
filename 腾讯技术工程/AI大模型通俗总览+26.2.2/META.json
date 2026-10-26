@@ -1,0 +1,959 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0126",
+  "title": "这大概是我读过关于 AI 大模型最全面、好读又易懂的文章了",
+  "short_title": "AI大模型通俗总览",
+  "account": "腾讯技术工程",
+  "author": "白玉光",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-02-02T01:40",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260202_AI_LLM_Comprehensive_Guide.pdf",
+      "original_filename": "20260202_AI_LLM_Comprehensive_Guide.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "cbb6cab78f34664d6e714c5005c8ad2838cbdc6bf13aa9e0cf3571438d99aa7d",
+      "size_bytes": 42901184,
+      "page_count": 58,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "转写中p.13、p.20若干数学公式显示为占位文本，部分符号无法据图完整恢复。",
+          "pages": [
+            13,
+            20
+          ],
+          "status": "pending_review"
+        },
+        {
+          "description": "文章采用大量类比并压缩数学推导，作为入门概览使用；复杂实现细节未展开。",
+          "pages": [
+            3,
+            7,
+            18,
+            35,
+            44
+          ],
+          "status": "source_limitation"
+        }
+      ],
+      "publication_evidence": "PDF第1页刊头“2026年2月2日 01:40”；公众号显示腾讯技术工程。"
+    }
+  ],
+  "tags": [
+    "模型与开发工具发布",
+    "Agent工程循环",
+    "检索与文档解析",
+    "云网络系统研究",
+    "模型架构与训练"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/AI大模型通俗总览+26.2.2",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI大模型通俗总览.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "这大概是我读过关于 AI 大模型最全面、好读又易懂的文章了\n腾讯程序员 2026 年 2 月 2 日 01 : 40广东原创 腾讯技术工程 1 . 8 万人\n作者:白玉光\n导读:\n推开 AI 的门,你是站在门外怕迟到的人。很多人害怕迟到,害怕在众目睽睽之下,被视作一个\n犯错的学生。就如同, AI“ 呼的一下 ” 就来了,并且发展迅猛,很多人也怕被它甩在后面,而我\n就是其中之一。  神经网络是了解 AI 大模型无法绕过的话题,是现代大模型的基石。但是别看\n它现在风光,在过去的半个多世纪,却是无人问津,甚至备受争议,以至于等到它再次复出\n时,不得不被迫改名换姓,叫作深度学习。我在第一个部分将围绕神经网络基本概念,并将自\n己学习过程中的疑问,融入到文章内容,希望有着同样疑问人也能有所收获。  第二部分,我\n会利用前文的神经网络的知识,为大家勾勒大模型的大致轮廓,先是大模型的推理,而后是大\n模型训练。由于 GPU 与大模型相生相伴,我也将在其后,分享一些 AI 浪潮下,它对基础设施有\n哪些新要求。大多数人其实很少会直接接触到大模型,而更多是通过 Agent 来使用它,因此在\n文章的最后,会简单分享一下人们是如何使用大模型的。  \n1.你有没有想过\n当第一次体验到大模型带给你的惊喜时,你有没有想过,它到底是怎么思考的?你或许忙碌、\n疲惫,连思考 “ 它是怎么思考的 ” 都来不及去思考。可是在过去的很长时间里,模型参数、\ntoken 、向量化、蒸馏、温度系数等层出不穷的新概念,不断地融入你的工作和生活,你也许\n已经习以为常,日用而不知。\n我也时常在想:大模型的  “ 思考 ” 过程,和这些概念到底有着怎样的关联?有没有一条清晰的\n主线,能把这些零散的知识点串联起来?答案 ...... 其实就在我们常听到的神经网络里。神经网\n络既是大模型的思考 “ 内核 ” 和 “ 骨架 ” ,又是大语言模型的核心思想来源,以神经网络为起点,\n开启本文,我觉得应当比较合适。提到神经网络,我便会想起过去的一件小事儿。\n2.即便是十几年后\n正如李飞飞在她的自传中的说的:人工智能算法不是像传统算法那样,被告知该做什么,\n而是通过数据来学习该做什么,这也是本文想要表达的核心内容。\n",
+    "publication_evidence": "PDF第1页刊头“2026年2月2日 01:40”；公众号显示腾讯技术工程。",
+    "full_title_in_capture": "这大概是我读过关于 AI 大模型最全面、好读又易懂的文章了",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0126",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "cbb6cab78f34664d6e714c5005c8ad2838cbdc6bf13aa9e0cf3571438d99aa7d"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "转写中p.13、p.20若干数学公式显示为占位文本，部分符号无法据图完整恢复。",
+        "pages": [
+          13,
+          20
+        ],
+        "status": "pending_review"
+      },
+      {
+        "description": "文章采用大量类比并压缩数学推导，作为入门概览使用；复杂实现细节未展开。",
+        "pages": [
+          3,
+          7,
+          18,
+          35,
+          44
+        ],
+        "status": "source_limitation"
+      }
+    ],
+    "outputs": [
+      "AI_AI大模型通俗总览.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "detail_pages_reviewed": [
+        10,
+        20,
+        34,
+        46,
+        50,
+        54
+      ]
+    },
+    "coverage": "覆盖神经网络前向/反向传播、token/词向量、RNN/Transformer、训练与蒸馏、GPU并行通信、Agent/MCP/RAG/A2A；未将公众号评论作为技术内容。",
+    "fact_checks": [
+      {
+        "item": "单神经元公式",
+        "note_value": "y=f(wx+b)",
+        "source_value": "y=f(wx+b)",
+        "pages": [
+          10
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "梯度更新符号",
+        "note_value": "Δθ=−η·∇θL",
+        "source_value": "Δθ=−η·∇θL",
+        "pages": [
+          20
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "GPT-3参数示例",
+        "note_value": "1750亿",
+        "source_value": "1750亿",
+        "pages": [
+          13
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "H100计算核心示例",
+        "note_value": "18000多",
+        "source_value": "18000多",
+        "pages": [
+          43,
+          49
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "NVLink带宽示例",
+        "note_value": "900GB/s",
+        "source_value": "900GB/s",
+        "pages": [
+          49,
+          50
+        ],
+        "result": "一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_AI大模型通俗总览.md",
+      "sha256": "dcb41ed6bc349e743de5ebcb27cd1a95c2f93327044768a54816bce96fe1a2d6"
+    },
+    "independent_crosscheck": {
+      "reviewer": "crosscheck_a",
+      "status": "passed",
+      "note_sha256": "dfff2d0876a27a73b643e2a9e8e5fa6f803698e5404aa4f4dca15e0ad6f35b04",
+      "review_sha256": "2b343caf1e43b221865b078be1184c8d0cea23ff2438d7ca793fee97fa319159",
+      "changes": [
+        "未发现需修复的实质问题；未改写风格。",
+        "按新增结构标准核对日期、唯一H1、复习卡片与末尾折叠校对报告；无卡片内容改写。",
+        "新增标准复核通过：含## 复习卡片、5–10条单行问题::答案、date元数据、唯一H1，以及末尾逐行引用的折叠校对报告。"
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "p.1–20",
+          "result": "神经网络、激活、参数更新与梯度；公式值与来源一致。"
+        },
+        {
+          "pages": "p.22–39",
+          "result": "Token/词表、上下文、RNN/自注意力、训练和自监督边界。"
+        },
+        {
+          "pages": "p.43、49–56",
+          "result": "GPU/通信数字作为来源例子；Agent、MCP、RAG与切片内容。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "cbb6cab78f34664d6e714c5005c8ad2838cbdc6bf13aa9e0cf3571438d99aa7d"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "d12a76f283bea56af8803e22b0f34cdd048a83abb056563a4ad2075b2ea457b6"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 35,
+        "text_layer_sha256": "5056836899a02942bcbd2cc3ca238ec46cbd312fcb4e10418984e77e17adc714",
+        "text_layer_char_count": 934
+      },
+      {
+        "page": 2,
+        "md_start_line": 43,
+        "md_end_line": 59,
+        "text_layer_sha256": "a170e00cf18738b56f73ae6bab8c7e46dca13f39d35b59ba7c4e30ba47d1c4a8",
+        "text_layer_char_count": 618
+      },
+      {
+        "page": 3,
+        "md_start_line": 67,
+        "md_end_line": 81,
+        "text_layer_sha256": "96fd0da344d3267364eb8ee4ea5167265a7292bc9257bc23e8d3c0e6fbff6c16",
+        "text_layer_char_count": 553
+      },
+      {
+        "page": 4,
+        "md_start_line": 89,
+        "md_end_line": 106,
+        "text_layer_sha256": "1c43bc0bd8fe8c814a0ecd17433d13079b1a04c0482c142cb62ccc5c0c37e217",
+        "text_layer_char_count": 671
+      },
+      {
+        "page": 5,
+        "md_start_line": 114,
+        "md_end_line": 138,
+        "text_layer_sha256": "faef88faea4629c72d5211d314ae822338de629ced92cd43217228159a128990",
+        "text_layer_char_count": 954
+      },
+      {
+        "page": 6,
+        "md_start_line": 146,
+        "md_end_line": 160,
+        "text_layer_sha256": "915aa911c080ac477bfcb98a683fed0f1599aa576f3428ef8d28af554a7e2010",
+        "text_layer_char_count": 643
+      },
+      {
+        "page": 7,
+        "md_start_line": 168,
+        "md_end_line": 191,
+        "text_layer_sha256": "791504c69fccf0911e34fe4d8fa85e4805bcd4a29dd943d25da292b74b296864",
+        "text_layer_char_count": 934
+      },
+      {
+        "page": 8,
+        "md_start_line": 199,
+        "md_end_line": 212,
+        "text_layer_sha256": "4ee20a962e5a9afcd2bcf62d7dfc34eff0a9f405a2a2a561205c289e00ae81b5",
+        "text_layer_char_count": 552
+      },
+      {
+        "page": 9,
+        "md_start_line": 220,
+        "md_end_line": 242,
+        "text_layer_sha256": "a57decd4b2c866fe7e23fc095bfa745bc513030c8115b5f1d130034b8ba25ecc",
+        "text_layer_char_count": 891
+      },
+      {
+        "page": 10,
+        "md_start_line": 250,
+        "md_end_line": 267,
+        "text_layer_sha256": "67880afe38af7e86c05a1ff48fcdaea6fc6aaa17dd8e9876649acf78e4fcc4f4",
+        "text_layer_char_count": 732
+      },
+      {
+        "page": 11,
+        "md_start_line": 275,
+        "md_end_line": 290,
+        "text_layer_sha256": "fa7abf9aaf930912f372dc327338755601850abdbf24f28347a20a35e90384b7",
+        "text_layer_char_count": 594
+      },
+      {
+        "page": 12,
+        "md_start_line": 298,
+        "md_end_line": 311,
+        "text_layer_sha256": "3577f6879d9ddd200ff72259b1952b9db30bee02ed71cc85a91468573b971784",
+        "text_layer_char_count": 388
+      },
+      {
+        "page": 13,
+        "md_start_line": 319,
+        "md_end_line": 328,
+        "text_layer_sha256": "761e3ba5f570d89050b65e46eaa31d56aaabe46f9b24561e93c5213c3d2b873c",
+        "text_layer_char_count": 378
+      },
+      {
+        "page": 14,
+        "md_start_line": 336,
+        "md_end_line": 364,
+        "text_layer_sha256": "19fe60a7679c7e7879adc9db72b46f04d15cec58538994ecb15feb6019a10031",
+        "text_layer_char_count": 1111
+      },
+      {
+        "page": 15,
+        "md_start_line": 372,
+        "md_end_line": 399,
+        "text_layer_sha256": "4651098b9ffd3ad78a9783d2e116421a881eae3d287bb4ed598b29e41a3dbbed",
+        "text_layer_char_count": 1115
+      },
+      {
+        "page": 16,
+        "md_start_line": 407,
+        "md_end_line": 430,
+        "text_layer_sha256": "e0c94e0f1f6d0c4722a3afa113d6d18bffcedf17f79fd88d78bb79c29ccb960d",
+        "text_layer_char_count": 923
+      },
+      {
+        "page": 17,
+        "md_start_line": 438,
+        "md_end_line": 448,
+        "text_layer_sha256": "149e9ffd85684961cdec1a68e8b191284d96c9a0d71cb8d6a8e4317d5274baa2",
+        "text_layer_char_count": 377
+      },
+      {
+        "page": 18,
+        "md_start_line": 456,
+        "md_end_line": 465,
+        "text_layer_sha256": "beaac3f32a4010648b793b81638d7af74d0c9eccd15dfc8f9c8e874e57c427d2",
+        "text_layer_char_count": 370
+      },
+      {
+        "page": 19,
+        "md_start_line": 473,
+        "md_end_line": 490,
+        "text_layer_sha256": "790adadb4567fbb5330e2c63445dadbcb7787fb0140bc22573242f9f7f2fb110",
+        "text_layer_char_count": 605
+      },
+      {
+        "page": 20,
+        "md_start_line": 498,
+        "md_end_line": 519,
+        "text_layer_sha256": "b9e7b2f2ac955e07d05c227a5dbe2b2b7d4cbf7c93775ef1d615ec63107f8ed1",
+        "text_layer_char_count": 751
+      },
+      {
+        "page": 21,
+        "md_start_line": 527,
+        "md_end_line": 543,
+        "text_layer_sha256": "37df5dab0721ed7c7f406236c19de54a527dfa5b11310242bdef2b47e270f464",
+        "text_layer_char_count": 630
+      },
+      {
+        "page": 22,
+        "md_start_line": 551,
+        "md_end_line": 559,
+        "text_layer_sha256": "0861cb2c008da1c15eadcf148b48046debac32a720e785c324ae43ffe4bfe1ef",
+        "text_layer_char_count": 350
+      },
+      {
+        "page": 23,
+        "md_start_line": 567,
+        "md_end_line": 587,
+        "text_layer_sha256": "b03a09d5d2b35e0c10741155ba02aaeb445b93a7303397297588272d9802efa1",
+        "text_layer_char_count": 813
+      },
+      {
+        "page": 24,
+        "md_start_line": 595,
+        "md_end_line": 609,
+        "text_layer_sha256": "8f81ba183d1294dcb1556adcb2fd52f0e9f0d401f5eb784816c0e0d81b3d5a1e",
+        "text_layer_char_count": 632
+      },
+      {
+        "page": 25,
+        "md_start_line": 617,
+        "md_end_line": 623,
+        "text_layer_sha256": "7337315097c4df50193d6932efefef0cc284e52041e2f91e50333feca6b281ef",
+        "text_layer_char_count": 280
+      },
+      {
+        "page": 26,
+        "md_start_line": 631,
+        "md_end_line": 647,
+        "text_layer_sha256": "b874aec6c10758b670165155a886ff98cfe95a0aae22a527030ae379f83b74af",
+        "text_layer_char_count": 677
+      },
+      {
+        "page": 27,
+        "md_start_line": 655,
+        "md_end_line": 671,
+        "text_layer_sha256": "1e2717229c4e64c3a9b115ba07190670e265dbf30d4bb741ebcac1cf8ff1e048",
+        "text_layer_char_count": 683
+      },
+      {
+        "page": 28,
+        "md_start_line": 679,
+        "md_end_line": 696,
+        "text_layer_sha256": "1101fbba49887218804922184222c9acace2d0b27c1843e929d37d1b715b5f9a",
+        "text_layer_char_count": 696
+      },
+      {
+        "page": 29,
+        "md_start_line": 704,
+        "md_end_line": 718,
+        "text_layer_sha256": "335001f3150b971026f59b51342f477cec91ecbf048b496527cd7220b5bae013",
+        "text_layer_char_count": 429
+      },
+      {
+        "page": 30,
+        "md_start_line": 726,
+        "md_end_line": 751,
+        "text_layer_sha256": "e1cfbebedc41f167ee67af71689a30f78c38fd2805925bfa8807ff36e8f46ef7",
+        "text_layer_char_count": 995
+      },
+      {
+        "page": 31,
+        "md_start_line": 759,
+        "md_end_line": 773,
+        "text_layer_sha256": "1a4cee4ad12b915350cee6e68646ced4bccff331998fc301455370ec496a31f3",
+        "text_layer_char_count": 659
+      },
+      {
+        "page": 32,
+        "md_start_line": 781,
+        "md_end_line": 799,
+        "text_layer_sha256": "da2cf2a2cbc92c3bcd45de865b14a83fa08c017b55cdfd577623ede1b2ce3da6",
+        "text_layer_char_count": 810
+      },
+      {
+        "page": 33,
+        "md_start_line": 807,
+        "md_end_line": 818,
+        "text_layer_sha256": "cf80f8ed5e5ff3f2f6109a8f1f7b2c99828f1d3038d2d4610907efebcd861427",
+        "text_layer_char_count": 421
+      },
+      {
+        "page": 34,
+        "md_start_line": 826,
+        "md_end_line": 840,
+        "text_layer_sha256": "5a028d0beb6aa0e20a227ed9ee4499e92a2841c53e105de9a21e5eb7762a13a4",
+        "text_layer_char_count": 586
+      },
+      {
+        "page": 35,
+        "md_start_line": 848,
+        "md_end_line": 868,
+        "text_layer_sha256": "cff79eedf8e7d8e2dcedb852022f89565cb914876a2aff14fb2fb1bbf73fe99a",
+        "text_layer_char_count": 855
+      },
+      {
+        "page": 36,
+        "md_start_line": 876,
+        "md_end_line": 897,
+        "text_layer_sha256": "de1cf2ce5e7176fa02fcd63dcb9c9afd080a3558161d719de84d46dbd17903be",
+        "text_layer_char_count": 820
+      },
+      {
+        "page": 37,
+        "md_start_line": 905,
+        "md_end_line": 927,
+        "text_layer_sha256": "502801aade1e9886cdbf18247f6584f7767948f2a227486f57c01deac5e00b56",
+        "text_layer_char_count": 764
+      },
+      {
+        "page": 38,
+        "md_start_line": 935,
+        "md_end_line": 954,
+        "text_layer_sha256": "0c7eaa1d7110ba1835e0c9632bb7f4ab979474e9ec2c29c498afafc64e477e90",
+        "text_layer_char_count": 682
+      },
+      {
+        "page": 39,
+        "md_start_line": 962,
+        "md_end_line": 983,
+        "text_layer_sha256": "7bb2c62a66e52ff56cebccccdb04e9b363658b81626df2a6bdaf105db348e66c",
+        "text_layer_char_count": 829
+      },
+      {
+        "page": 40,
+        "md_start_line": 991,
+        "md_end_line": 1005,
+        "text_layer_sha256": "3765d38e882f94cdc34c63ea7873e29b30be1e5b39a60031368d19c40cc9e8dc",
+        "text_layer_char_count": 583
+      },
+      {
+        "page": 41,
+        "md_start_line": 1013,
+        "md_end_line": 1034,
+        "text_layer_sha256": "e664744ee3a6beafaa80cc13857a32f4dc77173d509dcfb7b8cf31e692cf178c",
+        "text_layer_char_count": 848
+      },
+      {
+        "page": 42,
+        "md_start_line": 1042,
+        "md_end_line": 1046,
+        "text_layer_sha256": "322b40448a3215cf331e2c7aab56c428408d13cc66eb545ac20886b3b67f0292",
+        "text_layer_char_count": 181
+      },
+      {
+        "page": 43,
+        "md_start_line": 1054,
+        "md_end_line": 1086,
+        "text_layer_sha256": "7a5f1139646ca812df97225efb0e127dfe921ce7dcf91cb5a22cd644fa69a5c9",
+        "text_layer_char_count": 1263
+      },
+      {
+        "page": 44,
+        "md_start_line": 1094,
+        "md_end_line": 1103,
+        "text_layer_sha256": "66f973992c91dc348606d02a1acd4f37131389de8420991d671c9b03ef90fa40",
+        "text_layer_char_count": 382
+      },
+      {
+        "page": 45,
+        "md_start_line": 1111,
+        "md_end_line": 1118,
+        "text_layer_sha256": "8c165d13fe49d15d3a9d07b3dcd8ae497e21199c47732a9ecf30b0bb3bd1e90c",
+        "text_layer_char_count": 281
+      },
+      {
+        "page": 46,
+        "md_start_line": 1126,
+        "md_end_line": 1136,
+        "text_layer_sha256": "e297c49ecf75e5e3a23479721d9e00e314993103a759c239d08ebfef4b397fb5",
+        "text_layer_char_count": 389
+      },
+      {
+        "page": 47,
+        "md_start_line": 1144,
+        "md_end_line": 1147,
+        "text_layer_sha256": "47f9e1cb2b38a661ee4930ef4012a08303d2d55b6ad11f13215f2900561fa476",
+        "text_layer_char_count": 177
+      },
+      {
+        "page": 48,
+        "md_start_line": 1155,
+        "md_end_line": 1159,
+        "text_layer_sha256": "3983ba70f81b4229dff701ab9f04910238354f9c4edb64ad03df5fa144c24907",
+        "text_layer_char_count": 188
+      },
+      {
+        "page": 49,
+        "md_start_line": 1167,
+        "md_end_line": 1183,
+        "text_layer_sha256": "5643271ee864103d2f823ac0182ec80169d4899f2d554885514a7c1440cb0a81",
+        "text_layer_char_count": 676
+      },
+      {
+        "page": 50,
+        "md_start_line": 1191,
+        "md_end_line": 1199,
+        "text_layer_sha256": "f655402f0e8fa3fa7a49bc0a7967e278f52d2283ad4413af06d2c0fe525ec494",
+        "text_layer_char_count": 375
+      },
+      {
+        "page": 51,
+        "md_start_line": 1207,
+        "md_end_line": 1217,
+        "text_layer_sha256": "1202fc7d70f98d76b8544e994132708fb456efaf8a856bd9e5d05c08ff6ec227",
+        "text_layer_char_count": 475
+      },
+      {
+        "page": 52,
+        "md_start_line": 1225,
+        "md_end_line": 1228,
+        "text_layer_sha256": "73ce65dff564f22f1bb2fb4bce93bf16f785a78863ea839ffa43cc2e5d92e81b",
+        "text_layer_char_count": 160
+      },
+      {
+        "page": 53,
+        "md_start_line": 1236,
+        "md_end_line": 1260,
+        "text_layer_sha256": "feceaff812be101df3ead60b2830ce653ff3c0de40fd5ec066e914fe48419ec8",
+        "text_layer_char_count": 833
+      },
+      {
+        "page": 54,
+        "md_start_line": 1268,
+        "md_end_line": 1278,
+        "text_layer_sha256": "9e381b9adbe060a6e82bc7918d3e0a2a2ad2f5968e724227ae262c229dd3cd9a",
+        "text_layer_char_count": 426
+      },
+      {
+        "page": 55,
+        "md_start_line": 1286,
+        "md_end_line": 1300,
+        "text_layer_sha256": "0ac4c5e89d90020e7d9e1193fb8c273f6ce242a037c4a6bf283b2b0384e6581e",
+        "text_layer_char_count": 582
+      },
+      {
+        "page": 56,
+        "md_start_line": 1308,
+        "md_end_line": 1323,
+        "text_layer_sha256": "439eeadd61b453d6d273dd7c1472ee78da6be430cd03705f5a4fc83d8196b610",
+        "text_layer_char_count": 618
+      },
+      {
+        "page": 57,
+        "md_start_line": 1331,
+        "md_end_line": 1348,
+        "text_layer_sha256": "5139e876361694956b9670ac08e53d429c09bcb2af75e3353d989b351981304b",
+        "text_layer_char_count": 231
+      },
+      {
+        "page": 58,
+        "md_start_line": 1356,
+        "md_end_line": 1375,
+        "text_layer_sha256": "f697718553249872e704693b3e586189c22e9272d9b02636c89b9533d6ae008b",
+        "text_layer_char_count": 260
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "detail_pages_reviewed": [
+        10,
+        20,
+        34,
+        46,
+        50,
+        54
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "转写中p.13、p.20若干数学公式显示为占位文本，部分符号无法据图完整恢复。",
+        "pages": [
+          13,
+          20
+        ],
+        "status": "pending_review"
+      },
+      {
+        "description": "文章采用大量类比并压缩数学推导，作为入门概览使用；复杂实现细节未展开。",
+        "pages": [
+          3,
+          7,
+          18,
+          35,
+          44
+        ],
+        "status": "source_limitation"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260202_AI_LLM_Comprehensive_Guide.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "cbb6cab78f34664d6e714c5005c8ad2838cbdc6bf13aa9e0cf3571438d99aa7d",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/分布式计算与数据管道.md",
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_AI大模型通俗总览.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

@@ -1,0 +1,529 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0089",
+  "title": "当我把AI变成一个“算法”：Skill工程化设计的心路历程",
+  "short_title": "Skill工程化与状态机",
+  "account": "腾讯技术工程",
+  "author": "peihanyu",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-05-13T02:24",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0513 Skill Engineering.pdf",
+      "original_filename": "0513 Skill Engineering.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "a027f70139fad2c35ac881b7d2dbdd5a4783c32efc1666d45420616a16bd8eab",
+      "size_bytes": 6301107,
+      "page_count": 19,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "p.6、9、11 均显示加载占位，图片内容未导出；正文仍可读，不能宣称图文完整",
+          "pages": [
+            6,
+            9,
+            11
+          ],
+          "status": "incomplete，缺图明确记录"
+        },
+        {
+          "description": "p.6 JSON 和 p.15 目录长行右侧裁切；p.12 YAML 排版不能保证直接解析",
+          "pages": [
+            6,
+            12,
+            15
+          ],
+          "status": "不补写缺失字符，不声称可直接运行"
+        },
+        {
+          "description": "规则数—遵守率图未给实验方法；CLI 全确定、工具索引占用恒定等属于过强概括",
+          "pages": [
+            3,
+            4,
+            6,
+            7
+          ],
+          "status": "区分机制与未经验证的效果承诺"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏 2026-05-13T02:24"
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "Agent任务恢复",
+    "Agent成本与上下文预算",
+    "Agent工程循环",
+    "Skill设计与治理"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Skill工程化与状态机+26.5.13",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Skill工程化与状态机.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "当我把 AI  变成一个\"算法\": Skill  工程化设计的心路历程\n腾讯程序员 May  13 , 2026 , 2 : 24  AM广东原创 腾讯技术工程 319  listened\n作者: peihanyu\n引言\n我想做一件什么事\n先说结论。\n我的目标是:把 Agent  当成一个算法来用。\n什么叫\"当算法用\"?就是——你给它输入,它给你指定格式的输出。中间的推理过程你不关\n心,但结果是确定的、可预期的。\n听起来很简单?但 LLM  天生不是这样的东⻄。它是概率模型 ,不是函数。每次调用它都像\n是在概率空间里掷骰子——你能控制骰子大致落在哪一片区域,但不能控制精确的落点。\n这就引出了两个真实的工程痛点:\n痛点 1 . Token  是钱,试错是浪费。 Agent  在模糊需求前反复揣摩、多轮尝试、走了一半发现\n方向不对再重来——每一步都在烧 Token 。一个\"创建权限集\"的操作如果要 Agent  自己摸索流\n程,可能跑 5  轮对话才能做对。但如果有人替它把路铺好, 1  轮就够了。\n痛点 2 . 路径不确定,每次执行像开盲盒。 同一个提示词,换个模型、换个上下文顺序,输出\n可能完全不同。用户今天走通了,明天换了个说法就翻⻋。这种不确定性在 demo  里可以容\n忍,但在生产环境里是灾难。\n我想做的是:不改变河的本性,但给它修好渠。\n你有没有这样的经历——给 AI  写了一大堆规则,越写越⻓,它反而越来越不听话?这篇文章讲的是:\n我如何从\"写提示词\"走向\"造执行环境\",让 Agent  从一个不可控的对话机器人,变成一个精确、可恢\n复、可审计的工程化组件。\n",
+    "publication_evidence": "PDF p.1 发布栏 2026-05-13T02:24",
+    "full_title_in_capture": "当我把AI变成一个“算法”：Skill工程化设计的心路历程",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0089",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "a027f70139fad2c35ac881b7d2dbdd5a4783c32efc1666d45420616a16bd8eab"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.6、9、11 均显示加载占位，图片内容未导出；正文仍可读，不能宣称图文完整",
+        "pages": [
+          6,
+          9,
+          11
+        ],
+        "status": "incomplete，缺图明确记录"
+      },
+      {
+        "description": "p.6 JSON 和 p.15 目录长行右侧裁切；p.12 YAML 排版不能保证直接解析",
+        "pages": [
+          6,
+          12,
+          15
+        ],
+        "status": "不补写缺失字符，不声称可直接运行"
+      },
+      {
+        "description": "规则数—遵守率图未给实验方法；CLI 全确定、工具索引占用恒定等属于过强概括",
+        "pages": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "status": "区分机制与未经验证的效果承诺"
+      }
+    ],
+    "outputs": [
+      "AI_Skill工程化与状态机.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        3,
+        6,
+        9,
+        11,
+        12,
+        16,
+        18
+      ]
+    },
+    "coverage": "覆盖 CLI 分工、工具三层、discover、文件工作流、五项运行机制、Skill/Workflow 复用、创建工具、使用边界和读者质疑；未补全缺失图及脚本。",
+    "fact_checks": [
+      {
+        "item": "作者与时间",
+        "value": "peihanyu；2026-05-13 02:24",
+        "pages": "1",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "三层工具信息",
+        "value": "索引、元数据、规则",
+        "pages": "5",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "Gate 字段",
+        "value": "project_name、host、admins",
+        "pages": "12",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "持久状态",
+        "value": "步骤、gate data、结果、整体状态",
+        "pages": "12",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "步骤类型",
+        "value": "interactive、automated、notification",
+        "pages": "14",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "创建工具命令",
+        "value": "init、add-step、validate",
+        "pages": "15",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "轻量边界",
+        "value": "步骤 ≤2 且无恢复需求可直接提示词",
+        "pages": "16",
+        "result": "与所读原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Skill工程化与状态机.md",
+      "sha256": "1a3bae8d9857f1ac8a28ab88fd74f2433a7ecb62b8257e06ca2446329167cb1a"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "a027f70139fad2c35ac881b7d2dbdd5a4783c32efc1666d45420616a16bd8eab"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "133b10805e3349795f90a17d0257e6b37feadc75d21d44482982f4940411047d"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 31,
+        "text_layer_sha256": "4b791975e5eb7e5b5c9fd48e3c63b50bbf4f96d0705fe2575ee82add431de28a",
+        "text_layer_char_count": 696
+      },
+      {
+        "page": 2,
+        "md_start_line": 39,
+        "md_end_line": 60,
+        "text_layer_sha256": "47072795d0dc154484f0cccceba1c0eb6db15edb55db4104bff6d9375d607868",
+        "text_layer_char_count": 750
+      },
+      {
+        "page": 3,
+        "md_start_line": 68,
+        "md_end_line": 88,
+        "text_layer_sha256": "726ad56906bf6ca4077e36509c4fd24fb1d482f23080fc3ecd90b90dd302f258",
+        "text_layer_char_count": 533
+      },
+      {
+        "page": 4,
+        "md_start_line": 96,
+        "md_end_line": 130,
+        "text_layer_sha256": "ad1616c306e1a4e5030a516bf49c48b9ba1cf97c5dbfffc0104b3b75dfcc7c11",
+        "text_layer_char_count": 771
+      },
+      {
+        "page": 5,
+        "md_start_line": 138,
+        "md_end_line": 179,
+        "text_layer_sha256": "83b3df31ec3d65842be086a44e0a5c3b81c013ce5b062d9a41d6ce6e55814103",
+        "text_layer_char_count": 1000
+      },
+      {
+        "page": 6,
+        "md_start_line": 187,
+        "md_end_line": 207,
+        "text_layer_sha256": "c1d41fd2b29c679378ea76ff97966d92be8e155529b8d474a5e8f52a60c46b70",
+        "text_layer_char_count": 690
+      },
+      {
+        "page": 7,
+        "md_start_line": 215,
+        "md_end_line": 244,
+        "text_layer_sha256": "a4ee5e3fd0bddf3352e14d74de0a716dcb3999f413f74613bef12f9504b7fc44",
+        "text_layer_char_count": 1075
+      },
+      {
+        "page": 8,
+        "md_start_line": 252,
+        "md_end_line": 286,
+        "text_layer_sha256": "5095a926bad739d19c00b642023bc0548511ffadc87f3c85b98eb027c21d96c9",
+        "text_layer_char_count": 1086
+      },
+      {
+        "page": 9,
+        "md_start_line": 294,
+        "md_end_line": 318,
+        "text_layer_sha256": "6833f50f54740e5757c7c267e70ef2ba56b13b7042bb9f6726a3b44c37731d27",
+        "text_layer_char_count": 882
+      },
+      {
+        "page": 10,
+        "md_start_line": 326,
+        "md_end_line": 356,
+        "text_layer_sha256": "68d8e09823cc0df345731cfd30f1dbe5cddaa070497b328286bffd89f2842261",
+        "text_layer_char_count": 891
+      },
+      {
+        "page": 11,
+        "md_start_line": 364,
+        "md_end_line": 389,
+        "text_layer_sha256": "196840095161cdbfcb420620945e557912e4046d3f421544698bca2856fbf85b",
+        "text_layer_char_count": 857
+      },
+      {
+        "page": 12,
+        "md_start_line": 397,
+        "md_end_line": 425,
+        "text_layer_sha256": "d1c2f07786a52ee3236a0a7dc7c8f08ce31863198c063e93930cc59684fc4ae6",
+        "text_layer_char_count": 855
+      },
+      {
+        "page": 13,
+        "md_start_line": 433,
+        "md_end_line": 453,
+        "text_layer_sha256": "3690faec8719bef00e5befe12da433851b412174de3c05f686ab6995a661d532",
+        "text_layer_char_count": 644
+      },
+      {
+        "page": 14,
+        "md_start_line": 461,
+        "md_end_line": 483,
+        "text_layer_sha256": "7143ffe5767c5e17ee5832b315c80ded27dff9253ec2c5e5d220590a7c27303d",
+        "text_layer_char_count": 843
+      },
+      {
+        "page": 15,
+        "md_start_line": 491,
+        "md_end_line": 522,
+        "text_layer_sha256": "2384197388bb12746e7e562696eb86eb2bd19bea3f411287dae30559b111f4c2",
+        "text_layer_char_count": 1183
+      },
+      {
+        "page": 16,
+        "md_start_line": 530,
+        "md_end_line": 549,
+        "text_layer_sha256": "852ee4ad1d335ca66453497487bf7fe1a01fcedb50d0336479c78049ac337fa9",
+        "text_layer_char_count": 588
+      },
+      {
+        "page": 17,
+        "md_start_line": 557,
+        "md_end_line": 569,
+        "text_layer_sha256": "f0a30358698c0de574137c26629b56be02681bf4915ae06ccfcd748280c2af07",
+        "text_layer_char_count": 253
+      },
+      {
+        "page": 18,
+        "md_start_line": 577,
+        "md_end_line": 608,
+        "text_layer_sha256": "2d98d4ec3ddbc882e400eceb639ac7facd548c48f6bad779a7aa477d7204dae7",
+        "text_layer_char_count": 835
+      },
+      {
+        "page": 19,
+        "md_start_line": 616,
+        "md_end_line": 615,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        3,
+        6,
+        9,
+        11,
+        12,
+        16,
+        18
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.6、9、11 均显示加载占位，图片内容未导出；正文仍可读，不能宣称图文完整",
+        "pages": [
+          6,
+          9,
+          11
+        ],
+        "status": "incomplete，缺图明确记录"
+      },
+      {
+        "description": "p.6 JSON 和 p.15 目录长行右侧裁切；p.12 YAML 排版不能保证直接解析",
+        "pages": [
+          6,
+          12,
+          15
+        ],
+        "status": "不补写缺失字符，不声称可直接运行"
+      },
+      {
+        "description": "规则数—遵守率图未给实验方法；CLI 全确定、工具索引占用恒定等属于过强概括",
+        "pages": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "status": "区分机制与未经验证的效果承诺"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0513 Skill Engineering.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "a027f70139fad2c35ac881b7d2dbdd5a4783c32efc1666d45420616a16bd8eab",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Skill设计与治理.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Skill工程化与状态机.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

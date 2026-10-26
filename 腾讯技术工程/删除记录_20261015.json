@@ -1,0 +1,139 @@
+{
+  "action": "user_requested_deletion",
+  "performed_at": "2026-10-15T00:09:25-07:00",
+  "removed_article_count": 20,
+  "removed_file_count": 80,
+  "removed_topic_count": 1,
+  "edited_topic_count": 8,
+  "publisher_articles_remaining": 118,
+  "recovery_location": "/Users/iw/.Trash/WeChat_read_删除20篇_20261015_000925",
+  "items": [
+    {
+      "article_id": "art-0180",
+      "title": "鹅厂员工当年高考都考了多少分？",
+      "former_directory": "腾讯技术工程/鹅厂员工高考成绩+26.6.25"
+    },
+    {
+      "article_id": "art-0055",
+      "title": "刮！刮！刮！",
+      "former_directory": "腾讯技术工程/开工刮刮乐+26.2.23"
+    },
+    {
+      "article_id": "art-0069",
+      "title": "鹅厂员工的龙虾都长什么样？",
+      "former_directory": "腾讯技术工程/OpenClaw应用场景合集+26.3.25"
+    },
+    {
+      "article_id": "art-0166",
+      "title": "好看的2026中秋红包封面来抢！！",
+      "former_directory": "腾讯技术工程/2026中秋红包封面+26.9.24"
+    },
+    {
+      "article_id": "art-0088",
+      "title": "鹅厂员工觉得好的 code 模型应该具备什么能力？",
+      "former_directory": "腾讯技术工程/好代码模型的工程判断+26.5.9"
+    },
+    {
+      "article_id": "art-0086",
+      "title": "腾讯员工公寓曝光，竟是这样的布置！",
+      "former_directory": "腾讯技术工程/腾讯员工公寓布置+26.4.29"
+    },
+    {
+      "article_id": "art-0120",
+      "title": "鹅厂员工都玩过哪些技术恶作剧?",
+      "former_directory": "腾讯技术工程/技术恶作剧轶事+26.1.21"
+    },
+    {
+      "article_id": "art-0058",
+      "title": "鹅厂员工怎么看Agent自动持续进化？",
+      "former_directory": "腾讯技术工程/Agent持续进化的反馈闭环+26.3.4"
+    },
+    {
+      "article_id": "art-0092",
+      "title": "给程序员送什么，会让他炫耀三天三夜？",
+      "former_directory": "腾讯技术工程/礼物背后的工程师需求+26.5.19"
+    },
+    {
+      "article_id": "art-0181",
+      "title": "鹅厂员工有哪些小众的 AI 玩法？",
+      "former_directory": "腾讯技术工程/员工AI玩法+26.7.31"
+    },
+    {
+      "article_id": "art-0182",
+      "title": "鹅厂员工都是怎么被AI“糊弄”的？",
+      "former_directory": "腾讯技术工程/员工遭遇AI幻觉故事+26.9.2"
+    },
+    {
+      "article_id": "art-0074",
+      "title": "鹅厂员工那些“需求很大，却没人做”的小程序？",
+      "former_directory": "腾讯技术工程/鹅厂小程序需求设想+26.4.8"
+    },
+    {
+      "article_id": "art-0102",
+      "title": "还在好奇鹅厂人 Vibe Coding 了什么东西？",
+      "former_directory": "腾讯技术工程/鹅厂Vibe项目合集+26.6.3"
+    },
+    {
+      "article_id": "art-0115",
+      "title": "2026 腾讯犀牛鸟开源人才培养计划正式开启",
+      "former_directory": "腾讯技术工程/犀牛鸟开源培养计划+26.6.24"
+    },
+    {
+      "article_id": "art-0059",
+      "title": "揭秘！腾讯女程序员的上下班生活",
+      "former_directory": "腾讯技术工程/腾讯女程序员的生活+26.3.6"
+    },
+    {
+      "article_id": "art-0064",
+      "title": "鹅厂员工都Vibe Coding出了什么好玩的东西？",
+      "former_directory": "腾讯技术工程/鹅厂VibeCoding作品+26.3.19"
+    },
+    {
+      "article_id": "art-0105",
+      "title": "高考那几天，鹅厂员工遇到过什么至今难忘的事？",
+      "former_directory": "腾讯技术工程/员工的高考记忆+26.6.9"
+    },
+    {
+      "article_id": "art-0137",
+      "title": "AI 改代码的那几分钟，你在做什么？",
+      "former_directory": "腾讯技术工程/AI改代码时你在做什么+26.7.22"
+    },
+    {
+      "article_id": "art-0056",
+      "title": "2026 年 AI 趋势全面预测，全球科技巨头与顶尖机构研判",
+      "former_directory": "腾讯技术工程/2026年AI趋势研判+26.2.27"
+    },
+    {
+      "article_id": "art-0128",
+      "title": "速接！2026新年红包封面",
+      "former_directory": "腾讯技术工程/2026新年红包封面+26.2.10"
+    }
+  ],
+  "removed_topic": "20_topics/工程师社群与生活.md",
+  "edited_topics": [
+    "20_topics/问题澄清.md",
+    "20_topics/AI研发协同.md",
+    "20_topics/Agent工程循环.md",
+    "20_topics/自我认识.md",
+    "20_topics/Agent长期记忆.md",
+    "20_topics/AI技术活动与资料.md",
+    "20_topics/桌面Agent与工作流.md",
+    "20_topics/模型与开发工具发布.md"
+  ],
+  "historical_audit_retained": true,
+  "personal_records_modified": false,
+  "verification": {
+    "articles": 162,
+    "hashes": 505,
+    "local_links": 6242,
+    "errors": [],
+    "warnings": [],
+    "deleted_article_count": 20,
+    "publisher_articles_remaining": 118,
+    "deleted_topic_count": 1,
+    "edited_topic_count": 8,
+    "deleted_article_markdown_references_remaining": 0,
+    "personal_sections_preserved": true,
+    "unchanged_baseline_files": 740
+  }
+}

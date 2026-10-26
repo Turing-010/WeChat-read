@@ -1,0 +1,459 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0170",
+  "title": "腾讯 Omega：下一代“AI BI”的答案?",
+  "short_title": "腾讯Omega AI BI架构",
+  "account": "腾讯技术工程",
+  "author": "jiaxingjin",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-03T03:48",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯Omega：下一代“AI BI”的答案？.pdf",
+      "original_filename": "腾讯Omega：下一代“AI BI”的答案？.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "9920015728278d6029bdbb9086bc06c73b265d7a6bb202fca95942829264d22a",
+      "size_bytes": 5823250,
+      "page_count": 13,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.5–6 的 QueryRegistry/SQL 示例呈截断片段，不足以还原完整查询；笔记只概括契约机制。",
+          "pages": [
+            5,
+            6
+          ],
+          "status": "truncated_code_example"
+        },
+        {
+          "description": "Omega 与“马尔摩斯/marmos”等产品/模型叫法不清，保留原文表述。",
+          "pages": [
+            1,
+            11
+          ],
+          "status": "source_ambiguity"
+        }
+      ],
+      "publication_evidence": "PDF p.1 页眉：2026 年 8 月 3 日 03:48；未标时区。"
+    }
+  ],
+  "tags": [
+    "AI BI与数据产品",
+    "数据查询治理与运行时契约",
+    "Agent编排与编辑",
+    "Agent数据分析"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/腾讯Omega AI BI架构+26.8.3",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_腾讯Omega AI BI架构.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "腾讯 Omega :下一代“ AI  BI ”的答案?\n腾讯程序员 2026 年 8 月 3 日 03 : 48广东原创 腾讯技术工程 375 人\n作者: jiaxingjin\n上传一个  Excel ,敲下一句话,等上几十秒,一张带着  KPI 、趋势图和排行榜的页面就出现在\n屏幕上。颜色鲜艳,动画流畅,截图发到群里,很容易得到一句 “ 这个厉害 ” 。\n但如果你真打算用它,问题往往从第二天开始。\n时间范围从 “ 本月 ” 换成 “ 上月 ” ,数字还停在原地;点一下地区筛选,三个图表各算各的;数据\n表多了一个字段,整张页面直接空白;想把柱状图换成折线图, AI 又从头生成一遍,把你已\n经确认的布局也顺手改了。\n这时候你会发现,昨天看到的不是一个数据产品,只是一张由  AI 画出来的、恰好很像数据产\n品的图。\n2024 年,我们在  DataTalk 里做过  ChatBI:用户在侧边栏里提问, AI 生成  SQL ,再把查询\n结果画成图。方向听上去没错,实际用下来却很别扭。 SQL 经常要人收拾,图表质量不稳\n定,更关键的是, AI 和原来的  BI 系统始终像两套东西 —— 它能回答一个问题,却接不住后面\n的分析工作。\n后来,我们把它推翻了。\n不是给聊天框换个模型,也不是把按钮重新排一遍,而是重新想了一次:如果今天从零设计一\n个数据分析产品, AI 到底应该站在哪里?\n  聊天框不是  BI 的下一代\n传统  BI 的工作方式很明确:找数据、选字段、拖组件、配筛选器、调样式。它很强,也很专\n业,但前提是用户已经知道自己要分析什么,还得知道怎么把问题翻译成一组操作。\nChatBI 看似跨过了这道门槛。用户不用拖拽了,直接问: “ 上个月各品类销售怎么样? ”AI 把\n自然语言翻译成  SQL ,查完返回一张图。\n可分析很少在第一张图结束。\n你会继续追问:为什么华南区掉得这么厉害?是订单少了,还是客单价下来了?大客户和中小\n客户的趋势一样吗?把异常最明显的三个城市单独拿出来看看。最后,你可能还要把结果整理\n",
+    "publication_evidence": "PDF p.1 页眉：2026 年 8 月 3 日 03:48；未标时区。",
+    "full_title_in_capture": "腾讯 Omega：下一代“AI BI”的答案?",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0170",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "9920015728278d6029bdbb9086bc06c73b265d7a6bb202fca95942829264d22a"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.5–6 的 QueryRegistry/SQL 示例呈截断片段，不足以还原完整查询；笔记只概括契约机制。",
+        "pages": [
+          5,
+          6
+        ],
+        "status": "truncated_code_example"
+      },
+      {
+        "description": "Omega 与“马尔摩斯/marmos”等产品/模型叫法不清，保留原文表述。",
+        "pages": [
+          1,
+          11
+        ],
+        "status": "source_ambiguity"
+      }
+    ],
+    "outputs": [
+      "AI_腾讯Omega AI BI架构.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "coverage": "通读 p.1–13；覆盖 ChatBI 局限、QueryRegistry/DTBridge、指标语义、筛选依赖、服务端权限、编辑/版本及运行时验证。",
+    "fact_checks": [
+      {
+        "item": "页面/查询分离",
+        "original_value": "HTML与QueryRegistry分开管理",
+        "pages": [
+          3,
+          4
+        ],
+        "result": "正文架构描述。"
+      },
+      {
+        "item": "字段契约",
+        "original_value": "页面读取字段需对齐SQL输出别名",
+        "pages": [
+          4,
+          6
+        ],
+        "result": "用于减少查询成功但页面空白。"
+      },
+      {
+        "item": "筛选刷新",
+        "original_value": "参数依赖映射只刷新相关图表",
+        "pages": [
+          6,
+          7
+        ],
+        "result": "DTBridge运行逻辑。"
+      },
+      {
+        "item": "服务端职责",
+        "original_value": "身份权限、只读SQL检查、超时和查询代理由服务端承担",
+        "pages": [
+          8,
+          9
+        ],
+        "result": "按文章职责划分。"
+      },
+      {
+        "item": "示例完整性",
+        "original_value": "查询/JSON片段被截断",
+        "pages": [
+          5,
+          6
+        ],
+        "result": "不还原完整语法。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_腾讯Omega AI BI架构.md",
+      "sha256": "18a2d8082436db16c693e76543b9b80715208ccff0e488fff3eba2c78f7a5bc9",
+      "size_bytes": 35173
+    },
+    "independent_crosscheck": {
+      "reviewer": "root",
+      "note_sha256": "18a2d8082436db16c693e76543b9b80715208ccff0e488fff3eba2c78f7a5bc9",
+      "review_sha256": "d9b372e20957e44be9493682856312c9724ad18b11dc61ef4fae0e92e68da961",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "1–6",
+          "check": "核对 Omega 定位、QueryRegistry/DTBridge、指标语义与查询契约；摘要与正文结构一致。"
+        },
+        {
+          "pages": "7–10",
+          "check": "核对服务端安全分层、编辑/视觉设计及慢 SQL 案例参数；保留代码截断和作者经验边界。"
+        },
+        {
+          "pages": "11–13",
+          "check": "核对 Agent 边界、总结与第13页留言/账号尾页；笔记未把产品描述扩成已独立验证能力。"
+        }
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "9920015728278d6029bdbb9086bc06c73b265d7a6bb202fca95942829264d22a"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "922a03a4e13b5a4ade7031258c515b30de33b23339247f01a93ab55de0c4f406"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 35,
+        "text_layer_sha256": "9b96496460a40a2553458f5fe0419be3fc58c3a547660c9e17f5a0d5051d03d4",
+        "text_layer_char_count": 870
+      },
+      {
+        "page": 2,
+        "md_start_line": 43,
+        "md_end_line": 62,
+        "text_layer_sha256": "99660816b5333c1b397eba28775c983b0ca66435d8073c4762b1909a877609bf",
+        "text_layer_char_count": 667
+      },
+      {
+        "page": 3,
+        "md_start_line": 70,
+        "md_end_line": 101,
+        "text_layer_sha256": "d887a1faf3dc88a6bcffe4623d1d98c3d0522e24f9e86946ace4985bae152a9c",
+        "text_layer_char_count": 1154
+      },
+      {
+        "page": 4,
+        "md_start_line": 109,
+        "md_end_line": 145,
+        "text_layer_sha256": "5b1ce178f1da83551b651cbacb3138b1a2e1b93c4df887fd2cc59e5e49a1a2f8",
+        "text_layer_char_count": 1329
+      },
+      {
+        "page": 5,
+        "md_start_line": 153,
+        "md_end_line": 189,
+        "text_layer_sha256": "ea54b32e2deef5ec9ca930bfb738535a89173b5fd59753cb603158a7f86aa710",
+        "text_layer_char_count": 1505
+      },
+      {
+        "page": 6,
+        "md_start_line": 197,
+        "md_end_line": 218,
+        "text_layer_sha256": "70349accfa7372997e5ef50c6a5975892c732f329ba90cc6d8470f07178538ec",
+        "text_layer_char_count": 839
+      },
+      {
+        "page": 7,
+        "md_start_line": 226,
+        "md_end_line": 258,
+        "text_layer_sha256": "c3240e79444518ad7034395965f0255f8c5be4d1e5b4a941164de2f6411bc016",
+        "text_layer_char_count": 1281
+      },
+      {
+        "page": 8,
+        "md_start_line": 266,
+        "md_end_line": 289,
+        "text_layer_sha256": "bc596a2c3a28e60042482023853a65d71f334e6a659a085018d802005ceda6f7",
+        "text_layer_char_count": 1013
+      },
+      {
+        "page": 9,
+        "md_start_line": 297,
+        "md_end_line": 317,
+        "text_layer_sha256": "a14097c51bd25df4c9cddf284df9cdc38e8c8302e6a3b6df5a852850f4dc3c81",
+        "text_layer_char_count": 740
+      },
+      {
+        "page": 10,
+        "md_start_line": 325,
+        "md_end_line": 358,
+        "text_layer_sha256": "4fb4883134baedb28d57133602fa8de6091cb8e1f5966c2a39f703e76af4ebcb",
+        "text_layer_char_count": 1312
+      },
+      {
+        "page": 11,
+        "md_start_line": 366,
+        "md_end_line": 391,
+        "text_layer_sha256": "b2e5ce6273556e6a540e3e0308b28609f549f343d5e735b8af1decef79be1a9f",
+        "text_layer_char_count": 1009
+      },
+      {
+        "page": 12,
+        "md_start_line": 399,
+        "md_end_line": 402,
+        "text_layer_sha256": "171410bb5f384ac4b59ae4c3d4f43a5d90b2c4059dd086c5d242d626e0894708",
+        "text_layer_char_count": 48
+      },
+      {
+        "page": 13,
+        "md_start_line": 410,
+        "md_end_line": 413,
+        "text_layer_sha256": "3a88e1da6466a37234ef6c83c25ce8c3faf48f3579f608ebd236aeff6de5a777",
+        "text_layer_char_count": 29
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.5–6 的 QueryRegistry/SQL 示例呈截断片段，不足以还原完整查询；笔记只概括契约机制。",
+        "pages": [
+          5,
+          6
+        ],
+        "status": "truncated_code_example"
+      },
+      {
+        "description": "Omega 与“马尔摩斯/marmos”等产品/模型叫法不清，保留原文表述。",
+        "pages": [
+          1,
+          11
+        ],
+        "status": "source_ambiguity"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯Omega：下一代“AI BI”的答案？.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "9920015728278d6029bdbb9086bc06c73b265d7a6bb202fca95942829264d22a",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent任务恢复.md",
+      "../../20_topics/Agent数据分析.md",
+      "../../20_topics/决策知识结构化.md",
+      "../../20_topics/桌面Agent与工作流.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_腾讯Omega AI BI架构.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

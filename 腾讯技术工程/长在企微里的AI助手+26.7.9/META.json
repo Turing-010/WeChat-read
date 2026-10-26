@@ -1,0 +1,397 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0165",
+  "title": "大圆实测：你真的需要一个长在企业微信中的 AI",
+  "short_title": "长在企微里的AI助手",
+  "account": "腾讯技术工程",
+  "author": "蟹钳",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-07-09T04:18",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/大圆实测 : 你真的需要一个长在企业微信中的AI.pdf",
+      "original_filename": "大圆实测 : 你真的需要一个长在企业微信中的AI.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "8edf6626cf443547d7e145a73f7877add3392f6be5ef82595e37f1469e4a5765",
+      "size_bytes": 4758066,
+      "page_count": 8,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "体验截图中的姓名/群聊部分被遮挡，部分界面文字较小；没有还原被遮挡内容，评价仅采用正文可读叙述。",
+          "pages": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "status": "partial"
+        },
+        {
+          "description": "作者明确说明体验基于内测版本，场景为个人设计的四项体验，没有提供标准化测试集或准确率/稳定性统计。",
+          "pages": [
+            1,
+            2,
+            7
+          ],
+          "status": "pending_review"
+        }
+      ],
+      "publication_evidence": "PDF p.1 标注“Jul 9, 2026, 4:18 AM”；未标时区。"
+    }
+  ],
+  "tags": [
+    "Agent工程循环",
+    "Agent成本与上下文预算",
+    "Agent评测与反馈",
+    "Agent长期记忆",
+    "桌面Agent与工作流"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/长在企微里的AI助手+26.7.9",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_长在企微里的AI助手.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "大圆实测 : 你真的需要一个⻓在企业微信中的 AI\n腾讯程序员 Jul  9 , 2026 , 4 : 18  AM广东原创 腾讯技术工程 39  listened\n作者:蟹钳\n昨天下午六点多,我在企微群里改一个方案,leader让我把最近这几天群内大家提的意⻅综合\n整理一下。我拿到这个任务的第一想法是让AI给我出个总结,但是以前这套AI协作的流程很割\n裂:信息在企业微信里,AI 在另一个地方。我得自己整理背景、确认内容、再把结果贴回文档\n里,最后还要重新调格式。\n晚上我就在想,这几年,头部AI模型几乎是一路猛打猛冲。写方案、做总结、生成PPT、图片\n设计等等垂直或者通用大模型的急速迭代早就让AI+办公从概念发展为一个迟早会落地的共\n识。\n但问题也恰恰出在这里:AI的能力已经很强了,但是想让它协助解决一个具体的工作问题,总\n要先把群里的讨论、文档里的背景、任务里的要求重新整理一遍,再喂给它。麻烦的不是 AI\n不会做,而是每次都要我重新交代一遍“事情从哪来、现在到哪了、我要它帮我做什么”。\n我越来越觉得:AI办公的下一步,可能不是再多一个更聪明的对话框,而是让 AI 直接出现在\n你正在工作的地方。你在企业微信里聊项目、看文档、处理待办,需要 AI 时,左滑一下,它\n就出来了。\n因此,在体验了即将上线的企业微信内置AI助手——大圆后,我第一反应是:它确实在朝抹平\n这段距离的方向努力。\n一个不一样的思路:AI不用你去找,它就在你正在用的地方\n首先,大圆 是直接嵌进企业微信里的。你在群聊里讨论项目,在文档里改方案,在待办里安\n排任务,它都在你的工作现场旁边,左滑一下它就出来了。以前用 AI,往往要复制聊天记录、\n上传文件、补充一⻓串背景,AI 才知道你要它做什么。但大圆不一样,它与你在企业微信里的\n工作上下文和记忆同频,不用你每次从头交代。\n这话听着有点玄乎,官方给的说法是四个核心能力,随时唤起、总结协作信息、读写文档、定时\n",
+    "publication_evidence": "PDF p.1 标注“Jul 9, 2026, 4:18 AM”；未标时区。",
+    "full_title_in_capture": "大圆实测：你真的需要一个长在企业微信中的 AI",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0165",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "8edf6626cf443547d7e145a73f7877add3392f6be5ef82595e37f1469e4a5765"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "体验截图中的姓名/群聊部分被遮挡，部分界面文字较小；没有还原被遮挡内容，评价仅采用正文可读叙述。",
+        "pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "status": "partial"
+      },
+      {
+        "description": "作者明确说明体验基于内测版本，场景为个人设计的四项体验，没有提供标准化测试集或准确率/稳定性统计。",
+        "pages": [
+          1,
+          2,
+          7
+        ],
+        "status": "pending_review"
+      }
+    ],
+    "outputs": [
+      "AI_长在企微里的AI助手.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "coverage": "通读8页，覆盖文章动机、嵌入工作现场的主张、四项核心能力及四个场景的体验、结尾判断和内测范围。第8页是阅读及留言区，不属于正文内容。",
+    "fact_checks": [
+      {
+        "item": "核心能力",
+        "original_value": "随时唤起、总结协作信息、读写文档、定时任务",
+        "pages": [
+          1,
+          2
+        ],
+        "result": "笔记列出四项，与原文一致。"
+      },
+      {
+        "item": "场景一上下文",
+        "original_value": "作者称回答聚焦当前群聊，未混入其他群提问",
+        "pages": [
+          2,
+          3
+        ],
+        "result": "作为单次作者观察陈述，笔记未提升为量化结论。"
+      },
+      {
+        "item": "周报结构",
+        "original_value": "本阶段工作完成情况、复盘、下阶段工作安排、总体心得沉淀",
+        "pages": [
+          5
+        ],
+        "result": "笔记保留四部分结构，一致。"
+      },
+      {
+        "item": "文档写入安全交互",
+        "original_value": "遇到敏感信息会停止并询问是否继续写入",
+        "pages": [
+          5
+        ],
+        "result": "笔记仅表述为作者观察到的一次内测体验。"
+      },
+      {
+        "item": "定时任务输入",
+        "original_value": "已有日程以及DDL文档信息",
+        "pages": [
+          6
+        ],
+        "result": "笔记记录日程和DDL来源，一致。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_长在企微里的AI助手.md",
+      "sha256": "55afb1dfdd41c9d8cf49ffe4112fcd7a52368702b3548d2dcec992b130b13f78"
+    },
+    "independent_crosscheck": {
+      "reviewer": "topic_models",
+      "note_sha256": "55afb1dfdd41c9d8cf49ffe4112fcd7a52368702b3548d2dcec992b130b13f78",
+      "review_sha256": "b159e52c280653364256b5dee2a0e3bac73182be484b9782c544daa5e132321e",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "3–5",
+          "check": "放大图和原文核对群聊总结按主题/责任人/时间点组织，以及Excel周报新增子表和四段结构；敏感信息暂停询问仅记录为作者一次内测观察。"
+        },
+        {
+          "pages": "6–7",
+          "check": "核对定时任务依赖已有日程和DDL文档；结尾明确是内测体验、未来场景为展望，笔记未升级成普遍能力保证。"
+        },
+        {
+          "pages": "8",
+          "check": "缩略图确认是阅读/留言区域，非技术正文；笔记及review均未把它扩成能力证据。"
+        },
+        {
+          "pages": "1–8缩略图",
+          "check": "核对全部页图；detail-3至detail-6中的截图与相邻体验叙述对应，遮挡姓名未被还原。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "8edf6626cf443547d7e145a73f7877add3392f6be5ef82595e37f1469e4a5765"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "9d86dcc7ee2cb2ea1de233363303846c1e4c2b040aa8d075257d30e0dcf4d78b"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 33,
+        "text_layer_sha256": "17a32d54c8e4b4d37ff2b91339b89bdf663b18e3f2c394d7e7d98f3a0718e727",
+        "text_layer_char_count": 823
+      },
+      {
+        "page": 2,
+        "md_start_line": 41,
+        "md_end_line": 48,
+        "text_layer_sha256": "851128e529f5b5cbfd0b6bb0fc2bb2b72f298a8c1771278766586d76764dba4c",
+        "text_layer_char_count": 219
+      },
+      {
+        "page": 3,
+        "md_start_line": 56,
+        "md_end_line": 65,
+        "text_layer_sha256": "831a586948f6effe93478648a6edddf21629c12645ddfe267c583b373e4eb3a8",
+        "text_layer_char_count": 297
+      },
+      {
+        "page": 4,
+        "md_start_line": 73,
+        "md_end_line": 82,
+        "text_layer_sha256": "f2bd3cb222407b35d278900f8b62f63c9bd28f406d841a7069237eb87f54eb63",
+        "text_layer_char_count": 330
+      },
+      {
+        "page": 5,
+        "md_start_line": 90,
+        "md_end_line": 101,
+        "text_layer_sha256": "237d2ba4c5f67d02b5395ddb351da52defc392c50582152ea007afa9423b347c",
+        "text_layer_char_count": 434
+      },
+      {
+        "page": 6,
+        "md_start_line": 109,
+        "md_end_line": 118,
+        "text_layer_sha256": "02da3708f65fb76be8721e63b1efec1871ff07a5a7a845581a20fdcd28dcac6e",
+        "text_layer_char_count": 302
+      },
+      {
+        "page": 7,
+        "md_start_line": 126,
+        "md_end_line": 145,
+        "text_layer_sha256": "43013ee15e60556b5a8b87227674405fd8aea4a6ac4475f248d4367008b89b80",
+        "text_layer_char_count": 729
+      },
+      {
+        "page": 8,
+        "md_start_line": 153,
+        "md_end_line": 156,
+        "text_layer_sha256": "b0d068eab5906bb4a5413b3eba6b03e2de76c6f3f8c242b54e21a71cc9f448d2",
+        "text_layer_char_count": 26
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "体验截图中的姓名/群聊部分被遮挡，部分界面文字较小；没有还原被遮挡内容，评价仅采用正文可读叙述。",
+        "pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "status": "partial"
+      },
+      {
+        "description": "作者明确说明体验基于内测版本，场景为个人设计的四项体验，没有提供标准化测试集或准确率/稳定性统计。",
+        "pages": [
+          1,
+          2,
+          7
+        ],
+        "status": "pending_review"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/大圆实测 : 你真的需要一个长在企业微信中的AI.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "8edf6626cf443547d7e145a73f7877add3392f6be5ef82595e37f1469e4a5765",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [],
+    "verification_status": "archive_retained_without_new_technical_claims",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_长在企微里的AI助手.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

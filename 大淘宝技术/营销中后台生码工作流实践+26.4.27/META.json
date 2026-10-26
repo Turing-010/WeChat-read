@@ -1,0 +1,504 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0233",
+  "title": "淘天营销中后台生码工作流最佳实践",
+  "short_title": "营销中后台生码工作流实践",
+  "account": "大淘宝技术",
+  "author": "棣棠",
+  "author_byline": "本文作者棣棠，来自淘天集团-营销前台技术团队。",
+  "source_url": null,
+  "published_at": "2026-04-27",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "营销前台技术团队 2026年4月27日 01:16 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 20,
+      "text": "本文作者棣棠，来自淘天集团-营销前台技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "AI研发协同",
+    "Skill设计与治理",
+    "Harness与模型协同",
+    "Agent成本与上下文预算"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/淘天营销中后台生码工作流最佳实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T06:25:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "40ed6e7d1de15a9af151d75b7f0507e318a830897824fd0561e7a9eaae027f5b",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.3-19含云端一体化流程图、submodule工作区结构图、场景工作流截图与功能树沉淀飞轮图（位于PDF图像层），核心turborepo配置、功能树结构与量化成效已在正文完整收录。",
+          "pages": [
+            2,
+            3,
+            5,
+            6,
+            8,
+            9,
+            10,
+            12,
+            16,
+            17,
+            19
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 13917139,
+      "page_count": 21
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T06:25:00-07:00",
+  "directory": "大淘宝技术/营销中后台生码工作流实践+26.4.27",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_营销中后台生码工作流实践.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0233",
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "updated_at": "2026-10-20T06:25:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "40ed6e7d1de15a9af151d75b7f0507e318a830897824fd0561e7a9eaae027f5b"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "dde1525d1522a4a05d9b9c287eb1e6de7d771248deefe1868f5c6faf7e26ced0"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.3-19含云端一体化流程图、submodule工作区结构图、场景工作流截图与功能树沉淀飞轮图（位于PDF图像层），核心turborepo配置、功能树结构与量化成效已在正文完整收录。",
+        "pages": [
+          2,
+          3,
+          5,
+          6,
+          8,
+          9,
+          10,
+          12,
+          16,
+          17,
+          19
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_营销中后台生码工作流实践.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_营销中后台生码工作流实践.md",
+      "sha256": "f5dd2604101027e403427da155b574d647bfdb2d1e1531d43580a7d7fcf036ba"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "40ed6e7d1de15a9af151d75b7f0507e318a830897824fd0561e7a9eaae027f5b"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "dde1525d1522a4a05d9b9c287eb1e6de7d771248deefe1868f5c6faf7e26ced0"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 52,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 658,
+        "text_layer_sha256": "a79fbee96c097197ba17cf35429f380d8789f22f762f5f083b984efb11277f8c"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 110,
+        "md_start_line": 60,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 2,
+        "text_layer_char_count": 678,
+        "text_layer_sha256": "13b72fc55d73a208919f59bf4087d3f0753a98df1dd8643fee0a1d052399e34e"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 143,
+        "md_start_line": 118,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 3,
+        "text_layer_char_count": 492,
+        "text_layer_sha256": "43a1886f0541182e592c73b09fe76ff1923a36950070ff4adb0bcf668a2e7809"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 178,
+        "md_start_line": 151,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 4,
+        "text_layer_char_count": 366,
+        "text_layer_sha256": "946bf54086a4757eaffa21c03431758b39f397d8552d0775792433073507c2a3"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 213,
+        "md_start_line": 186,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 5,
+        "text_layer_char_count": 476,
+        "text_layer_sha256": "7aaffca5c519a1ef00c9ef3b26276629a74a7e2b5fed7647e6f54158b356eda1"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 283,
+        "md_start_line": 221,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 6,
+        "text_layer_char_count": 735,
+        "text_layer_sha256": "1a336811b939ad70b51276b3e0b57aa8d6cafce630f1978c3a672f412c68ccc7"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 395,
+        "md_start_line": 291,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 7,
+        "text_layer_char_count": 795,
+        "text_layer_sha256": "66e856af84e334f4dc274974d628db2464eaa0f3c4d51ba5f1adb97984496b6e"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 434,
+        "md_start_line": 403,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 8,
+        "text_layer_char_count": 382,
+        "text_layer_sha256": "90ee35e86847e783fec085dcd20084eb620f635e9c378f8472dac1e3dbf401cc"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 480,
+        "md_start_line": 442,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 9,
+        "text_layer_char_count": 665,
+        "text_layer_sha256": "920cb1aae3cf3781a9bf2af6c73410366de8fd55fb928624c39cc2ea7337385b"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 517,
+        "md_start_line": 488,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 10,
+        "text_layer_char_count": 422,
+        "text_layer_sha256": "cf1f76c3c5c39d52d84ead8950cec1fc08e22c869706e124f89a180ee976badd"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 560,
+        "md_start_line": 525,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 11,
+        "text_layer_char_count": 521,
+        "text_layer_sha256": "2b99d251e03fb1da59a36c662a49402affd49f0f22b72c5d8fc06a44e6512e25"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 621,
+        "md_start_line": 568,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 12,
+        "text_layer_char_count": 770,
+        "text_layer_sha256": "25801bed1c5f6c478fc16483bf80baf3e8a01c0edc36b1fb5e89353155bd2ab4"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 699,
+        "md_start_line": 629,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 13,
+        "text_layer_char_count": 906,
+        "text_layer_sha256": "4b19bc1cc0b42df3298f6082f177fa35bb08848256c5c9ff554ef684c033cdc4"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 764,
+        "md_start_line": 707,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 14,
+        "text_layer_char_count": 720,
+        "text_layer_sha256": "dc0b30069d18248b60723f334e8770b0f22ccf984a0de33640dd3fa257d0f14b"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 831,
+        "md_start_line": 772,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 15,
+        "text_layer_char_count": 672,
+        "text_layer_sha256": "d4bc9eac3844eb38cf48073f0807c9fb1df1d83e2fee802e757712cdb1f3458e"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 890,
+        "md_start_line": 839,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 16,
+        "text_layer_char_count": 635,
+        "text_layer_sha256": "c42866920a41d6840326beeb6f1914dfa4f3fa57331c2695777f1c6f35797f9d"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 938,
+        "md_start_line": 898,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 17,
+        "text_layer_char_count": 657,
+        "text_layer_sha256": "2688e492e02b2c5f2a708d2420a747dcff93be63f8c0aa99c7aaeb3e891b5649"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1010,
+        "md_start_line": 946,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 18,
+        "text_layer_char_count": 1319,
+        "text_layer_sha256": "798803efbb65eae6a36c0ad5538cc9e4734e70ff67c041bf841a08b9df5d8527"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 1041,
+        "md_start_line": 1018,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 19,
+        "text_layer_char_count": 427,
+        "text_layer_sha256": "9ed4835d9d713c54a58f1165480b913617ed59ae236b1f83579b3bfcbd7e66d6"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1093,
+        "md_start_line": 1049,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 20,
+        "text_layer_char_count": 680,
+        "text_layer_sha256": "9ff70e927b4f4033bf0af83c28fecf714243df1c9035cda360b670b5da14bed0"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1109,
+        "md_start_line": 1101,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 21,
+        "text_layer_char_count": 39,
+        "text_layer_sha256": "e4cdfcb7d04a552dfecb08d948cb27cc4c161dc74f611638f07fb87eeb3b2e19"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.3-19含云端一体化流程图、submodule工作区结构图、场景工作流截图与功能树沉淀飞轮图（位于PDF图像层），核心turborepo配置、功能树结构与量化成效已在正文完整收录。",
+        "pages": [
+          2,
+          3,
+          5,
+          6,
+          8,
+          9,
+          10,
+          12,
+          16,
+          17,
+          19
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T06:25:00-07:00",
+    "removed_at": "2026-10-20T06:25:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘天营销中后台生码工作流最佳实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "40ed6e7d1de15a9af151d75b7f0507e318a830897824fd0561e7a9eaae027f5b",
+        "copied_at": "2026-10-20T06:25:00-07:00",
+        "removed_at": "2026-10-20T06:25:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_营销中后台生码工作流实践.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

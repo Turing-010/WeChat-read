@@ -1,0 +1,358 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0230",
+  "title": "缓存使用实践总结：以淘宝交易结算场景为例",
+  "short_title": "淘宝交易结算缓存实践总结",
+  "account": "大淘宝技术",
+  "author": "觖弦",
+  "author_byline": "本文作者觖弦，来自淘天集团-交易结算团队。",
+  "source_url": null,
+  "published_at": "2026-05-11",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "交易结算团队 2026年5月11日 01:29 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 11,
+      "text": "本文作者觖弦，来自淘天集团-交易结算团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "分布式计算与数据管道",
+    "异常监控与稳定性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/缓存使用实践总结：以淘宝交易结算场景为例.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T06:25:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "1bfdae309423aae5d58fc388e05619a36225040b0b996c49ae42711b8407afa5",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.3-4含汇金结算全局流程图（位于PDF图像层）；p.7场景三表格中存储介质栏存在原文复制笔误，已在笔记校对报告中说明并还原准确语义。",
+          "pages": [
+            3,
+            4
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 2059521,
+      "page_count": 12
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T06:25:00-07:00",
+  "directory": "大淘宝技术/淘宝交易结算缓存实践总结+26.5.11",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_淘宝交易结算缓存实践总结.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0230",
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "updated_at": "2026-10-20T06:25:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "1bfdae309423aae5d58fc388e05619a36225040b0b996c49ae42711b8407afa5"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "d2e54d7c3c5fb72441a0e9648fc73850791cfb0f888a283deda166f8dfa672f1"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.3-4含汇金结算全局流程图（位于PDF图像层）；p.7场景三表格中存储介质栏存在原文复制笔误，已在笔记校对报告中说明并还原准确语义。",
+        "pages": [
+          3,
+          4
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_淘宝交易结算缓存实践总结.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_淘宝交易结算缓存实践总结.md",
+      "sha256": "09e3c37b918047c48906511e44783390f86b5c7a0eb4104a5e46bd9c2c59005e"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "1bfdae309423aae5d58fc388e05619a36225040b0b996c49ae42711b8407afa5"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "d2e54d7c3c5fb72441a0e9648fc73850791cfb0f888a283deda166f8dfa672f1"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 54,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 471,
+        "text_layer_sha256": "bf0fa3d784cd54b15e1f67f0b694ad92efba17bbc99f88d5b5823d6ac65519d1"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 148,
+        "md_start_line": 62,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 2,
+        "text_layer_char_count": 723,
+        "text_layer_sha256": "7a8db72b781819e72f27454eb91cbb8ee07582e606466f4eb8e66a7801e05d69"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 202,
+        "md_start_line": 156,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 3,
+        "text_layer_char_count": 818,
+        "text_layer_sha256": "3b6e37614028d255aebe934a14cd81d7e6ade6cba71c5da7357046f6ba6cbf91"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 238,
+        "md_start_line": 210,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 4,
+        "text_layer_char_count": 313,
+        "text_layer_sha256": "6d6f635ccda0927ec31f6d0ce0903b494cfee089416c4e05e46089192053ee38"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 308,
+        "md_start_line": 246,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 5,
+        "text_layer_char_count": 636,
+        "text_layer_sha256": "47ff0c45b3263e9be57f3400179f7bacd1995adb39ebdea1e28f3c6507bfbcf5"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 382,
+        "md_start_line": 316,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 6,
+        "text_layer_char_count": 667,
+        "text_layer_sha256": "df35e85f7bffd055055d5dc41108f0289a7a2a4518e6eae06540d3ef70d51c24"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 440,
+        "md_start_line": 390,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 7,
+        "text_layer_char_count": 553,
+        "text_layer_sha256": "de0649c1be18b0fc84d4463a5392391c769bad661a607998de3049e82a4d4026"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 500,
+        "md_start_line": 448,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 8,
+        "text_layer_char_count": 577,
+        "text_layer_sha256": "5f0ebb6092a53e4277bffd5cc375658285453832ad46a12767e482393924d957"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 545,
+        "md_start_line": 508,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 9,
+        "text_layer_char_count": 502,
+        "text_layer_sha256": "7c6139261baaa48fd75d1b88c86a50f0a879d0332215521d675ddb9a4403c32a"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 617,
+        "md_start_line": 553,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 10,
+        "text_layer_char_count": 634,
+        "text_layer_sha256": "1264a8a473067e82f411c03bdeaf312d1191e24ce74c4eb38046488970dc5859"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 708,
+        "md_start_line": 625,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 11,
+        "text_layer_char_count": 880,
+        "text_layer_sha256": "abd3a40bb31798de2bba76df50da80666e7dc09853d315dd360e7c11c7acace3"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 729,
+        "md_start_line": 716,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 12,
+        "text_layer_char_count": 106,
+        "text_layer_sha256": "0718377d46a6af87024a1fa3e81a171e7d6fe699ceacda7a0754efd36202b613"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.3-4含汇金结算全局流程图（位于PDF图像层）；p.7场景三表格中存储介质栏存在原文复制笔误，已在笔记校对报告中说明并还原准确语义。",
+        "pages": [
+          3,
+          4
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/分布式计算与数据管道.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T06:25:00-07:00",
+    "removed_at": "2026-10-20T06:25:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/缓存使用实践总结：以淘宝交易结算场景为例.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "1bfdae309423aae5d58fc388e05619a36225040b0b996c49ae42711b8407afa5",
+        "copied_at": "2026-10-20T06:25:00-07:00",
+        "removed_at": "2026-10-20T06:25:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_淘宝交易结算缓存实践总结.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

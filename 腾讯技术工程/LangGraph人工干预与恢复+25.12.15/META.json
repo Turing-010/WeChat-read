@@ -1,0 +1,148 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0324",
+  "title": "破除AI Agent自主操控风险：万字解读LangGraph“人工干预”机制，附零基础实战",
+  "short_title": "LangGraph人工干预与恢复",
+  "account": "腾讯技术工程",
+  "author": "yukixxwang",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-12-15T02:18",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "破除 AI Agent⾃主操控⻛险：万字解读       LangGraph“⼈ ⼯⼲预”机  制\n，附零基础实战\n\n\n原创 腾讯程序员  腾讯技术⼯程  2025年12⽉15⽇   02:18⼴东258⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n作者： yukixxwang\n\n\n\n  随着⼤型语⾔模型（LLM）驱动的⾃主代理（Agent）从学术⾛向应⽤，如何确保其⾏为\n  的可靠性、安全性与可控性，已成为决定其能否在真实世界关键任务中落地的核⼼挑战。\n  ⼤语⾔模型能⼒虽然越来越强，但并⾮完美⽆缺，可能产⽣错误或不准确输出。当⼀个\n  Agent 被授权执⾏⾼风险领域或敏感操作时，⼀个⼩⼩的错误也可能带来不可预知的风\n  险。所以我们需要“⼈⼯⼲预”机制，在关键决策点让 Agent 停下来，将控制权交还给⼈\n  类，让⼈类的智慧能够介⼊，弥补模型的不⾜。\n\n\n 引⾔\n\n随着⼤型语⾔模型（LLM）驱动的⾃主代理（Agent）从学术⾛向应⽤，如何确保其⾏为的可\n靠性、安全性与可控性，已成为决定其能",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "Agent安全与治理",
+    "Agent架构",
+    "MCP与工具接入",
+    "Agent工程循环"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/破除AI Agent自主操控风险：万字解读LangGraph“人工干预”机制，附零基础实战.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:38:58-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "170284a94557ab3e876277fa83c13118a27a963e52086767fd90e4dfe48078d1",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "p3无期限安全保存全部状态的描述不能由示例InMemorySaver支持；内存检查点不提供进程重启后的持久性，外部系统状态也不自动被保存。",
+        "p8明确恢复会重跑节点，与p3断点无缝继续及p21记录在哪一行的简化说法需区分；副作用移至后续节点仍需幂等和失败重试策略。",
+        "p4把静态断点当审批方案，p21却明确不推荐生产HITL；应保留后文的用途限制，具体API随版本核查。",
+        "p14初始化参数漏逗号、p17定义search_agent后用agent、respond/response命名混用及多处代码长行截断；示例未本次执行，不称完整可运行。",
+        "p20 int(user_input)会把传入浮点数截断、接受bool等，不能严格验证非负整数字段；格式验证也不等同业务授权。",
+        "审批包装只展示动作及参数并处理响应，没有审批者身份、权限、防篡改、超时与审计实现；不能把标题破除风险或终极防线当保证。",
+        "内网Venus市场及接口是作者环境；SSE示例不是当前MCP推荐传输的核验结果。只看页图1、8、20、27。"
+      ],
+      "size_bytes": 6939974,
+      "page_count": 29
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:38:58-07:00",
+  "directory": "腾讯技术工程/LangGraph人工干预与恢复+25.12.15",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:38:58-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "170284a94557ab3e876277fa83c13118a27a963e52086767fd90e4dfe48078d1",
+    "output_path": "MD.md",
+    "output_sha256": "eee82f9ea1a7d0b75b55069646ad04d8ca7cf660bd452a0c685486fadd4aceba",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 29,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "visual_pages": [
+        1,
+        8,
+        20,
+        27
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "p3无期限安全保存全部状态的描述不能由示例InMemorySaver支持；内存检查点不提供进程重启后的持久性，外部系统状态也不自动被保存。",
+      "p8明确恢复会重跑节点，与p3断点无缝继续及p21记录在哪一行的简化说法需区分；副作用移至后续节点仍需幂等和失败重试策略。",
+      "p4把静态断点当审批方案，p21却明确不推荐生产HITL；应保留后文的用途限制，具体API随版本核查。",
+      "p14初始化参数漏逗号、p17定义search_agent后用agent、respond/response命名混用及多处代码长行截断；示例未本次执行，不称完整可运行。",
+      "p20 int(user_input)会把传入浮点数截断、接受bool等，不能严格验证非负整数字段；格式验证也不等同业务授权。",
+      "审批包装只展示动作及参数并处理响应，没有审批者身份、权限、防篡改、超时与审计实现；不能把标题破除风险或终极防线当保证。",
+      "内网Venus市场及接口是作者环境；SSE示例不是当前MCP推荐传输的核验结果。只看页图1、8、20、27。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/破除AI Agent自主操控风险：万字解读LangGraph“人工干预”机制，附零基础实战.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/LangGraph人工干预与恢复+25.12.15/RAW.pdf",
+    "sha256": "170284a94557ab3e876277fa83c13118a27a963e52086767fd90e4dfe48078d1",
+    "copied_at": "2026-10-23T06:38:58-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent任务恢复.md",
+      "../../20_topics/Agent安全与权限.md",
+      "../../20_topics/Agent工程循环.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

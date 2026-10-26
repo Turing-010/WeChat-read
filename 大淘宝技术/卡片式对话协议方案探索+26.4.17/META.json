@@ -1,0 +1,440 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0237",
+  "title": "卡片式对话的协议方案探索和思考",
+  "short_title": "卡片式对话协议方案探索",
+  "account": "大淘宝技术",
+  "author": "无二",
+  "author_byline": "本文作者无二，来自淘天集团-跨端技术团队。",
+  "source_url": null,
+  "published_at": "2026-04-17",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "跨端技术团队 2026年4月17日 01:01 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 16,
+      "text": "本文作者无二，来自淘天集团-跨端技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "跨端开发与性能",
+    "Harness与模型协同",
+    "AI研发协同"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/卡片式对话的协议方案探索和思考.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T06:25:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "a3d361f403bace68e3d98344c343d5b08ab1537b392202b4b0211d9e008624f0",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.6-13含方案选型对比图、时序图与四层协议关系图（位于PDF图像层），所有React/markdown-it插件代码与JSON协议报文均在文本层并已完整提取。",
+          "pages": [
+            6,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 3628271,
+      "page_count": 17
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T06:25:00-07:00",
+  "directory": "大淘宝技术/卡片式对话协议方案探索+26.4.17",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_卡片式对话协议方案探索.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0237",
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "updated_at": "2026-10-20T06:25:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "a3d361f403bace68e3d98344c343d5b08ab1537b392202b4b0211d9e008624f0"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "2875a5fccee7e9c79be13410a1b8619b7064b66691135a4354a4a3ec2a64fa89"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.6-13含方案选型对比图、时序图与四层协议关系图（位于PDF图像层），所有React/markdown-it插件代码与JSON协议报文均在文本层并已完整提取。",
+        "pages": [
+          6,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_卡片式对话协议方案探索.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_卡片式对话协议方案探索.md",
+      "sha256": "4ff02abcfe9dd46757dc4bcd4c3044d90f48af3017bba2fb3fbafda2908c0268"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "a3d361f403bace68e3d98344c343d5b08ab1537b392202b4b0211d9e008624f0"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "2875a5fccee7e9c79be13410a1b8619b7064b66691135a4354a4a3ec2a64fa89"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 71,
+        "md_start_line": 13,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 1,
+        "text_layer_char_count": 746,
+        "text_layer_sha256": "b07959a8b5926480bdb2add917e00436b3c90e887cc77dda796745316d8d5619"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 162,
+        "md_start_line": 79,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 2,
+        "text_layer_char_count": 982,
+        "text_layer_sha256": "b5ff49788728d1cb57b5a198f18a3e8444d6e97405f15d830ae882293770a3ab"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 264,
+        "md_start_line": 170,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 3,
+        "text_layer_char_count": 1166,
+        "text_layer_sha256": "4921c23fe241a260ee66c532fe4e52f232d5f049ad1291b8a9c37b9b9bca3f25"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 344,
+        "md_start_line": 272,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 4,
+        "text_layer_char_count": 988,
+        "text_layer_sha256": "f6d7c993a1bec1126b2679eab251d7a4fb1e44a34c023a54a18af2a0cb9887fd"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 438,
+        "md_start_line": 352,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 5,
+        "text_layer_char_count": 1144,
+        "text_layer_sha256": "a8e7367720656f8223c1a2240b73cdccc4ea18b08065b90725626c0a895020ab"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 498,
+        "md_start_line": 446,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 6,
+        "text_layer_char_count": 968,
+        "text_layer_sha256": "814f20ed1ad44d552adabb7b5e470e5c25be4c45bfcec1ad2f58a8b1d58167d3"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 556,
+        "md_start_line": 506,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 7,
+        "text_layer_char_count": 660,
+        "text_layer_sha256": "93b869dec531ee0d11b11813018edb407038b26ba998ac04e433cbfb6f59d09a"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 639,
+        "md_start_line": 564,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 8,
+        "text_layer_char_count": 642,
+        "text_layer_sha256": "6b2ab03a33a7f5023f73cdda586cdcd2819eb49e9e7f59c98a911d72fc84877e"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 681,
+        "md_start_line": 647,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 9,
+        "text_layer_char_count": 531,
+        "text_layer_sha256": "4bced83858d5f8896b8d5117d6e24b3953811dd1f8b1134051c867acefa1f9b0"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 752,
+        "md_start_line": 689,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 10,
+        "text_layer_char_count": 1140,
+        "text_layer_sha256": "a79954d03551979f436d6e19764d74fdfcf26b1bc01f392e8a274c7a8bef8a71"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 795,
+        "md_start_line": 760,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 11,
+        "text_layer_char_count": 596,
+        "text_layer_sha256": "add8b1bbfa5aa235a8bd90c9f209c3cf64772b78443be473cd29a6e0b01289fe"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 848,
+        "md_start_line": 803,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 12,
+        "text_layer_char_count": 480,
+        "text_layer_sha256": "d5e0d573ee8952de344d59f7df4c8a52bc77f25b52a30118822532f58430203d"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 915,
+        "md_start_line": 856,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 13,
+        "text_layer_char_count": 932,
+        "text_layer_sha256": "8999d068f8b9ced27d15a37d6beb0423c553f3f0e49081252fbe6935fe0fc84e"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 981,
+        "md_start_line": 923,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 14,
+        "text_layer_char_count": 703,
+        "text_layer_sha256": "ee5211219caa6189df1ee1e6aa185f4f30f3cab9d94fd19c1a08d2d1f5c47f1d"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 1042,
+        "md_start_line": 989,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 15,
+        "text_layer_char_count": 663,
+        "text_layer_sha256": "ba13758a8eeca25f142d611619e8b9f85cdc65690b3efddddfd7c09336c093b7"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1104,
+        "md_start_line": 1050,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 16,
+        "text_layer_char_count": 1041,
+        "text_layer_sha256": "a19c91ee254defb8158155b99c8bc90999ab1d81c2a90326382c2ee82ab3bf68"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1125,
+        "md_start_line": 1112,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 17,
+        "text_layer_char_count": 106,
+        "text_layer_sha256": "0106668c5e979a366a0c0c1610b6c249ea3ccf0520b05b479154eb2d447debad"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.6-13含方案选型对比图、时序图与四层协议关系图（位于PDF图像层），所有React/markdown-it插件代码与JSON协议报文均在文本层并已完整提取。",
+        "pages": [
+          6,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/桌面Agent与工作流.md",
+      "../../20_topics/跨端开发与性能.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T06:25:00-07:00",
+    "removed_at": "2026-10-20T06:25:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/卡片式对话的协议方案探索和思考.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "a3d361f403bace68e3d98344c343d5b08ab1537b392202b4b0211d9e008624f0",
+        "copied_at": "2026-10-20T06:25:00-07:00",
+        "removed_at": "2026-10-20T06:25:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_卡片式对话协议方案探索.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

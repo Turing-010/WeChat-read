@@ -1,0 +1,381 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0106",
+  "title": "跨端页面秒开，腾讯开源框架 Kuikly 是怎么做到的?",
+  "short_title": "Kuikly TurboDisplay",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-06-10T02:37",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0610 Kuikly TurboDisplay.pdf",
+      "original_filename": "0610 Kuikly TurboDisplay.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "9903a006338cc045e44b6a3b47dde9c100755fca57481a6140a5314f360a8f58",
+      "size_bytes": 3720540,
+      "page_count": 10,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "PDF p.9–10 为阅读/留言尾页，未包含正文新增技术内容。",
+          "pages": [
+            9,
+            10
+          ],
+          "status": "reviewed_no_substantive_text"
+        }
+      ],
+      "publication_evidence": "PDF p.1 页眉：2026 年 6 月 10 日 02:37；未标时区。"
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "异常监控与稳定性",
+    "模型与开发工具发布",
+    "跨端开发与性能"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Kuikly TurboDisplay+26.6.10",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Kuikly TurboDisplay.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "跨端⻚面秒开,腾讯开源框架 Kuikly 是怎么做到的?\n腾讯程序员 2026 年 6 月 10 日 02 : 37广东原创 腾讯技术工程 108 人\nKuikly  是腾讯基于  Kotlin Multiplatform (KMP) 技术构建的全平台高性能开发框架,具有一码多\n端、极致易用、动态灵活特点,覆盖  Android 、 iOS 、 HarmonyOS 、 H5 、微信小程序、 Mac 六\n大平台。\n得益于  Kotlin/Native 编译产物与原生渲染管线, Kuikly 已具备原生级性能表现;为进一步压榨首\n屏体验,我们推出了加速方案  TurboDisplay ,通过节点缓存、主线程端侧直出与双线程并行渲\n染,在二次打开场景下实现 \" 秒开 \" ,并在  QQ 游戏、输入法、腾讯地图等线上业务中取得\n60%~80% 以上的耗时优化。本文将深入解析其设计思路与核心机制。\n一、运行效果展示\nTurboDisplay 是 Kuikly 自研的首屏加速方案,在页面二次打开场景下实现了 \" 秒开 \" 。运行效果如\n下:\n",
+    "publication_evidence": "PDF p.1 页眉：2026 年 6 月 10 日 02:37；未标时区。",
+    "full_title_in_capture": "跨端页面秒开，腾讯开源框架 Kuikly 是怎么做到的?",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0106",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "9903a006338cc045e44b6a3b47dde9c100755fca57481a6140a5314f360a8f58"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "PDF p.9–10 为阅读/留言尾页，未包含正文新增技术内容。",
+        "pages": [
+          9,
+          10
+        ],
+        "status": "reviewed_no_substantive_text"
+      }
+    ],
+    "outputs": [
+      "AI_Kuikly TurboDisplay.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "coverage": "通读 p.1–10；覆盖动机、传统方案、方案选型、双线并行、节点采集、增量 diff、状态恢复/事件保序、实验和线上效果、接入与后续规划。p.9–10 为尾页。；存在部分页面文字层或读者评论范围，详见 quality_issues。",
+    "fact_checks": [
+      {
+        "item": "核心机制",
+        "original_value": "缓存可交互节点树与真实页面并行生成，先恢复再差异更新",
+        "pages": [
+          3,
+          6
+        ],
+        "result": "与正文流程一致。"
+      },
+      {
+        "item": "事件顺序",
+        "original_value": "恢复状态后需保证交互事件与后续差异更新有序",
+        "pages": [
+          5,
+          6
+        ],
+        "result": "按文中恢复流程概括。"
+      },
+      {
+        "item": "效果范围",
+        "original_value": "首屏耗时改善约65%–80%",
+        "pages": [
+          7
+        ],
+        "result": "仅保留正文区间；图表小字未逐项核对。"
+      },
+      {
+        "item": "技术定位",
+        "original_value": "TurboDisplay 是 Kuikly 首屏优化方案",
+        "pages": [
+          2,
+          4
+        ],
+        "result": "与文章方案背景一致。"
+      },
+      {
+        "item": "尾页",
+        "original_value": "p.9–10 为阅读/留言页",
+        "pages": [
+          9,
+          10
+        ],
+        "result": "页图未见新的技术正文。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Kuikly TurboDisplay.md",
+      "sha256": "b7fdcec4f3db8539425b519251034bef8112a422ee33535e8f8580256f432658"
+    },
+    "independent_crosscheck": {
+      "reviewer": "topic_apps_eval_crosscheck",
+      "note_sha256": "430bad3b9f62ce6f998a49227e79df3b12d58e2dee856a4aa56a9ed031bd70ac",
+      "review_sha256": "338fd8e498dce5d98c57f8f08a07477dd0d7db82069a391382838b63c0df4e13",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "4–6",
+          "check": "核对端侧先恢复缓存节点、跨端侧后台构造真实节点、节点属性/布局差异更新，以及恢复滚动和回放交互后再 diff 的顺序；笔记对过早 diff 覆盖缓存态的原因与原文一致。"
+        },
+        {
+          "pages": "7–10",
+          "check": "核对线上 65%–80%耗时改善及原文限定为代码/数据本地缓存、启动无网络的本地逻辑耗时；未把图表难辨数值补入。p.8 业务接口示例只做记录，p.9 为留言尾页、p.10 空白，均未扩写。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "9903a006338cc045e44b6a3b47dde9c100755fca57481a6140a5314f360a8f58"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "f78062943413ef3e4634005db27912774681ce657d113632a4d9fc910c89f897"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 21,
+        "text_layer_sha256": "8882d5ab87efcf03917b0cab92b2efa3ab3880317cd8c725ac1426a56b06cab6",
+        "text_layer_char_count": 472
+      },
+      {
+        "page": 2,
+        "md_start_line": 29,
+        "md_end_line": 40,
+        "text_layer_sha256": "414b02f6067920502c00988b34139a229c2671725e785dc8e8cb834c1ac54c03",
+        "text_layer_char_count": 420
+      },
+      {
+        "page": 3,
+        "md_start_line": 48,
+        "md_end_line": 76,
+        "text_layer_sha256": "a5c2f92b92ead0fe08e18e4f9237f73bc8538b77ddc4f80ecf2d0b9ab50d0d43",
+        "text_layer_char_count": 1070
+      },
+      {
+        "page": 4,
+        "md_start_line": 84,
+        "md_end_line": 101,
+        "text_layer_sha256": "c97f001efbf41725a6c30f72c5afcff1ae9516eb0921b6cd0083966ab6fce552",
+        "text_layer_char_count": 582
+      },
+      {
+        "page": 5,
+        "md_start_line": 109,
+        "md_end_line": 131,
+        "text_layer_sha256": "11d453f651920c84cba9e59e132f5fc4439bbc8c6100ed6f34fd74fbed8a964b",
+        "text_layer_char_count": 876
+      },
+      {
+        "page": 6,
+        "md_start_line": 139,
+        "md_end_line": 157,
+        "text_layer_sha256": "0570326d765e9e9fbf561bfe8bb16344576be4d3e9054bb1c826de5f2e5a943b",
+        "text_layer_char_count": 710
+      },
+      {
+        "page": 7,
+        "md_start_line": 165,
+        "md_end_line": 169,
+        "text_layer_sha256": "9ed62d81751b755106233438d821e5314f340dc0883b319cd7198dcf7812faea",
+        "text_layer_char_count": 153
+      },
+      {
+        "page": 8,
+        "md_start_line": 177,
+        "md_end_line": 199,
+        "text_layer_sha256": "8a67e9dd2c69d2fc37fa9221e6cdfb3e9d6a1515896393b519a31524425199f3",
+        "text_layer_char_count": 620
+      },
+      {
+        "page": 9,
+        "md_start_line": 207,
+        "md_end_line": 210,
+        "text_layer_sha256": "d5ec9dab4199bf879a7fdef2040e270499acf59f1032b11434141f52db7499f2",
+        "text_layer_char_count": 29
+      },
+      {
+        "page": 10,
+        "md_start_line": 218,
+        "md_end_line": 217,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "PDF p.9–10 为阅读/留言尾页，未包含正文新增技术内容。",
+        "pages": [
+          9,
+          10
+        ],
+        "status": "reviewed_no_substantive_text"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0610 Kuikly TurboDisplay.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "9903a006338cc045e44b6a3b47dde9c100755fca57481a6140a5314f360a8f58",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/跨端开发与性能.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Kuikly TurboDisplay.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

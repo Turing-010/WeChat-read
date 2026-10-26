@@ -1,0 +1,368 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0009",
+  "title": "Agent 长程任务断点续传：从框架 Checkpoint 到跨进程恢复的完整实践",
+  "short_title": "长程任务断点续传",
+  "account": "大淘宝技术",
+  "author": "绍清",
+  "author_byline": "本文作者绍清,来自淘天集团-直播技术团队。团队专注于用技术连接直播内容与商业价值,",
+  "source_url": null,
+  "published_at": "2026-09-09",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "description": "PDF第1页标题、公众号和日期与下载总结的frontmatter、主题相符；署名取PDF团队介绍页。",
+    "pdf_page": 1,
+    "header_text": "Agent  ⻓程任务断点续传:从框架 Checkpoint  到跨进程恢复的完\n整实践\n直播技术团队 Sep  9 , 2026 , 2 : 41  AM浙江原创 大淘宝技术 12  listened\n本文介绍了针对 Agent ⻓程任务中断恢复需求的完整实践方案,旨在解决用户主动、工\n具执行及系统级中断带来的稳定性问题。该方案采用“框架层 Checkpoint + 上层任务调\n度”的两层架构,在不修改 Spring AI Alibaba 框架源码的前提下,通过扩展 \nInterruptableAction、利用 Hook  机制注入自定义逻辑(如关机信号检测、消息顺序\n修正、多工具调用 Mock 返回及子图会话 ID 记录)来实现进程内的状态保存与恢复;同\n时,上层调度通过 MQ 摘流防",
+    "author_pdf_page": 14,
+    "download_summary_frontmatter": "title: Agent 长程任务断点续传：从框架 Checkpoint 到跨进程恢复的完整实践\nsource: 大淘宝技术（公众号）｜直播技术团队｜作者：绍清｜2026-09-09\ndate: 2026-09-09\ntype: 方法论与案例型\ntags:\n  - Agent\n  - 断点续传\n  - Checkpoint\n  - Spring-AI-Alibaba\n  - 长程任务\n  - 中断恢复\n  - MQ\nstatus: 待复习"
+  },
+  "tags": [
+    "Agent任务恢复",
+    "Agent工程循环"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/Agent 长程任务断点续传：从框架 Checkpoint 到跨进程恢复的完整实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-12T00:38:05-07:00",
+      "provenance": "用户已收集的公众号PDF；本次从inbox复制归档，原采集方式与时间未知",
+      "sha256": "3afc2dfe6495f215897f26e52e4eb6658c8518b512b1a62f39663fadd8e1684b",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "原文URL、采集时间与显示时间的时区未确认；未联网核查来源或技术事实。",
+          "verification_status": "unverified"
+        },
+        {
+          "description": "全部页已提取文本层；图片内容、代码框长行与表格版面尚未逐页视觉核验。",
+          "verification_status": "pending_visual_review"
+        }
+      ],
+      "size_bytes": 5464681,
+      "page_count": 15
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-12T00:38:05-07:00",
+  "directory": "大淘宝技术/长程任务断点续传+26.9.9",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_长程任务断点续传.md"
+  },
+  "received_artifacts": [
+    {
+      "artifact_id": "summary-001",
+      "kind": "external_ai_summary",
+      "path": "AI_长程任务断点续传.md",
+      "original_path": "/Users/iw/Downloads/Agent 长程任务断点续传 26·09·09.md",
+      "received_at": "2026-10-12T00:38:05-07:00",
+      "generated_at": null,
+      "model": null,
+      "prompt_version": null,
+      "sha256": "e6bfe8968286281619ccf74707e46d9ef2e9b32047068111cf186abe09714852",
+      "size_bytes": 30357,
+      "provenance": "用户用其他模型生成并下载的AI总结；原样保存，未重新生成",
+      "verification_status": "identity_matched_content_not_fully_verified",
+      "candidate_wikilinks": [
+        "A2A 多 Agent 协同",
+        "Durable Execution",
+        "Hook 与 Interceptor 扩展点",
+        "Human-in-the-loop",
+        "LangGraph Checkpointer",
+        "MQ 消费与幂等",
+        "ReAct 循环",
+        "Spring AI Alibaba",
+        "优雅停机与摘流",
+        "蓝绿发布"
+      ],
+      "wikilink_status": "保留原下载文本中的候选知识关联；并不表示目标笔记均已创建"
+    }
+  ],
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0009",
+    "created_at": "2026-10-12T00:38:05-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "3afc2dfe6495f215897f26e52e4eb6658c8518b512b1a62f39663fadd8e1684b"
+      },
+      {
+        "artifact_id": "summary-001",
+        "path": "AI_长程任务断点续传.md",
+        "sha256": "668528ab26b3b34c7a5c361958324152c9c2688820690915e33220a5fe02327b"
+      }
+    ],
+    "method": "本次导入外部AI总结，核对身份，并以PDF文本及收到的总结补充跨文章主题知识。原总结生成过程未知；本次不重写AI总结。",
+    "tools": [
+      "本地文件读取",
+      "pypdf",
+      "pdfplumber",
+      "Python标准库",
+      "pdftoppm（首面渲染并查看）"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages_for_MD_only",
+    "quality_issues": [
+      {
+        "description": "原文URL、采集时间与显示时间的时区未确认；未联网核查来源或技术事实。",
+        "verification_status": "unverified"
+      },
+      {
+        "description": "全部页已提取文本层；图片内容、代码框长行与表格版面尚未逐页视觉核验。",
+        "verification_status": "pending_visual_review"
+      },
+      {
+        "description": "外部AI总结的生成模型、提示词、原始输入版本与生成时间未知；其校对报告及图中解读属于外部总结的自述，不能直接视为本次核验结论。",
+        "verification_status": "external_summary_not_fully_verified"
+      },
+      {
+        "description": "下载总结含图中无法辨认、原文疑点或推断说明；原样保留。",
+        "verification_status": "reported_by_external_summary",
+        "report_path": "AI_长程任务断点续传.md",
+        "reported_markers_count": 32
+      }
+    ],
+    "outputs": [
+      "AI_长程任务断点续传.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "generated_summary": {
+      "path": "AI_长程任务断点续传.md",
+      "sha256": "e6bfe8968286281619ccf74707e46d9ef2e9b32047068111cf186abe09714852"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-12T00:38:05-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "3afc2dfe6495f215897f26e52e4eb6658c8518b512b1a62f39663fadd8e1684b"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "5dec371e89ca7236bacc24ed2cdd5322cc79968b15f162da398e756039c20015"
+    },
+    "extractor": "pdfplumber 0.11.9; Page.extract_text",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "text_layer_extracted_layout_not_fully_verified",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 14,
+        "md_end_line": 36,
+        "text_layer_sha256": "b3927c7f7deb03ced5992b84e8ba9c2fff63e1048b022b65896f5faf8931cd32",
+        "text_layer_char_count": 793,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 2,
+        "md_start_line": 46,
+        "md_end_line": 67,
+        "text_layer_sha256": "61d1bb844998dda25b11e6ab747bd1fb3102c30bda584736a34192c254b539e0",
+        "text_layer_char_count": 627,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 3,
+        "md_start_line": 77,
+        "md_end_line": 83,
+        "text_layer_sha256": "216e9e7212a160b97238af48e053db764386ffc6e40349f239bda575229b61f3",
+        "text_layer_char_count": 178,
+        "image_objects": 3,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 4,
+        "md_start_line": 93,
+        "md_end_line": 98,
+        "text_layer_sha256": "1e616f42593dfa354d291a576d2a214d4ca2337b45b0016a9254ab9e6ff0cea6",
+        "text_layer_char_count": 215,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 5,
+        "md_start_line": 108,
+        "md_end_line": 143,
+        "text_layer_sha256": "c2f1859eaa93747a1446070cc128d6d460f9672af0dbde6c73a4ec3bfae843d0",
+        "text_layer_char_count": 1436,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 6,
+        "md_start_line": 153,
+        "md_end_line": 165,
+        "text_layer_sha256": "96dd0ef9d3d1ad9b98aa417b5c5bee34fd9e2fcc331f0dad8311398f6d5a2bb4",
+        "text_layer_char_count": 500,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 7,
+        "md_start_line": 175,
+        "md_end_line": 191,
+        "text_layer_sha256": "466657e906b640b7cbbe54c23ff8a75fa84aa0c449c9553d900bbd5ca9de9d6e",
+        "text_layer_char_count": 624,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 8,
+        "md_start_line": 201,
+        "md_end_line": 229,
+        "text_layer_sha256": "d2e0b62835710ec75d0207e42d7ecb50a2de51a15996ac00910fae14a2b4d6dd",
+        "text_layer_char_count": 1060,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 9,
+        "md_start_line": 239,
+        "md_end_line": 264,
+        "text_layer_sha256": "c2f0f76b5865d6019fa92d63ace084897962c742e4256068cf2faa5c40d7d682",
+        "text_layer_char_count": 810,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 10,
+        "md_start_line": 274,
+        "md_end_line": 294,
+        "text_layer_sha256": "356a1d69e47eb58e1291b3a9971bfd71abb28f26850ac93234414737e479dbf1",
+        "text_layer_char_count": 763,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 11,
+        "md_start_line": 304,
+        "md_end_line": 338,
+        "text_layer_sha256": "93797ea60e6dcdf79b3f74c61624d235559c87cda2d4529a94ac58d55dde0072",
+        "text_layer_char_count": 1094,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 12,
+        "md_start_line": 348,
+        "md_end_line": 363,
+        "text_layer_sha256": "6a7161fea968aec63f472d7e8fc04d225748d3405644cb0917d680baca3fb61b",
+        "text_layer_char_count": 396,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 13,
+        "md_start_line": 373,
+        "md_end_line": 398,
+        "text_layer_sha256": "2b3399acd50c33a86db0907ca8f75cd06d98213f0e886640e0021d5563a44d6a",
+        "text_layer_char_count": 1155,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 14,
+        "md_start_line": 408,
+        "md_end_line": 425,
+        "text_layer_sha256": "7effe893a5f3c24cbcf41c5c9ccf3fbc258b0c4b38542e04a2ced6acb1eb2b65",
+        "text_layer_char_count": 375,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 15,
+        "md_start_line": 435,
+        "md_end_line": 435,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_extracted": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "identity_text_pages_reviewed": [
+        1,
+        14
+      ],
+      "visual_pages_reviewed": [
+        1
+      ],
+      "detail_text_pages_reviewed": [
+        6,
+        11
+      ]
+    }
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent任务恢复.md",
+      "../../20_topics/Agent工程循环.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充主题知识；不改变本人记录或自动加入工具库",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed_sources_removed",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Agent 长程任务断点续传：从框架 Checkpoint 到跨进程恢复的完整实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "3afc2dfe6495f215897f26e52e4eb6658c8518b512b1a62f39663fadd8e1684b",
+        "removed_at": "2026-10-12T00:44:57-07:00"
+      },
+      {
+        "original_path": "/Users/iw/Downloads/Agent 长程任务断点续传 26·09·09.md",
+        "destination_path": "AI_长程任务断点续传.md",
+        "sha256": "668528ab26b3b34c7a5c361958324152c9c2688820690915e33220a5fe02327b",
+        "removed_at": "2026-10-12T00:44:57-07:00"
+      }
+    ],
+    "copied_at": "2026-10-12T00:38:05-07:00",
+    "removed_at": "2026-10-12T00:44:57-07:00"
+  },
+  "ai_note": "AI_长程任务断点续传.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

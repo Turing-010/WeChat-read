@@ -1,0 +1,511 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0053",
+  "title": "从0到1带你速通Marvis马维斯",
+  "short_title": "Marvis马维斯入门",
+  "account": "腾讯技术工程",
+  "author": "蟹钳",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-06-24T05:20",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/01Marvis.pdf",
+      "original_filename": "01Marvis.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "e29e8e02fd42b9416942fdeb6f6d23d2a1dc7aec751159b22b38d5eea5d099e0",
+      "size_bytes": 8665894,
+      "page_count": 23,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.12 是实际空白页，无法判断是否为打印分页还是漏采；相邻 p.13 截图存在",
+          "pages": [
+            12,
+            13
+          ],
+          "status": "pending_review"
+        },
+        {
+          "description": "本地硬件门槛仅在小字截图中，未将无法稳读的具体阈值写成教程",
+          "pages": [
+            10
+          ],
+          "status": "pending_review"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏 2026-06-24T05:20"
+    }
+  ],
+  "tags": [
+    "模型与开发工具发布",
+    "AI研发协同",
+    "检索与文档解析",
+    "桌面Agent与工作流"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Marvis马维斯入门+26.6.24",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Marvis马维斯入门.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "从 0 到 1 带你速通 Marvis ⻢维斯\n腾讯程序员 Jun  24 , 2026 , 5 : 20  AM广东原创 腾讯技术工程 66  listened\n作者:蟹钳\n很多非技术出身的朋友看完很多Agent 之后的第一反应都是:东⻄确实厉害,但我用不上。\n这句话其实挺真实的。\n因为对大多数人来说, Agent 的核心价值不是让你成为程序员,也不是让你在终端里⻜来⻜\n去,而是帮你把电脑里那些原本很烦、很碎、很消耗注意力的事情直接干掉。\n比如找文件;比如整理发票;比如把一堆截图里的信息提出来。比如人在外面,突然要从电\n脑里拿个文件;比如爸妈电脑网络坏了,不知道点哪里修。\n所以这次我准备把腾讯的  Marvis   认真拉出来讲一遍。\n尤其是近期 iOS 端上线之后,它终于不只是一个电脑里的  Agent ,而是变成了一个你能随身\n带着走的电子 AI 牛⻢。\n我会用几个普通人真的会遇到的场景,把它从安装、设置、电脑连接、文件搜索、办公处\n理、手机远控到定时任务完整跑一遍,跟着做,你也能上手。\nAI 技术⻜速发展的今天,能力强大的 Agent 产品层出不穷,但对普通用户来说,⻔槛也是真的\n高。\n",
+    "publication_evidence": "PDF p.1 发布栏 2026-06-24T05:20",
+    "full_title_in_capture": "从0到1带你速通Marvis马维斯",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0053",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "e29e8e02fd42b9416942fdeb6f6d23d2a1dc7aec751159b22b38d5eea5d099e0"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.12 是实际空白页，无法判断是否为打印分页还是漏采；相邻 p.13 截图存在",
+        "pages": [
+          12,
+          13
+        ],
+        "status": "pending_review"
+      },
+      {
+        "description": "本地硬件门槛仅在小字截图中，未将无法稳读的具体阈值写成教程",
+        "pages": [
+          10
+        ],
+        "status": "pending_review"
+      }
+    ],
+    "outputs": [
+      "AI_Marvis马维斯入门.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "detail_pages_reviewed": [
+        10,
+        12
+      ]
+    },
+    "coverage": "覆盖安装、界面与角色、授权、两种模式、六任务、适用用户及限制；图片浏览覆盖截图，未转录全部产品截图或视频。",
+    "fact_checks": [
+      {
+        "item": "任务覆盖",
+        "value": "六项任务",
+        "pages": 2,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "角色",
+        "value": "File、Computer、App、Browser、Search",
+        "pages": 5,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "连接区别",
+        "value": "微信文字；App 远控",
+        "pages": "8–9",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "检索案例",
+        "value": "三批次收窄",
+        "pages": 14,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "定时示例",
+        "value": "每天下午6点",
+        "pages": 19,
+        "result": "与所读原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Marvis马维斯入门.md",
+      "sha256": "8264a3a5a5732b7e7a37842b4213b772384fa458d416aad3d8f9d35d7f87673d"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "e29e8e02fd42b9416942fdeb6f6d23d2a1dc7aec751159b22b38d5eea5d099e0"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "3386abfbe989395957b8058469fc364aec45aa285036a7c43de39fbea2373fb6"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 25,
+        "text_layer_sha256": "b1963431ef2892e0030d33965abf4737be93cd6a00492b4b1e01e6744ba90b7a",
+        "text_layer_char_count": 505
+      },
+      {
+        "page": 2,
+        "md_start_line": 33,
+        "md_end_line": 69,
+        "text_layer_sha256": "4825a2221b488ae27e33a99721744e8e0624149a1e8e601543cc2837f53ad10a",
+        "text_layer_char_count": 757
+      },
+      {
+        "page": 3,
+        "md_start_line": 77,
+        "md_end_line": 88,
+        "text_layer_sha256": "5a96a8dcfa9b5ee4f04fda732ba303b739c76bd272ea1d7934951cc4b4f21bcc",
+        "text_layer_char_count": 315
+      },
+      {
+        "page": 4,
+        "md_start_line": 96,
+        "md_end_line": 101,
+        "text_layer_sha256": "3cb87d902a2a774892b67e273a600b5b6d845afa996e9ad83405347351279a6b",
+        "text_layer_char_count": 189
+      },
+      {
+        "page": 5,
+        "md_start_line": 109,
+        "md_end_line": 125,
+        "text_layer_sha256": "8df3f7d29656b23e4d6b9088c02cba425b176e6ef7c988be07fc28ea91c99bf8",
+        "text_layer_char_count": 357
+      },
+      {
+        "page": 6,
+        "md_start_line": 133,
+        "md_end_line": 138,
+        "text_layer_sha256": "e65e5733f31e276fbe4b64e94f2287de082530cf78f2384478e4ecfccca0881a",
+        "text_layer_char_count": 213
+      },
+      {
+        "page": 7,
+        "md_start_line": 146,
+        "md_end_line": 155,
+        "text_layer_sha256": "6a191b2122750ce5687cb4e5f7e33257cf780e1b31ae523f1d7c3b0963ade4d8",
+        "text_layer_char_count": 296
+      },
+      {
+        "page": 8,
+        "md_start_line": 163,
+        "md_end_line": 175,
+        "text_layer_sha256": "c15fbff681800682d12c8d90058c64af3c10afc5923c562e59965fbfd60600b2",
+        "text_layer_char_count": 341
+      },
+      {
+        "page": 9,
+        "md_start_line": 183,
+        "md_end_line": 191,
+        "text_layer_sha256": "15f3d95e06c934ca9cf964a9e44b07bf93b99904b43c75247f3991cb01fd974e",
+        "text_layer_char_count": 299
+      },
+      {
+        "page": 10,
+        "md_start_line": 199,
+        "md_end_line": 211,
+        "text_layer_sha256": "e6494226579fe0fd71b3f2286aef61dc614d46e683b9212cd5b5477c7812670e",
+        "text_layer_char_count": 373
+      },
+      {
+        "page": 11,
+        "md_start_line": 219,
+        "md_end_line": 229,
+        "text_layer_sha256": "d8ccda05eb4f4f183e176dbf44532ea6bf6eb488559f2714911fd4f0beb84e6f",
+        "text_layer_char_count": 275
+      },
+      {
+        "page": 12,
+        "md_start_line": 237,
+        "md_end_line": 236,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 13,
+        "md_start_line": 244,
+        "md_end_line": 243,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 14,
+        "md_start_line": 251,
+        "md_end_line": 269,
+        "text_layer_sha256": "7fb8c3ca311bf627ffdace427b373e9fc3a150e6763a9dff18c2a60336eb0ac4",
+        "text_layer_char_count": 618
+      },
+      {
+        "page": 15,
+        "md_start_line": 277,
+        "md_end_line": 286,
+        "text_layer_sha256": "69725071b2a656cba65975029b2cfcd57dc6ba49f9fb8ca35cf2814e30dd4385",
+        "text_layer_char_count": 215
+      },
+      {
+        "page": 16,
+        "md_start_line": 294,
+        "md_end_line": 304,
+        "text_layer_sha256": "d2ff08c50a69e2e99ef0225ae66f54a385066cf4d55f176507a6d261c6505c89",
+        "text_layer_char_count": 343
+      },
+      {
+        "page": 17,
+        "md_start_line": 312,
+        "md_end_line": 322,
+        "text_layer_sha256": "2ba8cf8df2a54a6b87c6f4d82e632a2b6abba9ab2b3b91f1d2b1968fbeb38a0e",
+        "text_layer_char_count": 266
+      },
+      {
+        "page": 18,
+        "md_start_line": 330,
+        "md_end_line": 342,
+        "text_layer_sha256": "a873e7cccfcfb3b2aece116ea91fdeef29bcbd1812753a4f451b48dc6ad9f031",
+        "text_layer_char_count": 269
+      },
+      {
+        "page": 19,
+        "md_start_line": 350,
+        "md_end_line": 364,
+        "text_layer_sha256": "988d0af8d4d4233ed61a76f6e460ba788864df62991b88d90c3f07f4c82349be",
+        "text_layer_char_count": 424
+      },
+      {
+        "page": 20,
+        "md_start_line": 372,
+        "md_end_line": 390,
+        "text_layer_sha256": "cb3c881f8e3edcf80006a8afd6b2a999f7e635b53b8e7d9b533cf0f490b495b6",
+        "text_layer_char_count": 602
+      },
+      {
+        "page": 21,
+        "md_start_line": 398,
+        "md_end_line": 421,
+        "text_layer_sha256": "b068ec7a8efb8a00c2db924fee61ad65f97205332ca0d097e0a273ce404fe58e",
+        "text_layer_char_count": 725
+      },
+      {
+        "page": 22,
+        "md_start_line": 429,
+        "md_end_line": 434,
+        "text_layer_sha256": "6ff5d4a114e587be4cf07b407122269aa23f28ae1222b8c8960535778489dc8e",
+        "text_layer_char_count": 58
+      },
+      {
+        "page": 23,
+        "md_start_line": 442,
+        "md_end_line": 445,
+        "text_layer_sha256": "7d884dc94de9741c0e3c066d48dd77bb0c64f311f24114ee7812e42bc739ccb0",
+        "text_layer_char_count": 29
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "detail_pages_reviewed": [
+        10,
+        12
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.12 是实际空白页，无法判断是否为打印分页还是漏采；相邻 p.13 截图存在",
+        "pages": [
+          12,
+          13
+        ],
+        "status": "pending_review"
+      },
+      {
+        "description": "本地硬件门槛仅在小字截图中，未将无法稳读的具体阈值写成教程",
+        "pages": [
+          10
+        ],
+        "status": "pending_review"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:24-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/01Marvis.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "e29e8e02fd42b9416942fdeb6f6d23d2a1dc7aec751159b22b38d5eea5d099e0",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:24-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/桌面Agent与工作流.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Marvis马维斯入门.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

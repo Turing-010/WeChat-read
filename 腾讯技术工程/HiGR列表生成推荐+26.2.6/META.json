@@ -1,0 +1,425 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0127",
+  "title": "推理速度提升 5 倍+：腾讯 TRS 团队首创列表级生成式推荐 HiGR",
+  "short_title": "HiGR列表生成推荐",
+  "account": "腾讯技术工程",
+  "author": "李裕东、庞雲升、刘子健",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-02-06T01:35",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260206_Tencent_TRS_HiGR_5x.pdf",
+      "original_filename": "20260206_Tencent_TRS_HiGR_5x.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "1154ac67f69341191f9fa3e02460f72d2e90cc79c180327b3c172cbcd6bf0991",
+      "size_bytes": 4062523,
+      "page_count": 12,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "离线评测与 Scaling Law 图中部分精确刻度/点值难辨；笔记未推补这些值。",
+          "pages": [
+            7,
+            8
+          ],
+          "status": "已在笔记说明"
+        },
+        {
+          "description": "线上 A/B 的周期、置信区间、分桶和长期留存细节在本文未完整呈现。",
+          "pages": [
+            8
+          ],
+          "status": "已在笔记说明"
+        }
+      ],
+      "publication_evidence": "PDF 第1页标注 2026-02-06 01:35；未见时区"
+    }
+  ],
+  "tags": [
+    "Agent数据分析",
+    "Agent评测与反馈",
+    "AI研发协同",
+    "模型与开发工具发布",
+    "推荐系统与多模态评测"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/HiGR列表生成推荐+26.2.6",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_HiGR列表生成推荐.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "推理速度提升 5 倍+:腾讯 TRS 团队首创列表级生成式推荐 HiGR\n腾讯程序员 2026 年 2 月 6 日 01 : 35中国香港原创 腾讯技术工程 10 人\n作者:李裕东  庞雲升  刘子健\n导语\n在信息流、短视频、电商等推荐场景中,用户真正感知的并非某一条内容的相关性,而是一整\n屏列表带来的「整体体验」。  为此,腾讯 TRS 团队在论文《 HiGR: Efficient Generative Slate\nRecommendation via Hierarchical Planning and Multi-Objective Preference Alignment 》中\n提出分层规划的端到端生成式推荐框架 HiGR ,将传统的级联推荐范式升级为「编码 — 规划 —\n生成 — 对齐」的一体化新范式\n先做列表级意图规划\n再做物料级生成解码\n最后通过列表级偏好对齐,直接面向隐式反馈优化整列质量\n该方法已在真实业务场景验证了显著收益:\n离线推荐质量相对  SOTA 提升超过  10%\n推理速度提升  5 倍以上\n线上小流量  A/B 实验验证:用户观看时长与消费深度均有显著增长\nHiGR首创基于 “编码 — 规划 — 生成 — 对齐”的列表级端到端生成式推荐一体化范式,为业务提\n供了一条高性能、可规模化落地的生成式推荐升级路径。\n1. 为什么 “ 列表级端到端 ” 是下一代推荐的关键\n",
+    "publication_evidence": "PDF 第1页标注 2026-02-06 01:35；未见时区",
+    "full_title_in_capture": "推理速度提升 5 倍+：腾讯 TRS 团队首创列表级生成式推荐 HiGR",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0127",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "1154ac67f69341191f9fa3e02460f72d2e90cc79c180327b3c172cbcd6bf0991"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "离线评测与 Scaling Law 图中部分精确刻度/点值难辨；笔记未推补这些值。",
+        "pages": [
+          7,
+          8
+        ],
+        "status": "已在笔记说明"
+      },
+      {
+        "description": "线上 A/B 的周期、置信区间、分桶和长期留存细节在本文未完整呈现。",
+        "pages": [
+          8
+        ],
+        "status": "已在笔记说明"
+      }
+    ],
+    "outputs": [
+      "AI_HiGR列表生成推荐.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ]
+    },
+    "coverage": "覆盖列表级生成动机、CRQ-VAE 表示、分层解码、ORPO 偏好优化、离线和在线结果、服务路径及推理优化；图表趋势已核对，未辨清的点值不作补充。",
+    "fact_checks": [
+      {
+        "item": "在线 A/B 平均观看时长",
+        "note_value": "+1.22%",
+        "source_value": "+1.22%",
+        "pages": [
+          8
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "在线 A/B 平均停留时长",
+        "note_value": "+1.03%",
+        "source_value": "+1.03%",
+        "pages": [
+          8
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "在线 A/B 视频播放量及平均请求数",
+        "note_value": "+1.73% / +1.57%",
+        "source_value": "+1.73% / +1.57%",
+        "pages": [
+          8
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "特征提取效率",
+        "note_value": "约 2 倍",
+        "source_value": "约 2 倍",
+        "pages": [
+          9
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "整体推理速度与无量3.0加速口径",
+        "note_value": "5倍以上；无量3.0约10倍，属不同比较口径",
+        "source_value": "5倍以上；无量3.0约10倍",
+        "pages": [
+          9
+        ],
+        "result": "一致，笔记注明不可相乘"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_HiGR列表生成推荐.md",
+      "sha256": "a8d77d0b3f01fbea900abb8eb2afd8558e48edf5c799be7fe618eb0328ca00c1"
+    },
+    "independent_crosscheck": {
+      "reviewer": "/root",
+      "note_sha256": "3a1f6321521cd7da6f24e153fbd908c491daf1e6fad252ffb605117535d24699",
+      "review_sha256": "70764abb805db5e91e68e233ff31100432d0ca17a684ee46ad848fc32fd42dbf",
+      "status": "passed",
+      "changes": [
+        "Moved the source PDF link before the final folded proofreading report; retained eight single-line cards under `## 复习卡片`."
+      ],
+      "source_spotchecks": [
+        "p.4–7 CRQ-VAE, hierarchical decoding and ORPO are described as article method; p.8 A/B values (+1.22%, +1.03%, +1.73%, +1.57%) match source; p.9 separates feature extraction (~2x) from total inference (>5x) and “无量3.0” (~10x); p.11 recruitment and p.12 comment page checked in contact sheet."
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "1154ac67f69341191f9fa3e02460f72d2e90cc79c180327b3c172cbcd6bf0991"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "6d5bf4eac6dea13bb910d100fd025a609041c7394d1cd80de22a2f5d9a05d172"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 28,
+        "text_layer_sha256": "6134ad5fef20bfd2ac1bf501cb9e24b10a70dde7c6061136decb471e1835cb61",
+        "text_layer_char_count": 603
+      },
+      {
+        "page": 2,
+        "md_start_line": 36,
+        "md_end_line": 46,
+        "text_layer_sha256": "11f357be83dee98e0386f677897d42aab3920ee2fbc3b9ec7a9f9c69c4c3a7a8",
+        "text_layer_char_count": 425
+      },
+      {
+        "page": 3,
+        "md_start_line": 54,
+        "md_end_line": 66,
+        "text_layer_sha256": "9963d81412f4ca65d68f14ce8ace28a58a4441954df4e70b372203595f58ec7d",
+        "text_layer_char_count": 586
+      },
+      {
+        "page": 4,
+        "md_start_line": 74,
+        "md_end_line": 97,
+        "text_layer_sha256": "433b19dcb13ddce6a70936c0e7e4443fa735dc81ac7fe01f45b8a60e3edf4e94",
+        "text_layer_char_count": 958
+      },
+      {
+        "page": 5,
+        "md_start_line": 105,
+        "md_end_line": 137,
+        "text_layer_sha256": "853d6b96f43edefed5b57108ab681959e3b478a44e834aede07c8fbec91a0317",
+        "text_layer_char_count": 1225
+      },
+      {
+        "page": 6,
+        "md_start_line": 145,
+        "md_end_line": 166,
+        "text_layer_sha256": "bca029377e555cb947dd7da4aa8c868ed995904b23cb8efaa332c0ad3ee95041",
+        "text_layer_char_count": 1010
+      },
+      {
+        "page": 7,
+        "md_start_line": 174,
+        "md_end_line": 203,
+        "text_layer_sha256": "31bd1d0b39c9fc0f6ddf4a1d118e42d7f0389c4d8ca25c927f97601331049ed0",
+        "text_layer_char_count": 957
+      },
+      {
+        "page": 8,
+        "md_start_line": 211,
+        "md_end_line": 225,
+        "text_layer_sha256": "3359a87c23e77c35fbaa56fe9b1d159cb9025ecf994579040aa3029d24e20f27",
+        "text_layer_char_count": 487
+      },
+      {
+        "page": 9,
+        "md_start_line": 233,
+        "md_end_line": 257,
+        "text_layer_sha256": "ef145b4d71718f098fd2fdee798f62ddcea1365cd0aa520c39df18250d7c385b",
+        "text_layer_char_count": 980
+      },
+      {
+        "page": 10,
+        "md_start_line": 265,
+        "md_end_line": 292,
+        "text_layer_sha256": "885413537399cd0b38be1c97ebf18f65ce7ec83d7df3ecdb3fc163d41d3da91c",
+        "text_layer_char_count": 862
+      },
+      {
+        "page": 11,
+        "md_start_line": 300,
+        "md_end_line": 305,
+        "text_layer_sha256": "1be48b8b31d5dab2f3d335d4bea0f288a9450d87e095863985134474187551e0",
+        "text_layer_char_count": 59
+      },
+      {
+        "page": 12,
+        "md_start_line": 313,
+        "md_end_line": 314,
+        "text_layer_sha256": "b7e57dd8efbe9ad04e6f6f86d523e742b6a33fd1a334b51a2dd7bbf2394be7d0",
+        "text_layer_char_count": 15
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "离线评测与 Scaling Law 图中部分精确刻度/点值难辨；笔记未推补这些值。",
+        "pages": [
+          7,
+          8
+        ],
+        "status": "已在笔记说明"
+      },
+      {
+        "description": "线上 A/B 的周期、置信区间、分桶和长期留存细节在本文未完整呈现。",
+        "pages": [
+          8
+        ],
+        "status": "已在笔记说明"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260206_Tencent_TRS_HiGR_5x.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "1154ac67f69341191f9fa3e02460f72d2e90cc79c180327b3c172cbcd6bf0991",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/推荐系统与多模态评测.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_HiGR列表生成推荐.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

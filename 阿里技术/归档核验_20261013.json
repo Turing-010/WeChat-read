@@ -1,0 +1,345 @@
+{
+  "batch_id": "wechat-ali-learning-20261013",
+  "account": "阿里技术",
+  "article_count": 32,
+  "pdf_physical_pages": 449,
+  "processing_status": "learning_notes_and_topics_generated",
+  "migration_status": "32_original_pdfs_and_collection_log_migrated",
+  "topic_changes": {
+    "existing_updated": [
+      "AI研发协同",
+      "Harness与模型协同",
+      "Agent评测与反馈",
+      "Agent任务恢复",
+      "Prompt优化",
+      "Agent工程循环",
+      "Agent数据分析",
+      "决策知识结构化",
+      "问题澄清",
+      "Agent长期记忆"
+    ],
+    "new_created": [
+      "因果推断与评测归因",
+      "检索与文档解析",
+      "具身智能数据闭环",
+      "数据湖表与互操作",
+      "云网络系统研究",
+      "异常监控与稳定性",
+      "Agent成本与上下文预算",
+      "模型与开发工具发布",
+      "AI技术活动与资料"
+    ]
+  },
+  "prompt": {
+    "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+    "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+  },
+  "boundaries": [
+    "全页文本与页图缩略已阅；放大范围见各篇META",
+    "质量问题与原文疑点未因归档消除",
+    "未执行文章代码，Mermaid未渲染",
+    "旧文章、个人NOTE、学习与实践记录保持原样"
+  ],
+  "collection_record": {
+    "source": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/wechat-ali-20261010-batch.json",
+    "destination": "/Users/iw/Documents/WeChat_read/阿里技术/采集记录_20261010.json",
+    "sha256": "eb81dd13304b1b1341262e9f09a3ef63d3d0244072135b2515ad0089c5963623",
+    "copied": true,
+    "removed": true,
+    "removed_at": "2026-10-13T03:20:03-07:00"
+  },
+  "articles": [
+    {
+      "article_id": "art-0020",
+      "directory": "阿里技术/规格驱动AI编程+26.9.4",
+      "source_sha256": "e22f9331c41b3818700f0829524e834d7272938f02d4784e71c1e225ab124f48",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/5 人 7 天干完 20 人数周的活：Spec-Driven Development 如何重新定义 AI 编程.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0021",
+      "directory": "阿里技术/Agent精细化评测+26.9.2",
+      "source_sha256": "a3ac97171e4b7c547a98387d1d6e07eece2cf58daa31625c088da37ee7940ae1",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/AI Agent 应用精细化评测：评测体系设计与工程实践.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0022",
+      "directory": "阿里技术/稳定性前端AI原生复盘+26.9.29",
+      "source_sha256": "b9325b7d34c941acc93cebc3a364c5bcaaf5efe97deb04fd02c0d3e7b8459807",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/AI Native 回忆录：稳定性前端 S1 实践复盘.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0023",
+      "directory": "阿里技术/架构师Agent系统化落地+26.8.27",
+      "source_sha256": "3f26011f0ab68a03d595e79b51a804f44d6c3ef0232b1f3dff52e3372d038d3a",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/AI 创新实践｜「架构师 Agent」系统化落地.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0024",
+      "directory": "阿里技术/Harness成本优化实战+26.8.21",
+      "source_sha256": "ac870d77666ada33a94f5eef4599c3e9bb94045296ccb364179030b7efcf6313",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/Agent 终章（Harness 成本篇）：一次百炼账单降低 88% 实战.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0025",
+      "directory": "阿里技术/Agent评测驱动Skill进化+26.8.13",
+      "source_sha256": "9c58df690d3e4e463971260eea9087e739c6fc4745ba569281aa33c3306674a9",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/Agent 越改越乱之后，我用评测和轨迹把它拉回来了.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0026",
+      "directory": "阿里技术/Paimon C++湖表SDK+26.9.9",
+      "source_sha256": "2bba32a0436495c6fe3dc4679b3f6d5c41a2e64f8bcc52cf08eef51d25e53a01",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/Apache Paimon C++ ：从阿里数据湖走向开源社区.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0027",
+      "directory": "阿里技术/Skill原理与最佳实践+26.8.17",
+      "source_sha256": "342a8eb58bc254fc9fb33f26eed1d2da81a677fd3b97aac01e1fd698b22fa227",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/Harness 工程之道：Skill 原理与最佳实践.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0028",
+      "directory": "阿里技术/Qoder长程任务实测+26.8.12",
+      "source_sha256": "bed159bd33804170e23dd2347bcfca5ee409256bb6bf8c93f3a3dac85d7a14ae",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/Qoder CLI 上运行 Qwen3.8-Max：5 个硬核任务实测.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0029",
+      "directory": "阿里技术/Qwen3.8开源发布+26.8.14",
+      "source_sha256": "eb6fb17711b01409ecec0153b0053f86140a0fb837cd23f84f614abf993ba978",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/Qwen3.8，正式开源.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00",
+      "current_archive_status": "deleted_by_user_confirmation_2026-10-15"
+    },
+    {
+      "article_id": "art-0030",
+      "directory": "阿里技术/zg本地混合检索+26.8.31",
+      "source_sha256": "f8332411240f71613dbc7b7d0f600b59ab722f518b5a1da24c07e395858dead6",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/zg 正式开源：本地检索，不止于关键词.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0031",
+      "directory": "阿里技术/AI原生研发手册发布+26.9.22",
+      "source_sha256": "2df8f254abade4cb1f9df03fa62b64cd06f57ff51d462477c50f51ef68eb8d74",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/《AI Native 研发范式实践手册》重磅发布.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00",
+      "current_archive_status": "deleted_by_user_confirmation_2026-10-15"
+    },
+    {
+      "article_id": "art-0032",
+      "directory": "阿里技术/LogicsParsing全局文档解析+26.9.21",
+      "source_sha256": "6e0e54cd0262dae8ef6f4395610a096b5efdbf14905cdb7f51a878e09df86b0b",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/云栖首发｜Logics-Parsing-V3 重磅升级：贯通全文，长文无界.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0033",
+      "directory": "阿里技术/Agent Flow与AI Native+26.8.5",
+      "source_sha256": "b3892f58cdd05b561b8dafbe426f2d8c4fb33df3af25d5bd94c9fa68c3fd0f3f",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/从 Agent Flow 到 AI Native：为什么通用 Agent 是“饮鸩止渴”.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0034",
+      "directory": "阿里技术/环境与验证驱动AI研发+26.7.31",
+      "source_sha256": "8f231aa3685d48f8c03764f75a4631020d18e1c3865f41b55e64b62c4a517f10",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/从 Spec 驱动转向环境与验证驱动——我对 AI Coding 的一点思考.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0035",
+      "directory": "阿里技术/KernelAgent生产算子优化+26.9.28",
+      "source_sha256": "f97943ec8b764c7a8c6372a412005f9441b2a95d809b14a61e65832c9ec411c2",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/从榜单走向真实业务负载：Kernel Agent 刷新 Qwen3.8–Max 核心推理算子性能.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0036",
+      "directory": "阿里技术/软件交付瓶颈与AI原生+26.9.24",
+      "source_sha256": "d02b02aea2260a052104522fedfa27c9dc9e40d1585ca0c66af3e9f8b087a5c3",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/代码生成越来越快，软件交付真正的瓶颈转向了哪里？.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0037",
+      "directory": "阿里技术/AI Native研发实践论坛+26.9.21",
+      "source_sha256": "3efde01315224b5c8d9016382b79ed6e7b3f7cd6bc219a8c53eb205c70951595",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/倒计时 2 天！阿里巴巴集团 AI Native 研发实践论坛诚邀开发者共话未来.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00",
+      "current_archive_status": "deleted_by_user_confirmation_2026-10-15"
+    },
+    {
+      "article_id": "art-0038",
+      "directory": "阿里技术/Qoder智能体工作台发布+26.8.27",
+      "source_sha256": "03076d07583be8fa625b3cfc588d9b8ac8476b20f5bbe5e200cd0284d8a3a05b",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/全新 Qoder，正式发布.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00",
+      "current_archive_status": "deleted_by_user_confirmation_2026-10-15"
+    },
+    {
+      "article_id": "art-0039",
+      "directory": "阿里技术/前端Skill团队研发实践+26.7.30",
+      "source_sha256": "66d32826d90a43f9157ba2bdc1b63e3185c687495e6182e043d319716a0d1ed7",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0040",
+      "directory": "阿里技术/垂类生产级Agent落地+26.9.16",
+      "source_sha256": "0bb45916b95940383ffa2f8c5bd93f86544c10ced9b8ae3afedb3edbb3c56eb9",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/垂类业务如何落地生产级 Agent.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0041",
+      "directory": "阿里技术/RoboFlywheel具身数据闭环+26.9.28",
+      "source_sha256": "e8942b2d83d23a84932050a0590eb24d65aa6a3b8b16a7581efc8d1664900c59",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/实现高质量数据闭环，RoboFlywheel驱动具身智能自衍进.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0042",
+      "directory": "阿里技术/Agent行动基础设施+26.9.21",
+      "source_sha256": "907ba83c947f47117d14a3e134f98e6d0b1a1422d5ce431c23b11b2680bb2a9c",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/当 AI 开始真正“做事”，基础设施准备好了吗？.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00",
+      "current_archive_status": "deleted_by_user_confirmation_2026-10-15"
+    },
+    {
+      "article_id": "art-0043",
+      "directory": "阿里技术/GraphEngineering验收管控+26.9.17",
+      "source_sha256": "b7468ccd9424d86ac455e006ec0957698df113686f568f7c5305433cb7a57792",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/把「达标判定」从大模型手里收回来：Graph Engineering实践.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0044",
+      "directory": "阿里技术/AI创意广告大赛公告+26.8.7",
+      "source_sha256": "b31ad4d62d03c1c112ba43ae1baa25d2c9c0472a2c8e487313229c5a4daea6e6",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/最后15天初赛冲刺！首届阿里AI创意广告大赛评委天团曝光.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00",
+      "current_archive_status": "deleted_by_user_confirmation_2026-10-15"
+    },
+    {
+      "article_id": "art-0045",
+      "directory": "阿里技术/RoboFlywheel具身仿真闭环+26.9.24",
+      "source_sha256": "9b94b50bea8b03c141f4adac2b5e2fd76116544bcbca35b1820cc466fad8f4b1",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/百万级仿真资产，正在重构机器人训练场：阿里巴巴RoboFlywheel首发.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0046",
+      "directory": "阿里技术/AI评测因果归因+26.7.29",
+      "source_sha256": "30711d525024574cebcb16df1e9f2dd086528271ac395368d3e541943391a637",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/相关性 ≠ 因果性：因果推断在 AI 评测归因中的方法与实践.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0047",
+      "directory": "阿里技术/AI开源工程与社区循环+26.8.11",
+      "source_sha256": "cc4d21e7116727c22ff4343d1d1a99102450de1e09d94c9533d039404d7dd9b2",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/连续五天登上 GitHub Trending 首页的思考.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0048",
+      "directory": "阿里技术/SIGCOMM2026网络工程研究+26.8.19",
+      "source_sha256": "f5308eda7cd0dbe89501ab1b96e6e85e75889caff8ccd96b6db1c2dc8466dcfd",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/阿里巴巴 12 篇论文入选全球网络顶会 SIGCOMM 2026（内附下载）.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0049",
+      "directory": "阿里技术/Qwen3.8与千问办公发布+26.8.2",
+      "source_sha256": "b4c8bd09e5b6ac362f5cd50e6a8baf8d6c5c81a8c6f7b24707a24e40b976216b",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/面向生产力的 Qwen3.8，“千问办公”已同步上线.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00",
+      "current_archive_status": "deleted_by_user_confirmation_2026-10-15"
+    },
+    {
+      "article_id": "art-0050",
+      "directory": "阿里技术/无订阅异常发现+26.7.30",
+      "source_sha256": "91c36f74ed8e84dbf45a926d25575a1933e737ec81c6b29a4f7b7d09c3eb89a4",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/面向监控场景的无订阅异常发现：问题、思路与边界.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    },
+    {
+      "article_id": "art-0051",
+      "directory": "阿里技术/本地生活分析Agent实践+26.9.30",
+      "source_sha256": "87bf8dae6295fc95637c9837f97f74a9a0bda25a166ece5de316e8cbc335cb30",
+      "source_original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/高德本地生活分析 Agent 的 AI Native 实践全景（万字长文回顾）.pdf",
+      "removed_at": "2026-10-13T03:20:03-07:00"
+    }
+  ],
+  "completed_at": "2026-10-13T03:20:03-07:00",
+  "source_files_removed": 33,
+  "pre_removal_checks": {
+    "articles": 51,
+    "hashes": 165,
+    "local_links": 1916,
+    "errors": [],
+    "warnings": [],
+    "batch_archived": 32,
+    "batch_total": 32,
+    "batch_pages": 449
+  },
+  "extended_checks": {
+    "account_entries": 32,
+    "account_order": "publication timestamp descending; unknown last",
+    "topic_existing_personal_sections_checked": 14,
+    "new_article_count": 32,
+    "new_physical_pages": 449,
+    "errors": []
+  },
+  "skill_helper_tests": "7 passed; actual run during batch",
+  "post_removal_checks": {
+    "articles": 51,
+    "hashes": 165,
+    "local_links": 1916,
+    "errors": [],
+    "warnings": [],
+    "batch_archived": 32,
+    "batch_total": 32,
+    "batch_pages": 449
+  },
+  "extended_post_removal_checks": {
+    "account_entries": 32,
+    "account_order": "publication timestamp descending; unknown last",
+    "topic_existing_personal_sections_checked": 14,
+    "new_article_count": 32,
+    "new_physical_pages": 449,
+    "errors": []
+  },
+  "detail_page_checks_total": 203,
+  "flashcards_total": 256,
+  "temporary_processing_copies_removed": true,
+  "current_article_count": 25,
+  "content_screening_cleanup": {
+    "date": "2026-10-15",
+    "authorization": "本人确认删除清单第1—7篇，保留第8、9篇",
+    "deleted_article_ids": [
+      "art-0038",
+      "art-0042",
+      "art-0029",
+      "art-0049",
+      "art-0037",
+      "art-0031",
+      "art-0044"
+    ],
+    "retained_article_ids": [
+      "art-0033",
+      "art-0034"
+    ],
+    "scope": "删除7篇文章包、清理根及公众号目录和相关主题AI归纳；原始迁移记录保留为历史证据"
+  }
+}

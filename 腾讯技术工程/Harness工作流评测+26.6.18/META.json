@@ -1,0 +1,383 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0052",
+  "title": "你的 Harness 工作流真的在进步吗？我们用一场考试撕掉了遮羞布",
+  "short_title": "Harness工作流评测",
+  "account": "腾讯技术工程",
+  "author": "chaseren",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-06-18T03:20",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/ Harness .pdf",
+      "original_filename": " Harness .pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "35e990f207e0a533f91efa69690c8af5a7151965c7731345e1b42d0a61e0bedd",
+      "size_bytes": 5959932,
+      "page_count": 13,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "p.7 的 YAML 示例长行右侧截断，不可当作完整配置复制",
+          "pages": [
+            7
+          ],
+          "status": "unresolved"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏 2026-06-18T03:20"
+    }
+  ],
+  "tags": [
+    "Agent评测与反馈",
+    "Harness与模型协同",
+    "因果推断与评测归因"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Harness工作流评测+26.6.18",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Harness工作流评测.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "你的 Harness  工作流真的在进步吗?我们用一场考试撕掉了遮羞布\n腾讯程序员 2026 年 6 月 18 日 03 : 20内蒙古原创 腾讯技术工程 279 人\n作者: chaseren\n一、一个让人不安的事实:你的Harness工作流可能一直在 “ 裸奔 ”\n你有没有这样的经历?\n团队花了两周精心调教一套  Harness 研发工作流 —— 写了十几条  Rules 、打磨了  Skill—— 上\n线之后,评价体系是这样的:\n\" 感觉这版稳了不少。 \"\n\" 昨天那版好像更聪明? \"\n\" 我这边挺好用,你那边咋不行? \"\n这就是我们半年前面对的现实。整个团队在用 \" 主观  vibes\" 驱动一个复杂系统的演进。\n说白了,我们连最基本的问题都回答不了:\n改了一版  rule/skill ,到底是进步还是退步? 典型的 \" 主观  vibes\" 驱动开发无法量化这个事\n情。\nA 说好用, B 说难用 —— 到底谁对?  工作流问题、模型问题、还是  Prompt  本身有歧\n义?说不清。\n工作流回归无从谈起。 修一个  bad case ,可能顺手破坏了三个  good case ,但你不知\n道。\n我们的  Harness 工作流和竞品比,到底差在哪? 没有数据来衡量和佐证,都是各吹各的\n好。\n这不是一个 \" 锦上添花 \" 的问题。这是一个系统正在失控而你不自知的问题。\n二、核心哲学 : 为什么 Harness 工作流比传统软件更需要 “ 考试 ”\nHarness Eval :一套面向  Harness 工作流的、轻量的、可回归的闭环评测系统。\n",
+    "publication_evidence": "PDF p.1 发布栏 2026-06-18T03:20",
+    "full_title_in_capture": "你的 Harness 工作流真的在进步吗？我们用一场考试撕掉了遮羞布",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0052",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "35e990f207e0a533f91efa69690c8af5a7151965c7731345e1b42d0a61e0bedd"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.7 的 YAML 示例长行右侧截断，不可当作完整配置复制",
+        "pages": [
+          7
+        ],
+        "status": "unresolved"
+      }
+    ],
+    "outputs": [
+      "AI_Harness工作流评测.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "detail_pages_reviewed": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ]
+    },
+    "coverage": "覆盖原则、题库、三角色、多轮记录、独立裁判、引擎隔离与恢复、结果汇总和内部效果；省略宣传入口。",
+    "fact_checks": [
+      {
+        "item": "通过率",
+        "value": "82.4%（14/17）→100%（17/17）",
+        "pages": 11,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "迭代次数",
+        "value": "4 轮、50+ 次运行",
+        "pages": 11,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "评分范围",
+        "value": "0–5",
+        "pages": 7,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "对话尝试",
+        "value": "2 次，2 秒间隔",
+        "pages": "9–10",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "裁判尝试",
+        "value": "3 次，3 秒间隔",
+        "pages": 10,
+        "result": "与所读原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Harness工作流评测.md",
+      "sha256": "98416d817378d814335e2339e30923f771a11141a64a65eb32fc360664831d33"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "35e990f207e0a533f91efa69690c8af5a7151965c7731345e1b42d0a61e0bedd"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "6e0204492ffab5d32db8fedc82624c1545caaa0da10f964b39d8597d7a88a215"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 32,
+        "text_layer_sha256": "b8131deffa4bc066d0e9f5488fdc74220cdb22349c7243240d0a6c2f72912909",
+        "text_layer_char_count": 686
+      },
+      {
+        "page": 2,
+        "md_start_line": 40,
+        "md_end_line": 68,
+        "text_layer_sha256": "8ca125942dfa478d7705b46c18dfb469b831856f1550f666c8a28001de67505f",
+        "text_layer_char_count": 1015
+      },
+      {
+        "page": 3,
+        "md_start_line": 76,
+        "md_end_line": 90,
+        "text_layer_sha256": "f4f2f04f175604d88e9babaedf9dfb5d11f69d732749eb9c0c16be99d515bb78",
+        "text_layer_char_count": 480
+      },
+      {
+        "page": 4,
+        "md_start_line": 98,
+        "md_end_line": 120,
+        "text_layer_sha256": "f8134f523194ac147aa0cd4f2210fc16cc2c0ab886f1ece04846a18f887ba84b",
+        "text_layer_char_count": 811
+      },
+      {
+        "page": 5,
+        "md_start_line": 128,
+        "md_end_line": 151,
+        "text_layer_sha256": "52250a0e2453e974f9aee0f5cc9c002b20f8d81e0332329b82ba0153edbde337",
+        "text_layer_char_count": 778
+      },
+      {
+        "page": 6,
+        "md_start_line": 159,
+        "md_end_line": 189,
+        "text_layer_sha256": "1755aa6857cf6b22fd0b2278a66e6d31e9a021b1e9644f0c2577039acdf29f94",
+        "text_layer_char_count": 1018
+      },
+      {
+        "page": 7,
+        "md_start_line": 197,
+        "md_end_line": 242,
+        "text_layer_sha256": "7944e494bc217bc87e1689d1dda42ec586f2d706fffee09aa676f37dfa084d0a",
+        "text_layer_char_count": 1299
+      },
+      {
+        "page": 8,
+        "md_start_line": 250,
+        "md_end_line": 270,
+        "text_layer_sha256": "bc6cb432e64dda9800d7de48c05050ac9039e6dc984de9287a1b859b473eadbc",
+        "text_layer_char_count": 818
+      },
+      {
+        "page": 9,
+        "md_start_line": 278,
+        "md_end_line": 290,
+        "text_layer_sha256": "f4273e4ff3c33c7180d40230896b7e2ec2453efe0fbc517885746c73e58e05bb",
+        "text_layer_char_count": 466
+      },
+      {
+        "page": 10,
+        "md_start_line": 298,
+        "md_end_line": 312,
+        "text_layer_sha256": "6aa0aeb87200b92c6ab4fd38a72077d86661351523e9b0c98f3a60e922b3ca97",
+        "text_layer_char_count": 590
+      },
+      {
+        "page": 11,
+        "md_start_line": 320,
+        "md_end_line": 339,
+        "text_layer_sha256": "c5831fa89dae6792d0fc62f218123ddc23c7a1e7c73d991ead99eb5b517b6f32",
+        "text_layer_char_count": 556
+      },
+      {
+        "page": 12,
+        "md_start_line": 347,
+        "md_end_line": 359,
+        "text_layer_sha256": "90f9acdb21f75ea1625e98f1b57d479ccd2c5eb97ed1a89af42feffbd952324c",
+        "text_layer_char_count": 388
+      },
+      {
+        "page": 13,
+        "md_start_line": 367,
+        "md_end_line": 366,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "detail_pages_reviewed": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.7 的 YAML 示例长行右侧截断，不可当作完整配置复制",
+        "pages": [
+          7
+        ],
+        "status": "unresolved"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:24-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/ Harness .pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "35e990f207e0a533f91efa69690c8af5a7151965c7731345e1b42d0a61e0bedd",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:24-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md",
+      "../../20_topics/Agent评测与反馈.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Harness工作流评测.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0327",
+  "title": "腾讯发布大模型思考早停算法SpecExit，效果无损，端到端加速2.5倍！",
+  "short_title": "SpecExit投机解码早停",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-10-31T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "腾讯发 布⼤ 模型思考早停算法        SpecExit，效果⽆损，端到端加速        2.5\n倍！\n\n腾讯技术⼯程  2025年10⽉31⽇   02:36⼴东324⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n以DeepSeek-R1等为代表的推理模型（Large Reasoning Models, LRMs），通过⽣成更长的思\n维链，在各类复杂任务中取得了更优的表现。但长思维链是推理模型的“双刃剑”，虽能提升性\n能，但“过度思考”带来的语义冗余会⼤幅推⾼推理成本。为破解⼤模型长思维链的效率难题，\n并且为了更好的端到端加速落地，我们将思考早停与投机采样⽆缝融合，提出了 SpecExit ⽅\n法，利⽤轻量级草稿模型预测     “退出信号”，在避免额外探测开销的同时将思维链长度缩短\n66%，vLLM上推理端到端加速  2.5倍。\n\n📌  论⽂：https://arxiv.org/abs/2509.24248\n\n📌  代码：https://github.com/Tencent/An",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "大模型基础与推理优化",
+    "AI评测与可观测性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯发布大模型思考早停算法SpecExit，效果无损，端到端加速2.5倍！.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:04:19-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "70d547b32f08f6b36853b4f0f0d501340bb2f6de01460fa5b9adf42b7522b8f3",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "标题‘无损’指报告基准准确率基本保持，主动截断思维链不具备普通投机采样的分布等价保证。",
+        "原文方法需要训练草稿/信号头，不能因讨论Training-Free基线而称整个SpecExit无需训练。",
+        "文本层丢失部分think/结束标记，已看p3/4页图但不补造字面标记。",
+        "2.5倍是特定模型/数据集相对EAGLE3基线，当前vLLM集成状态待官方核查；页图限1、3、4、5。"
+      ],
+      "size_bytes": 3443863,
+      "page_count": 8
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:04:19-07:00",
+  "directory": "腾讯技术工程/SpecExit投机解码早停+25.10.31",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:04:19-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "70d547b32f08f6b36853b4f0f0d501340bb2f6de01460fa5b9adf42b7522b8f3",
+    "output_path": "MD.md",
+    "output_sha256": "82a72b9fbe53467720e4c05738ae87ea31bf5c687c211dc184dfb2f88804b87d",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 8,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "visual_pages": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "标题‘无损’指报告基准准确率基本保持，主动截断思维链不具备普通投机采样的分布等价保证。",
+      "原文方法需要训练草稿/信号头，不能因讨论Training-Free基线而称整个SpecExit无需训练。",
+      "文本层丢失部分think/结束标记，已看p3/4页图但不补造字面标记。",
+      "2.5倍是特定模型/数据集相对EAGLE3基线，当前vLLM集成状态待官方核查；页图限1、3、4、5。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯发布大模型思考早停算法SpecExit，效果无损，端到端加速2.5倍！.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/SpecExit投机解码早停+25.10.31/RAW.pdf",
+    "sha256": "70d547b32f08f6b36853b4f0f0d501340bb2f6de01460fa5b9adf42b7522b8f3",
+    "copied_at": "2026-10-23T06:04:19-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/大模型推理与算子优化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

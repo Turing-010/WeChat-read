@@ -1,0 +1,669 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0025",
+  "title": "Agent 越改越乱之后，我用评测和轨迹把它拉回来了",
+  "short_title": "Agent评测驱动Skill进化",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "孙成心",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-13T04:21",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "text": [
+      "Agent 越改越乱之后，我⽤评测和轨迹把它拉回来了",
+      "原创 孙成⼼ 阿⾥技术 Aug 13, 2026, 4:21 AM 浙江 79 listened",
+      "这是2026年的第 51 篇⽂章"
+    ]
+  },
+  "tags": [
+    "Agent评测与反馈",
+    "Agent任务恢复",
+    "Prompt优化",
+    "Agent工程循环"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/Agent 越改越乱之后，我用评测和轨迹把它拉回来了.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:32:40-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "9c58df690d3e4e463971260eea9087e739c6fc4745ba569281aa33c3306674a9",
+      "size_bytes": 15673404,
+      "page_count": 26,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "多处代码或段落长行右侧裁切，不补齐",
+          "pages": [
+            3,
+            4,
+            8,
+            13,
+            16,
+            19,
+            20
+          ],
+          "evidence_type": "page_image",
+          "classification": "source_clipping"
+        },
+        {
+          "description": "同一63-case数据集描述与部分TP+FN从28变26不一致",
+          "pages": [
+            5,
+            6
+          ],
+          "evidence_type": "text_and_table",
+          "classification": "source_ambiguity"
+        },
+        {
+          "description": "GT五项权重合计0.90，未解释归一化",
+          "pages": [
+            12
+          ],
+          "evidence_type": "table",
+          "classification": "source_ambiguity"
+        },
+        {
+          "description": "连续5轮未过与加权停滞累计5.0口径不一致",
+          "pages": [
+            17,
+            18
+          ],
+          "evidence_type": "text",
+          "classification": "source_ambiguity"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:32:40-07:00",
+  "directory": "阿里技术/Agent评测驱动Skill进化+26.8.13",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Agent评测驱动Skill进化.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0025",
+    "created_at": "2026-10-13T02:32:40-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "9c58df690d3e4e463971260eea9087e739c6fc4745ba569281aa33c3306674a9"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "多处代码或段落长行右侧裁切，不补齐",
+        "pages": [
+          3,
+          4,
+          8,
+          13,
+          16,
+          19,
+          20
+        ],
+        "evidence_type": "page_image",
+        "classification": "source_clipping"
+      },
+      {
+        "description": "同一63-case数据集描述与部分TP+FN从28变26不一致",
+        "pages": [
+          5,
+          6
+        ],
+        "evidence_type": "text_and_table",
+        "classification": "source_ambiguity"
+      },
+      {
+        "description": "GT五项权重合计0.90，未解释归一化",
+        "pages": [
+          12
+        ],
+        "evidence_type": "table",
+        "classification": "source_ambiguity"
+      },
+      {
+        "description": "连续5轮未过与加权停滞累计5.0口径不一致",
+        "pages": [
+          17,
+          18
+        ],
+        "evidence_type": "text",
+        "classification": "source_ambiguity"
+      }
+    ],
+    "outputs": [
+      "AI_Agent评测驱动Skill进化.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [
+      {
+        "kind": "skill",
+        "status": "fragment_only",
+        "pages": [
+          8,
+          13,
+          19,
+          20,
+          22
+        ],
+        "description": "只有patch、目录结构和规则说明，无完整SKILL.md、生成Prompt或语义陷阱词表，不创建提炼文件"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "detail_pages_reviewed": [
+        3,
+        6,
+        8,
+        12,
+        15,
+        18
+      ]
+    },
+    "coverage": [
+      {
+        "name": "问题与数据",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "结果与真实case",
+        "pages": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "诊断与GT审计",
+        "pages": [
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "name": "Patch与Gate",
+        "pages": [
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "name": "黑名单收敛与工程形态",
+        "pages": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      {
+        "name": "语义陷阱原则与局限",
+        "pages": [
+          21,
+          22,
+          23,
+          24
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_Agent评测驱动Skill进化.md",
+      "sha256": "67686467fe64235b2a30a427d420fe203f87b680615422c391df5277c492e2f2"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:32:40-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "9c58df690d3e4e463971260eea9087e739c6fc4745ba569281aa33c3306674a9"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "7587a787bc5cd5d889d15954506831e0599681a7f706f31e74166c689aeeae73"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 24,
+        "text_layer_sha256": "3a571cb966b5fa8a0c5270d82a972560762f4dbc909805da47f22212a9e35ef3",
+        "text_layer_char_count": 416
+      },
+      {
+        "page": 2,
+        "md_start_line": 32,
+        "md_end_line": 54,
+        "text_layer_sha256": "168765b5a05f810d39732c66889722ca732c85b57acbdcc69879104c71943789",
+        "text_layer_char_count": 757
+      },
+      {
+        "page": 3,
+        "md_start_line": 62,
+        "md_end_line": 92,
+        "text_layer_sha256": "214016f254184157e702338d9656438205ce6ecf1729c9fc71916028cc9f4b2e",
+        "text_layer_char_count": 1161
+      },
+      {
+        "page": 4,
+        "md_start_line": 100,
+        "md_end_line": 122,
+        "text_layer_sha256": "0a64bd633a88fcff259f7dd376b7b876edd70aa0c36f6d15df4f28b119bb1abd",
+        "text_layer_char_count": 892
+      },
+      {
+        "page": 5,
+        "md_start_line": 130,
+        "md_end_line": 137,
+        "text_layer_sha256": "fdad12fffb550c37b0e2086e33626027a7e9485ad2f14d452c47aab0bb52b427",
+        "text_layer_char_count": 388
+      },
+      {
+        "page": 6,
+        "md_start_line": 145,
+        "md_end_line": 167,
+        "text_layer_sha256": "414ebf04ddb4bde5f1ec3ea4a9e446595c0a84c1f20bdb30ea78c4b366706838",
+        "text_layer_char_count": 1184
+      },
+      {
+        "page": 7,
+        "md_start_line": 175,
+        "md_end_line": 180,
+        "text_layer_sha256": "14deffeb762839d737956202770aa8c936fc230f3861a681620424a8ea26d5f0",
+        "text_layer_char_count": 267
+      },
+      {
+        "page": 8,
+        "md_start_line": 188,
+        "md_end_line": 216,
+        "text_layer_sha256": "d051ecfc9bdcfcd7a5c9325c80087ded7ed649e879b44df80c07e7e6ece10569",
+        "text_layer_char_count": 1004
+      },
+      {
+        "page": 9,
+        "md_start_line": 224,
+        "md_end_line": 235,
+        "text_layer_sha256": "1bde77cd7fa4d957f3ef7589e3d8b4e63724d519d431c2146f79a6bf16c69045",
+        "text_layer_char_count": 403
+      },
+      {
+        "page": 10,
+        "md_start_line": 243,
+        "md_end_line": 262,
+        "text_layer_sha256": "110c473425010549a30f82fb76b8feece141ccb9b33a51d2d456338be1992388",
+        "text_layer_char_count": 772
+      },
+      {
+        "page": 11,
+        "md_start_line": 270,
+        "md_end_line": 299,
+        "text_layer_sha256": "6902ef8a288fc0d22422ae7f514176beff8d1876d6e9b0b13cde734dcb83c7be",
+        "text_layer_char_count": 1121
+      },
+      {
+        "page": 12,
+        "md_start_line": 307,
+        "md_end_line": 327,
+        "text_layer_sha256": "54596deb7a1b77aa7a7dc384d87f1be7288111689470daa0312da1e79653a5be",
+        "text_layer_char_count": 674
+      },
+      {
+        "page": 13,
+        "md_start_line": 335,
+        "md_end_line": 354,
+        "text_layer_sha256": "cb687e60e51b3eb5fb958eabd595f6673912eb3e8d357cac94e8f7aec405b8d3",
+        "text_layer_char_count": 555
+      },
+      {
+        "page": 14,
+        "md_start_line": 362,
+        "md_end_line": 390,
+        "text_layer_sha256": "906364ce168045f7e40c088737bb210a69090cd6ebdb0886674e57a05d858b05",
+        "text_layer_char_count": 927
+      },
+      {
+        "page": 15,
+        "md_start_line": 398,
+        "md_end_line": 423,
+        "text_layer_sha256": "45fd79f57ff64e3a5d81481d730842233b186c89b223662828491d0e5d0d763e",
+        "text_layer_char_count": 787
+      },
+      {
+        "page": 16,
+        "md_start_line": 431,
+        "md_end_line": 455,
+        "text_layer_sha256": "a5efeb187b813b4cb40fce9825e53ca1e9caa0b3908596c07f4061f2723270c4",
+        "text_layer_char_count": 776
+      },
+      {
+        "page": 17,
+        "md_start_line": 463,
+        "md_end_line": 475,
+        "text_layer_sha256": "0033ffde10857728224b8cf9fd030a594c177b35d5c39e794b66a14755c5c7c9",
+        "text_layer_char_count": 366
+      },
+      {
+        "page": 18,
+        "md_start_line": 483,
+        "md_end_line": 513,
+        "text_layer_sha256": "bfc9e8fc31bd953f25b4f8887ca91f74c3ea0779891dc20ec5588073c0433765",
+        "text_layer_char_count": 979
+      },
+      {
+        "page": 19,
+        "md_start_line": 521,
+        "md_end_line": 542,
+        "text_layer_sha256": "ddc296e3dbf31ab4913d01c764ee70ea53eedd8b18b6d42e2980cbe799f8b87b",
+        "text_layer_char_count": 902
+      },
+      {
+        "page": 20,
+        "md_start_line": 550,
+        "md_end_line": 582,
+        "text_layer_sha256": "c23a06f2a0e15dbe7289852cd69c0ff04033b686ec41ee0066f0efcfc662962b",
+        "text_layer_char_count": 1152
+      },
+      {
+        "page": 21,
+        "md_start_line": 590,
+        "md_end_line": 604,
+        "text_layer_sha256": "afc99beba71ecb18da4a0615531705a5c49a4440d7a840b4a85608fba8253ace",
+        "text_layer_char_count": 564
+      },
+      {
+        "page": 22,
+        "md_start_line": 612,
+        "md_end_line": 624,
+        "text_layer_sha256": "2480eef459f26487032382e453c94074304455d8bf5777bb67368fb89145e6ba",
+        "text_layer_char_count": 459
+      },
+      {
+        "page": 23,
+        "md_start_line": 632,
+        "md_end_line": 656,
+        "text_layer_sha256": "11b0895ad8e84232c56f57b97fe0acd1fa00bc4a7cd71c3ec17681bb2505e67c",
+        "text_layer_char_count": 872
+      },
+      {
+        "page": 24,
+        "md_start_line": 664,
+        "md_end_line": 674,
+        "text_layer_sha256": "d10f9fd89e46f108aa6508604704164b7267161e0c2582120597b509b12aaa7b",
+        "text_layer_char_count": 347
+      },
+      {
+        "page": 25,
+        "md_start_line": 682,
+        "md_end_line": 688,
+        "text_layer_sha256": "8cebee3ec41161a44a080c61b0e07953d697000aab3d213892371770f6cbda05",
+        "text_layer_char_count": 91
+      },
+      {
+        "page": 26,
+        "md_start_line": 696,
+        "md_end_line": 704,
+        "text_layer_sha256": "bb39a3e95845a93db308b520042bf8a8bee85a301ed305deff1eacd4826920d1",
+        "text_layer_char_count": 176
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "detail_pages_reviewed": [
+        3,
+        6,
+        8,
+        12,
+        15,
+        18
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "多处代码或段落长行右侧裁切，不补齐",
+        "pages": [
+          3,
+          4,
+          8,
+          13,
+          16,
+          19,
+          20
+        ],
+        "evidence_type": "page_image",
+        "classification": "source_clipping"
+      },
+      {
+        "description": "同一63-case数据集描述与部分TP+FN从28变26不一致",
+        "pages": [
+          5,
+          6
+        ],
+        "evidence_type": "text_and_table",
+        "classification": "source_ambiguity"
+      },
+      {
+        "description": "GT五项权重合计0.90，未解释归一化",
+        "pages": [
+          12
+        ],
+        "evidence_type": "table",
+        "classification": "source_ambiguity"
+      },
+      {
+        "description": "连续5轮未过与加权停滞累计5.0口径不一致",
+        "pages": [
+          17,
+          18
+        ],
+        "evidence_type": "text",
+        "classification": "source_ambiguity"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md",
+      "../../20_topics/Agent评测与反馈.md",
+      "../../20_topics/Prompt优化.md",
+      "../../20_topics/因果推断与评测归因.md"
+    ],
+    "proposed_topics": [
+      "Agent评测与反馈",
+      "Agent任务恢复",
+      "Prompt优化"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:32:40-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/Agent 越改越乱之后，我用评测和轨迹把它拉回来了.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "9c58df690d3e4e463971260eea9087e739c6fc4745ba569281aa33c3306674a9",
+        "copied_at": "2026-10-13T02:32:40-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  },
+  "publication_time_evidence": "Aug 13, 2026, 4:21 AM"
+}

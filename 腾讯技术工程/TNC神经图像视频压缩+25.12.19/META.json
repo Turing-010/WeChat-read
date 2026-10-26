@@ -1,0 +1,121 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0310",
+  "title": "全面布局智能视频图像压缩，腾讯TNC编解码多项国际赛事夺魁",
+  "short_title": "TNC神经图像视频压缩",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-12-19T01:46",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "全⾯布局智能视频图像压缩，腾讯          TNC编解码多项国际赛事夺魁\n\n腾讯技术⼯程 2025年12⽉19⽇   01:46⼴东6⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2025年12⽉，智能视频图像编码领域两⼤核⼼赛事相继揭晓结果：\n\n在VCIP会议主办的第四届低复杂度端到端图像压缩实战赛中，腾讯⾹农实验室研发的腾讯神经\n⽹络编解码器TNC（Tencent Neural Codec）在相同码率下画质最好，从全球参赛⽅案中脱\n颖⽽出，摘得冠军；同期，在PCS会议举办的第七届⾼压缩率智能压缩挑战赛中，TNC同样表\n现亮眼，在图像与视频两个赛道上，均实现了同等码率下的画质最佳，勇夺双冠。\n\n在两项不同复杂度的赛事同时获得优异成绩，是⾹农实验室使⽤AI技术赋能视频编码、推动技\n术⾰新的阶段性成果，标志着⾹农实验室在AI驱动的视频图像编码领域居于国际领先⽔平。",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "多模态与生成模型",
+    "大模型基础与推理优化"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/全面布局智能视频图像压缩，腾讯TNC编解码多项国际赛事夺魁.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:01:04-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "1548c1a801d3fde4f6fb78f4c17bc6879e9f54feee8bd4202c39c35ca66f88ba",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "冠军、倍率和质量指标是作者按赛事协议报告，不能外推所有内容与设备。",
+        "原文p12明确距商用还有跨平台一致性和终端复杂度问题。",
+        "已看页图5、7、8、11；p10公式未逐符号转写，MD保留提取缺失。"
+      ],
+      "size_bytes": 7185132,
+      "page_count": 13
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:01:04-07:00",
+  "directory": "腾讯技术工程/TNC神经图像视频压缩+25.12.19",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:01:04-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "1548c1a801d3fde4f6fb78f4c17bc6879e9f54feee8bd4202c39c35ca66f88ba",
+    "output_path": "MD.md",
+    "output_sha256": "4b6f0b1eb7d51c1de87663295d65bdae326d9a718522e82ad8119f51fd1937c5",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 13,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "visual_pages": [
+        5,
+        7,
+        8,
+        11
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "冠军、倍率和质量指标是作者按赛事协议报告，不能外推所有内容与设备。",
+      "原文p12明确距商用还有跨平台一致性和终端复杂度问题。",
+      "已看页图5、7、8、11；p10公式未逐符号转写，MD保留提取缺失。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/全面布局智能视频图像压缩，腾讯TNC编解码多项国际赛事夺魁.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/TNC神经图像视频压缩+25.12.19/RAW.pdf",
+    "sha256": "1548c1a801d3fde4f6fb78f4c17bc6879e9f54feee8bd4202c39c35ca66f88ba",
+    "copied_at": "2026-10-23T06:01:04-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/大模型推理与算子优化.md",
+      "../../20_topics/推荐系统与多模态评测.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

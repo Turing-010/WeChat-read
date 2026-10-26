@@ -1,0 +1,421 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0079",
+  "title": "装了 N 个 skills 之后，鹅厂员工觉得“最香”的是哪一个？",
+  "short_title": "鹅厂实用Skills交流",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-04-15T02:31",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0415 Tencent Skills.pdf",
+      "original_filename": "0415 Tencent Skills.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "d4f5d404b0016251f0e821edfbb50eb00f65b818663bf2dfd25cfee8d16712fd",
+      "size_bytes": 11138301,
+      "page_count": 16,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "原文两个“06”编号重复；产品与审计能力是分享者陈述，缺少统一评测和完整技能文件。",
+          "pages": [
+            6,
+            7,
+            8
+          ],
+          "status": "source_limitation"
+        }
+      ],
+      "publication_evidence": "PDF p.1 可见 2026-04-15T02:31"
+    }
+  ],
+  "tags": [
+    "AI技术活动与资料",
+    "AI研发协同",
+    "Skill设计与治理"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/鹅厂实用Skills交流+26.4.15",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_鹅厂实用Skills交流.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "装了 N 个 skills 之后,鹅厂员工觉得“最香”的是哪一个?\n爱讨论的 2026 年 4 月 15 日 02 : 31广东原创 腾讯技术工程 130 人\n话题背景\n最近大家都在研究龙虾,装了好多 skills ,但最常用的好像还是那几个?\n那么装了 N 个 skills 之后,你们觉得 \" 最香 \" 的是哪一个:是每天都在用的那个?是某次救了急的那\n个?还是自己做的、越用越顺手的那个?\n这次带大家看看鹅厂的大佬们,都在用什么 skill 提效?也欢迎晒出你自己宝藏 skill ,或者把心里\n最想要、却还没人做的 skill idea 说出来(关注有奖)\n鹅厂工程师的看法\n01\n  sophiay-行业应用  \n腾讯技术官方号。腾讯技术创新、前沿领域发布解读平台。\n688 篇原创内容\n腾讯技术工程\n公众号\n",
+    "publication_evidence": "PDF p.1 可见 2026-04-15T02:31",
+    "full_title_in_capture": "装了 N 个 skills 之后，鹅厂员工觉得“最香”的是哪一个？",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0079",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "d4f5d404b0016251f0e821edfbb50eb00f65b818663bf2dfd25cfee8d16712fd"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "原文两个“06”编号重复；产品与审计能力是分享者陈述，缺少统一评测和完整技能文件。",
+        "pages": [
+          6,
+          7,
+          8
+        ],
+        "status": "source_limitation"
+      }
+    ],
+    "outputs": [
+      "AI_鹅厂实用Skills交流.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "detail_pages_reviewed": [
+        8
+      ]
+    },
+    "coverage": "覆盖全部正文案例及Skill管理机制，浏览产品截图；省略推广和读者留言，不把截图当作完整可安装定义",
+    "fact_checks": [
+      {
+        "item": "桌宠动画",
+        "value": "13套",
+        "pages": [
+          4
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "搜索渠道",
+        "value": "9渠道三路并行",
+        "pages": [
+          8
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "推荐信号",
+        "value": "7路",
+        "pages": [
+          8
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "硬扫描",
+        "value": "13项",
+        "pages": [
+          8
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "质量体检",
+        "value": "10维度A–F，70+检查项",
+        "pages": [
+          8
+        ],
+        "result": "核对原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_鹅厂实用Skills交流.md",
+      "sha256": "fa8cdfc7ca7e89d75b1e95bd96e0e13d814d3bb91369cd2f351afb57fd057c9a"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "d4f5d404b0016251f0e821edfbb50eb00f65b818663bf2dfd25cfee8d16712fd"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "2dc8f0dbdb943edc9644d1f8d615a467b0ae9998d24044d537e37a69dde4702a"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 24,
+        "text_layer_sha256": "2c8c9c7910b7faafabe6d198331acc768150c5fd34144915e5517b792bcff554",
+        "text_layer_char_count": 360
+      },
+      {
+        "page": 2,
+        "md_start_line": 32,
+        "md_end_line": 39,
+        "text_layer_sha256": "71eb0cee6961ed1ea8cea70d19561ba018f3049d4b6c376d289af46b7cb519c9",
+        "text_layer_char_count": 182
+      },
+      {
+        "page": 3,
+        "md_start_line": 47,
+        "md_end_line": 57,
+        "text_layer_sha256": "20e05b87fcd6879b9bf3d4736b34cfa840ad08d9853c07915b0e3011e888f1a8",
+        "text_layer_char_count": 268
+      },
+      {
+        "page": 4,
+        "md_start_line": 65,
+        "md_end_line": 74,
+        "text_layer_sha256": "88757e07ae9a8fb12e2b0834a2d76a45dbfeedcafdcd2be219030a3905f0ce49",
+        "text_layer_char_count": 229
+      },
+      {
+        "page": 5,
+        "md_start_line": 82,
+        "md_end_line": 87,
+        "text_layer_sha256": "2d094bf948b07904ea37aa376d1504d42ad7c98c9c1995fc1bac3d42f246adf6",
+        "text_layer_char_count": 145
+      },
+      {
+        "page": 6,
+        "md_start_line": 95,
+        "md_end_line": 105,
+        "text_layer_sha256": "d351b5339d5455f01b38b4a5a25d02d03ef7613bd100f8e17642e384ef4ca5d4",
+        "text_layer_char_count": 310
+      },
+      {
+        "page": 7,
+        "md_start_line": 113,
+        "md_end_line": 117,
+        "text_layer_sha256": "6d8cede730f41b9ea7979ea762e88a79cce1e921bc19de1791c158107c765507",
+        "text_layer_char_count": 94
+      },
+      {
+        "page": 8,
+        "md_start_line": 125,
+        "md_end_line": 136,
+        "text_layer_sha256": "e9a56fdc8ce015f85eefb1b500595761610c5c942d255a08087a66134be7d149",
+        "text_layer_char_count": 455
+      },
+      {
+        "page": 9,
+        "md_start_line": 144,
+        "md_end_line": 148,
+        "text_layer_sha256": "4d2d586dceaaf57f97fd42d7f43a9601d5c294f105615066c828934214706781",
+        "text_layer_char_count": 127
+      },
+      {
+        "page": 10,
+        "md_start_line": 156,
+        "md_end_line": 168,
+        "text_layer_sha256": "74fa15a6c63a11de3955c79e5ac762e8b590688168522b6fb72277b58f146685",
+        "text_layer_char_count": 283
+      },
+      {
+        "page": 11,
+        "md_start_line": 176,
+        "md_end_line": 177,
+        "text_layer_sha256": "8cb0d072fcaab42c65548f133d7fdf27f1a44668d5fa196275237b4a4625af46",
+        "text_layer_char_count": 7
+      },
+      {
+        "page": 12,
+        "md_start_line": 185,
+        "md_end_line": 228,
+        "text_layer_sha256": "1f6ca3e16f162814f9e7bac74fd4bab07aa22142a2f2a9e805572b40559ec745",
+        "text_layer_char_count": 462
+      },
+      {
+        "page": 13,
+        "md_start_line": 236,
+        "md_end_line": 277,
+        "text_layer_sha256": "875b6b4576dc5971afaa1129ed9f9192684d8adf0ec2c23894d98ca53c75ed05",
+        "text_layer_char_count": 662
+      },
+      {
+        "page": 14,
+        "md_start_line": 285,
+        "md_end_line": 316,
+        "text_layer_sha256": "d687eaee560750a77db6ff4139312ac8e46bf1a2a0a0d956d27225270fe41ea0",
+        "text_layer_char_count": 649
+      },
+      {
+        "page": 15,
+        "md_start_line": 324,
+        "md_end_line": 350,
+        "text_layer_sha256": "add39a1d72413f2f1e77d07a46230646f3022ed14ee5b9d8b18ae7fb90ff9ab5",
+        "text_layer_char_count": 448
+      },
+      {
+        "page": 16,
+        "md_start_line": 358,
+        "md_end_line": 357,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "detail_pages_reviewed": [
+        8
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "原文两个“06”编号重复；产品与审计能力是分享者陈述，缺少统一评测和完整技能文件。",
+        "pages": [
+          6,
+          7,
+          8
+        ],
+        "status": "source_limitation"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0415 Tencent Skills.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "d4f5d404b0016251f0e821edfbb50eb00f65b818663bf2dfd25cfee8d16712fd",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [],
+    "verification_status": "archive_retained_without_new_technical_claims",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_鹅厂实用Skills交流.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

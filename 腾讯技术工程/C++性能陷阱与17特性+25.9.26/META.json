@@ -1,0 +1,129 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0314",
+  "title": "微信开发工程师总结的20条C++性能陷阱与实用特性，读起来很过瘾",
+  "short_title": "C++性能陷阱与17特性",
+  "account": "腾讯技术工程",
+  "author": "尚晋的思考",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-09-26T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "微信开发⼯程师总结的         20条 C++性能陷阱与实⽤特性，读起来很过\n瘾\n\n腾讯技术⼯程  2025年9⽉26⽇   02:36⼴东25⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n 作者：尚晋的思考\n\n ⽂章分为上下篇，上篇介绍10个C++性能陷阱，下篇介绍10个C++实⽤特性。\n\n\n\n   如果你让每个 C++⼯程师列出他们喜欢 C++的原因，那“掌控⼒”绝对是排在前⼏的特性。与 go、\n   java 等垃圾回收语⾔的⼤道⾄简、python 等解释语⾔的⼩快灵不同，C++最⼤的魅⼒就是给予⼯\n   程师对代码完全的掌控，每个 C++程序员仿佛都是⼈形编译器，不⽌要看懂代码表⾯的逻辑，甚\n   ⾄要知道每⾏代码对应的汇编指令。优化代码也成了 C++⼯程师⽇常必备活动，正所谓“⼀杯茶，\n   ⼀包烟，⼀段代码，优化⼀天”。在经历过⽆数个性能优化的⽇⽇夜夜后，笔者也总结了10中过招\n   的性能陷阱，与诸位分享。\n\n\n\n 性能陷阱主要分为两⼤类：“有成本抽象”和“与编译器作对”。",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "跨端开发与性能",
+    "软件复杂性与架构演进"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/微信开发工程师总结的20条C++性能陷阱与实用特性，读起来很过瘾.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:19:51-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "600adc78231dd20c603bedbc77e588f350f8487a0a5c028796f729bd9dd56760",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "std::function固定32字节、optional大小公式、shared_ptr慢10—20%均受实现/ABI/负载影响，不可当标准保证。",
+        "NRVO对命名局部对象通常是允许优化，不是必然；尾调用和向量化也非标准承诺。",
+        "make_shared不总优于独立分配，weak_ptr保留控制块等成本需条件化；optional示例需编译验证。",
+        "旧gcc问题和C++17/20规则须按版本核查；原文没提供完整编译参数/基准，未执行，页图仅1、4、7、16。"
+      ],
+      "size_bytes": 4194019,
+      "page_count": 20
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:19:51-07:00",
+  "directory": "腾讯技术工程/C++性能陷阱与17特性+25.9.26",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:19:51-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "600adc78231dd20c603bedbc77e588f350f8487a0a5c028796f729bd9dd56760",
+    "output_path": "MD.md",
+    "output_sha256": "0cf82f842b7b9b305acea71c8705fd62bc8cecc5f9324fe293a7eb5dec8a3311",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 20,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "visual_pages": [
+        1,
+        4,
+        7,
+        16
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "std::function固定32字节、optional大小公式、shared_ptr慢10—20%均受实现/ABI/负载影响，不可当标准保证。",
+      "NRVO对命名局部对象通常是允许优化，不是必然；尾调用和向量化也非标准承诺。",
+      "make_shared不总优于独立分配，weak_ptr保留控制块等成本需条件化；optional示例需编译验证。",
+      "旧gcc问题和C++17/20规则须按版本核查；原文没提供完整编译参数/基准，未执行，页图仅1、4、7、16。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/微信开发工程师总结的20条C++性能陷阱与实用特性，读起来很过瘾.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/C++性能陷阱与17特性+25.9.26/RAW.pdf",
+    "sha256": "600adc78231dd20c603bedbc77e588f350f8487a0a5c028796f729bd9dd56760",
+    "copied_at": "2026-10-23T06:19:51-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/解决问题.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

@@ -1,0 +1,613 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0163",
+  "title": "任何错误只犯一次：TencentDB Agent Memory 的团队记忆实践",
+  "short_title": "团队记忆实践",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-18T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/任何错误只犯一次：TencentDB Agent Memory 的团队记忆实践.pdf",
+      "original_filename": "任何错误只犯一次：TencentDB Agent Memory 的团队记忆实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "801c95c786b80cb0b23bb21e8eea4bdc716cf87bd6efe08c20ff971dc9a35bdd",
+      "size_bytes": 7249918,
+      "page_count": 22,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "内部Session、Task、关系审核、Redis Case和SWE-bench结果由作者报告，未提供本次独立复现；文章明确表示部分审计使用模型而非人工金标。",
+          "pages": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "status": "unverified_internal_results"
+        },
+        {
+          "description": "CodeGraph impact任务叙述是为了说明产品使用而重建的工程案例，不是某次提交的逐字复盘。",
+          "pages": [
+            10,
+            11,
+            12
+          ],
+          "status": "noted"
+        },
+        {
+          "description": "PDF p.21为账号/留言页，p.22为空白页。",
+          "pages": [
+            21,
+            22
+          ],
+          "status": "noted"
+        }
+      ],
+      "publication_evidence": "PDF p.1: Aug 18, 2026, 2:36 AM; no timezone shown; no byline author visible."
+    }
+  ],
+  "tags": [
+    "Agent长期记忆",
+    "Agent任务恢复",
+    "Agent评测与反馈",
+    "决策知识结构化",
+    "检索与文档解析"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/团队记忆实践+26.8.18",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_团队记忆实践.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "任何错误只犯一次: TencentDB  Agent  Memory  的团队记忆实践\n腾讯程序员 Aug  18 , 2026 , 2 : 36  AM广东原创 腾讯技术工程 140  listened\n当执行能力趋于充裕,组织如何重建信息流动与经验继承\n全文导航\n1. 问题定义:执行能力增长,协作带宽没有同步增长\n过去一段时间,我们在做  Agent Memory 的过程中反复看到一个反差:模型越来越强,\n一个人带着  Agent 推进任务的速度越来越快;但任务一旦进入多人、多  Agent 、多项目\n的环境,真正拖慢交付的往往不再是 “ 这段代码能不能生成 ” ,而是信息能不能在成员、\nSession 、代码分支和权限域之间被准确继承。\nCoding Agent 正在快速扩大一个人的工作边界,但企业研发的瓶颈并没有因此自动消\n失。任务一旦跨越成员、 Session 、代码分支和权限域,真正稀缺的往往不是生成代码\n的能力,而是 “ 协作的带宽 ” 。本文从  OPC 、协作带宽和孙天祥提出的三层  AI 组织架构\n出发,重点介绍  TencentDB Agent Memory 在团队记忆上的工程实践:我们如何把\n任务轨迹、项目知识、代码结构和工作方法转成可治理的记忆资产,如何从  2,600 个\nSession 、 Redis 真实研发  Case 和访谈中校正产品设计,以及如何用 “ 前序  Case 学\n习、后序  Case 验证 ” 的方式,在  SWE-bench 相关任务上观察到完成率从  60% 提升\n到  80% ;在  Top 50 超长难任务中降低 19% 成本的同时提升了成功率。\n",
+    "publication_evidence": "PDF p.1: Aug 18, 2026, 2:36 AM; no timezone shown; no byline author visible.",
+    "full_title_in_capture": "任何错误只犯一次：TencentDB Agent Memory 的团队记忆实践",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0163",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "801c95c786b80cb0b23bb21e8eea4bdc716cf87bd6efe08c20ff971dc9a35bdd"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "内部Session、Task、关系审核、Redis Case和SWE-bench结果由作者报告，未提供本次独立复现；文章明确表示部分审计使用模型而非人工金标。",
+        "pages": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "status": "unverified_internal_results"
+      },
+      {
+        "description": "CodeGraph impact任务叙述是为了说明产品使用而重建的工程案例，不是某次提交的逐字复盘。",
+        "pages": [
+          10,
+          11,
+          12
+        ],
+        "status": "noted"
+      },
+      {
+        "description": "PDF p.21为账号/留言页，p.22为空白页。",
+        "pages": [
+          21,
+          22
+        ],
+        "status": "noted"
+      }
+    ],
+    "outputs": [
+      "AI_团队记忆实践.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "detail_pages_reviewed": [
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        13,
+        16,
+        17,
+        18
+      ]
+    },
+    "coverage": "阅读抽取文本p.1–20并查看全部22页缩略图，放大核对资产分层、关系质量、Redis样例和SWE-bench图表。覆盖问题框架、四类资产、权限优先装配、生命周期、内部分析、访谈、真实Case和评测限制。未独立核验数据或运行实验。 已查看全部物理页图；p.21为账号/留言入口，p.22为空白尾页；两页均已查看页图。",
+    "fact_checks": [
+      {
+        "item": "资产类型",
+        "note_value": "Chat Memory、Wiki、CodeGraph、Skill",
+        "source_value": "同笔记",
+        "pages": [
+          6
+        ],
+        "result": "match"
+      },
+      {
+        "item": "内部Task分析量",
+        "note_value": "2600 Session、5081 Task、48114初始候选、22361 canonical Relation",
+        "source_value": "同笔记",
+        "pages": [
+          12,
+          13
+        ],
+        "result": "match"
+      },
+      {
+        "item": "强关系和Shadow",
+        "note_value": "231强关系、22130 Shadow",
+        "source_value": "同笔记",
+        "pages": [
+          13
+        ],
+        "result": "match"
+      },
+      {
+        "item": "SWE-bench相关Case结果",
+        "note_value": "完成率60%升到80%，组合资产报告结果",
+        "source_value": "同笔记",
+        "pages": [
+          17
+        ],
+        "result": "match"
+      },
+      {
+        "item": "50个难Case长任务",
+        "note_value": "通过率17%到20%，成本887.64美元到717.78美元，turn约降19%",
+        "source_value": "同笔记",
+        "pages": [
+          18
+        ],
+        "result": "match"
+      },
+      {
+        "item": "自动审计质量界限",
+        "note_value": "文章称使用模型审计而非人工金标",
+        "source_value": "同笔记",
+        "pages": [
+          14
+        ],
+        "result": "match"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_团队记忆实践.md",
+      "sha256": "36550addde83573a16b81848b212def49e42cd1b9b8788aad0fe70fc61b060dd",
+      "size_bytes": 29859
+    },
+    "independent_crosscheck": {
+      "reviewer": "root",
+      "note_sha256": "36550addde83573a16b81848b212def49e42cd1b9b8788aad0fe70fc61b060dd",
+      "review_sha256": "5b2e728723d83a6c52cc2682f6117195d6adec160167b9f0991e851723740c0d",
+      "status": "passed",
+      "changes": [
+        "staging format and page-coverage repair: standardized final audit callout and included all visually checked physical pages; no substantive note claims changed"
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "1–9",
+          "check": "核对 OPC/Spec、资产分层和权限优先路由；笔记保留组织实践的上下文。"
+        },
+        {
+          "pages": "10–16",
+          "check": "核对 CodeGraph 案例及关系数据；明确案例按工程化重建处理，内部样本为作者报告。"
+        },
+        {
+          "pages": "17–20",
+          "check": "核对 Redis 与 SWE-bench 数字的适用口径；第21页为账号/留言入口、第22页空白。笔记新增 date 字段。"
+        }
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "801c95c786b80cb0b23bb21e8eea4bdc716cf87bd6efe08c20ff971dc9a35bdd"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "6f8573083ec8c14f939f3a9329936531328ec276b4c54f1b355454b35934f425"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 26,
+        "text_layer_sha256": "319df59058a0d973bf516015fe9293e91c472b97e5b9d8afc245e4737def5753",
+        "text_layer_char_count": 714
+      },
+      {
+        "page": 2,
+        "md_start_line": 34,
+        "md_end_line": 67,
+        "text_layer_sha256": "6eec449441ee7da81e6d4ad5385eba5e7027a3cb52f828b4c6a4ecc47bfea409",
+        "text_layer_char_count": 1264
+      },
+      {
+        "page": 3,
+        "md_start_line": 75,
+        "md_end_line": 97,
+        "text_layer_sha256": "d5362bcb91bd366f546d931312d854f8bd8cbe3d18f57633b692f438b382bcb5",
+        "text_layer_char_count": 884
+      },
+      {
+        "page": 4,
+        "md_start_line": 105,
+        "md_end_line": 127,
+        "text_layer_sha256": "e9c9c3a3db9115b7a816be7a7dbbbf7038d1c78cd2a841c6dc4d43a0b28e28ba",
+        "text_layer_char_count": 873
+      },
+      {
+        "page": 5,
+        "md_start_line": 135,
+        "md_end_line": 148,
+        "text_layer_sha256": "c523f875858c3d6995ab853da068dee4fa0949f5ea404fa21700f5c50c0c85af",
+        "text_layer_char_count": 496
+      },
+      {
+        "page": 6,
+        "md_start_line": 156,
+        "md_end_line": 197,
+        "text_layer_sha256": "96b4e8765dcbb706d096aedc1d9b336a039d22c74a20d39694ccb8928304efeb",
+        "text_layer_char_count": 847
+      },
+      {
+        "page": 7,
+        "md_start_line": 205,
+        "md_end_line": 242,
+        "text_layer_sha256": "42c5da08fe1a3be3cb50106c4de565e052701fce39c7923fcc9bea742c76f763",
+        "text_layer_char_count": 1045
+      },
+      {
+        "page": 8,
+        "md_start_line": 250,
+        "md_end_line": 266,
+        "text_layer_sha256": "5e48c550d524d1406b41b034be759cf0495f96c06661e09fa735a7eb58ca9e0b",
+        "text_layer_char_count": 728
+      },
+      {
+        "page": 9,
+        "md_start_line": 274,
+        "md_end_line": 307,
+        "text_layer_sha256": "6ed0f8fb2d6e5dfb11e1e5334f6ec5dcbdddf50e8f16f90b30befffccf91be8a",
+        "text_layer_char_count": 1281
+      },
+      {
+        "page": 10,
+        "md_start_line": 315,
+        "md_end_line": 347,
+        "text_layer_sha256": "25a3957a93c5de141bd9417fd47042a2f4e53b8ce89cc611cddc85ee9a20fe6e",
+        "text_layer_char_count": 1439
+      },
+      {
+        "page": 11,
+        "md_start_line": 355,
+        "md_end_line": 390,
+        "text_layer_sha256": "915ad0ab7446aa3b6141045d8c860bcdf9c41dd333250b9e14d7861919d757c0",
+        "text_layer_char_count": 952
+      },
+      {
+        "page": 12,
+        "md_start_line": 398,
+        "md_end_line": 431,
+        "text_layer_sha256": "15111bb998294d1699b7e795daaed508894b6113eb772d07bcc5fd2f1f60e4ac",
+        "text_layer_char_count": 1161
+      },
+      {
+        "page": 13,
+        "md_start_line": 439,
+        "md_end_line": 462,
+        "text_layer_sha256": "a00f43cb415b8db1e02d81fc9f17ea990d314c28673182029dcd03bad20cd6a0",
+        "text_layer_char_count": 1013
+      },
+      {
+        "page": 14,
+        "md_start_line": 470,
+        "md_end_line": 503,
+        "text_layer_sha256": "421614de03a853126b21b4c4fe4ba5faf53ed6a9639aed6591d661875b26fb33",
+        "text_layer_char_count": 1277
+      },
+      {
+        "page": 15,
+        "md_start_line": 511,
+        "md_end_line": 530,
+        "text_layer_sha256": "92cf0ed7383eb88816ef04863692993237a255264e72febe4df297e08f0b0a2c",
+        "text_layer_char_count": 890
+      },
+      {
+        "page": 16,
+        "md_start_line": 538,
+        "md_end_line": 567,
+        "text_layer_sha256": "20e259056cd888a77f8731e034e5e2a430036bf81122986aaca86af5828bc96e",
+        "text_layer_char_count": 973
+      },
+      {
+        "page": 17,
+        "md_start_line": 575,
+        "md_end_line": 581,
+        "text_layer_sha256": "2336da4be5519998340458609014170b3cf85af7814c4f7a6118e647fd4f2450",
+        "text_layer_char_count": 279
+      },
+      {
+        "page": 18,
+        "md_start_line": 589,
+        "md_end_line": 621,
+        "text_layer_sha256": "030623c3dd2a92f7f970d319313961bee10b78a0dc8e8f766802f40f0aaa9f31",
+        "text_layer_char_count": 1258
+      },
+      {
+        "page": 19,
+        "md_start_line": 629,
+        "md_end_line": 658,
+        "text_layer_sha256": "572c205c2a712043a94354d11a2dff110ab946fd6f5a9f336054de1649e02507",
+        "text_layer_char_count": 964
+      },
+      {
+        "page": 20,
+        "md_start_line": 666,
+        "md_end_line": 685,
+        "text_layer_sha256": "74bc4ea47fe8eaaae25309d46afd9d1277c14d10cc36b65713ceb5be70282d76",
+        "text_layer_char_count": 715
+      },
+      {
+        "page": 21,
+        "md_start_line": 693,
+        "md_end_line": 700,
+        "text_layer_sha256": "459216970a08348a64e2fe4f3130b922e13a798ad00268c90bde11f8f6745134",
+        "text_layer_char_count": 77
+      },
+      {
+        "page": 22,
+        "md_start_line": 708,
+        "md_end_line": 707,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "detail_pages_reviewed": [
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        13,
+        16,
+        17,
+        18
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "内部Session、Task、关系审核、Redis Case和SWE-bench结果由作者报告，未提供本次独立复现；文章明确表示部分审计使用模型而非人工金标。",
+        "pages": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "status": "unverified_internal_results"
+      },
+      {
+        "description": "CodeGraph impact任务叙述是为了说明产品使用而重建的工程案例，不是某次提交的逐字复盘。",
+        "pages": [
+          10,
+          11,
+          12
+        ],
+        "status": "noted"
+      },
+      {
+        "description": "PDF p.21为账号/留言页，p.22为空白页。",
+        "pages": [
+          21,
+          22
+        ],
+        "status": "noted"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/任何错误只犯一次：TencentDB Agent Memory 的团队记忆实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "801c95c786b80cb0b23bb21e8eea4bdc716cf87bd6efe08c20ff971dc9a35bdd",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent长期记忆.md",
+      "../../20_topics/决策知识结构化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_团队记忆实践.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

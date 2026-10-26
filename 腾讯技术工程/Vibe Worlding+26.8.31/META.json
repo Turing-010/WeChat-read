@@ -1,0 +1,377 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0161",
+  "title": "从 Vibe Coding 到 Vibe Worlding：AI 开始自己“造世界”了",
+  "short_title": "Vibe Worlding",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-31T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/从Vibe Coding到Vibe Worlding：AI开始自己“造世界”了.pdf",
+      "original_filename": "从Vibe Coding到Vibe Worlding：AI开始自己“造世界”了.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "551c364fb9a77866cee9ee1fe9c2914e2f7b0b22a380ec47726aa1dac2981ff4",
+      "size_bytes": 3819274,
+      "page_count": 9,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "模型对比数字为作者基准报告；Unverified 查询由 MLLM/rubric 评审，存在评审误差；能力受资产风格与任务分布限制。",
+          "pages": [
+            2,
+            4,
+            5,
+            6
+          ],
+          "status": "已标注作者实验与评审边界"
+        }
+      ],
+      "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。"
+    }
+  ],
+  "tags": [
+    "具身智能数据闭环",
+    "Agent评测与反馈",
+    "Agent工程循环"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/Vibe Worlding+26.8.31",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Vibe Worlding.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "从 Vibe  Coding 到 Vibe  Worlding : AI 开始自己“造世界”了\nAug  31 , 2026 , 2 : 36  AM广东腾讯技术工程 184  listened\n开源地址:\n项目主页:https://usail-hkust.github.io/VibeWorlding-Gym/\nCode (沙盒环境与训练框架):https://github.com/usail-hkust/VibeWorlding-Gym\nDataset ( VWE-Bench 评测基准):https://huggingface.co/datasets/usail-hkust/VWE-Bench\nModel ( VibeWorlder 模 型合集):https://huggingface.co/collections/usail-\nhkust/vibeworlder\n香港科技大学(广州)联合腾讯  AI 平台部团队,提出了  VibeWorlding:一个可以像  Agent\n写代码一样,通过多轮对话、调用工具、观察渲染反馈来自主构建和编辑交互式  3D 世界 的\n如果说  Vibe Coding  让「写代码」这件事从「敲键盘」变成了「和  AI 对话」,那么今天\n要介绍的这项工作,可能正在把同样的故事在  3D 世界构建  领域重演一遍。\n",
+    "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。",
+    "full_title_in_capture": "从 Vibe Coding 到 Vibe Worlding：AI 开始自己“造世界”了",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0161",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "551c364fb9a77866cee9ee1fe9c2914e2f7b0b22a380ec47726aa1dac2981ff4"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "模型对比数字为作者基准报告；Unverified 查询由 MLLM/rubric 评审，存在评审误差；能力受资产风格与任务分布限制。",
+        "pages": [
+          2,
+          4,
+          5,
+          6
+        ],
+        "status": "已标注作者实验与评审边界"
+      }
+    ],
+    "outputs": [
+      "AI_Vibe Worlding.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        2,
+        4,
+        5
+      ]
+    },
+    "coverage": "覆盖 VibeWorlding Agent、VWE-Bench 数据集和任务划分、MCP 工具与沙盒反馈、Verified/Unverified 双验证、几何及 MLLM 评分、冷启动 SFT+GRPO、模型对比和六维能力分析，并列出空间编辑失败案例及适用局限。 PDF末页核查：p.8为公众号推广/留言页，p.9空白。",
+    "fact_checks": [
+      {
+        "claim": "资产 2,616 个",
+        "page": "p.2",
+        "result": "文章数据集描述"
+      },
+      {
+        "claim": "种子世界 323 个",
+        "page": "p.2",
+        "result": "文章数据集描述"
+      },
+      {
+        "claim": "查询 6,828 个",
+        "page": "p.2",
+        "result": "文章数据集描述"
+      },
+      {
+        "claim": "VibeWorlder-30B-A3B Pass@1 59.3%",
+        "page": "p.4",
+        "result": "作者实验报告"
+      },
+      {
+        "claim": "GPT-5.5 57.3%, Qwen3.8-Max 56.9%",
+        "page": "p.4",
+        "result": "作者实验报告"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_Vibe Worlding.md",
+      "sha256": "a001fb5a5c68b3af5eebc64c08772df6edc6f0436750e01d8a09a8d1b2e7a1b8",
+      "size_bytes": 22516
+    },
+    "independent_crosscheck": {
+      "reviewer": "/root/crosscheck_b",
+      "note_sha256": "a001fb5a5c68b3af5eebc64c08772df6edc6f0436750e01d8a09a8d1b2e7a1b8",
+      "review_sha256": "8f787843ec3264bdc94a5aed7339322a8286831d7a9d4c814f8658c7d3d6af00",
+      "status": "passed",
+      "changes": [
+        "Applied the required note structure: one H1, an explicit 复习卡片 section with one-line Q::A cards, and a final fully quoted folded 校对报告.",
+        "Checked all 9 physical pages; inspected the final blank/comment page in extracted text and page image, recorded the boundary in note and review, and aligned text_pages_read with the full physical page range."
+      ],
+      "source_spotchecks": [
+        {
+          "pages": [
+            2,
+            4,
+            5,
+            6
+          ],
+          "finding": "数据集规模及 VWE 双验证机制与页图一致；60%附近模型分数明确归于作者报告，Unverified 含 MLLM/rubric 评审误差。"
+        },
+        {
+          "pages": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "finding": "失败案例与能力短板覆盖场景编辑和精确空间控制；适用边界没有外推到任意 3D 场景。"
+        },
+        {
+          "pages": [
+            8,
+            9
+          ],
+          "finding": "p.8抽取文本/页图为公众号推广与留言页；p.9抽取文本和页图均为空白。"
+        }
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "551c364fb9a77866cee9ee1fe9c2914e2f7b0b22a380ec47726aa1dac2981ff4"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "43a27814825fab14b1a1ea6841a12855b9743da4fb34493f5787a9dc0b775ef0"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 21,
+        "text_layer_sha256": "109ad80fe377d15773bd423df170c590300307d79cff41c10e04727c4a8e0de7",
+        "text_layer_char_count": 581
+      },
+      {
+        "page": 2,
+        "md_start_line": 29,
+        "md_end_line": 50,
+        "text_layer_sha256": "4879ebca56fa68561250783c03decb0b71257bf845aa2dc8d5a490d94e6ea599",
+        "text_layer_char_count": 943
+      },
+      {
+        "page": 3,
+        "md_start_line": 58,
+        "md_end_line": 86,
+        "text_layer_sha256": "bd5f8a43b616a2e895b8f56097415c39874e7e8e766de25e91401a8fcc34e28e",
+        "text_layer_char_count": 1166
+      },
+      {
+        "page": 4,
+        "md_start_line": 94,
+        "md_end_line": 124,
+        "text_layer_sha256": "f9302ae755a12c553e121a1465f0b104e9ddcef9211a9bff6b614ee796f0a293",
+        "text_layer_char_count": 1328
+      },
+      {
+        "page": 5,
+        "md_start_line": 132,
+        "md_end_line": 157,
+        "text_layer_sha256": "199a79aacb15fb4ba30a05617db5c1ec7828d234e2a2361810cdd34392568217",
+        "text_layer_char_count": 1012
+      },
+      {
+        "page": 6,
+        "md_start_line": 165,
+        "md_end_line": 181,
+        "text_layer_sha256": "8ef1fdbff32c54f056a9373ce13d10015f8bf419d68f2ea548835f51d3cef437",
+        "text_layer_char_count": 657
+      },
+      {
+        "page": 7,
+        "md_start_line": 189,
+        "md_end_line": 216,
+        "text_layer_sha256": "7c62c8d521be291422402bce3e6add0606780ee157f88feff54f6d7ea9f73da7",
+        "text_layer_char_count": 1154
+      },
+      {
+        "page": 8,
+        "md_start_line": 224,
+        "md_end_line": 231,
+        "text_layer_sha256": "a8538a252d8f8243cd4b038241a6fd20d90e8f5e7e591748be29179d1ec285ff",
+        "text_layer_char_count": 74
+      },
+      {
+        "page": 9,
+        "md_start_line": 239,
+        "md_end_line": 238,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        2,
+        4,
+        5
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "模型对比数字为作者基准报告；Unverified 查询由 MLLM/rubric 评审，存在评审误差；能力受资产风格与任务分布限制。",
+        "pages": [
+          2,
+          4,
+          5,
+          6
+        ],
+        "status": "已标注作者实验与评审边界"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/从Vibe Coding到Vibe Worlding：AI开始自己“造世界”了.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "551c364fb9a77866cee9ee1fe9c2914e2f7b0b22a380ec47726aa1dac2981ff4",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/具身智能数据闭环.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Vibe Worlding.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

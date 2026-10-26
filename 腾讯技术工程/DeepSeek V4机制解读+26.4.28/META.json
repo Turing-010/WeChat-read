@@ -1,0 +1,471 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0085",
+  "title": "读完这篇，你就搞懂 DeepSeek v4 了",
+  "short_title": "DeepSeek V4机制解读",
+  "account": "腾讯技术工程",
+  "author": "dorian",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-04-28T02:23",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0428 DeepSeek V4 Explained.pdf",
+      "original_filename": "0428 DeepSeek V4 Explained.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "074ccda338c8339a32f97f8d17f3def6bc9eff3be75afea4082b8630ecc0984f",
+      "size_bytes": 5329362,
+      "page_count": 15,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "⚠️[原文疑点] p.6 从双随机约束直接推出彻底解决梯度问题，篇内没有完整证明；式(5)为非负集合，正文又称系数在开区间(0,1)。不作为保证性结论。",
+          "pages": [
+            6
+          ],
+          "status": "unresolved"
+        },
+        {
+          "description": "p.10 将HCA/CSA描述为先粗选再精选，但机制图未给实际混合层连接；本笔记不据此补全架构。",
+          "pages": [
+            9,
+            10
+          ],
+          "status": "source_limitation"
+        },
+        {
+          "description": "p.2 对SWE结果的长上下文因果归因未给消融；p.13 提及SWA三档持久化取舍但未展开。",
+          "pages": [
+            2,
+            13
+          ],
+          "status": "source_limitation"
+        }
+      ],
+      "publication_evidence": "PDF p.1 可见 2026-04-28T02:23"
+    }
+  ],
+  "tags": [
+    "模型架构与训练",
+    "AI基础设施与推理优化",
+    "Agent成本与上下文预算",
+    "大模型推理与算子优化"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/DeepSeek V4机制解读+26.4.28",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_DeepSeek V4机制解读.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "读完这篇,你就搞懂 DeepSeek  v4  了\n腾讯程序员 2026 年 4 月 28 日 02 : 23广东原创 腾讯技术工程 181 人\n作者: dorian\n丨  导语 2026 年  4 月  24 日上午, DeepSeek 又一次把 \" 开源炸弹 \" 丢进了大模型圈。没有预热,\n官微只有一句话: “ 今天,我们全新系列模型  DeepSeek-V4 的预览版本正式上线并同步开源 ” 。\n从评分上看,这次的模型已经非常接近 “ 闭源三巨头 ” 的水平了,同时也是当之无愧的 “ 地表最强开\n源模型 ” 。但细读这份技术报告「 DeepSeek-V4: Towards Highly Efficient Million-Token Context\nIntelligence 」,会发现 DeepSeek 的工作远比评分更硬核,无论是架构创新还是工程优化都是一如\n既往的精雕细琢。\nDeepSeek V4 到底强在哪?\n先看纸面参数:\nDeepSeek-V4-Pro : 1.6T 参数,稀疏激活 49B , 1M 上下文\nDeepSeek-V4-Flash:284B参数,稀疏激活13B,1M上下文\n有两个常见的小误解先破一下:\n\" Flash  是 Pro  的蒸馏小模型?\"\n —— 不是。两个都是独立预训练出来的  MoE ,只是规模和稀疏度不同。\n\" 1M  上下文是开关项?\"\n —— 不是。两档都默认  1M 上下文,服务端不再区分 \" 长 / 短 \" 模型。\n再看评分:在编程、数学、 Agent 、长文本四个维度同时刷进第一梯队,基本接近 GPT5.4 、\nClaude 4.6 及 Gemini 3.1 的水平,也是当之无愧的 “ 开源最强 ” 。\n",
+    "publication_evidence": "PDF p.1 可见 2026-04-28T02:23",
+    "full_title_in_capture": "读完这篇，你就搞懂 DeepSeek v4 了",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0085",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "074ccda338c8339a32f97f8d17f3def6bc9eff3be75afea4082b8630ecc0984f"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "⚠️[原文疑点] p.6 从双随机约束直接推出彻底解决梯度问题，篇内没有完整证明；式(5)为非负集合，正文又称系数在开区间(0,1)。不作为保证性结论。",
+        "pages": [
+          6
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "p.10 将HCA/CSA描述为先粗选再精选，但机制图未给实际混合层连接；本笔记不据此补全架构。",
+        "pages": [
+          9,
+          10
+        ],
+        "status": "source_limitation"
+      },
+      {
+        "description": "p.2 对SWE结果的长上下文因果归因未给消融；p.13 提及SWA三档持久化取舍但未展开。",
+        "pages": [
+          2,
+          13
+        ],
+        "status": "source_limitation"
+      }
+    ],
+    "outputs": [
+      "AI_DeepSeek V4机制解读.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13
+      ]
+    },
+    "coverage": "覆盖mHC演进与约束、CSA/HCA公式与图中滑窗路径、Muon、通信重叠、TileLang、数值确定性、量化、训练及推理cache；未逐格重抄残差展开式(4)与榜单柱状图，未补缺失的SWA三档配置",
+    "fact_checks": [
+      {
+        "item": "Pro规格",
+        "value": "1.6T总参数、49B激活、1M上下文",
+        "pages": [
+          1
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "Flash规格",
+        "value": "284B总参数、13B激活、1M上下文",
+        "pages": [
+          1
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "prefill尺度例子",
+        "value": "长度8倍→FLOPs64倍",
+        "pages": [
+          3
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "索引量化",
+        "value": "q/K为FP4，打分BF16",
+        "pages": [
+          12
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "mHC额外耗时",
+        "value": "6.7%",
+        "pages": [
+          13
+        ],
+        "result": "核对原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_DeepSeek V4机制解读.md",
+      "sha256": "86db9842778bc80c347cb42dd7f4a3ef710f51e07e4264a00c380ee5d28ffa76"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "074ccda338c8339a32f97f8d17f3def6bc9eff3be75afea4082b8630ecc0984f"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "18b24516418d0687d2f0b29b88edea61bc951288736ee63d149b5b10d1e97e9b"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 29,
+        "text_layer_sha256": "40261681bab19b837cfc85e0cd39653812d98c0b997c7d5ee52c06bb9c43afa1",
+        "text_layer_char_count": 740
+      },
+      {
+        "page": 2,
+        "md_start_line": 37,
+        "md_end_line": 57,
+        "text_layer_sha256": "728783fcd4ca1fbe0ff50a43f69cb780914a3738bea3b60060512deea7ecdfc1",
+        "text_layer_char_count": 910
+      },
+      {
+        "page": 3,
+        "md_start_line": 65,
+        "md_end_line": 89,
+        "text_layer_sha256": "4243e1ee75684aa087379b3727f988290935680c5b09835ed1c80455bed43cb1",
+        "text_layer_char_count": 860
+      },
+      {
+        "page": 4,
+        "md_start_line": 97,
+        "md_end_line": 115,
+        "text_layer_sha256": "a559fa5a5d5210fc6d3282c736348e65e09859ab9cabb5ba049e5d30da1cf59f",
+        "text_layer_char_count": 642
+      },
+      {
+        "page": 5,
+        "md_start_line": 123,
+        "md_end_line": 140,
+        "text_layer_sha256": "840b9cb3eaf34dd4a8cc68c12e1090575f1df8bb373d6fc2ad58ec9073706970",
+        "text_layer_char_count": 804
+      },
+      {
+        "page": 6,
+        "md_start_line": 148,
+        "md_end_line": 181,
+        "text_layer_sha256": "483a318a7a2e31a4c0cacc27f41ee3ba11e14d679352dee0e88138a0ac275022",
+        "text_layer_char_count": 1497
+      },
+      {
+        "page": 7,
+        "md_start_line": 189,
+        "md_end_line": 208,
+        "text_layer_sha256": "641cf3c7f89e37b20f963adbc40e987fb3364b35daa1cce82730d7e04529aec5",
+        "text_layer_char_count": 814
+      },
+      {
+        "page": 8,
+        "md_start_line": 216,
+        "md_end_line": 229,
+        "text_layer_sha256": "7dcf3c88d96d1389392c24bd217027711b1a1443a9373be18b99cf02c6dd7e0a",
+        "text_layer_char_count": 532
+      },
+      {
+        "page": 9,
+        "md_start_line": 237,
+        "md_end_line": 254,
+        "text_layer_sha256": "4ef2bc10eb5eb7cc962ac742b30430af96eedf0fa136e17feb4b176bf21773eb",
+        "text_layer_char_count": 630
+      },
+      {
+        "page": 10,
+        "md_start_line": 262,
+        "md_end_line": 286,
+        "text_layer_sha256": "ee3fd31cdfc6e74abe710a0c66168294a7a17b48334ac72495d066d8e56a9f0f",
+        "text_layer_char_count": 1127
+      },
+      {
+        "page": 11,
+        "md_start_line": 294,
+        "md_end_line": 320,
+        "text_layer_sha256": "2bb02d0086357921fd9ec4261002c6703cc73921fc8447f7ab1ebf1981553ded",
+        "text_layer_char_count": 1139
+      },
+      {
+        "page": 12,
+        "md_start_line": 328,
+        "md_end_line": 363,
+        "text_layer_sha256": "98fa1f157bf454bd3db3e85b06e754518ee0dd07c8c030aa2921ca7a1c769a08",
+        "text_layer_char_count": 1490
+      },
+      {
+        "page": 13,
+        "md_start_line": 371,
+        "md_end_line": 399,
+        "text_layer_sha256": "d76d4345ba7025ee672e34bfbd681e33afa7dab0fa958d6ace91f10c527d2997",
+        "text_layer_char_count": 1143
+      },
+      {
+        "page": 14,
+        "md_start_line": 407,
+        "md_end_line": 422,
+        "text_layer_sha256": "7c2ed03d0f31218dc386883f92aa58ea68e0380c69275a397b7b2a7abb455685",
+        "text_layer_char_count": 773
+      },
+      {
+        "page": 15,
+        "md_start_line": 430,
+        "md_end_line": 433,
+        "text_layer_sha256": "3a88e1da6466a37234ef6c83c25ce8c3faf48f3579f608ebd236aeff6de5a777",
+        "text_layer_char_count": 29
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "⚠️[原文疑点] p.6 从双随机约束直接推出彻底解决梯度问题，篇内没有完整证明；式(5)为非负集合，正文又称系数在开区间(0,1)。不作为保证性结论。",
+        "pages": [
+          6
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "p.10 将HCA/CSA描述为先粗选再精选，但机制图未给实际混合层连接；本笔记不据此补全架构。",
+        "pages": [
+          9,
+          10
+        ],
+        "status": "source_limitation"
+      },
+      {
+        "description": "p.2 对SWE结果的长上下文因果归因未给消融；p.13 提及SWA三档持久化取舍但未展开。",
+        "pages": [
+          2,
+          13
+        ],
+        "status": "source_limitation"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0428 DeepSeek V4 Explained.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "074ccda338c8339a32f97f8d17f3def6bc9eff3be75afea4082b8630ecc0984f",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_DeepSeek V4机制解读.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

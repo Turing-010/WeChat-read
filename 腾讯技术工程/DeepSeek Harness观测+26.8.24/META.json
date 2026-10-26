@@ -1,0 +1,415 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0146",
+  "title": "DeepSeek Harness 规模化踩坑实录：耗时、成本、失败到底该怎么查",
+  "short_title": "DeepSeek Harness观测",
+  "account": "腾讯技术工程",
+  "author": "trumphuang",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-24T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/DeepSeek Harness规模化踩坑实录：耗时、成本、失败到底该怎么查.pdf",
+      "original_filename": "DeepSeek Harness规模化踩坑实录：耗时、成本、失败到底该怎么查.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "9c861dd1422d70ec1b0abf5589312875996ccf346c11ba6a034662d3c53d9b9e",
+      "size_bytes": 4517480,
+      "page_count": 12,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "安装前置条件对插件运行环境 Node.js 版本写法不一致：p.5 总述要求 >=22.19.0，稍后又写 >=18.0.0。笔记不自行裁决。",
+          "pages": [
+            5
+          ],
+          "status": "source_conflict"
+        }
+      ],
+      "publication_evidence": "PDF p.1 页眉：2026 年 8 月 24 日 02:36；未标时区。"
+    }
+  ],
+  "tags": [
+    "异常监控与稳定性",
+    "Agent成本与上下文预算",
+    "Harness与模型协同"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/DeepSeek Harness观测+26.8.24",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_DeepSeek Harness观测.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "DeepSeek  Harness 规模化踩坑实录:耗时、成本、失败到底该怎\n么查\n腾讯云日志服务 2026 年 8 月 24 日 02 : 36广东腾讯技术工程 129 人\n作者:trumphuang\n一、导语\nAgent  已经进入不少团队的日常研发流程。规模上来之后,使用方的关注点不再只是单次结果是否正确,还\n包括三件事:耗时花在模型推理还是工具执行上; Token  消耗集中在哪些会话、哪些模型上;失败与中断发\n生在哪一步,过程是否可以回溯。\nDeepSeek  Harness (下文简称 DSH )是 DeepSeek  开源的 Agent  框架,自带会话轨迹视图、 Session  事\n件流落盘与工具调用检索,作用域是本机、单会话、实时;一旦要看一批任务的整体表现、一段时间的成本\n分布,或复现几天前的一次失败,就需要跨会话、跨机器且可⻓期留存的结构化链路数据。\n腾讯云 Agent  可观测在已有的 OneSuite Agent  观测能力基础上,提供了针对 DSH  的采集插件:以原生插\n件形态挂载,将执行过程还原为结构化调用链,覆盖任务与推理轮次、模型调用、工具调用、会话关联,配\n合链路检索、聚合分析与平台本身的告警仪表盘等能力,构成针对 DSH  的全景 Agent  可观测方案。\n二、 DeepSeek  Harness  的运行原理\nDSH  是一个开源的编码 Agent  框架,命令行名 dsh ,用于让大模型在受控环境中自主完成一个完整任务:\n读写文件、执行命令、调用外部服务,并根据每一步的结果决定下一步动作。\n组织方式上, DSH  采用 Cordis 微内核加全插件化:内核只负责按 profile  装配插件与管理生命周期,模\n型适配器、工具集、沙箱策略、会话持久化等均为可插拔插件, web  / tui  / headless  三种形态共用同一个\n内核,可观测能力同样挂载在这一层。\n执行模型是 ReAct  循环:一次用户任务称为一个 turn , turn  内的每一轮推理、调用工具、观察结果称为一\n个 step。循环轮数与调用哪些工具由模型在运行时决定,因此执行结构在运行前无法确定。\n",
+    "publication_evidence": "PDF p.1 页眉：2026 年 8 月 24 日 02:36；未标时区。",
+    "full_title_in_capture": "DeepSeek Harness 规模化踩坑实录：耗时、成本、失败到底该怎么查",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0146",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "9c861dd1422d70ec1b0abf5589312875996ccf346c11ba6a034662d3c53d9b9e"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "安装前置条件对插件运行环境 Node.js 版本写法不一致：p.5 总述要求 >=22.19.0，稍后又写 >=18.0.0。笔记不自行裁决。",
+        "pages": [
+          5
+        ],
+        "status": "source_conflict"
+      }
+    ],
+    "outputs": [
+      "AI_DeepSeek Harness观测.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "coverage": "通读 p.1–12；覆盖 DSH 运行模型、原生观测边界、插件数据路径、五层 Span、控制台能力、安装配置、安全、其他上报渠道和总结。",
+    "fact_checks": [
+      {
+        "item": "Node版本要求",
+        "original_value": "总述写>=22.19.0，后文写>=18.0.0",
+        "pages": [
+          5
+        ],
+        "result": "原文冲突，笔记保留两种说法。"
+      },
+      {
+        "item": "数据链路",
+        "original_value": "插件/上报链路采集Harness运行数据",
+        "pages": [
+          2,
+          4
+        ],
+        "result": "按正文机制概括。"
+      },
+      {
+        "item": "Span层级",
+        "original_value": "运行记录组织为五层Span",
+        "pages": [
+          4,
+          6
+        ],
+        "result": "与原文层级示意一致。"
+      },
+      {
+        "item": "诊断维度",
+        "original_value": "耗时、Token/成本、错误及调用路径支持定位",
+        "pages": [
+          6,
+          9
+        ],
+        "result": "按控制台功能归纳。"
+      },
+      {
+        "item": "安全提示",
+        "original_value": "配置涉及密钥、上报范围与权限",
+        "pages": [
+          9,
+          11
+        ],
+        "result": "不当作完整安全审计。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_DeepSeek Harness观测.md",
+      "sha256": "c4ce9c5d8947486124c002df7b7f8139f7b71926e896e768f25e3bcfcdd7e4c1",
+      "size_bytes": 19597
+    },
+    "independent_crosscheck": {
+      "reviewer": "root",
+      "note_sha256": "c4ce9c5d8947486124c002df7b7f8139f7b71926e896e768f25e3bcfcdd7e4c1",
+      "review_sha256": "6579e1353892d2ff7bfe529270af00705da6cd800e74d9ad7baae2cc10d79cce",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "2–5",
+          "check": "核对本机轨迹与规模化 OpenTelemetry 插件路径、五层 Span 和图示；层次名与正文一致。"
+        },
+        {
+          "pages": "6–9",
+          "check": "核对 Node 版本矛盾、凭证采集配置与 batch/queue/flush 参数；保留冲突及安全边界，未执行接入。"
+        },
+        {
+          "pages": "10–12",
+          "check": "核对其他接入方式、总结及末尾二维码/账号页；第12页空白。"
+        }
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "9c861dd1422d70ec1b0abf5589312875996ccf346c11ba6a034662d3c53d9b9e"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "c21ca27ffd611c7a9807697bcddb6f7ef7f0914eb900739450d948bfa84d357e"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 31,
+        "text_layer_sha256": "b8c04744081d45f11e9657e7aaf8deb2129bb2c1d3de86d7fc35ad60eed2c8f8",
+        "text_layer_char_count": 927
+      },
+      {
+        "page": 2,
+        "md_start_line": 39,
+        "md_end_line": 51,
+        "text_layer_sha256": "e217ebc310fdb02557a88ad169191972b2683fc20c20b22ce1d38d304bd2fe09",
+        "text_layer_char_count": 388
+      },
+      {
+        "page": 3,
+        "md_start_line": 59,
+        "md_end_line": 79,
+        "text_layer_sha256": "2bab61afc751ce57a8f9334f6b3d33a90c4a6e80c86f8a7c38aba4a1d43de6b5",
+        "text_layer_char_count": 726
+      },
+      {
+        "page": 4,
+        "md_start_line": 87,
+        "md_end_line": 100,
+        "text_layer_sha256": "5c81e3f86b27227f00b2638bddfcb848cc7d8f9b5cae729a30a4cdab8782765d",
+        "text_layer_char_count": 568
+      },
+      {
+        "page": 5,
+        "md_start_line": 108,
+        "md_end_line": 119,
+        "text_layer_sha256": "744cd2eee4e5dde7eb2879316515dfc8fceda4c82d388c5265cc2bb055b94621",
+        "text_layer_char_count": 475
+      },
+      {
+        "page": 6,
+        "md_start_line": 127,
+        "md_end_line": 154,
+        "text_layer_sha256": "8fc9fc233d05b86020710c786e2548018b33e853bf9ea5f5b4a8d529dd40a95d",
+        "text_layer_char_count": 716
+      },
+      {
+        "page": 7,
+        "md_start_line": 162,
+        "md_end_line": 216,
+        "text_layer_sha256": "c3db45d47acef4631e922cb5cf707f83bdfb5727a51150d88fdbbf73aa5bfb9b",
+        "text_layer_char_count": 1172
+      },
+      {
+        "page": 8,
+        "md_start_line": 224,
+        "md_end_line": 253,
+        "text_layer_sha256": "8d9f0914e8b35d74b7a5eb594f14c9536db7dc9e27ac4683af214e015c42840d",
+        "text_layer_char_count": 893
+      },
+      {
+        "page": 9,
+        "md_start_line": 261,
+        "md_end_line": 280,
+        "text_layer_sha256": "3d2b59f4c26500c3df94bfbdd49085a040e1eeb15dcb17b30020d41d6f54de33",
+        "text_layer_char_count": 814
+      },
+      {
+        "page": 10,
+        "md_start_line": 288,
+        "md_end_line": 301,
+        "text_layer_sha256": "968803c609ee63ef19a61042048a6696783e50053aa1ff2ec079b7572eacdc99",
+        "text_layer_char_count": 569
+      },
+      {
+        "page": 11,
+        "md_start_line": 309,
+        "md_end_line": 316,
+        "text_layer_sha256": "3f99fec6bef152a6a2faf171fe079d36f2a10c418af6a236743d71e4c0c775c7",
+        "text_layer_char_count": 77
+      },
+      {
+        "page": 12,
+        "md_start_line": 324,
+        "md_end_line": 323,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "安装前置条件对插件运行环境 Node.js 版本写法不一致：p.5 总述要求 >=22.19.0，稍后又写 >=18.0.0。笔记不自行裁决。",
+        "pages": [
+          5
+        ],
+        "status": "source_conflict"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/DeepSeek Harness规模化踩坑实录：耗时、成本、失败到底该怎么查.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "9c861dd1422d70ec1b0abf5589312875996ccf346c11ba6a034662d3c53d9b9e",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent成本与上下文预算.md",
+      "../../20_topics/Agent评测与反馈.md",
+      "../../20_topics/Harness与模型协同.md",
+      "../../20_topics/异常监控与稳定性.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_DeepSeek Harness观测.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

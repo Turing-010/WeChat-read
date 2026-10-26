@@ -1,0 +1,137 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0307",
+  "title": "万字长文详解腾讯优图RAG技术的架构设计与创新实践",
+  "short_title": "优图RAG全栈架构",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": "优图RAG技术",
+  "source_url": null,
+  "published_at": "2025-09-08T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "万字⻓⽂详解腾讯优图         RAG技术的架构设计与创新实践\n\n优图RAG技术 腾讯技术⼯程   2025年9⽉8⽇ 02:36⼴东  56⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                         ⽂末抽奖~\n                         ⽂末抽奖~\n                         ⽂末抽奖~\n\n 导语\n\n\n在信息爆炸的时代，如何从海量数据中精准获取知识并⽣成智能回答，已成为A I落地的核⼼\n挑战。腾讯优图实验室    凭借前沿的RAG   体系，突破传统检索与⽣成的局限，打造了⼀套覆\n盖语义检索、结构化表检索、图检索的全栈解决⽅案         。\n\n\n本⽂将为你深度解析优图实验室      RAG技术的架构设计与创新实践      ：从多阶段训练的2B 级\nEm  bedding   模 型 、Reranker分 层 蒸 馏 ， 到 结构化 表 的智 能 解 析 与查询 ，再到 ⾃ 研\nG  raphR",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "RAG与知识库",
+    "决策知识结构化",
+    "AI评测与可观测性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/万字长文详解腾讯优图RAG技术的架构设计与创新实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:09:37-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "fa2bd8fa7fef79bd54a4b70317be2ca170e0a35eeb58c8b83b40bc179e7228c4",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "榜单、成本及效果提升为2025年作者/实验协议，不能泛称始终优于其他框架。",
+        "大量实验表格/公式在图内；只复核1、6、21、23，未逐项转写所有数值。",
+        "Reranker分层输出只有真正提前退出计算才可能节省推理；选浅层分数本身不自动省算力。",
+        "SQL可执行/AST合法不证明业务语义正确，语义扩展ES会改变匹配边界。"
+      ],
+      "size_bytes": 11912181,
+      "page_count": 27
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:09:37-07:00",
+  "directory": "腾讯技术工程/优图RAG全栈架构+25.9.8",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:09:37-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "fa2bd8fa7fef79bd54a4b70317be2ca170e0a35eeb58c8b83b40bc179e7228c4",
+    "output_path": "MD.md",
+    "output_sha256": "4ae4a893a93d4a80cdfba377f4cf86f73a017b4c2e06d52c5857eb6b7cad654b",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 27,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "visual_pages": [
+        1,
+        6,
+        21,
+        23
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "榜单、成本及效果提升为2025年作者/实验协议，不能泛称始终优于其他框架。",
+      "大量实验表格/公式在图内；只复核1、6、21、23，未逐项转写所有数值。",
+      "Reranker分层输出只有真正提前退出计算才可能节省推理；选浅层分数本身不自动省算力。",
+      "SQL可执行/AST合法不证明业务语义正确，语义扩展ES会改变匹配边界。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/万字长文详解腾讯优图RAG技术的架构设计与创新实践.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/优图RAG全栈架构+25.9.8/RAW.pdf",
+    "sha256": "fa2bd8fa7fef79bd54a4b70317be2ca170e0a35eeb58c8b83b40bc179e7228c4",
+    "copied_at": "2026-10-23T06:09:37-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/检索与文档解析.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

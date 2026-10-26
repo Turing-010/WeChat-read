@@ -1,0 +1,870 @@
+{
+  "directory": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程",
+  "requested": null,
+  "scope": {
+    "mode": "year",
+    "year": 2025
+  },
+  "before": {},
+  "saved": [
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/用AI写PPT，没想到效果这么好啊.pdf",
+      "bytes": 12471243,
+      "pages": 51,
+      "sha256": "f2f0d8625b349834354b055a251bfca7286efe202aa693df1d2782c2ccdab3cf",
+      "content_quality": "unverified",
+      "title": "用AI写PPT，没想到效果这么好啊",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-12-29",
+      "timing_id": "d79a9459687f4391b0fa0a7e53611893"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/教你从零“手搓”一个大模型，别再只会调用API了.pdf",
+      "bytes": 13308928,
+      "pages": 31,
+      "sha256": "de762d93b6e4baf353f3be90c9c104419c0e789698ce3b95fccab773e0efce89",
+      "content_quality": "unverified",
+      "title": "教你从零“手搓”一个大模型，别再只会调用API了",
+      "url": null,
+      "note": "正文已逐页确认到文末；预览显示全部页面且首屏正文和配图正常。",
+      "date": "2025-12-24",
+      "timing_id": "e4cccafd5125404094d97137551d67ed"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/揭秘！腾讯如何训练多智能体像专家一样设计游戏场景.pdf",
+      "bytes": 9761154,
+      "pages": 12,
+      "sha256": "04688cb623ea17ff0fd17968d2fa3779fb280d2f8c45f8827166d90d35202e8f",
+      "content_quality": "unverified",
+      "title": "揭秘！腾讯如何训练多智能体像专家一样设计游戏场景",
+      "url": null,
+      "note": "正文已逐页检查到文末；打印预览显示全部页面，前两页标题/图片正常。",
+      "date": "2025-12-22",
+      "timing_id": "bbbbdf13b99e4c3b9ecf11ace261b3dd"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/首发！建议你一定要看的《AI生成代码在野安全风险研究》.pdf",
+      "bytes": 4398025,
+      "pages": 10,
+      "sha256": "510438dfa9e5a864c592b8f084b999ae091c30cd1d379c79c64080aef621e53b",
+      "content_quality": "unverified",
+      "title": "首发！建议你一定要看的《AI生成代码在野安全风险研究》",
+      "url": null,
+      "note": "联合研究AI生成代码安全风险；正文检查至参考文献、赠礼区；预览全部页面正常。",
+      "date": "2025-12-19",
+      "timing_id": "d7e8fbe3e4444145aacbdbc6b467616b"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/全面布局智能视频图像压缩，腾讯TNC编解码多项国际赛事夺魁.pdf",
+      "bytes": 7185132,
+      "pages": 13,
+      "sha256": "1548c1a801d3fde4f6fb78f4c17bc6879e9f54feee8bd4202c39c35ca66f88ba",
+      "content_quality": "unverified",
+      "title": "全面布局智能视频图像压缩，腾讯TNC编解码多项国际赛事夺魁",
+      "url": null,
+      "note": "技术文章正文及图表已逐屏检查至公众号尾图；打印预览全部页面正常。",
+      "date": "2025-12-19",
+      "timing_id": "3213be7edbee4b7aab122b5562be4e25"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/鹅厂员工闭着眼睛写出来的代码都有哪些？.pdf",
+      "bytes": 17079490,
+      "pages": 9,
+      "sha256": "ce37cdf755cc49db7bc37cf2d62f894721067eb80195e9cccbf810825ab0e001",
+      "content_quality": "unverified",
+      "title": "鹅厂员工闭着眼睛写出来的代码都有哪些？",
+      "url": null,
+      "note": "技术代码实践分享；正文检查至赠礼区、评论区；PDF预览包含全部页面。",
+      "date": "2025-12-18",
+      "timing_id": "5a69033c27874b37a96d7e4530899d14"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/破除AI Agent自主操控风险：万字解读LangGraph“人工干预”机制，附零基础实战.pdf",
+      "bytes": 6939974,
+      "pages": 29,
+      "sha256": "170284a94557ab3e876277fa83c13118a27a963e52086767fd90e4dfe48078d1",
+      "content_quality": "unverified",
+      "title": "破除AI Agent自主操控风险：万字解读LangGraph“人工干预”机制，附零基础实战",
+      "url": null,
+      "note": "全文逐屏检查至参考文献、公众号卡片、末尾配图和留言区；正文图片加载完成。",
+      "date": "2025-12-15",
+      "timing_id": "661268a3587a45e9a723288c5f87f087"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/AI研发新范式：基于技术方案全链路生成代码.pdf",
+      "bytes": 7769070,
+      "pages": 11,
+      "sha256": "23c0b0c5671fbf230b21f08c614a0b1e54d1bfcc77e98e473d62a203c9ae3ece",
+      "content_quality": "unverified",
+      "title": "AI研发新范式：基于技术方案全链路生成代码",
+      "url": null,
+      "note": "正文逐屏检查到结语、公众号卡片和末尾配图；技术图表及长内容均已加载。",
+      "date": "2025-12-12",
+      "timing_id": "50ac45fbd1044ebab0143717f3fbbc80"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/让AI智能体拥有像人类的持久记忆：基于LangGraph的长短期记忆管理实践指南.pdf",
+      "bytes": 12041926,
+      "pages": 45,
+      "sha256": "1a21850d296c77d82a54f7a391169518cf35795c20aff77c21bdea20b4c5a4d8",
+      "content_quality": "unverified",
+      "title": "让AI智能体拥有像人类的持久记忆：基于LangGraph的长短期记忆管理实践指南",
+      "url": null,
+      "note": "全文逐屏检查到文末参考文献和留言区；PDF可解析为45页。",
+      "date": "2025-12-08",
+      "timing_id": "ca588314a1584eba9c2b6f6840c3b765"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/构建知识闭环：用CodeBuddy打造自我进化的数据分析体系.pdf",
+      "bytes": 5862647,
+      "pages": 27,
+      "sha256": "b8fb45529863c04c8f1aa8d35ebe2c37fab72ed7fbe198092419db4bf5a39704",
+      "content_quality": "unverified",
+      "title": "构建知识闭环：用CodeBuddy打造自我进化的数据分析体系",
+      "url": null,
+      "note": "全文逐屏检查至文末留言区；打印预览显示完整内容；PDF结构校验通过。",
+      "date": "2025-12-05",
+      "timing_id": "8058b07f968744b0afb8ab8f44285875"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/看懂这篇，你就能秒懂LLM底层秘密—Transformer原理解析.pdf",
+      "bytes": 20860089,
+      "pages": 35,
+      "sha256": "a21717e641b6632cff238fb2d24f1b25180c39cc88c7a703c7aec12806f9f5b3",
+      "content_quality": "unverified",
+      "title": "看懂这篇，你就能秒懂LLM底层秘密—Transformer原理解析",
+      "url": null,
+      "note": "Transformer technical explainer; all body screens, diagrams, ending and comment area inspected; print preview loaded; full article saved; visual PDF audit pending.",
+      "date": "2025-12-03",
+      "timing_id": "ccf23cc1edce47359f779afe686e0ce3"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/从CoT到AGI：深扒大模型LLM“深度思考”的技术演进.pdf",
+      "bytes": 10056223,
+      "pages": 23,
+      "sha256": "5211549aa6e9b8a2b35a4e2f1dc44500bc4887e04c28231931f58bf933cbed58",
+      "content_quality": "unverified",
+      "title": "从CoT到AGI：深扒大模型LLM“深度思考”的技术演进",
+      "url": null,
+      "note": "Technical article on LLM deep reasoning evolution; inspected all body screens, figures, references, footer and comment area; print preview loaded; full article saved; visual PDF audit pending.",
+      "date": "2025-12-01",
+      "timing_id": "5e008691252c4c7c9d6969d640bb7900"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯Bugly2025鸿蒙应用行业质量分析报告.pdf",
+      "bytes": 2965611,
+      "pages": 9,
+      "sha256": "4a14a1a6203bcb08b303bf555c27c5623f8e503ab6b3675e195372a0d4c0bc14",
+      "content_quality": "unverified",
+      "title": "腾讯Bugly2025鸿蒙应用行业质量分析报告",
+      "url": null,
+      "note": "Technical HarmonyOS app quality report; inspected body, charts, issue analyses, conclusion, QR footer and comment area; print preview loaded; full report saved; visual PDF audit pending.",
+      "date": "2025-12-01",
+      "timing_id": "60cd1b2a871041ba89cf9b5fa6c4b473"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/2025必看系列：AI如何重新定义研究？万字长文讲透Deep Research.pdf",
+      "bytes": 9702101,
+      "pages": 24,
+      "sha256": "5d73120fb6576635eb65ffa57f8180f8cd5f5fe267143518f3f5f50cbee5d4e1",
+      "content_quality": "unverified",
+      "title": "2025必看系列：AI如何重新定义研究？万字长文讲透Deep Research",
+      "url": null,
+      "note": "11月28日Deep Research技术综述，含RAG演进、Agent四模块、评测基准、主流系统及数据源缺陷分析；已逐屏检查至参考文献、公众号尾图和留言区。PDF结构校验通过；尚未进行逐页视觉内容审计。",
+      "date": "2025-11-28",
+      "timing_id": "85ec1b6553e1499a886ea10ff59175e3"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/鹅厂员工的“神之一手”代码都长什么样？.pdf",
+      "bytes": 7350180,
+      "pages": 13,
+      "sha256": "fa3ba7882eb2a34d5e448b72af426abea91cb9cc5b7aba30cb74b8e8a2c30090",
+      "content_quality": "unverified",
+      "title": "鹅厂员工的“神之一手”代码都长什么样？",
+      "url": null,
+      "note": "11月26日技术文章，分享6位鹅厂工程师的算法与工程代码案例，含不可变链表逆序打印、分布式订单幂等/Redis互斥、Go闭包内存泄漏、Java截屏工具等；已检查至互动小程序、公众号尾图、上一篇/下一篇和留言区。PDF结构校验通过；未逐页视觉审计。",
+      "date": "2025-11-26",
+      "timing_id": "4e6fa4d688f24d548ad74644d8f4f14a"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/深入AI Agent内核：Google gemini-cli 源码深度解构.pdf",
+      "bytes": 2693474,
+      "pages": 16,
+      "sha256": "5f21ae203a195206f93a6777c25f79a076d8ed72608357271f2d9013a0e83086",
+      "content_quality": "unverified",
+      "title": "深入AI Agent内核：Google gemini-cli 源码深度解构",
+      "url": null,
+      "note": "2025-11-24；已检查正文至参考文献、公众号卡片及文末留言；技术文章（Gemini CLI源码、Agent内核）。",
+      "date": "2025-11-24",
+      "timing_id": "f1020169ac52496696c1b71dfc6ee9e7"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/这大概是我见过最通俗易懂的AI发展历程科普详文了.pdf",
+      "bytes": 18209741,
+      "pages": 30,
+      "sha256": "4d6805a0f8faf6b5fd26517e1b10cf4306d9f13d7f5838e44ebe49baa6b24efe",
+      "content_quality": "unverified",
+      "title": "这大概是我见过最通俗易懂的AI发展历程科普详文了",
+      "url": null,
+      "note": "2025-11-21；全文检查至留言；技术科普，涵盖NLP、ML、RNN/CNN/Transformer、LLM、多模态、Agent、RAG、微调及幻觉治理。",
+      "date": "2025-11-21",
+      "timing_id": "23abd9f0f1d34c9f8c85fe57321cf6e5"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/2025年终必看：开源大模型哪家强？9大模型架构演变历程一次性看明白.pdf",
+      "bytes": 14573675,
+      "pages": 42,
+      "sha256": "83991f4c822908afd8a596e02da735f3480cdf016db3dc05349ae3ff37bb984f",
+      "content_quality": "unverified",
+      "title": "2025年终必看：开源大模型哪家强？9大模型架构演变历程一次性看明白",
+      "url": null,
+      "note": "标题/技术内容已核到留言区文末；通过微信打印导出；结构检查通过，未逐页视觉审阅。",
+      "date": "2025-11-10",
+      "timing_id": "b76916bdd21047ed84c82124214f227b"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/获NVIDIA致谢：悟空Agent的实践、复盘与迭代.pdf",
+      "bytes": 5133575,
+      "pages": 9,
+      "sha256": "c37daa76bab1c59e8b0612f60ae4261e50c7eba59090e414648e41d78f32290a",
+      "content_quality": "unverified",
+      "title": "获NVIDIA致谢：悟空Agent的实践、复盘与迭代",
+      "url": null,
+      "note": "全文已核到结尾图、前后篇导航及留言区；通过微信打印导出；结构检查通过，未逐页视觉审阅。",
+      "date": "2025-11-07",
+      "timing_id": "fb64346418bf45bdb9ae289b68cb800b"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/微信测试中心刷新业界标准，斩获 ICCV 图像质量评估挑战赛冠军.pdf",
+      "bytes": 12430092,
+      "pages": 14,
+      "sha256": "1f93a335715d8de400d00349dd703ea9cf62df9414875053a0e1f9e3e9da0cd6",
+      "content_quality": "unverified",
+      "title": "微信测试中心刷新业界标准，斩获 ICCV 图像质量评估挑战赛冠军",
+      "url": null,
+      "note": "图像质量评估技术文章，正文逐屏检查到评论区，打印预览已加载。结构核验通过；未逐页视觉审阅。",
+      "date": "2025-11-05",
+      "timing_id": "099b23dbd800459db8e3f86d33fd4b9a"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯发布大模型思考早停算法SpecExit，效果无损，端到端加速2.5倍！.pdf",
+      "bytes": 3443863,
+      "pages": 8,
+      "sha256": "70d547b32f08f6b36853b4f0f0d501340bb2f6de01460fa5b9adf42b7522b8f3",
+      "content_quality": "unverified",
+      "title": "腾讯发布大模型思考早停算法SpecExit，效果无损，端到端加速2.5倍！",
+      "url": null,
+      "note": "大模型推理早停算法技术文章，正文逐屏检查到末图、拓展阅读及评论区；结构核验通过，未逐页视觉审阅。",
+      "date": "2025-10-31",
+      "timing_id": "8ee3289e445c4281a76a7ee120905078"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/AI编程上瘾指南，一天不用浑身难受.pdf",
+      "bytes": 9156817,
+      "pages": 38,
+      "sha256": "ddfb1d76877886db3b6b9fb2957094f4e9f40140ded0050eefba141cb77168a3",
+      "content_quality": "unverified",
+      "title": "AI编程上瘾指南，一天不用浑身难受",
+      "url": null,
+      "note": "technical article; checked to footer and comments; structural check passed, not visually audited page by page.",
+      "date": "2025-10-27",
+      "timing_id": "35a10add691e4a45ae2683ef15a64e1c"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/前端真的比后端简单吗？.pdf",
+      "bytes": 15696216,
+      "pages": 9,
+      "sha256": "f7ef1e8328577989f0ff17be581ce225c4cbad4d391d2e23c0ab83365ac07d70",
+      "content_quality": "unverified",
+      "title": "前端真的比后端简单吗？",
+      "url": null,
+      "note": "technical article; eight engineer perspectives on frontend and backend engineering complexity; checked to footer and comments; structural check passed, not visually audited page by page.",
+      "date": "2025-10-22",
+      "timing_id": "b1bceaa943394c6e84223e03cb8ea40c"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/一文讲懂Agent及其主流框架：自己想、自己干、自己复盘的才是好Agent!.pdf",
+      "bytes": 9092171,
+      "pages": 15,
+      "sha256": "9935f24bebb9a737021b325038350c307e419e020ece0450813f5447594836ef",
+      "content_quality": "unverified",
+      "title": "一文讲懂Agent及其主流框架：自己想、自己干、自己复盘的才是好Agent!",
+      "url": null,
+      "note": "technical article; compares AutoGPT, LangGraph, Dify, CrewAI, AutoGen and includes implementation examples; checked to footer and comments; structural check passed, not visually audited page by page.",
+      "date": "2025-10-20",
+      "timing_id": "68b53c07b12442a68a169bd47eee763b"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/24小时快速入门大热语言Rust！学不会来找我.pdf",
+      "bytes": 2931775,
+      "pages": 25,
+      "sha256": "8948c00366c7b45f46fa3aa08445ce422f391cf23f6907a97d83c2347d0707a9",
+      "content_quality": "unverified",
+      "title": "24小时快速入门大热语言Rust！学不会来找我",
+      "url": null,
+      "note": "technical Rust tutorial; checked to footer and comments; structural check passed, not visually audited page by page.",
+      "date": "2025-10-13",
+      "timing_id": "44a3d4c605b344e6a555d8a83bdb0f25"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/tRPC-Agent-Go：构建智能AI应用的Go语言Agent框架.pdf",
+      "bytes": 4206848,
+      "pages": 43,
+      "sha256": "469ce4ce5a14998bd2445e25a117bd5de2fdab2bef81ff72717cad8820d176f9",
+      "content_quality": "unverified",
+      "title": "tRPC-Agent-Go：构建智能AI应用的Go语言Agent框架",
+      "url": null,
+      "note": "technical Go Agent framework article; checked to footer, QR and comments; structural check passed, not visually audited page by page.",
+      "date": "2025-10-13",
+      "timing_id": "8486abd223ee41878c6be1bb5ec524d1"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯发布1.58Bit大模型量化新算法Tequila！突破\"死区陷阱\"，效果性能刷新SOTA.pdf",
+      "bytes": 3230854,
+      "pages": 7,
+      "sha256": "97ee1eb230df18863deb1446d4a2d6a3494bf4d6ef28783155e5a6e50208c1ab",
+      "content_quality": "unverified",
+      "title": "腾讯发布1.58Bit大模型量化新算法Tequila！突破\"死区陷阱\"，效果性能刷新SOTA",
+      "url": null,
+      "note": "technical paper on 1.58-bit LLM quantization; checked through footer and comments; structural check passed, not visually audited page by page.",
+      "date": "2025-10-10",
+      "timing_id": "b05f03c99a964437b437d5ee9d64c0bd"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/微信开发工程师总结的20条C++性能陷阱与实用特性，读起来很过瘾.pdf",
+      "bytes": 4194019,
+      "pages": 20,
+      "sha256": "600adc78231dd20c603bedbc77e588f350f8487a0a5c028796f729bd9dd56760",
+      "content_quality": "unverified",
+      "title": "微信开发工程师总结的20条C++性能陷阱与实用特性，读起来很过瘾",
+      "url": null,
+      "note": "technical C++ performance pitfalls and language features with code examples; checked through summary, account footer and comments; structurally verified, not visually audited page by page.",
+      "date": "2025-09-26",
+      "timing_id": "256ef9d8f92143f799cdd4ea14f29a2d"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/00后黑客落网！曾运营大型僵尸网络，频繁攻击腾讯游戏、DeepSeek、X平台.pdf",
+      "bytes": 3846127,
+      "pages": 12,
+      "sha256": "4cc3f85a4ba35c2050d8b71f849ad0f0e90f573555f254bc1330b43a1b2edf2d",
+      "content_quality": "unverified",
+      "title": "00后黑客落网！曾运营大型僵尸网络，频繁攻击腾讯游戏、DeepSeek、X平台",
+      "url": null,
+      "note": "technical cybersecurity report covering RapperBot botnet behavior, sample analysis, attack activity and defenses; checked through conclusion, account footer and comments; structurally verified, not visually audited page by page.",
+      "date": "2025-09-22",
+      "timing_id": "788629e254dd430498dbab0f4e94f4da"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/开源项目的死与新生！.pdf",
+      "bytes": 5162383,
+      "pages": 12,
+      "sha256": "7ba903ccabbfe716ee70c3ce1a125e3d9552831e65f66e8b3a25176818e7ad37",
+      "content_quality": "unverified",
+      "title": "开源项目的死与新生！",
+      "url": null,
+      "note": "software engineering article on Element Plus, open-source maintenance, governance and project lifecycle; checked through article end, account footer and comments; structurally verified, not visually audited page by page.",
+      "date": "2025-09-19",
+      "timing_id": "c7f5f676cb0948908bd8aa63eef5755b"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯开源框架 Kuikly 再升级！率先适配“液态玻璃”，原生体验更极致.pdf",
+      "bytes": 2361177,
+      "pages": 10,
+      "sha256": "60b4e844972723703156d4b35b5869d254f5ae8fbbb5bf09cf549774a22e0cdd",
+      "content_quality": "unverified",
+      "title": "腾讯开源框架 Kuikly 再升级！率先适配“液态玻璃”，原生体验更极致",
+      "url": null,
+      "note": "technical cross-platform UI framework update with Liquid Glass adaptation, rendering strategy, component APIs and implementation examples; checked through footer and comments; structurally verified, not visually audited page by page.",
+      "date": "2025-09-15",
+      "timing_id": "0f32ddc8b2cb42b1b8e3a2f6d17abca9"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/大模型提示词技巧Prompt Engineering，看这一篇就够了.pdf",
+      "bytes": 2142286,
+      "pages": 9,
+      "sha256": "71b473feb7f647b2e325eeff0f50f2504911e75204d5a1cf7d1ad8597c7363d1",
+      "content_quality": "unverified",
+      "title": "大模型提示词技巧Prompt Engineering，看这一篇就够了",
+      "url": null,
+      "note": "正文已确认至文末及留言栏；预览可见正文，但个别内嵌图仍显示加载占位；结构已核验，未逐页视觉审计。",
+      "date": "2025-09-12",
+      "timing_id": "72e8c7cf659d44fa914f53e66b7cb7ae"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/不蒸馏也超强？揭秘端到端文档OCR模型 POINTS-Reader.pdf",
+      "bytes": 3720059,
+      "pages": 9,
+      "sha256": "cfcae9e8926f7a76a4fc35011df891fdf50469bafad21338a7af8c3d2c21d71f",
+      "content_quality": "unverified",
+      "title": "不蒸馏也超强？揭秘端到端文档OCR模型 POINTS-Reader",
+      "url": null,
+      "note": "正文逐页确认至总结、公众号信息及留言区；方法示意图、表格和实验图可见；结构已核验，未逐页视觉审计。",
+      "date": "2025-09-12",
+      "timing_id": "84c055efb73c4b179a1a68630f5b8c48"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/万字长文详解腾讯优图RAG技术的架构设计与创新实践.pdf",
+      "bytes": 11912181,
+      "pages": 27,
+      "sha256": "fa2bd8fa7fef79bd54a4b70317be2ca170e0a35eeb58c8b83b40bc179e7228c4",
+      "content_quality": "unverified",
+      "title": "万字长文详解腾讯优图RAG技术的架构设计与创新实践",
+      "url": null,
+      "note": "正文逐页确认到参考文献、文末活动、公众号信息和留言区；架构图、表格及实验图可见；结构已核验，未逐页视觉审计。",
+      "date": "2025-09-08",
+      "timing_id": "84eb92e9bfd0411098ba27da90dbf7d2"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/揭秘腾讯内部科研组织 ARC Lab：找最好的⼈才，做最难的事情.pdf",
+      "bytes": 10812926,
+      "pages": 14,
+      "sha256": "8937ea7a67c940b4076c6de6652330b9d4fa3132aeda6c165f8cabc3faac0aaa",
+      "content_quality": "unverified",
+      "title": "揭秘腾讯内部科研组织 ARC Lab：找最好的⼈才，做最难的事情",
+      "url": null,
+      "note": "文章前半部分介绍组织机制，后半部分含多模态与视频生成研究成果；正文已确认至后记、作者信息及留言；结构核验，未逐页视觉审计。",
+      "date": "2025-09-06",
+      "timing_id": "0a210cb8cc094c71bd4bd6e56aca9e08"
+    }
+  ],
+  "version": 2,
+  "cursor": {
+    "last_success": {
+      "title": "揭秘腾讯内部科研组织 ARC Lab：找最好的⼈才，做最难的事情",
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/揭秘腾讯内部科研组织 ARC Lab：找最好的⼈才，做最难的事情.pdf",
+      "date": "2025-09-06"
+    },
+    "next_article": null,
+    "boundary": null,
+    "list_hint": "9月8日优图RAG长文已保存。9月6日卡片是ARC Lab科研组织介绍，待看全文判断是否技术；9月4日安全主题待看标题。"
+  },
+  "timing": {
+    "totals": {
+      "open": 979.7625396251678,
+      "extra_wait": 26.688781261444092,
+      "body": 16212.136028051376,
+      "print_save": 17812.567511320114,
+      "verify": 36.864418506622314,
+      "return_list": 38768.759060144424
+    },
+    "articles": {
+      "d79a9459687f4391b0fa0a7e53611893": {
+        "title": "用AI写PPT，没想到效果这么好啊",
+        "date": "2025-12-29",
+        "phases": {
+          "open": 16.22400951385498,
+          "extra_wait": 2.021549940109253,
+          "body": 170.45090341567993,
+          "print_save": 265.359858751297,
+          "verify": 1.0725181102752686,
+          "return_list": 116.96371102333069
+        }
+      },
+      "e4cccafd5125404094d97137551d67ed": {
+        "title": "教你从零“手搓”一个大模型，别再只会调用API了",
+        "date": "2025-12-24",
+        "phases": {
+          "open": 51.07634711265564,
+          "extra_wait": 1.0135300159454346,
+          "body": 2985.395262002945,
+          "print_save": 7094.4713678359985,
+          "verify": 1.052234172821045,
+          "return_list": 50.99515390396118
+        }
+      },
+      "bbbbdf13b99e4c3b9ecf11ace261b3dd": {
+        "title": "揭秘！腾讯如何训练多智能体像专家一样设计游戏场景",
+        "date": "2025-12-22",
+        "phases": {
+          "open": 130.14743733406067,
+          "extra_wait": 2.016444683074951,
+          "body": 545.1651039123535,
+          "print_save": 363.7411859035492,
+          "verify": 1.0643870830535889,
+          "return_list": 30.979504108428955
+        }
+      },
+      "d7e8fbe3e4444145aacbdbc6b467616b": {
+        "title": "首发！建议你一定要看的《AI生成代码在野安全风险研究》",
+        "date": "2025-12-19",
+        "phases": {
+          "open": 0.03465008735656738,
+          "body": 175.8183479309082,
+          "extra_wait": 1.610954999923706,
+          "print_save": 99.80629897117615,
+          "verify": 1.0647571086883545,
+          "return_list": 25.62186908721924
+        }
+      },
+      "3213be7edbee4b7aab122b5562be4e25": {
+        "title": "全面布局智能视频图像压缩，腾讯TNC编解码多项国际赛事夺魁",
+        "date": "2025-12-19",
+        "phases": {
+          "open": 0.03212904930114746,
+          "body": 199.76162123680115,
+          "extra_wait": 1.6064848899841309,
+          "print_save": 170.27781701087952,
+          "verify": 1.0637638568878174,
+          "return_list": 40.58311104774475
+        }
+      },
+      "5a69033c27874b37a96d7e4530899d14": {
+        "title": "鹅厂员工闭着眼睛写出来的代码都有哪些？",
+        "date": "2025-12-18",
+        "phases": {
+          "open": 0.031275033950805664,
+          "body": 335.5161108970642,
+          "extra_wait": 2.415282964706421,
+          "print_save": 414.7288360595703,
+          "verify": 1.0707509517669678,
+          "return_list": 233.21978497505188
+        }
+      },
+      "661268a3587a45e9a723288c5f87f087": {
+        "title": "破除AI Agent自主操控风险：万字解读LangGraph“人工干预”机制，附零基础实战",
+        "date": "2025-12-15",
+        "phases": {
+          "open": 0.03367185592651367,
+          "body": 675.0467309951782,
+          "extra_wait": 1.6110332012176514,
+          "print_save": 171.95297002792358,
+          "verify": 1.0659818649291992,
+          "return_list": 40.49602675437927
+        }
+      },
+      "50ac45fbd1044ebab0143717f3fbbc80": {
+        "title": "AI研发新范式：基于技术方案全链路生成代码",
+        "date": "2025-12-12",
+        "phases": {
+          "open": 78.88138794898987,
+          "extra_wait": 1.6096341609954834,
+          "body": 209.04227805137634,
+          "print_save": 279.59490299224854,
+          "verify": 1.061640977859497,
+          "return_list": 75.5794358253479
+        }
+      },
+      "ca588314a1584eba9c2b6f6840c3b765": {
+        "title": "让AI智能体拥有像人类的持久记忆：基于LangGraph的长短期记忆管理实践指南",
+        "date": "2025-12-08",
+        "phases": {
+          "open": 46.57002782821655,
+          "body": 1467.93741106987,
+          "print_save": 549.1434681415558,
+          "extra_wait": 0.20468592643737793,
+          "verify": 1.0447180271148682,
+          "return_list": 36053.18823099136
+        }
+      },
+      "8058b07f968744b0afb8ab8f44285875": {
+        "title": "构建知识闭环：用CodeBuddy打造自我进化的数据分析体系",
+        "date": "2025-12-05",
+        "phases": {
+          "open": 16.279003858566284,
+          "body": 184.49708104133606,
+          "print_save": 160.57667684555054,
+          "verify": 1.0532801151275635,
+          "return_list": 49.724241971969604
+        }
+      },
+      "ccf23cc1edce47359f779afe686e0ce3": {
+        "title": "看懂这篇，你就能秒懂LLM底层秘密—Transformer原理解析",
+        "date": "2025-12-03",
+        "phases": {
+          "open": 37.968217849731445,
+          "body": 464.4955880641937,
+          "print_save": 62.208301067352295,
+          "verify": 1.05781888961792,
+          "return_list": 11.901566982269287
+        }
+      },
+      "5e008691252c4c7c9d6969d640bb7900": {
+        "title": "从CoT到AGI：深扒大模型LLM“深度思考”的技术演进",
+        "date": "2025-12-01",
+        "phases": {
+          "body": 201.18685722351074,
+          "print_save": 93.46806788444519,
+          "verify": 1.05594801902771,
+          "return_list": 24.498682975769043
+        }
+      },
+      "60cd1b2a871041ba89cf9b5fa6c4b473": {
+        "title": "腾讯Bugly2025鸿蒙应用行业质量分析报告",
+        "date": "2025-12-01",
+        "phases": {
+          "body": 119.95837306976318,
+          "print_save": 110.0007791519165,
+          "verify": 1.054152011871338,
+          "return_list": 130.8110179901123
+        }
+      },
+      "85ec1b6553e1499a886ea10ff59175e3": {
+        "title": "2025必看系列：AI如何重新定义研究？万字长文讲透Deep Research",
+        "date": "2025-11-28",
+        "phases": {
+          "body": 737.2084279060364,
+          "print_save": 49.92565393447876,
+          "verify": 1.049666166305542,
+          "return_list": 190.5108380317688
+        }
+      },
+      "4e6fa4d688f24d548ad74644d8f4f14a": {
+        "title": "鹅厂员工的“神之一手”代码都长什么样？",
+        "date": "2025-11-26",
+        "phases": {
+          "body": 136.49839115142822,
+          "print_save": 57.37984585762024,
+          "verify": 1.046401023864746,
+          "return_list": 95.63152313232422
+        }
+      },
+      "f1020169ac52496696c1b71dfc6ee9e7": {
+        "title": "深入AI Agent内核：Google gemini-cli 源码深度解构",
+        "date": "2025-11-24",
+        "phases": {
+          "body": 301.50260186195374,
+          "print_save": 4641.594210147858,
+          "verify": 1.047591209411621,
+          "return_list": 29.819588899612427
+        }
+      },
+      "23abd9f0f1d34c9f8c85fe57321cf6e5": {
+        "title": "这大概是我见过最通俗易懂的AI发展历程科普详文了",
+        "date": "2025-11-21",
+        "phases": {
+          "body": 698.6419558525085,
+          "print_save": 127.52036714553833,
+          "verify": 1.0490469932556152,
+          "return_list": 379.33804273605347
+        }
+      },
+      "b76916bdd21047ed84c82124214f227b": {
+        "title": "2025年终必看：开源大模型哪家强？9大模型架构演变历程一次性看明白",
+        "date": "2025-11-10",
+        "phases": {
+          "open": 25.223253965377808,
+          "body": 823.1470868587494,
+          "print_save": 359.4707450866699,
+          "verify": 1.0485339164733887,
+          "return_list": 78.92063307762146
+        }
+      },
+      "fb64346418bf45bdb9ae289b68cb800b": {
+        "title": "获NVIDIA致谢：悟空Agent的实践、复盘与迭代",
+        "date": "2025-11-07",
+        "phases": {
+          "open": 63.39783596992493,
+          "body": 110.85073614120483,
+          "print_save": 161.16230607032776,
+          "verify": 1.0467708110809326,
+          "return_list": 248.24528908729553
+        }
+      },
+      "099b23dbd800459db8e3f86d33fd4b9a": {
+        "title": "微信测试中心刷新业界标准，斩获 ICCV 图像质量评估挑战赛冠军",
+        "date": "2025-11-05",
+        "phases": {
+          "open": 63.558249950408936,
+          "body": 216.40767812728882,
+          "extra_wait": 1.0113983154296875,
+          "print_save": 85.7320306301117,
+          "verify": 1.050680160522461,
+          "return_list": 19.946319818496704
+        }
+      },
+      "8ee3289e445c4281a76a7ee120905078": {
+        "title": "腾讯发布大模型思考早停算法SpecExit，效果无损，端到端加速2.5倍！",
+        "date": "2025-10-31",
+        "phases": {
+          "open": 39.82670736312866,
+          "extra_wait": 1.0092167854309082,
+          "body": 66.93134999275208,
+          "print_save": 174.60171103477478,
+          "verify": 1.0473408699035645,
+          "return_list": 34.96746206283569
+        }
+      },
+      "35a10add691e4a45ae2683ef15a64e1c": {
+        "title": "AI编程上瘾指南，一天不用浑身难受",
+        "date": "2025-10-27",
+        "phases": {
+          "open": 24.77117896080017,
+          "body": 681.060772895813,
+          "extra_wait": 0.5056707859039307,
+          "print_save": 119.61790800094604,
+          "verify": 1.0450761318206787,
+          "return_list": 64.22465705871582
+        }
+      },
+      "b1bceaa943394c6e84223e03cb8ea40c": {
+        "title": "前端真的比后端简单吗？",
+        "date": "2025-10-22",
+        "phases": {
+          "body": 135.5372278690338,
+          "extra_wait": 2.0108189582824707,
+          "print_save": 66.56640100479126,
+          "verify": 1.0510809421539307,
+          "return_list": 33.283228158950806
+        }
+      },
+      "68b53c07b12442a68a169bd47eee763b": {
+        "title": "一文讲懂Agent及其主流框架：自己想、自己干、自己复盘的才是好Agent!",
+        "date": "2025-10-20",
+        "phases": {
+          "body": 366.2507221698761,
+          "extra_wait": 0.503363847732544,
+          "print_save": 354.2965610027313,
+          "verify": 1.0549530982971191,
+          "return_list": 63.155380964279175
+        }
+      },
+      "44a3d4c605b344e6a555d8a83bdb0f25": {
+        "title": "24小时快速入门大热语言Rust！学不会来找我",
+        "date": "2025-10-13",
+        "phases": {
+          "body": 221.98331499099731,
+          "extra_wait": 2.011484146118164,
+          "print_save": 100.92902398109436,
+          "verify": 1.050084114074707,
+          "return_list": 28.608773946762085
+        }
+      },
+      "8486abd223ee41878c6be1bb5ec524d1": {
+        "title": "tRPC-Agent-Go：构建智能AI应用的Go语言Agent框架",
+        "date": "2025-10-13",
+        "phases": {
+          "body": 1145.1509671211243,
+          "extra_wait": 1.0032377243041992,
+          "print_save": 69.7549831867218,
+          "verify": 1.0440099239349365,
+          "return_list": 40.05353307723999
+        }
+      },
+      "b05f03c99a964437b437d5ee9d64c0bd": {
+        "title": "腾讯发布1.58Bit大模型量化新算法Tequila！突破\"死区陷阱\"，效果性能刷新SOTA",
+        "date": "2025-10-10",
+        "phases": {
+          "body": 275.96004128456116,
+          "extra_wait": 1.001384973526001,
+          "print_save": 104.08570098876953,
+          "verify": 1.0505099296569824,
+          "return_list": 51.04673504829407
+        }
+      },
+      "256ef9d8f92143f799cdd4ea14f29a2d": {
+        "title": "微信开发工程师总结的20条C++性能陷阱与实用特性，读起来很过瘾",
+        "date": "2025-09-26",
+        "phases": {
+          "body": 119.55911874771118,
+          "print_save": 82.2400312423706,
+          "verify": 1.0489768981933594,
+          "return_list": 151.75727891921997
+        }
+      },
+      "788629e254dd430498dbab0f4e94f4da": {
+        "title": "00后黑客落网！曾运营大型僵尸网络，频繁攻击腾讯游戏、DeepSeek、X平台",
+        "date": "2025-09-22",
+        "phases": {
+          "body": 74.36576724052429,
+          "print_save": 105.70176982879639,
+          "verify": 1.0450758934020996,
+          "return_list": 30.999508142471313
+        }
+      },
+      "c7f5f676cb0948908bd8aa63eef5755b": {
+        "title": "开源项目的死与新生！",
+        "date": "2025-09-19",
+        "phases": {
+          "body": 78.99711894989014,
+          "print_save": 153.5511109828949,
+          "verify": 1.049767255783081,
+          "return_list": 145.38336372375488
+        }
+      },
+      "0f32ddc8b2cb42b1b8e3a2f6d17abca9": {
+        "title": "腾讯开源框架 Kuikly 再升级！率先适配“液态玻璃”，原生体验更极致",
+        "date": "2025-09-15",
+        "phases": {
+          "body": 104.74385285377502,
+          "print_save": 218.40910840034485,
+          "verify": 1.0504109859466553,
+          "return_list": 69.75170469284058
+        }
+      },
+      "72e8c7cf659d44fa914f53e66b7cb7ae": {
+        "title": "大模型提示词技巧Prompt Engineering，看这一篇就够了",
+        "date": "2025-09-12",
+        "phases": {
+          "body": 424.31262397766113,
+          "print_save": 150.5794529914856,
+          "extra_wait": 1.0058410167694092,
+          "verify": 1.049274206161499,
+          "return_list": 31.56691575050354
+        }
+      },
+      "84c055efb73c4b179a1a68630f5b8c48": {
+        "title": "不蒸馏也超强？揭秘端到端文档OCR模型 POINTS-Reader",
+        "date": "2025-09-12",
+        "phases": {
+          "body": 163.9762511253357,
+          "print_save": 251.49781203269958,
+          "verify": 1.0460329055786133,
+          "return_list": 38.01616406440735
+        }
+      },
+      "84eb92e9bfd0411098ba27da90dbf7d2": {
+        "title": "万字长文详解腾讯优图RAG技术的架构设计与创新实践",
+        "date": "2025-09-08",
+        "phases": {
+          "body": 985.7867832183838,
+          "print_save": 196.08155298233032,
+          "verify": 1.0556299686431885,
+          "return_list": 58.96978211402893
+        }
+      },
+      "0a210cb8cc094c71bd4bd6e56aca9e08": {
+        "title": "揭秘腾讯内部科研组织 ARC Lab：找最好的⼈才，做最难的事情",
+        "date": "2025-09-06",
+        "phases": {
+          "body": 608.9915688037872,
+          "print_save": 346.5386941432953,
+          "verify": 1.055553913116455
+        }
+      }
+    },
+    "active": {
+      "name": "return_list",
+      "started_at": 1792565289.606864,
+      "article_id": "0a210cb8cc094c71bd4bd6e56aca9e08"
+    },
+    "unmeasured": [
+      {
+        "reason": "unattributed_before_interruption",
+        "phases": {
+          "open": 18.85390615463257,
+          "extra_wait": 1.0062339305877686
+        }
+      }
+    ],
+    "waits": {
+      "loading": 26.300000000000004,
+      "settle": 0.2
+    },
+    "awaiting_title": false,
+    "unassigned": {}
+  },
+  "current_id": "0a210cb8cc094c71bd4bd6e56aca9e08",
+  "current": {
+    "title": "揭秘腾讯内部科研组织 ARC Lab：找最好的⼈才，做最难的事情",
+    "date": "2025-09-06",
+    "path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/揭秘腾讯内部科研组织 ARC Lab：找最好的⼈才，做最难的事情.pdf",
+    "bytes": 10812926,
+    "pages": 14,
+    "sha256": "8937ea7a67c940b4076c6de6652330b9d4fa3132aeda6c165f8cabc3faac0aaa",
+    "content_quality": "unverified",
+    "url": null,
+    "note": "文章前半部分介绍组织机制，后半部分含多模态与视频生成研究成果；正文已确认至后记、作者信息及留言；结构核验，未逐页视觉审计。",
+    "timing_id": "0a210cb8cc094c71bd4bd6e56aca9e08"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0306",
+  "title": "一文讲懂Agent及其主流框架：自己想、自己干、自己复盘的才是好Agent!",
+  "short_title": "Agent框架与Workflow选型",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": "腾讯程序员",
+  "source_url": null,
+  "published_at": "2025-10-20T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "⼀⽂讲懂    Agent及其主流框架：⾃⼰想、⾃⼰⼲、⾃⼰复盘的才是\n好 Agent！\n\n\n原创 腾讯程序员   腾讯技术⼯程    2025年10⽉20⽇  02:36⼴东  6098⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  「Agent不稀奇，能“⾃⼰想、⾃⼰⼲、⾃⼰复盘        ”的才是好 Agent」可⼀到落地，名词、\n  框架和坑⼀起涌来：设计模式、强⾃治、可控流程、多代理协作                 .... 到底该不该⽤\n  Agent？该选哪⼀类框架？需要⽤到什么程度？这篇⽂章⽤直观的图表、清晰的⽰例，为\n  你讲清什么是Agent、什么场景适合使⽤Agent以及各类主流Agent框架，希望能帮各位少\n  ⾛弯路，迅速判断技术路径。\n\n\n  1.Workflow和Agent的区别\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  2.Agent框架选择\n\n核⼼依赖  Github上Star数以及市场热度，综合选取   5款Agent框架：\n\n1.AutoGPT：",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "Agent架构",
+    "Agent工程循环"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/一文讲懂Agent及其主流框架：自己想、自己干、自己复盘的才是好Agent!.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:01:04-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "9935f24bebb9a737021b325038350c307e419e020ece0450813f5447594836ef",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "框架Star数、API及能力是2025年状态；图表比较未给受控基准，不是普适排名。",
+        "若干示例与优缺点只在图中；已看1、2、6、8，其余图内代码和结果未逐项核验。",
+        "Workflow与Agent不是按框架品牌互斥，文章自身也指出LangGraph等可承载两者。"
+      ],
+      "size_bytes": 9092171,
+      "page_count": 15
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:01:04-07:00",
+  "directory": "腾讯技术工程/Agent框架与Workflow选型+25.10.20",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:01:04-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "9935f24bebb9a737021b325038350c307e419e020ece0450813f5447594836ef",
+    "output_path": "MD.md",
+    "output_sha256": "aa4b0d47c9c79ce2ae8bbb8e58f696e442bb7e248e9b71b3776dd9d1daad7c5d",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 15,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "visual_pages": [
+        1,
+        2,
+        6,
+        8
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "框架Star数、API及能力是2025年状态；图表比较未给受控基准，不是普适排名。",
+      "若干示例与优缺点只在图中；已看1、2、6、8，其余图内代码和结果未逐项核验。",
+      "Workflow与Agent不是按框架品牌互斥，文章自身也指出LangGraph等可承载两者。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/一文讲懂Agent及其主流框架：自己想、自己干、自己复盘的才是好Agent!.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/Agent框架与Workflow选型+25.10.20/RAW.pdf",
+    "sha256": "9935f24bebb9a737021b325038350c307e419e020ece0450813f5447594836ef",
+    "copied_at": "2026-10-23T06:01:04-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent任务恢复.md",
+      "../../20_topics/Agent工程循环.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

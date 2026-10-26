@@ -1,0 +1,347 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0254",
+  "title": "设计模式Trustworthy Generation：提升RAG信赖度",
+  "short_title": "RAG可信生成设计模式",
+  "account": "大淘宝技术",
+  "author": "Mario",
+  "author_byline": "本文作者 Mario，来自淘天集团-直播技术团队。",
+  "source_url": null,
+  "published_at": "2026-02-09",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "直播技术团队 2026年2月9日 01:17 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 9,
+      "text": "本文作者 Mario，来自淘天集团-直播技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "检索与文档解析",
+    "Skill设计与治理",
+    "Agent评测与反馈",
+    "Prompt优化"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/设计模式Trustworthy Generation：提升RAG信赖度.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T18:25:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "03a4589c8ebb93a163f82c4d95ad61b2d3529f9c91cdc2453de781306e497373",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.3-5, 7-8含引用示例图、Token级关联图、CRAG/Self-RAG与Human Feedback流程图（位于PDF图像层），p.6代码块末尾3行右侧略有截断；核心原理与LangGraph代码已在正文完整还原。",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 5563551,
+      "page_count": 10
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T18:25:00-07:00",
+  "directory": "大淘宝技术/RAG可信生成设计模式+26.2.9",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_RAG可信生成设计模式.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0254",
+    "created_at": "2026-10-20T18:25:00-07:00",
+    "updated_at": "2026-10-20T18:25:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "03a4589c8ebb93a163f82c4d95ad61b2d3529f9c91cdc2453de781306e497373"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "50988d181bab75676345925e032e5dece4f29c94d8ad8f061d51626d1b97f83b"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.3-5, 7-8含引用示例图、Token级关联图、CRAG/Self-RAG与Human Feedback流程图（位于PDF图像层），p.6代码块末尾3行右侧略有截断；核心原理与LangGraph代码已在正文完整还原。",
+        "pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_RAG可信生成设计模式.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_RAG可信生成设计模式.md",
+      "sha256": "aa94b31846a15627b3d993c3649c758dffe61a64b3b665f003e899e5f9ef9169"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T18:25:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "03a4589c8ebb93a163f82c4d95ad61b2d3529f9c91cdc2453de781306e497373"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "50988d181bab75676345925e032e5dece4f29c94d8ad8f061d51626d1b97f83b"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 72,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 905,
+        "text_layer_sha256": "612d80095c1408482596e9bd0d26f460120a22b55a90c72f3ded58d19ff23f02"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 137,
+        "md_start_line": 80,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 2,
+        "text_layer_char_count": 1065,
+        "text_layer_sha256": "6cc48213e2e1c664b8d65a4847c0eef13f19c3e2388c1791817ed5ef291699c4"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 204,
+        "md_start_line": 145,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 3,
+        "text_layer_char_count": 1288,
+        "text_layer_sha256": "beb1e066f5ec7e4b7b0386f123cd1b053c47c484c2024e397ff18e554a320a2d"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 237,
+        "md_start_line": 212,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 4,
+        "text_layer_char_count": 366,
+        "text_layer_sha256": "b1ad72ebba7ad20af47412959ea256a507153842f1ce98c605a91d8dd2b5585d"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 269,
+        "md_start_line": 245,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 5,
+        "text_layer_char_count": 363,
+        "text_layer_sha256": "0cdefd007bb1c34c57c308812e7b1d2baf17e38424f940eb04b41c552965fb3d"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 411,
+        "md_start_line": 277,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 6,
+        "text_layer_char_count": 1550,
+        "text_layer_sha256": "c66ceed3d0882172037eeb4b8a4c49133ed2c9389154390dc96d3e49db1355a0"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 449,
+        "md_start_line": 419,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 7,
+        "text_layer_char_count": 443,
+        "text_layer_sha256": "9dbe6afa0815afedb83b13fb868bf16c8e1ce601b4e996de9258073c4a74b00c"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 488,
+        "md_start_line": 457,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 8,
+        "text_layer_char_count": 574,
+        "text_layer_sha256": "9002722de0736ad292973f9ff760571f3e539ed8e46210b20de22fd80866b2d8"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 549,
+        "md_start_line": 496,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 9,
+        "text_layer_char_count": 831,
+        "text_layer_sha256": "b918df8146a8eb5750e069232baf9cd27b774c4b416d7ca8b4cb2e64920cab4c"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 569,
+        "md_start_line": 557,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 10,
+        "text_layer_char_count": 97,
+        "text_layer_sha256": "a7f6949ea24c37ef81e3aa89fe2271c2bec8ac2e3605c7afa97a2c5cb2bd954c"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.3-5, 7-8含引用示例图、Token级关联图、CRAG/Self-RAG与Human Feedback流程图（位于PDF图像层），p.6代码块末尾3行右侧略有截断；核心原理与LangGraph代码已在正文完整还原。",
+        "pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Prompt优化.md",
+      "../../20_topics/检索与文档解析.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T18:25:00-07:00",
+    "removed_at": "2026-10-20T18:25:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/设计模式Trustworthy Generation：提升RAG信赖度.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "03a4589c8ebb93a163f82c4d95ad61b2d3529f9c91cdc2453de781306e497373",
+        "copied_at": "2026-10-20T18:25:00-07:00",
+        "removed_at": "2026-10-20T18:25:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_RAG可信生成设计模式.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

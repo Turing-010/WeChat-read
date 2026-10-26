@@ -1,0 +1,119 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0312",
+  "title": "大模型提示词技巧Prompt Engineering，看这一篇就够了",
+  "short_title": "数据分析Prompt迭代",
+  "account": "腾讯技术工程",
+  "author": "rocky",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-09-12T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "⼤ 模型提示词技巧    Prompt Engineering，看这 ⼀ 篇就够了\n\n\n原创 腾讯程序员 腾讯技术⼯程  2025年9⽉12⽇   02:36⼴东1761⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                      ⽂末抽奖~\n                      ⽂末抽奖~\n                      ⽂末抽奖~\n\n作者：rocky\n\n\n\n 让模型听话，按照要求思考，关键就在    Prompt。\n\n\n前⾔\n\n你在写prompt时 候，是 不是 总觉得⼤ 模型它不听话。 要么答⾮所问、 要么⼀ 堆废话。 扒开\n思考过程仔细阅读时⽽觉得它聪明绝顶，时⽽⼜觉得它愚蠢⾄极。明明已经对了怎么⼜推理\n到错的地⽅去了，明明在提示词中提醒过了不要这么思考它怎么就瞎想了。 这也许就是每⼀\n个Prompt Engineer的困扰。怎么能让模型按照要求去思考。\n\n⻓提示词到底应该怎么写，有没有⽅法可以⼀次命中，找到那个终极的提示词。  答案是否\n定",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "Prompt优化",
+    "上下文工程",
+    "AI评测与可观测性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/大模型提示词技巧Prompt Engineering，看这一篇就够了.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:01:04-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "71b473feb7f647b2e325eeff0f50f2504911e75204d5a1cf7d1ad8597c7363d1",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "p3、4页图可见多个加载占位，核心SQL/上下文示例缺图；MD不补齐。",
+        "p9注明2025-09-22修改，不改写刊头2025-09-12发布日期，修改日单列事件。",
+        "所谓原则不超过3条、CoT提升20个百分点为经验，未给数据集；不是硬性模型定律。",
+        "同一提示内的位置不能改变系统消息权限，文章称最高指令只作为作者说法。"
+      ],
+      "size_bytes": 2142286,
+      "page_count": 9
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:01:04-07:00",
+  "directory": "腾讯技术工程/数据分析Prompt迭代+25.9.12",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:01:04-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "71b473feb7f647b2e325eeff0f50f2504911e75204d5a1cf7d1ad8597c7363d1",
+    "output_path": "MD.md",
+    "output_sha256": "a6702a740a687ad24fea528df20b78eb8603fd3e0a1c796b37609fce7701e606",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 9,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "visual_pages": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "p3、4页图可见多个加载占位，核心SQL/上下文示例缺图；MD不补齐。",
+      "p9注明2025-09-22修改，不改写刊头2025-09-12发布日期，修改日单列事件。",
+      "所谓原则不超过3条、CoT提升20个百分点为经验，未给数据集；不是硬性模型定律。",
+      "同一提示内的位置不能改变系统消息权限，文章称最高指令只作为作者说法。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/大模型提示词技巧Prompt Engineering，看这一篇就够了.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/数据分析Prompt迭代+25.9.12/RAW.pdf",
+    "sha256": "71b473feb7f647b2e325eeff0f50f2504911e75204d5a1cf7d1ad8597c7363d1",
+    "copied_at": "2026-10-23T06:01:04-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Prompt优化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

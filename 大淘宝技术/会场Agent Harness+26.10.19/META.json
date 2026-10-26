@@ -1,0 +1,585 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0184",
+  "title": "告别 AI Demo 页面：构建支持淘内货品运营、可C端投放的会场 Agent Harness",
+  "short_title": "会场Agent Harness",
+  "account": "大淘宝技术",
+  "author": "巷年",
+  "author_byline": "本文作者巷年，来自淘天集团-营销&交易技术团队。",
+  "source_url": null,
+  "published_at": "2026-10-19",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "营销&交易技术 2026年10月19日 00:24 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 27,
+      "text": "本文作者巷年，来自淘天集团-营销&交易技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "Harness与模型协同",
+    "Skill设计与治理",
+    "Agent成本与上下文预算",
+    "AI研发协同"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/告别 AI Demo 页面：构建支持淘内货品运营、可C端投放的会场 Agent Harness.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T02:20:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "79592d6ccce600636a8ab601fb325e8831150dce3c3e45b9823ceab30dcc3c53",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.6小节标题存在原文排版错字（“▐ 历如何做到内容策划以及淘内货品挖掘”多出一“历”字），p.24存在错别字（“设计的创造里”应为“创造力”）。",
+          "pages": [
+            6,
+            24
+          ],
+          "verification_status": "actual_text_review"
+        },
+        {
+          "description": "p.1-26含多张产品界面、架构示意与观测工作台截图（位于PDF图像层，未包含在纯文本层），核心机制已在正文中完整阐述。",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            24,
+            25,
+            26
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 15576077,
+      "page_count": 28
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T02:20:00-07:00",
+  "directory": "大淘宝技术/会场Agent Harness+26.10.19",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_会场Agent Harness.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0184",
+    "created_at": "2026-10-20T02:20:00-07:00",
+    "updated_at": "2026-10-20T02:20:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "79592d6ccce600636a8ab601fb325e8831150dce3c3e45b9823ceab30dcc3c53"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "edca1892f07513d3eaf50420a8170da687bb1a2e78d016ef590c2d2e8fde863d"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.6小节标题存在原文排版错字（“▐ 历如何做到内容策划以及淘内货品挖掘”多出一“历”字），p.24存在错别字（“设计的创造里”应为“创造力”）。",
+        "pages": [
+          6,
+          24
+        ],
+        "verification_status": "actual_text_review"
+      },
+      {
+        "description": "p.1-26含多张产品界面、架构示意与观测工作台截图（位于PDF图像层，未包含在纯文本层），核心机制已在正文中完整阐述。",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_会场Agent Harness.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        12,
+        14,
+        15,
+        16,
+        20,
+        22,
+        25,
+        26
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_会场Agent Harness.md",
+      "sha256": "cec81c9f4908ae4294080f7de50afac8af010bffbf070f236a207acd4d3d09d4"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T02:20:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "79592d6ccce600636a8ab601fb325e8831150dce3c3e45b9823ceab30dcc3c53"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "edca1892f07513d3eaf50420a8170da687bb1a2e78d016ef590c2d2e8fde863d"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "md_end_line": 60,
+        "md_start_line": 14,
+        "page": 1,
+        "text_layer_char_count": 874,
+        "text_layer_sha256": "4d26b4700d3cdc62512d2f3ed92c9251771137ffed18647a382ca1d227955d71"
+      },
+      {
+        "md_end_line": 79,
+        "md_start_line": 70,
+        "page": 2,
+        "text_layer_char_count": 170,
+        "text_layer_sha256": "31e633b7343a8897db1c5be41783d7684ec50d8294842f66bcbeb5eecafcec15"
+      },
+      {
+        "md_end_line": 91,
+        "md_start_line": 89,
+        "page": 3,
+        "text_layer_char_count": 40,
+        "text_layer_sha256": "fa03f8771efa5ad591da93e793c5b356033817e0b07e91fc4f633451e92e2a81"
+      },
+      {
+        "md_end_line": 118,
+        "md_start_line": 101,
+        "page": 4,
+        "text_layer_char_count": 314,
+        "text_layer_sha256": "be7f4b8e57167f1f3ac870b0925c3e6207835294eaa7929f020067c3f0ac9461"
+      },
+      {
+        "md_end_line": 157,
+        "md_start_line": 128,
+        "page": 5,
+        "text_layer_char_count": 525,
+        "text_layer_sha256": "3ddd99f6e224b00da99f0c344c803132756448aec02e010da2f9ceccc36744cf"
+      },
+      {
+        "md_end_line": 179,
+        "md_start_line": 167,
+        "page": 6,
+        "text_layer_char_count": 135,
+        "text_layer_sha256": "70eb193988ed7931636029cbb6bcd15b9b5efc9f9eb862355e7a4b1c94d017e2"
+      },
+      {
+        "md_end_line": 213,
+        "md_start_line": 189,
+        "page": 7,
+        "text_layer_char_count": 428,
+        "text_layer_sha256": "497b5c33a6db3b198b9abc24a89563074936569b3b4075d1808b1f2c7eb9457a"
+      },
+      {
+        "md_end_line": 248,
+        "md_start_line": 223,
+        "page": 8,
+        "text_layer_char_count": 378,
+        "text_layer_sha256": "a49af4e34c9a5fb224c07690b3a9544c4bba95cf1fbfbbede0c2d60dd826e9db"
+      },
+      {
+        "md_end_line": 269,
+        "md_start_line": 258,
+        "page": 9,
+        "text_layer_char_count": 147,
+        "text_layer_sha256": "83d7b0b4ba3b54480965716f68bcce81d0d71fa3c0da4ab18e5880e9f1560bdd"
+      },
+      {
+        "md_end_line": 307,
+        "md_start_line": 279,
+        "page": 10,
+        "text_layer_char_count": 664,
+        "text_layer_sha256": "c2d4a2ab5e1c5848c2c0277297ac5a02016e9f5ce1dfce1b786d87eaea8826e5"
+      },
+      {
+        "md_end_line": 339,
+        "md_start_line": 317,
+        "page": 11,
+        "text_layer_char_count": 368,
+        "text_layer_sha256": "f4218371904e8012cc6e1f18d0239e3efe79d87448eac15ee6dd383dfa72ad3c"
+      },
+      {
+        "md_end_line": 374,
+        "md_start_line": 349,
+        "page": 12,
+        "text_layer_char_count": 661,
+        "text_layer_sha256": "26272ea2422ceae0f9d65e133db72347c04ddab5faba8b58cbeff338154f5e50"
+      },
+      {
+        "md_end_line": 408,
+        "md_start_line": 384,
+        "page": 13,
+        "text_layer_char_count": 532,
+        "text_layer_sha256": "313d2635e4448368713a34ffc8f9b2232934d02e531c9e706bf0ec01397c2027"
+      },
+      {
+        "md_end_line": 451,
+        "md_start_line": 418,
+        "page": 14,
+        "text_layer_char_count": 509,
+        "text_layer_sha256": "148bd85ba57a6ad6d4d45c389213307d7fa3ff0e289350d191049dbfb239d88d"
+      },
+      {
+        "md_end_line": 489,
+        "md_start_line": 461,
+        "page": 15,
+        "text_layer_char_count": 335,
+        "text_layer_sha256": "5a27bdd8b0447499c533abb0f1a16c6376f68f855aa69ec8b6fe9c7e94402198"
+      },
+      {
+        "md_end_line": 520,
+        "md_start_line": 499,
+        "page": 16,
+        "text_layer_char_count": 416,
+        "text_layer_sha256": "2d773f6dd860724cacc4b87bc206e4b062469e304d296b5c2c51bc30d502c711"
+      },
+      {
+        "md_end_line": 569,
+        "md_start_line": 530,
+        "page": 17,
+        "text_layer_char_count": 626,
+        "text_layer_sha256": "a93b91dd56a6cb3b17c4cdeab40c70981ddeea0b5e7c38169529febcaa822c24"
+      },
+      {
+        "md_end_line": 602,
+        "md_start_line": 579,
+        "page": 18,
+        "text_layer_char_count": 328,
+        "text_layer_sha256": "83b318c5776dda54721cbdf5da5676ff53b7beae23c67adfa599e7f2956bbfa5"
+      },
+      {
+        "md_end_line": 631,
+        "md_start_line": 612,
+        "page": 19,
+        "text_layer_char_count": 291,
+        "text_layer_sha256": "f9fe1b1fe757fdd718a8c0a86da41761f1b656db01422a9c8d6e21bf89926bde"
+      },
+      {
+        "md_end_line": 656,
+        "md_start_line": 641,
+        "page": 20,
+        "text_layer_char_count": 372,
+        "text_layer_sha256": "81ab0564a4eda1de558c9e1b6874c2a7da40938684d0ac4950205fb10327a035"
+      },
+      {
+        "md_end_line": 691,
+        "md_start_line": 666,
+        "page": 21,
+        "text_layer_char_count": 577,
+        "text_layer_sha256": "21117f8388f4bf06c4fa531b4f4d4c8560d7d34a9ee4b40d2046c84c8a71a995"
+      },
+      {
+        "md_end_line": 752,
+        "md_start_line": 701,
+        "page": 22,
+        "text_layer_char_count": 782,
+        "text_layer_sha256": "195604bf44b8d7426a6f986dc246c08968cb0900869bdd6b1bb9cc6917bdbfeb"
+      },
+      {
+        "md_end_line": 810,
+        "md_start_line": 762,
+        "page": 23,
+        "text_layer_char_count": 781,
+        "text_layer_sha256": "28fb18c78ca6fc93be31ca4efea395a9632dd97540b8de4256c5be7686f0d490"
+      },
+      {
+        "md_end_line": 827,
+        "md_start_line": 820,
+        "page": 24,
+        "text_layer_char_count": 176,
+        "text_layer_sha256": "e47bdda6e51f9c3822aeff4491080b6c4c5dfba207679e1b2eccb171d3eea05c"
+      },
+      {
+        "md_end_line": 860,
+        "md_start_line": 837,
+        "page": 25,
+        "text_layer_char_count": 444,
+        "text_layer_sha256": "27778c4a3eff411ca663fe0cd0f006768b30b5c8366472a0202e03c64a7c9927"
+      },
+      {
+        "md_end_line": 883,
+        "md_start_line": 870,
+        "page": 26,
+        "text_layer_char_count": 193,
+        "text_layer_sha256": "6effe5db630ca5569c88268a53cc35b3b1626ffa658ad3da0db7b3b1ea75d424"
+      },
+      {
+        "md_end_line": 926,
+        "md_start_line": 893,
+        "page": 27,
+        "text_layer_char_count": 539,
+        "text_layer_sha256": "797550ffd8c82d8bd2ca180332910856b4e26f4abfaf1f29f912a0038bb037b2"
+      },
+      {
+        "md_end_line": 938,
+        "md_start_line": 936,
+        "page": 28,
+        "text_layer_char_count": 15,
+        "text_layer_sha256": "0cab4ca7e7728c1cf6011ce115672f6be34750006c6ae77f8b67c4dd262fc904"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        12,
+        14,
+        15,
+        16,
+        20,
+        22,
+        25,
+        26
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.6小节标题存在原文排版错字（“▐ 历如何做到内容策划以及淘内货品挖掘”多出一“历”字），p.24存在错别字（“设计的创造里”应为“创造力”）。",
+        "pages": [
+          6,
+          24
+        ],
+        "verification_status": "actual_text_review"
+      },
+      {
+        "description": "p.1-26含多张产品界面、架构示意与观测工作台截图（位于PDF图像层，未包含在纯文本层），核心机制已在正文中完整阐述。",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent任务恢复.md",
+      "../../20_topics/Agent成本与上下文预算.md",
+      "../../20_topics/Harness与模型协同.md",
+      "../../20_topics/Prompt优化.md",
+      "../../20_topics/异常监控与稳定性.md",
+      "../../20_topics/解决问题.md",
+      "../../20_topics/问题澄清.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed_sources_removed",
+    "copied_at": "2026-10-20T02:20:00-07:00",
+    "removed_at": "2026-10-20T02:26:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/告别 AI Demo 页面：构建支持淘内货品运营、可C端投放的会场 Agent Harness.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "79592d6ccce600636a8ab601fb325e8831150dce3c3e45b9823ceab30dcc3c53",
+        "copied_at": "2026-10-20T02:20:00-07:00",
+        "removed_at": "2026-10-20T02:26:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_会场Agent Harness.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

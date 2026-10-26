@@ -1,0 +1,1104 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0018",
+  "title": "天猫技术大型 AI 项目的研发协同实践",
+  "short_title": "大型AI项目研发协同",
+  "account": "大淘宝技术",
+  "author": "卡狸",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-09-07",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "2026年9月7日 05:09",
+      "timezone": null
+    },
+    "author": {
+      "page": 27,
+      "description": "团队介绍页明示作者；原字符文本保存在逐页转写中"
+    },
+    "evidence_type": "actual_pdf_text_and_page_images"
+  },
+  "tags": [
+    "AI研发协同",
+    "Agent工程循环"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/天猫技术大型 AI 项目的研发协同实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:04:01-07:00",
+      "provenance": "用户收集于inbox的公众号PDF，原采集方式与时刻未确认；本次复制核验后迁移",
+      "sha256": "5681f97caf709d2d88efd71a05f286d488ea4ed77a39be95cd4742c083f15052",
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "封面/章节装饰及四阶段总览图为灰色加载占位框",
+          "pages": [
+            1,
+            2,
+            7
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": "rendered page contact sheets; p.1 detail",
+          "classification": null,
+          "impact": "无法复现对应图像，总览依据正文"
+        },
+        {
+          "description": "AGENTS.md入口地图截图未加载",
+          "pages": [
+            4
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": "rendered page contact sheet",
+          "classification": null,
+          "impact": "入口职责与阈值可依正文，截图细节不可读"
+        },
+        {
+          "description": "Skill主动/被动触发梯度及知识三个方向互补图未加载",
+          "pages": [
+            5
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": "rendered page contact sheet",
+          "classification": null,
+          "impact": "不猜六Skill精确触发条件和分类"
+        },
+        {
+          "description": "collar示意图未加载",
+          "pages": [
+            7
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": "rendered page contact sheet",
+          "classification": null,
+          "impact": "三层模型按正文整理"
+        },
+        {
+          "description": "四种变更类型及功能生命周期图未加载",
+          "pages": [
+            8,
+            9
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": "rendered contact sheets and detail images",
+          "classification": null,
+          "impact": "按正文整理四类型，不声称复现原图"
+        },
+        {
+          "description": "上下文缝补图未加载",
+          "pages": [
+            13
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": "rendered contact sheet",
+          "classification": null,
+          "impact": "MCP与Skill关系按正文整理"
+        },
+        {
+          "description": "编码态/集成态方案比较图未加载",
+          "pages": [
+            15
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": "rendered contact sheet",
+          "classification": null,
+          "impact": "比较依据正文"
+        },
+        {
+          "description": "24小时报警实例、哨兵架构、后续截图、AI表格截图未加载",
+          "pages": [
+            17,
+            18,
+            19
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": "rendered contact sheets; p.18 detail",
+          "classification": null,
+          "impact": "结果仅作者正文报告，不能核算截图底层记录"
+        },
+        {
+          "description": "代码投影/平台/真实页面/代码只进不出相关图未加载",
+          "pages": [
+            20,
+            21,
+            24,
+            25
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": "rendered contact sheets; p.24-25 detail",
+          "classification": null,
+          "impact": "无法覆盖相关图细节；p.25下半提案状态图实际加载可读"
+        },
+        {
+          "description": "多个代码或示例长行右侧裁切",
+          "pages": [
+            8,
+            9,
+            10,
+            12,
+            16,
+            18,
+            22,
+            23,
+            24
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": "180dpi rendered detail images",
+          "classification": null,
+          "impact": "不補正则/参数/注释/表格替代方案/命令；残片不得当可运行示例"
+        },
+        {
+          "description": "创建项目/创建访谈示例命名不一致",
+          "pages": [
+            8,
+            9
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": "page text and detail images",
+          "classification": null,
+          "impact": "保留原称，不强行统一目录路径"
+        },
+        {
+          "description": ">70%与八成以上/八成命中统计窗口及计算细节未说明",
+          "pages": [
+            17,
+            19
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": "page text",
+          "classification": null,
+          "impact": "保留不同正文描述，不能统一精确值；不自动判定矛盾"
+        },
+        {
+          "description": "NekoCollar平台仍在开发；双锁和前端静态代理已落地，接口mock规划中，提案与角色运行时鉴权开发中",
+          "pages": [
+            21,
+            24,
+            25,
+            26
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": "page text and p.25 state diagram design/WIP labels",
+          "classification": null,
+          "impact": "各能力状态分开记录，不将设计图作为已实现架构"
+        },
+        {
+          "description": "末页为空白",
+          "pages": [
+            28
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": "empty extracted text and rendered contact sheet",
+          "classification": null,
+          "impact": "未发现缺失正文的证据，仅为空白尾页"
+        }
+      ],
+      "size_bytes": 7486577,
+      "page_count": 28
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:04:01-07:00",
+  "directory": "大淘宝技术/大型AI项目研发协同+26.9.7",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_大型AI项目研发协同.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0018",
+    "created_at": "2026-10-13T02:04:01-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "5681f97caf709d2d88efd71a05f286d488ea4ed77a39be95cd4742c083f15052"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成新学习笔记；读取全部页文本并查看全部页缩略图，关键图表／代码按实际范围放大核对；保留原文观点、推断、材料缺失与规划状态。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "页面图像与正文核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "用户提供的2026-10-12提示词；文件校验值见prompt_reference",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71",
+      "original_path": "/Users/iw/Downloads/Obsidian学习笔记生成提示词 26·10·12.md"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "封面/章节装饰及四阶段总览图为灰色加载占位框",
+        "pages": [
+          1,
+          2,
+          7
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered page contact sheets; p.1 detail",
+        "classification": null,
+        "impact": "无法复现对应图像，总览依据正文"
+      },
+      {
+        "description": "AGENTS.md入口地图截图未加载",
+        "pages": [
+          4
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered page contact sheet",
+        "classification": null,
+        "impact": "入口职责与阈值可依正文，截图细节不可读"
+      },
+      {
+        "description": "Skill主动/被动触发梯度及知识三个方向互补图未加载",
+        "pages": [
+          5
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered page contact sheet",
+        "classification": null,
+        "impact": "不猜六Skill精确触发条件和分类"
+      },
+      {
+        "description": "collar示意图未加载",
+        "pages": [
+          7
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered page contact sheet",
+        "classification": null,
+        "impact": "三层模型按正文整理"
+      },
+      {
+        "description": "四种变更类型及功能生命周期图未加载",
+        "pages": [
+          8,
+          9
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered contact sheets and detail images",
+        "classification": null,
+        "impact": "按正文整理四类型，不声称复现原图"
+      },
+      {
+        "description": "上下文缝补图未加载",
+        "pages": [
+          13
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered contact sheet",
+        "classification": null,
+        "impact": "MCP与Skill关系按正文整理"
+      },
+      {
+        "description": "编码态/集成态方案比较图未加载",
+        "pages": [
+          15
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered contact sheet",
+        "classification": null,
+        "impact": "比较依据正文"
+      },
+      {
+        "description": "24小时报警实例、哨兵架构、后续截图、AI表格截图未加载",
+        "pages": [
+          17,
+          18,
+          19
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered contact sheets; p.18 detail",
+        "classification": null,
+        "impact": "结果仅作者正文报告，不能核算截图底层记录"
+      },
+      {
+        "description": "代码投影/平台/真实页面/代码只进不出相关图未加载",
+        "pages": [
+          20,
+          21,
+          24,
+          25
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered contact sheets; p.24-25 detail",
+        "classification": null,
+        "impact": "无法覆盖相关图细节；p.25下半提案状态图实际加载可读"
+      },
+      {
+        "description": "多个代码或示例长行右侧裁切",
+        "pages": [
+          8,
+          9,
+          10,
+          12,
+          16,
+          18,
+          22,
+          23,
+          24
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "180dpi rendered detail images",
+        "classification": null,
+        "impact": "不補正则/参数/注释/表格替代方案/命令；残片不得当可运行示例"
+      },
+      {
+        "description": "创建项目/创建访谈示例命名不一致",
+        "pages": [
+          8,
+          9
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "page text and detail images",
+        "classification": null,
+        "impact": "保留原称，不强行统一目录路径"
+      },
+      {
+        "description": ">70%与八成以上/八成命中统计窗口及计算细节未说明",
+        "pages": [
+          17,
+          19
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "page text",
+        "classification": null,
+        "impact": "保留不同正文描述，不能统一精确值；不自动判定矛盾"
+      },
+      {
+        "description": "NekoCollar平台仍在开发；双锁和前端静态代理已落地，接口mock规划中，提案与角色运行时鉴权开发中",
+        "pages": [
+          21,
+          24,
+          25,
+          26
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "page text and p.25 state diagram design/WIP labels",
+        "classification": null,
+        "impact": "各能力状态分开记录，不将设计图作为已实现架构"
+      },
+      {
+        "description": "末页为空白",
+        "pages": [
+          28
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "empty extracted text and rendered contact sheet",
+        "classification": null,
+        "impact": "未发现缺失正文的证据，仅为空白尾页"
+      },
+      {
+        "description": "未联网核对在线原文、技术事实或当前产品版本；完整原文链接和采集时刻未知。",
+        "pages": [],
+        "verification_status": "unverified"
+      }
+    ],
+    "outputs": [
+      "AI_大型AI项目研发协同.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "source_item_review": [
+      {
+        "kind": "skill_description_only",
+        "names": [
+          "collar-specs",
+          "collar-changelog",
+          "collar-architecture",
+          "collar-runbook",
+          "collar-vendor",
+          "collar-wiki"
+        ],
+        "pages": [
+          4,
+          5,
+          6
+        ],
+        "complete_skill_source_obtained": false,
+        "note": "只取得模块职责和部分触发说明，未取得完整SKILL.md、脚本或依赖，不可补成可安装Skill"
+      },
+      {
+        "kind": "skill_description_only",
+        "names": [
+          "MCP配套查询Skill"
+        ],
+        "pages": [
+          12
+        ],
+        "complete_skill_source_obtained": false,
+        "note": "说明何时/如何/怎样用及固定四步链，但未提供Skill全文或完整四步协议"
+      },
+      {
+        "kind": "operation_declaration",
+        "name": "V1用户核心循环日落声明",
+        "pages": [
+          10
+        ],
+        "complete_readable": true,
+        "note": "可保留完整来源操作声明；不是Prompt或Skill定义"
+      },
+      {
+        "kind": "partial_example",
+        "name": "Patch双向指针",
+        "pages": [
+          9,
+          10
+        ],
+        "complete_readable": false,
+        "note": "示例右侧裁切，不能生成完整可复制模板"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "detail_pages_reviewed": [
+        1,
+        8,
+        9,
+        10,
+        12,
+        16,
+        18,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "coverage": [
+      {
+        "name": "写在前面与四阶段主线",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "单兵攻坚：AGENTS.md、六模块Skill、知识冷启、collar三层",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "加人提速：站点地图、四类型、Patch双向指针、sunset、Spec差异、上下文缝补",
+        "pages": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "高速迭代：失败的Agent Manage、哨兵机集成态、daemon云端Agent与告警闭环",
+        "pages": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "name": "稳定运作：可执行共同事实、NekoCollar沙箱与页面代理、双锁、规划中提案",
+        "pages": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      },
+      {
+        "name": "结语与作者团队介绍",
+        "pages": [
+          26,
+          27
+        ]
+      }
+    ],
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "flashcard_count": 10,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_大型AI项目研发协同.md",
+      "sha256": "d7546c1c4c36c4b7c7758ab44b169e8ec275be6e9006070b2891360924a16269"
+    },
+    "updated_at": "2026-10-13T02:04:01-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:04:01-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "5681f97caf709d2d88efd71a05f286d488ea4ed77a39be95cd4742c083f15052"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "2d20ff9ec6bc8cb7f35453abb4ee8d46e1e303526da8f8418a81a499222435ac"
+    },
+    "extractor": "pdfplumber.Page.extract_text 0.11.9; default parameters",
+    "raw_character_preservation": "No Unicode normalization; None -> empty string only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_information_not_part_of_MD_text_layer",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 14,
+        "md_end_line": 40,
+        "text_layer_sha256": "5d27f2f94e2b702eb2aed9925e2165f2fa82584818aca391597de3ccb109d7d4",
+        "text_layer_char_count": 903
+      },
+      {
+        "page": 2,
+        "md_start_line": 50,
+        "md_end_line": 69,
+        "text_layer_sha256": "1d5f5879b8cd611322590cde5f0b8437f51fb751aa23d19c3c95132c44ab47c7",
+        "text_layer_char_count": 539
+      },
+      {
+        "page": 3,
+        "md_start_line": 79,
+        "md_end_line": 102,
+        "text_layer_sha256": "c3ad5cdca8c166b6d44c61e033414c72ce3ac8a51a0d9f7f5a92b502a0047cd6",
+        "text_layer_char_count": 909
+      },
+      {
+        "page": 4,
+        "md_start_line": 112,
+        "md_end_line": 127,
+        "text_layer_sha256": "e30d4a4b045532825113379412b3c158a4580915893a9a1d238251a94fd36707",
+        "text_layer_char_count": 630
+      },
+      {
+        "page": 5,
+        "md_start_line": 137,
+        "md_end_line": 150,
+        "text_layer_sha256": "16683a403f5d86f75cc95cfe55bf515683a640fe8b514f2c566d149bfebb1c65",
+        "text_layer_char_count": 470
+      },
+      {
+        "page": 6,
+        "md_start_line": 160,
+        "md_end_line": 184,
+        "text_layer_sha256": "a59c359ca982241038e2d795c00f65b7e78d9fa485f6daf637ff9b4950702043",
+        "text_layer_char_count": 942
+      },
+      {
+        "page": 7,
+        "md_start_line": 194,
+        "md_end_line": 210,
+        "text_layer_sha256": "4d6b813114b9b2e0285e4bd67d249e310a1675b932512d6a594168177dc741e6",
+        "text_layer_char_count": 501
+      },
+      {
+        "page": 8,
+        "md_start_line": 220,
+        "md_end_line": 241,
+        "text_layer_sha256": "5924a767031cb21ad8c46477c124dbb9e7a0a9f7e3a127141c0dcf7e412bb045",
+        "text_layer_char_count": 685
+      },
+      {
+        "page": 9,
+        "md_start_line": 251,
+        "md_end_line": 272,
+        "text_layer_sha256": "cf0fb8550f8c688787181070b3ad735f60349907f0e409817d25443011b0b346",
+        "text_layer_char_count": 839
+      },
+      {
+        "page": 10,
+        "md_start_line": 282,
+        "md_end_line": 307,
+        "text_layer_sha256": "139ae18b23dd80896722abf48ba3e70b0d2f467979591b002f2b7c4e3418f7a9",
+        "text_layer_char_count": 1018
+      },
+      {
+        "page": 11,
+        "md_start_line": 317,
+        "md_end_line": 342,
+        "text_layer_sha256": "ef96540b5a338ce8f3ccea869f982d1c1446d887c51d09a6fa3a4568b1f38af7",
+        "text_layer_char_count": 854
+      },
+      {
+        "page": 12,
+        "md_start_line": 352,
+        "md_end_line": 381,
+        "text_layer_sha256": "001aa0da21ab6e97eeb4eb1043ca2bf2796e78d171eabc5e875a7a0b6d7d424b",
+        "text_layer_char_count": 1136
+      },
+      {
+        "page": 13,
+        "md_start_line": 391,
+        "md_end_line": 407,
+        "text_layer_sha256": "2c88f020b16c81b695f11e263644f8671b8929e93f6c83b32e2e6640725c117c",
+        "text_layer_char_count": 558
+      },
+      {
+        "page": 14,
+        "md_start_line": 417,
+        "md_end_line": 442,
+        "text_layer_sha256": "00ebe9d7825ddb3afb396845ed27e0564a72be069fca2008a913d34028aadd21",
+        "text_layer_char_count": 892
+      },
+      {
+        "page": 15,
+        "md_start_line": 452,
+        "md_end_line": 471,
+        "text_layer_sha256": "4859a9be696755347bf9adf87e190cee9410485e8c10a18cba6d792fa0ca816e",
+        "text_layer_char_count": 678
+      },
+      {
+        "page": 16,
+        "md_start_line": 481,
+        "md_end_line": 512,
+        "text_layer_sha256": "8ef14614d64a6bcbaebb6ce1a4b3ef149bde85f6062c1745371f77c357f22c54",
+        "text_layer_char_count": 1236
+      },
+      {
+        "page": 17,
+        "md_start_line": 522,
+        "md_end_line": 533,
+        "text_layer_sha256": "cd704e3aa4192a72079fd1cb310969c0401b4d4003f28fad4ea6ba01f6e7bb19",
+        "text_layer_char_count": 376
+      },
+      {
+        "page": 18,
+        "md_start_line": 543,
+        "md_end_line": 562,
+        "text_layer_sha256": "2b0c94914ec060857a7e66bc75747a899f33b928e1924a81572d3cf19e98c512",
+        "text_layer_char_count": 842
+      },
+      {
+        "page": 19,
+        "md_start_line": 572,
+        "md_end_line": 593,
+        "text_layer_sha256": "8359843f1cb565f13bb5ac6a399ce3683d4e9e04943f96bec20c445d76a4e803",
+        "text_layer_char_count": 736
+      },
+      {
+        "page": 20,
+        "md_start_line": 603,
+        "md_end_line": 620,
+        "text_layer_sha256": "c23178b1091ce2f2ec4a748ab040b826c678c339e826f385e79cc583fd05742d",
+        "text_layer_char_count": 592
+      },
+      {
+        "page": 21,
+        "md_start_line": 630,
+        "md_end_line": 648,
+        "text_layer_sha256": "04937f6244b7a2b69440c920f27d0938b1312e92a5399ac2a9661ad6b9c81260",
+        "text_layer_char_count": 701
+      },
+      {
+        "page": 22,
+        "md_start_line": 658,
+        "md_end_line": 686,
+        "text_layer_sha256": "b620d56b3523d6062a51fb7611ae5dfca78a9a8addcaf1d9e059667d46a91bb3",
+        "text_layer_char_count": 1313
+      },
+      {
+        "page": 23,
+        "md_start_line": 696,
+        "md_end_line": 727,
+        "text_layer_sha256": "dcb94536a835d37a5e248dfba17200d966ab13efcbd231273620b212cf2496e4",
+        "text_layer_char_count": 1330
+      },
+      {
+        "page": 24,
+        "md_start_line": 737,
+        "md_end_line": 754,
+        "text_layer_sha256": "b05c27c3012944b86b01a9d8dbb854ac29925527e469a3c24797c2c46d1324a3",
+        "text_layer_char_count": 848
+      },
+      {
+        "page": 25,
+        "md_start_line": 764,
+        "md_end_line": 775,
+        "text_layer_sha256": "dd178284ea2431f269a5ee542f77179896a5b2d9dda8f1a7bf4756c1a5e53aad",
+        "text_layer_char_count": 438
+      },
+      {
+        "page": 26,
+        "md_start_line": 785,
+        "md_end_line": 809,
+        "text_layer_sha256": "b3262d72a06a632701668a62ca587d8ef6a8554111a0e31f3a41540346d3071a",
+        "text_layer_char_count": 636
+      },
+      {
+        "page": 27,
+        "md_start_line": 819,
+        "md_end_line": 835,
+        "text_layer_sha256": "43348f3693d71a262b5ef8dc47380a85c645c68faee3fdc2e387608208492d2e",
+        "text_layer_char_count": 290
+      },
+      {
+        "page": 28,
+        "md_start_line": 845,
+        "md_end_line": 845,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "detail_pages_reviewed": [
+        1,
+        8,
+        9,
+        10,
+        12,
+        16,
+        18,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "封面/章节装饰及四阶段总览图为灰色加载占位框",
+        "pages": [
+          1,
+          2,
+          7
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered page contact sheets; p.1 detail",
+        "classification": null,
+        "impact": "无法复现对应图像，总览依据正文"
+      },
+      {
+        "description": "AGENTS.md入口地图截图未加载",
+        "pages": [
+          4
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered page contact sheet",
+        "classification": null,
+        "impact": "入口职责与阈值可依正文，截图细节不可读"
+      },
+      {
+        "description": "Skill主动/被动触发梯度及知识三个方向互补图未加载",
+        "pages": [
+          5
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered page contact sheet",
+        "classification": null,
+        "impact": "不猜六Skill精确触发条件和分类"
+      },
+      {
+        "description": "collar示意图未加载",
+        "pages": [
+          7
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered page contact sheet",
+        "classification": null,
+        "impact": "三层模型按正文整理"
+      },
+      {
+        "description": "四种变更类型及功能生命周期图未加载",
+        "pages": [
+          8,
+          9
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered contact sheets and detail images",
+        "classification": null,
+        "impact": "按正文整理四类型，不声称复现原图"
+      },
+      {
+        "description": "上下文缝补图未加载",
+        "pages": [
+          13
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered contact sheet",
+        "classification": null,
+        "impact": "MCP与Skill关系按正文整理"
+      },
+      {
+        "description": "编码态/集成态方案比较图未加载",
+        "pages": [
+          15
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered contact sheet",
+        "classification": null,
+        "impact": "比较依据正文"
+      },
+      {
+        "description": "24小时报警实例、哨兵架构、后续截图、AI表格截图未加载",
+        "pages": [
+          17,
+          18,
+          19
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered contact sheets; p.18 detail",
+        "classification": null,
+        "impact": "结果仅作者正文报告，不能核算截图底层记录"
+      },
+      {
+        "description": "代码投影/平台/真实页面/代码只进不出相关图未加载",
+        "pages": [
+          20,
+          21,
+          24,
+          25
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "rendered contact sheets; p.24-25 detail",
+        "classification": null,
+        "impact": "无法覆盖相关图细节；p.25下半提案状态图实际加载可读"
+      },
+      {
+        "description": "多个代码或示例长行右侧裁切",
+        "pages": [
+          8,
+          9,
+          10,
+          12,
+          16,
+          18,
+          22,
+          23,
+          24
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "180dpi rendered detail images",
+        "classification": null,
+        "impact": "不補正则/参数/注释/表格替代方案/命令；残片不得当可运行示例"
+      },
+      {
+        "description": "创建项目/创建访谈示例命名不一致",
+        "pages": [
+          8,
+          9
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "page text and detail images",
+        "classification": null,
+        "impact": "保留原称，不强行统一目录路径"
+      },
+      {
+        "description": ">70%与八成以上/八成命中统计窗口及计算细节未说明",
+        "pages": [
+          17,
+          19
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "page text",
+        "classification": null,
+        "impact": "保留不同正文描述，不能统一精确值；不自动判定矛盾"
+      },
+      {
+        "description": "NekoCollar平台仍在开发；双锁和前端静态代理已落地，接口mock规划中，提案与角色运行时鉴权开发中",
+        "pages": [
+          21,
+          24,
+          25,
+          26
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "page text and p.25 state diagram design/WIP labels",
+        "classification": null,
+        "impact": "各能力状态分开记录，不将设计图作为已实现架构"
+      },
+      {
+        "description": "末页为空白",
+        "pages": [
+          28
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": "empty extracted text and rendered contact sheet",
+        "classification": null,
+        "impact": "未发现缺失正文的证据，仅为空白尾页"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed_sources_removed",
+    "copied_at": "2026-10-13T02:04:01-07:00",
+    "removed_at": "2026-10-13T02:08:19-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/天猫技术大型 AI 项目的研发协同实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "5681f97caf709d2d88efd71a05f286d488ea4ed77a39be95cd4742c083f15052",
+        "removed_at": "2026-10-13T02:08:19-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_大型AI项目研发协同.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

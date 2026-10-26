@@ -1,0 +1,621 @@
+{
+  "directory": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术",
+  "requested": 50,
+  "scope": {
+    "mode": "count",
+    "count": 50
+  },
+  "before": {
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI 驱动研发体系的实践和思考.pdf": [
+      4822873,
+      1792405346120504828
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝动效解决方案分享.pdf": [
+      8746556,
+      1792434425252431353
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构.pdf": [
+      2415363,
+      1792431987219532731
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI Coding思考：从工具提效到范式变革，我们还缺什么？.pdf": [
+      4461257,
+      1792438034491222829
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/设计模式Trustworthy Generation：提升RAG信赖度.pdf": [
+      5563551,
+      1792439907709331392
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/重构协同：关于AI Native团队的思考.pdf": [
+      4202818,
+      1792408553036897568
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/ICCV25 | 淘宝人脸吸引力预测算法FPEM.pdf": [
+      4628104,
+      1792443326710300039
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/【手猫研发提效随笔】七句话搞定一年AB实验下线：CodingAgent的魔法时刻.pdf": [
+      11324023,
+      1792411586037452860
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/支配树算法原理及鸿蒙工具实践.pdf": [
+      4353174,
+      1792460159299542891
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/场景营销互动&体验 AI Coding — 构建 Agent 自主执行闭环.pdf": [
+      8043154,
+      1792405932165322554
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型.pdf": [
+      17423348,
+      1792414955171551510
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘天营销中后台生码工作流最佳实践.pdf": [
+      13917139,
+      1792431668319508201
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/天猫AI助手：调度框架重构与AI Coding工程化实践.pdf": [
+      4302389,
+      1792409200029000098
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/软件为何越做越乱？万字长文讲透软件的“复杂性”.pdf": [
+      4144681,
+      1792436857683330350
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/GenAI输出内容控制的5种设计模式.pdf": [
+      3749629,
+      1792461169902193840
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/CCIG 2026｜TaoAvatar：3D真人数字人在淘宝Vision领域的应用.pdf": [
+      13980623,
+      1792423672466552032
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/万级实时推理的商品领域Agent实践思考和总结.pdf": [
+      11819321,
+      1792427014793846967
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/CVPR 2026｜重思基于扩散模型的视频超分辨率：利用对齐特征的稠密引导 DGAF-VSR.pdf": [
+      6497922,
+      1792415959244040554
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝跨端体验优化 AI 演进之路.pdf": [
+      17407491,
+      1792433165126086916
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘天集团自营技术运营算法团队4年2次荣膺INFORMS“杰出实践奖”决选荣誉：以策略正则化突破DRL在库存管理中的落地瓶颈.pdf": [
+      5013108,
+      1792441192270598801
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/浏览器自动化：从GUI到OpenCLI.pdf": [
+      3442578,
+      1792427466110942257
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI Agent 的 Skill 系统设计.pdf": [
+      6638547,
+      1792417344583945296
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/RAG 全链路技术详解.pdf": [
+      5530993,
+      1792428871338005614
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/TLiveOmni 1.0 直播视频多模态理解大模型.pdf": [
+      8007247,
+      1792428209144201009
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘天集团2027届实习生校招大事件_请查收_淘天集团27届实习生校招大事件，文末阅读原文报名宣讲会.pdf": [
+      3987722,
+      1792436223062502596
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI 评测还在看准确率？数据科学早就用因果推断做归因分析了.pdf": [
+      9613452,
+      1792409537857719890
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/《AI重塑经营：2026中国电商AI应用白皮书》正式发布！.pdf": [
+      8896969,
+      1792423183073667743
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI理解、引擎驱动：零代码搭建实时数据链路.pdf": [
+      5790755,
+      1792407452748553977
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/信任需要基础设施：如何让AI可靠的取数.pdf": [
+      3860928,
+      1792405578770585374
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘天自研编码器斩获MSU 6项冠军，视频编码技术支撑内容体验升级.pdf": [
+      5950538,
+      1792404817335614455
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘特端侧模型从微调到应用的全链路实践.pdf": [
+      8628355,
+      1792403807646142050
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/TMAP平台图生视频推理加速实践.pdf": [
+      18764314,
+      1792412724200749936
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI 动画辅助实现（实践篇）：从 AE 到可运行代码的全链路方案.pdf": [
+      10890832,
+      1792417599888074135
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI真人数字人语音对话性能优化实践总结.pdf": [
+      4906120,
+      1792438973297739781
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI Coding前端实践后的复盘总结.pdf": [
+      2384219,
+      1792436404263573143
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/【AI Coding】借助cursor实现业务需求全栈交付实践.pdf": [
+      24245849,
+      1792440394886438671
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Copilot 需求交付 Skill 如何实现数据需求24h交付.pdf": [
+      7068440,
+      1792413227805476274
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI工程vs传统工程 —「道法术」中的变与不变.pdf": [
+      5465946,
+      1792461693512382131
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Agent skill 迭代式编写实战.pdf": [
+      5487148,
+      1792422046759048560
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/高价率运营 AI 工作台：约定驱动与 AI 编排的评测优化实践.pdf": [
+      8627496,
+      1792414050265994623
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/百亿补贴 C 端 AI Coding 实战：基于 SDD 的服务端 AI Coding 实践.pdf": [
+      4325671,
+      1792412180160953043
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/告别“伪智能”代码：用 Spec + RAG 打造真正懂你的 AI 程序员.pdf": [
+      9113908,
+      1792435358273885943
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/从定制Workflow到AI自主决策的架构演进——以TMIC AI小新为例.pdf": [
+      24615822,
+      1792426238628721432
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/天猫新品团队AI编码实战指南（下）.pdf": [
+      11526284,
+      1792430701983353241
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/拒绝“感觉有效”：用数据证明 AI Coding 的真实团队价值【天猫AI Coding实践系列】.pdf": [
+      8569934,
+      1792433856192098964
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI+时代工程师的空间在哪儿——从范式演进看技术机会.pdf": [
+      19415309,
+      1792458635652796214
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝TaoMate-H3开源：三步生成「分钟级」音视频连续创作.pdf": [
+      13189789,
+      1792404273972221632
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/一次大文件处理性能优化实录.pdf": [
+      3488597,
+      1792440772428427502
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI-Generated UI 技术深度解析 模型流式输出与 UI 渲染实践.pdf": [
+      3519793,
+      1792429953007526054
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/MNN-Sana-Edit-V2：端侧运行的图像漫画风编辑大模型.pdf": [
+      3125197,
+      1792432304308182616
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/百亿补贴 C 端 AI Coding 实战：端到端 CodingAgent 设计与实践.pdf": [
+      7845565,
+      1792411157893632472
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘天业务技术2025年度热门文章盘点.pdf": [
+      1668185,
+      1792460766165743987
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/我对 AI Coding 的一点思考：从 Spec 驱动转向环境与验证驱动.pdf": [
+      6002643,
+      1792406274491931588
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/场景营销前端 AI Coding — 从问题到方案.pdf": [
+      18979526,
+      1792419601126865423
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/用自然语言替代复杂代码.pdf": [
+      2924812,
+      1792434146084903192
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Agentic Coding场景下基于职责分离的上下文管理思路分享.pdf": [
+      5548254,
+      1792441910881170709
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/CVPR 2026｜面向视频扩散模型的局部细节偏好优化方法 LocalDPO.pdf": [
+      9037143,
+      1792416821432624993
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝直播数字人 AgenticRL 实践：从 RLVR 到 MultiAgent RL.pdf": [
+      11320339,
+      1792415637086996377
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/从 Vibe Coding 到范式编程：用 Spec 打造淘系交易的 AI 领域专家.pdf": [
+      19981867,
+      1792435720370258899
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/浅谈 SKILL 研发的最佳实践——以百补详情助手为例.pdf": [
+      5746279,
+      1792406849727141571
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/场景营销前端 AI Coding — AI Native 的视觉稿还原.pdf": [
+      22926676,
+      1792418700990609175
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/从人机协作到AI主导：我们是怎么把代码质量交给“数字SRE”的？.pdf": [
+      6265214,
+      1792426493469292756
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI工作流在淘宝交易舆情巡检上的探索与实践.pdf": [
+      3822184,
+      1792437216799696394
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/从全量启动到最小核：手淘外链唤端链路的三次架构演进.pdf": [
+      4361295,
+      1792434691060591363
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/告别 AI Demo 页面：构建支持淘内货品运营、可C端投放的会场 Agent Harness.pdf": [
+      15576077,
+      1792403193709065315
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI 答疑助手优化实践：从 RAG 到 LightRAG 的全链路升级.pdf": [
+      5316600,
+      1792435004479036659
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/知识基座：让“AI 越用越懂业务”的团队经验实践【天猫AI Coding实践系列】.pdf": [
+      7443386,
+      1792435995230658733
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/ICLR 2026｜基于视觉自回归模型的前馈式主体驱动图像生成算法 EchoGen.pdf": [
+      5558860,
+      1792416369192036631
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/如何构建一个更“好”的知识库？.pdf": [
+      11605955,
+      1792422890210756982
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/用 AI Skills 打通中间件迁移：定位服务从 Android 到鸿蒙的完整实践.pdf": [
+      4688568,
+      1792421461876386635
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/ICLR 2026｜基于概念蒸馏的生成式视频复原算法 Vivid-VR.pdf": [
+      9993739,
+      1792437582100724994
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/【淘宝直播数字人互动LLM】告别AI感：基于真人ASR数据的拟人化探索.pdf": [
+      3732641,
+      1792441584658326008
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/面向智能导购的Agent评测实践.pdf": [
+      4661534,
+      1792429337280576084
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/缓存使用实践总结：以淘宝交易结算场景为例.pdf": [
+      2059521,
+      1792430217123938251
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI 无障碍 CR 与自动适配实践：从问题洞察到效果验证.pdf": [
+      3771954,
+      1792459419973994286
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/QoderWork Skills 开发实践：从传统数科到 AI 数科的转型探索-我的Skills进阶之旅.pdf": [
+      5884827,
+      1792417970724076746
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝订单列表体验优化实践.pdf": [
+      10409943,
+      1792459042063154743
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/天猫新品营销技术团队AI编码实战指南（上）.pdf": [
+      20151081,
+      1792431214639307255
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/卡片式对话的协议方案探索和思考.pdf": [
+      3628271,
+      1792432861203526089
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/如何设计一个AI Agent系统.pdf": [
+      10112339,
+      1792442612443818800
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Codeindex · 让大模型更好地理解你的代码.pdf": [
+      3976512,
+      1792432596624959228
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/首届淘宝电商AI挑战赛来了！设350万赛事奖金和千万扶持资源.pdf": [
+      3269684,
+      1792438512845444703
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Agent-Memory 评测全景：基准、评估与记忆系统（理论篇）.pdf": [
+      31749332,
+      1792424571226602299
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/面向Skills编程-淘宝企业购端对端研发提效实践.pdf": [
+      9601464,
+      1792420650380793042
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/浙江大学经济学院百人计划研究员、博士生导师评价《2026 中国电商AI应用白皮书》：AI 从技术可得走向经营能力平权.pdf": [
+      1313458,
+      1792421092909238842
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/复杂业务团队的 AI Coding 交付实践：知识库、RD 流程和质量门禁.pdf": [
+      6804351,
+      1792410834307182573
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/从应用架构的视角看退小宝AI助手落地现状.pdf": [
+      7381084,
+      1792439489862372767
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？.pdf": [
+      6625629,
+      1792424868949801883
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI时代的数据研发-Semantic（语义层）实践总结.pdf": [
+      10304976,
+      1792407962786532542
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝主播Agent的Harness工程实战.pdf": [
+      8961843,
+      1792410016017615309
+    ]
+  },
+  "saved": [
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI架构师的诞生：AI+传统DDD模式 = 实现开发效率提升75%.pdf",
+      "bytes": 3290539,
+      "pages": 14,
+      "sha256": "1760764ae86a8c5ad5d31ba247eb150c33f1e39ed054e07cf08069e285267e21",
+      "content_quality": "unverified",
+      "title": "AI架构师的诞生：AI+传统DDD模式 = 实现开发效率提升75%",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-12-31",
+      "timing_id": "5de209ec7f3545b9ada530cae72a63da"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/天猫超市数据AI实践总结.pdf",
+      "bytes": 7021857,
+      "pages": 18,
+      "sha256": "689876987caf675a017959691a2f965bec4db17edcea672087cb51f19286759d",
+      "content_quality": "unverified",
+      "title": "天猫超市数据AI实践总结",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-12-29",
+      "timing_id": "e4cc83e64f594ec8bd49ae45722aa4d1"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI 辅助前端动画开发.pdf",
+      "bytes": 9802967,
+      "pages": 20,
+      "sha256": "acdad8581639e81f7422ff0e78ddc1496b6cf6d509bbb809d809b21f08ee8e48",
+      "content_quality": "unverified",
+      "title": "AI 辅助前端动画开发",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-12-24",
+      "timing_id": "751ceab95e664b0a8d39a4c11b66faa9"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/从代码生成到自主决策：打造一个Coding驱动的“自我编程”Agent.pdf",
+      "bytes": 7763035,
+      "pages": 37,
+      "sha256": "b14bc5c2de304a911c2846a8293ae12b4a40fcebd142a4ea070adc9bb3b1d2c3",
+      "content_quality": "unverified",
+      "title": "从代码生成到自主决策：打造一个Coding驱动的“自我编程”Agent",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-12-22",
+      "timing_id": "52ca1cb8e0a94602b35b86da26381589"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/SIGGRAPH Asia 2025｜只用一部手机创建和渲染高质量3D数字人.pdf",
+      "bytes": 15909722,
+      "pages": 18,
+      "sha256": "8c74ceb96c1bcae469776b3893f6383fe7262b1db775a61e943b9802c0dad0a4",
+      "content_quality": "unverified",
+      "title": "SIGGRAPH Asia 2025｜只用一部手机创建和渲染高质量3D数字人",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-12-18",
+      "timing_id": "3813c80492b342cc807c24aca8783481"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI编码实践：从Vibe Coding到SDD.pdf",
+      "bytes": 4100376,
+      "pages": 26,
+      "sha256": "4cfafc060f610d4e80b2ded9c577e8f860e3a57a05e6758e7051cd2e464acba7",
+      "content_quality": "unverified",
+      "title": "AI编码实践：从Vibe Coding到SDD",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-12-15",
+      "timing_id": "573e1cc07adb480e89aa30c9fb90afdf"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Jimi：打造Java程序员专属的开源ClaudeCode.pdf",
+      "bytes": 6604959,
+      "pages": 30,
+      "sha256": "2f4a05372084ed4d5e9149ab80cc60016b840d45dc9e2e8a2cdba00a379be3e0",
+      "content_quality": "unverified",
+      "title": "Jimi：打造Java程序员专属的开源ClaudeCode",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-12-10",
+      "timing_id": "95accb9f09eb46a18aa9afa359e65590"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/2025淘宝直播双11花花乐动画实现方案思考&分享.pdf",
+      "bytes": 8711647,
+      "pages": 20,
+      "sha256": "4e05696ef30062a2d96ab02c06700a773bdd94c90e5e9b1e419173b1c2cb7ce1",
+      "content_quality": "unverified",
+      "title": "2025淘宝直播双11花花乐动画实现方案思考&分享",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-12-08",
+      "timing_id": "13033e7f71414d0fbc5be480d36caa79"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/复杂任务AI处理实践：淘宝工程师的实战手记.pdf",
+      "bytes": 3525147,
+      "pages": 14,
+      "sha256": "fafa036ca541b485e9bc9b143ed3c41b1efcbd3e1a4171b2b0aa5734505635f7",
+      "content_quality": "unverified",
+      "title": "复杂任务AI处理实践：淘宝工程师的实战手记",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-12-01",
+      "timing_id": "dd23180e42644f82b1780b9ed3579e0d"
+    }
+  ],
+  "version": 2,
+  "cursor": {
+    "last_success": {
+      "title": "复杂任务AI处理实践：淘宝工程师的实战手记",
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/复杂任务AI处理实践：淘宝工程师的实战手记.pdf",
+      "date": "2025-12-01"
+    },
+    "next_article": null,
+    "boundary": null,
+    "list_hint": "已收集全部可见2025年12月文章，共9篇；列表下一项为2025年11月28日《重构一个类，JVM竟省下2.9G内存?》，停止未打开"
+  },
+  "timing": {
+    "totals": {
+      "open": 128.51451086997986,
+      "body": 802.1736505031586,
+      "print_save": 316.79108333587646,
+      "verify": 9.486127614974976,
+      "return_list": 132.59842610359192,
+      "extra_wait": 6.058732032775879
+    },
+    "articles": {
+      "5de209ec7f3545b9ada530cae72a63da": {
+        "title": "AI架构师的诞生：AI+传统DDD模式 = 实现开发效率提升75%",
+        "date": "2025-12-31",
+        "phases": {
+          "open": 5.908250093460083,
+          "body": 39.71578073501587,
+          "print_save": 47.74121713638306,
+          "verify": 1.0532968044281006,
+          "return_list": 6.29457426071167
+        }
+      },
+      "e4cc83e64f594ec8bd49ae45722aa4d1": {
+        "title": "天猫超市数据AI实践总结",
+        "date": "2025-12-29",
+        "phases": {
+          "open": 14.869982957839966,
+          "extra_wait": 1.0111749172210693,
+          "body": 63.11671423912048,
+          "print_save": 25.1489999294281,
+          "verify": 1.0580790042877197,
+          "return_list": 13.150378942489624
+        }
+      },
+      "751ceab95e664b0a8d39a4c11b66faa9": {
+        "title": "AI 辅助前端动画开发",
+        "date": "2025-12-24",
+        "phases": {
+          "open": 9.850796937942505,
+          "body": 70.76938319206238,
+          "print_save": 32.3859646320343,
+          "verify": 1.0575101375579834,
+          "return_list": 7.31920313835144
+        }
+      },
+      "52ca1cb8e0a94602b35b86da26381589": {
+        "title": "从代码生成到自主决策：打造一个Coding驱动的“自我编程”Agent",
+        "date": "2025-12-22",
+        "phases": {
+          "open": 39.68070101737976,
+          "body": 117.3090329170227,
+          "print_save": 49.60754203796387,
+          "extra_wait": 0.5055661201477051,
+          "verify": 1.0534300804138184,
+          "return_list": 11.073693037033081
+        }
+      },
+      "3813c80492b342cc807c24aca8783481": {
+        "title": "SIGGRAPH Asia 2025｜只用一部手机创建和渲染高质量3D数字人",
+        "date": "2025-12-18",
+        "phases": {
+          "open": 19.38357186317444,
+          "extra_wait": 2.5212080478668213,
+          "body": 102.50586318969727,
+          "print_save": 34.85879993438721,
+          "verify": 1.04917311668396,
+          "return_list": 8.62059497833252
+        }
+      },
+      "573e1cc07adb480e89aa30c9fb90afdf": {
+        "title": "AI编码实践：从Vibe Coding到SDD",
+        "date": "2025-12-15",
+        "phases": {
+          "open": 16.774756908416748,
+          "extra_wait": 0.5045561790466309,
+          "body": 115.21182990074158,
+          "print_save": 65.62012100219727,
+          "verify": 1.0516541004180908,
+          "return_list": 9.466335773468018
+        }
+      },
+      "95accb9f09eb46a18aa9afa359e65590": {
+        "title": "Jimi：打造Java程序员专属的开源ClaudeCode",
+        "date": "2025-12-10",
+        "phases": {
+          "open": 10.04508900642395,
+          "body": 127.64318299293518,
+          "extra_wait": 0.5049228668212891,
+          "print_save": 21.68465805053711,
+          "verify": 1.0523481369018555,
+          "return_list": 7.968897104263306
+        }
+      },
+      "13033e7f71414d0fbc5be480d36caa79": {
+        "title": "2025淘宝直播双11花花乐动画实现方案思考&分享",
+        "date": "2025-12-08",
+        "phases": {
+          "open": 11.967225074768066,
+          "body": 103.28831315040588,
+          "extra_wait": 1.0113039016723633,
+          "print_save": 25.991307973861694,
+          "verify": 1.058532953262329,
+          "return_list": 43.59329605102539
+        }
+      },
+      "dd23180e42644f82b1780b9ed3579e0d": {
+        "title": "复杂任务AI处理实践：淘宝工程师的实战手记",
+        "date": "2025-12-01",
+        "phases": {
+          "open": 0.03413701057434082,
+          "body": 62.61355018615723,
+          "print_save": 13.752472639083862,
+          "verify": 1.0521032810211182,
+          "return_list": 25.11145281791687
+        }
+      }
+    },
+    "active": {
+      "name": "idle",
+      "started_at": 1792467522.439863,
+      "article_id": "dd23180e42644f82b1780b9ed3579e0d"
+    },
+    "unmeasured": [],
+    "waits": {
+      "loading": 6.0
+    },
+    "awaiting_title": false,
+    "unassigned": {}
+  },
+  "current_id": null,
+  "current": null
+}

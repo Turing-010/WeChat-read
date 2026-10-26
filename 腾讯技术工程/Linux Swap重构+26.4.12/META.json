@@ -1,0 +1,363 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0077",
+  "title": "这大概是我读过最硬核的一次 Linux 内核重构文章了",
+  "short_title": "Linux Swap重构",
+  "account": "腾讯技术工程",
+  "author": "TencentOS",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-04-12T02:51",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0412 Linux Swap Kernel.pdf",
+      "original_filename": "0412 Linux Swap Kernel.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "920b11ea698fb29ab89f7f13248dcf21df9cb865515f639e3d280fb56fd38bc7",
+      "size_bytes": 2248286,
+      "page_count": 13,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [],
+      "publication_evidence": "PDF p.1 可见 2026-04-12T02:51"
+    }
+  ],
+  "tags": [
+    "操作系统与内存管理"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Linux Swap重构+26.4.12",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Linux Swap重构.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "这大概是我读过最硬核的一次 Linux  内核重构文章了\n2026 年 4 月 12 日 02 : 51广东腾讯技术工程 47 人\n作者: TencentOS\n背景\nLinux 内核的  Swap 子系统自诞生以来,数十年间代码复杂度持续累积,逐渐成为内存管理子系\n统中公认的复杂地带。然而,来自腾讯的内核工程师  Kairui Song 以一系列系统性的重构方案,\n彻底扭转这一局面。\n自 2025 年  Linux 存储、文件系统、内存管理与 BPF 峰会上首次亮相以来,腾讯服务器操作系统\nTencentOS 内核研发工程师  KairuiSong 主导的 Swap 现代化工程,历经了多个阶段的演进:\nswap table 的引入(已合并进  Linux 6.18 )从根本上替代了沿用多年的  XArray 结构,带来\n5%~20% 的性能提升; swap map 的移除(面向  Linux 7.1 )进一步统一了  Swap 元数据管理,\n节省约  30% 的元数据内存开销;而将整个  Swap 子系统重新构建于更为清晰、高效的数据结构\n之上的宏大目标,正逐步从设想变为现实。\n这项持续了 18 个月的工作在  Linux 内核社区引发了广泛关注。 LWN.net 知名作者、 Linux 内核文\n档核心维护者  Jonathan Corbet 专门撰写了连续三篇深度分析文章( \"Modernizing swapping\"\n系列),逐篇解析  Kairui 及其协作者( Chris Li 等)所做工作的技术细节与及其深远影响 —— 这在\nLWN 的报道传统中,是对一项内核贡献极高规格的认可。\n本文对  Corbet 的三篇文章进行了系统翻译与整理,以期将这项重要的内核技术进展完整呈现。\n(原文链接详见文末附录)\n一、引入 swap table\n内核的  Swap 子系统是一个复杂且常被忽视的庞然大物,但它也是内存管理子系统的关键组成部\n分,对整个系统的性能有重大影响。在  2025 年的 LSF/MM/BPF ( Linux 存储、文件系统、内存\n管理和  BPF )峰会上, Kairui Song 提出了一个简化并优化内核交换代码的方案 1 。该工作的第一\n部分 2 (由  Chris Li 协助)成功进入 6.18 版本内核,开启了整个  Swap 子系统现代化的序章。\n1.1 虚拟内存与匿名页换出\n",
+    "publication_evidence": "PDF p.1 可见 2026-04-12T02:51",
+    "full_title_in_capture": "这大概是我读过最硬核的一次 Linux 内核重构文章了",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0077",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "920b11ea698fb29ab89f7f13248dcf21df9cb865515f639e3d280fb56fd38bc7"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [],
+    "outputs": [
+      "AI_Linux Swap重构.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "detail_pages_reviewed": [
+        4,
+        7,
+        9
+      ]
+    },
+    "coverage": "覆盖匿名页、旧结构、table各阶段、虚拟swap两方案、tiers与MGLRU展望；源码引用保留原文入口，未逐行转载全部结构体",
+    "fact_checks": [
+      {
+        "item": "基础收益",
+        "value": "约5%–20%",
+        "pages": [
+          4
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "旧引用数上限",
+        "value": "62",
+        "pages": [
+          5
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "移除swap map节省",
+        "value": "1TB约256MB",
+        "pages": [
+          6
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "移除cgroup数组节省",
+        "value": "1TB约512MB",
+        "pages": [
+          8
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "描述符开销",
+        "value": "8字节→最多32字节",
+        "pages": [
+          10
+        ],
+        "result": "核对原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Linux Swap重构.md",
+      "sha256": "655b08eac743ef289e211c74b85a7fedfc68dcaa038309de3bb78b2efdcb5502"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "920b11ea698fb29ab89f7f13248dcf21df9cb865515f639e3d280fb56fd38bc7"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "cce2630b5e012e3eeaaa858b1f1f1a887811e15743390e99108f91a8d6c4e6f6"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 34,
+        "text_layer_sha256": "8d54107055f7de1819ebe5d003e01921f197bf8657f9899179ef88ba58f2510d",
+        "text_layer_char_count": 1019
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 80,
+        "text_layer_sha256": "a7235b431e31d53f86d7170217e7d1fc382de6cfee4e175128dc3ea8b1d4cb3a",
+        "text_layer_char_count": 1555
+      },
+      {
+        "page": 3,
+        "md_start_line": 88,
+        "md_end_line": 121,
+        "text_layer_sha256": "a67d22149018f0b25f9174c4593521ec6ceac317e86bc53275a0f98475de046f",
+        "text_layer_char_count": 1469
+      },
+      {
+        "page": 4,
+        "md_start_line": 129,
+        "md_end_line": 149,
+        "text_layer_sha256": "ad095345f6102ac9dc911ec8ea809596f66c373ce5f6e8c599b131139e514123",
+        "text_layer_char_count": 933
+      },
+      {
+        "page": 5,
+        "md_start_line": 157,
+        "md_end_line": 193,
+        "text_layer_sha256": "d4b02879413973877ee2f860370cc48b69e43f5ffc6aa4bb6656cd5652ac1df7",
+        "text_layer_char_count": 1754
+      },
+      {
+        "page": 6,
+        "md_start_line": 201,
+        "md_end_line": 234,
+        "text_layer_sha256": "810d5004df5426e7ddea9fe3fbf00f423908dd7621eac47983194df801714d20",
+        "text_layer_char_count": 1592
+      },
+      {
+        "page": 7,
+        "md_start_line": 242,
+        "md_end_line": 265,
+        "text_layer_sha256": "2caf53cc819f5eeb7dc27715e48799bfa9e1d8392494c51ac3a822d5be6b8c61",
+        "text_layer_char_count": 1108
+      },
+      {
+        "page": 8,
+        "md_start_line": 273,
+        "md_end_line": 303,
+        "text_layer_sha256": "c6f1a5c9c955bf9fd2c0932ebb14367ac32dc0836df402ae8dfe171fd2b07062",
+        "text_layer_char_count": 1301
+      },
+      {
+        "page": 9,
+        "md_start_line": 311,
+        "md_end_line": 360,
+        "text_layer_sha256": "f32f4e9b6ef9980a4ade883c82e24d232496cfb3b4b916e559e5d0c2a984413d",
+        "text_layer_char_count": 1311
+      },
+      {
+        "page": 10,
+        "md_start_line": 368,
+        "md_end_line": 399,
+        "text_layer_sha256": "49a84c76961ed7a6b89ddab5e3986769b75e9ced17a313c2a92b5d12279429f4",
+        "text_layer_char_count": 1379
+      },
+      {
+        "page": 11,
+        "md_start_line": 407,
+        "md_end_line": 433,
+        "text_layer_sha256": "7bd60806201b4c73d87f9fec51aac28c48096fdbeb1ba321c30d4b90d29270de",
+        "text_layer_char_count": 1548
+      },
+      {
+        "page": 12,
+        "md_start_line": 441,
+        "md_end_line": 451,
+        "text_layer_sha256": "08c57aeb2baeb21df48d0b55e11d905d40ef15015ff1ea6a633e75eab4a7d39b",
+        "text_layer_char_count": 462
+      },
+      {
+        "page": 13,
+        "md_start_line": 459,
+        "md_end_line": 459,
+        "text_layer_sha256": "c01129305e3f2701794b59ab978930dc476ea9901ce49f19b59c02b18c1e3171",
+        "text_layer_char_count": 11
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "detail_pages_reviewed": [
+        4,
+        7,
+        9
+      ]
+    },
+    "quality_issues": []
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0412 Linux Swap Kernel.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "920b11ea698fb29ab89f7f13248dcf21df9cb865515f639e3d280fb56fd38bc7",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/操作系统与内存管理.md",
+      "../../20_topics/解决问题.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Linux Swap重构.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

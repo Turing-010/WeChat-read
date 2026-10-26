@@ -1,0 +1,544 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0164",
+  "title": "别只盯着 AI Coding，真正的变化发生在整个研发流程",
+  "short_title": "AI端到端研发流",
+  "account": "腾讯技术工程",
+  "author": "danteyang",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-10-09T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/别只盯着AI Coding，真正的变化发生在整个研发流程.pdf",
+      "original_filename": "别只盯着AI Coding，真正的变化发生在整个研发流程.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "42bc58bc764c10fa2e63b54158048db652b38412f45e8304077089908521e226",
+      "size_bytes": 5042545,
+      "page_count": 21,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "运营数据存在跨段不一致：p.4 报告 254 条中 172 条/68%、知识资产 547；p.19 总结写 170 条/66%、491 条。原文未解释统计口径或时间点差异。",
+          "pages": [
+            4,
+            19
+          ],
+          "status": "source_conflict"
+        }
+      ],
+      "publication_evidence": "PDF p.1 页眉 Oct 9, 2026, 2:36 AM；未标时区。"
+    }
+  ],
+  "tags": [
+    "AI研发协同",
+    "Agent评测与反馈",
+    "决策知识结构化"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/AI端到端研发流+26.10.9",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI端到端研发流.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "别只盯着 AI  Coding ,真正的变化发生在整个研发流程\n腾讯程序员 Oct  9 , 2026 , 2 : 36  AM广东原创 腾讯技术工程 322  listened\n作者: danteyang\n一、零基思维:要不要重构研发流程\n各种  AI 编程工具层出不穷 —— 司内的  CodeBuddy 、 Cursor 、 Claude code ,写代码的能力确\n实强,日常开发任务基本都能  cover 。\n但你有没有想过一个问题:为什么还是不能直接把需求丢给  AI ?  为什么大量工作仍然需要开\n发坐在旁边辅助  AI 一起做?到底缺了什么?\n如果把  CI/CD 看成一个圈,从  Human-in-the-Loop 的思想出发想一件事:人在这些开发环\n节里到底在做什么?这些事情能不能不需要人来参与?能不能让需求端到端地解决 —— 从提出\n端一路跑到交付端?\n先从一个最熟悉的场景说起。\n如果你原封不动地喂给  AI ,它只能问:「你想让我改哪部分?」「你想要我怎么改?」「或者自\n己就按认为可行的想法开始改起来了」\n但往往效果不及预期,并且开发还需要去回滚 AI 的开发,我们经常吐槽某某 AI 是劣质 AI ,某某\nAI 是捣蛋鬼,其实不是  AI 笨,是它不知道:帖子列表走的是哪个接口、下游查的是  MySQL\n还是  ES 、这个月刚换过一次分页逻辑、慢查询日志指向的其实是一个没加索引的关联表。这\n些背景存在你脑子里或是文档里, AI 每次对话都是「失忆」重新开始。\n现实中你是怎么做的?先在脑子里想清楚根因,把「加载慢」翻译成「关联查询缺索引  + N+1\n问题」,再喂给  AI 。\n当  AI 开始自动完成需求评审、技术方案、编码、审查和部署,研发流程会发生什么变\n化?本文基于  OK 平台端到端自动交付的真实运营数据,探讨从零基思维出发重建研发流\n程的实践路径 ——AI 不只是提升编码速度,而是重新定义「人」与「代码」之间的协作\n方式。\n「用户反馈帖子列表加载太慢,需要优化一下。」\n",
+    "publication_evidence": "PDF p.1 页眉 Oct 9, 2026, 2:36 AM；未标时区。",
+    "full_title_in_capture": "别只盯着 AI Coding，真正的变化发生在整个研发流程",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0164",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "updated_at": "2026-10-15T01:55:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "42bc58bc764c10fa2e63b54158048db652b38412f45e8304077089908521e226"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "28117ab55197e6f9aeec30b169d75f0e2d6167eec8da923b5fe4dd1df27d470e"
+      }
+    ],
+    "method": "按用户指定Obsidian学习笔记提示词（基于MD.md与既有PDF核验记录）重新生成中文学习笔记；正文、数据表、图注与复习卡片均去除页码标注，核验结果统一置于文末折叠校对报告；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "MD.md全文核对与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "user_custom_obsidian_prompt_20261015",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71",
+      "override_note": "用户于2026-10-15会话中直接提供完整结构化Obsidian学习笔记提示词（去除正文/表格/卡片内页码标注，保留文末折叠校对报告）。"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "运营数据存在跨段不一致：p.4 报告 254 条中 172 条/68%、知识资产 547；p.19 总结写 170 条/66%、491 条。原文未解释统计口径或时间点差异。",
+        "pages": [
+          4,
+          19
+        ],
+        "status": "source_conflict"
+      }
+    ],
+    "outputs": [
+      "AI_AI端到端研发流.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "coverage": "通读 p.1–21；覆盖零基思维、运营数据、需求访谈、可行性评分、技术方案、编码纪律、审查、安全、人类角色、知识飞轮、能力边界、组织提效和行业观察。",
+    "fact_checks": [
+      {
+        "item": "需求统计",
+        "original_value": "p.4 报254条中的172条/68%",
+        "pages": [
+          4
+        ],
+        "result": "段落数据。"
+      },
+      {
+        "item": "结尾统计",
+        "original_value": "p.19 写170条/66%",
+        "pages": [
+          19
+        ],
+        "result": "与p.4不一致，未裁决。"
+      },
+      {
+        "item": "知识资产",
+        "original_value": "p.4报547条；p.19报491条",
+        "pages": [
+          4,
+          19
+        ],
+        "result": "原文未解释口径/时间差异。"
+      },
+      {
+        "item": "方案门槛",
+        "original_value": "评分门槛>=60",
+        "pages": [
+          6,
+          7
+        ],
+        "result": "正文实践参数。"
+      },
+      {
+        "item": "研发检查",
+        "original_value": "流程包括审查、安全检查及人工责任",
+        "pages": [
+          10,
+          15
+        ],
+        "result": "按实践框架总结。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 9,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading",
+        "clean body without inline page citations"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_AI端到端研发流.md",
+      "sha256": "e6aad9a6e76e5cb4c546768ad6ffb8c31e5bc471854bbb5bae0e731a375bb4a3",
+      "previous_sha256": "772eb2c999cc1a184f5ebd8fa5d739b6511e56d09d66d9bf1e0e79135f9270ad"
+    },
+    "independent_crosscheck": {
+      "reviewer": "regenerated_with_user_prompt_20261015",
+      "note_sha256": "8c84cd2214b610ea572256dec15c78ddf16deeff7c6c89ac07f4c94cea1b9c9a",
+      "previous_note_sha256": "f110ce613ac28fdc7478e5f825a1f697e4661d5acc1546c302b293c03f55bb4a",
+      "review_sha256": "e053ace30c4da2d2cc17452103c15467e72fd8ec65363178cba832454d765300",
+      "status": "passed",
+      "changes": [
+        "Regenerated study note from MD.md per user prompt (2026-10-15): structured 10 modules, removed inline page citations from body/tables/flashcards, preserved source_conflict and missing_diagram markers, and consolidated verification in the folded 校对报告."
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "4, 6–7",
+          "check": "对照运营表、需求访谈的四项必需信息、七维评分权重与≥60门槛；方案拆分阈值和检查点与笔记一致。"
+        },
+        {
+          "pages": "9–10",
+          "check": "核对约49条/17%多轮修复、“改善即批准”的阻塞问题和安全门禁；笔记按平台实践口径归因。"
+        },
+        {
+          "pages": "19–21",
+          "check": "核对结尾统计170/66%及491条，与前文254条中172/68%和资产547条不一致；笔记显式保留冲突。查看p.20为公众号尾页、p.21空白，报告覆盖到尾页。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "42bc58bc764c10fa2e63b54158048db652b38412f45e8304077089908521e226"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "28117ab55197e6f9aeec30b169d75f0e2d6167eec8da923b5fe4dd1df27d470e"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 34,
+        "text_layer_sha256": "65490eee8e6b826d492a423ded4dcee7b394a7509357d753ffbfe2502fe4e80a",
+        "text_layer_char_count": 865
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 69,
+        "text_layer_sha256": "b689acfe9b5ee8571521918efced701be6425f42a68b3e0d44e6c77d3287d53b",
+        "text_layer_char_count": 820
+      },
+      {
+        "page": 3,
+        "md_start_line": 77,
+        "md_end_line": 106,
+        "text_layer_sha256": "b08e9e427a933ec057644e873af6796462f7e8f28005943e7e4287050fae7bc1",
+        "text_layer_char_count": 999
+      },
+      {
+        "page": 4,
+        "md_start_line": 114,
+        "md_end_line": 125,
+        "text_layer_sha256": "8cf7f1fc379f1739463abbefe23b243bcda293e12b85d92b52c39f2aa8500616",
+        "text_layer_char_count": 405
+      },
+      {
+        "page": 5,
+        "md_start_line": 133,
+        "md_end_line": 144,
+        "text_layer_sha256": "ebea61226c5c67214c4bfc836f1fc5c8be6ca7d445eabf243d65bf44be56b1fb",
+        "text_layer_char_count": 361
+      },
+      {
+        "page": 6,
+        "md_start_line": 152,
+        "md_end_line": 172,
+        "text_layer_sha256": "33360242c232cfbfb6db8cddb3ddefc23644d5ba66daad5798f68da38bae27f2",
+        "text_layer_char_count": 775
+      },
+      {
+        "page": 7,
+        "md_start_line": 180,
+        "md_end_line": 209,
+        "text_layer_sha256": "945efbe36426c5fdb80b9c0b7a7e76ed2cca090905bae66950736a5361cf713e",
+        "text_layer_char_count": 898
+      },
+      {
+        "page": 8,
+        "md_start_line": 217,
+        "md_end_line": 244,
+        "text_layer_sha256": "c7880a1176a4a5cd577ea2d061b92adea4118bff423dee652a8b9820d1c448ce",
+        "text_layer_char_count": 874
+      },
+      {
+        "page": 9,
+        "md_start_line": 252,
+        "md_end_line": 281,
+        "text_layer_sha256": "814cc5d31ba3bd4cf90d442e4040368ae2e6bef0fcdb5c54dd2c60356bd26b5b",
+        "text_layer_char_count": 894
+      },
+      {
+        "page": 10,
+        "md_start_line": 289,
+        "md_end_line": 318,
+        "text_layer_sha256": "5f8fccd4cf056402d7801d5d2680cd471a5eb6d951c995df14e544148c23f5e7",
+        "text_layer_char_count": 962
+      },
+      {
+        "page": 11,
+        "md_start_line": 326,
+        "md_end_line": 346,
+        "text_layer_sha256": "d0929ddda32694c96700c90c45fee5ad91cd5e7193be847920087ba0b5e230a5",
+        "text_layer_char_count": 464
+      },
+      {
+        "page": 12,
+        "md_start_line": 354,
+        "md_end_line": 369,
+        "text_layer_sha256": "c95ceaeeab35e05e84469b20bcc1be8a540373e68188c716f257e39ff0a53c3f",
+        "text_layer_char_count": 497
+      },
+      {
+        "page": 13,
+        "md_start_line": 377,
+        "md_end_line": 384,
+        "text_layer_sha256": "1868ed83536dd687827bf2e461b089c4204acbfa60f5b7f2d050ef7d815c1d78",
+        "text_layer_char_count": 191
+      },
+      {
+        "page": 14,
+        "md_start_line": 392,
+        "md_end_line": 413,
+        "text_layer_sha256": "3d3af5c46b423888dfb90abbc02ffeaad51f4749602198637e1ed4722842cf7e",
+        "text_layer_char_count": 731
+      },
+      {
+        "page": 15,
+        "md_start_line": 421,
+        "md_end_line": 442,
+        "text_layer_sha256": "118597e77d491fd0801a7c7990586971b1f03298e70c3261cc4e2638d870ca71",
+        "text_layer_char_count": 571
+      },
+      {
+        "page": 16,
+        "md_start_line": 450,
+        "md_end_line": 480,
+        "text_layer_sha256": "dbddc59f93342e5a25b9e2a3758cbb341695ee39a1fd3095220c5c6da5acd728",
+        "text_layer_char_count": 1012
+      },
+      {
+        "page": 17,
+        "md_start_line": 488,
+        "md_end_line": 506,
+        "text_layer_sha256": "5d98f0e54782da16e6f5600bffc3b29d8eb5c51ddf95b82fc37232119d66e947",
+        "text_layer_char_count": 530
+      },
+      {
+        "page": 18,
+        "md_start_line": 514,
+        "md_end_line": 540,
+        "text_layer_sha256": "364588c39d36807846e7e43b930ef2ffe93500d78810c2ccce4876272e40ea9f",
+        "text_layer_char_count": 776
+      },
+      {
+        "page": 19,
+        "md_start_line": 548,
+        "md_end_line": 574,
+        "text_layer_sha256": "eb15d9aa722b7e6cd76ea2eac33f9dcab74ed0df24e1ae0bb9131e2a62b84a6c",
+        "text_layer_char_count": 705
+      },
+      {
+        "page": 20,
+        "md_start_line": 582,
+        "md_end_line": 590,
+        "text_layer_sha256": "7f7e17ab4cd3540ad7967ac584c9cb71dd9416c16a9317df9c979eb06fe329c9",
+        "text_layer_char_count": 93
+      },
+      {
+        "page": 21,
+        "md_start_line": 598,
+        "md_end_line": 597,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "运营数据存在跨段不一致：p.4 报告 254 条中 172 条/68%、知识资产 547；p.19 总结写 170 条/66%、491 条。原文未解释统计口径或时间点差异。",
+        "pages": [
+          4,
+          19
+        ],
+        "status": "source_conflict"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/别只盯着AI Coding，真正的变化发生在整个研发流程.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "42bc58bc764c10fa2e63b54158048db652b38412f45e8304077089908521e226",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md",
+      "../../20_topics/问题澄清.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_AI端到端研发流.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

@@ -1,0 +1,458 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0265",
+  "title": "支配树算法原理及鸿蒙工具实践",
+  "short_title": "支配树算法与鸿蒙工具",
+  "account": "大淘宝技术",
+  "author": "灵貎",
+  "author_byline": "本文作者灵貎，来自淘天集团-终端平台基础工程团队。",
+  "source_url": null,
+  "published_at": "2026-01-14",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "终端平台基础工程 2026年1月14日 03:11 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 16,
+      "text": "本文作者灵貎，来自淘天集团-终端平台基础工程团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "操作系统与内存管理",
+    "跨端开发与性能",
+    "解决问题"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/支配树算法原理及鸿蒙工具实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T19:22:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "2ff129817cca737b7fc7a41954f4089dc927860fb38d9fcc4fbefe12d2e00cd0",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.1-6, 12-13, 16含行内数学公式小图、DFS四色边有向图及Cooper论文伪代码截图（位于PDF图像层），p.10-15部分Java代码长行右侧略有截断；已在笔记中完整还原全部公式与核心算法逻辑。",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 4353174,
+      "page_count": 17
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T19:22:00-07:00",
+  "directory": "大淘宝技术/支配树算法与鸿蒙工具+26.1.14",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_支配树算法与鸿蒙工具.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0265",
+    "created_at": "2026-10-20T19:22:00-07:00",
+    "updated_at": "2026-10-20T19:22:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "2ff129817cca737b7fc7a41954f4089dc927860fb38d9fcc4fbefe12d2e00cd0"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "2edf6e5511b5a15785be4e9172fcf5532ac73662b830fe16107cfa18cb4d9eb6"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.1-6, 12-13, 16含行内数学公式小图、DFS四色边有向图及Cooper论文伪代码截图（位于PDF图像层），p.10-15部分Java代码长行右侧略有截断；已在笔记中完整还原全部公式与核心算法逻辑。",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_支配树算法与鸿蒙工具.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_支配树算法与鸿蒙工具.md",
+      "sha256": "fdd64aeef666c55e322a0d439266fe390075f12abac7a9f4081fc1df72e76ddc"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T19:22:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "2ff129817cca737b7fc7a41954f4089dc927860fb38d9fcc4fbefe12d2e00cd0"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "2edf6e5511b5a15785be4e9172fcf5532ac73662b830fe16107cfa18cb4d9eb6"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 48,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 651,
+        "text_layer_sha256": "16428e9043efab43e6c6a28af53bf1df6424247142044d464b3668924268ecb0"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 90,
+        "md_start_line": 56,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 2,
+        "text_layer_char_count": 604,
+        "text_layer_sha256": "9a95ff41544085e5412ffe8ad1e5553078b0337cd4e70ff8428787112aa426a1"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 128,
+        "md_start_line": 98,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 3,
+        "text_layer_char_count": 586,
+        "text_layer_sha256": "f212bea351cfbaf502da470d82ee8f8668591788484310f6306435c37394dc8b"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 170,
+        "md_start_line": 136,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 4,
+        "text_layer_char_count": 510,
+        "text_layer_sha256": "1a228a798dd5fe370e55e00606c1b0f8d41b43398849505b24fd741835fac09c"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 209,
+        "md_start_line": 178,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 5,
+        "text_layer_char_count": 531,
+        "text_layer_sha256": "e76b02db31fdc213f7c823fa1d306a837e4717dc0b32978e7cd8e24826e6728a"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 246,
+        "md_start_line": 217,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 6,
+        "text_layer_char_count": 449,
+        "text_layer_sha256": "cd26b265d46842fa04074bf19df9e58275b3e53d62cd2cc92e485264dfa1824a"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 451,
+        "md_start_line": 254,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 7,
+        "text_layer_char_count": 1258,
+        "text_layer_sha256": "ce7b47b5410d7a8f996be1371acadea0fdb120c7b77c7165e1c55b24f76aa55d"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 610,
+        "md_start_line": 459,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 8,
+        "text_layer_char_count": 1120,
+        "text_layer_sha256": "659635189990874f7ad28a1af8532a7a1e3d951012a44f88badd25aacbbbcb4f"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 702,
+        "md_start_line": 618,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 9,
+        "text_layer_char_count": 1088,
+        "text_layer_sha256": "e810227dd69d1a0c4c709ddbe1167b37e5adb9278d76543b3897539b63b88f8b"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 787,
+        "md_start_line": 710,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 10,
+        "text_layer_char_count": 1489,
+        "text_layer_sha256": "4d01b00d6276219f83062780908e25ef1af3f8ae2ecf053fa3ff82a473b3195a"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 880,
+        "md_start_line": 795,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 11,
+        "text_layer_char_count": 1511,
+        "text_layer_sha256": "125fe80ce3cd5e84655a739444b8089c897791aa726dcfe66cfd96c6b9144f66"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 930,
+        "md_start_line": 888,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 12,
+        "text_layer_char_count": 811,
+        "text_layer_sha256": "8ad6e6c0bb13e0a5b7278c173ba0ecadc92a16cfdb8ddd4d9471b28541323cb8"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 995,
+        "md_start_line": 938,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 13,
+        "text_layer_char_count": 1113,
+        "text_layer_sha256": "ff1c37017736b5607d151057dd0d56e5f43a3ba2cdca4e7054e263ef6cc8256d"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1083,
+        "md_start_line": 1003,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 14,
+        "text_layer_char_count": 1323,
+        "text_layer_sha256": "1fb55c3cef6c5ca4d50ed4aca46f963c90e1a24876a227a50633a6d2f5dbfdfe"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1184,
+        "md_start_line": 1091,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 15,
+        "text_layer_char_count": 1500,
+        "text_layer_sha256": "8c4fb7934646f9b6347002acba1904864918561ba8058d90e0bed313b6f6346a"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 1236,
+        "md_start_line": 1192,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 16,
+        "text_layer_char_count": 975,
+        "text_layer_sha256": "d48f218e2be0aec3c9425b7b79ca280423d050a408aeb83ae23f920e1d233248"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1257,
+        "md_start_line": 1244,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 17,
+        "text_layer_char_count": 106,
+        "text_layer_sha256": "327512155b3dcf4936b143deba6d492168cb7fb37b62cceaa7173d31fcf2a95d"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.1-6, 12-13, 16含行内数学公式小图、DFS四色边有向图及Cooper论文伪代码截图（位于PDF图像层），p.10-15部分Java代码长行右侧略有截断；已在笔记中完整还原全部公式与核心算法逻辑。",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/操作系统与内存管理.md",
+      "../../20_topics/解决问题.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T19:22:00-07:00",
+    "removed_at": "2026-10-20T19:22:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/支配树算法原理及鸿蒙工具实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "2ff129817cca737b7fc7a41954f4089dc927860fb38d9fcc4fbefe12d2e00cd0",
+        "copied_at": "2026-10-20T19:22:00-07:00",
+        "removed_at": "2026-10-20T19:22:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_支配树算法与鸿蒙工具.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

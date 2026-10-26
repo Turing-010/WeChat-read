@@ -1,0 +1,583 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0001",
+  "title": "都Agent时代了，我还是想分享给你这12个我最常用的Prompt。",
+  "account": "数字生命卡兹克",
+  "author": "卡兹克",
+  "source_url": null,
+  "published_at": "2026-08-20T17:08:00+08:00",
+  "identity_evidence": "RAW_补采002.md开头的公众号、作者和发布时间；尚未与在线原文核对",
+  "tags": [
+    "问题澄清",
+    "学习方法",
+    "解决问题",
+    "决策方法",
+    "自我认识"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "数字生命卡兹克/都Agent时代了，我还是想分享给你这12个我最常用的Prompt。.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-03T08:13:00-07:00",
+      "provenance": "归档前已存在；采集方式和时间未确认",
+      "completeness": "pending_review",
+      "sha256": "c7784c725959cccc5ad5baceef311a47ad2166533595f97b940dced7a660e22d",
+      "files": [],
+      "quality_issues": [
+        {
+          "pages": [
+            5,
+            11
+          ],
+          "description": "用户报告：第5页加载占位区域；第11页长行右侧裁切。",
+          "evidence": "本次用户提供的说明",
+          "verification_status": "reported_not_verified_in_this_run",
+          "scope": "仅用户报告的抽查页；不是全文件检查"
+        }
+      ],
+      "size_bytes": 4602865
+    },
+    {
+      "capture_id": "capture-002",
+      "path": "RAW_补采002.md",
+      "original_path": "数字生命卡兹克/都Agent时代了，我还是想分享给你这12个我最常用的Prompt.md",
+      "captured_at": null,
+      "archived_at": "2026-10-03T08:13:00-07:00",
+      "provenance": "归档前已存在；采集方式和时间未确认",
+      "completeness": "pending_review",
+      "sha256": "75e99bea3b53fb611913b9260838a7c7529fa87c379a225e552ce191d2aceaf4",
+      "files": [],
+      "quality_issues": [
+        {
+          "description": "文本含对象占位符；图片、原文一致性及PDF页码映射待核对。",
+          "evidence": "本次读取本地Markdown",
+          "verification_status": "text_observed_page_mapping_unverified"
+        }
+      ],
+      "size_bytes": 26813
+    },
+    {
+      "capture_id": "capture-003",
+      "path": "RAW_补采003.rtfd",
+      "original_path": "数字生命卡兹克/都Agent时代了，我还是想分享给你这12个我最常用的Prompt.rtfd",
+      "captured_at": null,
+      "archived_at": "2026-10-03T08:13:00-07:00",
+      "provenance": "归档前已存在；采集方式和时间未确认",
+      "completeness": "pending_review",
+      "sha256": null,
+      "files": [
+        {
+          "path": "Attachment.png",
+          "sha256": "6669719033ae6d8a9388ce58785e3cefa6a374816db9a35726cde0e4c9b9f8a1",
+          "size_bytes": 1656
+        },
+        {
+          "path": "TXT.rtf",
+          "sha256": "51ac9d0d6ba41805932cc990cb562071e93656e573235ae0294fc8425e868005",
+          "size_bytes": 135545
+        },
+        {
+          "path": "unknown.svg",
+          "sha256": "84237a5288961782d2866cb0aed99ba8dad86ec6809a7e4ce5842cba1fcda5a7",
+          "size_bytes": 406
+        }
+      ],
+      "quality_issues": []
+    }
+  ],
+  "reading_status": "unread",
+  "reading_status_note": "初始化状态，尚未由本人确认阅读或实践",
+  "created_at": "2026-10-03T08:13:00-07:00",
+  "short_title": "12个常用Prompt",
+  "directory": "数字生命卡兹克/12个常用Prompt+26.8.20",
+  "processing": {
+    "schema_version": 2,
+    "article_id": "art-0001",
+    "created_at": "2026-10-03T23:09:50-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-002",
+        "path": "RAW_补采002.md",
+        "sha256": "75e99bea3b53fb611913b9260838a7c7529fa87c379a225e552ce191d2aceaf4"
+      }
+    ],
+    "method": "按本地Markdown逐字提取12个Prompt，合并到prompts.md；每条仅保留Prompt原文、使用步骤、预期输出、使用边界与待验证点。学习笔记和加工记录直接保存在文章包run目录。",
+    "tools": [
+      "本地文件读取",
+      "Python标准库（文本切片、文件写入与校验）",
+      "Codex对话（内容提炼）"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "agent.md / Prompt提炼模板 v2",
+    "instruction_source": "用户本次要求：根目录README供人阅读、agent.md供AI执行；所有Prompt合并单文件，每条四部分；移除旧版本目录，直接使用run。",
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "not_established",
+    "quality_issues": [
+      "原始Markdown含图片占位符；未核对图片内容",
+      "12段Prompt摘录与本地Markdown一致；未核对在线原文或PDF",
+      "未逐页检查PDF；第5、11页问题仍仅记录用户报告",
+      "本次未执行Prompt，AI提炼说明尚未经本人验证"
+    ],
+    "outputs": [
+      "AI_12个常用Prompt.md",
+      "PROMPT.md"
+    ],
+    "extracted_items": [
+      {
+        "item_id": "prompt-001",
+        "type": "prompt",
+        "name": "苏格拉底式提问",
+        "category": "问清问题",
+        "path": "PROMPT.md",
+        "capture_id": "capture-002",
+        "source_section": "一. 问清问题 / 1. 苏格拉底式提问",
+        "locator": {
+          "type": "markdown_lines",
+          "start": 31,
+          "end": 49,
+          "pdf_pages": null
+        },
+        "excerpt_status": "matched_local_text",
+        "source_verification": "local_text_only",
+        "personal_validation": "unconfirmed",
+        "heading": "1. 苏格拉底式提问"
+      },
+      {
+        "item_id": "prompt-002",
+        "type": "prompt",
+        "name": "双层解释法",
+        "category": "学习",
+        "path": "PROMPT.md",
+        "capture_id": "capture-002",
+        "source_section": "二. 学习 / 1. 双层解释法",
+        "locator": {
+          "type": "markdown_lines",
+          "start": 66,
+          "end": 79,
+          "pdf_pages": null
+        },
+        "excerpt_status": "matched_local_text",
+        "source_verification": "local_text_only",
+        "personal_validation": "unconfirmed",
+        "heading": "2. 双层解释法"
+      },
+      {
+        "item_id": "prompt-003",
+        "type": "prompt",
+        "name": "反向拆解",
+        "category": "学习",
+        "path": "PROMPT.md",
+        "capture_id": "capture-002",
+        "source_section": "二. 学习 / 2. 反向拆解",
+        "locator": {
+          "type": "markdown_lines",
+          "start": 84,
+          "end": 99,
+          "pdf_pages": null
+        },
+        "excerpt_status": "matched_local_text",
+        "source_verification": "local_text_only",
+        "personal_validation": "unconfirmed",
+        "heading": "3. 反向拆解"
+      },
+      {
+        "item_id": "prompt-004",
+        "type": "prompt",
+        "name": "横纵分析法",
+        "category": "学习",
+        "path": "PROMPT.md",
+        "capture_id": "capture-002",
+        "source_section": "二. 学习 / 3. 横纵分析法",
+        "locator": {
+          "type": "markdown_lines",
+          "start": 109,
+          "end": 134,
+          "pdf_pages": null
+        },
+        "excerpt_status": "matched_local_text",
+        "source_verification": "local_text_only",
+        "personal_validation": "unconfirmed",
+        "heading": "4. 横纵分析法"
+      },
+      {
+        "item_id": "prompt-005",
+        "type": "prompt",
+        "name": "事实核查",
+        "category": "学习",
+        "path": "PROMPT.md",
+        "capture_id": "capture-002",
+        "source_section": "二. 学习 / 4. 事实核查",
+        "locator": {
+          "type": "markdown_lines",
+          "start": 143,
+          "end": 168,
+          "pdf_pages": null
+        },
+        "excerpt_status": "matched_local_text",
+        "source_verification": "local_text_only",
+        "personal_validation": "unconfirmed",
+        "heading": "5. 事实核查"
+      },
+      {
+        "item_id": "prompt-006",
+        "type": "prompt",
+        "name": "专家会诊",
+        "category": "解决问题",
+        "path": "PROMPT.md",
+        "capture_id": "capture-002",
+        "source_section": "三. 解决问题 / 1. 专家会诊",
+        "locator": {
+          "type": "markdown_lines",
+          "start": 181,
+          "end": 203,
+          "pdf_pages": null
+        },
+        "excerpt_status": "matched_local_text",
+        "source_verification": "local_text_only",
+        "personal_validation": "unconfirmed",
+        "heading": "6. 专家会诊"
+      },
+      {
+        "item_id": "prompt-007",
+        "type": "prompt",
+        "name": "第一性原理",
+        "category": "解决问题",
+        "path": "PROMPT.md",
+        "capture_id": "capture-002",
+        "source_section": "三. 解决问题 / 2. 第一性原理",
+        "locator": {
+          "type": "markdown_lines",
+          "start": 211,
+          "end": 225,
+          "pdf_pages": null
+        },
+        "excerpt_status": "matched_local_text",
+        "source_verification": "local_text_only",
+        "personal_validation": "unconfirmed",
+        "heading": "7. 第一性原理"
+      },
+      {
+        "item_id": "prompt-008",
+        "type": "prompt",
+        "name": "跨领域借解",
+        "category": "解决问题",
+        "path": "PROMPT.md",
+        "capture_id": "capture-002",
+        "source_section": "三. 解决问题 / 3. 跨领域借解",
+        "locator": {
+          "type": "markdown_lines",
+          "start": 231,
+          "end": 247,
+          "pdf_pages": null
+        },
+        "excerpt_status": "matched_local_text",
+        "source_verification": "local_text_only",
+        "personal_validation": "unconfirmed",
+        "heading": "8. 跨领域借解"
+      },
+      {
+        "item_id": "prompt-009",
+        "type": "prompt",
+        "name": "双向钢人论证",
+        "category": "决策",
+        "path": "PROMPT.md",
+        "capture_id": "capture-002",
+        "source_section": "四. 决策 / 1. 双向钢人论证",
+        "locator": {
+          "type": "markdown_lines",
+          "start": 261,
+          "end": 270,
+          "pdf_pages": null
+        },
+        "excerpt_status": "matched_local_text",
+        "source_verification": "local_text_only",
+        "personal_validation": "unconfirmed",
+        "heading": "9. 双向钢人论证"
+      },
+      {
+        "item_id": "prompt-010",
+        "type": "prompt",
+        "name": "用最小实验替代空想",
+        "category": "决策",
+        "path": "PROMPT.md",
+        "capture_id": "capture-002",
+        "source_section": "四. 决策 / 2. 用最小实验替代空想",
+        "locator": {
+          "type": "markdown_lines",
+          "start": 276,
+          "end": 290,
+          "pdf_pages": null
+        },
+        "excerpt_status": "matched_local_text",
+        "source_verification": "local_text_only",
+        "personal_validation": "unconfirmed",
+        "heading": "10. 用最小实验替代空想"
+      },
+      {
+        "item_id": "prompt-011",
+        "type": "prompt",
+        "name": "挖掘隐藏天赋",
+        "category": "认识你自己",
+        "path": "PROMPT.md",
+        "capture_id": "capture-002",
+        "source_section": "五. 认识你自己 / 1. 挖掘隐藏天赋",
+        "locator": {
+          "type": "markdown_lines",
+          "start": 303,
+          "end": 339,
+          "pdf_pages": null
+        },
+        "excerpt_status": "matched_local_text",
+        "source_verification": "local_text_only",
+        "personal_validation": "unconfirmed",
+        "heading": "11. 挖掘隐藏天赋"
+      },
+      {
+        "item_id": "prompt-012",
+        "type": "prompt",
+        "name": "人生设计术",
+        "category": "认识你自己",
+        "path": "PROMPT.md",
+        "capture_id": "capture-002",
+        "source_section": "五. 认识你自己 / 2. 人生设计术",
+        "locator": {
+          "type": "markdown_lines",
+          "start": 347,
+          "end": 407,
+          "pdf_pages": null
+        },
+        "excerpt_status": "matched_local_text",
+        "source_verification": "local_text_only",
+        "personal_validation": "unconfirmed",
+        "heading": "12. 人生设计术"
+      }
+    ],
+    "extraction_summary": {
+      "prompts": 12,
+      "skills": 0,
+      "categories": 5
+    },
+    "omitted_outputs": {
+      "skills.md": "本篇只提及其他Skill，未提供完整定义，不补写"
+    },
+    "personal_notes_modified": false,
+    "updated_at": "2026-10-03T23:32:16-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-08",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "c7784c725959cccc5ad5baceef311a47ad2166533595f97b940dced7a660e22d"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "91f0210cf6acbc1ec7ccef5a2a0ef0b7939a572a7300daa9d78914d3493e831b"
+    },
+    "extractor": "pdfplumber 0.11.9; Page.extract_text_lines / Page.extract_text",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "text_extraction_checked; layout_images_and_online_original_not_fully_verified",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 13,
+        "md_end_line": 52,
+        "text_layer_sha256": "fd3d4b3093a389a281dece9915d30599dd0aa2211b12f218a23386de15b18bf2",
+        "text_layer_char_count": 632,
+        "image_objects": 0,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 2,
+        "md_start_line": 57,
+        "md_end_line": 92,
+        "text_layer_sha256": "2994ee9bdc91af6bd136d5988b8d427950c9e9e2329503bb6256b1002ee835a2",
+        "text_layer_char_count": 540,
+        "image_objects": 1,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 3,
+        "md_start_line": 97,
+        "md_end_line": 144,
+        "text_layer_sha256": "6ace78032046837e6b4d010e9f398dc414fb7a40ae2afc424df6c94c7d43d998",
+        "text_layer_char_count": 565,
+        "image_objects": 0,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 4,
+        "md_start_line": 149,
+        "md_end_line": 202,
+        "text_layer_sha256": "360f76bf04f73eb803211fbab65e2d064f23cf9bd88e67d6ce8f78cd114663e3",
+        "text_layer_char_count": 693,
+        "image_objects": 0,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 5,
+        "md_start_line": 207,
+        "md_end_line": 257,
+        "text_layer_sha256": "4ef6e53333e206f801c0054dd03eb605a09ddc110381279d36c3e9a1e9d16e15",
+        "text_layer_char_count": 584,
+        "image_objects": 0,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 6,
+        "md_start_line": 262,
+        "md_end_line": 326,
+        "text_layer_sha256": "6946415c202f99c1c9b1aa629c0c88c4cd789929ff9be3f55b24b59edf06dbf2",
+        "text_layer_char_count": 661,
+        "image_objects": 0,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 7,
+        "md_start_line": 331,
+        "md_end_line": 392,
+        "text_layer_sha256": "e46b7c51e95c89d1e170bfcf8f1b3e4e7ab4b323100041cf1f1b1cf339e67abb",
+        "text_layer_char_count": 528,
+        "image_objects": 0,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 8,
+        "md_start_line": 397,
+        "md_end_line": 452,
+        "text_layer_sha256": "36e54ebd281e19c41c3ed20824f35339b381231e5a21feb431b4701594eac5d2",
+        "text_layer_char_count": 638,
+        "image_objects": 0,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 9,
+        "md_start_line": 457,
+        "md_end_line": 515,
+        "text_layer_sha256": "840efe6592d2e27d4ee53b55874a98b1db12519c46f9d0e16bacaa9596607623",
+        "text_layer_char_count": 646,
+        "image_objects": 0,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 10,
+        "md_start_line": 520,
+        "md_end_line": 578,
+        "text_layer_sha256": "65d293934c2f0ca42fad42467948224cb042d6fab7bb7012fbd0177173c18da9",
+        "text_layer_char_count": 668,
+        "image_objects": 0,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 11,
+        "md_start_line": 583,
+        "md_end_line": 660,
+        "text_layer_sha256": "ae358efa5ced059afc20b4c174d0ad9c1615302aba5a43baa5f902819bcf8365",
+        "text_layer_char_count": 1084,
+        "image_objects": 0,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 12,
+        "md_start_line": 665,
+        "md_end_line": 737,
+        "text_layer_sha256": "fa8588a60281023c64a42cd618f716caa95eb6384caa480c7410f471860d3f73",
+        "text_layer_char_count": 999,
+        "image_objects": 0,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 13,
+        "md_start_line": 742,
+        "md_end_line": 817,
+        "text_layer_sha256": "0de8000ca6ee13f527baa5706e837edaf1d3e7f77a065ddda835cd023cec56f0",
+        "text_layer_char_count": 1172,
+        "image_objects": 0,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 14,
+        "md_start_line": 822,
+        "md_end_line": 864,
+        "text_layer_sha256": "1f947fd61cde4783cce69a39388b656b9250d6d583c5d47282bed377ca9b8e4a",
+        "text_layer_char_count": 491,
+        "image_objects": 64,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 15,
+        "md_start_line": 869,
+        "md_end_line": 876,
+        "text_layer_sha256": "e2083050ed1504a44a490dc6d6b316cdd85cd74e4eeafafb0c431373d5c0485f",
+        "text_layer_char_count": 62,
+        "image_objects": 4,
+        "status": "text_layer_extracted"
+      }
+    ],
+    "quality_issues": [
+      "图片未嵌入MD，使用各页RAW链接核对；保留原始材料的既有质量问题。",
+      "文字来自PDF文本层，字形、阅读顺序、代码缩进、表格结构及裁切显示一致性仍可能需人工核验。"
+    ],
+    "personal_notes_modified": false,
+    "visual_checks": [
+      {
+        "page": 5,
+        "observation": "页面可见图片加载占位区，未加载图片无法从当前PDF恢复。",
+        "verification_status": "visually_observed",
+        "date": "2026-10-08"
+      },
+      {
+        "page": 11,
+        "observation": "代码／Prompt长行右侧裁切，不能确认裁切区域内容。",
+        "verification_status": "visually_observed",
+        "date": "2026-10-08"
+      }
+    ]
+  },
+  "migration": {
+    "date": "2026-10-08",
+    "previous_directory": "10_articles/数字生命卡兹克/2026-08-20_12个常用Prompt__art-0001",
+    "current_directory": "数字生命卡兹克/12个常用Prompt+26.8.20",
+    "previous_article_readme": "# 12个常用Prompt\n\n公众号：数字生命卡兹克；作者：卡兹克。\n\n## 阅读与使用\n\n- [12个Prompt合集](run/prompts.md)：每个包含原文、步骤、预期输出和使用边界。\n- [整篇学习笔记](run/learning_note.md)\n- [我的学习记录](my_notes.md)\n\n## 原始材料\n\n- [PDF](source/capture-001.pdf)\n- [Markdown](source/capture-002.md)\n- [RTFD及附件](source/capture-003.rtfd/)\n\n当前整理基于收到的Markdown；在线原文、图片内容及PDF页码仍待核实。\n",
+    "file_mapping": {
+      "source/capture-001.pdf": "RAW.pdf",
+      "metadata.json": "META.json",
+      "run/run.json": "META.json",
+      "README.md": "MD.md",
+      "run/learning_note.md": "AI_12个常用Prompt.md",
+      "my_notes.md": "NOTE.md",
+      "run/prompts.md": "PROMPT.md",
+      "source/capture-002.md": "RAW_补采002.md",
+      "source/capture-003.rtfd": "RAW_补采003.rtfd"
+    },
+    "existing_ai_summaries": "preserved_with_link_updates; no_new_summary_generated",
+    "personal_note_template": "90_templates/个人笔记模板.md; create_only_on_user_request_or_start_of_personal_notes"
+  },
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_12个常用Prompt.md",
+    "personal_note": "NOTE.md",
+    "prompts": "PROMPT.md"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Prompt优化.md",
+      "../../20_topics/决策方法.md",
+      "../../20_topics/学习方法.md",
+      "../../20_topics/自我认识.md",
+      "../../20_topics/解决问题.md",
+      "../../20_topics/问题澄清.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

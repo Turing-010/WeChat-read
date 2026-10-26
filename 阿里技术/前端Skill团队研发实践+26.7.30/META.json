@@ -1,0 +1,573 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0039",
+  "title": "前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效",
+  "short_title": "前端Skill团队研发实践",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "王僖",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-07-30T04:55",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "Jul 30, 2026, 4:55 AM",
+  "published_timezone": null,
+  "identity_evidence": "p.1“原创 王僖 阿里技术 Jul 30, 2026, 4:55 AM 浙江 标题已修改”，解析2026-07-30，不推时区",
+  "tags": [
+    "AI研发协同"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T03:00:03-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "66d32826d90a43f9157ba2bdc1b63e3185c687495e6182e043d319716a0d1ed7",
+      "size_bytes": 12602427,
+      "page_count": 19,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "p.6目录注释与触发行尾、p.7多条Why、p.8 API截图均右裁切或折叠，未取得完整Skill",
+          "pages": [
+            6,
+            7,
+            8
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "版面裁切"
+        },
+        {
+          "description": "p.11称三个平台两周完成，p.12 CM图为05-08至05-28约三周，窗口差异未解释",
+          "pages": [
+            11,
+            12
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "原文疑点"
+        },
+        {
+          "description": "p.10写80+组件并括17+55，合计72，是否另有组件未说明",
+          "pages": [
+            10
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "原文疑点"
+        },
+        {
+          "description": "五个国际化脚本仅命令名称，脚本实现与词典等依赖未取得",
+          "pages": [
+            11
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "材料范围"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T03:00:03-07:00",
+  "directory": "阿里技术/前端Skill团队研发实践+26.7.30",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_前端Skill团队研发实践.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0039",
+    "created_at": "2026-10-13T03:00:03-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "66d32826d90a43f9157ba2bdc1b63e3185c687495e6182e043d319716a0d1ed7"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.6目录注释与触发行尾、p.7多条Why、p.8 API截图均右裁切或折叠，未取得完整Skill",
+        "pages": [
+          6,
+          7,
+          8
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "版面裁切"
+      },
+      {
+        "description": "p.11称三个平台两周完成，p.12 CM图为05-08至05-28约三周，窗口差异未解释",
+        "pages": [
+          11,
+          12
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文疑点"
+      },
+      {
+        "description": "p.10写80+组件并括17+55，合计72，是否另有组件未说明",
+        "pages": [
+          10
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文疑点"
+      },
+      {
+        "description": "五个国际化脚本仅命令名称，脚本实现与词典等依赖未取得",
+        "pages": [
+          11
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "材料范围"
+      }
+    ],
+    "outputs": [
+      "AI_前端Skill团队研发实践.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [
+      {
+        "kind": "Skill片段与说明",
+        "name": "an-frontend-skill",
+        "complete": false,
+        "pages": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "scope": "目录、部分触发/红线/映射示例；长行裁切，引用资料未提供"
+      },
+      {
+        "kind": "Skill流程说明",
+        "name": "an-i18n-setup",
+        "complete": false,
+        "pages": [
+          11
+        ],
+        "scope": "六步命令完整，五脚本实现、词典和环境未提供"
+      },
+      {
+        "kind": "Skill流程说明",
+        "name": "an-r2c",
+        "complete": false,
+        "pages": [
+          12,
+          13
+        ],
+        "scope": "阶段和状态表，十阶段文件与依赖未提供"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        1,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    "coverage": [
+      {
+        "name": "痛点和路径尝试",
+        "pages": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "仓库路由和五维",
+        "pages": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "四类案例",
+        "pages": [
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "name": "R2C阶段与边界",
+        "pages": [
+          12,
+          13
+        ]
+      },
+      {
+        "name": "度量与规划",
+        "pages": [
+          14,
+          15,
+          16
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 10,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_前端Skill团队研发实践.md",
+      "sha256": "aa0f09c86b32c5fd2c5a89c0166f7fa44bfd03278612dc8293e8a30d04a88bcb"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T03:00:03-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "66d32826d90a43f9157ba2bdc1b63e3185c687495e6182e043d319716a0d1ed7"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "34f7d30cbf2aa824abb9d05f812cc366f3daa2ee51d33e0cc392a098fb0d0144"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 34,
+        "text_layer_sha256": "d10d7c1beaaaf16e0dc9eb213b303b8d33eaa3a248f7b1be5f4b0dd14f96e48a",
+        "text_layer_char_count": 704
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 63,
+        "text_layer_sha256": "ac6c13a6b86507fab9f4791df0c51d4790394af58b491e3f504117cfaadcaed7",
+        "text_layer_char_count": 727
+      },
+      {
+        "page": 3,
+        "md_start_line": 71,
+        "md_end_line": 95,
+        "text_layer_sha256": "c6f4cd30e6542ec408180a6fb5186cb431b8ac2ebd5e6da96c6827ca18299684",
+        "text_layer_char_count": 824
+      },
+      {
+        "page": 4,
+        "md_start_line": 103,
+        "md_end_line": 141,
+        "text_layer_sha256": "5b02856a3b67e155b67ec1b216fddd99c2ac7594a53002e2fab4bd3eed5ecd74",
+        "text_layer_char_count": 1166
+      },
+      {
+        "page": 5,
+        "md_start_line": 149,
+        "md_end_line": 170,
+        "text_layer_sha256": "93793062ac0b520cc9270c16078d40eb1696690d8c70ee854426e017db91ce62",
+        "text_layer_char_count": 664
+      },
+      {
+        "page": 6,
+        "md_start_line": 178,
+        "md_end_line": 211,
+        "text_layer_sha256": "6923c13fe655b4d2d66d14a0af8ab3c238f33cad550ba70b6773a71605a10875",
+        "text_layer_char_count": 1035
+      },
+      {
+        "page": 7,
+        "md_start_line": 219,
+        "md_end_line": 247,
+        "text_layer_sha256": "74fcbea27eff2c7053923817f24186050f39115b9eabba9b992da5122fb83386",
+        "text_layer_char_count": 1122
+      },
+      {
+        "page": 8,
+        "md_start_line": 255,
+        "md_end_line": 277,
+        "text_layer_sha256": "625789c22204d31f71107f338fbfa8d017990d07a52a717a1267aee49c971768",
+        "text_layer_char_count": 672
+      },
+      {
+        "page": 9,
+        "md_start_line": 285,
+        "md_end_line": 308,
+        "text_layer_sha256": "015d59f3849d4fcbef8a35c9aee47d62e2fffac12b4e23f6d4487c547312dc9e",
+        "text_layer_char_count": 628
+      },
+      {
+        "page": 10,
+        "md_start_line": 316,
+        "md_end_line": 347,
+        "text_layer_sha256": "364d6bfd7498ed85eb966cea39cc796bdaee5d97ea65e629e0019f792a83b85a",
+        "text_layer_char_count": 1050
+      },
+      {
+        "page": 11,
+        "md_start_line": 355,
+        "md_end_line": 392,
+        "text_layer_sha256": "fe422bae65f77b41ee3c61d7c66c17eaf1593ad5a0631d0a6881d2862be7ceaf",
+        "text_layer_char_count": 1093
+      },
+      {
+        "page": 12,
+        "md_start_line": 400,
+        "md_end_line": 416,
+        "text_layer_sha256": "30c0a1e60b075a33145a499d75d62e423c498542365be8d39a2857f00bb3b35e",
+        "text_layer_char_count": 558
+      },
+      {
+        "page": 13,
+        "md_start_line": 424,
+        "md_end_line": 454,
+        "text_layer_sha256": "44e3b7fd15b2f5532ea868b35c3220b016f96be9391cc278a52dc8e4d18494e0",
+        "text_layer_char_count": 915
+      },
+      {
+        "page": 14,
+        "md_start_line": 462,
+        "md_end_line": 483,
+        "text_layer_sha256": "501ada12d3d2052e6f383d4f508384bcebe56433d97aa3cc5aafb59c4467ff8c",
+        "text_layer_char_count": 563
+      },
+      {
+        "page": 15,
+        "md_start_line": 491,
+        "md_end_line": 523,
+        "text_layer_sha256": "6193d5224713725e578eb25dcce42462cecaba9e6f7c27c31b27b58719cb7b8f",
+        "text_layer_char_count": 1233
+      },
+      {
+        "page": 16,
+        "md_start_line": 531,
+        "md_end_line": 547,
+        "text_layer_sha256": "28075c088a144e604e5dd9d9791c52e5d1994a9d0715ae45d0ea21785eb221d5",
+        "text_layer_char_count": 539
+      },
+      {
+        "page": 17,
+        "md_start_line": 555,
+        "md_end_line": 562,
+        "text_layer_sha256": "d997ace7365e664f4249b883e339536eec7323a50f4e2b99c9570d1f847b6eb3",
+        "text_layer_char_count": 104
+      },
+      {
+        "page": 18,
+        "md_start_line": 570,
+        "md_end_line": 607,
+        "text_layer_sha256": "474c2fa8125b2aa07d166af3e1db8e42d421fb9764f830875febeaecef94ca47",
+        "text_layer_char_count": 873
+      },
+      {
+        "page": 19,
+        "md_start_line": 615,
+        "md_end_line": 630,
+        "text_layer_sha256": "ec75afab13adb9c1895e6c03742a6e6e3cdd2d4532ea9e80895f4c0225360797",
+        "text_layer_char_count": 406
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        1,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.6目录注释与触发行尾、p.7多条Why、p.8 API截图均右裁切或折叠，未取得完整Skill",
+        "pages": [
+          6,
+          7,
+          8
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "版面裁切"
+      },
+      {
+        "description": "p.11称三个平台两周完成，p.12 CM图为05-08至05-28约三周，窗口差异未解释",
+        "pages": [
+          11,
+          12
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文疑点"
+      },
+      {
+        "description": "p.10写80+组件并括17+55，合计72，是否另有组件未说明",
+        "pages": [
+          10
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文疑点"
+      },
+      {
+        "description": "五个国际化脚本仅命令名称，脚本实现与词典等依赖未取得",
+        "pages": [
+          11
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "材料范围"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Skill设计与治理.md"
+    ],
+    "proposed_topics": [
+      "AI研发协同",
+      "Harness与模型协同",
+      "Agent工程循环",
+      "Agent评测与反馈"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T03:00:03-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "66d32826d90a43f9157ba2bdc1b63e3185c687495e6182e043d319716a0d1ed7",
+        "copied_at": "2026-10-13T03:00:03-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

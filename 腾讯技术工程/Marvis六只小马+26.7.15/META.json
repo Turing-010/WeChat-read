@@ -1,0 +1,390 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0157",
+  "title": "上线后差点‘挤爆’服务器，Marvis凭什么让用户追着6只小马‘上班’？",
+  "short_title": "Marvis六只小马",
+  "account": "腾讯技术工程",
+  "author": "Eva、Nexthy（受访者）",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-07-15T04:11",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/上线后差点“挤爆”服务器，Marvis凭什么让用户追着6只小马“上班”？.pdf",
+      "original_filename": "上线后差点“挤爆”服务器，Marvis凭什么让用户追着6只小马“上班”？.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "658c944709c9721fbdb7c9904222e442c915fd7fa7f800c24ff8cabe6e387ddc",
+      "size_bytes": 3918018,
+      "page_count": 8,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "端云分流比例、延迟基准、隐私评估结果及执行权限系统的安全测试未在访谈中提供。",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "status": "原文未提供"
+        },
+        {
+          "description": "用户案例是访谈中的个案，未提供效果评估或代表性样本。",
+          "pages": [
+            6,
+            7,
+            8
+          ],
+          "status": "已在笔记说明"
+        }
+      ],
+      "publication_evidence": "PDF 第1页标注 2026-07-15 04:11；未见时区"
+    }
+  ],
+  "tags": [
+    "AI研发协同",
+    "Agent工程循环",
+    "异常监控与稳定性",
+    "自我认识",
+    "桌面Agent与工作流"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/Marvis六只小马+26.7.15",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Marvis六只小马.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "上线后差点“挤爆”服务器, Marvis 凭什么让用户追着 6 只小⻢“上\n班”?\n腾讯程序员 2026 年 7 月 15 日 04 : 11广东原创 腾讯技术工程 44 人\n当一个 AI 的工具因为有了拟人化的情感连接,让近半数用户每天乐此不疲地进来看 6 只小⻢干\n活,这背后究竟有着怎样的技术克制、架构考量、产品执念和设计思考?\n本期我们邀请了  Marvis  的产品负责人  Eva 和技术负责人 Nexthy ,一起聊聊那些幸福的烦恼与\n鲜为人知的技术博弈。\n10 个问题带你走近 Marvis 背后的故事\n1. 六只小⻢的爆火是在预料之中吗?\n2. 既然是生产力工具,为什么要在产品里养几只小⻢?\n3. 现在大厂都在卷云端大模型,你们为什么选择 “端云混布 ” 这条路?\n4. 为什么刚起步就选择 Multi-Agent 架构,而不是单智能体演进?\n5. 与其他只给方案、只提供对话的  AI 相比, Marvis 的本质差异在哪里?\n6. 面对 “ 吃内存、老电脑跑不动 ” 的用户吐槽,团队后续打算怎么解决硬件⻔槛?\n7. 在 “ 小白开箱即用 ” 和 “ 用户严格授权 ” 之间, Marvis 是如何做权衡的?\n8. 为什么说 “ 手机远程控电脑 ” 这个跨端功能,不仅仅是一个桌面助手?\n5 月 20 日 23 点 58 分, Marvis 上线。\n22 号上午,用户量激增,官方紧急扩容\n在冰冷的代码与闪烁的屏幕背后,是一席关于  AI 时代的产品真心话:\n“ 我们 ‘ 死磕 ’ 端云混布,就是在赌未来。 ”\n“ 即便在⻓途⻜机或高铁上完全断网,你也能用 AI 处理工作,这就是真 • 本地模式。 ”\n“ 哪怕牺牲便利性、显得不够小白,我们也得把主权交给用户。 ”\n",
+    "publication_evidence": "PDF 第1页标注 2026-07-15 04:11；未见时区",
+    "full_title_in_capture": "上线后差点‘挤爆’服务器，Marvis凭什么让用户追着6只小马‘上班’？",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0157",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "658c944709c9721fbdb7c9904222e442c915fd7fa7f800c24ff8cabe6e387ddc"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "端云分流比例、延迟基准、隐私评估结果及执行权限系统的安全测试未在访谈中提供。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "status": "原文未提供"
+      },
+      {
+        "description": "用户案例是访谈中的个案，未提供效果评估或代表性样本。",
+        "pages": [
+          6,
+          7,
+          8
+        ],
+        "status": "已在笔记说明"
+      }
+    ],
+    "outputs": [
+      "AI_Marvis六只小马.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "coverage": "覆盖产品访谈中端云混布、多智能体动机与代价、执行型交互、白名单与卡片、模型配置、远程能力和用户故事。按访谈/案例性质记录，未扩展为教程。",
+    "fact_checks": [
+      {
+        "item": "受访者角色",
+        "note_value": "Eva 产品负责人；Nexthy 技术负责人",
+        "source_value": "Eva（产品负责人）；Nexthy（技术负责人）",
+        "pages": [
+          1
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "本地模型配置",
+        "note_value": "Qwen 35B-A3B，4-bit，约24G",
+        "source_value": "Qwen 35B-A3B 4-bit，约24G",
+        "pages": [
+          5
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "操作权限控制",
+        "note_value": "明确白名单；卡片提供交互控制",
+        "source_value": "白名单权限与卡片交互",
+        "pages": [
+          5,
+          6
+        ],
+        "result": "一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Marvis六只小马.md",
+      "sha256": "e93565a744bb8c389da4f8f5b0c88f1e7ac137b7dc0729b4daa28687c6f67380"
+    },
+    "independent_crosscheck": {
+      "reviewer": "Codex crosscheck group2",
+      "note_sha256": "e93565a744bb8c389da4f8f5b0c88f1e7ac137b7dc0729b4daa28687c6f67380",
+      "review_sha256": "6728a5324834768cf3f5f82961042b1000f402b4dacbc0a512316ea979468c0d",
+      "status": "passed",
+      "changes": [
+        "规范复习卡片标题和文末校对块。"
+      ],
+      "source_spotchecks": [
+        {
+          "source": "reading.txt; sheet-001.jpg",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "finding": "核对访谈双方、端云混布、多Agent、权限/卡片、模型配置及用户案例；观点仍归因访谈。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "658c944709c9721fbdb7c9904222e442c915fd7fa7f800c24ff8cabe6e387ddc"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "6aa3339ad4f1f0a6af900ede1637a5cef60cc86fa516bc45ff828b7ecf72ae0b"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 31,
+        "text_layer_sha256": "d7140071775f91a2eb3b0ceeaf3dc4f28e6f5a0e1c8852080f7f1d9837820895",
+        "text_layer_char_count": 747
+      },
+      {
+        "page": 2,
+        "md_start_line": 39,
+        "md_end_line": 59,
+        "text_layer_sha256": "1a4013d5403d9bd0d55205345597e43623c3de09069187d4cd5327d197cbe65e",
+        "text_layer_char_count": 798
+      },
+      {
+        "page": 3,
+        "md_start_line": 67,
+        "md_end_line": 88,
+        "text_layer_sha256": "e103d34d3cadc4c86bd754365e0066370a89e9822f1a606858af13f42962d876",
+        "text_layer_char_count": 887
+      },
+      {
+        "page": 4,
+        "md_start_line": 96,
+        "md_end_line": 115,
+        "text_layer_sha256": "46240d60eb0059e7a5c8ed1bce1551dd3c6bb4a06be37c3873258362da2f9adb",
+        "text_layer_char_count": 863
+      },
+      {
+        "page": 5,
+        "md_start_line": 123,
+        "md_end_line": 139,
+        "text_layer_sha256": "1f3516de9585ce7df64ca26a545a9d9869b327821b45278d3b4afa9512227928",
+        "text_layer_char_count": 699
+      },
+      {
+        "page": 6,
+        "md_start_line": 147,
+        "md_end_line": 158,
+        "text_layer_sha256": "dad6a8301b94cbe7876a53801108f5c23730fb927672d968797c86f5e2ca4706",
+        "text_layer_char_count": 519
+      },
+      {
+        "page": 7,
+        "md_start_line": 166,
+        "md_end_line": 183,
+        "text_layer_sha256": "459cbc540c8e237a0a1b6d1327ff920d3a4cf8212fc90fe689ae3348f4ece498",
+        "text_layer_char_count": 744
+      },
+      {
+        "page": 8,
+        "md_start_line": 191,
+        "md_end_line": 194,
+        "text_layer_sha256": "1e1f308a740e1322478070a7fd5aa53b64124c929fa2b1773a569787306fb45c",
+        "text_layer_char_count": 29
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "端云分流比例、延迟基准、隐私评估结果及执行权限系统的安全测试未在访谈中提供。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "status": "原文未提供"
+      },
+      {
+        "description": "用户案例是访谈中的个案，未提供效果评估或代表性样本。",
+        "pages": [
+          6,
+          7,
+          8
+        ],
+        "status": "已在笔记说明"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/上线后差点“挤爆”服务器，Marvis凭什么让用户追着6只小马“上班”？.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "658c944709c9721fbdb7c9904222e442c915fd7fa7f800c24ff8cabe6e387ddc",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/桌面Agent与工作流.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Marvis六只小马.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

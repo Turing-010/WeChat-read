@@ -1,0 +1,583 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0158",
+  "title": "两万字长文｜手把手带你趟过 AI Coding 深水区：编码让位，人退到哪里",
+  "short_title": "AI Coding 深水区",
+  "account": "腾讯技术工程",
+  "author": "黄迅（PUBGMobile 后台）",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-27T02:38",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/两万字长文｜手把手带你趟过 AI Coding 深水区：编码让位，人退到哪里.pdf",
+      "original_filename": "两万字长文｜手把手带你趟过 AI Coding 深水区：编码让位，人退到哪里.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "8bfbf54e869d7298ec7033fe0ddcdfe6cf84e0c5a6e606fee32d4674242eb5ad",
+      "size_bytes": 6204060,
+      "page_count": 27,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "规模、耗时、效果和事故为作者团队案例，未提供独立复现数据；第27页无正文。",
+          "pages": [
+            1,
+            17,
+            21,
+            27
+          ],
+          "status": "已标为案例报告；不视为行业基准"
+        }
+      ],
+      "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。"
+    }
+  ],
+  "tags": [
+    "Agent评测与反馈",
+    "Harness与模型协同",
+    "Agent工程循环",
+    "Agent任务恢复",
+    "Agent成本与上下文预算",
+    "AI研发协同"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/AI Coding 深水区+26.8.27",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI Coding 深水区.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "两万字⻓文 | 手把手带你趟过 AI  Coding  深水区:编码让位,人退\n到哪里\n腾讯程序员 Aug  27 , 2026 , 2 : 38  AM北京原创 腾讯技术工程 466  listened\n作者:⻩迅,  PUBGMobile 后台\n前言: AI 已经能端到端交付了\n这个季度我们做了一个内部平台,给我们的  coding agent 做支撑:七个服务,三个月,一\n千八百多次提交,十六万行生产代码、十一万行测试代码、八万多行前端,没有一行是人写\n的,设计文档也全部由  AI 落笔。\n这个平台是对照组:通用技术栈,全新项目,没有历史包袱,对  AI 最友好的那种环境。我们\n先在对照组里把 \" 代码全让给  AI\" 真正跑了一遍。这也意味着,我们的业务代码离  AI 端到端\n交付,已经不远了。\n人做了什么?做了大量的决策。\n(一)人的工作量没有减少,只是从落笔挪到了拍板\n我原本以为  AI 全权接过代码之后,人会轻松下来。实际上完全没有。每天要读的东⻄一点没\n少,只是从 \" 读代码 \" 变成 \" 读方案、读结论、读证据 \" ;要拍的板一点没少,只是从 \" 这段怎么\n写 \" 变成 \" 这条路走不走、这个失败算不算问题 \" 。\n仓库里现在留着七十多篇设计文档,全部由  AI 落笔,每一篇的取舍都是人定的。但真实产出\n远不止这个数 ——海量的  spec 文档最后被我删掉了,删完项目照跑,没有任何损失。  留下\n来的这些,还有一部分是我专⻔让  AI 照着已经落地的实现反推重写的:文档跟着代码走,不\n是代码跟着文档走。这里有个区分值得说清 ——动手前那批用来对⻬的  spec ,用完就可以\n扔;事后沉淀的设计说明得留着,因为它是给下一个要改这块代码的人建立心智模型用\n的。  两者⻓得像,寿命完全不同。\n百万行  Lua ,自研框架,模型几乎没⻅过 —— 代码让给  AI 之后,人退到判断上,把取事\n实的活交给机器。\n",
+    "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。",
+    "full_title_in_capture": "两万字长文｜手把手带你趟过 AI Coding 深水区：编码让位，人退到哪里",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0158",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "8bfbf54e869d7298ec7033fe0ddcdfe6cf84e0c5a6e606fee32d4674242eb5ad"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "规模、耗时、效果和事故为作者团队案例，未提供独立复现数据；第27页无正文。",
+        "pages": [
+          1,
+          17,
+          21,
+          27
+        ],
+        "status": "已标为案例报告；不视为行业基准"
+      }
+    ],
+    "outputs": [
+      "AI_AI Coding 深水区.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "detail_pages_reviewed": [
+        14,
+        15,
+        22,
+        23,
+        25
+      ]
+    },
+    "coverage": "覆盖作者三个月项目实践及七服务团队背景，按提示、基础设施/运行时、编排、评测、人类决策与系统循环展开；包含 agent team 试验、故障案例、评测迭代、指标泄漏和角色分工。PDF 第27页为空白/无正文。 PDF末页核查：p.27空白。",
+    "fact_checks": [
+      {
+        "claim": "项目历时约 3 个月",
+        "page": "p.1",
+        "result": "作者项目背景"
+      },
+      {
+        "claim": "约 1,800 commits",
+        "page": "p.1",
+        "result": "作者项目背景数据"
+      },
+      {
+        "claim": "A/B 试验 8 任务/16 次运行",
+        "page": "p.17",
+        "result": "作者案例规模"
+      },
+      {
+        "claim": "V2 评测 48 次/19 小时",
+        "page": "p.21",
+        "result": "作者报告数据"
+      },
+      {
+        "claim": "团队服务数为 7",
+        "page": "p.1",
+        "result": "作者项目背景"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_AI Coding 深水区.md",
+      "sha256": "ed74f2b4dab14056f9835905df0b628426efbb74c93361aca0c43e4158ef749a",
+      "size_bytes": 37413
+    },
+    "independent_crosscheck": {
+      "reviewer": "/root/crosscheck_b",
+      "note_sha256": "ed74f2b4dab14056f9835905df0b628426efbb74c93361aca0c43e4158ef749a",
+      "review_sha256": "25aa121e3fc49c6933f6fb4826819ecd7421f63dfe6853b59691a10dfd5a9574",
+      "status": "passed",
+      "changes": [
+        "Applied the required note structure: one H1, an explicit 复习卡片 section with one-line Q::A cards, and a final fully quoted folded 校对报告.",
+        "Checked all 27 physical pages; inspected the final blank/comment page in extracted text and page image, recorded the boundary in note and review, and aligned text_pages_read with the full physical page range."
+      ],
+      "source_spotchecks": [
+        {
+          "pages": [
+            1,
+            17,
+            21,
+            27
+          ],
+          "finding": "作者经历和评测规模与文中案例数据相符；p.27 无正文，规模未泛化为行业基准。"
+        },
+        {
+          "pages": [
+            14,
+            15,
+            21,
+            22,
+            23,
+            25
+          ],
+          "finding": "六环节摘要包含运行时持久状态、评测污染防护、人工职责与离线/在线差异；作者团队经验边界写明。"
+        },
+        {
+          "pages": [
+            27
+          ],
+          "finding": "p.27抽取文本为空且页图为空白。"
+        }
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "8bfbf54e869d7298ec7033fe0ddcdfe6cf84e0c5a6e606fee32d4674242eb5ad"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "9b412bca52470cc71f723495578407b5f3b59ee5d07fe7fac15241dde756f298"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 33,
+        "text_layer_sha256": "48a51a3809b4cfa3261957e6b2a2e1e26fe7ff6dbb4c7e8d9f51040d7a1c6b42",
+        "text_layer_char_count": 824
+      },
+      {
+        "page": 2,
+        "md_start_line": 41,
+        "md_end_line": 72,
+        "text_layer_sha256": "7b620c8615289e4bef20535fd05950908381bf04687e370f13b37761202870c5",
+        "text_layer_char_count": 1179
+      },
+      {
+        "page": 3,
+        "md_start_line": 80,
+        "md_end_line": 114,
+        "text_layer_sha256": "284786021271313f50cf722f68882a10161091cd5b01061c8a1d8e61f5b7f08a",
+        "text_layer_char_count": 992
+      },
+      {
+        "page": 4,
+        "md_start_line": 122,
+        "md_end_line": 154,
+        "text_layer_sha256": "42ce814e01eef43dff75e82af065eca8e1e0588604753170bf4aa544833e510c",
+        "text_layer_char_count": 1227
+      },
+      {
+        "page": 5,
+        "md_start_line": 162,
+        "md_end_line": 196,
+        "text_layer_sha256": "4188edf605d46d76a1b92b0e00856de79151aabe3366c3861ee2c5588887fe13",
+        "text_layer_char_count": 1441
+      },
+      {
+        "page": 6,
+        "md_start_line": 204,
+        "md_end_line": 236,
+        "text_layer_sha256": "15d68fc6e166ef0f0a124f4a85ed84d2ab534ce00d8e20d63fff3467ade28a39",
+        "text_layer_char_count": 1276
+      },
+      {
+        "page": 7,
+        "md_start_line": 244,
+        "md_end_line": 279,
+        "text_layer_sha256": "2178b6b905af3c00ff1044dcfb8eff72e2406534266f083ef9014c62e0811394",
+        "text_layer_char_count": 1273
+      },
+      {
+        "page": 8,
+        "md_start_line": 287,
+        "md_end_line": 321,
+        "text_layer_sha256": "88c4cbc4a2270302c364192e89a52484bc1997a9443e2c657e3cddb7bc3d1fa5",
+        "text_layer_char_count": 1658
+      },
+      {
+        "page": 9,
+        "md_start_line": 329,
+        "md_end_line": 363,
+        "text_layer_sha256": "bc6bc5e2d1c4ec036a99b8ca81a3e9d7fb125c48ba83ecc421186774415f98eb",
+        "text_layer_char_count": 1439
+      },
+      {
+        "page": 10,
+        "md_start_line": 371,
+        "md_end_line": 407,
+        "text_layer_sha256": "f139973bebde8bda2ed942809fc1737f2e9ce4268d7f7a2833e3e27f703d6edb",
+        "text_layer_char_count": 1382
+      },
+      {
+        "page": 11,
+        "md_start_line": 415,
+        "md_end_line": 448,
+        "text_layer_sha256": "6be4d28de7ec9f362ff645b8ecb3f9ac0e1e17355e9c4c9ad86c1180043c5dae",
+        "text_layer_char_count": 1176
+      },
+      {
+        "page": 12,
+        "md_start_line": 456,
+        "md_end_line": 491,
+        "text_layer_sha256": "1a870461e4cf4307f58b029c220c8ec81fc9cad2081ab30caf9262f290156bd2",
+        "text_layer_char_count": 1453
+      },
+      {
+        "page": 13,
+        "md_start_line": 499,
+        "md_end_line": 534,
+        "text_layer_sha256": "f2773b9fce47cb94c397edf9461e28d6dd3c9639c0d71479cd5d521aff7562f6",
+        "text_layer_char_count": 1408
+      },
+      {
+        "page": 14,
+        "md_start_line": 542,
+        "md_end_line": 576,
+        "text_layer_sha256": "b8a92588060b9868e8809fc6a672c7a7aa3f817092dbe0570bd313ece448445e",
+        "text_layer_char_count": 1461
+      },
+      {
+        "page": 15,
+        "md_start_line": 584,
+        "md_end_line": 619,
+        "text_layer_sha256": "6d563e6a1e5b413fc33a8d3f27089620d4e754ffcc0c2d7015bf9ba9793dd338",
+        "text_layer_char_count": 1562
+      },
+      {
+        "page": 16,
+        "md_start_line": 627,
+        "md_end_line": 663,
+        "text_layer_sha256": "d4e1ef35208c3fea5e8fa5b9caef7703710f27940b6bec55084a8efd10942432",
+        "text_layer_char_count": 1461
+      },
+      {
+        "page": 17,
+        "md_start_line": 671,
+        "md_end_line": 705,
+        "text_layer_sha256": "1ae694d5cbf484aa337de08b259ad26eb54d73cb730f56f1ff8516029606d296",
+        "text_layer_char_count": 1360
+      },
+      {
+        "page": 18,
+        "md_start_line": 713,
+        "md_end_line": 747,
+        "text_layer_sha256": "2182ff76fc12db0d3423dfe96379df50f9b45c0f22b5583f45df9f7322b1844e",
+        "text_layer_char_count": 1307
+      },
+      {
+        "page": 19,
+        "md_start_line": 755,
+        "md_end_line": 787,
+        "text_layer_sha256": "a4a498439675b076c7ed8002203565ed9371c0f044435caa1f33e1844fb558ee",
+        "text_layer_char_count": 1316
+      },
+      {
+        "page": 20,
+        "md_start_line": 795,
+        "md_end_line": 826,
+        "text_layer_sha256": "a9c740be60666722071debccf9dc7e243b6f39afb9bdf19d4af950970774404c",
+        "text_layer_char_count": 1009
+      },
+      {
+        "page": 21,
+        "md_start_line": 834,
+        "md_end_line": 867,
+        "text_layer_sha256": "954fe32d78d2e9a8b0341d0f1bdac50d88576778379b72a6f7be8cdf6d7d9980",
+        "text_layer_char_count": 1187
+      },
+      {
+        "page": 22,
+        "md_start_line": 875,
+        "md_end_line": 910,
+        "text_layer_sha256": "2a402532b9b3b0a21e9d1a63d74607e5ba47b4121b9838ef6a35d483cae7d5f8",
+        "text_layer_char_count": 1245
+      },
+      {
+        "page": 23,
+        "md_start_line": 918,
+        "md_end_line": 953,
+        "text_layer_sha256": "b86f118551a3dccdb15dd84da5b62b73ecb7b21503b1ceafb65605bf85a5aead",
+        "text_layer_char_count": 1380
+      },
+      {
+        "page": 24,
+        "md_start_line": 961,
+        "md_end_line": 995,
+        "text_layer_sha256": "73c829157f2d7be318c4f6e2a591a922f5c1fabc0ebe548560ac1147ba147432",
+        "text_layer_char_count": 1331
+      },
+      {
+        "page": 25,
+        "md_start_line": 1003,
+        "md_end_line": 1039,
+        "text_layer_sha256": "ab159632de9445092c03b3cdad96944f81740e56a5575c8c93fe1a90ff543bce",
+        "text_layer_char_count": 1489
+      },
+      {
+        "page": 26,
+        "md_start_line": 1047,
+        "md_end_line": 1054,
+        "text_layer_sha256": "d4b7a4d5c4256a8288ebad0c74efd8400fa103d6f5eeaefca478812efb185089",
+        "text_layer_char_count": 144
+      },
+      {
+        "page": 27,
+        "md_start_line": 1062,
+        "md_end_line": 1061,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "detail_pages_reviewed": [
+        14,
+        15,
+        22,
+        23,
+        25
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "规模、耗时、效果和事故为作者团队案例，未提供独立复现数据；第27页无正文。",
+        "pages": [
+          1,
+          17,
+          21,
+          27
+        ],
+        "status": "已标为案例报告；不视为行业基准"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/两万字长文｜手把手带你趟过 AI Coding 深水区：编码让位，人退到哪里.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "8bfbf54e869d7298ec7033fe0ddcdfe6cf84e0c5a6e606fee32d4674242eb5ad",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_AI Coding 深水区.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

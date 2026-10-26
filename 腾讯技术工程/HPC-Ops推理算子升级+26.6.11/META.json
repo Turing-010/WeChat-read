@@ -1,0 +1,358 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0107",
+  "title": "腾讯混元 AI Infra 进化：HPC-Ops 推理核心算子全面升级",
+  "short_title": "HPC-Ops推理算子升级",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-06-11T01:20",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0611 Tencent HPC Ops Infra.pdf",
+      "original_filename": "0611 Tencent HPC Ops Infra.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "6a33799c618c5466fd5977f18e315531b0cc693479d6e80a72546aed479543a5",
+      "size_bytes": 3618599,
+      "page_count": 9,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [],
+      "publication_evidence": "PDF p.1: Jun 11, 2026, 1:20 AM; no timezone shown."
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "Agent成本与上下文预算",
+    "大模型推理与算子优化"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/HPC-Ops推理算子升级+26.6.11",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_HPC-Ops推理算子升级.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "腾讯混元 AI  Infra 进化: HPC - Ops 推理核心算子全面升级\nJun  11 , 2026 , 1 : 20  AM广东腾讯技术工程 33  listened\n一、  背景与成果介绍\nHPC-Ops 是腾讯混元  AI Infra 团队开源并长期维护的一套工业级、高性能的大模型推理底层算\n子库。在首轮开源中, HPC-Ops 提供了 Attention 、 GroupGEMM 等在内多个高性能算子,原\n生支持  BF16 与多种  FP8 量化方案,针对常见的主流推理硬件进行了深度优化。\n近日,为了进一步满足推理系统对动态业务负载的适应性、核心模块对复杂精度和高性能融合算\n子的需求, HPC-Ops 推出全新更新升级,包含五大关键算子。本次升级在主流推理平台上,有\n效缓解了 Attention 长尾延迟、显存搬运开销、跨卡通信等实际工程瓶颈,多项性能指标显著优于\n现有的开源基线。\n图  1 HPC-Ops 核心算子升级示意图\n本次升级的主要亮点包括:\nAttention:针对真实负载下长短请求混排导致的计算不均、推理长尾问题,采用运行时动态负\n载调度方案,实测长文本最高加速 2.95x,端到端 QPM 最高提升 17% 。\n",
+    "publication_evidence": "PDF p.1: Jun 11, 2026, 1:20 AM; no timezone shown.",
+    "full_title_in_capture": "腾讯混元 AI Infra 进化：HPC-Ops 推理核心算子全面升级",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0107",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "6a33799c618c5466fd5977f18e315531b0cc693479d6e80a72546aed479543a5"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [],
+    "outputs": [
+      "AI_HPC-Ops推理算子升级.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        3,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "coverage": "全文覆盖背景、Attention、Router GEMM、FusedMoE、Fused AllReduce+Norm、Sampler、实验环境及结果。p.9为留言页。图中性能趋势与p.5-8文字描述对读；未独立复现实验或核验基准的外部有效性。",
+    "fact_checks": [
+      {
+        "item": "Attention长文本单batch加速",
+        "note_value": "最高2.95x",
+        "source_value": "最高2.95x",
+        "pages": [
+          5
+        ],
+        "result": "match"
+      },
+      {
+        "item": "混合长度batch加速",
+        "note_value": "1.59x–1.76x",
+        "source_value": "1.59x–1.76x",
+        "pages": [
+          5
+        ],
+        "result": "match"
+      },
+      {
+        "item": "Router权重分解scale",
+        "note_value": "1/256",
+        "source_value": "scale取1/256",
+        "pages": [
+          3
+        ],
+        "result": "match"
+      },
+      {
+        "item": "Router最大绝对误差",
+        "note_value": "≤0.00177",
+        "source_value": "最大绝对误差不超过0.00177",
+        "pages": [
+          5
+        ],
+        "result": "match"
+      },
+      {
+        "item": "Fused AllReduce+Norm测试范围",
+        "note_value": "8–32k tokens，TP8",
+        "source_value": "8~32k tokens的TP8张量并行场景",
+        "pages": [
+          7
+        ],
+        "result": "match"
+      },
+      {
+        "item": "Sampler局部堆归并条件",
+        "note_value": "Max Top-K≤64",
+        "source_value": "Max Top-K≤64",
+        "pages": [
+          5
+        ],
+        "result": "match"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_HPC-Ops推理算子升级.md",
+      "sha256": "1e96ddca15579eb6ba1009d5be8972736008c81acb0894c6a068fc7a06defb3f"
+    },
+    "independent_crosscheck": {
+      "reviewer": "root",
+      "note_sha256": "ddfb30287c4a51e73fcbedb5708b9bcf534dcccf0dfb403b9365bc5b438c8bbe",
+      "review_sha256": "8f514b5366cf3c48b88d955711dc372e99d7c594a70502cae97b333088257c68",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "3–5",
+          "check": "核对动态 Attention 分区、Router GEMM 精度/误差及图表条件；笔记保留文章测试环境和负载限制。"
+        },
+        {
+          "pages": "6–8",
+          "check": "核对 FusedMoE、AllReduce+Norm、Sampler 机制与各自报告指标；不同负载倍数未被横向混算。"
+        },
+        {
+          "pages": "9",
+          "check": "第9页为公众号/留言尾页；note 与 review 均将其排除于技术正文。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "6a33799c618c5466fd5977f18e315531b0cc693479d6e80a72546aed479543a5"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "413133e6c8f16569750b813ace04fff86ed7d4a4aacf789ba722e6e8eedb11aa"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 23,
+        "text_layer_sha256": "2c5e1f1b53612c921698a4e84174a048b2e8a670a3af6d9314cfd420363ba59a",
+        "text_layer_char_count": 529
+      },
+      {
+        "page": 2,
+        "md_start_line": 31,
+        "md_end_line": 59,
+        "text_layer_sha256": "544c39c31e845aff048045daa3f7fc410554c8761227594e7821b2a9c40ad9f4",
+        "text_layer_char_count": 1234
+      },
+      {
+        "page": 3,
+        "md_start_line": 67,
+        "md_end_line": 82,
+        "text_layer_sha256": "37e27d6263a5f3eb40ffb8f48a97a12782a53a8d8b8c37f1094d245212482e15",
+        "text_layer_char_count": 777
+      },
+      {
+        "page": 4,
+        "md_start_line": 90,
+        "md_end_line": 123,
+        "text_layer_sha256": "a166d70763324430817bba48c77482e6fb6e6ee7381a855ffb0a16195f88465b",
+        "text_layer_char_count": 1541
+      },
+      {
+        "page": 5,
+        "md_start_line": 131,
+        "md_end_line": 154,
+        "text_layer_sha256": "e8b61a3a7cf115b72e86188baae0196675f6623d0b9258a3910fcac86e04e532",
+        "text_layer_char_count": 922
+      },
+      {
+        "page": 6,
+        "md_start_line": 162,
+        "md_end_line": 168,
+        "text_layer_sha256": "d25b18ce07eefa7421d0d663d19deaedaa930f1f36c61c7b818cffa5ee7fdb5e",
+        "text_layer_char_count": 274
+      },
+      {
+        "page": 7,
+        "md_start_line": 176,
+        "md_end_line": 183,
+        "text_layer_sha256": "4f697050da337708a6bc08034834997d2cbf3f9f88f19413aca20fa8ed4e76a1",
+        "text_layer_char_count": 274
+      },
+      {
+        "page": 8,
+        "md_start_line": 191,
+        "md_end_line": 204,
+        "text_layer_sha256": "e0478732c5cf82e61db689de962f60d07fc0f4e15511564703339ebf37342ec9",
+        "text_layer_char_count": 584
+      },
+      {
+        "page": 9,
+        "md_start_line": 212,
+        "md_end_line": 215,
+        "text_layer_sha256": "318fb0446ee9e2949bacb1d2e4c4ba65a9929642e62670f5b80c2ed27c1aa565",
+        "text_layer_char_count": 26
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        3,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "quality_issues": []
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0611 Tencent HPC Ops Infra.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "6a33799c618c5466fd5977f18e315531b0cc693479d6e80a72546aed479543a5",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/大模型推理与算子优化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_HPC-Ops推理算子升级.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

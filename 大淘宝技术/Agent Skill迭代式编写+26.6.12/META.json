@@ -1,0 +1,368 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0217",
+  "title": "Agent skill 迭代式编写实战",
+  "short_title": "Agent Skill迭代式编写",
+  "account": "大淘宝技术",
+  "author": "天杰",
+  "author_byline": "本文作者天杰，来自淘天集团-营销&交易技术团队。",
+  "source_url": null,
+  "published_at": "2026-06-12",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "营销&交易技术 2026年6月12日 00:45 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 10,
+      "text": "本文作者天杰，来自淘天集团-营销&交易技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "Skill设计与治理",
+    "Agent评测与反馈",
+    "AI研发协同",
+    "Harness与模型协同"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/Agent skill 迭代式编写实战.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T06:25:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "f4a9409528f5c68e110037af92b73b29bb7e48ae0da808ad6276dc6b5d79d892",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.2-9含Skill迭代演进循环图与目录分层示意图（位于PDF图像层），p.11为空白尾页；全部迭代法则与反模式已在正文完整转写。",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 5487148,
+      "page_count": 11
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T06:25:00-07:00",
+  "directory": "大淘宝技术/Agent Skill迭代式编写+26.6.12",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Agent Skill迭代式编写.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0217",
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "updated_at": "2026-10-20T06:25:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "f4a9409528f5c68e110037af92b73b29bb7e48ae0da808ad6276dc6b5d79d892"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "2d300e7f706be22b17c122a865c84a77e1b60ba507d4930e0c2ef69d13b4c8f2"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.2-9含Skill迭代演进循环图与目录分层示意图（位于PDF图像层），p.11为空白尾页；全部迭代法则与反模式已在正文完整转写。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_Agent Skill迭代式编写.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_Agent Skill迭代式编写.md",
+      "sha256": "92b8e40e2bb3197b9d435207fbfe09b5d0986530374304743d46d5e551753e62"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "f4a9409528f5c68e110037af92b73b29bb7e48ae0da808ad6276dc6b5d79d892"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "2d300e7f706be22b17c122a865c84a77e1b60ba507d4930e0c2ef69d13b4c8f2"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 59,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 733,
+        "text_layer_sha256": "cab5900a342f2756639d3df3811ef0b5f0fe9063c7ff3ed06d63fbcca6191abb"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 107,
+        "md_start_line": 67,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 2,
+        "text_layer_char_count": 572,
+        "text_layer_sha256": "43ff0d9e7a35b54ec7505169343f27e4c4e592e58d2d308b34fc834b1c5db895"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 143,
+        "md_start_line": 115,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 3,
+        "text_layer_char_count": 460,
+        "text_layer_sha256": "4a2f7f785fa47eb35b88fc9657ecc3dec69ddcc120aacd5fc946ad14d8ec75b6"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 161,
+        "md_start_line": 151,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 4,
+        "text_layer_char_count": 206,
+        "text_layer_sha256": "b32564db1c782e393d14909a88b66a1774ff5733cfa4ad477a633f748bc41228"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 222,
+        "md_start_line": 169,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 5,
+        "text_layer_char_count": 816,
+        "text_layer_sha256": "a7b31e932ffc3813df9b0c0d1f02cc0bc4eeee37ddc8ddf3cee7469683b765e0"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 298,
+        "md_start_line": 230,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 6,
+        "text_layer_char_count": 1277,
+        "text_layer_sha256": "3e19d3aff23d69bd01f4f4302905a1a131973d3ab62e4dc6987ded9c27a74907"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 355,
+        "md_start_line": 306,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 7,
+        "text_layer_char_count": 901,
+        "text_layer_sha256": "f6a07d3c8d706c106f570e9462c2979a9c22be8376ea7d150625cf9e2b807e7f"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 380,
+        "md_start_line": 363,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 8,
+        "text_layer_char_count": 252,
+        "text_layer_sha256": "24b7b754730c0bab6975bcf7e059471e4f4a20fb0adf5c1d74c7c0854d203827"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 411,
+        "md_start_line": 388,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 9,
+        "text_layer_char_count": 399,
+        "text_layer_sha256": "9a11a5cf064b9dcc092dbb1d9bd5bb8a2717e32ae731461fc82b827e88edd6ba"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 478,
+        "md_start_line": 419,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 10,
+        "text_layer_char_count": 732,
+        "text_layer_sha256": "73276aae1d79305c7486b4d1e1f353ccd7ef4da558234f70d585fe1cdbe29ad3"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 494,
+        "md_start_line": 486,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 11,
+        "text_layer_char_count": 60,
+        "text_layer_sha256": "ada0cc2abc5c484820c444c26d0b09257487a642d6e72ae24969ed1e887f9af7"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.2-9含Skill迭代演进循环图与目录分层示意图（位于PDF图像层），p.11为空白尾页；全部迭代法则与反模式已在正文完整转写。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Skill设计与治理.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T06:25:00-07:00",
+    "removed_at": "2026-10-20T06:25:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Agent skill 迭代式编写实战.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "f4a9409528f5c68e110037af92b73b29bb7e48ae0da808ad6276dc6b5d79d892",
+        "copied_at": "2026-10-20T06:25:00-07:00",
+        "removed_at": "2026-10-20T06:25:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_Agent Skill迭代式编写.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

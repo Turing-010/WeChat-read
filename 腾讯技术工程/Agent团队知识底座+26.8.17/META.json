@@ -1,0 +1,458 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0141",
+  "title": "Agent 的上限，可能不在模型，而在团队知识",
+  "short_title": "Agent团队知识底座",
+  "account": "腾讯技术工程",
+  "author": "danteyang",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-17T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Agent的上限，可能不在模型，而在团队知识.pdf",
+      "original_filename": "Agent的上限，可能不在模型，而在团队知识.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "a098644a3cc12ee32765b663fe324113fad4de8c04b4af33e10ab58b3b4e9471",
+      "size_bytes": 6224818,
+      "page_count": 12,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "案例指标以团队自述出现，文章未提供对照组、完整统计口径或独立审计。",
+          "pages": [
+            3,
+            5,
+            8,
+            10
+          ],
+          "status": "author_report_not_independently_verified"
+        },
+        {
+          "description": "第12页为空白。",
+          "pages": [
+            12
+          ],
+          "status": "no_content_on_page"
+        }
+      ],
+      "publication_evidence": "PDF p.1: 2026年8月17日 02:36；无时区说明。"
+    }
+  ],
+  "tags": [
+    "检索与文档解析",
+    "决策知识结构化",
+    "Agent长期记忆",
+    "AI研发协同"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Agent团队知识底座+26.8.17",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Agent团队知识底座.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "Agent 的上限,可能不在模型,而在团队知识\n腾讯程序员 2026 年 8 月 17 日 02 : 36广东原创 腾讯技术工程 988 人\n作者: danteyang\n为什么  AI 时代需要重新建知识库  WHY REBUILD\n我们团队以往知识是散落在需求文档、评审记录、代码审查评论、个人经验里。一个新人想搞\n清楚某个模块的历史决策,得翻  iWiki 、问老同事、再去代码仓库刨  commit message ,费一\n两天是常事。更头疼的是,同样的坑不同的人反复踩,因为踩坑经验留在了提  MR 那个人的\n脑子里,别人根本不知道。\n过去知识管理就是「人写  →  人找  →  人读」。\n现在  Agent 上了一线,问题变了,不是  Agent 读不了长文(大模型的上下文窗口读两千字毫\n无压力),而真正卡住的是两件事:\n第一,检索精度。你有  2000 篇文档, Agent 面对一个具体问题时,怎么从里面精准捞出相关\n的那两三篇?纯自然语言写的长文,语义边界模糊,召回容易漂移。\n第二,注入效率。就算找对了文档,一篇复盘里可能只有一段结论跟当前场景相关,你不可能\n每次都把整篇塞进去 ——token 有成本,上下文也有干扰。\n结构化知识(带适用条件、核心结论、应做 / 不应做的卡片)解决的就是这两个问题。但有一\n点容易走偏:不要把「给人看的知识」和「给  Agent 看的知识」做成两套东西。好的结构化\n知识,人打开一样能读懂、能维护 —— 就像写得好的  Skill 文档或  Prompt ,人看起来也是清晰\n的。反过来,如果一条知识人看着都觉得莫名其妙,它的维护质量也不会好,时间一长就腐败\n了。所以我们的原则是人机共读:一套知识库,人和  Agent 都是消费者。\n当  Agent 成为团队一线生产力,知识供给的问题随之暴露:检索不准、注入低效、过时\n内容越堆越多。本文记录安全中心团队从定目标、搭体系到跑通知识飞轮的完整过程,包\n括关键决策背后的思考、踩过的坑,以及可直接复用的方法。当团队开始用  Agent 做研\n发和运营,一个问题很快浮出来:Agent 的输出质量,直接取决于你能给它什么质量的\n知识。怎么让知识「产得出、找得准、喂得进、淘汰得掉」,是每个上了  Agent 的团队都\n要解决的工程问题。本文章是基于团队搭建 AI 知识体系的实践,写建知识库整个过程的思\n考、踩过的坑,以及可直接复用的方法。\n",
+    "publication_evidence": "PDF p.1: 2026年8月17日 02:36；无时区说明。",
+    "full_title_in_capture": "Agent 的上限，可能不在模型，而在团队知识",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0141",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "a098644a3cc12ee32765b663fe324113fad4de8c04b4af33e10ab58b3b4e9471"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "案例指标以团队自述出现，文章未提供对照组、完整统计口径或独立审计。",
+        "pages": [
+          3,
+          5,
+          8,
+          10
+        ],
+        "status": "author_report_not_independently_verified"
+      },
+      {
+        "description": "第12页为空白。",
+        "pages": [
+          12
+        ],
+        "status": "no_content_on_page"
+      }
+    ],
+    "outputs": [
+      "AI_Agent团队知识底座.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        4,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "coverage": "全文覆盖目标设定、四层盘点、三类存储、MCP工具适配、四种知识生产、治理与准入、场景化注入、六环飞轮、反模式和案例结果。p.11是公众号尾页，p.12空白。",
+    "fact_checks": [
+      {
+        "item": "知识新手层级",
+        "note_value": "L1公共基础、L2业务领域、L3场景策略、L4事件增量",
+        "source_value": "同值",
+        "pages": [
+          3,
+          4
+        ],
+        "result": "match"
+      },
+      {
+        "item": "正式入池门禁",
+        "note_value": "已上线且已关联仓库",
+        "source_value": "已上线+已关联仓库",
+        "pages": [
+          3,
+          5
+        ],
+        "result": "match"
+      },
+      {
+        "item": "默认保鲜周期",
+        "note_value": "90天",
+        "source_value": "默认90天到期重校验",
+        "pages": [
+          5,
+          7
+        ],
+        "result": "match"
+      },
+      {
+        "item": "知识自动沉淀率",
+        "note_value": "99.7%",
+        "source_value": "99.7%由流程/AI自动沉淀",
+        "pages": [
+          3,
+          10
+        ],
+        "result": "match"
+      },
+      {
+        "item": "治理完成率与新人上手天数",
+        "note_value": "90.2%；30天到10天",
+        "source_value": "90.2%；30天压缩到10天",
+        "pages": [
+          5,
+          10
+        ],
+        "result": "match"
+      },
+      {
+        "item": "O3 Buddy对话采纳率",
+        "note_value": "月均1097条、92%",
+        "source_value": "6月月均1097条对话、采纳率92%",
+        "pages": [
+          8
+        ],
+        "result": "match"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_Agent团队知识底座.md",
+      "sha256": "0475d747da48de937f0aa60fe2a2f4648578488c2a6ca43ca92dba6c2684f438",
+      "size_bytes": 22333
+    },
+    "independent_crosscheck": {
+      "reviewer": "independent_crosscheck",
+      "note_sha256": "0475d747da48de937f0aa60fe2a2f4648578488c2a6ca43ca92dba6c2684f438",
+      "review_sha256": "3a36218cf6a96d578bd5b68714f932563eac1aa48045d3bcf99ea4f46ec5f2d0",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "1–5",
+          "check": "核对知识目标、L1–L4分层、1+7+N组织案例、文档/结构化/RAG组合、正式入池“已上线+已关联仓库”及默认90天复核；与笔记及review事实记录一致。"
+        },
+        {
+          "pages": "5–8",
+          "check": "核对自动沉淀/复盘/运营输入/事件沉淀模式、过期归档与仍有引用条目的复活、场景化注入；O3 Buddy月均1097条对话和92%采纳率准确标为团队报告。"
+        },
+        {
+          "pages": "9–12",
+          "check": "核对六环飞轮、反模式、p.10新人30→10天及治理90.2%等案例数据；笔记明确无对照/审计边界。p.11为公众号尾页，p.12空白。"
+        }
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "a098644a3cc12ee32765b663fe324113fad4de8c04b4af33e10ab58b3b4e9471"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "030b3907c8d76f6cb4cb5af3da238a4186c6da5dd239cfad12d14f10a2a5f6ba"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 36,
+        "text_layer_sha256": "2a8426674c5ab72336769f9e9a47b16694a4aab0b9c3d35aa34403118eea94f2",
+        "text_layer_char_count": 1024
+      },
+      {
+        "page": 2,
+        "md_start_line": 44,
+        "md_end_line": 76,
+        "text_layer_sha256": "a74d3225be722e54098148bd84dbe66890a34e72d2c2e993ef6cfbcafe447ae8",
+        "text_layer_char_count": 620
+      },
+      {
+        "page": 3,
+        "md_start_line": 84,
+        "md_end_line": 115,
+        "text_layer_sha256": "badf822db2e831bf335e550b821671df60106118b1960a43db102a7c957d3820",
+        "text_layer_char_count": 843
+      },
+      {
+        "page": 4,
+        "md_start_line": 123,
+        "md_end_line": 156,
+        "text_layer_sha256": "27f7cf39354fc864abe0d3dad797fd1d75e979ab47024de1736bf621a49f371e",
+        "text_layer_char_count": 687
+      },
+      {
+        "page": 5,
+        "md_start_line": 164,
+        "md_end_line": 205,
+        "text_layer_sha256": "4ab9630da2162237ec8253e827d94d4f1263eaf1ae0e4d1bb125b8307aacadd7",
+        "text_layer_char_count": 1124
+      },
+      {
+        "page": 6,
+        "md_start_line": 213,
+        "md_end_line": 223,
+        "text_layer_sha256": "21555b7bfbff67d46672d921055e063cc91d7a5ada8dc1879f1949e88ecf753e",
+        "text_layer_char_count": 393
+      },
+      {
+        "page": 7,
+        "md_start_line": 231,
+        "md_end_line": 240,
+        "text_layer_sha256": "da1f78cf92ec458cd19832f0f7c7931c0a872a65a84903183e9dc178b06d69ff",
+        "text_layer_char_count": 371
+      },
+      {
+        "page": 8,
+        "md_start_line": 248,
+        "md_end_line": 262,
+        "text_layer_sha256": "e2b81144fc95987d2f7d883f562e96cf6cf7e87c4e0064eedeb69c5289000a5c",
+        "text_layer_char_count": 548
+      },
+      {
+        "page": 9,
+        "md_start_line": 270,
+        "md_end_line": 285,
+        "text_layer_sha256": "6366d450ce464270317b0a9b41ea4c94494a001b826dcd63a972145b4dd94032",
+        "text_layer_char_count": 350
+      },
+      {
+        "page": 10,
+        "md_start_line": 293,
+        "md_end_line": 329,
+        "text_layer_sha256": "e710df0c82a16c14c0c306053131dfc0d01537a3555223b74340689d1bfb8e9d",
+        "text_layer_char_count": 898
+      },
+      {
+        "page": 11,
+        "md_start_line": 337,
+        "md_end_line": 344,
+        "text_layer_sha256": "c3e7f6a0eea479842dbe2efa74bdcedee1368ee3082d5a1cb6cfd5a9fc70adfa",
+        "text_layer_char_count": 77
+      },
+      {
+        "page": 12,
+        "md_start_line": 352,
+        "md_end_line": 351,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        4,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "案例指标以团队自述出现，文章未提供对照组、完整统计口径或独立审计。",
+        "pages": [
+          3,
+          5,
+          8,
+          10
+        ],
+        "status": "author_report_not_independently_verified"
+      },
+      {
+        "description": "第12页为空白。",
+        "pages": [
+          12
+        ],
+        "status": "no_content_on_page"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Agent的上限，可能不在模型，而在团队知识.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "a098644a3cc12ee32765b663fe324113fad4de8c04b4af33e10ab58b3b4e9471",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent长期记忆.md",
+      "../../20_topics/决策知识结构化.md",
+      "../../20_topics/因果推断与评测归因.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Agent团队知识底座.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

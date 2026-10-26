@@ -1,0 +1,535 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0080",
+  "title": "从 Vibe Coding 到 Agentic Engineering：重构后台开发全流程",
+  "short_title": "后台开发Agentic工程",
+  "account": "腾讯技术工程",
+  "author": "seanguo",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-04-17T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0417 Agentic Engineering Backend.pdf",
+      "original_filename": "0417 Agentic Engineering Backend.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "1c68d4fe5b7d6092b0482d96c24c16091152dd1778729e83e2e84804ccd7be13",
+      "size_bytes": 8266643,
+      "page_count": 26,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.21 token截图数值没有完整统计口径；本文不据此推算全流程计费。原文引用配置仓库但PDF没有完整安装内容。",
+          "pages": [
+            21,
+            24,
+            25
+          ],
+          "status": "source_limitation"
+        }
+      ],
+      "publication_evidence": "PDF p.1 可见 2026-04-17T02:36"
+    }
+  ],
+  "tags": [
+    "AI研发协同",
+    "Agent工程循环",
+    "Agent评测与反馈"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/后台开发Agentic工程+26.4.17",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_后台开发Agentic工程.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "从 Vibe  Coding 到 Agentic  Engineering :重构后台开发全流程\n腾讯程序员 2026 年 4 月 17 日 02 : 36广东原创 腾讯技术工程 739 人\n作者: seanguo\n引言\n做后台开发的同事应该都有这个体会:从接到需求到最终发布,我们要在  PM 、 GitPlatform 、\n编辑器、 DevOps 平台、 Galileo 之间来回横跳。每次切换都在丢上下文 —— 刚在  PM 看完需\n求描述,切到编辑器就忘了某个细节;部署完测试环境去查日志,又得回忆刚才改了哪几行代\n码。\n你可能听过  Vibe Coding   这个说法 —— 打开  AI 对话框,用自然语言描述需求,让模型直接\n生成代码,跑通就算完。原型验证很爽,但一旦要上生产,问题就来了:生成的代码质量不可\n控、没有审查流程、改完了  commit message 也是乱的。说到底, Vibe Coding 是 \" 提示即祈\n祷 \" ( prompt-and-pray ),你把需求扔给  AI ,然后祈祷它别出错。\n今年行业里逐渐形成了一个更成熟的概念:Agentic Engineering(智能体工程)。核心思路\n是 —— 人负责定义目标、约束条件和质量标准, AI 作为自主智能体在结构化流程中执行规\n划、编码、测试和迭代,每个关键节点都有人工审核。它不是让  AI 随意发挥,而是把  AI 的能\n力嵌入到一套有纪律的工程体系里。\n最近一周,我用  Claude Code + 自定义  Skill/Command/MCP 体系  做了一次实践:把从需\n求到发布的所有环节串到一个终端会话里。 AI 全程保持对当前任务的理解,在预设的流程框\n",
+    "publication_evidence": "PDF p.1 可见 2026-04-17T02:36",
+    "full_title_in_capture": "从 Vibe Coding 到 Agentic Engineering：重构后台开发全流程",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0080",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "1c68d4fe5b7d6092b0482d96c24c16091152dd1778729e83e2e84804ccd7be13"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.21 token截图数值没有完整统计口径；本文不据此推算全流程计费。原文引用配置仓库但PDF没有完整安装内容。",
+        "pages": [
+          21,
+          24,
+          25
+        ],
+        "status": "source_limitation"
+      }
+    ],
+    "outputs": [
+      "AI_后台开发Agentic工程.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "detail_pages_reviewed": [
+        21,
+        23
+      ]
+    },
+    "coverage": "覆盖11阶段、三层工具、共享上下文、审查边界、案例耗时与附录；小截图不逐字转写，token统计口径不明未计算总成本",
+    "fact_checks": [
+      {
+        "item": "Task数",
+        "value": "4",
+        "pages": [
+          7
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "依赖版本",
+        "value": "v1.0.180→v1.0.182",
+        "pages": [
+          9
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "日志默认上限",
+        "value": "50",
+        "pages": [
+          13
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "修复上下文",
+        "value": "前后各10行",
+        "pages": [
+          19
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "附录MR审查",
+        "value": "9问题→人工调整后7条评论",
+        "pages": [
+          24
+        ],
+        "result": "核对原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_后台开发Agentic工程.md",
+      "sha256": "29558f1a3c31a53a557f42906e67b78c7a10d1dd1074ec008ee91637f5b905f8"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "1c68d4fe5b7d6092b0482d96c24c16091152dd1778729e83e2e84804ccd7be13"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "2a2fbc48e088b57195d34329b720060e01ca617616c09125daf5146c38482adb"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 27,
+        "text_layer_sha256": "3b78ad70fab0af99a6413083fe10efc650aaac7e1fa8c54510c0d26f5e243e6b",
+        "text_layer_char_count": 736
+      },
+      {
+        "page": 2,
+        "md_start_line": 35,
+        "md_end_line": 59,
+        "text_layer_sha256": "cc755ee8534cb069947833332bce56e7988796049572bb722917e364747efa86",
+        "text_layer_char_count": 670
+      },
+      {
+        "page": 3,
+        "md_start_line": 67,
+        "md_end_line": 114,
+        "text_layer_sha256": "8714f80647e8cadde62566888d545e6bd2b945cb28d0604a995ef64566bb78a9",
+        "text_layer_char_count": 1340
+      },
+      {
+        "page": 4,
+        "md_start_line": 122,
+        "md_end_line": 142,
+        "text_layer_sha256": "5ad232ed479d069eec0f583db2599b90cd2849fba9142fe213d880c2c8497db7",
+        "text_layer_char_count": 848
+      },
+      {
+        "page": 5,
+        "md_start_line": 150,
+        "md_end_line": 162,
+        "text_layer_sha256": "f15c0b8c53aa65cdf812ddb010123ec5bd6b97a9f60f52af239e46e4b0ef2ce8",
+        "text_layer_char_count": 549
+      },
+      {
+        "page": 6,
+        "md_start_line": 170,
+        "md_end_line": 199,
+        "text_layer_sha256": "ca09aa5c8ee1a5743123b810af6f62a130949f5eadc38075e2999083589ec249",
+        "text_layer_char_count": 1240
+      },
+      {
+        "page": 7,
+        "md_start_line": 207,
+        "md_end_line": 235,
+        "text_layer_sha256": "a148737e0d70ce2f3d494c2cfc3b57f7b669e6bddd81adab7ba02218521331c1",
+        "text_layer_char_count": 1362
+      },
+      {
+        "page": 8,
+        "md_start_line": 243,
+        "md_end_line": 272,
+        "text_layer_sha256": "785e2f5e87b48ef0f2a00a5c04d6a9b4498f69780aa3a255a3568297e3409a63",
+        "text_layer_char_count": 1158
+      },
+      {
+        "page": 9,
+        "md_start_line": 280,
+        "md_end_line": 290,
+        "text_layer_sha256": "e24102d70cb038d15acad88db957429b959a420126884243a0484804ee4ccb57",
+        "text_layer_char_count": 577
+      },
+      {
+        "page": 10,
+        "md_start_line": 298,
+        "md_end_line": 317,
+        "text_layer_sha256": "b3519e618f0e851993046f3777b7ef25406e82e6fdeec4782300fecc8776bc1f",
+        "text_layer_char_count": 830
+      },
+      {
+        "page": 11,
+        "md_start_line": 325,
+        "md_end_line": 358,
+        "text_layer_sha256": "e23b519d168ce6c0521c132402602be3168cb6fc6d78dad7a5083ce686e62af2",
+        "text_layer_char_count": 1084
+      },
+      {
+        "page": 12,
+        "md_start_line": 366,
+        "md_end_line": 385,
+        "text_layer_sha256": "a830a8cc8df47f69593d17a3e0e7762c8b6f13e51b8593ca00eb78eb64d62531",
+        "text_layer_char_count": 884
+      },
+      {
+        "page": 13,
+        "md_start_line": 393,
+        "md_end_line": 413,
+        "text_layer_sha256": "a7e2c403d76714f89fabe9b634f5c4c8600a90d3e5caa71abf9fd7e5d4583bdd",
+        "text_layer_char_count": 688
+      },
+      {
+        "page": 14,
+        "md_start_line": 421,
+        "md_end_line": 443,
+        "text_layer_sha256": "5eb3d58f7466f98d69f6c3860b29abbddd39c57e92c18511cd3d5cdb7e1d7778",
+        "text_layer_char_count": 861
+      },
+      {
+        "page": 15,
+        "md_start_line": 451,
+        "md_end_line": 472,
+        "text_layer_sha256": "f6023655de009e5c124a98a987bc23bb5c03f2a46995f6779ed3b0dd7d14966f",
+        "text_layer_char_count": 846
+      },
+      {
+        "page": 16,
+        "md_start_line": 480,
+        "md_end_line": 491,
+        "text_layer_sha256": "0906521628aa9789886c6e2621b66043fb935cb7f6cd6409b6da7d01a3563e37",
+        "text_layer_char_count": 487
+      },
+      {
+        "page": 17,
+        "md_start_line": 499,
+        "md_end_line": 521,
+        "text_layer_sha256": "c5b0b2e585e63f0b1491f79bf3566c3ac5a95c473b8982bc3be083b529beff15",
+        "text_layer_char_count": 829
+      },
+      {
+        "page": 18,
+        "md_start_line": 529,
+        "md_end_line": 536,
+        "text_layer_sha256": "5a6a094bb1a3ff5977a7e608eadd91d8a179e47adadaac504e338bd2d1ee35be",
+        "text_layer_char_count": 328
+      },
+      {
+        "page": 19,
+        "md_start_line": 544,
+        "md_end_line": 566,
+        "text_layer_sha256": "1a66af8a2799581812839e7519233702b20b04727f455754abf8da96ee622c2c",
+        "text_layer_char_count": 882
+      },
+      {
+        "page": 20,
+        "md_start_line": 574,
+        "md_end_line": 598,
+        "text_layer_sha256": "7d95469434d916d148d32bf18dc1c88b335807e1ab530c0d529272c4bc037e61",
+        "text_layer_char_count": 857
+      },
+      {
+        "page": 21,
+        "md_start_line": 606,
+        "md_end_line": 630,
+        "text_layer_sha256": "024bc20c80576d72346633417dd3c2f50b87150e6aa0fb6038482aef86656d70",
+        "text_layer_char_count": 713
+      },
+      {
+        "page": 22,
+        "md_start_line": 638,
+        "md_end_line": 666,
+        "text_layer_sha256": "77e8f1999a039c18fb536da4397d8b5783838575d2a309946d22db71597ba1e1",
+        "text_layer_char_count": 1021
+      },
+      {
+        "page": 23,
+        "md_start_line": 674,
+        "md_end_line": 711,
+        "text_layer_sha256": "109bd75ea4a20f1dc4b2c44af7f4cf2f534ea8c1e7a61cd6cdfce36bfad73549",
+        "text_layer_char_count": 912
+      },
+      {
+        "page": 24,
+        "md_start_line": 719,
+        "md_end_line": 749,
+        "text_layer_sha256": "22e8a16f95228e3b3ee96c36d238877a3c6e0d72f9321e31af81524b517700df",
+        "text_layer_char_count": 974
+      },
+      {
+        "page": 25,
+        "md_start_line": 757,
+        "md_end_line": 770,
+        "text_layer_sha256": "1f6186fa9e663c2ba6fff7cb2439f9fbcf0a923f69bcaa55de9156b465ad4900",
+        "text_layer_char_count": 458
+      },
+      {
+        "page": 26,
+        "md_start_line": 778,
+        "md_end_line": 777,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "detail_pages_reviewed": [
+        21,
+        23
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.21 token截图数值没有完整统计口径；本文不据此推算全流程计费。原文引用配置仓库但PDF没有完整安装内容。",
+        "pages": [
+          21,
+          24,
+          25
+        ],
+        "status": "source_limitation"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0417 Agentic Engineering Backend.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "1c68d4fe5b7d6092b0482d96c24c16091152dd1778729e83e2e84804ccd7be13",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_后台开发Agentic工程.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

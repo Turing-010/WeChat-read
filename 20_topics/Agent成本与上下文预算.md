@@ -1,0 +1,124 @@
+# Agent成本与上下文预算
+
+> AI跨文学习整理，2026-10-23更新。以下正文以本轮全文证据为依据；全库全文证据已汇总，本专题已按实质机制补查；全库结构验收另行记录。示例为教学推导，文章效果未在本地复现，官方核查仅限文档。个人记录区保持原文。
+
+> 修订原因：把按文章追加的重复摘要合并为机制、条件、例子与跨篇对照；分开事件时间和发布日期，并修正效果口径、计划状态与过时接口。
+
+## 我对这个主题的理解
+
+（待本人填写）
+
+## 目标是完成同样任务所需的总投入
+
+省输入、少一次调用、命中缓存、缩短等待、减少返修是不同目标。先守住同样的验收质量，再比较全任务成本：主Agent、子Agent、重试、摘要、工具服务、存储和人工返修都算；缺失usage记未知，不填0。文章标题的88%或50%以上不能直接替代这个总账。[art-0024／capture-001，p.1–2、11–17](../%E9%98%BF%E9%87%8C%E6%8A%80%E6%9C%AF/Harness%E6%88%90%E6%9C%AC%E4%BC%98%E5%8C%96%E5%AE%9E%E6%88%98%2B26.8.21/RAW.pdf#page=1) [art-0178／capture-001，p.1–3、10–14](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Multi-Agent%E9%99%8D%E6%9C%AC%2B26.8.21/RAW.pdf#page=1)
+
+教学记账式：`总费用 = Σ各次模型的未缓存输入/缓存写入/缓存命中/输出费用 + 工具与存储费用`；另外单列端到端等待和人工时间。并发Span耗时可重叠，不能相加当墙钟时间。一个turn里每次真实重试都要有attempt身份。[art-0146／capture-001，p.1–9](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/DeepSeek%20Harness%E8%A7%82%E6%B5%8B%2B26.8.24/RAW.pdf#page=1)
+
+## 相同知识点归成五种机制
+
+| 机制 | 为什么可能省 | 必须保留的条件 |
+|---|---|---|
+| 稳定前缀 | 系统规则、工具定义稳定，动态任务后置，增加可复用部分 | 规则变更必须更新；缓存支持、TTL、最小长度和价格依服务商 |
+| 按需加载 | 先目录/索引，命中才读正文、schema或引用 | 入口必须可发现；逻辑路由不等于宿主没有读完整文件 |
+| 外置与压缩 | 原始结果外存，当前只放摘要和证据入口 | 重要约束、失败和副作用凭证不可丢；有路径也要确实读回 |
+| 程序批处理 | 测试/查询等确定操作批量执行，减少逐步模型往返 | 同功能同质量比较；CLI与MCP都能封装批量接口 |
+| 模型/任务分工 | 小任务用合适预算，独立子任务隔离长探索 | 重复提示、协调、合并和子任务费用一起计算 |
+
+[art-0024／capture-001，p.3–16](../%E9%98%BF%E9%87%8C%E6%8A%80%E6%9C%AF/Harness%E6%88%90%E6%9C%AC%E4%BC%98%E5%8C%96%E5%AE%9E%E6%88%98%2B26.8.21/RAW.pdf#page=3) [art-0169／capture-001，p.1–6](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/%E7%B2%BE%E6%89%93%E7%BB%86%E7%AE%97%E8%99%BE%E5%85%BB%E6%88%90%E6%8C%87%E5%8D%97%2B26.7.8/RAW.pdf#page=1) [art-0178／capture-001，p.4–13](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Multi-Agent%E9%99%8D%E6%9C%AC%2B26.8.21/RAW.pdf#page=4) [art-0191／capture-001，p.3、7–8](../%E5%A4%A7%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF/%E7%99%BE%E8%A1%A5%E8%AF%A6%E6%83%85%E5%8A%A9%E6%89%8BSkill%E5%AE%9E%E8%B7%B5%2B26.8.20/RAW.pdf#page=3)
+
+## 压缩不是一个动作，而是三类不同取舍
+
+**输入修剪**只缩短下一次送给模型的材料；**摘要**把历史改写为短描述；**原记录外存+索引**保留可恢复证据。OpenClaw材料已区分临时pruning和写入会话的compaction；Memory offload把原结果、调用摘要、任务图和索引分层，不能把其中一个层当成全部原件。[art-0060／capture-001，p.8–12、22–23](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/OpenClaw%E6%9E%B6%E6%9E%84%E4%B8%8E%E5%A4%9AAgent%2B26.3.9/RAW.pdf#page=8) [art-0094／capture-001，p.14–29](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/%E5%8F%AF%E6%81%A2%E5%A4%8D%E7%9A%84%E5%88%86%E5%B1%82%E4%BB%BB%E5%8A%A1%E8%AE%B0%E5%BF%86%2B26.5.22/RAW.pdf#page=14)
+
+Jev按tool-use ID保持调用和结果配对，避免留下协议残缺；但只给裁剪器工具名和长度等元数据，可能不知道长结果里哪一条关键。91.5%是单条构造会话的**字符**缩减，不能写成真实token或账单收益。失败、低置信或响应不完整时应保守回退，原记录另存后才有机会恢复。[art-0002／capture-002，p.5–21](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Jev%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%2B26.9.21/RAW_%E8%A1%A5%E9%87%87001.pdf#page=5)
+
+高德把修复范围限制到受影响字段和段落，减少无关重写；会场Harness则把P0目标事实、P1规则、P2当前工作、P3可重读历史分层，并检查**实际provider请求**。这两篇补充的是“哪些信息应稳定保留”和“改动范围”，不是单纯把上下文截短。[art-0051／capture-001，p.14–17](../%E9%98%BF%E9%87%8C%E6%8A%80%E6%9C%AF/%E6%9C%AC%E5%9C%B0%E7%94%9F%E6%B4%BB%E5%88%86%E6%9E%90Agent%E5%AE%9E%E8%B7%B5%2B26.9.30/RAW.pdf#page=14) [art-0184／capture-001，p.11–18、25–26](../%E5%A4%A7%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF/%E4%BC%9A%E5%9C%BAAgent%20Harness%2B26.10.19/RAW.pdf#page=11)
+
+| 补充来源（发布日期） | 与主线相同或新增的知识 | 使用边界 |
+|---|---|---|
+| art0183（2026-07-23） | 12名员工把成本浪费分到历史、能力目录、重试、子Agent和定时任务，补用户侧排查线索 | 经验合集非受控账单实验；“只留三轮”“重试两次”不能机械执行 |
+| art0004（2026-09-14） | 七类上下文输入、预加载/JIT折中、外部笔记与研究子任务隔离，系统化解释同一问题 | 教学mock没有真实LLM/工具，也未触发压缩；内存对象不是落盘，参数知识未消失，固定system不会仅因追加历史自动移到中间 |
+| art0109（2026-06-15） | 汇总缓存、模型路由、程序聚合、结构索引和worker分工，强调同任务总成本 | 原文两个worker各12K却把并行合计写12K，应为24K；据此外推的70%—85%不能保留为实测 |
+| art0294（2025-09-22） | 按需读文件、明确截断、摘要新分支及工具前权限构成早期架构观察 | 文中ClaudeX代码与官方Claude Code对应未核；文件编码/行尾LRU缓存不是模型长期记忆 |
+
+[art-0183／capture-001，p.1–7](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Token%20%E5%88%BA%E5%AE%A2%E6%A1%88%E4%BE%8B%2B26.7.23/RAW.pdf#page=1) [art-0004／capture-002，p.5–24、27](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B%2B26.9.14/RAW_%E8%A1%A5%E9%87%87001.pdf#page=5) 这些是并行归纳；旧研究的发表年与新文章发表日应分别保留，不能据此宣称一种上下文技术全面替代另一种。
+[art-0109／capture-001，p.1–12、22–33](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/AI%20Coding%20Token%E6%88%90%E6%9C%AC%E6%8E%A7%E5%88%B6%2B26.6.15/RAW.pdf#page=1) [art-0294／capture-001，p.6–13](../%E5%A4%A7%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF/ClaudeCode%E6%9E%B6%E6%9E%84%E6%8B%86%E8%A7%A3%2B25.9.22/RAW.pdf#page=6)
+
+## 最小例子：token更少，费用反而更高
+
+假设原任务100单位输入中80可按0.1单价命中缓存、20按1计费，共28。优化后总输入降到75，但只有20命中缓存、55未命中，共57。输出等其他条件不变时，token降25%，输入费却上升。这里的价格是教学假设，必须用实际服务商账单替换。
+
+这解释art0178图谱试验“总token -22.7%，未缓存token +24.8%”为什么不能直接等同省钱。还要加入建索引、摘要和新分支同步成本。[art-0178／capture-001，p.10–14](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Multi-Agent%E9%99%8D%E6%9C%AC%2B26.8.21/RAW.pdf#page=10)
+
+## 时间线：同项目迭代与跨团队共识
+
+| 事件时间 | 发布日期 | 机制与关系 |
+|---|---|---|
+| 2026-03源码观察，未锁commit | 2026-03-09，art0060 | 区分会话持久摘要、临时修剪和长期记忆 |
+| offload实验日期未明确 | 2026-05-22，art0094 | 原结果→摘要→任务图→索引，强调可回溯；SWE50题串在同一会话不是普通独立题协议 |
+| 2026-05-13缓存故障经验 | 2026-06-08，art0104 | 同项目改分层压缩和稳定前缀；30/50/15KB上限也会丢原始细节 |
+| 2026-07-26两组13/16调用，非严格对照 | 2026-08-21，art0024 | 88.2%是20轮、5分钟连续命中等假设下主Agent输入估算 |
+| 优化阶段未给日期 | 2026-08-21，art0178 | 成本按角色、波次和缓存拆分；50%—65%整体仍估算，与art0024不是同一账单 |
+| 具体实现日期未给 | 2026-09-21，art0002 | 把裁剪判断抽离，新增判断器信息预算和失败回退问题 |
+| 具体上线阶段未给日期 | 2026-10-19，art0184 | 保留目标/规则层，并观测真正送出的请求，不仅看应用内消息列表 |
+
+[art-0094／capture-001，p.22–29](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/%E5%8F%AF%E6%81%A2%E5%A4%8D%E7%9A%84%E5%88%86%E5%B1%82%E4%BB%BB%E5%8A%A1%E8%AE%B0%E5%BF%86%2B26.5.22/RAW.pdf#page=22) [art-0104／capture-001，p.2–13](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Agent%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8E%8B%E7%BC%A9%2B26.6.8/RAW.pdf#page=2) [art-0024／capture-001，p.1–17](../%E9%98%BF%E9%87%8C%E6%8A%80%E6%9C%AF/Harness%E6%88%90%E6%9C%AC%E4%BC%98%E5%8C%96%E5%AE%9E%E6%88%98%2B26.8.21/RAW.pdf#page=1) [art-0178／capture-001，p.10–14](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Multi-Agent%E9%99%8D%E6%9C%AC%2B26.8.21/RAW.pdf#page=10) [art-0002／capture-002，p.12–21](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Jev%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%2B26.9.21/RAW_%E8%A1%A5%E9%87%87001.pdf#page=12) [art-0184／capture-001，p.15–18、25–26](../%E5%A4%A7%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF/%E4%BC%9A%E5%9C%BAAgent%20Harness%2B26.10.19/RAW.pdf#page=15)
+
+## 当前适用性与常见纠正
+
+截至2026-10-23，Claude官方缓存文档默认TTL为5分钟、命中可刷新，另有1小时选项；TTL从请求开始计算。缓存命中不是“上下文不占容量”，也不能把此规则泛化到所有模型。[Prompt caching官方文档](https://platform.claude.com/docs/en/build-with-claude/prompt-caching)
+
+Agent Skills规范支持元数据→正文→资源的渐进披露，但具体宿主如何装配仍需观察。把两个分支放在一份SKILL里，只有运行时真的按需读取才节约载入；在一个全文已加载的文件中写“只看A节”不是物理节省。[Agent Skills规范](https://agentskills.io/specification) [art-0191／capture-001，p.3、7–8](../%E5%A4%A7%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF/%E7%99%BE%E8%A1%A5%E8%AF%A6%E6%83%85%E5%8A%A9%E6%89%8BSkill%E5%AE%9E%E8%B7%B5%2B26.8.20/RAW.pdf#page=3)
+
+其他容易误学的点：忽略offset的Read去重会阻止补读；mtime不是完整内容身份；关闭工具、缩短输出、派子Agent均要回归任务质量。固定轮数“超过60轮没救”和“上下文过50%必退化”是经验或过强概括，不作为通用阈值。[art-0024／capture-001，p.6、12–14](../%E9%98%BF%E9%87%8C%E6%8A%80%E6%9C%AF/Harness%E6%88%90%E6%9C%AC%E4%BC%98%E5%8C%96%E5%AE%9E%E6%88%98%2B26.8.21/RAW.pdf#page=6) [art-0169／capture-001，p.1–6](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/%E7%B2%BE%E6%89%93%E7%BB%86%E7%AE%97%E8%99%BE%E5%85%BB%E6%88%90%E6%8C%87%E5%8D%97%2B26.7.8/RAW.pdf#page=1) [art-0114／capture-001，p.2–7](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/WorkBuddy%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%2B26.9.9/RAW.pdf#page=2)
+
+## 自测：先回答，再展开
+
+**1. 输入token下降25%，为什么费用可能上涨？**
+<details><summary>答案</summary>
+输入分缓存创建、命中和未缓存，单价不同；输出、重试、子Agent和工具费用也可能增加。要用实际usage和价格计算全任务费用。
+</details>
+
+**2. 只存摘要和一个文件路径，就一定能恢复原证据吗？**
+<details><summary>答案</summary>
+需要文件确实保存完整、身份和版本匹配、权限允许、索引能找回，并且恢复流程会读取。摘要和截断文件本身可能已丢细节。
+</details>
+
+**3. 把工作拆成5个Agent通常会省5倍吗？**
+<details><summary>答案</summary>
+没有这种关系。每个Agent有启动提示和工具开销，还需协调合并；只有独立性与信息隔离收益超过新增成本时才可能划算。
+</details>
+
+**4. 优化Harness后更早达到专家性能，能说最终模型更强吗？**
+<details><summary>答案</summary>
+不能。到阈值成本与最终最优结果是不同指标，还需相同任务、预算和重复试验。art0035只给两次特定轨迹，适合作为待检验假设。[art-0035／capture-001，p.8–9](../%E9%98%BF%E9%87%8C%E6%8A%80%E6%9C%AF/KernelAgent%E7%94%9F%E4%BA%A7%E7%AE%97%E5%AD%90%E4%BC%98%E5%8C%96%2B26.9.28/RAW.pdf#page=8)
+</details>
+
+
+## 来源索引
+
+以下采用META指定默认采集版本。正文引用使用PDF物理页；发布日期不是机制首次出现时间。
+
+| 来源 | 发布日期 | 本专题使用页 | 证据报告 |
+|---|---|---|---|
+| [art-0294 Claude Code 深度拆解：一个顶级AI编程工具的核心架构](../%E5%A4%A7%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF/ClaudeCode%E6%9E%B6%E6%9E%84%E6%8B%86%E8%A7%A3%2B25.9.22/RAW.pdf)（capture-001） | 2025-09-22 | 6–13 | inbox-01.json |
+| [art-0060 玩转OpenClaw，你需要了解的：核心架构、运作原理、Agent部署步骤](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/OpenClaw%E6%9E%B6%E6%9E%84%E4%B8%8E%E5%A4%9AAgent%2B26.3.9/RAW.pdf)（capture-001） | 2026-03-09 | 8–12、22–23 | tencent-02.json |
+| [art-0094 腾讯云 Agent Memory 节省 61% Token 提升 52% 成功率的诀窍：Mermaid 无限画布 × 上下文卸载](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/%E5%8F%AF%E6%81%A2%E5%A4%8D%E7%9A%84%E5%88%86%E5%B1%82%E4%BB%BB%E5%8A%A1%E8%AE%B0%E5%BF%86%2B26.5.22/RAW.pdf)（capture-001） | 2026-05-22 | 14–29；22–29 | tencent-05.json |
+| [art-0104 横向拆解 Claude Code、Codex 等六大 Agent 上下文压缩策略后，我们做了第 7 个](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Agent%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8E%8B%E7%BC%A9%2B26.6.8/RAW.pdf)（capture-001） | 2026-06-08 | 2–13 | tencent-06.json |
+| [art-0109 一篇搞懂 AI Coding Agent 的 Token 成本控制](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/AI%20Coding%20Token%E6%88%90%E6%9C%AC%E6%8E%A7%E5%88%B6%2B26.6.15/RAW.pdf)（capture-001） | 2026-06-15 | 1–12、22–33 | tencent-06.json |
+| [art-0169 精打细算虾养成指南：省 Token 和把 AI 用好，从来就是一件事](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/%E7%B2%BE%E6%89%93%E7%BB%86%E7%AE%97%E8%99%BE%E5%85%BB%E6%88%90%E6%8C%87%E5%8D%97%2B26.7.8/RAW.pdf)（capture-001） | 2026-07-08 | 1–6 | tencent-07.json |
+| [art-0183 鹅厂员工都碰到过哪些 Token 刺客？](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Token%20%E5%88%BA%E5%AE%A2%E6%A1%88%E4%BE%8B%2B26.7.23/RAW.pdf)（capture-001） | 2026-07-23 | 1–7 | tencent-late-01.json |
+| [art-0191 浅谈 SKILL 研发的最佳实践——以百补详情助手为例](../%E5%A4%A7%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF/%E7%99%BE%E8%A1%A5%E8%AF%A6%E6%83%85%E5%8A%A9%E6%89%8BSkill%E5%AE%9E%E8%B7%B5%2B26.8.20/RAW.pdf)（capture-001） | 2026-08-20 | 3、7–8 | root-taobao-01.json |
+| [art-0178 靠这10个优化点，我们把 Multi-Agent 工作流成本降了50%以上](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Multi-Agent%E9%99%8D%E6%9C%AC%2B26.8.21/RAW.pdf)（capture-001） | 2026-08-21 | 1–3、10–14；4–13；10–14 | tencent-late-04.json |
+| [art-0024 Agent 终章（Harness 成本篇）：一次百炼账单降低 88% 实战](../%E9%98%BF%E9%87%8C%E6%8A%80%E6%9C%AF/Harness%E6%88%90%E6%9C%AC%E4%BC%98%E5%8C%96%E5%AE%9E%E6%88%98%2B26.8.21/RAW.pdf)（capture-001） | 2026-08-21 | 1–2、11–17；1–17；3–16；6、12–14 | ali-04.json |
+| [art-0146 DeepSeek Harness 规模化踩坑实录：耗时、成本、失败到底该怎么查](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/DeepSeek%20Harness%E8%A7%82%E6%B5%8B%2B26.8.24/RAW.pdf)（capture-001） | 2026-08-24 | 1–9 | tencent-late-05.json |
+| [art-0114 10 个技巧，让你的 WorkBuddy 比别人好用！](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/WorkBuddy%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%2B26.9.9/RAW.pdf)（capture-001） | 2026-09-09 | 2–7 | tencent-late-07.json |
+| [art-0004 别再只卷Prompt了，真正拉开Agent差距的是Context Engineering](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B%2B26.9.14/RAW_%E8%A1%A5%E9%87%87001.pdf)（capture-002） | 2026-09-14 | 5–24、27 | tencent-late-08.json |
+| [art-0002 一万字Jev 工程实践长文：把 Agent 的“判断题”从大模型里拆出来](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Jev%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%2B26.9.21/RAW_%E8%A1%A5%E9%87%87001.pdf)（capture-002） | 2026-09-21 | 5–21；12–21 | tencent-late-09.json |
+| [art-0035 从榜单走向真实业务负载：Kernel Agent 刷新 Qwen3.8–Max 核心推理算子性能](../%E9%98%BF%E9%87%8C%E6%8A%80%E6%9C%AF/KernelAgent%E7%94%9F%E4%BA%A7%E7%AE%97%E5%AD%90%E4%BC%98%E5%8C%96%2B26.9.28/RAW.pdf)（capture-001） | 2026-09-28 | 8–9 | ali-02.json |
+| [art-0051 高德本地生活分析 Agent 的 AI Native 实践全景（万字长文回顾）](../%E9%98%BF%E9%87%8C%E6%8A%80%E6%9C%AF/%E6%9C%AC%E5%9C%B0%E7%94%9F%E6%B4%BB%E5%88%86%E6%9E%90Agent%E5%AE%9E%E8%B7%B5%2B26.9.30/RAW.pdf)（capture-001） | 2026-09-30 | 14–17 | ali-inbox-extra.json |
+| [art-0184 告别 AI Demo 页面：构建支持淘内货品运营、可C端投放的会场 Agent Harness](../%E5%A4%A7%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF/%E4%BC%9A%E5%9C%BAAgent%20Harness%2B26.10.19/RAW.pdf)（capture-001） | 2026-10-19 | 11–18、25–26；15–18、25–26 | root-taobao-01.json |
+
+## 我的实践与修正
+
+（待本人填写；AI默认不修改）

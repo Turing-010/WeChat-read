@@ -1,0 +1,401 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0095",
+  "title": "斩获冠军！清华x腾讯混元登顶MLSys2026 MoE模型推理优化竞赛",
+  "short_title": "MoE推理与Agent算子优化",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-05-23T21:00",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0523 MLSys MoE Champion.pdf",
+      "original_filename": "0523 MLSys MoE Champion.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "b089e55efb5b735e0745f1896503f858d7aa812832bc38725cac9b97d4a8c8dd",
+      "size_bytes": 4043439,
+      "page_count": 9,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "性能结果、冠军和 Agent 收益为团队报道，PDF 无完整基准配置、全部代码及独立复现",
+          "pages": [
+            1,
+            5,
+            6,
+            7
+          ],
+          "status": "归因于原文并限定统计范围"
+        },
+        {
+          "description": "p.9 为空白尾页；未据此推断缺失正文",
+          "pages": [
+            9
+          ],
+          "status": "已浏览确认空白"
+        },
+        {
+          "description": "p.2 单层 MoE 0.2 ms 被称占单步生成延迟82%以上，与 p.6 完整单步12.63 ms的分母口径未明确，笔记保留差异不自补解释",
+          "pages": [
+            2,
+            6
+          ],
+          "status": "统计范围待原作者澄清"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏 2026-05-23T21:00"
+    }
+  ],
+  "tags": [
+    "模型与开发工具发布",
+    "AI研发协同",
+    "Agent评测与反馈",
+    "大模型推理与算子优化"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/MoE推理与Agent算子优化+26.5.23",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_MoE推理与Agent算子优化.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "斩获冠军!清华 x  腾讯混元登顶 MLSys  2026  MoE  模型推理优化\n竞赛\nMay  23 , 2026 , 9 : 00  PM广东腾讯技术工程 38  listened\n一、赛事和任务介绍\nMLSys 是聚焦机器学习系统领域的国际顶级会议,议题覆盖训练、推理、编译器等 AI infra 核心\n话题。MLSys 2026 设置了专项的 MoE 优化挑战赛。根据赛事官方要求,参赛队伍需要在指定\nNPU 上为指定模型的关键模块编写自定义算子,并在保证正确性的前提下优化整个解码推理流程\n的端到端延迟。\n来自清华存储实验室的队员,从数据搬运与片上存储利用的视角出发,解决MoE 推理过程中 DMA\n带宽利用不充分、激活在HBM 与片上缓存之间反复搬运等关键性能瓶颈;腾讯混元 AI Infra 团队\n提供大模型推理与算子上的丰富经验与深度指导,团队重点优化了权重加载流水、片上数据布局\n与模块间数据复用策略,最终实现了端到端解码延迟的降低 4.1 倍,以显著优势赢得冠军。\n本次赛事竞争十分激烈, Stanford 、 MIT 、UCBerkeley 、CMU 、 UCLA 、 Cornell 等多所国际知\n名高校均进入第二阶段角逐。团队最终脱颖而出,充分展现了其在大模型推理系统、异构芯片适\n配和底层算子优化方面的综合实力。\n冠军团队参赛成员为高世伟、范如文、任庭旭、罗以彬,指导者包括清华舒继武教授、陆游游副\n教授、腾讯AIInfra专家reed ,也得到腾讯混元专项博士生科研激励计划的大力支持。\n随着大模型走向万亿参数时代, MoE (混合专家)架构成为主流,但其在异构芯片( NPU )\n上的推理性能还面临着诸多挑战。近日,在国际顶级机器学习系统会议  MLSys 2026 的 MoE\n推理优化挑战赛中,清华大学与腾讯混元 AI infra 团队从全球众多顶尖团队中脱颖而出,成功\n夺冠。团队针对  MoE 模型,设计全链路优化方法,将在官方指定  NPU 上推理速度提升  4.1\n倍,彰显了团队在大模型推理系统领域的深刻积累\n",
+    "publication_evidence": "PDF p.1 发布栏 2026-05-23T21:00",
+    "full_title_in_capture": "斩获冠军！清华x腾讯混元登顶MLSys2026 MoE模型推理优化竞赛",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0095",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "b089e55efb5b735e0745f1896503f858d7aa812832bc38725cac9b97d4a8c8dd"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "性能结果、冠军和 Agent 收益为团队报道，PDF 无完整基准配置、全部代码及独立复现",
+        "pages": [
+          1,
+          5,
+          6,
+          7
+        ],
+        "status": "归因于原文并限定统计范围"
+      },
+      {
+        "description": "p.9 为空白尾页；未据此推断缺失正文",
+        "pages": [
+          9
+        ],
+        "status": "已浏览确认空白"
+      },
+      {
+        "description": "p.2 单层 MoE 0.2 ms 被称占单步生成延迟82%以上，与 p.6 完整单步12.63 ms的分母口径未明确，笔记保留差异不自补解释",
+        "pages": [
+          2,
+          6
+        ],
+        "status": "统计范围待原作者澄清"
+      }
+    ],
+    "outputs": [
+      "AI_MoE推理与Agent算子优化.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        4,
+        6,
+        7
+      ]
+    },
+    "coverage": "覆盖赛事目标、五项 MoE 优化、四项 Attention 优化、逐 bit 精度约束、Knight 分工与记忆评测、结果及展望；未捏造缺失的硬件型号、输入配置或代码。",
+    "fact_checks": [
+      {
+        "item": "发布日期",
+        "value": "May 23, 2026, 9:00 PM → 2026-05-23T21:00，时区未知",
+        "pages": "1",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "端到端时间",
+        "value": "14.91 s → 3.56 s",
+        "pages": "6",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "完整单步前向",
+        "value": "12.63 ms → 5.45 ms",
+        "pages": "6",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "单层 MoE",
+        "value": "204 μs → 53 μs",
+        "pages": "6–7",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "DMA 利用率",
+        "value": "权重加载期间约 80%",
+        "pages": "6–7",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "数值要求",
+        "value": "逐 bit 与基线一致；恢复专家累加次序",
+        "pages": "4–5",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "专家分片",
+        "value": "两个 LNC 各处理 4 专家",
+        "pages": "3",
+        "result": "与所读原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_MoE推理与Agent算子优化.md",
+      "sha256": "5e7f389409b0ec7f5b71510ce6db639fc9f4748a10c52d9383b5a39b3cf7af26"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "b089e55efb5b735e0745f1896503f858d7aa812832bc38725cac9b97d4a8c8dd"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "733ee1c7a48382fa32bcb132eae413b1da45907c262b42bf57668aea9e318036"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 31,
+        "text_layer_sha256": "6d0fd4ab7789c29ff6412f2fb3df15aa2ecc145859ce66b25a5394cf73f44d72",
+        "text_layer_char_count": 880
+      },
+      {
+        "page": 2,
+        "md_start_line": 39,
+        "md_end_line": 48,
+        "text_layer_sha256": "986b1a768a1aa617ba4ecab8c6586ec55b2d2d373fb5e25827d836230c2aeb09",
+        "text_layer_char_count": 382
+      },
+      {
+        "page": 3,
+        "md_start_line": 56,
+        "md_end_line": 82,
+        "text_layer_sha256": "ee1790fd6a0b9130642ffd9cfde24381fbd7fb70461af0f37e5f173a4bfb02c7",
+        "text_layer_char_count": 1160
+      },
+      {
+        "page": 4,
+        "md_start_line": 90,
+        "md_end_line": 113,
+        "text_layer_sha256": "710c8ebcc62a5d30497c67adb5c8d904909b4be6c7608bfb95588e941679dcb0",
+        "text_layer_char_count": 1032
+      },
+      {
+        "page": 5,
+        "md_start_line": 121,
+        "md_end_line": 156,
+        "text_layer_sha256": "3b46a6003974d4f6e8648edbcb40c13652e2fde36dfeab80a053643974a8bd66",
+        "text_layer_char_count": 1509
+      },
+      {
+        "page": 6,
+        "md_start_line": 164,
+        "md_end_line": 180,
+        "text_layer_sha256": "fe14b1d05fc2c8debc8f993893bbd59ca52ff1a6083331d3f14f70668465a992",
+        "text_layer_char_count": 555
+      },
+      {
+        "page": 7,
+        "md_start_line": 188,
+        "md_end_line": 201,
+        "text_layer_sha256": "f7f92c53d7fc55b78ef976e1f644481ad1ddd404bc2b4b87ec3c0c916e8a0636",
+        "text_layer_char_count": 511
+      },
+      {
+        "page": 8,
+        "md_start_line": 209,
+        "md_end_line": 212,
+        "text_layer_sha256": "6639821d3b40ee779871b46b8200ac03a1dd813b669cef8435040633341b707c",
+        "text_layer_char_count": 26
+      },
+      {
+        "page": 9,
+        "md_start_line": 220,
+        "md_end_line": 219,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        4,
+        6,
+        7
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "性能结果、冠军和 Agent 收益为团队报道，PDF 无完整基准配置、全部代码及独立复现",
+        "pages": [
+          1,
+          5,
+          6,
+          7
+        ],
+        "status": "归因于原文并限定统计范围"
+      },
+      {
+        "description": "p.9 为空白尾页；未据此推断缺失正文",
+        "pages": [
+          9
+        ],
+        "status": "已浏览确认空白"
+      },
+      {
+        "description": "p.2 单层 MoE 0.2 ms 被称占单步生成延迟82%以上，与 p.6 完整单步12.63 ms的分母口径未明确，笔记保留差异不自补解释",
+        "pages": [
+          2,
+          6
+        ],
+        "status": "统计范围待原作者澄清"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0523 MLSys MoE Champion.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "b089e55efb5b735e0745f1896503f858d7aa812832bc38725cac9b97d4a8c8dd",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/大模型推理与算子优化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_MoE推理与Agent算子优化.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

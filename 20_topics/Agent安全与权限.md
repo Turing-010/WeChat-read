@@ -1,0 +1,117 @@
+# Agent安全与权限
+
+> AI跨文学习整理，2026-10-23更新。以下正文以本轮全文证据为依据；全库全文证据已汇总，本专题已按实质机制补查；全库结构验收另行记录。示例为教学推导，文章效果未在本地复现，官方核查仅限文档。个人记录区保持原文。
+
+> 修订原因：把按文章追加的重复摘要合并为机制、条件、例子与跨篇对照；分开事件时间和发布日期，并修正效果口径、计划状态与过时接口。
+
+## 我对这个主题的理解
+
+（待本人填写）
+
+## 先抓住要解决的问题
+
+模型可以提出动作，但谁能对哪个对象做什么，必须在动作真正发生的地方判断。先分清四件事：身份说明“谁”，权限说明“可做什么”，人工批准说明“这次是否同意”，隔离说明“即使出错最多能影响什么”。四者缺一时，增加一句安全提示不能补齐。业务结果还需要独立验收。[art-0040／capture-001，p.6–8、22–24](../%E9%98%BF%E9%87%8C%E6%8A%80%E6%9C%AF/%E5%9E%82%E7%B1%BB%E7%94%9F%E4%BA%A7%E7%BA%A7Agent%E8%90%BD%E5%9C%B0%2B26.9.16/RAW.pdf#page=6)
+
+## 从输入到副作用，逐段放置控制
+
+1. **输入和知识有来源。** 网页、附件、Skill和历史记忆可能包含指令；它们是待分析数据，不能自己升级成授权。OpenClaw案例把高权限、扩展供应链、外部输入和记忆污染连成同一风险链。扫描工具只能降低部分风险，提示里写“先扫描”不构成执行拦截。[art-0061／capture-001，p.1–9](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/OpenClaw%E5%AE%89%E5%85%A8%E4%BD%93%E6%A3%80%2B26.3.11/RAW.pdf#page=1)
+2. **模型调用先变成受检请求。** 执行层校验工具名、参数、已验证用户、资源范围和动作策略。退小宝把登录身份放在可信状态里、在工具调用前统一校验；不能让模型自己填一个“管理员ID”。只读查询也有泄露风险。[art-0253／capture-001，p.19–22](../%E5%A4%A7%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF/%E9%80%80%E5%B0%8F%E5%AE%9DAI%E5%8A%A9%E6%89%8B%E5%BA%94%E7%94%A8%E6%9E%B6%E6%9E%84%2B26.2.11/RAW.pdf#page=19)
+3. **批准绑定具体动作。** Hook可在工具前要求状态、展示参数并暂停，但批准应绑定对象、环境、参数版本、批准者、有效期和单次使用记录。后续金额或目标改变，要重新判定，而非沿用`approved=true`。Hook顺序、失败处理及所有等价调用路径都需要覆盖。[art-0138／capture-001，p.9–20](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Agent%20Hook%E6%B2%BB%E7%90%86%2B26.7.16/RAW.pdf#page=9)
+4. **隔离与恢复另做。** 容器、网络限制、最小凭据和文件权限约束影响面；日志留执行凭证。插件卸载、回调清理和Worker内存限制各有价值，却不能撤销已经发出的外部请求。[art-0305／capture-001，p.20–26](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/tRPCAgentGo%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84%2B25.10.13/RAW.pdf#page=20) [art-0144／capture-001，p.2–13](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/DeepSeek%20Harness%E6%9E%B6%E6%9E%84%2B26.8.14/RAW.pdf#page=2) [art-0145／capture-001，p.17–23](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Cordis%E4%B8%8EDSH%E8%BF%90%E8%A1%8C%E6%97%B6%2B26.9.4/RAW.pdf#page=17)
+
+## 一个最小例子：退款批准为什么还不够
+
+教学场景：用户允许给订单A退100元。系统生成预览，记录`用户U + 订单A + 金额100 + 币种 + 环境 + 参数hash + 过期时间`，由有权限的人批准。执行前再次核对订单状态和用户权限，再用业务幂等键提交，最后读取退款系统的权威结果。
+
+如果网络超时，正确动作是查询该幂等键的结果；不能因为没有收到成功消息就发第二次退款。批准允许尝试执行，幂等防重复，业务终态证明结果，三者不互相替代。补偿也可能失败，不等于时间倒流。上述是结合执行网关、审批和恢复材料的设计推导，未实际执行退款。[art-0040／capture-001，p.6–8、19–25](../%E9%98%BF%E9%87%8C%E6%8A%80%E6%9C%AF/%E5%9E%82%E7%B1%BB%E7%94%9F%E4%BA%A7%E7%BA%A7Agent%E8%90%BD%E5%9C%B0%2B26.9.16/RAW.pdf#page=6) [art-0324／capture-001，p.7–13、21](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/LangGraph%E4%BA%BA%E5%B7%A5%E5%B9%B2%E9%A2%84%E4%B8%8E%E6%81%A2%E5%A4%8D%2B25.12.15/RAW.pdf#page=7)
+
+## 跨篇对照：这些控制互相补什么
+
+| 材料路线 | 新增控制 | 不能替代 |
+|---|---|---|
+| tRPC回调、Hook、LangGraph中断 | 把检查和批准放到工具运行边界 | 宿主权限、人工身份、外部业务幂等 |
+| SkillTrustBench | 区分恶意、可疑、安全，衡量漏报和误报 | 生产恶意率；平衡测试集不是市场分布 |
+| VulnGym | 按函数/文件/项目、白盒/黑盒分层，追踪跨文件路径 | “发现更多报告”不等于独立漏洞更多；Harness改变也影响成绩 |
+| Cordis/DSH | 显式登记资源、逆序清理、依赖撤销、Worker限制 | OS隔离；任意插件逆操作的正确性 |
+| 腾讯业务身份注入 | 把真实身份与模型参数分开 | 对每个资源和动作的授权策略 |
+
+评测路线是对运行控制的补充，不能因为扫描分高就放开权限。SkillTrustBench的5520条平衡样本并非5520个真实恶意Skill；VulnGym的披露样本也不等于线上漏洞发生率。[art-0110／capture-001，p.1–7](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/SkillTrustBench%E8%AF%84%E6%B5%8B%2B26.6.16/RAW.pdf#page=1) [art-0097／capture-001，p.1–10](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/VulnGym%E6%BC%8F%E6%B4%9E%E8%AF%84%E6%B5%8B%E5%9F%BA%E5%87%86%2B26.5.26/RAW.pdf#page=1) [art-0145／capture-001，p.11–23](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Cordis%E4%B8%8EDSH%E8%BF%90%E8%A1%8C%E6%97%B6%2B26.9.4/RAW.pdf#page=11)
+
+更早的三篇把“模型协助安全”与“Agent自身权限”连接起来：
+
+| 来源（发布日期） | 本专题新增或重复内容 | 证据边界 |
+|---|---|---|
+| art0299（2025-09-22） | 蜜罐采样→隔离环境分析→模型和调试工具辅助逆向，体现样本、工具和结论必须分责 | 部分图未加载；80%效率、90%自动化缺基线，不当准确率或独立归因 |
+| art0329（2025-11-07） | Audit取证、Review复核、Fix补丁、专家最终判断；发现“定义多个Agent”不代表真委派 | RL调度仍计划，97%闭环和误报降幅缺完整统计 |
+| art0332（2025-12-19） | 功能正确与安全正确分开；按CWE、数据流和权限审查 | Top1000仓库的AI/人工来源转换是观察，不证明AI造成或修复漏洞；未取得完整研究报告 |
+
+[art-0299／capture-001，p.1–4、9–11](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/RapperBot%E6%A0%B7%E6%9C%AC%E4%B8%8E%E6%83%85%E6%8A%A5%E5%88%86%E6%9E%90%2B25.9.22/RAW.pdf#page=1) [art-0329／capture-001，p.2–7](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/%E6%82%9F%E7%A9%BA%E5%AE%89%E5%85%A8Agent%E8%BF%AD%E4%BB%A3%E5%A4%8D%E7%9B%98%2B25.11.7/RAW.pdf#page=2) [art-0332／capture-001，p.2–7](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/AI%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81%E5%9C%A8%E9%87%8E%E5%AE%89%E5%85%A8%E7%A0%94%E7%A9%B6%2B25.12.19/RAW.pdf#page=2) 三篇是不同任务的并行实践，没有证据表明依次继承；漏洞披露时间也不能替代机制开发时间。
+
+art0076（2026-04-10）继续补“根因而非字符串”搜索：从已知命令审查与实际执行不一致出发，分别以紧、中、宽约束搜索同代码变体、跨层状态问题和信任边界问题。候选理由需要可达性、复现、反例和修复验证；新的根因只能在验证后回流。本文是先导说明，具体GHSA受影响版本及400+发现未独立核查，不能据此复制漏洞利用或将模型说明当确认结果。[art-0076／capture-001，p.1–7](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/%E6%BC%8F%E6%B4%9E%E6%A0%B9%E5%9B%A0%E6%B3%9B%E5%8C%96%E4%B8%8EHarness%2B26.4.10/RAW.pdf#page=1)
+
+## 时间线：何时出现，何时发表
+
+| 事件或状态时间 | 文章发布日期 | 机制变化与关系 |
+|---|---|---|
+| 2020 Koishi；2022 npm包；2023末3.x；2024-11 Cordis4预发布 | 2026-09-04，art0145 | 同一插件系统直接演化；2026用于Harness，不是2026才发明生命周期管理 |
+| 文章对应2025年框架状态，未锁commit | 2025-10-13，art0305 | 工具执行器与前后回调提供基础插入点 |
+| 代码示例未给确切开发日 | 2025-12-15，art0324 | 检查点+中断+恢复值提供审批机制；与tRPC是并行实现 |
+| 原文以当时OpenClaw生态为背景 | 2026-03-11，art0061 | 从功能接入推进到输入、供应链、记忆的风险链分析 |
+| 漏洞披露观察窗为2025-01至2026-04；另一个Skill评测属不同样本 | 2026-05-26／06-16，art0097／0110 | 增加安全能力测量，不能接成同一能力增长曲线 |
+| Hook案例开发日未给 | 2026-07-16，art0138 | 从口头要求变成运行前拦截和批准状态 |
+
+上述跨团队材料是知识上的互补，不代表彼此存在技术继承。[art-0145／capture-001，p.1–6、17–23](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Cordis%E4%B8%8EDSH%E8%BF%90%E8%A1%8C%E6%97%B6%2B26.9.4/RAW.pdf#page=1) [art-0305／capture-001，p.35–41](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/tRPCAgentGo%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84%2B25.10.13/RAW.pdf#page=35) [art-0324／capture-001，p.3–13](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/LangGraph%E4%BA%BA%E5%B7%A5%E5%B9%B2%E9%A2%84%E4%B8%8E%E6%81%A2%E5%A4%8D%2B25.12.15/RAW.pdf#page=3) [art-0097／capture-001，p.1–10](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/VulnGym%E6%BC%8F%E6%B4%9E%E8%AF%84%E6%B5%8B%E5%9F%BA%E5%87%86%2B26.5.26/RAW.pdf#page=1) [art-0110／capture-001，p.1–7](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/SkillTrustBench%E8%AF%84%E6%B5%8B%2B26.6.16/RAW.pdf#page=1) [art-0138／capture-001，p.9–20](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Agent%20Hook%E6%B2%BB%E7%90%86%2B26.7.16/RAW.pdf#page=9)
+
+## 现在使用时需要怎样修正
+
+截至2026-10-23：MCP已有HTTP授权规范，启用授权时要遵守其OAuth、resource、scope等要求；它仍不替业务定义退款额度、审批或幂等。STDIO也不能直接套用HTTP授权流程。[MCP授权规范](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)
+
+Agent Skills的`allowed-tools`是实验字段，是否落实依赖宿主；Skill文件自身不是权限边界。[Agent Skills规范](https://agentskills.io/specification) Node官方明确`node:vm`不是安全机制，因此不要把上下文隔离当成可以执行任意不可信代码的保证。[Node vm文档](https://nodejs.org/api/vm.html)
+
+LangGraph恢复会从中断节点开头重跑。把外部动作放到批准后仍要处理重试和崩溃窗口；`thread_id`也必须与访问者绑定。[LangGraph Interrupts](https://docs.langchain.com/oss/python/langgraph/interrupts) 本专题核对了文档，没有运行攻击测试或证明某个产品已满足全部条件。
+
+## 自测：先回答，再展开
+
+**1. Skill写了“只能查数据”，是否足以阻止删除？**
+<details><summary>答案</summary>
+不够。执行层必须限制实际可调用工具和资源；即使隐藏delete工具，exec或write等通路仍可能完成相同副作用。还要区分可发现性、授权和OS权限。
+</details>
+
+**2. 批准订单A退款后，模型把目标改成B，能沿用批准吗？**
+<details><summary>答案</summary>
+不能。批准应绑定对象、金额和参数版本等具体内容；参数变化使原批准不适用。批准者身份和资源权限也须独立校验。
+</details>
+
+**3. 插件可卸载且支持LIFO清理，为什么不等于所有动作可回滚？**
+<details><summary>答案</summary>
+清理只覆盖登记且逆操作正确的资源；已发送消息、付款等外部效果不能自动撤回。补偿是另一次业务动作，可能需批准且可能失败。
+</details>
+
+**4. 安全扫描召回率更高，能直接开放更多工具吗？**
+<details><summary>答案</summary>
+不能直接推出。需同时看误报、样本分布、攻击覆盖、版本和真实代价；评测只能提供证据，权限策略仍由业务边界决定。
+</details>
+
+
+## 来源索引
+
+以下采用META指定默认采集版本。正文引用使用PDF物理页；发布日期不是机制首次出现时间。
+
+| 来源 | 发布日期 | 本专题使用页 | 证据报告 |
+|---|---|---|---|
+| [art-0299 00后黑客落网！曾运营大型僵尸网络，频繁攻击腾讯游戏、DeepSeek、X平台](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/RapperBot%E6%A0%B7%E6%9C%AC%E4%B8%8E%E6%83%85%E6%8A%A5%E5%88%86%E6%9E%90%2B25.9.22/RAW.pdf)（capture-001） | 2025-09-22 | 1–4、9–11 | inbox-02.json |
+| [art-0305 tRPC-Agent-Go：构建智能AI应用的Go语言Agent框架](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/tRPCAgentGo%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84%2B25.10.13/RAW.pdf)（capture-001） | 2025-10-13 | 20–26；35–41 | inbox-06.json |
+| [art-0329 获NVIDIA致谢：悟空Agent的实践、复盘与迭代](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/%E6%82%9F%E7%A9%BA%E5%AE%89%E5%85%A8Agent%E8%BF%AD%E4%BB%A3%E5%A4%8D%E7%9B%98%2B25.11.7/RAW.pdf)（capture-001） | 2025-11-07 | 2–7 | inbox-04.json |
+| [art-0324 破除AI Agent自主操控风险：万字解读LangGraph“人工干预”机制，附零基础实战](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/LangGraph%E4%BA%BA%E5%B7%A5%E5%B9%B2%E9%A2%84%E4%B8%8E%E6%81%A2%E5%A4%8D%2B25.12.15/RAW.pdf)（capture-001） | 2025-12-15 | 3–13；7–13、21 | inbox-07.json |
+| [art-0332 首发！建议你一定要看的《AI生成代码在野安全风险研究》](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/AI%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81%E5%9C%A8%E9%87%8E%E5%AE%89%E5%85%A8%E7%A0%94%E7%A9%B6%2B25.12.19/RAW.pdf)（capture-001） | 2025-12-19 | 2–7 | inbox-04.json |
+| [art-0253 从应用架构的视角看退小宝AI助手落地现状](../%E5%A4%A7%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF/%E9%80%80%E5%B0%8F%E5%AE%9DAI%E5%8A%A9%E6%89%8B%E5%BA%94%E7%94%A8%E6%9E%B6%E6%9E%84%2B26.2.11/RAW.pdf)（capture-001） | 2026-02-11 | 19–22 | taobao-04.json |
+| [art-0061 警惕！“养龙虾”风险，一键给你的Openclaw做安全体检](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/OpenClaw%E5%AE%89%E5%85%A8%E4%BD%93%E6%A3%80%2B26.3.11/RAW.pdf)（capture-001） | 2026-03-11 | 1–9 | tencent-02.json |
+| [art-0076 “龙虾”也需要看病？一张旧病历，引出三个新确诊](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/%E6%BC%8F%E6%B4%9E%E6%A0%B9%E5%9B%A0%E6%B3%9B%E5%8C%96%E4%B8%8EHarness%2B26.4.10/RAW.pdf)（capture-001） | 2026-04-10 | 1–7 | tencent-03.json |
+| [art-0097 从3632个漏洞看AI时代的评测基准重构！VulnGym基准发布](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/VulnGym%E6%BC%8F%E6%B4%9E%E8%AF%84%E6%B5%8B%E5%9F%BA%E5%87%86%2B26.5.26/RAW.pdf)（capture-001） | 2026-05-26 | 1–10 | tencent-05.json |
+| [art-0110 谁是 Agent 最强守门员？首个 Agent 技能安全评测基准 SkillTrustBench 正式发布](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/SkillTrustBench%E8%AF%84%E6%B5%8B%2B26.6.16/RAW.pdf)（capture-001） | 2026-06-16 | 1–7 | tencent-06.json |
+| [art-0138 Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Agent%20Hook%E6%B2%BB%E7%90%86%2B26.7.16/RAW.pdf)（capture-001） | 2026-07-16 | 9–20 | tencent-08.json |
+| [art-0144 DeepSeek Harness 拆解：一套能拼装的 Agent 架构](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/DeepSeek%20Harness%E6%9E%B6%E6%9E%84%2B26.8.14/RAW.pdf)（capture-001） | 2026-08-14 | 2–13 | tencent-late-03.json |
+| [art-0145 DeepSeek Harness 背后的“心脏”：Cordis 到底是什么](../%E8%85%BE%E8%AE%AF%E6%8A%80%E6%9C%AF%E5%B7%A5%E7%A8%8B/Cordis%E4%B8%8EDSH%E8%BF%90%E8%A1%8C%E6%97%B6%2B26.9.4/RAW.pdf)（capture-001） | 2026-09-04 | 1–6、17–23；11–23；17–23 | tencent-late-06.json |
+| [art-0040 垂类业务如何落地生产级 Agent](../%E9%98%BF%E9%87%8C%E6%8A%80%E6%9C%AF/%E5%9E%82%E7%B1%BB%E7%94%9F%E4%BA%A7%E7%BA%A7Agent%E8%90%BD%E5%9C%B0%2B26.9.16/RAW.pdf)（capture-001） | 2026-09-16 | 6–8、19–25；6–8、22–24 | ali-07.json |
+
+## 我的实践与修正

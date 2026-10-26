@@ -1,0 +1,2624 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0130",
+  "title": "3万字长文带你 WorkBuddy 从入门到精通",
+  "short_title": "WorkBuddy从入门到精通",
+  "account": "腾讯技术工程",
+  "author": "孔德远（WorkBuddy 产品经理）",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-12T03:24",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/3万字长文带你WorkBuddy 从入门到精通.pdf",
+      "original_filename": "3万字长文带你WorkBuddy 从入门到精通.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "8bc2bfc469b9381fe961296602ca67b4534d79cf49dfbe29ca0eae437071367c",
+      "size_bytes": 64295701,
+      "page_count": 199,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "多页操作截图的细小界面字样在缩略图中不可辨；对应关键流程通过放大页和正文核对，未将不可辨细节补写为事实。",
+          "pages": [
+            3,
+            34,
+            36,
+            38,
+            50,
+            52,
+            54,
+            57,
+            59,
+            61,
+            64,
+            66,
+            68,
+            70,
+            72,
+            74,
+            77,
+            79,
+            81,
+            83,
+            85,
+            87,
+            89,
+            91
+          ],
+          "status": "partial"
+        },
+        {
+          "description": "提示词示例在文本转换中有截断，无法安全恢复完整原句；笔记只归纳案例方法，不补写缺失内容。",
+          "pages": [
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            163,
+            164,
+            165,
+            183,
+            184
+          ],
+          "status": "incomplete"
+        },
+        {
+          "description": "产品能力、安全设计、FAQ 和模型列表是发布时产品文档陈述；未提供独立复测或审计证据，界面/功能可能随版本变化。",
+          "pages": [
+            1,
+            80,
+            82,
+            187,
+            193,
+            194
+          ],
+          "status": "pending_review"
+        }
+      ],
+      "publication_evidence": "PDF p.1 标注“2026年8月12日 03:24”；未标时区。"
+    }
+  ],
+  "tags": [
+    "Agent工程循环",
+    "Agent成本与上下文预算",
+    "Agent评测与反馈",
+    "Agent长期记忆",
+    "异常监控与稳定性",
+    "桌面Agent与工作流"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/WorkBuddy从入门到精通+26.8.12",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_WorkBuddy从入门到精通.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "3 万字⻓文带你 WorkBuddy  从入⻔到精通\n鹅厂程序员 2026 年 8 月 12 日 03 : 24广东原创 腾讯技术工程 1 . 0 万人\n作者:孔德远,WorkBuddy  产品经理\n安装 WorkBuddy\n1.1 Windows 安装\n1.1.1 下载\n首先安装 WorkBuddy ,点击登录网址https://www.codebuddy.cn/work/,选择\nWorkBuddy ,点击立即下载 WorkBuddy\n1.1.2 安装\n这是一份 WorkBuddy  的「从入⻔到精通」完整指南,从下载安装到基础使用,再到进阶\n玩法与效率技巧, 3  万字带你一步步摸清 WorkBuddy  的核心能力。无论你是第一次接\n触,还是已经用过一段时间、想进一步解锁更多玩法,都可以在这里找到答案。\n温馨提示: WorkBuddy  仍在持续迭代中,本文部分章节及操作界面可能会随产品功能更\n新有所调整,具体功能及使用方式请以 WorkBuddy  最新版本为准。\n接下来,就从安装 WorkBuddy  开始。\n",
+    "publication_evidence": "PDF p.1 标注“2026年8月12日 03:24”；未标时区。",
+    "full_title_in_capture": "3万字长文带你 WorkBuddy 从入门到精通",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0130",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "8bc2bfc469b9381fe961296602ca67b4534d79cf49dfbe29ca0eae437071367c"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "多页操作截图的细小界面字样在缩略图中不可辨；对应关键流程通过放大页和正文核对，未将不可辨细节补写为事实。",
+        "pages": [
+          3,
+          34,
+          36,
+          38,
+          50,
+          52,
+          54,
+          57,
+          59,
+          61,
+          64,
+          66,
+          68,
+          70,
+          72,
+          74,
+          77,
+          79,
+          81,
+          83,
+          85,
+          87,
+          89,
+          91
+        ],
+        "status": "partial"
+      },
+      {
+        "description": "提示词示例在文本转换中有截断，无法安全恢复完整原句；笔记只归纳案例方法，不补写缺失内容。",
+        "pages": [
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          163,
+          164,
+          165,
+          183,
+          184
+        ],
+        "status": "incomplete"
+      },
+      {
+        "description": "产品能力、安全设计、FAQ 和模型列表是发布时产品文档陈述；未提供独立复测或审计证据，界面/功能可能随版本变化。",
+        "pages": [
+          1,
+          80,
+          82,
+          187,
+          193,
+          194
+        ],
+        "status": "pending_review"
+      }
+    ],
+    "outputs": [
+      "AI_WorkBuddy从入门到精通.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199
+      ],
+      "detail_pages_reviewed": [
+        82,
+        94,
+        124,
+        130,
+        160,
+        193,
+        194
+      ]
+    },
+    "coverage": "通读199页，覆盖安装与更新、Ask/Plan/Craft模式、模型/工作目录/任务、远程助理与小程序、项目和产物面板、Skills/连接器/专家、自动化、资料库、灵感模板、实践案例、使用技巧、推荐Skills、安全及FAQ。重复的逐屏授权操作未逐条复述；若干示例提示词被提取截断，未补全。",
+    "fact_checks": [
+      {
+        "item": "内置Skills数量",
+        "original_value": "超过20种",
+        "pages": [
+          20
+        ],
+        "result": "笔记保持“超过20种”，一致。"
+      },
+      {
+        "item": "探索预置模板数量",
+        "original_value": "11个",
+        "pages": [
+          153
+        ],
+        "result": "笔记记录11个，一致。"
+      },
+      {
+        "item": "专家中心规模",
+        "original_value": "31个专家团、213位专家、14大品类",
+        "pages": [
+          129
+        ],
+        "result": "笔记三项数值均一致。"
+      },
+      {
+        "item": "云上模式模型Credits倍率端点",
+        "original_value": "最低x0.04；最高x1.06",
+        "pages": [
+          82
+        ],
+        "result": "笔记记录Hy3 preview x0.04、GLM-5.1 x1.06，并保留限时折扣说明。"
+      },
+      {
+        "item": "自动化邮件示例时间",
+        "original_value": "每天早上8:30",
+        "pages": [
+          161
+        ],
+        "result": "笔记作为教程示例引用，一致。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_WorkBuddy从入门到精通.md",
+      "sha256": "80769d5dd02edf7320b853239749d0cd1177fcca19affc8d4cd7516548d2c8d0",
+      "size_bytes": 28342
+    },
+    "independent_crosscheck": {
+      "reviewer": "topic_apps_eval_crosscheck",
+      "note_sha256": "80769d5dd02edf7320b853239749d0cd1177fcca19affc8d4cd7516548d2c8d0",
+      "review_sha256": "4147c51aa7c403c82e7c9863cf04beb403837bc242b42e81c8244ce204e3af71",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "13–20",
+          "check": "对照 Ask/Plan/Craft 的授权差异、工作目录边界、模型/Skills/专家功能；笔记说明该内容来自产品指南且不等于安全审计。缩略图支持正文的操作流程概括，没有把截图小字补成独立事实。"
+        },
+        {
+          "pages": "80–82、129–130、153、160–162",
+          "check": "放大核对模型 Credits 表最低 Hy3 preview x0.04（标限时折扣）、GLM-5.1 x1.06；对照专家中心 31 个专家团/213 位专家/14 类、预设模板 11 个、邮件示例每天 8:30。笔记把倍率/示例定位为文章时点信息，并区分教程示例与系统默认。"
+        },
+        {
+          "pages": "193–199",
+          "check": "核对安全功能为产品方描述且缺独立审计、FAQ/模型列表有时效性；p.198 为读者评论，p.199 空白。笔记通读尾页并未将评论或产品声明写成独立验证结果。"
+        }
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "8bc2bfc469b9381fe961296602ca67b4534d79cf49dfbe29ca0eae437071367c"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "f2466d727a4217a7a500a2ef9cb256621df22afe6abcbb6abda8b898d4fcfd10"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 24,
+        "text_layer_sha256": "ad1255fe891dbaa76095567f18974357217b1adc4a2f3e78f25e3b97afff934b",
+        "text_layer_char_count": 467
+      },
+      {
+        "page": 2,
+        "md_start_line": 32,
+        "md_end_line": 33,
+        "text_layer_sha256": "227161b9c3b95bd77abbb28e5bb9f12f56a36a4a55fadf6217bfc2ac6c489857",
+        "text_layer_char_count": 19
+      },
+      {
+        "page": 3,
+        "md_start_line": 41,
+        "md_end_line": 40,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 4,
+        "md_start_line": 48,
+        "md_end_line": 48,
+        "text_layer_sha256": "67f894fae5f5e5c93136438d6063a9611760ecbc1a44ba19cc92e7073639423f",
+        "text_layer_char_count": 5
+      },
+      {
+        "page": 5,
+        "md_start_line": 56,
+        "md_end_line": 58,
+        "text_layer_sha256": "95d7ae6627578ff770c36a6dd42a9c53246d2c604ebb1b5cc79f3c270f218357",
+        "text_layer_char_count": 25
+      },
+      {
+        "page": 6,
+        "md_start_line": 66,
+        "md_end_line": 66,
+        "text_layer_sha256": "50dc3278152b5690977e4f48ca5e4466d30f7a754761b3724231affdf584ab24",
+        "text_layer_char_count": 5
+      },
+      {
+        "page": 7,
+        "md_start_line": 74,
+        "md_end_line": 76,
+        "text_layer_sha256": "15352810a7bcba8d5164d45a91693f3ff1b304cff2e6551cbb2da02a65851459",
+        "text_layer_char_count": 46
+      },
+      {
+        "page": 8,
+        "md_start_line": 84,
+        "md_end_line": 89,
+        "text_layer_sha256": "80d4637915ea10d3a1b115c3234e9193318a31c65d0131da1d156d0ae7e8b217",
+        "text_layer_char_count": 175
+      },
+      {
+        "page": 9,
+        "md_start_line": 97,
+        "md_end_line": 100,
+        "text_layer_sha256": "ec68c78f541b75e9a118bd197d3abbb91c8a182fec68202bf60c774acac72025",
+        "text_layer_char_count": 76
+      },
+      {
+        "page": 10,
+        "md_start_line": 108,
+        "md_end_line": 112,
+        "text_layer_sha256": "1fa8a91d885d07c3f1def48aa91f1b4548ca1ddfa592a71c35ccae6dc50ff259",
+        "text_layer_char_count": 98
+      },
+      {
+        "page": 11,
+        "md_start_line": 120,
+        "md_end_line": 122,
+        "text_layer_sha256": "031baba4f739c2913eee512f96b9288f76f0408f589e2e5d152f7d3fda551b5b",
+        "text_layer_char_count": 74
+      },
+      {
+        "page": 12,
+        "md_start_line": 130,
+        "md_end_line": 142,
+        "text_layer_sha256": "8aca106291f8ccdad1e0fca1ff898b8a97574b333419ef704a36005439e4684d",
+        "text_layer_char_count": 380
+      },
+      {
+        "page": 13,
+        "md_start_line": 150,
+        "md_end_line": 163,
+        "text_layer_sha256": "e0af39f9ee8f3953141b406493a172eaa0fcd195010f08afafdc8752b16c9ed8",
+        "text_layer_char_count": 384
+      },
+      {
+        "page": 14,
+        "md_start_line": 171,
+        "md_end_line": 182,
+        "text_layer_sha256": "a06cc4ffc079d5efc30bde965139b12c017629d11ffe0a1743b6393b33dd2f98",
+        "text_layer_char_count": 399
+      },
+      {
+        "page": 15,
+        "md_start_line": 190,
+        "md_end_line": 196,
+        "text_layer_sha256": "f6d53493a337c677a50782a82445d453f7d27fce3d03b79d67095443ba54e7f4",
+        "text_layer_char_count": 243
+      },
+      {
+        "page": 16,
+        "md_start_line": 204,
+        "md_end_line": 218,
+        "text_layer_sha256": "2bc24e5411adab8c35adf47c5b998a71f09e0e3f78465db577d671da93ea3019",
+        "text_layer_char_count": 468
+      },
+      {
+        "page": 17,
+        "md_start_line": 226,
+        "md_end_line": 238,
+        "text_layer_sha256": "e46d782bbbbec6e21d17c76320d78a210d73b1223b4310c3cc005d8af35c9ab4",
+        "text_layer_char_count": 449
+      },
+      {
+        "page": 18,
+        "md_start_line": 246,
+        "md_end_line": 262,
+        "text_layer_sha256": "b38ad842e989701de1c58af90a59f0014d6ef03d0b6a3d6387d02abc8d8f01d7",
+        "text_layer_char_count": 554
+      },
+      {
+        "page": 19,
+        "md_start_line": 270,
+        "md_end_line": 282,
+        "text_layer_sha256": "f79845b0533ed981ca5c1cc2aef2e9ad2770583293da066b16a8e8a4b3901e61",
+        "text_layer_char_count": 411
+      },
+      {
+        "page": 20,
+        "md_start_line": 290,
+        "md_end_line": 306,
+        "text_layer_sha256": "4d2ecdab8229e2ee3f0f2c315cfc214135e72ea33537b07a0403d1d343ed5022",
+        "text_layer_char_count": 637
+      },
+      {
+        "page": 21,
+        "md_start_line": 314,
+        "md_end_line": 334,
+        "text_layer_sha256": "d8078a354d130063ec197a51c4e2bc4c626e9029101f5ed6ec3692f1055ec648",
+        "text_layer_char_count": 648
+      },
+      {
+        "page": 22,
+        "md_start_line": 342,
+        "md_end_line": 355,
+        "text_layer_sha256": "9eb1f6d7dc8de0eefb7b4a823c6851fbe1eda65633c4798c623caf1ff79c6dc9",
+        "text_layer_char_count": 410
+      },
+      {
+        "page": 23,
+        "md_start_line": 363,
+        "md_end_line": 370,
+        "text_layer_sha256": "42eba19de83987104521c376bb192619aea55263d27f85575f62d1a6e3fd0598",
+        "text_layer_char_count": 154
+      },
+      {
+        "page": 24,
+        "md_start_line": 378,
+        "md_end_line": 383,
+        "text_layer_sha256": "5a5bc3f2fddf1a57553c96df65804463e8c51dd01883198902af72e20c05c86a",
+        "text_layer_char_count": 149
+      },
+      {
+        "page": 25,
+        "md_start_line": 391,
+        "md_end_line": 397,
+        "text_layer_sha256": "58a0b80ddb5f6437149b63b3ce490b721369072b9b04e100b7f8a930b616d2f2",
+        "text_layer_char_count": 139
+      },
+      {
+        "page": 26,
+        "md_start_line": 405,
+        "md_end_line": 408,
+        "text_layer_sha256": "7a3cd4288ee8061d7d0989e74a51f2b5782093918aedded16c7bba0f8f14a934",
+        "text_layer_char_count": 93
+      },
+      {
+        "page": 27,
+        "md_start_line": 416,
+        "md_end_line": 419,
+        "text_layer_sha256": "d36692e3bb11cae2fe4bb392cda83b25b807bcdfc57476893e6a6f6f6cec0976",
+        "text_layer_char_count": 104
+      },
+      {
+        "page": 28,
+        "md_start_line": 427,
+        "md_end_line": 431,
+        "text_layer_sha256": "f475c0d17e1b18f30ff9a79f3824e728cbcabf690e2d72637501988c7a1f4714",
+        "text_layer_char_count": 128
+      },
+      {
+        "page": 29,
+        "md_start_line": 439,
+        "md_end_line": 446,
+        "text_layer_sha256": "1454dba6f56e79970a7371a34d3793bc849004e61a5bd0accc1b95c8de1da5f1",
+        "text_layer_char_count": 322
+      },
+      {
+        "page": 30,
+        "md_start_line": 454,
+        "md_end_line": 457,
+        "text_layer_sha256": "50a15b1895724e3592cb71c80faee8843af0f6be8a41a8941200aed07d130b02",
+        "text_layer_char_count": 97
+      },
+      {
+        "page": 31,
+        "md_start_line": 465,
+        "md_end_line": 467,
+        "text_layer_sha256": "973a05eee5b862b15900f9f1765f578c9b20557a0d35aa41e80c8122cc76930c",
+        "text_layer_char_count": 110
+      },
+      {
+        "page": 32,
+        "md_start_line": 475,
+        "md_end_line": 476,
+        "text_layer_sha256": "5449fd4c9542d2aa6af9b1a0074f721f65d80e5dc9ef5819ac04264b1f05ba44",
+        "text_layer_char_count": 42
+      },
+      {
+        "page": 33,
+        "md_start_line": 484,
+        "md_end_line": 488,
+        "text_layer_sha256": "4da1ff8170f72e03981066124024f93eb7dcd4f91a7b0e914e0bc4c206e695cf",
+        "text_layer_char_count": 135
+      },
+      {
+        "page": 34,
+        "md_start_line": 496,
+        "md_end_line": 495,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 35,
+        "md_start_line": 503,
+        "md_end_line": 503,
+        "text_layer_sha256": "ec41a657ce51ca2ef6f63ad36336bf855813898b821286bc1b5abbf23dc99fab",
+        "text_layer_char_count": 26
+      },
+      {
+        "page": 36,
+        "md_start_line": 511,
+        "md_end_line": 510,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 37,
+        "md_start_line": 518,
+        "md_end_line": 521,
+        "text_layer_sha256": "e9306f33296d8803786563e1c3c1d026a18ddfb521fde62a20e9e8b770d96bc2",
+        "text_layer_char_count": 144
+      },
+      {
+        "page": 38,
+        "md_start_line": 529,
+        "md_end_line": 528,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 39,
+        "md_start_line": 536,
+        "md_end_line": 546,
+        "text_layer_sha256": "2b36b3a56ea07792217ae8ca5c494d90bf8bc25e50556a9944a9e476ad799cac",
+        "text_layer_char_count": 240
+      },
+      {
+        "page": 40,
+        "md_start_line": 554,
+        "md_end_line": 556,
+        "text_layer_sha256": "15456d74323d3f044189f0d2555bd1664332de2e060892e1f450b82f1af2de8a",
+        "text_layer_char_count": 98
+      },
+      {
+        "page": 41,
+        "md_start_line": 564,
+        "md_end_line": 565,
+        "text_layer_sha256": "1067fda32cc9411cb0877a882264d7636668dda8958fa683c800cafc7ab085d1",
+        "text_layer_char_count": 29
+      },
+      {
+        "page": 42,
+        "md_start_line": 573,
+        "md_end_line": 582,
+        "text_layer_sha256": "581a1da8571b7db3d80c572d00d09c4591733d10c6fe3c086d8fe41d49a06b87",
+        "text_layer_char_count": 240
+      },
+      {
+        "page": 43,
+        "md_start_line": 590,
+        "md_end_line": 591,
+        "text_layer_sha256": "02c0ccd74962e99ef7d00752ebce85d95df68b298f3a11fa03ce581fd487a071",
+        "text_layer_char_count": 52
+      },
+      {
+        "page": 44,
+        "md_start_line": 599,
+        "md_end_line": 606,
+        "text_layer_sha256": "2574265f815806b1226fe7d98a6343c4d3b094bb6f03d99442f762f51eeadc16",
+        "text_layer_char_count": 181
+      },
+      {
+        "page": 45,
+        "md_start_line": 614,
+        "md_end_line": 622,
+        "text_layer_sha256": "b5797798e40e68c9bb431d15970e4968bb969166e933210bcb22db3ea632c923",
+        "text_layer_char_count": 260
+      },
+      {
+        "page": 46,
+        "md_start_line": 630,
+        "md_end_line": 637,
+        "text_layer_sha256": "203f493a87bc5411d3774e3907d9981628b82acdcc33845de070edb7c8eaf777",
+        "text_layer_char_count": 188
+      },
+      {
+        "page": 47,
+        "md_start_line": 645,
+        "md_end_line": 655,
+        "text_layer_sha256": "bb9bc8510fd4568c12670cf356d305c9e13d28708449e6a40a649f743629f399",
+        "text_layer_char_count": 262
+      },
+      {
+        "page": 48,
+        "md_start_line": 663,
+        "md_end_line": 678,
+        "text_layer_sha256": "a530f346b00451711ea3c15c5f4b57f29b16d765f9affb43fb1d59c21e2fd358",
+        "text_layer_char_count": 394
+      },
+      {
+        "page": 49,
+        "md_start_line": 686,
+        "md_end_line": 687,
+        "text_layer_sha256": "75a39beddf9b0c833e9df361440217c885e82e3fcd56d9a31f98783e35767cec",
+        "text_layer_char_count": 82
+      },
+      {
+        "page": 50,
+        "md_start_line": 695,
+        "md_end_line": 694,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 51,
+        "md_start_line": 702,
+        "md_end_line": 706,
+        "text_layer_sha256": "bc45d37f6196a850cfd74fbabdb1d3e9a91d2b6b81e02b0c0c3209b658f03470",
+        "text_layer_char_count": 136
+      },
+      {
+        "page": 52,
+        "md_start_line": 714,
+        "md_end_line": 713,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 53,
+        "md_start_line": 721,
+        "md_end_line": 726,
+        "text_layer_sha256": "df22fbaf15af2ea5a53469df09d8b8e927e87c64fce947927bb1dee14a7ae99c",
+        "text_layer_char_count": 186
+      },
+      {
+        "page": 54,
+        "md_start_line": 734,
+        "md_end_line": 733,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 55,
+        "md_start_line": 741,
+        "md_end_line": 749,
+        "text_layer_sha256": "f349fda811ef92b91531a5af5cf0a1a50eb827dbe251408cdf60140d85fb8d7d",
+        "text_layer_char_count": 236
+      },
+      {
+        "page": 56,
+        "md_start_line": 757,
+        "md_end_line": 758,
+        "text_layer_sha256": "45559b379a5a299050c7e5cfa41384975a8915dcfcdb7a6a79600616e9f4118b",
+        "text_layer_char_count": 64
+      },
+      {
+        "page": 57,
+        "md_start_line": 766,
+        "md_end_line": 765,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 58,
+        "md_start_line": 773,
+        "md_end_line": 774,
+        "text_layer_sha256": "31d60b05232e5fa2e1444d3e7cae87daef9565405d3a56cb2ecbffcbea9c4302",
+        "text_layer_char_count": 52
+      },
+      {
+        "page": 59,
+        "md_start_line": 782,
+        "md_end_line": 781,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 60,
+        "md_start_line": 789,
+        "md_end_line": 798,
+        "text_layer_sha256": "2b445e2620d9545b92c08db048dcc560533d721f38be070266358824da0a37d5",
+        "text_layer_char_count": 279
+      },
+      {
+        "page": 61,
+        "md_start_line": 806,
+        "md_end_line": 805,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 62,
+        "md_start_line": 813,
+        "md_end_line": 824,
+        "text_layer_sha256": "ebb2bec44c6c95bf86a311609269a319c32f4c11f20668e5c4e7bd20487f98f0",
+        "text_layer_char_count": 406
+      },
+      {
+        "page": 63,
+        "md_start_line": 832,
+        "md_end_line": 834,
+        "text_layer_sha256": "5b48f6e3266d73607c74dea2230296acee6b0b660146b665ac022a939afed7a3",
+        "text_layer_char_count": 76
+      },
+      {
+        "page": 64,
+        "md_start_line": 842,
+        "md_end_line": 841,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 65,
+        "md_start_line": 849,
+        "md_end_line": 853,
+        "text_layer_sha256": "42de80264a23e7c02c0f2b6e603babbe74a76eb7e745d60a4ca729384b63dbb4",
+        "text_layer_char_count": 139
+      },
+      {
+        "page": 66,
+        "md_start_line": 861,
+        "md_end_line": 860,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 67,
+        "md_start_line": 868,
+        "md_end_line": 871,
+        "text_layer_sha256": "87165619543def60517b296f469b8f5a2348aaf9a02b0cfebd108ed25db5ed71",
+        "text_layer_char_count": 108
+      },
+      {
+        "page": 68,
+        "md_start_line": 879,
+        "md_end_line": 878,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 69,
+        "md_start_line": 886,
+        "md_end_line": 887,
+        "text_layer_sha256": "919231511b568a35f7b878f4ca292edb74d7cd0f96f14c7ee3cfd76cb89be6ad",
+        "text_layer_char_count": 39
+      },
+      {
+        "page": 70,
+        "md_start_line": 895,
+        "md_end_line": 894,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 71,
+        "md_start_line": 902,
+        "md_end_line": 905,
+        "text_layer_sha256": "81ccf8d54e5c7842756e9dffd42f8ddebdbf1b7ad78d1badb28a07408b0dc0e7",
+        "text_layer_char_count": 108
+      },
+      {
+        "page": 72,
+        "md_start_line": 913,
+        "md_end_line": 912,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 73,
+        "md_start_line": 920,
+        "md_end_line": 923,
+        "text_layer_sha256": "8ba5aac198a0623988a7172cbbd0fc6bdf8bb872264f491dae5c8fb5d36cc935",
+        "text_layer_char_count": 121
+      },
+      {
+        "page": 74,
+        "md_start_line": 931,
+        "md_end_line": 930,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 75,
+        "md_start_line": 938,
+        "md_end_line": 950,
+        "text_layer_sha256": "90d0f477558c7a6aeb5365b76f768721f20cede8376dd79dfdc8f8f62c9d970b",
+        "text_layer_char_count": 359
+      },
+      {
+        "page": 76,
+        "md_start_line": 958,
+        "md_end_line": 963,
+        "text_layer_sha256": "5f6be7de5870e15ee2c6e8cf06a24568de88881cd1f097613053eb03e08dfcb0",
+        "text_layer_char_count": 129
+      },
+      {
+        "page": 77,
+        "md_start_line": 971,
+        "md_end_line": 970,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 78,
+        "md_start_line": 978,
+        "md_end_line": 980,
+        "text_layer_sha256": "7a06a4ac20cd103ebe537b12c5c340d98a6369e829fd2bf9a144051d72c3154d",
+        "text_layer_char_count": 58
+      },
+      {
+        "page": 79,
+        "md_start_line": 988,
+        "md_end_line": 987,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 80,
+        "md_start_line": 995,
+        "md_end_line": 996,
+        "text_layer_sha256": "9832151647211aa4e56e5e1e2c323e902c17f862119ebb45874be3e7a1ec43b9",
+        "text_layer_char_count": 55
+      },
+      {
+        "page": 81,
+        "md_start_line": 1004,
+        "md_end_line": 1003,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 82,
+        "md_start_line": 1011,
+        "md_end_line": 1037,
+        "text_layer_sha256": "f0d72fce5aed300d7170d75abe3b17b46a0f455ca0d0e9781c2d3dcb2457c53c",
+        "text_layer_char_count": 832
+      },
+      {
+        "page": 83,
+        "md_start_line": 1045,
+        "md_end_line": 1044,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 84,
+        "md_start_line": 1052,
+        "md_end_line": 1054,
+        "text_layer_sha256": "698a2c755c9e580970d63fab103a610772154979bc027b3b8939713d34cc5245",
+        "text_layer_char_count": 50
+      },
+      {
+        "page": 85,
+        "md_start_line": 1062,
+        "md_end_line": 1061,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 86,
+        "md_start_line": 1069,
+        "md_end_line": 1071,
+        "text_layer_sha256": "e1eca81cf933b8cb46168585d4acca38b97d9fa7997c68a5c24f7ed3c0b9bef4",
+        "text_layer_char_count": 59
+      },
+      {
+        "page": 87,
+        "md_start_line": 1079,
+        "md_end_line": 1078,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 88,
+        "md_start_line": 1086,
+        "md_end_line": 1095,
+        "text_layer_sha256": "78d217df786205c8af8ae40f98f48d5605044b55c6e593bc0c0334415a86b889",
+        "text_layer_char_count": 296
+      },
+      {
+        "page": 89,
+        "md_start_line": 1103,
+        "md_end_line": 1102,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 90,
+        "md_start_line": 1110,
+        "md_end_line": 1111,
+        "text_layer_sha256": "4d2c29e3e068c5fed32de311d3957b5c2441ef728d8805eb94c385817e2cef46",
+        "text_layer_char_count": 44
+      },
+      {
+        "page": 91,
+        "md_start_line": 1119,
+        "md_end_line": 1118,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 92,
+        "md_start_line": 1126,
+        "md_end_line": 1139,
+        "text_layer_sha256": "8abbb197801026dd9d42c42e42ea13ef41a1124f8d5ebd4056819bbc2aa3906a",
+        "text_layer_char_count": 472
+      },
+      {
+        "page": 93,
+        "md_start_line": 1147,
+        "md_end_line": 1149,
+        "text_layer_sha256": "5211455439608fa7e03f842842b36d36ac1877d7f99745cb2523566f681daf78",
+        "text_layer_char_count": 88
+      },
+      {
+        "page": 94,
+        "md_start_line": 1157,
+        "md_end_line": 1159,
+        "text_layer_sha256": "3a18914583ec62aaab92a0ce4d45c3f461ff9b39c5f3dc30b1d9dcfa1a9f3401",
+        "text_layer_char_count": 99
+      },
+      {
+        "page": 95,
+        "md_start_line": 1167,
+        "md_end_line": 1168,
+        "text_layer_sha256": "6929023616f880a4d2636df159d782704e53de3d1d09b068b4260874f0e4be7e",
+        "text_layer_char_count": 61
+      },
+      {
+        "page": 96,
+        "md_start_line": 1176,
+        "md_end_line": 1177,
+        "text_layer_sha256": "e006f81abf79148ac9fd6434c2c06f2854db38f4dfc4af5c06831d24d1011394",
+        "text_layer_char_count": 65
+      },
+      {
+        "page": 97,
+        "md_start_line": 1185,
+        "md_end_line": 1186,
+        "text_layer_sha256": "bf43b86f676dd8adf62911fbbd5c0ab6d960f1cf81994c4f7f2c8fb4ed5a23c2",
+        "text_layer_char_count": 48
+      },
+      {
+        "page": 98,
+        "md_start_line": 1194,
+        "md_end_line": 1196,
+        "text_layer_sha256": "2b96ee9d1311c19b8716378c5cfb901487f37c223730da5a00f922f73baf5bdb",
+        "text_layer_char_count": 62
+      },
+      {
+        "page": 99,
+        "md_start_line": 1204,
+        "md_end_line": 1205,
+        "text_layer_sha256": "fcfcfea805710b2652e8fd8ba45dce27817796dad951c9990457d94206dc3699",
+        "text_layer_char_count": 32
+      },
+      {
+        "page": 100,
+        "md_start_line": 1213,
+        "md_end_line": 1213,
+        "text_layer_sha256": "3ca6c2dc7374955605acc04195e54b4c7f9bd9ff6e215a5a45d1e5bfd840aac7",
+        "text_layer_char_count": 24
+      },
+      {
+        "page": 101,
+        "md_start_line": 1221,
+        "md_end_line": 1225,
+        "text_layer_sha256": "d3c728740d564c78296e7a1f72acd9635ced255c46be16f2a5d933a9d5eb052a",
+        "text_layer_char_count": 136
+      },
+      {
+        "page": 102,
+        "md_start_line": 1233,
+        "md_end_line": 1235,
+        "text_layer_sha256": "f02e3f37ada995a9af5120e7113e5449c6a9e19ebeb8f41d2e4abf881183e339",
+        "text_layer_char_count": 77
+      },
+      {
+        "page": 103,
+        "md_start_line": 1243,
+        "md_end_line": 1249,
+        "text_layer_sha256": "8d51533d71aa09692d73e771ce502c34793fdb7c5222d9f6d43f14d162e7741e",
+        "text_layer_char_count": 215
+      },
+      {
+        "page": 104,
+        "md_start_line": 1257,
+        "md_end_line": 1267,
+        "text_layer_sha256": "2d55644f7785d7aadd507ab9380efe8c9310014acf0ed795b35557c64c484de3",
+        "text_layer_char_count": 335
+      },
+      {
+        "page": 105,
+        "md_start_line": 1275,
+        "md_end_line": 1277,
+        "text_layer_sha256": "ad3dbf6eeba71944380167353c02cdce0a9720f71c447956423d102295c3f184",
+        "text_layer_char_count": 64
+      },
+      {
+        "page": 106,
+        "md_start_line": 1285,
+        "md_end_line": 1298,
+        "text_layer_sha256": "d61d0008debf6323bb58db86dc60d947df8d18dd4cc7eac2aaabc8a900a6b33e",
+        "text_layer_char_count": 396
+      },
+      {
+        "page": 107,
+        "md_start_line": 1306,
+        "md_end_line": 1309,
+        "text_layer_sha256": "9555a25ba23b137cf84305042bd106e8796f675f73267823ac9466f4b4309c2e",
+        "text_layer_char_count": 150
+      },
+      {
+        "page": 108,
+        "md_start_line": 1317,
+        "md_end_line": 1322,
+        "text_layer_sha256": "3320da99aba5a77f022ecf97ef510dc817187a8e87f2b57f7b5e00c0e87eb402",
+        "text_layer_char_count": 167
+      },
+      {
+        "page": 109,
+        "md_start_line": 1330,
+        "md_end_line": 1332,
+        "text_layer_sha256": "82471c17689b01bca995caff38fdc5c571810a1abbd43caffaf5f3df3d49c5a6",
+        "text_layer_char_count": 85
+      },
+      {
+        "page": 110,
+        "md_start_line": 1340,
+        "md_end_line": 1349,
+        "text_layer_sha256": "0e834cca7b17139da68670eb3ada1385b3923f0b2b3076405fc747c3d8cc867b",
+        "text_layer_char_count": 310
+      },
+      {
+        "page": 111,
+        "md_start_line": 1357,
+        "md_end_line": 1359,
+        "text_layer_sha256": "5cf3a97009e5919d447ee5ac080c5b34d260331cff7dbb980cf8dca2d5413c89",
+        "text_layer_char_count": 43
+      },
+      {
+        "page": 112,
+        "md_start_line": 1367,
+        "md_end_line": 1378,
+        "text_layer_sha256": "47844eb2c2afcd6b612129ad4d3f5e821d3738f09664142430939770742f63a3",
+        "text_layer_char_count": 337
+      },
+      {
+        "page": 113,
+        "md_start_line": 1386,
+        "md_end_line": 1413,
+        "text_layer_sha256": "a48998da0d1be0f0d585373bc7ef3755171b14a4125ac8a024d5f7a978f16b68",
+        "text_layer_char_count": 727
+      },
+      {
+        "page": 114,
+        "md_start_line": 1421,
+        "md_end_line": 1432,
+        "text_layer_sha256": "98f5f183cb1fe53db13af4da603d8433e607481ddf9fe3156d9ecbc3668419f7",
+        "text_layer_char_count": 245
+      },
+      {
+        "page": 115,
+        "md_start_line": 1440,
+        "md_end_line": 1444,
+        "text_layer_sha256": "2f76c27a329138399a519149e310b32c0d1698788419b3434d16bb9fd85b9105",
+        "text_layer_char_count": 123
+      },
+      {
+        "page": 116,
+        "md_start_line": 1452,
+        "md_end_line": 1453,
+        "text_layer_sha256": "8496f8c6bf6ebee17822d14db4146324bde40680d29fa50b6562faa08182f646",
+        "text_layer_char_count": 69
+      },
+      {
+        "page": 117,
+        "md_start_line": 1461,
+        "md_end_line": 1460,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 118,
+        "md_start_line": 1468,
+        "md_end_line": 1470,
+        "text_layer_sha256": "2377287a9316c180d1487e11947de808d0467f43353e34ff1cf5b754463b8fd4",
+        "text_layer_char_count": 67
+      },
+      {
+        "page": 119,
+        "md_start_line": 1478,
+        "md_end_line": 1478,
+        "text_layer_sha256": "716f9886e4d58491fe3e94f97356a777939edda28b176c13de61a3bd1c6dc574",
+        "text_layer_char_count": 5
+      },
+      {
+        "page": 120,
+        "md_start_line": 1486,
+        "md_end_line": 1498,
+        "text_layer_sha256": "aac9902e3255bfc86a270de1e953f46709aaeec3c737f847d9edfadfe94fc011",
+        "text_layer_char_count": 315
+      },
+      {
+        "page": 121,
+        "md_start_line": 1506,
+        "md_end_line": 1517,
+        "text_layer_sha256": "86ed6b7786d9229909917a4c234011642f706961e2f7ef37e715e059bb9ca18b",
+        "text_layer_char_count": 211
+      },
+      {
+        "page": 122,
+        "md_start_line": 1525,
+        "md_end_line": 1531,
+        "text_layer_sha256": "14d019f65b0104ada056079f79609f1df62086d6b6ed5f5ccc0b5a1502100c41",
+        "text_layer_char_count": 222
+      },
+      {
+        "page": 123,
+        "md_start_line": 1539,
+        "md_end_line": 1547,
+        "text_layer_sha256": "a7995de13d29c62ee1aec402358ee04fa3767ba2633e838e77d965ce35317cbb",
+        "text_layer_char_count": 288
+      },
+      {
+        "page": 124,
+        "md_start_line": 1555,
+        "md_end_line": 1570,
+        "text_layer_sha256": "8223f9a767f082085c6ab61eaeb777c023362abcda0c0f9917844b88c76bd499",
+        "text_layer_char_count": 217
+      },
+      {
+        "page": 125,
+        "md_start_line": 1578,
+        "md_end_line": 1584,
+        "text_layer_sha256": "30b2de185e5680abc8cd6b2ef03244d21a22d8dcbb2f278be7228cbee617d21c",
+        "text_layer_char_count": 351
+      },
+      {
+        "page": 126,
+        "md_start_line": 1592,
+        "md_end_line": 1604,
+        "text_layer_sha256": "1acace267b34a9b5e14e940263011a730f5a1142b0ef38cc982de64bf1b779ca",
+        "text_layer_char_count": 405
+      },
+      {
+        "page": 127,
+        "md_start_line": 1612,
+        "md_end_line": 1618,
+        "text_layer_sha256": "0463e2f9c0a57fc26bccba7ea6facda29b9817c8762ed4764d1e979793cbfc3e",
+        "text_layer_char_count": 203
+      },
+      {
+        "page": 128,
+        "md_start_line": 1626,
+        "md_end_line": 1636,
+        "text_layer_sha256": "95d2cf17c5f7090967351ae7f2d08b2166c340dc785ae02c7f039e1fb9534593",
+        "text_layer_char_count": 310
+      },
+      {
+        "page": 129,
+        "md_start_line": 1644,
+        "md_end_line": 1652,
+        "text_layer_sha256": "49d923a62b59f5f157fcde9cd19e2ae6994a28576d3bc2a1365ba7dd353090d6",
+        "text_layer_char_count": 365
+      },
+      {
+        "page": 130,
+        "md_start_line": 1660,
+        "md_end_line": 1677,
+        "text_layer_sha256": "f2ac0a6cdfaa799aeca68d90819e1df888dec5127672216b05f6f2f01d289574",
+        "text_layer_char_count": 644
+      },
+      {
+        "page": 131,
+        "md_start_line": 1685,
+        "md_end_line": 1687,
+        "text_layer_sha256": "5a42fc9c071a73324dd9fab8cf76a9e9731a291834d7346d4a90947035f961b7",
+        "text_layer_char_count": 81
+      },
+      {
+        "page": 132,
+        "md_start_line": 1695,
+        "md_end_line": 1706,
+        "text_layer_sha256": "eed63bbaae73dbfbb9187979f0af37767a8ba7b630f5f278d70e75e76188288e",
+        "text_layer_char_count": 391
+      },
+      {
+        "page": 133,
+        "md_start_line": 1714,
+        "md_end_line": 1727,
+        "text_layer_sha256": "c9876e6ba042e43e6f529182664e0bbb6633fbc6136059ac6b771aec01ed41b9",
+        "text_layer_char_count": 433
+      },
+      {
+        "page": 134,
+        "md_start_line": 1735,
+        "md_end_line": 1747,
+        "text_layer_sha256": "133481d30f6fd8a234af56e2da932e62901a3088ffda37ca11766b9f1cb5057d",
+        "text_layer_char_count": 403
+      },
+      {
+        "page": 135,
+        "md_start_line": 1755,
+        "md_end_line": 1762,
+        "text_layer_sha256": "3de846fd9a9d3825c9d4f57e0ef30c09349621bd23414a31214c5bbd8ac76ffc",
+        "text_layer_char_count": 242
+      },
+      {
+        "page": 136,
+        "md_start_line": 1770,
+        "md_end_line": 1772,
+        "text_layer_sha256": "281c0f1301b1681adaaf784a79e72fa66d93032960fa70ade54924fab2aa5a28",
+        "text_layer_char_count": 31
+      },
+      {
+        "page": 137,
+        "md_start_line": 1780,
+        "md_end_line": 1781,
+        "text_layer_sha256": "573b96ed0eb2e908a8ff890bc2d4a09f480fc17b4e6dfc0a43d2a44a5ea4807c",
+        "text_layer_char_count": 49
+      },
+      {
+        "page": 138,
+        "md_start_line": 1789,
+        "md_end_line": 1802,
+        "text_layer_sha256": "26c818d27baacc9d256af22bc41473d83196f8a8bcc0d057bf0b43cb5ec36cd4",
+        "text_layer_char_count": 435
+      },
+      {
+        "page": 139,
+        "md_start_line": 1810,
+        "md_end_line": 1818,
+        "text_layer_sha256": "d43e33c393f607b65dd46eb4406b6bd9b1fa8c8492ca9ac32b76c41dcfa2dcb7",
+        "text_layer_char_count": 240
+      },
+      {
+        "page": 140,
+        "md_start_line": 1826,
+        "md_end_line": 1828,
+        "text_layer_sha256": "d05eaca572a05559828d581852f47df9dcd342d2cfc1e720bf8a0317434b37cd",
+        "text_layer_char_count": 101
+      },
+      {
+        "page": 141,
+        "md_start_line": 1836,
+        "md_end_line": 1845,
+        "text_layer_sha256": "fc3709c7181ef6a0f742277e801cda41c94e21066b6fc4470a2a6c2fad108491",
+        "text_layer_char_count": 218
+      },
+      {
+        "page": 142,
+        "md_start_line": 1853,
+        "md_end_line": 1864,
+        "text_layer_sha256": "67e26d878631bc784d1ebd4a93fcba80a2e3c2c9951969bc0f542263ae348d7f",
+        "text_layer_char_count": 344
+      },
+      {
+        "page": 143,
+        "md_start_line": 1872,
+        "md_end_line": 1880,
+        "text_layer_sha256": "940635bce84567a92a7fca895617f6f60619db8ffab4884b2cb8343660321367",
+        "text_layer_char_count": 233
+      },
+      {
+        "page": 144,
+        "md_start_line": 1888,
+        "md_end_line": 1891,
+        "text_layer_sha256": "7e25bc7ca11e101ea599a20a717daadd21a4b7b19f80b0ce60f30835b95d4ca9",
+        "text_layer_char_count": 94
+      },
+      {
+        "page": 145,
+        "md_start_line": 1899,
+        "md_end_line": 1900,
+        "text_layer_sha256": "5260f11946070f6b65ca28ed10f85c2c6a600f4cb6c00b12d9e85f39c87b9414",
+        "text_layer_char_count": 57
+      },
+      {
+        "page": 146,
+        "md_start_line": 1908,
+        "md_end_line": 1921,
+        "text_layer_sha256": "569dd5b7beb7f72f386b9b1e05547b6f8feb66d594d7fe585b82f9e998575a55",
+        "text_layer_char_count": 359
+      },
+      {
+        "page": 147,
+        "md_start_line": 1929,
+        "md_end_line": 1939,
+        "text_layer_sha256": "7b475dd3d58a8c123eace9d860a9e05b6493eea2c9932f59af5867d9367c68e0",
+        "text_layer_char_count": 300
+      },
+      {
+        "page": 148,
+        "md_start_line": 1947,
+        "md_end_line": 1952,
+        "text_layer_sha256": "c346f34325e208fc5d3fa2a2614d0f57ce0d334a55c8ec0d5f8fc46378c971b7",
+        "text_layer_char_count": 156
+      },
+      {
+        "page": 149,
+        "md_start_line": 1960,
+        "md_end_line": 1961,
+        "text_layer_sha256": "6d41fdaa181a559559a345b873ef32d40bd2b0e90327196063e0596e0ee05c21",
+        "text_layer_char_count": 10
+      },
+      {
+        "page": 150,
+        "md_start_line": 1969,
+        "md_end_line": 1979,
+        "text_layer_sha256": "9c7145cba8a85c2fff929489b4854066eb7d872642b40929341fb5789249a10f",
+        "text_layer_char_count": 283
+      },
+      {
+        "page": 151,
+        "md_start_line": 1987,
+        "md_end_line": 1997,
+        "text_layer_sha256": "c2bf4369c9381d6135aeabd3477ae9a9e8eb4af934509a5aa9996b6f32fa830a",
+        "text_layer_char_count": 322
+      },
+      {
+        "page": 152,
+        "md_start_line": 2005,
+        "md_end_line": 2018,
+        "text_layer_sha256": "b9e25dcf40e9800bff347df4ea6af5c5a79ced6f80b06db4ccfb4a37b09af588",
+        "text_layer_char_count": 350
+      },
+      {
+        "page": 153,
+        "md_start_line": 2026,
+        "md_end_line": 2051,
+        "text_layer_sha256": "fd24210545c49acdf037f0dea29de6ebe291a5aa60cd60a2a1e092a9a29b9151",
+        "text_layer_char_count": 694
+      },
+      {
+        "page": 154,
+        "md_start_line": 2059,
+        "md_end_line": 2071,
+        "text_layer_sha256": "d036f4eac60a2ee7f02257c61ed766ca31ec096a6e4b551d2ec299e1a559b07d",
+        "text_layer_char_count": 297
+      },
+      {
+        "page": 155,
+        "md_start_line": 2079,
+        "md_end_line": 2091,
+        "text_layer_sha256": "241f136bf80fd9fb8ad7e83f5a14f3c9ff685a51a71c908c98da13f8838515c9",
+        "text_layer_char_count": 313
+      },
+      {
+        "page": 156,
+        "md_start_line": 2099,
+        "md_end_line": 2123,
+        "text_layer_sha256": "e79fbdd726836fd723952efbdff1413e923bab0692c752aec85c341371554091",
+        "text_layer_char_count": 575
+      },
+      {
+        "page": 157,
+        "md_start_line": 2131,
+        "md_end_line": 2141,
+        "text_layer_sha256": "3c8756949acf2509b683510f884060227cd0e6d46a11316b2fb8b5bb49fee6b4",
+        "text_layer_char_count": 247
+      },
+      {
+        "page": 158,
+        "md_start_line": 2149,
+        "md_end_line": 2157,
+        "text_layer_sha256": "0ee5a0431822371f25fe1e0dd5b028c5d10f88829aba1acea43804c25df9ac85",
+        "text_layer_char_count": 219
+      },
+      {
+        "page": 159,
+        "md_start_line": 2165,
+        "md_end_line": 2172,
+        "text_layer_sha256": "8e79b49ac54fe48c29693f55d08d61168534d85ff29bb2e7305e102f975394f6",
+        "text_layer_char_count": 211
+      },
+      {
+        "page": 160,
+        "md_start_line": 2180,
+        "md_end_line": 2195,
+        "text_layer_sha256": "9d197f4247432785277cb953f78101326d97cfaeee265aa5b97d995da3ca9d8c",
+        "text_layer_char_count": 541
+      },
+      {
+        "page": 161,
+        "md_start_line": 2203,
+        "md_end_line": 2209,
+        "text_layer_sha256": "41c8da4ef772580e479b9f624f7f51ebbdc42bdcffd83512cd09cd2424eda607",
+        "text_layer_char_count": 251
+      },
+      {
+        "page": 162,
+        "md_start_line": 2217,
+        "md_end_line": 2227,
+        "text_layer_sha256": "bb7fa4ccfb35706079992944f9aefaa0fc945171761fedd73536412edecab289",
+        "text_layer_char_count": 264
+      },
+      {
+        "page": 163,
+        "md_start_line": 2235,
+        "md_end_line": 2243,
+        "text_layer_sha256": "314a0e728ac4eddf5994366b66d3070d5780240df086069d85b9aa8c4ba6ee8d",
+        "text_layer_char_count": 290
+      },
+      {
+        "page": 164,
+        "md_start_line": 2251,
+        "md_end_line": 2272,
+        "text_layer_sha256": "1f9260d9920ee12e3fa8e50838c8629900990ce202d82b556cf2d5645355e184",
+        "text_layer_char_count": 758
+      },
+      {
+        "page": 165,
+        "md_start_line": 2280,
+        "md_end_line": 2283,
+        "text_layer_sha256": "28eeac941d7f4503c3a9f9626947085d3bbe35bc06ec7eb842d8151ecd70d4e3",
+        "text_layer_char_count": 90
+      },
+      {
+        "page": 166,
+        "md_start_line": 2291,
+        "md_end_line": 2304,
+        "text_layer_sha256": "dec6b845e2eb9e9be71b788d8146219948b935e3ff70f985fc28acb1fd0c89f9",
+        "text_layer_char_count": 434
+      },
+      {
+        "page": 167,
+        "md_start_line": 2312,
+        "md_end_line": 2322,
+        "text_layer_sha256": "eedd1347081fbfd356fb3ff8d6ef1d0126781e0e6fed0e68cc1597f54ab3e883",
+        "text_layer_char_count": 298
+      },
+      {
+        "page": 168,
+        "md_start_line": 2330,
+        "md_end_line": 2340,
+        "text_layer_sha256": "ec737e068a8298805ce150c1f73fd66ae8adbfdef7b0c2e220fc77631ccca0cf",
+        "text_layer_char_count": 283
+      },
+      {
+        "page": 169,
+        "md_start_line": 2348,
+        "md_end_line": 2363,
+        "text_layer_sha256": "21ffd045f766eacb313a490331cdfae566b4eb9aee486a9784059ecc5ccfc570",
+        "text_layer_char_count": 434
+      },
+      {
+        "page": 170,
+        "md_start_line": 2371,
+        "md_end_line": 2385,
+        "text_layer_sha256": "1a330c288210aa52300ce94e8df49d656f8230ac8dc5dd1e0fca81d458e936b8",
+        "text_layer_char_count": 487
+      },
+      {
+        "page": 171,
+        "md_start_line": 2393,
+        "md_end_line": 2408,
+        "text_layer_sha256": "29ef0a6ad4708582d277dbe1e00cf2dbc2c77a974ad7cb9e1e97b25da40fc232",
+        "text_layer_char_count": 398
+      },
+      {
+        "page": 172,
+        "md_start_line": 2416,
+        "md_end_line": 2438,
+        "text_layer_sha256": "0b6bec8f92b472570f4a56655c67abbe47aa797acbb4d35ee9189fe9283db915",
+        "text_layer_char_count": 852
+      },
+      {
+        "page": 173,
+        "md_start_line": 2446,
+        "md_end_line": 2458,
+        "text_layer_sha256": "aa187b9801e81e67ea6b508b5b536886f70ab5cfc5349da4a94bcd9c0f276f03",
+        "text_layer_char_count": 385
+      },
+      {
+        "page": 174,
+        "md_start_line": 2466,
+        "md_end_line": 2484,
+        "text_layer_sha256": "1d18e3dd67836af9f87cf98f72a8bf6a4c8cf9f026c0a610a4589e97864149eb",
+        "text_layer_char_count": 591
+      },
+      {
+        "page": 175,
+        "md_start_line": 2492,
+        "md_end_line": 2508,
+        "text_layer_sha256": "01a89217b0cda1b5a40c14a94739cf95ed5f401ceda20b4619aa2f3539717af7",
+        "text_layer_char_count": 472
+      },
+      {
+        "page": 176,
+        "md_start_line": 2516,
+        "md_end_line": 2533,
+        "text_layer_sha256": "d380db0891015583bd10ec6dfb8e6de2ae6fc0e1c1a6fd77064494d9f03309c9",
+        "text_layer_char_count": 542
+      },
+      {
+        "page": 177,
+        "md_start_line": 2541,
+        "md_end_line": 2559,
+        "text_layer_sha256": "36c13dae39a76715bbcbc96bd3493c0444c250aaa723adbe7da87f88861211c9",
+        "text_layer_char_count": 554
+      },
+      {
+        "page": 178,
+        "md_start_line": 2567,
+        "md_end_line": 2586,
+        "text_layer_sha256": "c34a197ca7f9f2b54873d920cb4950e7bcc717f60c4ec82a3502fe0b21c16298",
+        "text_layer_char_count": 543
+      },
+      {
+        "page": 179,
+        "md_start_line": 2594,
+        "md_end_line": 2613,
+        "text_layer_sha256": "f3cc9a43115be3f4466227769a03e82186df16adfceb7ab3735e04aa638b30f4",
+        "text_layer_char_count": 593
+      },
+      {
+        "page": 180,
+        "md_start_line": 2621,
+        "md_end_line": 2629,
+        "text_layer_sha256": "4b94a927da6c5d693d396c13d41a27ac0b2edee94556d3fd44123778359824aa",
+        "text_layer_char_count": 307
+      },
+      {
+        "page": 181,
+        "md_start_line": 2637,
+        "md_end_line": 2660,
+        "text_layer_sha256": "e61357b97786691efae74c6b5404a39c53af5a60b829485902dc5c25aebcd146",
+        "text_layer_char_count": 594
+      },
+      {
+        "page": 182,
+        "md_start_line": 2668,
+        "md_end_line": 2687,
+        "text_layer_sha256": "8d96a3ecff1bc8982f8108e6e57a0202284d4e98913693e4828603623b62efb0",
+        "text_layer_char_count": 564
+      },
+      {
+        "page": 183,
+        "md_start_line": 2695,
+        "md_end_line": 2708,
+        "text_layer_sha256": "2c83dbbd140996e9fa5ad1cd97feaf302447254c568de473971b400f069983b0",
+        "text_layer_char_count": 320
+      },
+      {
+        "page": 184,
+        "md_start_line": 2716,
+        "md_end_line": 2739,
+        "text_layer_sha256": "c793a93289b29a2555bf2f614262018ccc6ee2a692424fc3d5d2b7392cd1ee8f",
+        "text_layer_char_count": 753
+      },
+      {
+        "page": 185,
+        "md_start_line": 2747,
+        "md_end_line": 2757,
+        "text_layer_sha256": "2ca523565f15c5e6f396731a95afa595e5ad60f1dcbb99a2724f0300050458c4",
+        "text_layer_char_count": 412
+      },
+      {
+        "page": 186,
+        "md_start_line": 2765,
+        "md_end_line": 2775,
+        "text_layer_sha256": "d8c1cf938f1209b18ea9d1f79d845ca71e33d2f83fe14a585d56e90d7a58de38",
+        "text_layer_char_count": 285
+      },
+      {
+        "page": 187,
+        "md_start_line": 2783,
+        "md_end_line": 2792,
+        "text_layer_sha256": "fb87802f63de54cbf607e20be3ffd800e9ac8c75b55761db30a6d832b7fb57ea",
+        "text_layer_char_count": 265
+      },
+      {
+        "page": 188,
+        "md_start_line": 2800,
+        "md_end_line": 2821,
+        "text_layer_sha256": "b70cfe88913be89fdfb8c08a7a1939fafd0cbd1e1778bac293d54ada78b45c15",
+        "text_layer_char_count": 640
+      },
+      {
+        "page": 189,
+        "md_start_line": 2829,
+        "md_end_line": 2837,
+        "text_layer_sha256": "03ca27eb86a4b9039308a943775b76525689c5b9a8a665d62e891094900a0793",
+        "text_layer_char_count": 188
+      },
+      {
+        "page": 190,
+        "md_start_line": 2845,
+        "md_end_line": 2850,
+        "text_layer_sha256": "766f7b459728d17bcf2a795219bdbd7d8c69f4ecdb2d2249686246dc0767e5cc",
+        "text_layer_char_count": 163
+      },
+      {
+        "page": 191,
+        "md_start_line": 2858,
+        "md_end_line": 2864,
+        "text_layer_sha256": "8dad8382d919882e42135ef8619ded68cc6a939f3d10441c172e8374d6ba76c9",
+        "text_layer_char_count": 222
+      },
+      {
+        "page": 192,
+        "md_start_line": 2872,
+        "md_end_line": 2878,
+        "text_layer_sha256": "984213afdf800046e7f3cda157edc6d6dfdc6ff735c7cfacd50a91c3fdf9dd23",
+        "text_layer_char_count": 235
+      },
+      {
+        "page": 193,
+        "md_start_line": 2886,
+        "md_end_line": 2906,
+        "text_layer_sha256": "84083eb8a556254f3598f366c3d762305ee9afd8c32baee052442f27f2da48f1",
+        "text_layer_char_count": 678
+      },
+      {
+        "page": 194,
+        "md_start_line": 2914,
+        "md_end_line": 2926,
+        "text_layer_sha256": "d4c7939d56e49cc082ec0f311e10f2ed5a6b0fcf1a21e2a71a4de724417d655c",
+        "text_layer_char_count": 311
+      },
+      {
+        "page": 195,
+        "md_start_line": 2934,
+        "md_end_line": 2939,
+        "text_layer_sha256": "094a84edf75a56b4a3b24ec596c0cc92da530657afb911b05de6f0ca7e8ed4d3",
+        "text_layer_char_count": 32
+      },
+      {
+        "page": 196,
+        "md_start_line": 2947,
+        "md_end_line": 2957,
+        "text_layer_sha256": "4948669ff4a4ecd405e8252913ef01b5fcfa7830cb6f2aa522c07544019722b4",
+        "text_layer_char_count": 119
+      },
+      {
+        "page": 197,
+        "md_start_line": 2965,
+        "md_end_line": 2986,
+        "text_layer_sha256": "78fc3e0863329da869bc76f090350aa4695a39f4d369b48a63ecabc88d8ed54c",
+        "text_layer_char_count": 278
+      },
+      {
+        "page": 198,
+        "md_start_line": 2994,
+        "md_end_line": 3033,
+        "text_layer_sha256": "0f6a7f4e6d26605ef3bf8486fcb54ce66dbec69d5bbeab63a8f057f806d67e92",
+        "text_layer_char_count": 487
+      },
+      {
+        "page": 199,
+        "md_start_line": 3041,
+        "md_end_line": 3040,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199
+      ],
+      "detail_pages_reviewed": [
+        82,
+        94,
+        124,
+        130,
+        160,
+        193,
+        194
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "多页操作截图的细小界面字样在缩略图中不可辨；对应关键流程通过放大页和正文核对，未将不可辨细节补写为事实。",
+        "pages": [
+          3,
+          34,
+          36,
+          38,
+          50,
+          52,
+          54,
+          57,
+          59,
+          61,
+          64,
+          66,
+          68,
+          70,
+          72,
+          74,
+          77,
+          79,
+          81,
+          83,
+          85,
+          87,
+          89,
+          91
+        ],
+        "status": "partial"
+      },
+      {
+        "description": "提示词示例在文本转换中有截断，无法安全恢复完整原句；笔记只归纳案例方法，不补写缺失内容。",
+        "pages": [
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          163,
+          164,
+          165,
+          183,
+          184
+        ],
+        "status": "incomplete"
+      },
+      {
+        "description": "产品能力、安全设计、FAQ 和模型列表是发布时产品文档陈述；未提供独立复测或审计证据，界面/功能可能随版本变化。",
+        "pages": [
+          1,
+          80,
+          82,
+          187,
+          193,
+          194
+        ],
+        "status": "pending_review"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/3万字长文带你WorkBuddy 从入门到精通.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "8bc2bfc469b9381fe961296602ca67b4534d79cf49dfbe29ca0eae437071367c",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/桌面Agent与工作流.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_WorkBuddy从入门到精通.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

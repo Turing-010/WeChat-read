@@ -1,0 +1,504 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0078",
+  "title": "详尽地带你从零开始设计实现一个AI Agent框架",
+  "short_title": "从零设计Agent框架",
+  "account": "腾讯技术工程",
+  "author": "yabohe",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-04-13T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0413 AI Agent Framework.pdf",
+      "original_filename": "0413 AI Agent Framework.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "2d77d9719d8cb7dfdfad15af319ea8ead7936fef4c41d7ee2c3f562050bb92d5",
+      "size_bytes": 4942274,
+      "page_count": 19,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "p.8 文字 20 轮但括号 MAX_TURNS=200；p.9 代码为 20",
+          "pages": [
+            8,
+            9
+          ],
+          "status": "按代码记录并说明差异"
+        },
+        {
+          "description": "工具 schema 长字符串右侧实际裁切，完整项目与 import 未完整呈现；代码没有被运行",
+          "pages": [
+            13,
+            14
+          ],
+          "status": "标记不完整，保留可读核心片段"
+        },
+        {
+          "description": "p.3 将 AutoGPT/AutoGen 合并归为微软，产品名和归属未区分；不作为准确产品史",
+          "pages": [
+            3
+          ],
+          "status": "保留来源问题，不外部补事实"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏 2026-04-13T02:36"
+    }
+  ],
+  "tags": [
+    "Agent工程循环",
+    "Harness与模型协同",
+    "Agent成本与上下文预算"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/从零设计Agent框架+26.4.13",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_从零设计Agent框架.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "详尽地带你从零开始设计实现一个 AI  Agent 框架\n腾讯程序员 2026 年 4 月 13 日 02 : 36广东腾讯技术工程 153 人\n作者: yabohe\n年初火爆现在热度依旧的OpenClaw为 AI Agent 带来了新的想象。如果说 2025 是 AI Agent 智能\n体元年,想必 2026 将会是 AI Agent 真正商用化的开端,而 AI Agent 商用化的前提是各行各业开\n始落地实际商业领域的 AI Agent 。\n作为一名程序员 / 工程师,思考的更多的可能是如何将 AI Agent 落地实现的层面。工程框架往\n往是工程应用实现的基石,框架选型也是架构师们设计与实现一个 AI Agent 智能体的首要工\n作。\n一、 AI Agent 框架理论篇\nAgent = Reasoning + Acting\n1.1 AI Agent 框架基础理论\nAI 智能体是使用  AI 来实现目标并代表用户完成任务的软件系统。其表现出了推理、规划和记\n忆能力,并且具有一定的自主性,能够自主学习、适应和做出决定。\nGoogle Cloud\n关于 AI Agent 这里引用了Google Cloud 的定义,言简意赅。\n1 ) ReAct 模式\n",
+    "publication_evidence": "PDF p.1 发布栏 2026-04-13T02:36",
+    "full_title_in_capture": "详尽地带你从零开始设计实现一个AI Agent框架",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0078",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "2d77d9719d8cb7dfdfad15af319ea8ead7936fef4c41d7ee2c3f562050bb92d5"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.8 文字 20 轮但括号 MAX_TURNS=200；p.9 代码为 20",
+        "pages": [
+          8,
+          9
+        ],
+        "status": "按代码记录并说明差异"
+      },
+      {
+        "description": "工具 schema 长字符串右侧实际裁切，完整项目与 import 未完整呈现；代码没有被运行",
+        "pages": [
+          13,
+          14
+        ],
+        "status": "标记不完整，保留可读核心片段"
+      },
+      {
+        "description": "p.3 将 AutoGPT/AutoGen 合并归为微软，产品名和归属未区分；不作为准确产品史",
+        "pages": [
+          3
+        ],
+        "status": "保留来源问题，不外部补事实"
+      }
+    ],
+    "outputs": [
+      "AI_从零设计Agent框架.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        8,
+        9,
+        11,
+        13,
+        14,
+        17
+      ]
+    },
+    "coverage": "覆盖理论模式、选型维度、三大工程部分、循环代码、四工具、注册、Prompt、CLI 及两项操作演示；保留核心循环与完整可读 Prompt，不补写裁切注册字符串。",
+    "fact_checks": [
+      {
+        "item": "作者与日期",
+        "value": "yabohe；2026-04-13 02:36",
+        "pages": "1",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "工具数",
+        "value": "shell_exec、file_read、file_write、python_exec 共四个",
+        "pages": "8",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "轮数代码",
+        "value": "MAX_TURNS = 20",
+        "pages": "9",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "执行超时",
+        "value": "shell 和 Python 子进程均 30 秒",
+        "pages": "10–11",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "调用对应",
+        "value": "工具结果含 tool_call_id",
+        "pages": "10",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "会话清除",
+        "value": "clear 后恢复 system 消息",
+        "pages": "15",
+        "result": "与所读原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_从零设计Agent框架.md",
+      "sha256": "16426d3de93fc2e8a0908111b57827c5e2af53ea2aad7c49479aa1193640ec0a"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "2d77d9719d8cb7dfdfad15af319ea8ead7936fef4c41d7ee2c3f562050bb92d5"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "5e4826db7eea5e51ad0cb61ac3e19d172b2a770fb93711de2383df95eaeff4bf"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 26,
+        "text_layer_sha256": "1d1dcdb98896847e34fa7cac8be4b803685498bfa17d52aec4bc2add28a75738",
+        "text_layer_char_count": 534
+      },
+      {
+        "page": 2,
+        "md_start_line": 34,
+        "md_end_line": 61,
+        "text_layer_sha256": "00845f8cf2868dd474686cbbc32d77e962817af78f904145d1f62ae5c226b9e1",
+        "text_layer_char_count": 1211
+      },
+      {
+        "page": 3,
+        "md_start_line": 69,
+        "md_end_line": 102,
+        "text_layer_sha256": "62a45477c5f6b33b14b32e902d2022665905a3554d582150b569039680403eaa",
+        "text_layer_char_count": 1292
+      },
+      {
+        "page": 4,
+        "md_start_line": 110,
+        "md_end_line": 138,
+        "text_layer_sha256": "cf23b57655d6bd504952ed444597f63548c643bae4be2f578970ab034b7b54b2",
+        "text_layer_char_count": 1425
+      },
+      {
+        "page": 5,
+        "md_start_line": 146,
+        "md_end_line": 179,
+        "text_layer_sha256": "409d44ebe631e2691dbc94672174e4330c420c0eebffcfc9d7cdc6540ca9f2b0",
+        "text_layer_char_count": 1379
+      },
+      {
+        "page": 6,
+        "md_start_line": 187,
+        "md_end_line": 226,
+        "text_layer_sha256": "a677f0566ec172eefae25f5953c946033e377d74cb697a2a8223117dd6aa76c5",
+        "text_layer_char_count": 1110
+      },
+      {
+        "page": 7,
+        "md_start_line": 234,
+        "md_end_line": 279,
+        "text_layer_sha256": "34277bef91a6386bf319937af4cc8b0b5625d1a624b8d4999a065c4940e03700",
+        "text_layer_char_count": 2805
+      },
+      {
+        "page": 8,
+        "md_start_line": 287,
+        "md_end_line": 319,
+        "text_layer_sha256": "f78b1bc8c14c91f11b150ea055ec910a8d1ccb07c80ff7950a4f14ee9bc22537",
+        "text_layer_char_count": 998
+      },
+      {
+        "page": 9,
+        "md_start_line": 327,
+        "md_end_line": 371,
+        "text_layer_sha256": "ea6f1976b7ce9b9e486f4911c89536759effd584c63a97ed78dea1c9d36fc90f",
+        "text_layer_char_count": 1754
+      },
+      {
+        "page": 10,
+        "md_start_line": 379,
+        "md_end_line": 421,
+        "text_layer_sha256": "a734decfd0c0fb0f0f203fbeedc931a13d48672b8794af44a883c60dfb392f03",
+        "text_layer_char_count": 1491
+      },
+      {
+        "page": 11,
+        "md_start_line": 429,
+        "md_end_line": 472,
+        "text_layer_sha256": "6bc84323aefeefd71524a89eb04ee08e28b9de46af3aeb83155b301799ea6650",
+        "text_layer_char_count": 1549
+      },
+      {
+        "page": 12,
+        "md_start_line": 480,
+        "md_end_line": 526,
+        "text_layer_sha256": "b82ada3267928481694420c9221610e8e5ee9aa4d1db82528b2e7303576b11dc",
+        "text_layer_char_count": 1491
+      },
+      {
+        "page": 13,
+        "md_start_line": 534,
+        "md_end_line": 577,
+        "text_layer_sha256": "4b40c6114ec40f9c66d099ef979f7f1207c54fc528e9fb277998d382f811f697",
+        "text_layer_char_count": 1492
+      },
+      {
+        "page": 14,
+        "md_start_line": 585,
+        "md_end_line": 621,
+        "text_layer_sha256": "2c91dc00505442c218f4d918a2bf79b61cb8fba8db4a1ba9248fa86b42d5b40a",
+        "text_layer_char_count": 1420
+      },
+      {
+        "page": 15,
+        "md_start_line": 629,
+        "md_end_line": 656,
+        "text_layer_sha256": "e2085e5b9273c3c64036b0467720f7e2e43aa35119ad8ad0d86f1d79593adf98",
+        "text_layer_char_count": 981
+      },
+      {
+        "page": 16,
+        "md_start_line": 664,
+        "md_end_line": 668,
+        "text_layer_sha256": "1660ed4f5ef6d3463b6d24eb9954797f1caf184b4386c9218623f66e652711eb",
+        "text_layer_char_count": 106
+      },
+      {
+        "page": 17,
+        "md_start_line": 676,
+        "md_end_line": 678,
+        "text_layer_sha256": "6967bf47cf681e10f491ab991cd4c295719641f5882ac5444c79d9ba6ad1bfd2",
+        "text_layer_char_count": 78
+      },
+      {
+        "page": 18,
+        "md_start_line": 686,
+        "md_end_line": 704,
+        "text_layer_sha256": "3d8304c02eba0dec8e75d9e2db97dd25f79f075a2e0de27f2ab8220991d7800c",
+        "text_layer_char_count": 686
+      },
+      {
+        "page": 19,
+        "md_start_line": 712,
+        "md_end_line": 715,
+        "text_layer_sha256": "b0f963d4329b61906a594260222b97d54e7df50768dd766a3b54d757c719daf4",
+        "text_layer_char_count": 29
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        8,
+        9,
+        11,
+        13,
+        14,
+        17
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.8 文字 20 轮但括号 MAX_TURNS=200；p.9 代码为 20",
+        "pages": [
+          8,
+          9
+        ],
+        "status": "按代码记录并说明差异"
+      },
+      {
+        "description": "工具 schema 长字符串右侧实际裁切，完整项目与 import 未完整呈现；代码没有被运行",
+        "pages": [
+          13,
+          14
+        ],
+        "status": "标记不完整，保留可读核心片段"
+      },
+      {
+        "description": "p.3 将 AutoGPT/AutoGen 合并归为微软，产品名和归属未区分；不作为准确产品史",
+        "pages": [
+          3
+        ],
+        "status": "保留来源问题，不外部补事实"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0413 AI Agent Framework.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "2d77d9719d8cb7dfdfad15af319ea8ead7936fef4c41d7ee2c3f562050bb92d5",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_从零设计Agent框架.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

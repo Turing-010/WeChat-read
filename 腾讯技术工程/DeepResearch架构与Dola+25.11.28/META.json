@@ -1,0 +1,136 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0301",
+  "title": "2025必看系列：AI如何重新定义研究？万字长文讲透Deep Research",
+  "short_title": "DeepResearch架构与Dola",
+  "account": "腾讯技术工程",
+  "author": "anthonyguo（郭沛）、karolinaliu（刘恩婕）",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-11-28T01:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "2025必看系列：      AI如何重新定义研究？万字⻓⽂讲透                  Deep\nResearch\n\n\n原创 腾讯程序员    腾讯技术⼯程    2025年11⽉28⽇   01:36⼴东  3486⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n作者：  anthonyguo (郭沛)、 karolinaliu（刘恩婕）\n  导语\n\n如果AI的终极使命是拓展⼈类认知的边界，那么“研究”——这项系统性探索未知的核⼼活动，\n⽆疑是其最重要的试⾦⽯。         2024年，AI  Agent技术迎来突破性进展，⼀个名为          Deep\nResearch（深度研究）  的⽅向正以前所未有的速度站上风⼝，成为推动“AI应⽤元年”的真正\n引擎。 但热潮之下，我们更需要深度的思考：Deep Research 究竟是什么？它从何⽽来，⼜\n将去往何处？其背后的技术架构有何精妙之处？我们⼜如何客观评价⼀个系统的优劣？\n\n本篇近万字的深度剖析，将为你彻底理清Deep Re",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "RAG与知识库",
+    "Agent架构",
+    "AI评测与可观测性",
+    "决策知识结构化"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/2025必看系列：AI如何重新定义研究？万字长文讲透Deep Research.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:19:51-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "5d73120fb6576635eb65ffa57f8180f8cd5f5fe267143518f3f5f50cbee5d4e1",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "将传统RAG概括为被动单轮是对特定基线的简化，不等于所有RAG无迭代。",
+        "各厂商内部框架、数据源限制和性能是作者2025年综述，不是本次官方核查结果。",
+        "案例美联储前后股票变化不证明因果，研究工具输出不构成投资结论；本文只提炼工程机制。",
+        "p20最终报告原文明示省略；页图仅1、5、11、13，图表内容未全部转写。"
+      ],
+      "size_bytes": 9702101,
+      "page_count": 24
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:19:51-07:00",
+  "directory": "腾讯技术工程/DeepResearch架构与Dola+25.11.28",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:19:51-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "5d73120fb6576635eb65ffa57f8180f8cd5f5fe267143518f3f5f50cbee5d4e1",
+    "output_path": "MD.md",
+    "output_sha256": "e6c082af9ebd3451d628a2d3c7be65f9b5fec6fe95a88787bb75d68841c42646",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 24,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "visual_pages": [
+        1,
+        5,
+        11,
+        13
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "将传统RAG概括为被动单轮是对特定基线的简化，不等于所有RAG无迭代。",
+      "各厂商内部框架、数据源限制和性能是作者2025年综述，不是本次官方核查结果。",
+      "案例美联储前后股票变化不证明因果，研究工具输出不构成投资结论；本文只提炼工程机制。",
+      "p20最终报告原文明示省略；页图仅1、5、11、13，图表内容未全部转写。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/2025必看系列：AI如何重新定义研究？万字长文讲透Deep Research.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/DeepResearch架构与Dola+25.11.28/RAW.pdf",
+    "sha256": "5d73120fb6576635eb65ffa57f8180f8cd5f5fe267143518f3f5f50cbee5d4e1",
+    "copied_at": "2026-10-23T06:19:51-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent数据分析.md",
+      "../../20_topics/检索与文档解析.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

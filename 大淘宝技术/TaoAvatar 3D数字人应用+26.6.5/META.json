@@ -1,0 +1,367 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0219",
+  "title": "CCIG 2026｜TaoAvatar：3D真人数字人在淘宝Vision领域的应用",
+  "short_title": "TaoAvatar 3D数字人应用",
+  "account": "大淘宝技术",
+  "author": "陈志文（塞远）",
+  "author_byline": "Meta技术团队陈志文(塞远)在CCIG2026报告现场 / 淘天Meta技术团队",
+  "source_url": null,
+  "published_at": "2026-06-05",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "Meta技术团队 2026年6月5日 00:53 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 2,
+      "text": "Meta技术团队陈志文(塞远)在CCIG2026报告现场 / 淘天Meta技术团队",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "模型架构与训练",
+    "跨端开发与性能",
+    "大模型推理与算子优化"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/CCIG 2026｜TaoAvatar：3D真人数字人在淘宝Vision领域的应用.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T06:25:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "59592445fb28d804030459a06e1374d7153334593383b996ac5c9a28b0e4cc64",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.2-9含CCIG现场照片、动捕与重建管线框图及淘宝Vision视频静态帧（位于PDF图像层），p.11为空白尾页；全部定量指标（PSNR>35、PVE 6-7mm、~400MB@90FPS）已在正文完整收录。",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 13980623,
+      "page_count": 11
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T06:25:00-07:00",
+  "directory": "大淘宝技术/TaoAvatar 3D数字人应用+26.6.5",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_TaoAvatar 3D数字人应用.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0219",
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "updated_at": "2026-10-20T06:25:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "59592445fb28d804030459a06e1374d7153334593383b996ac5c9a28b0e4cc64"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "6bbd60d0edbed5e5bebd7e5137be3ec545985cacee259401e7e0bc2d30387abc"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.2-9含CCIG现场照片、动捕与重建管线框图及淘宝Vision视频静态帧（位于PDF图像层），p.11为空白尾页；全部定量指标（PSNR>35、PVE 6-7mm、~400MB@90FPS）已在正文完整收录。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_TaoAvatar 3D数字人应用.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_TaoAvatar 3D数字人应用.md",
+      "sha256": "845afd154d08751bf74012833418697a72e79b20062860208a37d3ca3d842326"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "59592445fb28d804030459a06e1374d7153334593383b996ac5c9a28b0e4cc64"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "6bbd60d0edbed5e5bebd7e5137be3ec545985cacee259401e7e0bc2d30387abc"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 49,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 689,
+        "text_layer_sha256": "9eaa4747215800daa5200961d23a36f704a6657d390d8c679b73f969376120b2"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 78,
+        "md_start_line": 57,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 2,
+        "text_layer_char_count": 456,
+        "text_layer_sha256": "8b8e910330ce97dda44998fdabe818521671f3cc4972f7727a50e87011c12c8b"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 116,
+        "md_start_line": 86,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 3,
+        "text_layer_char_count": 448,
+        "text_layer_sha256": "a336b1d98beb9117e7308b4c246879f9a662aa502abdb075f9bb91177c2956b2"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 184,
+        "md_start_line": 124,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 4,
+        "text_layer_char_count": 1106,
+        "text_layer_sha256": "7c7987567d88d74e34ff3f4e3d081777094cf1fdc0dc73d1778503bf6771ea7b"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 228,
+        "md_start_line": 192,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 5,
+        "text_layer_char_count": 673,
+        "text_layer_sha256": "ea03648eb20216d928ae565c1e9d9c84c8fab4f338001051211312fb81669a59"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 270,
+        "md_start_line": 236,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 6,
+        "text_layer_char_count": 603,
+        "text_layer_sha256": "bd99791cbe4cd5bcf5e69a80219d0fd41fe2a60c4ffebb1fc416a29274505504"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 315,
+        "md_start_line": 278,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 7,
+        "text_layer_char_count": 833,
+        "text_layer_sha256": "7e10127cdce2112d3760499ac7934ded8cde9d1f254b17ab766df02632842224"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 348,
+        "md_start_line": 323,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 8,
+        "text_layer_char_count": 312,
+        "text_layer_sha256": "a20c5332375646e7368047bfe8225ef17fe16e4592897b3194ea94bc99158628"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 383,
+        "md_start_line": 356,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 9,
+        "text_layer_char_count": 482,
+        "text_layer_sha256": "1d686678d10c730d4a8f2f9acba71718196ef6700f9c04e13fabd85052a925bd"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 409,
+        "md_start_line": 391,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 10,
+        "text_layer_char_count": 166,
+        "text_layer_sha256": "d407866c106c9d2138ba6d453a5b0a2896b9ad3ee18921128fd7ddba47418f48"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 419,
+        "md_start_line": 417,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 11,
+        "text_layer_char_count": 0,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.2-9含CCIG现场照片、动捕与重建管线框图及淘宝Vision视频静态帧（位于PDF图像层），p.11为空白尾页；全部定量指标（PSNR>35、PVE 6-7mm、~400MB@90FPS）已在正文完整收录。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/跨端开发与性能.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T06:25:00-07:00",
+    "removed_at": "2026-10-20T06:25:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/CCIG 2026｜TaoAvatar：3D真人数字人在淘宝Vision领域的应用.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "59592445fb28d804030459a06e1374d7153334593383b996ac5c9a28b0e4cc64",
+        "copied_at": "2026-10-20T06:25:00-07:00",
+        "removed_at": "2026-10-20T06:25:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_TaoAvatar 3D数字人应用.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

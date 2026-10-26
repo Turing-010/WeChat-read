@@ -1,0 +1,419 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0097",
+  "title": "从3632个漏洞看AI时代的评测基准重构！VulnGym基准发布",
+  "short_title": "VulnGym漏洞评测基准",
+  "account": "腾讯技术工程",
+  "author": "腾讯悟空代码安全团队",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-05-26T02:32",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0526 VulnGym Benchmark.pdf",
+      "original_filename": "0526 VulnGym Benchmark.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "3ce5ac7aaa1c98d01828813507184c3454741ef7bc3be38c3bc5562820796e06",
+      "size_bytes": 4494657,
+      "page_count": 12,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "统计数据与基准效果来自文章陈述，本次仅核对内部算术和页面呈现，未独立访问数据集或复现实验。",
+          "pages": [
+            1,
+            2,
+            8,
+            10
+          ],
+          "status": "pending_review"
+        }
+      ],
+      "publication_evidence": "PDF第1页日期与时间标注"
+    }
+  ],
+  "tags": [
+    "Agent评测与反馈",
+    "Harness与模型协同",
+    "异常监控与稳定性",
+    "Agent安全与权限"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/VulnGym漏洞评测基准+26.5.26",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_VulnGym漏洞评测基准.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "从 3632 个漏洞看 AI 时代的评测基准重构! VulnGym 基准发布\n腾讯程序员 May  26 , 2026 , 2 : 32  AM广东原创 腾讯技术工程 9  listened\n作者:腾讯悟空代码安全团队\n导语\n我们分析了  2025 年至今的  3,632 条漏洞报告,发现业务逻辑漏洞占比明显上升。尤其是在\nGitHub Star 数超过  1 万的热门项目中, 4 月份业务逻辑漏洞占比已达到  47.2% ,接近一半。\n然而,现有评测基准大多还停留在传统漏洞类型上,难以判断安全工具是否能够在真实项目上\n发现跨文件、跨流程的复杂业务逻辑风险。因此,漏洞检测评测基准需要升级,转向更贴近真\n实项目和真实攻击路径分布的新一代基准。\n为此,腾讯悟空安全团队联合香港中文大学  ARISE Lab 、复旦大学系统软件与安全实验室、\n香港大学  JC STEM Lab of Intelligent Cybersecurity 、北京大学  Narwhal-Lab 、中国科学院\n信息工程研究所网络威胁分析研究室共同发布  VulnGym 评测基准。\nVulnGym是一个面向白盒漏洞检测  Agent 的真实项目评测基准,基于  GitHub 高星项目中的真\n实漏洞构建,覆盖  400+ 条漏洞路径,其中  71.2% 为业务逻辑漏洞。每个样本都标注漏洞入\n口、敏感操作和触发路径,支持可复现、可解释的确定性评测。\nGithub: https://github.com/Tencent/VulnGym \nHugging Face : \nhttps://huggingface.co/datasets/tencent/VulnGym\n一、漏洞的形态,正在被  AI 编码悄悄改写\n随着  Claude Security 、 Codex Security 等新一代漏洞检测工具出现,漏洞检测正在\n从 \" 发现代码缺陷 \" 走向 \" 理解项目上下文并检测业务⻛险 \" 。\n",
+    "publication_evidence": "PDF第1页日期与时间标注",
+    "full_title_in_capture": "从3632个漏洞看AI时代的评测基准重构！VulnGym基准发布",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0097",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "3ce5ac7aaa1c98d01828813507184c3454741ef7bc3be38c3bc5562820796e06"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "统计数据与基准效果来自文章陈述，本次仅核对内部算术和页面呈现，未独立访问数据集或复现实验。",
+        "pages": [
+          1,
+          2,
+          8,
+          10
+        ],
+        "status": "pending_review"
+      }
+    ],
+    "outputs": [
+      "AI_VulnGym漏洞评测基准.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        3,
+        5,
+        8,
+        10
+      ]
+    },
+    "coverage": "涵盖漏洞统计动机、业务逻辑漏洞定义、基准目标、样本路径标注与评测原则。",
+    "fact_checks": [
+      {
+        "topic": "统计总量",
+        "original_value": "3,632=2,768+864",
+        "pages": [
+          2
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "整体逻辑漏洞",
+        "original_value": "31.14%=1,131/3,632",
+        "pages": [
+          2
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "2025占比",
+        "original_value": "25.67%=382/1,488",
+        "pages": [
+          2
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "2026年1-4月",
+        "original_value": "34.93%=749/2,144",
+        "pages": [
+          2
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "高星项目",
+        "original_value": "39.59%=382/965",
+        "pages": [
+          2
+        ],
+        "result": "一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_VulnGym漏洞评测基准.md",
+      "sha256": "2b2fa5ff9a078a07a483a19494076c99dc01f09a5da6f315a9d2c66f26e83083"
+    },
+    "independent_crosscheck": {
+      "reviewer": "wechat_group1",
+      "note_sha256": "ec899849d867c0518ab857d2805d9f2eef804433bc6fbed78b37b44c51d16e1d",
+      "review_sha256": "e4b3f734e256684b6fcf9715c031fb8afb746616e2a03288dfb3580cd988b194",
+      "status": "passed",
+      "changes": [
+        "统一格式：自测卡片标题改为复习卡片；原文 PDF 链接置于校对报告前；报告保持末尾引用块。"
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "2–3",
+          "check": "核对 3,632 条高危/严重样本及业务逻辑占比定义；笔记明确标出统计口径，并将 AI Coding 关联写成趋势解释而非因果结论。"
+        },
+        {
+          "pages": "7–9",
+          "check": "核对 VulnGym 项目级白盒评测、entry_point/critical_operation/trace 路径标注及模型、Harness、Agent 三类比较用途；机制和边界与原文一致。"
+        },
+        {
+          "pages": "10–12",
+          "check": "核对基准尚处起点、标签及样本可能不全的限制；笔记没有把基准宣传写成已验证普遍排名。"
+        },
+        {
+          "pages": "1–2 图页",
+          "check": "缩略页可读；统计图及评测结构没有发现与文字抽取冲突。"
+        },
+        {
+          "pages": "note format",
+          "check": "核对复习卡片为单行 问题::答案、YAML date 可识别、唯一一级标题；确认 PDF 链接在校对报告前，报告之后无正文且报告各行以 > 开头。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "3ce5ac7aaa1c98d01828813507184c3454741ef7bc3be38c3bc5562820796e06"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "c743d8ba60a3944ebf364e40ddb3bf222c7e23c3268f74a840cb102c847a2859"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 30,
+        "text_layer_sha256": "66c7004bed96f27372014b7461740b19db7095c72a99a89391610bef07ca9906",
+        "text_layer_char_count": 841
+      },
+      {
+        "page": 2,
+        "md_start_line": 38,
+        "md_end_line": 56,
+        "text_layer_sha256": "b3b9bfc9e1f46d26d025451782f7d08e7f7988f14faf5025e291845604d1547f",
+        "text_layer_char_count": 677
+      },
+      {
+        "page": 3,
+        "md_start_line": 64,
+        "md_end_line": 79,
+        "text_layer_sha256": "e812b0a4e5cb75e33978afa5546855f86fcdc70b2827cc732d7c089cb4a3cf64",
+        "text_layer_char_count": 589
+      },
+      {
+        "page": 4,
+        "md_start_line": 87,
+        "md_end_line": 109,
+        "text_layer_sha256": "d895514e976f7f282266460a61b871ffff203ce5d95fede3dd8f6748785f316c",
+        "text_layer_char_count": 965
+      },
+      {
+        "page": 5,
+        "md_start_line": 117,
+        "md_end_line": 133,
+        "text_layer_sha256": "6f008e89a915836808490c7bbc531419647fd3b1b916d97f05c83c056f13ebec",
+        "text_layer_char_count": 559
+      },
+      {
+        "page": 6,
+        "md_start_line": 141,
+        "md_end_line": 155,
+        "text_layer_sha256": "23aaabc1237be74757dea83bad3fdf6e864aca3e2b82bb2fec6c9cab2cd25699",
+        "text_layer_char_count": 544
+      },
+      {
+        "page": 7,
+        "md_start_line": 163,
+        "md_end_line": 192,
+        "text_layer_sha256": "ce4fa3fdc8fe21dc2451b7d1dc0aabeea9f5e13bcff82782d5b659cb65d5bac0",
+        "text_layer_char_count": 1182
+      },
+      {
+        "page": 8,
+        "md_start_line": 200,
+        "md_end_line": 222,
+        "text_layer_sha256": "dcbeef653122957990dc1ce93246bd62097dc211b7757c94784e24cff55a07d5",
+        "text_layer_char_count": 886
+      },
+      {
+        "page": 9,
+        "md_start_line": 230,
+        "md_end_line": 252,
+        "text_layer_sha256": "d90c8d670bed75fb8ad09d458bffaa35fd296fb2a1af76a64b5ca5a76bc4caa4",
+        "text_layer_char_count": 759
+      },
+      {
+        "page": 10,
+        "md_start_line": 260,
+        "md_end_line": 278,
+        "text_layer_sha256": "79105a1f85eb8a525a9c419e4044175fbe934cda08aa44cc72d0f87a4fff06a8",
+        "text_layer_char_count": 722
+      },
+      {
+        "page": 11,
+        "md_start_line": 286,
+        "md_end_line": 296,
+        "text_layer_sha256": "ff6cc1556193397081be921a784329867cbe10a480eafe7f6ab3942e99077e3a",
+        "text_layer_char_count": 418
+      },
+      {
+        "page": 12,
+        "md_start_line": 304,
+        "md_end_line": 309,
+        "text_layer_sha256": "46daf76e3e04837f7b8ecfd28163f2da18e3e99319445672aeb649c6af4de462",
+        "text_layer_char_count": 91
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        3,
+        5,
+        8,
+        10
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "统计数据与基准效果来自文章陈述，本次仅核对内部算术和页面呈现，未独立访问数据集或复现实验。",
+        "pages": [
+          1,
+          2,
+          8,
+          10
+        ],
+        "status": "pending_review"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0526 VulnGym Benchmark.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "3ce5ac7aaa1c98d01828813507184c3454741ef7bc3be38c3bc5562820796e06",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent安全与权限.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_VulnGym漏洞评测基准.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

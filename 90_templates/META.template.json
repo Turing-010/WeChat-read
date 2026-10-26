@@ -1,0 +1,22 @@
+{
+  "schema_version": 3,
+  "article_id": null,
+  "title": null,
+  "short_title": null,
+  "account": null,
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": null,
+  "published_at_precision": null,
+  "published_timezone": null,
+  "identity_evidence": null,
+  "tags": [],
+  "captures": [],
+  "reading_status": "unread",
+  "created_at": null,
+  "directory": null,
+  "files": {},
+  "processing": null,
+  "conversion": null
+}

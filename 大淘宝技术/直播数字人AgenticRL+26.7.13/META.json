@@ -1,0 +1,454 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0206",
+  "title": "淘宝直播数字人 AgenticRL 实践：从 RLVR 到 MultiAgent RL",
+  "short_title": "直播数字人AgenticRL",
+  "account": "大淘宝技术",
+  "author": "语瀚",
+  "author_byline": "本文作者语瀚，来自淘天集团-直播AIGC团队。",
+  "source_url": null,
+  "published_at": "2026-07-13",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "直播技术 2026年7月13日 01:29 江苏",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 18,
+      "text": "本文作者语瀚，来自淘天集团-直播AIGC团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "模型架构与训练",
+    "Harness与模型协同",
+    "大模型推理与算子优化"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/淘宝直播数字人 AgenticRL 实践：从 RLVR 到 MultiAgent RL.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T06:06:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "a6e279bd0371456c01cdb64f857517a0542df10f3d870bfb7f1f39aa06daa94b",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.2-17含Workflow与Agentic架构对比图、ROLL远程沙盒交互图、奖励函数设计表与训练收敛曲线（位于PDF图像层），p.19为空白尾页；核心算法流程与量化增幅（1.79s、+4.1pt/+23.6pt/+18.2pt）已在正文完整阐述。",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            13,
+            15,
+            16,
+            17,
+            19
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 11320339,
+      "page_count": 19
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T06:06:00-07:00",
+  "directory": "大淘宝技术/直播数字人AgenticRL+26.7.13",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_直播数字人AgenticRL.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0206",
+    "created_at": "2026-10-20T06:06:00-07:00",
+    "updated_at": "2026-10-20T06:06:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "a6e279bd0371456c01cdb64f857517a0542df10f3d870bfb7f1f39aa06daa94b"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "6e36c9b5b1637bba47e677e3ddb213c9c97767a1369f83aad463ed37639c045c"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.2-17含Workflow与Agentic架构对比图、ROLL远程沙盒交互图、奖励函数设计表与训练收敛曲线（位于PDF图像层），p.19为空白尾页；核心算法流程与量化增幅（1.79s、+4.1pt/+23.6pt/+18.2pt）已在正文完整阐述。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          15,
+          16,
+          17,
+          19
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_直播数字人AgenticRL.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_直播数字人AgenticRL.md",
+      "sha256": "d672107cf61ca02ac4d46d720628d20cd250956bb6acebcc8a46d8825c46e963"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T06:06:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "a6e279bd0371456c01cdb64f857517a0542df10f3d870bfb7f1f39aa06daa94b"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "6e36c9b5b1637bba47e677e3ddb213c9c97767a1369f83aad463ed37639c045c"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "md_end_line": 92,
+        "md_start_line": 14,
+        "page": 1,
+        "text_layer_char_count": 1201,
+        "text_layer_sha256": "cee9803f94851b8ccc74805e0a9e124c698f28744e8aed805b47b365c0301fba"
+      },
+      {
+        "md_end_line": 107,
+        "md_start_line": 102,
+        "page": 2,
+        "text_layer_char_count": 134,
+        "text_layer_sha256": "fa41dd5b52951e9c3704b9f7cb87d379eefb16d7e2fcadcf581c87bd2c97d007"
+      },
+      {
+        "md_end_line": 125,
+        "md_start_line": 117,
+        "page": 3,
+        "text_layer_char_count": 117,
+        "text_layer_sha256": "fc58b981b7006cbfe292ba8c96d6e247bf296f94ec9f5f0bc9b3a59cd67b4530"
+      },
+      {
+        "md_end_line": 175,
+        "md_start_line": 135,
+        "page": 4,
+        "text_layer_char_count": 609,
+        "text_layer_sha256": "2d644fde9c8194196b3168415dcb233d31f9f5c6bc4162e2f755d2aeb648d682"
+      },
+      {
+        "md_end_line": 248,
+        "md_start_line": 185,
+        "page": 5,
+        "text_layer_char_count": 553,
+        "text_layer_sha256": "246fed58f2b1e7ebb7fe252c1dd613d0d76810c5e04c4ead614420c9094d83cf"
+      },
+      {
+        "md_end_line": 272,
+        "md_start_line": 258,
+        "page": 6,
+        "text_layer_char_count": 335,
+        "text_layer_sha256": "d554dad459f773b77596fe074854565c74310e270b4c8110d93d448e54ee2f61"
+      },
+      {
+        "md_end_line": 298,
+        "md_start_line": 282,
+        "page": 7,
+        "text_layer_char_count": 451,
+        "text_layer_sha256": "80b19de890119e69861fa608650c8d4c8c31c986e31b2003ddc9a32d0ef0905f"
+      },
+      {
+        "md_end_line": 351,
+        "md_start_line": 308,
+        "page": 8,
+        "text_layer_char_count": 721,
+        "text_layer_sha256": "bb39e893cd889fad474d5d2d5fe6115d6dbdeb93eb8ea0efcd4622ffd99a05c3"
+      },
+      {
+        "md_end_line": 388,
+        "md_start_line": 361,
+        "page": 9,
+        "text_layer_char_count": 445,
+        "text_layer_sha256": "c8d90f02059c99eee99ddd0b145057a10da17fe75458c525b4078a5bf440771a"
+      },
+      {
+        "md_end_line": 430,
+        "md_start_line": 398,
+        "page": 10,
+        "text_layer_char_count": 427,
+        "text_layer_sha256": "152030a770a12b83a7c2290e7b8b675b519cd7e2cd6b823755faeb4d7859993e"
+      },
+      {
+        "md_end_line": 469,
+        "md_start_line": 440,
+        "page": 11,
+        "text_layer_char_count": 575,
+        "text_layer_sha256": "5675d729b6461695062c503a7277aa542552eac3d2016428bda1722108a03f75"
+      },
+      {
+        "md_end_line": 543,
+        "md_start_line": 479,
+        "page": 12,
+        "text_layer_char_count": 1384,
+        "text_layer_sha256": "116f1ed5a69c5a50f32ac3cc5c44edc9d7e75d00512078ed23dedb92e782de32"
+      },
+      {
+        "md_end_line": 583,
+        "md_start_line": 553,
+        "page": 13,
+        "text_layer_char_count": 695,
+        "text_layer_sha256": "840e885cd45c1fa13710dcd33028b77b644f19c452d216b67dd860589e9cd5cb"
+      },
+      {
+        "md_end_line": 617,
+        "md_start_line": 593,
+        "page": 14,
+        "text_layer_char_count": 618,
+        "text_layer_sha256": "7fd70fa68f388e26dca2c849ab59bb3069c3222893cfcd34167284c74e15a787"
+      },
+      {
+        "md_end_line": 643,
+        "md_start_line": 627,
+        "page": 15,
+        "text_layer_char_count": 385,
+        "text_layer_sha256": "5b0f8295aa4fcd5d45042d8104da3d2f07f8b4b37edc7d9a6ea38ad055b9e422"
+      },
+      {
+        "md_end_line": 681,
+        "md_start_line": 653,
+        "page": 16,
+        "text_layer_char_count": 599,
+        "text_layer_sha256": "c3b5d13dcd276bff271c4e75844fc8afbaf64552079128cd75fad0771a1fc569"
+      },
+      {
+        "md_end_line": 760,
+        "md_start_line": 691,
+        "page": 17,
+        "text_layer_char_count": 1156,
+        "text_layer_sha256": "8cc39eaec4081f40099f97531dfc0a4d8d081776fe45f888346e84684d1b5448"
+      },
+      {
+        "md_end_line": 796,
+        "md_start_line": 770,
+        "page": 18,
+        "text_layer_char_count": 326,
+        "text_layer_sha256": "45bc7e08da169505115692c6ec2421e59e59c6f504550fe35f68a943060a0866"
+      },
+      {
+        "md_end_line": 806,
+        "md_start_line": 806,
+        "page": 19,
+        "text_layer_char_count": 0,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.2-17含Workflow与Agentic架构对比图、ROLL远程沙盒交互图、奖励函数设计表与训练收敛曲线（位于PDF图像层），p.19为空白尾页；核心算法流程与量化增幅（1.79s、+4.1pt/+23.6pt/+18.2pt）已在正文完整阐述。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          15,
+          16,
+          17,
+          19
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent评测与反馈.md",
+      "../../20_topics/Harness与模型协同.md",
+      "../../20_topics/因果推断与评测归因.md",
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T06:06:00-07:00",
+    "removed_at": "2026-10-20T06:06:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝直播数字人 AgenticRL 实践：从 RLVR 到 MultiAgent RL.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "a6e279bd0371456c01cdb64f857517a0542df10f3d870bfb7f1f39aa06daa94b",
+        "copied_at": "2026-10-20T06:06:00-07:00",
+        "removed_at": "2026-10-20T06:06:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_直播数字人AgenticRL.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

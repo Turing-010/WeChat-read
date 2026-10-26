@@ -1,0 +1,453 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0012",
+  "title": "让Agent可评、可控、可迭代：业务效果导向的评测体系与场景实践",
+  "short_title": "Agent业务效果评测",
+  "account": "大淘宝技术",
+  "author": "叱干、王菲",
+  "author_byline": "本文作者叱干、王菲,均来自淘天集团 业务技术-营销&交易技术团队。团队承担淘宝天猫电",
+  "source_url": null,
+  "published_at": "2026-09-17",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "description": "PDF第1页标题、公众号和日期与下载总结的frontmatter、主题相符；署名取PDF团队介绍页。",
+    "pdf_page": 1,
+    "header_text": "让 Agent 可评、可控、可迭代:业务效果导向的评测体系与场景实\n践\n营销&交易技术 2026 年 9 月 17 日 19 : 52浙江原创 大淘宝技术 36 人\n策略效果类Agent评测面临反馈信号稀缺、评估多维权衡、离线与线上效果脱节三大难\n题。文章提出\"五层、四步、三阶段\"方法论:五层评测对象(从Prompt约束到业务效\n果)明确\"评什么\";四步质量归因(诊断、定位、优化、验证)解决\"评完怎么办\";三\n阶段上线治理(准入、灰度、监控)回答\"如何上线\"。针对离线评测与线上效果对⻬难\n题,创新性提出Auto Rubrics方法,通过三层架构构建可解释的业务效果Judge体系,\n有效规避位置偏差、选择过拟合等系统性陷阱,实现策略效果的可信评估,为策略类\nAgent规模化落地提供质量保障。该",
+    "author_pdf_page": 22,
+    "download_summary_frontmatter": "title: 让Agent可评、可控、可迭代：业务效果导向的评测体系与场景实践\nsource: 大淘宝技术公众号（营销&交易技术），作者 叱干、王菲（淘天集团），2026-09-17 19:52\ndate: 2026-09-17\ntype: 方法论与案例型\ntags: [Agent评测, LLM-as-Judge, Rubric, AutoRubrics, A/B实验, 灰度上线, 淘天]\nstatus: 待复习"
+  },
+  "tags": [
+    "Agent评测与反馈",
+    "Prompt优化"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/让Agent可评、可控、可迭代：业务效果导向的评测体系与场景实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-12T00:38:05-07:00",
+      "provenance": "用户已收集的公众号PDF；本次从inbox复制归档，原采集方式与时间未知",
+      "sha256": "bc8a4844c3a2b6901270ed17ea29e82fccb41aa5d1828a5b3bb3e24e8769fb0c",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "原文URL、采集时间与显示时间的时区未确认；未联网核查来源或技术事实。",
+          "verification_status": "unverified"
+        },
+        {
+          "description": "全部页已提取文本层；图片内容、代码框长行与表格版面尚未逐页视觉核验。",
+          "verification_status": "pending_visual_review"
+        }
+      ],
+      "size_bytes": 6145622,
+      "page_count": 23
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-12T00:38:05-07:00",
+  "directory": "大淘宝技术/Agent业务效果评测+26.9.17",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Agent业务效果评测.md"
+  },
+  "received_artifacts": [
+    {
+      "artifact_id": "summary-001",
+      "kind": "external_ai_summary",
+      "path": "AI_Agent业务效果评测.md",
+      "original_path": "/Users/iw/Downloads/让Agent可评、可控、可迭代 26·09·17.md",
+      "received_at": "2026-10-12T00:38:05-07:00",
+      "generated_at": null,
+      "model": null,
+      "prompt_version": null,
+      "sha256": "dfe4d7ce24b8b99e8caaa8e072694d5e6b3adff21d52e0007dd4f46abb50dd43",
+      "size_bytes": 35135,
+      "provenance": "用户用其他模型生成并下载的AI总结；原样保存，未重新生成",
+      "verification_status": "identity_matched_content_not_fully_verified",
+      "candidate_wikilinks": [
+        "A/B 实验与归因",
+        "Agent 回归测试",
+        "Bootstrap 与 Stability Selection",
+        "DPO",
+        "LLM-as-Judge",
+        "Pairwise 评测",
+        "Pass@k 与 Pass^k",
+        "Position Bias",
+        "RAG 评测",
+        "Reward Model",
+        "Rubric 评估",
+        "交叉验证",
+        "偏好数据构建",
+        "灰度发布与熔断",
+        "贝叶斯收缩"
+      ],
+      "wikilink_status": "保留原下载文本中的候选知识关联；并不表示目标笔记均已创建"
+    }
+  ],
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0012",
+    "created_at": "2026-10-12T00:38:05-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "bc8a4844c3a2b6901270ed17ea29e82fccb41aa5d1828a5b3bb3e24e8769fb0c"
+      },
+      {
+        "artifact_id": "summary-001",
+        "path": "AI_Agent业务效果评测.md",
+        "sha256": "9586cfd46c3cfdf671abfa79aa2bf88be5ac4c16af2f4ab67df30702d29a7ec5"
+      }
+    ],
+    "method": "本次导入外部AI总结，核对身份，并以PDF文本及收到的总结补充跨文章主题知识。原总结生成过程未知；本次不重写AI总结。",
+    "tools": [
+      "本地文件读取",
+      "pypdf",
+      "pdfplumber",
+      "Python标准库",
+      "pdftoppm（首面渲染并查看）"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages_for_MD_only",
+    "quality_issues": [
+      {
+        "description": "原文URL、采集时间与显示时间的时区未确认；未联网核查来源或技术事实。",
+        "verification_status": "unverified"
+      },
+      {
+        "description": "全部页已提取文本层；图片内容、代码框长行与表格版面尚未逐页视觉核验。",
+        "verification_status": "pending_visual_review"
+      },
+      {
+        "description": "外部AI总结的生成模型、提示词、原始输入版本与生成时间未知；其校对报告及图中解读属于外部总结的自述，不能直接视为本次核验结论。",
+        "verification_status": "external_summary_not_fully_verified"
+      },
+      {
+        "description": "下载总结含图中无法辨认、原文疑点或推断说明；原样保留。",
+        "verification_status": "reported_by_external_summary",
+        "report_path": "AI_Agent业务效果评测.md",
+        "reported_markers_count": 16
+      }
+    ],
+    "outputs": [
+      "AI_Agent业务效果评测.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "generated_summary": {
+      "path": "AI_Agent业务效果评测.md",
+      "sha256": "dfe4d7ce24b8b99e8caaa8e072694d5e6b3adff21d52e0007dd4f46abb50dd43"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-12T00:38:05-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "bc8a4844c3a2b6901270ed17ea29e82fccb41aa5d1828a5b3bb3e24e8769fb0c"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "314d2a016ff0cdf69fd6c15882cc855d3025d078263c50c7832902d94528633c"
+    },
+    "extractor": "pdfplumber 0.11.9; Page.extract_text",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "text_layer_extracted_layout_not_fully_verified",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 14,
+        "md_end_line": 29,
+        "text_layer_sha256": "f20319b863e141a33bc1c9093b6d5f9646d6575ceba679e2605e049065544314",
+        "text_layer_char_count": 544,
+        "image_objects": 3,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 2,
+        "md_start_line": 39,
+        "md_end_line": 66,
+        "text_layer_sha256": "2fda10092e5fe2dff6945eaad5f456abdaf02373bf612e8ad559361a499ab34d",
+        "text_layer_char_count": 1030,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 3,
+        "md_start_line": 76,
+        "md_end_line": 90,
+        "text_layer_sha256": "989ac4b1311a4779cb192c10fa97b7ab4970e614e4e9b29359e7b3a230b77ed4",
+        "text_layer_char_count": 501,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 4,
+        "md_start_line": 100,
+        "md_end_line": 112,
+        "text_layer_sha256": "f2090189bad26cfaaf701498ab0c21a057d9186a4b9f6545197e0679ee0a0e65",
+        "text_layer_char_count": 411,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 5,
+        "md_start_line": 122,
+        "md_end_line": 146,
+        "text_layer_sha256": "1eca9e7364fa3f87df2a1f49a2cfa38e04f028c6ae4c503a2fb369ee779f02d7",
+        "text_layer_char_count": 944,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 6,
+        "md_start_line": 156,
+        "md_end_line": 178,
+        "text_layer_sha256": "23029ff8ed7f2b1148bc045184f1626fe0abc5feb6815980213f5cf556445bb2",
+        "text_layer_char_count": 781,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 7,
+        "md_start_line": 188,
+        "md_end_line": 211,
+        "text_layer_sha256": "ede391fa9935131587d20c4901d1406c3f90bef4d0eb1db81a653afc8ab96f48",
+        "text_layer_char_count": 876,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 8,
+        "md_start_line": 221,
+        "md_end_line": 251,
+        "text_layer_sha256": "55a59d230ee8eb11c7fce2c3caa019bad5eaa977546cc7bd0efda7b17c0dc8a8",
+        "text_layer_char_count": 1139,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 9,
+        "md_start_line": 261,
+        "md_end_line": 283,
+        "text_layer_sha256": "56d967cf04c2ac32a4cbb5df86c10d6ff1968f52f361b18ff688b2da280da3c2",
+        "text_layer_char_count": 914,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 10,
+        "md_start_line": 293,
+        "md_end_line": 317,
+        "text_layer_sha256": "1d3385769f8fb08ed24e77d5131aee3d79f1f019f7d9540ee8c984bc1cd56c21",
+        "text_layer_char_count": 971,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 11,
+        "md_start_line": 327,
+        "md_end_line": 350,
+        "text_layer_sha256": "88cfe5bade6865cc15477f08464385a3a445f80f45ebcbda7ea1174bec5ea325",
+        "text_layer_char_count": 977,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 12,
+        "md_start_line": 360,
+        "md_end_line": 380,
+        "text_layer_sha256": "0b5724c3a3ee1a34f4509940debca6214ab8ec988e70e543963b6e26be9ba254",
+        "text_layer_char_count": 538,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 13,
+        "md_start_line": 390,
+        "md_end_line": 411,
+        "text_layer_sha256": "a8f7be700cfd46cb50279b8c4f4a20806bc7e35ed523b97f0543be991746c78f",
+        "text_layer_char_count": 781,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 14,
+        "md_start_line": 421,
+        "md_end_line": 447,
+        "text_layer_sha256": "e56074fb913d4585ce6d88c5f94b44c12ae900d4a4d48718b2780feb072ba0f7",
+        "text_layer_char_count": 896,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 15,
+        "md_start_line": 457,
+        "md_end_line": 484,
+        "text_layer_sha256": "31ce075b0352999d33a8c1e10bef7888bc40690aadce1f51947efd8fdb4eecfc",
+        "text_layer_char_count": 878,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 16,
+        "md_start_line": 494,
+        "md_end_line": 519,
+        "text_layer_sha256": "b78feca4e2eb7d8aaa0eafb941c6700ecbf6175c37d952e5d3e5532cc64a5d6e",
+        "text_layer_char_count": 779,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 17,
+        "md_start_line": 529,
+        "md_end_line": 551,
+        "text_layer_sha256": "fc4a36170e2950d7f1ef8c8ea502639359deb3e3a35ce0c709c3e3b7c26f8ccd",
+        "text_layer_char_count": 613,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 18,
+        "md_start_line": 561,
+        "md_end_line": 587,
+        "text_layer_sha256": "b8cda5c59a9043ecce74b12292d4a53fab248022d1a182e56562fd6812450383",
+        "text_layer_char_count": 871,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 19,
+        "md_start_line": 597,
+        "md_end_line": 611,
+        "text_layer_sha256": "2b23a36146a6eef268b0b1ebc76f2bdce7974364a473b0e863ddf783205b157e",
+        "text_layer_char_count": 384,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 20,
+        "md_start_line": 621,
+        "md_end_line": 654,
+        "text_layer_sha256": "d107e50ff67153a92a6b5ce77ff73411f75a32e8ac70ad1ce28c74a228ef213b",
+        "text_layer_char_count": 904,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 21,
+        "md_start_line": 664,
+        "md_end_line": 692,
+        "text_layer_sha256": "c7b6e05b31145de7cb3b399703a5f65883b05f2c307c3be8a529d825b0806223",
+        "text_layer_char_count": 994,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 22,
+        "md_start_line": 702,
+        "md_end_line": 724,
+        "text_layer_sha256": "98d3ce47c74b23540168747abb9986172709d6fb915120d87ad64a5021d1fbca",
+        "text_layer_char_count": 568,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 23,
+        "md_start_line": 734,
+        "md_end_line": 734,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_extracted": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "identity_text_pages_reviewed": [
+        1,
+        22
+      ],
+      "visual_pages_reviewed": [
+        1
+      ],
+      "detail_text_pages_reviewed": [
+        6,
+        17
+      ]
+    }
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent评测与反馈.md",
+      "../../20_topics/Prompt优化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充主题知识；不改变本人记录或自动加入工具库",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed_sources_removed",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/让Agent可评、可控、可迭代：业务效果导向的评测体系与场景实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "bc8a4844c3a2b6901270ed17ea29e82fccb41aa5d1828a5b3bb3e24e8769fb0c",
+        "removed_at": "2026-10-12T00:44:57-07:00"
+      },
+      {
+        "original_path": "/Users/iw/Downloads/让Agent可评、可控、可迭代 26·09·17.md",
+        "destination_path": "AI_Agent业务效果评测.md",
+        "sha256": "9586cfd46c3cfdf671abfa79aa2bf88be5ac4c16af2f4ab67df30702d29a7ec5",
+        "removed_at": "2026-10-12T00:44:57-07:00"
+      }
+    ],
+    "copied_at": "2026-10-12T00:38:05-07:00",
+    "removed_at": "2026-10-12T00:44:57-07:00"
+  },
+  "ai_note": "AI_Agent业务效果评测.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

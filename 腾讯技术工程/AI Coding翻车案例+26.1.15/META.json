@@ -1,0 +1,395 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0118",
+  "title": "鹅厂员工都用 AI Coding 捅过多少篓子?",
+  "short_title": "AI Coding翻车案例",
+  "account": "腾讯技术工程",
+  "author": "爱讨论的 Jan",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-01-15T01:51",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260115_Tencent_AI_Coding_Pitfalls.pdf",
+      "original_filename": "20260115_Tencent_AI_Coding_Pitfalls.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "7bbc016b32bb6482c35c57f9c009d9a3884af796ac126f9de08cb3283a38a947",
+      "size_bytes": 17649808,
+      "page_count": 12,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [],
+      "publication_evidence": "PDF p.1: 爱讨论的 Jan, Jan 15, 2026, 1:51 AM; 腾讯技术工程; no timezone stated."
+    }
+  ],
+  "tags": [
+    "解决问题",
+    "Agent评测与反馈",
+    "AI研发协同"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/AI Coding翻车案例+26.1.15",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI Coding翻车案例.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "鹅厂员工都用 AI  Coding 捅过多少篓子?\n爱讨论的 Jan  15 , 2026 , 1 : 51  AM广东腾讯技术工程 58  listened\n话题背景\n当 AI 帮你敲下那一行行“完美”代码时,有些悄悄埋下的坑是否让你倒吸凉气!\n今天,我们盘点那些 AI  Coding 令人扶额的翻⻋现场,以及一些防坑指南,让你在 AI 编程时\n代,少走弯路,多些从容。\n以下为 10 位鹅厂同事们分享的 “AI Coding 捅过的篓子和防坑技巧 ” ,欢迎大家在评论区也畅所欲\n言(文末有礼)\n鹅厂工程师的代码分享\n01\n stan- 后台开发  \n一定要用好的模型!不然就是在浪费时间\n02\n june- 后台开发  \n",
+    "publication_evidence": "PDF p.1: 爱讨论的 Jan, Jan 15, 2026, 1:51 AM; 腾讯技术工程; no timezone stated.",
+    "full_title_in_capture": "鹅厂员工都用 AI Coding 捅过多少篓子?",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0118",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "7bbc016b32bb6482c35c57f9c009d9a3884af796ac126f9de08cb3283a38a947"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [],
+    "outputs": [
+      "AI_AI Coding翻车案例.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "coverage": "Read all 12 text pages and reviewed all 12 thumbnails. Magnified the interview cards on pages 2–6. Covered the ten employee accounts and selected reader comments; did not reproduce all comments or promotional material.",
+    "fact_checks": [
+      {
+        "item": "案例分享人数",
+        "note_value": "十位同事的案例汇编",
+        "source_value": "10位同事",
+        "pages": [
+          1
+        ],
+        "result": "一致。"
+      },
+      {
+        "item": "回滚与任务分阶段",
+        "note_value": "修改前留恢复点，任务拆小并Review",
+        "source_value": "多位受访者建议commit/分支，拆小后review",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "result": "一致；为经验汇总，不是统一规范。"
+      },
+      {
+        "item": "测试与验收边界",
+        "note_value": "编译/测试/运行环境/业务行为需分层核对",
+        "source_value": "真实E2E与API行为不能由Mock输出替代",
+        "pages": [
+          3,
+          6
+        ],
+        "result": "一致。"
+      },
+      {
+        "item": "金额识别例",
+        "note_value": "仅概括为模型可能把金额四舍五入，未写入具体数值",
+        "source_value": "537.98元被识别为538元",
+        "pages": [
+          9
+        ],
+        "result": "方向相符；原文具体数值未收入笔记。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_AI Coding翻车案例.md",
+      "sha256": "694247bab0cd53d0b4e8d608dda9aaedb25d024db91e900231d349d698e3fa15"
+    },
+    "independent_crosscheck": {
+      "reviewer": "wechat_group1",
+      "note_sha256": "dfec5937330d1505c1dc1328bed6a97baec320ff188280908f8adff6bdddc79c",
+      "review_sha256": "80e4428136a22a547ca51e243aba56a2f21a227bc9639100ea5b7b170709a2d7",
+      "status": "passed",
+      "changes": [
+        "Corrected review fact-check rows to reflect note content: removed the unmentioned explicit TDD boundary, and recorded the 537.98→538 source value as an example summarized but not transcribed in the note."
+      ],
+      "source_spotchecks": [
+        {
+          "pages": [
+            1,
+            2
+          ],
+          "check": "Byline/date, ten contributors, and advice to define scope, blacklist dangerous commands, and preserve commits match source."
+        },
+        {
+          "pages": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "check": "Magnified interview cards confirm TDD boundary, staged review, rollback advice, looping/compilation anecdotes, and actual API-versus-test-path warning; note summarizes the major mechanisms without executing examples."
+        },
+        {
+          "pages": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "check": "All comment thumbnails were inspected; comments are characterized as individual reader accounts, not controlled evidence. The concrete rounding example is source-only and not claimed as note text."
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "7bbc016b32bb6482c35c57f9c009d9a3884af796ac126f9de08cb3283a38a947"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "41a3353cd36e97cfef0ae20f69a112f1299b8fbd19c70d9e91e4335becdc094d"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 23,
+        "text_layer_sha256": "ceac9783b68b9652c43a9451a62fbb68f44733d8b54fa2a9a3d9f572c4d174cb",
+        "text_layer_char_count": 315
+      },
+      {
+        "page": 2,
+        "md_start_line": 31,
+        "md_end_line": 37,
+        "text_layer_sha256": "fb128a557c88aa3d49260d5d0f997f272327f486f673a4372dbc5afe4f30a68a",
+        "text_layer_char_count": 163
+      },
+      {
+        "page": 3,
+        "md_start_line": 45,
+        "md_end_line": 59,
+        "text_layer_sha256": "1103df4671251b0efce0b1bcd635ed81b222395dcb33c06c493c256fb2d4a2e6",
+        "text_layer_char_count": 342
+      },
+      {
+        "page": 4,
+        "md_start_line": 67,
+        "md_end_line": 81,
+        "text_layer_sha256": "3d640a08510fc4092251a7531aec896ef95ad4b45415fe9670b29f0a9a7e2b4a",
+        "text_layer_char_count": 343
+      },
+      {
+        "page": 5,
+        "md_start_line": 89,
+        "md_end_line": 102,
+        "text_layer_sha256": "8b03cdcd2153960e5b028861978e131c425964dfcd8fb5d3a3e8cc844accede8",
+        "text_layer_char_count": 311
+      },
+      {
+        "page": 6,
+        "md_start_line": 110,
+        "md_end_line": 122,
+        "text_layer_sha256": "0d7474c2a9a1ff4186db17dfaee5c1b49f667f641d16bd1b588247f11d0f01c4",
+        "text_layer_char_count": 315
+      },
+      {
+        "page": 7,
+        "md_start_line": 130,
+        "md_end_line": 132,
+        "text_layer_sha256": "49a92cd9e2250e39f7c22628d6c021c2b4ea948d70fcf3ebbb251a88df2c6928",
+        "text_layer_char_count": 44
+      },
+      {
+        "page": 8,
+        "md_start_line": 140,
+        "md_end_line": 173,
+        "text_layer_sha256": "115020e07f679dcb1bc5c1e950047b00e8bfa878bf4b04bb52af977022226043",
+        "text_layer_char_count": 611
+      },
+      {
+        "page": 9,
+        "md_start_line": 181,
+        "md_end_line": 226,
+        "text_layer_sha256": "cccfef2aa351de964c781e86e6d61009a4f63dda429ba10ba7c01a82f43e03b9",
+        "text_layer_char_count": 818
+      },
+      {
+        "page": 10,
+        "md_start_line": 234,
+        "md_end_line": 276,
+        "text_layer_sha256": "2747c7e8b58f6d5c78336b418ed348ca14fd73fa191b9f46dcef112d82f929a6",
+        "text_layer_char_count": 820
+      },
+      {
+        "page": 11,
+        "md_start_line": 284,
+        "md_end_line": 327,
+        "text_layer_sha256": "33856a7395a2a154d4907851e3cd0e20bc2a1cbf9e0c11b4d5754819f6d8e31f",
+        "text_layer_char_count": 653
+      },
+      {
+        "page": 12,
+        "md_start_line": 335,
+        "md_end_line": 347,
+        "text_layer_sha256": "574c2c4e06c8870e87c64643873f4db177a816857aa8307d1bdbbc7791903faf",
+        "text_layer_char_count": 286
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "quality_issues": []
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260115_Tencent_AI_Coding_Pitfalls.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "7bbc016b32bb6482c35c57f9c009d9a3884af796ac126f9de08cb3283a38a947",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md",
+      "../../20_topics/解决问题.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_AI Coding翻车案例.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

@@ -1,0 +1,520 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0023",
+  "title": "AI 创新实践｜「架构师 Agent」系统化落地",
+  "short_title": "架构师Agent系统化落地",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "刘瑞洲",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-27T03:06",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "page": 1,
+    "text": [
+      "AI 创新实践｜「架构师 Agent」系统化落地",
+      "原创 刘瑞洲 阿⾥技术 Aug 27, 2026, 3:06 AM 浙江 33 listened",
+      "这是2026年的第 55 篇⽂章",
+      "（ 本⽂阅读时间：约 20 分钟 ）",
+      "前⾔"
+    ]
+  },
+  "tags": [
+    "AI研发协同",
+    "Harness与模型协同",
+    "决策知识结构化",
+    "问题澄清"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/AI 创新实践｜「架构师 Agent」系统化落地.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:32:40-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "3f26011f0ab68a03d595e79b51a804f44d6c3ef0232b1f3dff52e3372d038d3a",
+      "size_bytes": 9865125,
+      "page_count": 23,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.21参考资料列表未见正文引用的[8]条目；不补齐该引用。",
+          "pages": [
+            18,
+            21
+          ],
+          "evidence_type": "text_and_image",
+          "classification": "source_inconsistency"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:32:40-07:00",
+  "directory": "阿里技术/架构师Agent系统化落地+26.8.27",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_架构师Agent系统化落地.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0023",
+    "created_at": "2026-10-13T02:32:40-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "3f26011f0ab68a03d595e79b51a804f44d6c3ef0232b1f3dff52e3372d038d3a"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.21参考资料列表未见正文引用的[8]条目；不补齐该引用。",
+        "pages": [
+          18,
+          21
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "source_inconsistency"
+      }
+    ],
+    "outputs": [
+      "AI_架构师Agent系统化落地.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [
+      {
+        "name": "business-knowledge-distill / service-knowledge-generate / prd-digest",
+        "pages": [
+          8,
+          11,
+          13,
+          14
+        ],
+        "completeness": "仅功能与目录/流程说明，未提供完整Skill定义或依赖；不生成可安装Skill"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "detail_pages_reviewed": [
+        1,
+        6,
+        13,
+        17,
+        19
+      ]
+    },
+    "coverage": [
+      {
+        "name": "存量系统知识困难",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "知识库建设与维护",
+        "pages": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "技术方案Agent",
+        "pages": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "name": "多场景复用与展望",
+        "pages": [
+          20,
+          21
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_架构师Agent系统化落地.md",
+      "sha256": "d72e5a8779aef64f5f5de68b727be6e71a63123ec32f2de0c11fedc0983599fe"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:32:40-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "3f26011f0ab68a03d595e79b51a804f44d6c3ef0232b1f3dff52e3372d038d3a"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "4b80db784d106cbc99ddc01d5baadf97f7039fa3856cc68ac49badeefb6a5e08"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 32,
+        "text_layer_sha256": "07c88e0f5ac7ce864934d97d47b63f19729cfa5ccfe556e56681b83edc9b5d81",
+        "text_layer_char_count": 701
+      },
+      {
+        "page": 2,
+        "md_start_line": 40,
+        "md_end_line": 62,
+        "text_layer_sha256": "f4f374b12e5dec8f7fd146bdd4e3f7273f177a7031d0750023b07ad03216a99e",
+        "text_layer_char_count": 795
+      },
+      {
+        "page": 3,
+        "md_start_line": 70,
+        "md_end_line": 93,
+        "text_layer_sha256": "d6e4a122d661f30c25386f2825de4135d96ea23b865d05577f026dc5ea391be9",
+        "text_layer_char_count": 871
+      },
+      {
+        "page": 4,
+        "md_start_line": 101,
+        "md_end_line": 122,
+        "text_layer_sha256": "6cd55256dc911140357598ed346757ab7abb89cc7747a90d4b380ead424d001c",
+        "text_layer_char_count": 781
+      },
+      {
+        "page": 5,
+        "md_start_line": 130,
+        "md_end_line": 153,
+        "text_layer_sha256": "25100d164a7e5c7feed83372a07fae64ce72d4af3c6a243aa02ef2c35855fc4f",
+        "text_layer_char_count": 911
+      },
+      {
+        "page": 6,
+        "md_start_line": 161,
+        "md_end_line": 185,
+        "text_layer_sha256": "8c6c85b48af6e3d03e623f561c545c01229d0e1dba76eabb8b0ed7db5fd75273",
+        "text_layer_char_count": 792
+      },
+      {
+        "page": 7,
+        "md_start_line": 193,
+        "md_end_line": 224,
+        "text_layer_sha256": "dbce53010a1231eb3ccaf57395ad9b9397f16423d629b2c200ac5fc38ff2f31b",
+        "text_layer_char_count": 1069
+      },
+      {
+        "page": 8,
+        "md_start_line": 232,
+        "md_end_line": 271,
+        "text_layer_sha256": "bca362e4405084113b97bea5a425592d770498b5a64ed4e3a5d1c452cc703201",
+        "text_layer_char_count": 995
+      },
+      {
+        "page": 9,
+        "md_start_line": 279,
+        "md_end_line": 321,
+        "text_layer_sha256": "ef4072b3fe03c7fe2eb95cc60fa81bbff92a1886d258aa57ed78c011372b7bf2",
+        "text_layer_char_count": 1078
+      },
+      {
+        "page": 10,
+        "md_start_line": 329,
+        "md_end_line": 361,
+        "text_layer_sha256": "80c764770271c166678fd5735b8897bf5b6101281a2a5a114914850289ea6ad0",
+        "text_layer_char_count": 1225
+      },
+      {
+        "page": 11,
+        "md_start_line": 369,
+        "md_end_line": 406,
+        "text_layer_sha256": "2cb729959bcf1dbe1e24928ae4e66e45ac9aab86f5d24ffe663f1db5b6275b92",
+        "text_layer_char_count": 1424
+      },
+      {
+        "page": 12,
+        "md_start_line": 414,
+        "md_end_line": 441,
+        "text_layer_sha256": "a26f2fc2bc298c7541abe1e4d41b27b6ed5db518ee4f34380ebfa5b12bdc4194",
+        "text_layer_char_count": 650
+      },
+      {
+        "page": 13,
+        "md_start_line": 449,
+        "md_end_line": 474,
+        "text_layer_sha256": "2256f22438e77b8b07f7a1967627f4c5104ee2f3a14227a000fb331ac5a62908",
+        "text_layer_char_count": 936
+      },
+      {
+        "page": 14,
+        "md_start_line": 482,
+        "md_end_line": 514,
+        "text_layer_sha256": "a8d63a350b173a0e969c648ec0628ec2ef5cca61ac1d21ac75be6aa235e00452",
+        "text_layer_char_count": 1042
+      },
+      {
+        "page": 15,
+        "md_start_line": 522,
+        "md_end_line": 550,
+        "text_layer_sha256": "4fccb88347bef7baa6a1d696bc9379dfd09fdc69010f2725c98510bddc456ea6",
+        "text_layer_char_count": 1056
+      },
+      {
+        "page": 16,
+        "md_start_line": 558,
+        "md_end_line": 591,
+        "text_layer_sha256": "ee5e2d236a87f33a9f4852d4929989558104be0f89dd141f4aba7212f40b686a",
+        "text_layer_char_count": 1116
+      },
+      {
+        "page": 17,
+        "md_start_line": 599,
+        "md_end_line": 623,
+        "text_layer_sha256": "d62cf43a6c12f4c1d95941fb9b504125692748c5d93372585e2a392076c93a0c",
+        "text_layer_char_count": 504
+      },
+      {
+        "page": 18,
+        "md_start_line": 631,
+        "md_end_line": 658,
+        "text_layer_sha256": "7af164de6894b88042c05965bb357e3cd69569ab81448070f1fe88bf243e7d6d",
+        "text_layer_char_count": 1014
+      },
+      {
+        "page": 19,
+        "md_start_line": 666,
+        "md_end_line": 687,
+        "text_layer_sha256": "bd95c6bd57086fc593e2376a3eeced3cf6634d57e88f8cae15ca5c05a4a28644",
+        "text_layer_char_count": 681
+      },
+      {
+        "page": 20,
+        "md_start_line": 695,
+        "md_end_line": 725,
+        "text_layer_sha256": "2c470dcaf3e129248937aa27960d5c9332083f388dad50cdd203fcce62a8359c",
+        "text_layer_char_count": 1007
+      },
+      {
+        "page": 21,
+        "md_start_line": 733,
+        "md_end_line": 755,
+        "text_layer_sha256": "d97ccc9069865ce22398c9b9771e68b725c5e89b56b15d04e93de4242cbd961c",
+        "text_layer_char_count": 942
+      },
+      {
+        "page": 22,
+        "md_start_line": 763,
+        "md_end_line": 770,
+        "text_layer_sha256": "81a98be5c96e9030f312b7917d1ae5a226cacfac112d6419fec86becbc9adc2f",
+        "text_layer_char_count": 131
+      },
+      {
+        "page": 23,
+        "md_start_line": 778,
+        "md_end_line": 783,
+        "text_layer_sha256": "66b1677a2997fb0b8a2257f8f6a8b7b0e1f34d20b213679c596eec8f98d1f39f",
+        "text_layer_char_count": 84
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "detail_pages_reviewed": [
+        1,
+        6,
+        13,
+        17,
+        19
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.21参考资料列表未见正文引用的[8]条目；不补齐该引用。",
+        "pages": [
+          18,
+          21
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "source_inconsistency"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md",
+      "../../20_topics/问题澄清.md"
+    ],
+    "proposed_topics": [
+      "AI研发协同",
+      "决策知识结构化",
+      "Harness与模型协同"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:32:40-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/AI 创新实践｜「架构师 Agent」系统化落地.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "3f26011f0ab68a03d595e79b51a804f44d6c3ef0232b1f3dff52e3372d038d3a",
+        "copied_at": "2026-10-13T02:32:40-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  },
+  "publication_time_evidence": "Aug 27, 2026, 3:06 AM"
+}

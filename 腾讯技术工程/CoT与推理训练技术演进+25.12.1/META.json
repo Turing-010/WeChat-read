@@ -1,0 +1,133 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0309",
+  "title": "从CoT到AGI：深扒大模型LLM“深度思考”的技术演进",
+  "short_title": "CoT与推理训练技术演进",
+  "account": "腾讯技术工程",
+  "author": "chrisccai",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-12-01T01:53",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "从CoT到 AGI：深扒⼤ 模型   LLM“深度思考”的 技术演进\n\n\n原创 腾讯程序员 腾讯技术⼯程  2025年12⽉1⽇   01:53⼴东449⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n作者： chrisccai\n\n\n\n  如今我们已经习惯了⼤模型处理复杂问题时，先进⾏深度思考再给出精⼼编排条理清晰的\n  答案、惊叹于Agent在处理复杂任务时经过规划、执⾏、观察、反思的⼀系列处理复杂任\n  务的通⽤能⼒。 但我们是否思考过，这样的能⼒从何⽽来？它是否意味着机器真的能思\n  考？AGI是否会在这样的范式中实现？ 注：深度思考、Deep Research、泛Agent通⽤能\n  ⼒，本质上是类似的，为⽅便理解，本⽂统称为    “深度思考”。\n\n\n 1. 机器思考\n\n机器会思考吗\n\n在了解模型如何进⾏深度思考之前，我们需要明确的是，机器或者说模型，是否已经具备了思\n考的能⼒？\n\n有的朋友会说，模型压根不会思考，它的所有输出，都是⼀种对海量语料的“鹦鹉学⾆”、或者\n是⼀种⾼级的“模式识别",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "大模型基础与推理优化",
+    "Agent长期记忆",
+    "AI评测与可观测性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/从CoT到AGI：深扒大模型LLM“深度思考”的技术演进.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:09:37-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "5211549aa6e9b8a2b35a4e2f1dc44500bc4887e04c28231931f58bf933cbed58",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "把因果掩码等同因果推理、规模是思考必要条件、任何base模型CoT均提升等为作者推断/过强概括。",
+        "p10 PPO ratio文字把旧策略与参考模型混用，KL与clip职责需论文核查；DPO不是简单SFT退化或SVM核变换。",
+        "GRPO奖励不必是额外神经奖励模型；固定3/4完整模型和30—40%显存降幅依实现，不能泛化。",
+        "全文许多公式文本层缺符号，只看页图1、10、13、20；不补造公式、不将AGI类比当机制证据。"
+      ],
+      "size_bytes": 10056223,
+      "page_count": 23
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:09:37-07:00",
+  "directory": "腾讯技术工程/CoT与推理训练技术演进+25.12.1",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:09:37-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "5211549aa6e9b8a2b35a4e2f1dc44500bc4887e04c28231931f58bf933cbed58",
+    "output_path": "MD.md",
+    "output_sha256": "86e83364312ebef31a3c56d36c3615659af4c8ca5c399aafd895dcfdbbe74475",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 23,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "visual_pages": [
+        1,
+        10,
+        13,
+        20
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "把因果掩码等同因果推理、规模是思考必要条件、任何base模型CoT均提升等为作者推断/过强概括。",
+      "p10 PPO ratio文字把旧策略与参考模型混用，KL与clip职责需论文核查；DPO不是简单SFT退化或SVM核变换。",
+      "GRPO奖励不必是额外神经奖励模型；固定3/4完整模型和30—40%显存降幅依实现，不能泛化。",
+      "全文许多公式文本层缺符号，只看页图1、10、13、20；不补造公式、不将AGI类比当机制证据。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/从CoT到AGI：深扒大模型LLM“深度思考”的技术演进.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/CoT与推理训练技术演进+25.12.1/RAW.pdf",
+    "sha256": "5211549aa6e9b8a2b35a4e2f1dc44500bc4887e04c28231931f58bf933cbed58",
+    "copied_at": "2026-10-23T06:09:37-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

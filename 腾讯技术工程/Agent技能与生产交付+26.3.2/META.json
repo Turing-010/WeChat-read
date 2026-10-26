@@ -1,0 +1,522 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0057",
+  "title": "AI编程的下半场来了？学会用Agent Skill解决编程的痛点问题",
+  "short_title": "Agent技能与生产交付",
+  "account": "腾讯技术工程",
+  "author": "bookerzhao",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-03-02T01:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0302 AI编程下半场AgentSkill解决痛点.pdf",
+      "original_filename": "0302 AI编程下半场AgentSkill解决痛点.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "dbe0705e479adcc412795e8098a861ee76b6cf7fc0b3f4e83839020f4a8dd04f",
+      "size_bytes": 13590303,
+      "page_count": 23,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "⚠️[原文疑点] 流式示例循环写作forawait，保留接口关系而未静默修复为完整可运行示例",
+          "pages": [
+            11
+          ],
+          "status": "unresolved"
+        },
+        {
+          "description": "激活率84%为外部实测引用；注意力与决策惰性解释、搜索空间90%缺少本文可复核实验细节",
+          "pages": [
+            18,
+            19
+          ],
+          "status": "attributed"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区"
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "AI研发协同",
+    "Skill设计与治理"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Agent技能与生产交付+26.3.2",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Agent技能与生产交付.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "AI 编程的下半场来了?学会用 Agent  Skill 解决编程的痛点问题\n2026 年 3 月 2 日 01 : 36广东腾讯技术工程 164 人\n作者: bookerzhao\n【推荐语】\n最近我们在折腾  Agent Skills ,想把云开发( CloudBase )这些年攒下的经验打包给  AI 。实战\n下来发现,最折磨人的不是  AI 不会写代码,而是它写的代码“ 只能活在本地 ”,以及它“ 总是不\n听规矩 ”。\n这篇文章主要分享两点实操复盘,希望能帮大家少走点弯路:\n1. 让  AI 生成的代码能直接上线:大家可能都遇到过, AI 写的代码  Demo 感十足,但一上线\n就全是安全隐患。我们尝试给  AI 注入底座感知,让它学会用底座原生认证代替脆弱的传\n参,用安全规则代替接口 “ 裸奔 ” ,解决代码 “ 死在本地 ” 的尴尬。\n2. 解决 “AI 有  Skill 却不爱用 ” 的毛病:最让人头疼的是,明明配好了  Skills , AI 却视而不\n见,非要凭直觉盲干。我们会分享如何通过 “ 总纲 + 插件 ” 的结构,配合简单的工程拦截,把\nAI 的技能激活率从  20% 硬拉到  84% 。\n希望能给同样在研究  Skills 和  AI 开发的朋友一点参考,让  AI 交付的代码不再只是 “ 看着挺\n美 ” ,而是真正稳健。\n现状: Vibe Coding 的  \" 本地舒适区 \"\n最近,开发者都在享受  Vibe Coding 的快感。在用户本地的   localhost  一顿操作, UI 漂亮得\n像成品,但魔法往往在 “ 上线 ” 瞬间戛然而止。\n如何把  8 年云端经验装进你的  AI 开发工具,让 AI 从 \" 实习生 \" 变成 \" 持证上岗的专家 \" 。分\n享如何用  Agent Skill 解决  AI Coding 领域的痛点问题,也分享如何解决  AI 不调用  Skill\n等实践技巧。\n",
+    "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区",
+    "full_title_in_capture": "AI编程的下半场来了？学会用Agent Skill解决编程的痛点问题",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0057",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "dbe0705e479adcc412795e8098a861ee76b6cf7fc0b3f4e83839020f4a8dd04f"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "⚠️[原文疑点] 流式示例循环写作forawait，保留接口关系而未静默修复为完整可运行示例",
+        "pages": [
+          11
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "激活率84%为外部实测引用；注意力与决策惰性解释、搜索空间90%缺少本文可复核实验细节",
+        "pages": [
+          18,
+          19
+        ],
+        "status": "attributed"
+      }
+    ],
+    "outputs": [
+      "AI_Agent技能与生产交付.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "detail_pages_reviewed": [
+        11,
+        13,
+        19
+      ]
+    },
+    "coverage": "覆盖渐进加载、认证/权限/AI调用三例、技能分端、MCP分工、三种激活方案及后续规划；省略推广图片与重复宣传，不逐条抄录技能矩阵。",
+    "fact_checks": [
+      {
+        "item": "技能结构",
+        "value": "1个总纲 + 21个独立Skill",
+        "pages": [
+          19
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "无干预调用率",
+        "value": "约20%",
+        "pages": [
+          18
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "Hook引用效果",
+        "value": "20%→84%",
+        "pages": [
+          19
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "认证字段",
+        "value": "cloud.getWXContext() / OPENID",
+        "pages": [
+          10
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "数据规则",
+        "value": "auth.uid == doc._openid",
+        "pages": [
+          10
+        ],
+        "result": "matches_pdf"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Agent技能与生产交付.md",
+      "sha256": "444b20ae98d562bb3fa48ba02fd87b6766684c90e95d3456909a95e6c002650a"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "dbe0705e479adcc412795e8098a861ee76b6cf7fc0b3f4e83839020f4a8dd04f"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "2ae818ea9a3d37b119893c15ef95123bc0f75f39294757bbaf155bede2fc9e14"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 31,
+        "text_layer_sha256": "5edc7305049ee0868f1b1d7c9f1f39130947dfb43f016dfa9e9799aaa7c79694",
+        "text_layer_char_count": 829
+      },
+      {
+        "page": 2,
+        "md_start_line": 39,
+        "md_end_line": 46,
+        "text_layer_sha256": "94f88e5a677b0175cddad183c7f17cd1809bea486fe1c8793efa367be039da80",
+        "text_layer_char_count": 276
+      },
+      {
+        "page": 3,
+        "md_start_line": 54,
+        "md_end_line": 68,
+        "text_layer_sha256": "a1a13fb67cf523ba606e8141de79c77f50ce8608a8e9bbd11eecdd8ff1486116",
+        "text_layer_char_count": 581
+      },
+      {
+        "page": 4,
+        "md_start_line": 76,
+        "md_end_line": 89,
+        "text_layer_sha256": "d8e61b1a43ca51132a1fc219e6a7a0b93f23b436f9375cf43990c94c4181c68b",
+        "text_layer_char_count": 522
+      },
+      {
+        "page": 5,
+        "md_start_line": 97,
+        "md_end_line": 97,
+        "text_layer_sha256": "ae187801bb31f6eb9e981f6506b1341499d0c3bcf641115288f1b06d1a1a9c82",
+        "text_layer_char_count": 49
+      },
+      {
+        "page": 6,
+        "md_start_line": 105,
+        "md_end_line": 105,
+        "text_layer_sha256": "5108b599a601336c971cca238f73e13524254faf2acecc1c8a636ee4ec88cafe",
+        "text_layer_char_count": 65
+      },
+      {
+        "page": 7,
+        "md_start_line": 113,
+        "md_end_line": 115,
+        "text_layer_sha256": "c2bfbcad226c9cb706c0552b964fa10c75debc785ecc5a5c018ee50a34557aa6",
+        "text_layer_char_count": 120
+      },
+      {
+        "page": 8,
+        "md_start_line": 123,
+        "md_end_line": 138,
+        "text_layer_sha256": "cf6ecc08cc5f7576a18a147f336a646f055a70d6aca48e8cf9d3124e3bfc2efe",
+        "text_layer_char_count": 611
+      },
+      {
+        "page": 9,
+        "md_start_line": 146,
+        "md_end_line": 157,
+        "text_layer_sha256": "0fad0d9295112019128198b35ee33625ecc36c912e39f4f5cf275d0945b73dec",
+        "text_layer_char_count": 329
+      },
+      {
+        "page": 10,
+        "md_start_line": 165,
+        "md_end_line": 184,
+        "text_layer_sha256": "60504766d999d975c94d0f9a3b388ff5bb97f68621d55d13a81d09a8a59886f8",
+        "text_layer_char_count": 594
+      },
+      {
+        "page": 11,
+        "md_start_line": 192,
+        "md_end_line": 208,
+        "text_layer_sha256": "51e96619b495556e95d9a2c2dd9a1e15681b523cb08fa7793020658566eb63ca",
+        "text_layer_char_count": 459
+      },
+      {
+        "page": 12,
+        "md_start_line": 216,
+        "md_end_line": 220,
+        "text_layer_sha256": "b117c05031698322039519ddea0439bb56be8e5191b1a083067ebc8eabf390a2",
+        "text_layer_char_count": 172
+      },
+      {
+        "page": 13,
+        "md_start_line": 228,
+        "md_end_line": 244,
+        "text_layer_sha256": "134a76416e9a7ce0122297c0e84816091ec183b05b4c979e8c3afa7175d3ebf2",
+        "text_layer_char_count": 579
+      },
+      {
+        "page": 14,
+        "md_start_line": 252,
+        "md_end_line": 255,
+        "text_layer_sha256": "84509db82a9a8337a61b5957403ba5e3a256c3b96d415dd2686ddc5188cca610",
+        "text_layer_char_count": 184
+      },
+      {
+        "page": 15,
+        "md_start_line": 263,
+        "md_end_line": 279,
+        "text_layer_sha256": "bf51eea6d7a38c48d9e7e9f0800f97fc21faa0dbb5153f7f2fe6fbf3c170123b",
+        "text_layer_char_count": 621
+      },
+      {
+        "page": 16,
+        "md_start_line": 287,
+        "md_end_line": 288,
+        "text_layer_sha256": "76897a0260a1edde57d6f7d830a7785c9db8cecbaeb2ddc06cc082763f56c013",
+        "text_layer_char_count": 55
+      },
+      {
+        "page": 17,
+        "md_start_line": 296,
+        "md_end_line": 297,
+        "text_layer_sha256": "418e9a89c43d5249d5f176a1fe07d34b8cbefd353500fa202d27cd3d83c1f4c8",
+        "text_layer_char_count": 27
+      },
+      {
+        "page": 18,
+        "md_start_line": 305,
+        "md_end_line": 333,
+        "text_layer_sha256": "9d24049e4e9354401530b7ec559e9a6e0f7323808b5f3783aa2e775d69c69351",
+        "text_layer_char_count": 1108
+      },
+      {
+        "page": 19,
+        "md_start_line": 341,
+        "md_end_line": 374,
+        "text_layer_sha256": "ff516f19a44e1f40c8bde529dae063a983a8f6ec69df4b5e3b4244815fc7c0a1",
+        "text_layer_char_count": 1387
+      },
+      {
+        "page": 20,
+        "md_start_line": 382,
+        "md_end_line": 410,
+        "text_layer_sha256": "b62f69435e3229e39d67565b3785ba0aa1f8a37c587e9886d3270f7ef2ef1898",
+        "text_layer_char_count": 898
+      },
+      {
+        "page": 21,
+        "md_start_line": 418,
+        "md_end_line": 451,
+        "text_layer_sha256": "6690c7ef9c3ea50812a797a4447180af4767b730f9da1c4113237bb7fa84ac6e",
+        "text_layer_char_count": 1475
+      },
+      {
+        "page": 22,
+        "md_start_line": 459,
+        "md_end_line": 468,
+        "text_layer_sha256": "de18cda9949a270c229bff2512c3b568d08fee3fadc99c93bbd22d18573a4696",
+        "text_layer_char_count": 237
+      },
+      {
+        "page": 23,
+        "md_start_line": 476,
+        "md_end_line": 475,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "detail_pages_reviewed": [
+        11,
+        13,
+        19
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "⚠️[原文疑点] 流式示例循环写作forawait，保留接口关系而未静默修复为完整可运行示例",
+        "pages": [
+          11
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "激活率84%为外部实测引用；注意力与决策惰性解释、搜索空间90%缺少本文可复核实验细节",
+        "pages": [
+          18,
+          19
+        ],
+        "status": "attributed"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:24-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0302 AI编程下半场AgentSkill解决痛点.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "dbe0705e479adcc412795e8098a861ee76b6cf7fc0b3f4e83839020f4a8dd04f",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:24-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Skill设计与治理.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Agent技能与生产交付.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

@@ -1,0 +1,132 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0294",
+  "title": "Claude Code 深度拆解：一个顶级AI编程工具的核心架构",
+  "short_title": "ClaudeCode架构拆解",
+  "account": "大淘宝技术",
+  "author": "茂道",
+  "author_byline": "茂道",
+  "source_url": null,
+  "published_at": "2025-09-22T01:47",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "Claude Code 深度拆解：⼀ 个 顶级      AI编程⼯具的 核⼼架构\n\n茂道 ⼤淘宝技术   2025年9⽉22⽇ 01:47浙江  32⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n  ⽂章深度拆解了Anthropic开发的终端AI编程⼯具Clau de Code，包括其以交互层、执\n  ⾏层、核⼼引擎为核⼼的系统架构，提交命令到渲染结果的执⾏流程，以及交互层的输\n  ⼊处理与渲染、核⼼引擎的消息与查询管理、⼯具系统、上下⽂管理（含LRU 缓存等策\n  略）和安全机制，还分享了Binary Feedback测试机制、M  CP⼯具分层管理等技术启\n  发；同时介绍了⼼流团队基于Gemini CLI改造、融合Clau de Code特性的iFlow CLI\n  2.0，包括其安装⽅式、功能特点（如多运⾏模式、Su bAgent功能等）、开放市场资\n  源，以及CLI⼯具在项⽬开发、⽹站制作、D eepResearch等场景的应⽤，还给出了⻄欧\n  亲⼦⾃驾游规划案例。\n\n\n\n\n\n\n    ",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "Agent架构",
+    "上下文工程",
+    "Harness与模型协同"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Claude Code 深度拆解：一个顶级AI编程工具的核心架构.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T05:53:20-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "bc00f427f171fa002ec32fecf99f71f820873d00642552b730d4ab7895a2cb79",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "正文多处称ClaudeX，代码来源、确切提交和与官方Claude Code的对应关系未核验；架构解释记为作者分析。",
+        "Binary Feedback中把两次不同输出解释为犹豫属于作者推断，不是概率或正确性证明。",
+        "多页代码右侧在PDF中裁切；p18—19长Prompt也有裁切，不可当完整可运行代码。",
+        "未核查2025年功能、配置文件名称和产品版本当前性；页图检查限1、2、3、7。"
+      ],
+      "size_bytes": 5674452,
+      "page_count": 21
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T05:53:20-07:00",
+  "directory": "大淘宝技术/ClaudeCode架构拆解+25.9.22",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T05:53:20-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "bc00f427f171fa002ec32fecf99f71f820873d00642552b730d4ab7895a2cb79",
+    "output_path": "MD.md",
+    "output_sha256": "39164659cfc91e32c36a1c2845deb673abedd79aa37638d95c5740e1b5387ac7",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 21,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "visual_pages": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "正文多处称ClaudeX，代码来源、确切提交和与官方Claude Code的对应关系未核验；架构解释记为作者分析。",
+      "Binary Feedback中把两次不同输出解释为犹豫属于作者推断，不是概率或正确性证明。",
+      "多页代码右侧在PDF中裁切；p18—19长Prompt也有裁切，不可当完整可运行代码。",
+      "未核查2025年功能、配置文件名称和产品版本当前性；页图检查限1、2、3、7。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Claude Code 深度拆解：一个顶级AI编程工具的核心架构.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/大淘宝技术/ClaudeCode架构拆解+25.9.22/RAW.pdf",
+    "sha256": "bc00f427f171fa002ec32fecf99f71f820873d00642552b730d4ab7895a2cb79",
+    "copied_at": "2026-10-23T05:53:20-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent成本与上下文预算.md",
+      "../../20_topics/Harness与模型协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

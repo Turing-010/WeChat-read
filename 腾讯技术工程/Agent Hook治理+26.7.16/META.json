@@ -1,0 +1,529 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0138",
+  "title": "Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆",
+  "short_title": "Agent Hook治理",
+  "account": "腾讯技术工程",
+  "author": "xiangnzhang",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-07-16T02:52",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆.pdf",
+      "original_filename": "Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "5c28c1d09baf4bf3c76ad4dfd34c5fac92ec3a86c866486707e0b7b8bb6402ad",
+      "size_bytes": 8271091,
+      "page_count": 22,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.21 评论区提出“已知防已知”局限；作为读者评论而非正文论据，笔记只记录为待验证的治理边界。",
+          "pages": [
+            21
+          ],
+          "status": "reviewed_comment"
+        }
+      ],
+      "publication_evidence": "PDF p.1 页眉 Jul 16, 2026, 2:52 AM；未标时区。"
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "Agent成本与上下文预算",
+    "Agent数据分析",
+    "Agent安全与权限",
+    "Skill设计与治理"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Agent Hook治理+26.7.16",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Agent Hook治理.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "Agent  治理:用 Hook  堵住 LLM  的偷懒、越权与失忆\n腾讯程序员 Jul  16 , 2026 , 2 : 52  AM广东原创 腾讯技术工程 423  listened\n作者:xiangnzhang\n引子:从两个真实案例说起\n案例一:用户让 Agent  改一张核心表的 ETL —— 1200  多行的⻓ SQL 。 Agent  读完原文、开始\n输出,写到一半\"偷懒\"了,中间跳过一大段逻辑写了句省略,然后若无其事地继续往下写。这\n份带省略号的脚本一旦提交上线,下游几十张表当天的数据就会算错。\n案例二: Agent  还在\"方案设计\"阶段、用户都没点头,就径直调了发布工具,把一张还在讨论\n的表结构推上了生产。\n这两个案例看似不相干,根因却是同一个——不是模型能力不够,而是它\"图省事\"或\"自作主\n张\"。具体有三种表现:\n1 . LLM  偷懒:处理⻓脚本(动辄上千行的 SQL  / Python  ETL )时,模型会截断、占位略写\n(输出 -- 其他字段 ...)、跳步骤、把⻓ SQL  \"复印\"式重写到 token  耗尽,最后剩一堆\n残缺、不可执行的脚本。\n2 . 越权操作:发布、回刷、冻结/解冻、终止实例这些写生产或不可逆的动作,模型无法区分\n操作的可逆性——它把发布和查询视为同一类\"完成任务的步骤\",可能不打招呼就直接调\n了。\n3 . 上下文失忆:模型改完表不去分析下游⻛险、 Python  产出图表不知告诉用户——「需要查\n的就不查」。模型被训练成用最短路径完成任务——额外一次 tool  call  意味着多一步推\n本文是 DECO (一个跑在生产上的数仓 Agent  引擎)实践系列之一,聚焦护栏层:怎么用\nAgent  框架的 Hook  切面,把 LLM  处理⻓文本时的\"偷懒\"(截断、略写、残缺)、对生\n产环境的\"越权\"(未确认发布、回刷)以及上下文传递中的\"失忆\"(改了表不查⻛险、产\n出了物不知汇报),在代码层确定性兜底—— prompt  管不住的,框架来堵。\nDECO  作为腾讯一站式数据工程 Agent  智能协作平台,以业务数仓知识库为基础,致力于\n解决从需求到数据交付全过程,主要聚焦于数据问询、开发、同步、分析、运维五大环\n节。希望帮助更多同学更轻松地获取数据、理解数据、应用数据,助力数据平权。\n",
+    "publication_evidence": "PDF p.1 页眉 Jul 16, 2026, 2:52 AM；未标时区。",
+    "full_title_in_capture": "Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0138",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "5c28c1d09baf4bf3c76ad4dfd34c5fac92ec3a86c866486707e0b7b8bb6402ad"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.21 评论区提出“已知防已知”局限；作为读者评论而非正文论据，笔记只记录为待验证的治理边界。",
+        "pages": [
+          21
+        ],
+        "status": "reviewed_comment"
+      }
+    ],
+    "outputs": [
+      "AI_Agent Hook治理.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "detail_pages_reviewed": [
+        2,
+        5,
+        7,
+        10,
+        11,
+        12,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "coverage": "通读 p.1–22 并逐页查看缩略图；覆盖 Hook 切面、长文本读写护栏、失败分支、行业比较、HITL 流程、风险分析与图片注入、Hook 全景和结论。p.21 评论按评论处理。；存在部分页面文字层或读者评论范围，详见 quality_issues。",
+    "fact_checks": [
+      {
+        "item": "快照规模",
+        "original_value": "示例上下文快照约37,814字符",
+        "pages": [
+          2,
+          3
+        ],
+        "result": "按正文示例数字记录，不代表固定上限。"
+      },
+      {
+        "item": "压缩效果",
+        "original_value": "文中示例约90% token输出减少",
+        "pages": [
+          5,
+          6
+        ],
+        "result": "限定为该示例。"
+      },
+      {
+        "item": "长内容恢复",
+        "original_value": "长内容外置后通过状态/附件引用恢复",
+        "pages": [
+          7,
+          12
+        ],
+        "result": "对应 offload/onload 机制。"
+      },
+      {
+        "item": "大表访问",
+        "original_value": "使用分页/列选择及人工审批策略",
+        "pages": [
+          15,
+          18
+        ],
+        "result": "按正文方案概括。"
+      },
+      {
+        "item": "治理链路",
+        "original_value": "Hook连接规则、状态与附件上下文",
+        "pages": [
+          19,
+          20
+        ],
+        "result": "不推断其可挡住所有未知风险。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Agent Hook治理.md",
+      "sha256": "e7282fdf306ab63280b4f93257f7d28066ae18b2354a9a57005cc494a953b6b0"
+    },
+    "independent_crosscheck": {
+      "reviewer": "topic_apps_eval_crosscheck",
+      "note_sha256": "e7282fdf306ab63280b4f93257f7d28066ae18b2354a9a57005cc494a953b6b0",
+      "review_sha256": "bc2af7e476d12490f9290c7fdde509c245ad3e728a1e8877583745a7c647867a",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "4–8",
+          "check": "核对读侧 offload 失败时透传、写侧 onload 文件缺失时阻断、只在工作副本上 str_replace，以及示例 37,814 字符和约 90% 输出 token 降低；笔记保留示例限定与非对称失败语义。"
+        },
+        {
+          "pages": "10–12、15、18–20",
+          "check": "核对 beforeTool 危险操作人工确认、用户选择后写入 session.state 并续跑、tableId 区分修改与新建及 Hook→state→Attachment 闭环；未将其扩写为覆盖所有未知风险。p.21 是评论（笔记仅列待验证边界），p.22 空白。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "5c28c1d09baf4bf3c76ad4dfd34c5fac92ec3a86c866486707e0b7b8bb6402ad"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "c56cdde8d7c853952ec8ecfa2afbf17d6f034f34c8523e98ed4476f6be43cdbd"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 35,
+        "text_layer_sha256": "8bafe558f771f9da87423c8dc1845385e509927a0e7290e53c93ca9cf214a6cf",
+        "text_layer_char_count": 991
+      },
+      {
+        "page": 2,
+        "md_start_line": 43,
+        "md_end_line": 66,
+        "text_layer_sha256": "d6452a6107d338b9e5a765a4b53e15d53e7db53ac2be1b82751ef3e32e7e9f5c",
+        "text_layer_char_count": 748
+      },
+      {
+        "page": 3,
+        "md_start_line": 74,
+        "md_end_line": 115,
+        "text_layer_sha256": "24e301011e441aec5a1ac8681dff13b5db025f1de44f93628e01fcbe080d83ce",
+        "text_layer_char_count": 879
+      },
+      {
+        "page": 4,
+        "md_start_line": 123,
+        "md_end_line": 144,
+        "text_layer_sha256": "ea7a3af54db1f457139a4589a405df5dff56ecb89d3e10ba6c9ae00fc686dfe1",
+        "text_layer_char_count": 654
+      },
+      {
+        "page": 5,
+        "md_start_line": 152,
+        "md_end_line": 169,
+        "text_layer_sha256": "e4fd31d77d84076f1c95555be55325497763a0739bcbd22f833140507338896c",
+        "text_layer_char_count": 769
+      },
+      {
+        "page": 6,
+        "md_start_line": 177,
+        "md_end_line": 182,
+        "text_layer_sha256": "16f81b82bf797d472e705af2ec17d1606ed33452b064d62c9d827c878595ebcf",
+        "text_layer_char_count": 210
+      },
+      {
+        "page": 7,
+        "md_start_line": 190,
+        "md_end_line": 216,
+        "text_layer_sha256": "2e7baca28d653a18a64b082ddd036b30ea5e275e98cc0f8fa36f6b283da71fb2",
+        "text_layer_char_count": 954
+      },
+      {
+        "page": 8,
+        "md_start_line": 224,
+        "md_end_line": 283,
+        "text_layer_sha256": "4f2fac94f3f3dc86e27613f7e4dc3a77d7c3bd418e40d3a032220c8828f7f944",
+        "text_layer_char_count": 1074
+      },
+      {
+        "page": 9,
+        "md_start_line": 291,
+        "md_end_line": 332,
+        "text_layer_sha256": "7f067b53cf4a6225ff4d5154213b798ad0a33027c146d5a28d25849f6ecbddc4",
+        "text_layer_char_count": 1187
+      },
+      {
+        "page": 10,
+        "md_start_line": 340,
+        "md_end_line": 355,
+        "text_layer_sha256": "48a6b5162a128a348f61da8f6a4c271669a2b2b32a690b91acc24ee08580c314",
+        "text_layer_char_count": 607
+      },
+      {
+        "page": 11,
+        "md_start_line": 363,
+        "md_end_line": 365,
+        "text_layer_sha256": "4854f8d5202b6aef96ce1888b874d8dfa744d6e2b6addd3d9cc5085913544bea",
+        "text_layer_char_count": 136
+      },
+      {
+        "page": 12,
+        "md_start_line": 373,
+        "md_end_line": 428,
+        "text_layer_sha256": "9bfb9f8ac833b7a1d8eceeb1045ccd8b29eeac09b52188aa49099564a6a55d36",
+        "text_layer_char_count": 839
+      },
+      {
+        "page": 13,
+        "md_start_line": 436,
+        "md_end_line": 489,
+        "text_layer_sha256": "3ea408b54bd77a9e6ffea053ef6fd2716f2459abdc66e46f1ace8ee0f9517582",
+        "text_layer_char_count": 1111
+      },
+      {
+        "page": 14,
+        "md_start_line": 497,
+        "md_end_line": 518,
+        "text_layer_sha256": "429ba7ef6c1811c7c359369c090c6080efe9e8d9cbf3f1095834f743cdd5244b",
+        "text_layer_char_count": 796
+      },
+      {
+        "page": 15,
+        "md_start_line": 526,
+        "md_end_line": 553,
+        "text_layer_sha256": "0521d910b4bd419c89967ca1d5ffc5781aa5cb14f6c8cdd0e28c4a3414f7f8db",
+        "text_layer_char_count": 819
+      },
+      {
+        "page": 16,
+        "md_start_line": 561,
+        "md_end_line": 579,
+        "text_layer_sha256": "4759b9d261f1c5b7bfee01b1c7155b15d59d8f0d46d202c8804072f7b5e2562e",
+        "text_layer_char_count": 690
+      },
+      {
+        "page": 17,
+        "md_start_line": 587,
+        "md_end_line": 611,
+        "text_layer_sha256": "6a5453c0cf0eb3614c1898d391b0b00bbd11095106cb53737d4d620ac8aabd89",
+        "text_layer_char_count": 820
+      },
+      {
+        "page": 18,
+        "md_start_line": 619,
+        "md_end_line": 654,
+        "text_layer_sha256": "8e5785f651971096f613ee8535da382c0b40a14c218f4db91c16c515abc38698",
+        "text_layer_char_count": 754
+      },
+      {
+        "page": 19,
+        "md_start_line": 662,
+        "md_end_line": 726,
+        "text_layer_sha256": "9f102a2ea63cfed979951df4515f3b595ef6fa7af5269b43356293fe50fc9a4d",
+        "text_layer_char_count": 1100
+      },
+      {
+        "page": 20,
+        "md_start_line": 734,
+        "md_end_line": 762,
+        "text_layer_sha256": "1adfc3d293bc1a40e026504cc901f6278177b48def86b7c1ebc4268ee7d17378",
+        "text_layer_char_count": 899
+      },
+      {
+        "page": 21,
+        "md_start_line": 770,
+        "md_end_line": 779,
+        "text_layer_sha256": "d5a0b965e16a851ad8f1e69611f794374cc07a37c0afeaeada72ec75d5f82878",
+        "text_layer_char_count": 179
+      },
+      {
+        "page": 22,
+        "md_start_line": 787,
+        "md_end_line": 786,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "detail_pages_reviewed": [
+        2,
+        5,
+        7,
+        10,
+        11,
+        12,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.21 评论区提出“已知防已知”局限；作为读者评论而非正文论据，笔记只记录为待验证的治理边界。",
+        "pages": [
+          21
+        ],
+        "status": "reviewed_comment"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "5c28c1d09baf4bf3c76ad4dfd34c5fac92ec3a86c866486707e0b7b8bb6402ad",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent安全与权限.md",
+      "../../20_topics/Harness与模型协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Agent Hook治理.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

@@ -1,0 +1,407 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0061",
+  "title": "警惕！“养龙虾”风险，一键给你的Openclaw做安全体检",
+  "short_title": "OpenClaw安全体检",
+  "account": "腾讯技术工程",
+  "author": "朱雀实验室 nicky",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-03-11T04:47",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0311 OpenClaw安全体检.pdf",
+      "original_filename": "0311 OpenClaw安全体检.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "bc7b1540bc4618ab1188f9e5da26282dc7b9b0860e0f4e6a5bfa2ccd5b8a8af9",
+      "size_bytes": 4737727,
+      "page_count": 11,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "⚠️[原文疑点] 标题及实际条目为四类风险，但p.2与p.6称三类/三大；笔记按实际四项保留并披露",
+          "pages": [
+            2,
+            5,
+            6
+          ],
+          "status": "unresolved"
+        },
+        {
+          "description": "外部统计、漏洞与产品覆盖均只对照本文，未联网复核或实际运行安全扫描",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            9
+          ],
+          "status": "attributed"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区"
+    }
+  ],
+  "tags": [
+    "Agent安全与权限",
+    "异常监控与稳定性"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/OpenClaw安全体检+26.3.11",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_OpenClaw安全体检.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "警惕!“养⻰虾”⻛险,一键给你的 Openclaw 做安全体检\n腾讯程序员 Mar  11 , 2026 , 4 : 47  AM广东原创 腾讯技术工程 27  listened\n作者:朱雀实验室  nicky\n2026 年初, OpenClaw 在短短数周内狂揽超  30  万  Stars ,迅速登顶  GitHub 开源榜首。越来越\n多的国内企业也很快跟进小龙虾快速部署,让更多用户第一时间感受到了这位 \" 不用睡觉的  AI 助\n理 \" 带来的效率飞跃。\n但便利之外,关于安全性的担心也随之而来:无论是频频出现的OpenClaw漏洞与隐私风险案\n例,还是近期发布各种有关OpenClaw的安全预警,都在提醒我们 —— 它是一个高权限、可执\n行、插件生态丰富的超级Agent,一旦出问题,影响范围可能远超传统  ChatBot。\n为了让大家更安心、也更放手地探索  OpenClaw 的强大能力,朱雀实验室会在本文中快速梳理它\n背后的核心风险点,并正式介绍我们联合腾讯云EdgeOne推出的「 OpenClaw 安全体检」功能\n—— 无需折腾复杂配置,只要一句话,就能让  AI 助理自动完成全面体检与  Skill 风险的前置评\n估,帮助大家用得更放心、更高效。\n 欢迎大家访问  https://matrix.tencent.com/clawscan/,并在你的小龙虾中体验。\n一、把事交给它之前:先看懂  OpenClaw 的安全边界\n",
+    "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区",
+    "full_title_in_capture": "警惕！“养龙虾”风险，一键给你的Openclaw做安全体检",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0061",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "bc7b1540bc4618ab1188f9e5da26282dc7b9b0860e0f4e6a5bfa2ccd5b8a8af9"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "⚠️[原文疑点] 标题及实际条目为四类风险，但p.2与p.6称三类/三大；笔记按实际四项保留并披露",
+        "pages": [
+          2,
+          5,
+          6
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "外部统计、漏洞与产品覆盖均只对照本文，未联网复核或实际运行安全扫描",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9
+        ],
+        "status": "attributed"
+      }
+    ],
+    "outputs": [
+      "AI_OpenClaw安全体检.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        7
+      ]
+    },
+    "coverage": "覆盖三个观察维度、实际展开的四类风险、记忆污染链、一次体检、持续扫描与A.I.G能力；省略宣传与截图里的攻击代码，不据截图补造攻击步骤。",
+    "fact_checks": [
+      {
+        "item": "国内暴露统计",
+        "value": "超过12万个服务器IP",
+        "pages": [
+          3
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "外部技能样本",
+        "value": "4000多个",
+        "pages": [
+          3
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "外部缺陷比例",
+        "value": "36%",
+        "pages": [
+          3
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "风险跟踪口径",
+        "value": "200多个公开漏洞与风险通告",
+        "pages": [
+          4
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "协助修复",
+        "value": "3个底层安全漏洞",
+        "pages": [
+          5
+        ],
+        "result": "matches_pdf"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_OpenClaw安全体检.md",
+      "sha256": "6d483748e7b8a8bd8775d5d8694896b4883c951f4d4987fdd1153c4c4ae8d18e"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "bc7b1540bc4618ab1188f9e5da26282dc7b9b0860e0f4e6a5bfa2ccd5b8a8af9"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "5ee6e97374b1a9e2f50e825c0f5e5a59b8093b754709fbefb25bb73ed73e837c"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 24,
+        "text_layer_sha256": "b31e589b7d0dc685e41647d3811e6b2f998ded0d71405f3c8906b53ac32c040d",
+        "text_layer_char_count": 625
+      },
+      {
+        "page": 2,
+        "md_start_line": 32,
+        "md_end_line": 55,
+        "text_layer_sha256": "9d463e11b341e0caf3377fa68604d85329b8ffbaac7e804a6844397297d30e63",
+        "text_layer_char_count": 878
+      },
+      {
+        "page": 3,
+        "md_start_line": 63,
+        "md_end_line": 73,
+        "text_layer_sha256": "c7b97980c3278bd3b7f1c56b9275c418233713ff7babb989b966128896605eb2",
+        "text_layer_char_count": 473
+      },
+      {
+        "page": 4,
+        "md_start_line": 81,
+        "md_end_line": 101,
+        "text_layer_sha256": "3f432cf5575376d0ef8a5739d7ac77834f18a1ba724d80b2818635b4113f62ae",
+        "text_layer_char_count": 955
+      },
+      {
+        "page": 5,
+        "md_start_line": 109,
+        "md_end_line": 116,
+        "text_layer_sha256": "c242ecb46677a655efca44dcc838914b2673bf25a48a0fc836ac5cf85075da30",
+        "text_layer_char_count": 308
+      },
+      {
+        "page": 6,
+        "md_start_line": 124,
+        "md_end_line": 137,
+        "text_layer_sha256": "d38a3adc148d72bffc1379c4fff5c9b5fc08be05b23d20bfb8fe447cee2126f5",
+        "text_layer_char_count": 566
+      },
+      {
+        "page": 7,
+        "md_start_line": 145,
+        "md_end_line": 159,
+        "text_layer_sha256": "7ae62f75ec3a5e23338ba62e810ca8794f0c2c2f6e603a341927480b959a6c80",
+        "text_layer_char_count": 625
+      },
+      {
+        "page": 8,
+        "md_start_line": 167,
+        "md_end_line": 182,
+        "text_layer_sha256": "4e54ff2d1987b94d076fe0b83f087cebcc9dda4a235a98b1d599659337c46455",
+        "text_layer_char_count": 706
+      },
+      {
+        "page": 9,
+        "md_start_line": 190,
+        "md_end_line": 200,
+        "text_layer_sha256": "b6195e42f1ea7f51eca50c40f744ed77cd754fbd9214d950094cf771e341f1e6",
+        "text_layer_char_count": 548
+      },
+      {
+        "page": 10,
+        "md_start_line": 208,
+        "md_end_line": 218,
+        "text_layer_sha256": "e5dd172a5bc22266fcfb31f0ae5d93c7edb74ad13cc9790529985d7ecaa281f7",
+        "text_layer_char_count": 306
+      },
+      {
+        "page": 11,
+        "md_start_line": 226,
+        "md_end_line": 225,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        7
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "⚠️[原文疑点] 标题及实际条目为四类风险，但p.2与p.6称三类/三大；笔记按实际四项保留并披露",
+        "pages": [
+          2,
+          5,
+          6
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "外部统计、漏洞与产品覆盖均只对照本文，未联网复核或实际运行安全扫描",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9
+        ],
+        "status": "attributed"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0311 OpenClaw安全体检.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "bc7b1540bc4618ab1188f9e5da26282dc7b9b0860e0f4e6a5bfa2ccd5b8a8af9",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent安全与权限.md",
+      "../../20_topics/Skill设计与治理.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_OpenClaw安全体检.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

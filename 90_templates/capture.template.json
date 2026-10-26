@@ -1,0 +1,14 @@
+{
+  "capture_id": null,
+  "path": null,
+  "original_path": null,
+  "captured_at": null,
+  "archived_at": null,
+  "provenance": null,
+  "sha256": null,
+  "files": [],
+  "completeness": "pending_review",
+  "quality_issues": [],
+  "size_bytes": null,
+  "page_count": null
+}

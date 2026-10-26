@@ -1,0 +1,470 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0172",
+  "title": "腾讯Ray团队实践：K8s + Ray如何支撑超大规模AI Workload",
+  "short_title": "K8s与Ray协同调度",
+  "account": "腾讯技术工程",
+  "author": "charliecli",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-07-13T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯Ray团队实践：K8s + Ray如何支撑超大规模AI Workload.pdf",
+      "original_filename": "腾讯Ray团队实践：K8s + Ray如何支撑超大规模AI Workload.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "ccc0f2eee93133977308093622ab1bcac9c004c6e8fae0e08314e969647d9ae2",
+      "size_bytes": 8385761,
+      "page_count": 16,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "文章中的生产规模、框架占比和吞吐表现属于团队/社区陈述，未独立复核或复现实验。",
+          "pages": [
+            2,
+            11,
+            12,
+            14
+          ],
+          "status": "pending_review"
+        }
+      ],
+      "publication_evidence": "PDF第1页日期与时间标注"
+    }
+  ],
+  "tags": [
+    "模型与开发工具发布",
+    "异常监控与稳定性",
+    "Agent成本与上下文预算",
+    "分布式计算与数据管道"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/K8s与Ray协同调度+26.7.13",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_K8s与Ray协同调度.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "腾讯 Ray 团队实践: K8s  + Ray 如何支撑超大规模 AI  Workload\nJul  13 , 2026 , 2 : 36  AM广东腾讯技术工程 18  listened\n作者: charliecli\n一、 大模型时代 AI  基础设施的技术栈演进\n要理解这一全新的调度范式,首先需要审视当前大模型基础设施的技术栈现状。借助蚂蚁开\n源技术委员会绘制的 AI  Infra  开源生态全景图 [ 1 ],我们可以全面了解当下 AI  Infra  领域的\n主要开源项目。\n从这张全景图中可以提炼出一条典型的 AI  Infra  技术栈:Ray  + PyTorch  + vLLM。值得\n一提的是,这三个项目目前均隶属于 PyTorch  基金会(其中 Ray  于 2025  年 PyTorch  大\n会上正式作为托管项目加入)。在此之上,再叠加工业界事实标准的部署与调度底\n座 K8s,便构成了 K8s  + Ray  + PyTorch  + vLLM 的⻩金组合。这套技术栈贯穿大模型\n生命周期的全链路,涵盖数据处理、预训练、后训练、在线推理与 Agent  等场景。\n随着大模型时代的到来, AI  基础设施( AI  Infra )正在经历深刻的变革。面对日益复杂的\n计算需求,传统上与单一计算范式深度耦合的调度系统已难以应对全局性挑战。本文结合\n开源社区的演进趋势与工业界的超大规模落地实践,深入探讨 Ray  的技术定位与核心设计\n逻辑,并阐述它如何与 Kubernetes (以下简称 K8s )进行协同设计( co - design ),共同\n构建大模型时代 AI  Workload  调度的通用范式。 注:文章的图片内容来源于腾讯 Ray  团\n队在 Qcon  全球软件开发大会的分享:\n https :// qcon . infoq . cn / 2026 / beijing / presentation / 7002\n",
+    "publication_evidence": "PDF第1页日期与时间标注",
+    "full_title_in_capture": "腾讯Ray团队实践：K8s + Ray如何支撑超大规模AI Workload",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0172",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "ccc0f2eee93133977308093622ab1bcac9c004c6e8fae0e08314e969647d9ae2"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "文章中的生产规模、框架占比和吞吐表现属于团队/社区陈述，未独立复核或复现实验。",
+        "pages": [
+          2,
+          11,
+          12,
+          14
+        ],
+        "status": "pending_review"
+      }
+    ],
+    "outputs": [
+      "AI_K8s与Ray协同调度.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "detail_pages_reviewed": [
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "coverage": "覆盖AI Infra技术栈、Ray编排模型、K8s与Ray职责、KubeRay演进及跨层弹性容错。",
+    "fact_checks": [
+      {
+        "topic": "RL框架比例",
+        "original_value": "90%以上（文章引用）",
+        "pages": [
+          2
+        ],
+        "result": "按原文记录"
+      },
+      {
+        "topic": "Ray角色资源",
+        "original_value": "2 CPU+1 GPU",
+        "pages": [
+          5
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "调度流程",
+        "original_value": "4步示意",
+        "pages": [
+          7
+        ],
+        "result": "与图相符"
+      },
+      {
+        "topic": "方案瓶颈",
+        "original_value": "RayCluster节点超过100",
+        "pages": [
+          11
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "集群规模",
+        "original_value": "万卡以上（文章描述）",
+        "pages": [
+          12
+        ],
+        "result": "按原文记录"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_K8s与Ray协同调度.md",
+      "sha256": "c7ffc86727b5764427b6b2570ebfd762c9764733d54a82e71561157ae9591647"
+    },
+    "independent_crosscheck": {
+      "reviewer": "Codex crosscheck group2",
+      "note_sha256": "c7ffc86727b5764427b6b2570ebfd762c9764733d54a82e71561157ae9591647",
+      "review_sha256": "b58d3575f387cf290b3ff6ddb72ae109c68a22da993014b649f6ee4c0368a3e3",
+      "status": "passed",
+      "changes": [
+        "补足Ray调度及联邦演进覆盖和页码。"
+      ],
+      "source_spotchecks": [
+        {
+          "source": "reading.txt; sheet-001.jpg; sheet-013.jpg; review-page-07.jpg; review-page-11.jpg; review-page-13.jpg",
+          "pages": [
+            1,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "finding": "核对AI Infra/RLHF、Raylet调度、K8s/Ray分层、VK瓶颈、联邦演进与弹性容灾；展望保持为未来方向。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "ccc0f2eee93133977308093622ab1bcac9c004c6e8fae0e08314e969647d9ae2"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "dbd6a5d18c4cdeb5f46e3a0f2eb8f6fcdcc3769098f2bfb3fcece4c88260b194"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 28,
+        "text_layer_sha256": "4378cf6a32e0742b19d986dbca047b4f73eb983dfc43d9ba6ec1aef6f5c9d9c1",
+        "text_layer_char_count": 835
+      },
+      {
+        "page": 2,
+        "md_start_line": 36,
+        "md_end_line": 48,
+        "text_layer_sha256": "b0366953a12ef25ed2258aaf1ed01f56cf9ebf1bbad9a1c95da29368f8b0cb5d",
+        "text_layer_char_count": 520
+      },
+      {
+        "page": 3,
+        "md_start_line": 56,
+        "md_end_line": 69,
+        "text_layer_sha256": "f1d6e80527468e3d4af247c501a695c843b8d25eef7a970c6a38e53ef7e15341",
+        "text_layer_char_count": 581
+      },
+      {
+        "page": 4,
+        "md_start_line": 77,
+        "md_end_line": 93,
+        "text_layer_sha256": "116e9694d0baa6ea7e604757fad0b2242f8ebf20d2cf0867a03aeef76478e119",
+        "text_layer_char_count": 700
+      },
+      {
+        "page": 5,
+        "md_start_line": 101,
+        "md_end_line": 140,
+        "text_layer_sha256": "a8ec121b082fdc9142b54c6a888678120fd19b2e35826c26ed502d7cbbc54cad",
+        "text_layer_char_count": 1466
+      },
+      {
+        "page": 6,
+        "md_start_line": 148,
+        "md_end_line": 194,
+        "text_layer_sha256": "9e89528b7c03deda8b9a412a2529cdee346cb27e95d23eeafb004167e4549539",
+        "text_layer_char_count": 1477
+      },
+      {
+        "page": 7,
+        "md_start_line": 202,
+        "md_end_line": 232,
+        "text_layer_sha256": "f269096aa6f725cdf26748c8bf0b7612ade23e732c13bf4d70488e7195c3a3eb",
+        "text_layer_char_count": 991
+      },
+      {
+        "page": 8,
+        "md_start_line": 240,
+        "md_end_line": 268,
+        "text_layer_sha256": "908eb8222a9fd48ebb82c1813619f1a481229dbf3007c15b17604d39226510ac",
+        "text_layer_char_count": 1135
+      },
+      {
+        "page": 9,
+        "md_start_line": 276,
+        "md_end_line": 288,
+        "text_layer_sha256": "34082e69d2b697f433e9a98d3d67372b41d904407fdb37cd631d23978ab78424",
+        "text_layer_char_count": 477
+      },
+      {
+        "page": 10,
+        "md_start_line": 296,
+        "md_end_line": 306,
+        "text_layer_sha256": "50700ed738717bb62f6301be455b9006f52625549b03fc55458a0d07adcdaecf",
+        "text_layer_char_count": 494
+      },
+      {
+        "page": 11,
+        "md_start_line": 314,
+        "md_end_line": 334,
+        "text_layer_sha256": "9ad3e9f9ca7dcbeb93fe4c84688315359b6e366a03ed0515189e8b40979ff0a6",
+        "text_layer_char_count": 960
+      },
+      {
+        "page": 12,
+        "md_start_line": 342,
+        "md_end_line": 355,
+        "text_layer_sha256": "9a9d1f308353f87fa0fbf12e5ef4f0f09d5aeac1f7d6f83be35733c2376c0778",
+        "text_layer_char_count": 533
+      },
+      {
+        "page": 13,
+        "md_start_line": 363,
+        "md_end_line": 380,
+        "text_layer_sha256": "20283330faea6e43c778eb2aab0ac0ee01a0f8426eea7b84552ff99c96355e65",
+        "text_layer_char_count": 566
+      },
+      {
+        "page": 14,
+        "md_start_line": 388,
+        "md_end_line": 409,
+        "text_layer_sha256": "f9f8b3e7cd1d64cab85e2385d03ca0fd327ec78311f96fab6b3ce8c22b38565e",
+        "text_layer_char_count": 846
+      },
+      {
+        "page": 15,
+        "md_start_line": 417,
+        "md_end_line": 435,
+        "text_layer_sha256": "544302b83779b7566307986ee4dc0138913f13efdc66b99ed8f20db3c456ba61",
+        "text_layer_char_count": 646
+      },
+      {
+        "page": 16,
+        "md_start_line": 443,
+        "md_end_line": 446,
+        "text_layer_sha256": "4b83805fe7b1ffa0afa59adb30c6842da4e465535339ce4e93fea3503b73f9af",
+        "text_layer_char_count": 26
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "detail_pages_reviewed": [
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "文章中的生产规模、框架占比和吞吐表现属于团队/社区陈述，未独立复核或复现实验。",
+        "pages": [
+          2,
+          11,
+          12,
+          14
+        ],
+        "status": "pending_review"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯Ray团队实践：K8s + Ray如何支撑超大规模AI Workload.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "ccc0f2eee93133977308093622ab1bcac9c004c6e8fae0e08314e969647d9ae2",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/分布式计算与数据管道.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_K8s与Ray协同调度.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

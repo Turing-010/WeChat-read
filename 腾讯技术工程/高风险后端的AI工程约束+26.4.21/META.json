@@ -1,0 +1,591 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0082",
+  "title": "Harness Engineering：AI能在真正“出事会炸”的后端系统里写代码吗？",
+  "short_title": "高风险后端的AI工程约束",
+  "account": "腾讯技术工程",
+  "author": "lancelotluo",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-04-21T03:26",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0421 Harness Engineering Backend Systems.pdf",
+      "original_filename": "0421 Harness Engineering Backend Systems.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "1f27169b37528cfcac757dc18b4f68f29cf31ac8567cee813b7ef5247e2d6e08",
+      "size_bytes": 4918181,
+      "page_count": 19,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.3组合表直接乘积23,040×N与正文13,824×N不符；保留疑点不静默修正作者原值",
+          "pages": [
+            1,
+            3
+          ],
+          "status": "unresolved_source_arithmetic"
+        },
+        {
+          "description": "nonstop性能、效率与覆盖率均为作者案例自报，缺少硬件/负载/持续时间、样本及覆盖范围，不作独立验证",
+          "pages": [
+            5,
+            14,
+            15
+          ],
+          "status": "attributed"
+        },
+        {
+          "description": "误报率36%与9问题中真实P0仅1个的分母/关系未交代；不重算",
+          "pages": [
+            16
+          ],
+          "status": "unresolved_metric_scope"
+        },
+        {
+          "description": "57案例/13类型与34问题×5根因、34踩坑规则口径不同，未合并成统一数据集",
+          "pages": [
+            5,
+            15
+          ],
+          "status": "qualified"
+        },
+        {
+          "description": "p.18修改于4月26日，与p.1发布4月21日区分；p.19为空白页，正文结尾可见但采集完整性待复核",
+          "pages": [
+            1,
+            18,
+            19
+          ],
+          "status": "preserved"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区"
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "Agent评测与反馈",
+    "Agent工程循环",
+    "异常监控与稳定性"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/高风险后端的AI工程约束+26.4.21",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_高风险后端的AI工程约束.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "Harness  Engineering : AI  能在真正\"出事会炸\"的后端系统里写代\n码吗?\n腾讯程序员 2026 年 4 月 21 日 03 : 26广东原创 腾讯技术工程 230 人\n作者:lancelotluo\n引言\n当  AI Coding 的聚光灯几乎全部打在前端和客户端 —— 生成一个页面、写一个  App......的时候,\n一个重要的问题却似乎被回避了: AI 能在真正 \" 出事会炸 \" 的后端系统里写代码吗?\n腾讯 CDN LEGO 项目就是这样一个系统。 100 万行核心代码、 300 万行深度改造的第三方库,服\n务亿级用户,承担流量调度、协议解析、安全防护、缓存加速等关键职责。它面对的不是确定性\n的输入输出,而是不可控的客户端、不可控的源站、多协议、多配置、公网全量攻击面 —— 这些\n因素维度的叠加不是简单相加,而是乘积式的复杂度爆炸,理论组合路径高达  13,824 × N 种。\n在这样的复杂的系统里让  AI 写代码,一行失误就可能是一场全网事故。\n但正因为难,才值得做。  我们系统性地探索了  AI Coding 在高风险后端场景的落地路径:一方\n面,用  AI 零人工代码实现了一个  Rust  版  Nonstop 代理框架,以此探测  AI 编码的能力边界与\n行为特性;另一方面,在超大规模  C++ LEGO项目中构建了  Harness Engineering 五层架构和多\n模型对抗式 CR ,为  AI 产出的每一行代码建立从生成到上线的完整质量屏障。本文不仅是一份将\nAI Coding 引入腾讯CDN 核心框架的实战记录,更是一条从 \"AI 能写 \" 到 \"AI 写了敢用 \" 的完整工程\n路径。\n一、背景与挑战\n1.1 项目规模与复杂性\nLEGO系统作为腾讯CDN 的核心接入层,承载着腾讯几乎所有 CDN和EdgeOne业务流量的大型分\n布式系统,对可靠性、可用性、安全性的要求极高:\n● 代码规模:核心代码超过 100 万行,采用多线程全异步非阻塞架构设计,要求开发人员对异步\n编程、并发控制、资源管理等技术领域有深入的理解\n● 第三方依赖:深度改造第三方库超过 300 万行(包括 OpenSSL 、 QUIC 、 LUA 、 JavaScript\n等),进一步增加了系统的复杂度\n",
+    "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区",
+    "full_title_in_capture": "Harness Engineering：AI能在真正“出事会炸”的后端系统里写代码吗？",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0082",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "1f27169b37528cfcac757dc18b4f68f29cf31ac8567cee813b7ef5247e2d6e08"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.3组合表直接乘积23,040×N与正文13,824×N不符；保留疑点不静默修正作者原值",
+        "pages": [
+          1,
+          3
+        ],
+        "status": "unresolved_source_arithmetic"
+      },
+      {
+        "description": "nonstop性能、效率与覆盖率均为作者案例自报，缺少硬件/负载/持续时间、样本及覆盖范围，不作独立验证",
+        "pages": [
+          5,
+          14,
+          15
+        ],
+        "status": "attributed"
+      },
+      {
+        "description": "误报率36%与9问题中真实P0仅1个的分母/关系未交代；不重算",
+        "pages": [
+          16
+        ],
+        "status": "unresolved_metric_scope"
+      },
+      {
+        "description": "57案例/13类型与34问题×5根因、34踩坑规则口径不同，未合并成统一数据集",
+        "pages": [
+          5,
+          15
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "p.18修改于4月26日，与p.1发布4月21日区分；p.19为空白页，正文结尾可见但采集完整性待复核",
+        "pages": [
+          1,
+          18,
+          19
+        ],
+        "status": "preserved"
+      }
+    ],
+    "outputs": [
+      "AI_高风险后端的AI工程约束.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        5,
+        7,
+        8,
+        9,
+        11,
+        14
+      ]
+    },
+    "coverage": "覆盖背景、nonstop能力探测、问题根因、五层架构、上下文/约束/反馈三支柱、多模型CR、案例收益与风险、团队转型八章；省略行业营销及小字代码逐行转录。",
+    "fact_checks": [
+      {
+        "item": "nonstop投入",
+        "value": "1人+AI，20天，零手写代码",
+        "pages": [
+          4
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "nonstop指标",
+        "value": "42,052 QPS/5000并发/0错误/P50 1.1ms",
+        "pages": [
+          5
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "问题分析",
+        "value": "57案例、13类、5根因",
+        "pages": [
+          5
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "本地RFC",
+        "value": "38,068行",
+        "pages": [
+          8
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "技能层",
+        "value": "31 Skills，8大类",
+        "pages": [
+          7
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "cpuinfos耗时",
+        "value": "5天→1天；仍遗漏线程初始化",
+        "pages": [
+          14
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "整体效率",
+        "value": "作者阶段自报约提升20%",
+        "pages": [
+          14
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "文档负担",
+        "value": "8需求产生99文件",
+        "pages": [
+          16
+        ],
+        "result": "matches_pdf"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_高风险后端的AI工程约束.md",
+      "sha256": "45be0597fa60b976bd5cececcd72d0b2fad4ba4b48afad12aad08e1d7c9e4a46"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "1f27169b37528cfcac757dc18b4f68f29cf31ac8567cee813b7ef5247e2d6e08"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "8f933746fb4ee9928624bf4e1444d0b3743122a330d81bd64507eaddd2d7cb05"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 35,
+        "text_layer_sha256": "5304752939e4a2d4f3351c910a5b3b8e96cc176eb1159ea9faed545bbe7fde78",
+        "text_layer_char_count": 979
+      },
+      {
+        "page": 2,
+        "md_start_line": 43,
+        "md_end_line": 57,
+        "text_layer_sha256": "a339f2df2a259c437e0b303c84ffdd609131994440cb38758e9a814ec2848399",
+        "text_layer_char_count": 417
+      },
+      {
+        "page": 3,
+        "md_start_line": 65,
+        "md_end_line": 88,
+        "text_layer_sha256": "9e74b8287eafb56f2c81af9b6b77571b7f203c6217dfd0b5732c9fcfdf66d817",
+        "text_layer_char_count": 569
+      },
+      {
+        "page": 4,
+        "md_start_line": 96,
+        "md_end_line": 116,
+        "text_layer_sha256": "0677c7613a22b1c50c60657a6966734e1c9bce8189a1aac8362f2b44a349d19b",
+        "text_layer_char_count": 771
+      },
+      {
+        "page": 5,
+        "md_start_line": 124,
+        "md_end_line": 139,
+        "text_layer_sha256": "79aa1e50ce1fc7247c80a397b3d23a75992d1a47d8c6facb629c8fd9e41a3ecd",
+        "text_layer_char_count": 589
+      },
+      {
+        "page": 6,
+        "md_start_line": 147,
+        "md_end_line": 170,
+        "text_layer_sha256": "bfcaf2a9fdbfed72c9628b717071edb8a51acf273a65533e93851dd7aa1c59b7",
+        "text_layer_char_count": 736
+      },
+      {
+        "page": 7,
+        "md_start_line": 178,
+        "md_end_line": 196,
+        "text_layer_sha256": "8c913b0cb670b7cc02a39201c43aeb5f3db2566e3331d77eda82ef2502413985",
+        "text_layer_char_count": 650
+      },
+      {
+        "page": 8,
+        "md_start_line": 204,
+        "md_end_line": 225,
+        "text_layer_sha256": "0c3e9f51aa9e1ef466324f5a09a20f9eb4cf24aebcd58f6c67a904cdd7cf9e33",
+        "text_layer_char_count": 702
+      },
+      {
+        "page": 9,
+        "md_start_line": 233,
+        "md_end_line": 250,
+        "text_layer_sha256": "c795079f439c6bf1ff27f4cd20b75224345d24fd03c34174d3936cc616162241",
+        "text_layer_char_count": 415
+      },
+      {
+        "page": 10,
+        "md_start_line": 258,
+        "md_end_line": 280,
+        "text_layer_sha256": "24874db2b48dc8cd012d5af7694486a4cc5068dbdd1532491b419d970dc3bb25",
+        "text_layer_char_count": 469
+      },
+      {
+        "page": 11,
+        "md_start_line": 288,
+        "md_end_line": 305,
+        "text_layer_sha256": "58cd0c5354ac319ab5068d19bb5a8a4ed3f257a94aea2de52e584700742fbb82",
+        "text_layer_char_count": 534
+      },
+      {
+        "page": 12,
+        "md_start_line": 313,
+        "md_end_line": 342,
+        "text_layer_sha256": "4b4d29588bb1bc0e3e5b6728ea37430bc4695fc3271871360537e8fa76d58109",
+        "text_layer_char_count": 683
+      },
+      {
+        "page": 13,
+        "md_start_line": 350,
+        "md_end_line": 375,
+        "text_layer_sha256": "e76f72376d9d9665dfe9ab4af80ba3a885594062d93db944ec6fc01b52cd910a",
+        "text_layer_char_count": 637
+      },
+      {
+        "page": 14,
+        "md_start_line": 383,
+        "md_end_line": 397,
+        "text_layer_sha256": "57b022f80377ec4f7d6a3848e6f90ec7b3c552cc190d3acb8c02d45795eca0e6",
+        "text_layer_char_count": 456
+      },
+      {
+        "page": 15,
+        "md_start_line": 405,
+        "md_end_line": 430,
+        "text_layer_sha256": "ebb01490f2ef7e143fe7d06215f2a7d4de495f10ac3d986b45b4832f160fed7f",
+        "text_layer_char_count": 603
+      },
+      {
+        "page": 16,
+        "md_start_line": 438,
+        "md_end_line": 456,
+        "text_layer_sha256": "9619354fa6e554c5f07c9ce4dd464350a0993ed4efe8b4635edbaac741efd8df",
+        "text_layer_char_count": 537
+      },
+      {
+        "page": 17,
+        "md_start_line": 464,
+        "md_end_line": 492,
+        "text_layer_sha256": "9cab475ec2f923d52d6ed926d44163d89729f35a50ccfbf3395539839e8051d7",
+        "text_layer_char_count": 924
+      },
+      {
+        "page": 18,
+        "md_start_line": 500,
+        "md_end_line": 507,
+        "text_layer_sha256": "975952a858ee0ba928c43742d9ba053487e2ad4990536c3affbb66090aba1609",
+        "text_layer_char_count": 222
+      },
+      {
+        "page": 19,
+        "md_start_line": 515,
+        "md_end_line": 514,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        5,
+        7,
+        8,
+        9,
+        11,
+        14
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.3组合表直接乘积23,040×N与正文13,824×N不符；保留疑点不静默修正作者原值",
+        "pages": [
+          1,
+          3
+        ],
+        "status": "unresolved_source_arithmetic"
+      },
+      {
+        "description": "nonstop性能、效率与覆盖率均为作者案例自报，缺少硬件/负载/持续时间、样本及覆盖范围，不作独立验证",
+        "pages": [
+          5,
+          14,
+          15
+        ],
+        "status": "attributed"
+      },
+      {
+        "description": "误报率36%与9问题中真实P0仅1个的分母/关系未交代；不重算",
+        "pages": [
+          16
+        ],
+        "status": "unresolved_metric_scope"
+      },
+      {
+        "description": "57案例/13类型与34问题×5根因、34踩坑规则口径不同，未合并成统一数据集",
+        "pages": [
+          5,
+          15
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "p.18修改于4月26日，与p.1发布4月21日区分；p.19为空白页，正文结尾可见但采集完整性待复核",
+        "pages": [
+          1,
+          18,
+          19
+        ],
+        "status": "preserved"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0421 Harness Engineering Backend Systems.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "1f27169b37528cfcac757dc18b4f68f29cf31ac8567cee813b7ef5247e2d6e08",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_高风险后端的AI工程约束.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

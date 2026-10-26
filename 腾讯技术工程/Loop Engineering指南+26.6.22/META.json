@@ -1,0 +1,447 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0149",
+  "title": "Loop Engineering 实践指南：在 CodeBuddy 中构建自主循环系统",
+  "short_title": "Loop Engineering指南",
+  "account": "腾讯技术工程",
+  "author": "eliqiao",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-06-22T02:22",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Loop Engineering  Code Buddy .pdf",
+      "original_filename": "Loop Engineering  Code Buddy .pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "75306f87eb1b2268bc4c399e688779f0e1b8ae7c8b63222c228d5573d7d30701",
+      "size_bytes": 4840909,
+      "page_count": 12,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "模块迁移的 /goal 代码示例在PDF p.7跨页截断，p.8有条件释义；完整代码未恢复。",
+          "pages": [
+            7,
+            8
+          ],
+          "status": "source_truncated"
+        },
+        {
+          "description": "CodeBuddy命令属性和限制按文章发布时说法记载，未运行验证。",
+          "pages": [
+            5,
+            6,
+            7
+          ],
+          "status": "not_executed"
+        }
+      ],
+      "publication_evidence": "PDF p.1: 2026年6月22日 02:22；无时区说明。"
+    }
+  ],
+  "tags": [
+    "Agent工程循环",
+    "Agent任务恢复",
+    "Harness与模型协同",
+    "Agent评测与反馈"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Loop Engineering指南+26.6.22",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Loop Engineering指南.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "Loop  Engineering  实践指南:在 Code  Buddy  中构建自主循环系统\n腾讯程序员 2026 年 6 月 22 日 02 : 22广东原创 腾讯技术工程 717 人\n作者:eliqiao\n一、什么是 Loop  Engineering\nLoop  Engineering  是由谷歌工程师 Addy  Osmani  提出的 AI  编程新范式。其核心理念是:围绕\n大模型构建自主循环运行系统,使 AI  从单次响应工具升级为⻓期自治代理。\n在传统的 AI  辅助开发中,开发者与 AI  的交互模式是\"一问一答\"——你发一条指令, AI  回复一\n次,然后等待下一条指令。这种模式的瓶颈在于:人成了循环的瓶颈。每一步都需要人类介\n入, AI  无法自主推进复杂工作流。\nLoop  Engineering  的解法是:让人从循环内部的操作者,转变为循环之上的监督者和目标设定\n者。 你定义\"做什么\"和\"何时算完成\", AI  自己决定\"怎么做\"和\"下一步是什么\",直到目标达成\n或确认不可达。\n类比传统工程学中的 PDCA 循环( Plan - Do - Check - Act ),在 Loop  Engineering  中:\n模型是执行者\nLoop是控制中枢\n规则框架是边界约束\n这三者组合,让 AI  在可控范围内自主推进复杂工作流。\n为什么现在重要\n当模型能力足够强时,循环设计成为决定 AI  自主性与可靠性的关键瓶颈。一个设计良好的循\n环可以让 AI  连续工作数十轮完成复杂重构,而一个设计糟糕的循环可能在第三轮就失控。\nLoop  Engineering  被视为继 Prompt  Engineering 、 Context  & Harness  Engineering  之后的\" AI\n编程第三次革命\"——开发者⻆色从\"提示词工程师\"彻底升级为\" AI  系统架构师\"。\n二、 Loop  Engineering  与 ReAct 的区别\n",
+    "publication_evidence": "PDF p.1: 2026年6月22日 02:22；无时区说明。",
+    "full_title_in_capture": "Loop Engineering 实践指南：在 CodeBuddy 中构建自主循环系统",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0149",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "75306f87eb1b2268bc4c399e688779f0e1b8ae7c8b63222c228d5573d7d30701"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "模块迁移的 /goal 代码示例在PDF p.7跨页截断，p.8有条件释义；完整代码未恢复。",
+        "pages": [
+          7,
+          8
+        ],
+        "status": "source_truncated"
+      },
+      {
+        "description": "CodeBuddy命令属性和限制按文章发布时说法记载，未运行验证。",
+        "pages": [
+          5,
+          6,
+          7
+        ],
+        "status": "not_executed"
+      }
+    ],
+    "outputs": [
+      "AI_Loop Engineering指南.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "coverage": "已覆盖Loop Engineering与ReAct分工、五阶段、双层循环、六要素、/goal、/loop、Automations、6个实践案例及边界。p.12为留言页。示例代码按原文边界保留，未执行。",
+    "fact_checks": [
+      {
+        "item": "/loop最小间隔",
+        "note_value": "1分钟",
+        "source_value": "最小间隔1分钟",
+        "pages": [
+          6
+        ],
+        "result": "match"
+      },
+      {
+        "item": "/loop每会话上限",
+        "note_value": "50任务",
+        "source_value": "每会话上限50个任务",
+        "pages": [
+          6
+        ],
+        "result": "match"
+      },
+      {
+        "item": "/loop自动过期",
+        "note_value": "3天",
+        "source_value": "3天后自动清除",
+        "pages": [
+          6
+        ],
+        "result": "match"
+      },
+      {
+        "item": "迁移goal示例兜底",
+        "note_value": "30 turns",
+        "source_value": "or stop after 30 turns",
+        "pages": [
+          8
+        ],
+        "result": "match"
+      },
+      {
+        "item": "goal条件字符限制",
+        "note_value": "不超过4000字符",
+        "source_value": "不超过4000字符",
+        "pages": [
+          10
+        ],
+        "result": "match"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Loop Engineering指南.md",
+      "sha256": "64112b82079d379ec0c930b5a94f411ebe16785621ba446abb6ac6823d5db39e"
+    },
+    "independent_crosscheck": {
+      "reviewer": "independent_crosscheck",
+      "note_sha256": "5d0041fe8b8eeecfc775c2c6cdfa419197f1eaf9b25d181b160aab5a7ca0047f",
+      "review_sha256": "3f6477156186d264c1c19e1ad47edcc6034bc67d597cc8b7bd5f954746caaa60",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "1–4",
+          "check": "核对Loop Engineering相对ReAct的外层/内层关系、五阶段Discover→Plan→Execute→Verify→Iterate和循环要素；笔记机制及术语相符。"
+        },
+        {
+          "pages": "5–8",
+          "check": "核对/goal独立评估器三态、/loop定时触发及两类停止语义；迁移示例30轮、CI示例2分钟和跨页截断代码的处理与原文一致，笔记未补造命令。"
+        },
+        {
+          "pages": "9–12",
+          "check": "核对Skills/MCP/Rules/Memory示例、4000字符条件与人工Review责任；p.11风险及选型建议对应正文，p.12为留言尾页。笔记未执行命令/配置。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "75306f87eb1b2268bc4c399e688779f0e1b8ae7c8b63222c228d5573d7d30701"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "4c59f1d9f4dcb39fec117cd7e56cdc804876644871ec1792892f4bedfe865265"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 32,
+        "text_layer_sha256": "d525d1433e6b46a1f8c2066c0339785fcb6aaa7fb7aee956e01df800b7227ef1",
+        "text_layer_char_count": 847
+      },
+      {
+        "page": 2,
+        "md_start_line": 40,
+        "md_end_line": 74,
+        "text_layer_sha256": "109113fad1a2a474e4e907ee874c8158257bde0e2894f787bd73c9ca3804f78c",
+        "text_layer_char_count": 1454
+      },
+      {
+        "page": 3,
+        "md_start_line": 82,
+        "md_end_line": 110,
+        "text_layer_sha256": "fd7f1fdf70547b7a1941e3d7a84b32d0ef3a4817bbced72b5176ff7a6324135e",
+        "text_layer_char_count": 1078
+      },
+      {
+        "page": 4,
+        "md_start_line": 118,
+        "md_end_line": 150,
+        "text_layer_sha256": "a4fdb900af2a29a1a67ad93b850ce5102d36559b41d5855bb73c1bf68b5bce7d",
+        "text_layer_char_count": 865
+      },
+      {
+        "page": 5,
+        "md_start_line": 158,
+        "md_end_line": 191,
+        "text_layer_sha256": "3c47fbb90e516bf3715e99b08af265800c175ea701e476424f3bc504dc7f8354",
+        "text_layer_char_count": 850
+      },
+      {
+        "page": 6,
+        "md_start_line": 199,
+        "md_end_line": 231,
+        "text_layer_sha256": "87db447b11b17c4b459b85f4957ef84cc7dd0b4d8423f15f4eae85ad812bcabe",
+        "text_layer_char_count": 780
+      },
+      {
+        "page": 7,
+        "md_start_line": 239,
+        "md_end_line": 267,
+        "text_layer_sha256": "10fea1b889f131f20e3da0216c45fdfa11d3588e925c86843937588f6e0eede6",
+        "text_layer_char_count": 843
+      },
+      {
+        "page": 8,
+        "md_start_line": 275,
+        "md_end_line": 303,
+        "text_layer_sha256": "eb72151329b79cc64579df6272789677da6c975bf61f71d4dce4747c8bffac0b",
+        "text_layer_char_count": 898
+      },
+      {
+        "page": 9,
+        "md_start_line": 311,
+        "md_end_line": 344,
+        "text_layer_sha256": "d2007c21a59016f64dd168d81cdd2655a001b2cf04c3986bb4ece5a184f72e3a",
+        "text_layer_char_count": 808
+      },
+      {
+        "page": 10,
+        "md_start_line": 352,
+        "md_end_line": 377,
+        "text_layer_sha256": "ac922332c2fd4a277211f31a2525f3843025178b60a4439a2a3c725b32abe7c8",
+        "text_layer_char_count": 902
+      },
+      {
+        "page": 11,
+        "md_start_line": 385,
+        "md_end_line": 431,
+        "text_layer_sha256": "bf57989a7d0bfc104a71fb7c58ca1b3bca4ac07ea84bd5aabee962a879db1b50",
+        "text_layer_char_count": 864
+      },
+      {
+        "page": 12,
+        "md_start_line": 439,
+        "md_end_line": 442,
+        "text_layer_sha256": "c8f616124f6cc16de4e1ca87f3616aeee78d8ad181b55cb7c30620c337371451",
+        "text_layer_char_count": 29
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "模块迁移的 /goal 代码示例在PDF p.7跨页截断，p.8有条件释义；完整代码未恢复。",
+        "pages": [
+          7,
+          8
+        ],
+        "status": "source_truncated"
+      },
+      {
+        "description": "CodeBuddy命令属性和限制按文章发布时说法记载，未运行验证。",
+        "pages": [
+          5,
+          6,
+          7
+        ],
+        "status": "not_executed"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Loop Engineering  Code Buddy .pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "75306f87eb1b2268bc4c399e688779f0e1b8ae7c8b63222c228d5573d7d30701",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Loop Engineering指南.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

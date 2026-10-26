@@ -1,0 +1,410 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0113",
+  "title": "10万+ Skill 背后：腾讯 SkillHub 如何帮用户找到真正好用的那 20%",
+  "short_title": "SkillHub技能治理与发现",
+  "account": "腾讯技术工程",
+  "author": "赵秀雯",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-10T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/10万+Skill 背后：腾讯SkillHub如何帮用户找到真正好用的那20%.pdf",
+      "original_filename": "10万+Skill 背后：腾讯SkillHub如何帮用户找到真正好用的那20%.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "a916a772061363f27ee91f4914d45aa6546958fdf0f397120271b1839c83e8a8",
+      "size_bytes": 5800219,
+      "page_count": 14,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "运营表现、耗时和榜单/安装数字未给出完整测量口径；按文章自述记录，不据此声称技能质量已独立验证。p.14为空白。"
+      ],
+      "publication_evidence": "PDF第1页署名行：2026年8月10日 02:36；文章署名赵秀雯。"
+    }
+  ],
+  "tags": [
+    "Agent评测与反馈",
+    "Agent技能与工具",
+    "知识检索与推荐",
+    "Skill设计与治理"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/SkillHub技能治理与发现+26.8.10",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_SkillHub技能治理与发现.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "10 万+ Skill  背后:腾讯 SkillHub 如何帮用户找到真正好用的那 20 %\n腾讯程序员 Aug  10 , 2026 , 2 : 36  AM广东原创 腾讯技术工程 985  listened\n作者:赵秀雯\n导语: AI 时代下,平台如何做内容治理与分发?SkillHub  作为国内最大的  Skill 社区之一,\n与小红书、知乎、 App Store 这些传统内容社区做推广搜有什么不同? SkillHub 是如何帮助用\n户快速找到那  20% 值得被看见的  Skill 的?本文将通过深度解读  SkillHub 针对这些命题的思\n考与实践,来逐一为大家解答。\nSkillHub 是专为中国用户优化的  AI Skills 社区,自今年  3 月上线以来,跟随  OpenClaw  生\n态的快速发展获得了广泛关注。作为国内最大的  Skill 社区之一,我们在社群中最常被问到的\n一个问题是:\n平台上那么多  Skill ,我怎么知道哪一个真的好用,有推荐的  Skill 吗?\n早在 3 个月前,当时  SkillHub 的数量大概是  5 万左右,用户当时已经是挑花眼,不知道哪个\nSkill 值得安装。对于一个拥有庞大资产内容的平台来说,供给的数量与供给创造的价值,往\n往并不均匀。 AI 又让这个问题变得更突出。过去,生产本身就有门槛,但在今天, AI 大大降\n低了用户写作、编码、创作的成本。创作者借助  AI 一句话生成一个  Skill ,立马发布到\nSkillHub 上,先把  Skill 的唯一标识码抢注了,就跟五百年前抢注域名热潮一样。\n就正如咱们常说的二八法则,真正有价值的内容往往只有那  20% 。平台快速增长的同时,\n也迫使我们从早期偏粗放的供给扩充,转向更系统的推荐、分发与治理。在这个过程中,如何\n处理好消费者、创作者和平台之间的关系,成为  SkillHub 很关键的问题。消费者希望更快找\n",
+    "publication_evidence": "PDF第1页署名行：2026年8月10日 02:36；文章署名赵秀雯。",
+    "full_title_in_capture": "10万+ Skill 背后：腾讯 SkillHub 如何帮用户找到真正好用的那 20%",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0113",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "a916a772061363f27ee91f4914d45aa6546958fdf0f397120271b1839c83e8a8"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      "运营表现、耗时和榜单/安装数字未给出完整测量口径；按文章自述记录，不据此声称技能质量已独立验证。p.14为空白。"
+    ],
+    "outputs": [
+      "AI_SkillHub技能治理与发现.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        4,
+        11
+      ]
+    },
+    "coverage": "逐页阅读p.1–13正文，检查完整p.1–14缩略图；p.13为文末信息，p.14为空白。放大核对p.4 TRACE五维表/静态评测流程和p.11 find skill界面与检索流程。",
+    "fact_checks": [
+      {
+        "claim": "TRACE五维",
+        "source_value": "Trust、Reliability、Adaptability、Convention、Effectiveness",
+        "pages": [
+          4
+        ],
+        "result": "放大表格核对一致"
+      },
+      {
+        "claim": "静态与动态评测流程",
+        "source_value": "五路并行静态评测；隔离Workspace中实际执行并清理环境",
+        "pages": [
+          4,
+          5,
+          6
+        ],
+        "result": "依正文与流程图记录"
+      },
+      {
+        "claim": "静态评测耗时变化",
+        "source_value": "典型10分钟到1分钟",
+        "pages": [
+          5
+        ],
+        "result": "按文章报告记录；未提供测量口径"
+      },
+      {
+        "claim": "分类治理",
+        "source_value": "12个一级类；一个Skill选择一个一级与1–3个二级类",
+        "pages": [
+          9
+        ],
+        "result": "笔记一致"
+      },
+      {
+        "claim": "find skill流程与运营表现",
+        "source_value": "同义/上位词扩展2–4组，展示3–5个候选；文章称3天登上榜单、一周8000+安装",
+        "pages": [
+          11,
+          12
+        ],
+        "result": "放大核对检索流程；运营数据归因于文章"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_SkillHub技能治理与发现.md",
+      "sha256": "e0a17893e6f8067dc7b468de5642cfcdcdc380a9c00aa09f548d189c795a6d6d",
+      "size_bytes": 29564
+    },
+    "independent_crosscheck": {
+      "reviewer": "crosscheck_a",
+      "status": "passed",
+      "note_sha256": "e0a17893e6f8067dc7b468de5642cfcdcdc380a9c00aa09f548d189c795a6d6d",
+      "review_sha256": "96748a1310cfdf8c3abe5c2e2a03cfb9bd574d7ec457d03a2d23278e549c7b56",
+      "changes": [
+        "将9/9/5/9/9条复习卡由“Q:… A:…”改为要求的单行“问题::答案”，未改变答案内容。",
+        "按新增结构标准核对日期、唯一H1、复习卡片与末尾折叠校对报告；无卡片内容改写。",
+        "新增标准复核通过：含## 复习卡片、5–10条单行问题::答案、date元数据、唯一H1，以及末尾逐行引用的折叠校对报告。"
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "p.1–5",
+          "result": "TRACE五维及静态/隔离运行评测流程。"
+        },
+        {
+          "pages": "p.7–10",
+          "result": "live session与artifact snapshot、受控分类和热度治理。"
+        },
+        {
+          "pages": "p.11–12",
+          "result": "find skill的同义词扩展、候选展示与安装确认；运营数字归因于文章。"
+        }
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "a916a772061363f27ee91f4914d45aa6546958fdf0f397120271b1839c83e8a8"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "1abb1e3c6b92f5d10aeae825b910c1c0d774ee732622d65acbc0a50ba342ad6f"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 28,
+        "text_layer_sha256": "e8783e4536596937f79e7432d06b662ed41b0e0f311a878f805886f0ddeb8f3b",
+        "text_layer_char_count": 828
+      },
+      {
+        "page": 2,
+        "md_start_line": 36,
+        "md_end_line": 58,
+        "text_layer_sha256": "33d5ee652b563d261ca0dae3301f65c210541066f4e43c06eb8bf06236dc3c5f",
+        "text_layer_char_count": 752
+      },
+      {
+        "page": 3,
+        "md_start_line": 66,
+        "md_end_line": 100,
+        "text_layer_sha256": "1a70ef0e6106065b4b83a2c46bf91e4a9f2367e505eecf78c0b01d5a8ff1e381",
+        "text_layer_char_count": 1445
+      },
+      {
+        "page": 4,
+        "md_start_line": 108,
+        "md_end_line": 145,
+        "text_layer_sha256": "240e5ee7e9b84947742560cd19b9c15e5679cf9ba25fad8a3ab2810ec68934e5",
+        "text_layer_char_count": 981
+      },
+      {
+        "page": 5,
+        "md_start_line": 153,
+        "md_end_line": 165,
+        "text_layer_sha256": "046551520d79fbaa634e82a7c71c330b875674c1739ff8f7028ae09af5b19d94",
+        "text_layer_char_count": 469
+      },
+      {
+        "page": 6,
+        "md_start_line": 173,
+        "md_end_line": 184,
+        "text_layer_sha256": "357ffcef10b14c77fe3e2bb0ceb176695cde823dba1bdbad0913e334bc19a203",
+        "text_layer_char_count": 396
+      },
+      {
+        "page": 7,
+        "md_start_line": 192,
+        "md_end_line": 203,
+        "text_layer_sha256": "b2117ba26819f9c6a78353b3a94329290363896795b68c0f8208a7b6138ddddf",
+        "text_layer_char_count": 465
+      },
+      {
+        "page": 8,
+        "md_start_line": 211,
+        "md_end_line": 238,
+        "text_layer_sha256": "3348e5947674382058aae9ae4a1870d801fdfffef724e7fe5dd67e3c92167a03",
+        "text_layer_char_count": 775
+      },
+      {
+        "page": 9,
+        "md_start_line": 246,
+        "md_end_line": 266,
+        "text_layer_sha256": "9af7812c6afafb28e75c4e4ef7818ea88cb69ff5244bdee0831e23f174d7463a",
+        "text_layer_char_count": 709
+      },
+      {
+        "page": 10,
+        "md_start_line": 274,
+        "md_end_line": 294,
+        "text_layer_sha256": "61703666b878c6ecf662fccb70f683946349c2b786860eb3e573bc2fffd9b462",
+        "text_layer_char_count": 839
+      },
+      {
+        "page": 11,
+        "md_start_line": 302,
+        "md_end_line": 323,
+        "text_layer_sha256": "78dcf12a2d688a38607a26bd8470dd5f97fa50df3012e6e05c1c776260023b4d",
+        "text_layer_char_count": 936
+      },
+      {
+        "page": 12,
+        "md_start_line": 331,
+        "md_end_line": 350,
+        "text_layer_sha256": "1368f2f02b3d4e7c27889246a533128384df55b329421153dda52bea7b308fb1",
+        "text_layer_char_count": 610
+      },
+      {
+        "page": 13,
+        "md_start_line": 358,
+        "md_end_line": 365,
+        "text_layer_sha256": "459216970a08348a64e2fe4f3130b922e13a798ad00268c90bde11f8f6745134",
+        "text_layer_char_count": 77
+      },
+      {
+        "page": 14,
+        "md_start_line": 373,
+        "md_end_line": 372,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        4,
+        11
+      ]
+    },
+    "quality_issues": [
+      "运营表现、耗时和榜单/安装数字未给出完整测量口径；按文章自述记录，不据此声称技能质量已独立验证。p.14为空白。"
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/10万+Skill 背后：腾讯SkillHub如何帮用户找到真正好用的那20%.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "a916a772061363f27ee91f4914d45aa6546958fdf0f397120271b1839c83e8a8",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Skill设计与治理.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_SkillHub技能治理与发现.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

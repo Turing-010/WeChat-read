@@ -1,0 +1,146 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0318",
+  "title": "教你从零“手搓”一个大模型，别再只会调用API了",
+  "short_title": "从零实现小型GPT模型",
+  "account": "腾讯技术工程",
+  "author": "yongzheng、patrickguo",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-12-24T01:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "教你从零“⼿搓”⼀ 个 ⼤模型，别再只会调⽤              API了\n\n\n原创 腾讯程序员  腾讯技术⼯程   2025年12⽉24⽇  01:36⼴东 2531⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n作者： yongzheng，patrickguo\n\n\n\n  在⼤模型满天飞的今天，我们是⽢⼼做⼀个只会调⽤           OpenAI.chat.completions 的 API\n  搬运⼯，还是想真正弄懂那个⿊盒⼦⾥到底发⽣了什么？本⽂将⽤最朴素的代码，完整的\n  实现⼀个⼩型LLM。当你亲⼿写出 Attention 层的矩阵乘法，亲眼看到模型从输出乱码到\n  学会说话，你会发现：⼤模型，其实也没那么可怕。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoadMap\n\n\n\n\n\n\n\n\n  1. 引⾔\n\n1.1 背景",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "大模型基础与推理优化",
+    "模型训练与对齐"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/教你从零“手搓”一个大模型，别再只会调用API了.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:38:58-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "de762d93b6e4baf353f3be90c9c104419c0e789698ce3b95fccab773e0efce89",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "BPE训练后按最长token匹配的描述过度简化；实际编码需与训练的合并规则/实现一致。字符、token、单词在例子中混用。",
+        "p9—10把点积大小直接等同语义距离不严谨，点积还受向量范数影响；词向量类比是示意而非该随机初始化模型已具备的能力。",
+        "p16残差连接保证梯度不消失是过强表述，FFN思考类比为作者明确的猜想。",
+        "p23写9个Token而展示张量为10；p24数据切片实际10项而注释写11，使用nn.cross_entropy也不对应所示torch.nn导入，不能直接当可运行训练程序。",
+        "p25变量probas的数值已和为1却再经softmax，说明将概率与logits混用；温度应作用于logits，降低温度不等于保证事实准确。",
+        "训练数据处理、优化器循环、硬件条件与完整评测未展开；示例未对外部署，截图不是本次复现实验。p18、19、21有代码长行右侧截断，页图18已确认原PDF也只显示部分长行。",
+        "已看页图1、14、18、24，未逐项核验全部图表或代码。"
+      ],
+      "size_bytes": 13308928,
+      "page_count": 31
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:38:58-07:00",
+  "directory": "腾讯技术工程/从零实现小型GPT模型+25.12.24",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:38:58-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "de762d93b6e4baf353f3be90c9c104419c0e789698ce3b95fccab773e0efce89",
+    "output_path": "MD.md",
+    "output_sha256": "0e002454f450426163543b2e90b53f9e38b58c87f7bf402673944829bdd91c05",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 31,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "visual_pages": [
+        1,
+        14,
+        18,
+        24
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "BPE训练后按最长token匹配的描述过度简化；实际编码需与训练的合并规则/实现一致。字符、token、单词在例子中混用。",
+      "p9—10把点积大小直接等同语义距离不严谨，点积还受向量范数影响；词向量类比是示意而非该随机初始化模型已具备的能力。",
+      "p16残差连接保证梯度不消失是过强表述，FFN思考类比为作者明确的猜想。",
+      "p23写9个Token而展示张量为10；p24数据切片实际10项而注释写11，使用nn.cross_entropy也不对应所示torch.nn导入，不能直接当可运行训练程序。",
+      "p25变量probas的数值已和为1却再经softmax，说明将概率与logits混用；温度应作用于logits，降低温度不等于保证事实准确。",
+      "训练数据处理、优化器循环、硬件条件与完整评测未展开；示例未对外部署，截图不是本次复现实验。p18、19、21有代码长行右侧截断，页图18已确认原PDF也只显示部分长行。",
+      "已看页图1、14、18、24，未逐项核验全部图表或代码。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/教你从零“手搓”一个大模型，别再只会调用API了.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/从零实现小型GPT模型+25.12.24/RAW.pdf",
+    "sha256": "de762d93b6e4baf353f3be90c9c104419c0e789698ce3b95fccab773e0efce89",
+    "copied_at": "2026-10-23T06:38:58-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

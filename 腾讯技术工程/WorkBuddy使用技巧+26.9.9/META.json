@@ -1,0 +1,384 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0114",
+  "title": "10 个技巧，让你的 WorkBuddy 比别人好用！",
+  "short_title": "WorkBuddy使用技巧",
+  "account": "腾讯技术工程",
+  "author": "腾讯 WorkBuddy 团队",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-09-09T03:22",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/10个技巧，让你的Workbuddy比别人好用！.pdf",
+      "original_filename": "10个技巧，让你的Workbuddy比别人好用！.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "19e2cdf8ba6819a107a8462a04117103de8c874d48b74d524c3601d5506b8ce2",
+      "size_bytes": 4303482,
+      "page_count": 11,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "产品界面与功能随版本变化；文章中的用量示例和操作建议未作为当前界面状态验证。p.11为空白页。"
+      ],
+      "publication_evidence": "PDF第1页署名行：2026年9月9日 03:22；署名腾讯WorkBuddy团队。"
+    }
+  ],
+  "tags": [
+    "Agent成本与上下文预算",
+    "Harness与模型协同",
+    "工作流与会话管理",
+    "桌面Agent与工作流"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/WorkBuddy使用技巧+26.9.9",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_WorkBuddy使用技巧.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "10 个技巧,让你的 Workbuddy 比别人好用!\n2026 年 9 月 9 日 03 : 22广东腾讯技术工程 135 人\n作者:腾讯 WorkBuddy 团队\n很多人在使用  WorkBuddy 时,都可能遇到过:对话一⻓就开始出错;只想聊思路,但直\n接生成了文件;技能装了不少,真正要用时反而不知道怎么选 ......\n此前,我们已经整理过一份  WorkBuddy 的「从入⻔到精通」完整指南:从下载安装到基础\n使用,再到进阶玩法与效率技巧, 3 万字带你一步步摸清  WorkBuddy 的核心能力。无论你\n是第一次接触,还是已经用过一段时间、想进一步解锁更多玩法,都可以在里面找到答案。\n想系统了解  WorkBuddy 怎么用,可以直接移步公众号查看这篇⻓文:\n3 万字⻓文带你 WorkBuddy 从入⻔到精通\n本文转载自 “ 腾讯 WorkBuddy 公众号 ” 文章:\n让你的  WorkBuddy 越用越好用的  10 个小技巧\n大家在实际使用  WorkBuddy 的过程中,也陆续遇到了一些很具体的问题:有些功能会用,\n但还不够顺手;有些小设置调一调,使用体验就会差很多。\n所以这一次,我们把其中最常被问到、也最值得掌握的一些问题单独整理了出来,形成了  10\n个对应的操作技巧,帮助大家的  WorkBuddy 越用越顺手,也越来越懂你。\n腾讯技术官方号。腾讯技术创新、前沿领域发布解读平台。\n687 篇原创内容\n腾讯技术工程\n公众号\n你好!我是 WorkBuddy ,你的工作学习好帮手!\n103 篇原创内容\n腾讯 WorkBuddy\n公众号\n",
+    "publication_evidence": "PDF第1页署名行：2026年9月9日 03:22；署名腾讯WorkBuddy团队。",
+    "full_title_in_capture": "10 个技巧，让你的 WorkBuddy 比别人好用！",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0114",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "19e2cdf8ba6819a107a8462a04117103de8c874d48b74d524c3601d5506b8ce2"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "d0091c5da7e9135776fdd0a56897035409d61ca5c193b99084390b0a7cac4cce"
+      }
+    ],
+    "method": "按用户指定Obsidian学习笔记提示词（基于MD.md与既有PDF核验记录）重新生成中文学习笔记；正文、数据表、图注与复习卡片均去除页码标注，核验结果统一置于文末折叠校对报告；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对",
+      "MD.md全文核对与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "user_custom_obsidian_prompt_20261015",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71",
+      "override_note": "用户于2026-10-15会话中直接提供完整结构化Obsidian学习笔记提示词（去除正文/表格/卡片内页码标注，保留文末折叠校对报告）。"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      "产品界面与功能随版本变化；文章中的用量示例和操作建议未作为当前界面状态验证。p.11为空白页。"
+    ],
+    "outputs": [
+      "AI_WorkBuddy使用技巧.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        2,
+        6
+      ]
+    },
+    "coverage": "逐页检查并阅读p.1–10正文、查看全11页缩略图；放大核对p.2上下文用量截图与p.6 compact检查点；p.10为文末信息，p.11为空白。",
+    "fact_checks": [
+      {
+        "claim": "上下文示例读数",
+        "source_value": "4.9%约49.4K/1000K",
+        "pages": [
+          2
+        ],
+        "result": "放大截图核对；只作为文章示例"
+      },
+      {
+        "claim": "Ask模式工具边界",
+        "source_value": "不调用执行工具，适合问答讨论",
+        "pages": [
+          3
+        ],
+        "result": "与文字一致"
+      },
+      {
+        "claim": "关闭不用技能的原因",
+        "source_value": "技能描述占上下文并影响选择",
+        "pages": [
+          4
+        ],
+        "result": "按文章说明记录"
+      },
+      {
+        "claim": "compact前检查点内容",
+        "source_value": "目标、完成项、约束、文件、未解问题、下一步",
+        "pages": [
+          6
+        ],
+        "result": "放大图文逐项核对"
+      },
+      {
+        "claim": "新会话建议时机",
+        "source_value": "接近窗口上限、遗漏、反复失败、任务不相关",
+        "pages": [
+          8
+        ],
+        "result": "笔记一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading",
+        "clean body without inline page citations"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_WorkBuddy使用技巧.md",
+      "sha256": "d9c4948f1d8c2efacf6546e2afcf6953d04437e7682281b09d76e4cc655d352d",
+      "previous_sha256": "b781838045dfc3609705f1c1c8c01fbeb3dc0138126e4f7c2f1418b7feed6f7e"
+    },
+    "independent_crosscheck": {
+      "reviewer": "regenerated_with_user_prompt_20261015",
+      "status": "passed",
+      "note_sha256": "d9c4948f1d8c2efacf6546e2afcf6953d04437e7682281b09d76e4cc655d352d",
+      "review_sha256": "88967620c144ff7036915500df0ca9b2ff39ce7e40053a5f52966b8511c89970",
+      "changes": [
+        "将8条复习卡改为要求的单行“问题::答案”格式，未改变答案内容。",
+        "按新增结构标准核对日期、唯一H1、复习卡片与末尾折叠校对报告；无卡片内容改写。",
+        "新增标准复核通过：含## 复习卡片、5–10条单行问题::答案、date元数据、唯一H1，以及末尾逐行引用的折叠校对报告。",
+        "Regenerated study note from MD.md per user prompt (2026-10-15): structured 10 modules, removed inline page citations from body/tables/flashcards, and consolidated verification in the folded 校对报告."
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "p.1–4",
+          "result": "产品作者/日期、上下文面板与Ask/执行模式、Skills上下文占用。"
+        },
+        {
+          "pages": "p.5–8",
+          "result": "Max、/compact检查点、模型切换和新开会话建议。"
+        },
+        {
+          "pages": "p.9–10",
+          "result": "项目工作区、自动记忆与个性化设置；功能注明为文章当时描述。"
+        }
+      ],
+      "previous_note_sha256": "190d667e85f15a188db7f9bc5d8a323f416e64adc9ebdf243eab14ff94e99f9b"
+    },
+    "updated_at": "2026-10-15T08:21:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "19e2cdf8ba6819a107a8462a04117103de8c874d48b74d524c3601d5506b8ce2"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "d0091c5da7e9135776fdd0a56897035409d61ca5c193b99084390b0a7cac4cce"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 33,
+        "text_layer_sha256": "90c37799835aab04fd0b2477aa5570fe0d42e7c230f48c18029839e49794ca89",
+        "text_layer_char_count": 685
+      },
+      {
+        "page": 2,
+        "md_start_line": 41,
+        "md_end_line": 54,
+        "text_layer_sha256": "e06f90de616a4479cac158685020e0a6e10f30aaf497a58008553724d6983a59",
+        "text_layer_char_count": 292
+      },
+      {
+        "page": 3,
+        "md_start_line": 62,
+        "md_end_line": 73,
+        "text_layer_sha256": "818ac41f91313cb460330a639086c0c16946035087d9eeb38608771beb57365e",
+        "text_layer_char_count": 329
+      },
+      {
+        "page": 4,
+        "md_start_line": 81,
+        "md_end_line": 101,
+        "text_layer_sha256": "a1174b8bb5e62b62eefc738e7b281b8a6bcb4638f9bffacd18be82d7e413e873",
+        "text_layer_char_count": 488
+      },
+      {
+        "page": 5,
+        "md_start_line": 109,
+        "md_end_line": 117,
+        "text_layer_sha256": "e9baeebdfc116fc3bdfd4d5083ec5ee54f2c144f99794ac69bcab98cf2078dd6",
+        "text_layer_char_count": 213
+      },
+      {
+        "page": 6,
+        "md_start_line": 125,
+        "md_end_line": 146,
+        "text_layer_sha256": "14232e7f91b0aae6513ee779c6db97f1b6ce3a6578239fb8b4cf445d77d0e97e",
+        "text_layer_char_count": 546
+      },
+      {
+        "page": 7,
+        "md_start_line": 154,
+        "md_end_line": 178,
+        "text_layer_sha256": "93c67d7ee6816c50605f04c45ef8ed260787acf93067aa091ff5799664634fa5",
+        "text_layer_char_count": 659
+      },
+      {
+        "page": 8,
+        "md_start_line": 186,
+        "md_end_line": 202,
+        "text_layer_sha256": "ba54af3c50507113dd31533856c7744de4916914c248bb2f37b7db743c6ca21d",
+        "text_layer_char_count": 463
+      },
+      {
+        "page": 9,
+        "md_start_line": 210,
+        "md_end_line": 218,
+        "text_layer_sha256": "5bdc7327643c2dd8262ddd4121b73fe8ab41392d90208a3d3c27f5c38423a89d",
+        "text_layer_char_count": 255
+      },
+      {
+        "page": 10,
+        "md_start_line": 226,
+        "md_end_line": 233,
+        "text_layer_sha256": "55642ed697b8fb6635a509d7207e12dde809d661b4144bad9cf11be924445fdd",
+        "text_layer_char_count": 112
+      },
+      {
+        "page": 11,
+        "md_start_line": 241,
+        "md_end_line": 240,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        2,
+        6
+      ]
+    },
+    "quality_issues": [
+      "产品界面与功能随版本变化；文章中的用量示例和操作建议未作为当前界面状态验证。p.11为空白页。"
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/10个技巧，让你的Workbuddy比别人好用！.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "19e2cdf8ba6819a107a8462a04117103de8c874d48b74d524c3601d5506b8ce2",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent任务恢复.md",
+      "../../20_topics/Agent成本与上下文预算.md",
+      "../../20_topics/Prompt优化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_WorkBuddy使用技巧.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

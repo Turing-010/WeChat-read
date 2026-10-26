@@ -1,0 +1,325 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0065",
+  "title": "探索GPU加速向量检索：NVDIA Cagra在微信大规模推荐系统中的应用实践",
+  "short_title": "Cagra向量检索实践",
+  "account": "腾讯技术工程",
+  "author": "yessitkong（微信基础架构 AI Infra 团队）",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-03-20T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0320 NVIDIA Cagra微信推荐系统向量检索实践.pdf",
+      "original_filename": "0320 NVIDIA Cagra微信推荐系统向量检索实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "11794266723406e75d74b57c7a4b3be57c994b686a90d09f0e89d64443d96909",
+      "size_bytes": 2032902,
+      "page_count": 6,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "原标题将NVIDIA拼为NVDIA，标题忠实保留，正文使用Cagra避免误传拼写",
+          "pages": [
+            1
+          ],
+          "status": "source_issue_preserved"
+        },
+        {
+          "description": "成本图CPU recall 0.8与GPU recall 0.9条件不同，不能作为相同召回率对照",
+          "pages": [
+            5
+          ],
+          "status": "boundary_preserved"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏 2026-03-20T02:36"
+    }
+  ],
+  "tags": [
+    "检索与文档解析",
+    "云网络系统研究",
+    "推荐系统与多模态评测"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Cagra向量检索实践+26.3.20",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Cagra向量检索实践.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "探索 GPU  加速向量检索: NVDIA  Cagra  在微信大规模推荐系统中\n的应用实践\n腾讯程序员 2026 年 3 月 20 日 02 : 36广东腾讯技术工程 6 人\n作者 : yessitkong ( 微信基础架构  AI Infra 团队 )\n引言\n在当今的互联网服务架构中,向量检索技术已成为推荐系统、搜索引擎、内容匹配等核心业务\n场景的关键组件。随着深度学习模型的广泛应用,如何在海量向量数据中高效进行近似最近邻\n( Approximate Nearest Neighbor, ANN )搜索,直接影响着在线服务的用户体验和业务效\n果。\nCagra ( CUDA Accelerated Graph-based Retrieval Algorithm )是  NVIDIA 推出的基于  GPU\n加速的图索引  ANN 算法,也是  RAPIDS cuVS 库的核心组件之一。与过去业界广泛使用的传\n统  CPU-based ANN 算法(如  HNSW 、 IVF 等)相比, Cagra 充分利用了  GPU 的强大并行计\n算能力,在保持高召回率的同时,能够提供显著更高的吞吐量,满足不同业务对高性能、低成\n本的极致要求。\n本文将分享我们团队如何攻克多项工程难题,在业界率先将  Cagra GPU 图索引大规模应用于\n核心线上推荐业务的技术实践与架构演进。\nCagra 算法原理与核心优势\n核心技术原理\nCagra 采用基于图的索引结构,其核心思想是将向量数据构建成一个近似   - 近邻图(-NN\ngraph ),然后在查询时通过启发式图遍历算法快速定位最近邻向量。\n与传统的  HNSW 算法相比, Cagra 的结构设计针对  GPU 架构进行了深度定制,主要区别在\n于:\n1. 单层图结构: Cagra 采用单层图设计,摒弃了  HNSW 复杂的的多层分层结构,更利于显\n存的连续访问。\n2. 固定出度: Cagra 每个节点的出度固定,而  HNSW 的出度只需小于等于给定值,这使得\nGPU 上的内存分配和线程调度更加规整。\n",
+    "publication_evidence": "PDF p.1 发布栏 2026-03-20T02:36",
+    "full_title_in_capture": "探索GPU加速向量检索：NVDIA Cagra在微信大规模推荐系统中的应用实践",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0065",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "11794266723406e75d74b57c7a4b3be57c994b686a90d09f0e89d64443d96909"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "原标题将NVIDIA拼为NVDIA，标题忠实保留，正文使用Cagra避免误传拼写",
+        "pages": [
+          1
+        ],
+        "status": "source_issue_preserved"
+      },
+      {
+        "description": "成本图CPU recall 0.8与GPU recall 0.9条件不同，不能作为相同召回率对照",
+        "pages": [
+          5
+        ],
+        "status": "boundary_preserved"
+      }
+    ],
+    "outputs": [
+      "AI_Cagra向量检索实践.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "coverage": "覆盖图算法、建图改造、三层存储、CPU/GPU协同、聚合时延和落地成本；图表保留趋势和条件，不估算精确柱值。",
+    "fact_checks": [
+      {
+        "item": "召回门槛",
+        "value": "≥0.9",
+        "pages": 2,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "建图耗时",
+        "value": "原来的1/30以下",
+        "pages": 2,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "过滤优化",
+        "value": "QPS约+25%",
+        "pages": 3,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "唤醒优化",
+        "value": "吞吐+65%",
+        "pages": 4,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "成本",
+        "value": "检索-50%以上、建库约-70%",
+        "pages": 4,
+        "result": "与所读原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Cagra向量检索实践.md",
+      "sha256": "cbc76c87df4862d98796aad97d689708f1cdc96cd3cbef834f5b525b70ac05a5"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "11794266723406e75d74b57c7a4b3be57c994b686a90d09f0e89d64443d96909"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "a5ae42116472f8cb63d0a24ff72396c6e1e0e61dc6628dde97db0203c0e62d4a"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 35,
+        "text_layer_sha256": "3e0020d179159c843f262b4a54733f268f3e8e9b82a6db6c9b7c0e8db3403798",
+        "text_layer_char_count": 882
+      },
+      {
+        "page": 2,
+        "md_start_line": 43,
+        "md_end_line": 73,
+        "text_layer_sha256": "31eb87a0647cf226049ae5e346de320b18f1e20d167d48952a04c6eec0d53f8f",
+        "text_layer_char_count": 1107
+      },
+      {
+        "page": 3,
+        "md_start_line": 81,
+        "md_end_line": 105,
+        "text_layer_sha256": "d3ec148e621941830c8c1efcd8fa1736e9e0f740f97facc031d8d5d9dadb40b7",
+        "text_layer_char_count": 789
+      },
+      {
+        "page": 4,
+        "md_start_line": 113,
+        "md_end_line": 133,
+        "text_layer_sha256": "81c1cae5c1e3b13956e94623ba0d689b77272b8ebb9c40756839343b5f87d42d",
+        "text_layer_char_count": 701
+      },
+      {
+        "page": 5,
+        "md_start_line": 141,
+        "md_end_line": 147,
+        "text_layer_sha256": "4c2f5c8338c7b876bf64310f0fce953141c54028b53b4e6dcf8ac91896c0d333",
+        "text_layer_char_count": 107
+      },
+      {
+        "page": 6,
+        "md_start_line": 155,
+        "md_end_line": 158,
+        "text_layer_sha256": "02b341fd14a53b0c75aeffae3cbbcf33cdbc5ba2fff3a2f130224f718acc98a3",
+        "text_layer_char_count": 26
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "原标题将NVIDIA拼为NVDIA，标题忠实保留，正文使用Cagra避免误传拼写",
+        "pages": [
+          1
+        ],
+        "status": "source_issue_preserved"
+      },
+      {
+        "description": "成本图CPU recall 0.8与GPU recall 0.9条件不同，不能作为相同召回率对照",
+        "pages": [
+          5
+        ],
+        "status": "boundary_preserved"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0320 NVIDIA Cagra微信推荐系统向量检索实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "11794266723406e75d74b57c7a4b3be57c994b686a90d09f0e89d64443d96909",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/推荐系统与多模态评测.md",
+      "../../20_topics/检索与文档解析.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Cagra向量检索实践.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

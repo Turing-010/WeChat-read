@@ -1,0 +1,412 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0202",
+  "title": "TMAP平台图生视频推理加速实践",
+  "short_title": "TMAP图生视频推理加速",
+  "account": "大淘宝技术",
+  "author": "蓝愿、行宣、不竭",
+  "author_byline": "本文作者蓝愿、行宣、不竭，来自淘天集团-用户&内容技术团队。",
+  "source_url": null,
+  "published_at": "2026-07-22",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "用户&内容技术 2026年7月22日 01:04 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 15,
+      "text": "本文作者蓝愿、行宣、不竭，来自淘天集团-用户&内容技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "大模型推理与算子优化",
+    "模型架构与训练",
+    "跨端开发与性能"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/TMAP平台图生视频推理加速实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T06:06:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "f49ccb30fbe4f027d6bf1ce9e6a9e014cbe0fe8e1467372d890c3e60efe8019e",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.2-13含视频生成对比帧、Ulysses通信重叠时序图、SageAttention误差分布图及p.11-12的PACT与DPCache动态规划公式截图（位于PDF图像层），p.16为空白尾页；全部核心原理、递推变量D[m,k]/P[m,k]及4.87倍加速数据已在正文中完整还原。",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            16
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 18764314,
+      "page_count": 16
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T06:06:00-07:00",
+  "directory": "大淘宝技术/TMAP图生视频推理加速+26.7.22",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_TMAP图生视频推理加速.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0202",
+    "created_at": "2026-10-20T06:06:00-07:00",
+    "updated_at": "2026-10-20T06:06:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "f49ccb30fbe4f027d6bf1ce9e6a9e014cbe0fe8e1467372d890c3e60efe8019e"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "f61ec2ace29a5017bab5f339a4b72473ea4855888e9d068f279a554bf438a94c"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.2-13含视频生成对比帧、Ulysses通信重叠时序图、SageAttention误差分布图及p.11-12的PACT与DPCache动态规划公式截图（位于PDF图像层），p.16为空白尾页；全部核心原理、递推变量D[m,k]/P[m,k]及4.87倍加速数据已在正文中完整还原。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          16
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_TMAP图生视频推理加速.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_TMAP图生视频推理加速.md",
+      "sha256": "9e8dfa47b02434ffb38d705dcaece1526cfd349f286466293bedd3776105711a"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T06:06:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "f49ccb30fbe4f027d6bf1ce9e6a9e014cbe0fe8e1467372d890c3e60efe8019e"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "f61ec2ace29a5017bab5f339a4b72473ea4855888e9d068f279a554bf438a94c"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "md_end_line": 66,
+        "md_start_line": 14,
+        "page": 1,
+        "text_layer_char_count": 761,
+        "text_layer_sha256": "05b277914492c94477167e5dd3ac568a8371da98c231c8a1e477927827405742"
+      },
+      {
+        "md_end_line": 114,
+        "md_start_line": 76,
+        "page": 2,
+        "text_layer_char_count": 506,
+        "text_layer_sha256": "0dda41a7460e8e87a04704734dead896fe049b6e625b0b55fdf0f1170d5335ca"
+      },
+      {
+        "md_end_line": 159,
+        "md_start_line": 124,
+        "page": 3,
+        "text_layer_char_count": 371,
+        "text_layer_sha256": "b87cec6f45c752846d5e12cf0d7341463122a0181e24027a3c58535eef8f1a56"
+      },
+      {
+        "md_end_line": 211,
+        "md_start_line": 169,
+        "page": 4,
+        "text_layer_char_count": 640,
+        "text_layer_sha256": "371f2c831e352755e30173f163c20aed198e6af8674520081ad44b445ece3cd0"
+      },
+      {
+        "md_end_line": 279,
+        "md_start_line": 221,
+        "page": 5,
+        "text_layer_char_count": 924,
+        "text_layer_sha256": "3e1d913b34e25f36bd60b3241b5fb8b1143cb73db219e47d2775a3d1af50d995"
+      },
+      {
+        "md_end_line": 332,
+        "md_start_line": 289,
+        "page": 6,
+        "text_layer_char_count": 739,
+        "text_layer_sha256": "b2eae9c9c65ef0b15d5210a63ebd88c4ce1a462ef929cd4659285163ad60c237"
+      },
+      {
+        "md_end_line": 398,
+        "md_start_line": 342,
+        "page": 7,
+        "text_layer_char_count": 881,
+        "text_layer_sha256": "c3b436b6360222f3e1e85530927283e1803867c4b8e53432fbccead1a7c026ec"
+      },
+      {
+        "md_end_line": 434,
+        "md_start_line": 408,
+        "page": 8,
+        "text_layer_char_count": 476,
+        "text_layer_sha256": "0fb3fd0b5063976bdfa4ac59789cecd30c56a9a8f8194b629d48d5bfbb052984"
+      },
+      {
+        "md_end_line": 470,
+        "md_start_line": 444,
+        "page": 9,
+        "text_layer_char_count": 542,
+        "text_layer_sha256": "6bbdb081b4563286a1db8ab96f96b852e33d5a1eb7f50f3f2c0cdc4620ebe0c3"
+      },
+      {
+        "md_end_line": 509,
+        "md_start_line": 480,
+        "page": 10,
+        "text_layer_char_count": 720,
+        "text_layer_sha256": "3ed4ac1cbccffcbc2a6b36f6159f17ed07b6810776e1c820696b5abb14451787"
+      },
+      {
+        "md_end_line": 561,
+        "md_start_line": 519,
+        "page": 11,
+        "text_layer_char_count": 706,
+        "text_layer_sha256": "b4bdf519949cb5979c66fae83984e25688e54db773973e51d18e1f9a82fe4e20"
+      },
+      {
+        "md_end_line": 605,
+        "md_start_line": 571,
+        "page": 12,
+        "text_layer_char_count": 533,
+        "text_layer_sha256": "b6533f1b9f2723a7ef49be7b69aa8c61189b2cfe0f76442faf489976418d0373"
+      },
+      {
+        "md_end_line": 655,
+        "md_start_line": 615,
+        "page": 13,
+        "text_layer_char_count": 599,
+        "text_layer_sha256": "80aaae2657b361f8ea5244a7f4ff0f4b31ab6741570815536e4e30dabd5df2f0"
+      },
+      {
+        "md_end_line": 715,
+        "md_start_line": 665,
+        "page": 14,
+        "text_layer_char_count": 854,
+        "text_layer_sha256": "21d8e763988c29c3ea0bac78dc09bd68bbc2e6635d912f7b6feda602c47317f8"
+      },
+      {
+        "md_end_line": 750,
+        "md_start_line": 725,
+        "page": 15,
+        "text_layer_char_count": 359,
+        "text_layer_sha256": "51f5c1318cef0fbd3976a2107947720cae048f6381e862cc4730c3380e830651"
+      },
+      {
+        "md_end_line": 760,
+        "md_start_line": 760,
+        "page": 16,
+        "text_layer_char_count": 0,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.2-13含视频生成对比帧、Ulysses通信重叠时序图、SageAttention误差分布图及p.11-12的PACT与DPCache动态规划公式截图（位于PDF图像层），p.16为空白尾页；全部核心原理、递推变量D[m,k]/P[m,k]及4.87倍加速数据已在正文中完整还原。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          16
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/大模型推理与算子优化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T06:06:00-07:00",
+    "removed_at": "2026-10-20T06:06:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/TMAP平台图生视频推理加速实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "f49ccb30fbe4f027d6bf1ce9e6a9e014cbe0fe8e1467372d890c3e60efe8019e",
+        "copied_at": "2026-10-20T06:06:00-07:00",
+        "removed_at": "2026-10-20T06:06:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_TMAP图生视频推理加速.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

@@ -1,0 +1,469 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0199",
+  "title": "百亿补贴 C 端 AI Coding 实战：端到端 CodingAgent 设计与实践",
+  "short_title": "百补C端CodingAgent",
+  "account": "大淘宝技术",
+  "author": "程禄",
+  "author_byline": "本文作者程禄，来自淘天集团-天猫技术团队。",
+  "source_url": null,
+  "published_at": "2026-08-02",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "天猫技术团队 2026年8月2日 23:34 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 19,
+      "text": "本文作者程禄，来自淘天集团-天猫技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "AI研发协同",
+    "Skill设计与治理",
+    "跨端开发与性能",
+    "Harness与模型协同"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/百亿补贴 C 端 AI Coding 实战：端到端 CodingAgent 设计与实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T06:06:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "a9208ca9e9e6ebf094bbb615bce84c2da186001f57ee3fae71d18a19bb79bdb3",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.2-18含架构图、五层知识库示意图及D2C还原效果对比图（位于PDF图像层）；p.20为PDF末尾空白页。",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 7845565,
+      "page_count": 20
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T06:06:00-07:00",
+  "directory": "大淘宝技术/百补C端CodingAgent+26.8.2",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_百补C端CodingAgent.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0199",
+    "created_at": "2026-10-20T06:06:00-07:00",
+    "updated_at": "2026-10-20T06:06:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "a9208ca9e9e6ebf094bbb615bce84c2da186001f57ee3fae71d18a19bb79bdb3"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "5ee79b1791f9ce89cec2026efcea5193d11fe9628182c1337923c204bb62c419"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.2-18含架构图、五层知识库示意图及D2C还原效果对比图（位于PDF图像层）；p.20为PDF末尾空白页。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          20
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_百补C端CodingAgent.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_百补C端CodingAgent.md",
+      "sha256": "2f1179594bb5d9c7a397be440317533029e7acd15e0a75cffdd5250c6e11df21"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T06:06:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "a9208ca9e9e6ebf094bbb615bce84c2da186001f57ee3fae71d18a19bb79bdb3"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "5ee79b1791f9ce89cec2026efcea5193d11fe9628182c1337923c204bb62c419"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "md_end_line": 91,
+        "md_start_line": 14,
+        "page": 1,
+        "text_layer_char_count": 913,
+        "text_layer_sha256": "da4b9f2963bcd92d77f388e487b2fba45f8b958c615c088afb12f7a32b7d8987"
+      },
+      {
+        "md_end_line": 112,
+        "md_start_line": 101,
+        "page": 2,
+        "text_layer_char_count": 270,
+        "text_layer_sha256": "60c22f227d952c5817a1480d1ca86fcc399a825dd34874f31432bf08f9c6e79e"
+      },
+      {
+        "md_end_line": 193,
+        "md_start_line": 122,
+        "page": 3,
+        "text_layer_char_count": 730,
+        "text_layer_sha256": "fa73a6bf689342ac439c642a19a90cd4428ff840339131af3b47e93215f28cb6"
+      },
+      {
+        "md_end_line": 232,
+        "md_start_line": 203,
+        "page": 4,
+        "text_layer_char_count": 330,
+        "text_layer_sha256": "33aefb07734bbb711cf9be191a3bf6ea16a9b322669924a61213d0ca6a84203b"
+      },
+      {
+        "md_end_line": 268,
+        "md_start_line": 242,
+        "page": 5,
+        "text_layer_char_count": 423,
+        "text_layer_sha256": "74bd9a38f85cfc91d4def70d4f0ae77b4ca86d0e3a33f6aa6a86c38029ce972e"
+      },
+      {
+        "md_end_line": 301,
+        "md_start_line": 278,
+        "page": 6,
+        "text_layer_char_count": 309,
+        "text_layer_sha256": "a27379cdbbf99ae9702c689839395ca154b921de3d23cf4a29da79c6ca14600c"
+      },
+      {
+        "md_end_line": 353,
+        "md_start_line": 311,
+        "page": 7,
+        "text_layer_char_count": 396,
+        "text_layer_sha256": "3a703810e4eeeddc4846b5d210f12a7060074b6fc1b0bb721404f22505237518"
+      },
+      {
+        "md_end_line": 407,
+        "md_start_line": 363,
+        "page": 8,
+        "text_layer_char_count": 502,
+        "text_layer_sha256": "a6b28176abc5288b1f9a67dc49623d4906ffa3acf2b6e7f648dc03ab38a0cd58"
+      },
+      {
+        "md_end_line": 448,
+        "md_start_line": 417,
+        "page": 9,
+        "text_layer_char_count": 305,
+        "text_layer_sha256": "79eee962fb89427b1840074a0609c1a230b28980159f61dbe18c8f368898156d"
+      },
+      {
+        "md_end_line": 477,
+        "md_start_line": 458,
+        "page": 10,
+        "text_layer_char_count": 145,
+        "text_layer_sha256": "38f5b6e2f3022caa53eb438c901b6e6fb7383df5dcb89dad4044ebdaa5a870d2"
+      },
+      {
+        "md_end_line": 603,
+        "md_start_line": 487,
+        "page": 11,
+        "text_layer_char_count": 985,
+        "text_layer_sha256": "315e7a5ccd4b781a669cca96d58115fc3c8a686fd460f99f7423909b316d854d"
+      },
+      {
+        "md_end_line": 643,
+        "md_start_line": 613,
+        "page": 12,
+        "text_layer_char_count": 347,
+        "text_layer_sha256": "6356ca02ba4a21802aa113ed75150c2eb4c37756674e48b13da6e36960690eff"
+      },
+      {
+        "md_end_line": 704,
+        "md_start_line": 653,
+        "page": 13,
+        "text_layer_char_count": 569,
+        "text_layer_sha256": "f44cd0798aec28503ba46e653d0a1dd8780e8d812065e60d2bf585f18196db2a"
+      },
+      {
+        "md_end_line": 756,
+        "md_start_line": 714,
+        "page": 14,
+        "text_layer_char_count": 401,
+        "text_layer_sha256": "47b15131fa12c2dd29992e8b383f71922f3c7d7a0efaf5432f3171680f86b08a"
+      },
+      {
+        "md_end_line": 800,
+        "md_start_line": 766,
+        "page": 15,
+        "text_layer_char_count": 582,
+        "text_layer_sha256": "0b6b60700bd3c930eb21782a0411591588657529a5c245a531cf08abcd63d301"
+      },
+      {
+        "md_end_line": 839,
+        "md_start_line": 810,
+        "page": 16,
+        "text_layer_char_count": 255,
+        "text_layer_sha256": "fc9b26979400d43d0c51b56ad47a0059ad33ff98d4261112b3b9469cda8b06e7"
+      },
+      {
+        "md_end_line": 879,
+        "md_start_line": 849,
+        "page": 17,
+        "text_layer_char_count": 327,
+        "text_layer_sha256": "41d00f912c38ea919a4bf84bd6ae091ade15922f19bd5ab69652c61b387c48e3"
+      },
+      {
+        "md_end_line": 913,
+        "md_start_line": 889,
+        "page": 18,
+        "text_layer_char_count": 348,
+        "text_layer_sha256": "5be24e46324d245fdbb02f70c90b49766bdfa208006776c729fc51b09c29201d"
+      },
+      {
+        "md_end_line": 945,
+        "md_start_line": 923,
+        "page": 19,
+        "text_layer_char_count": 366,
+        "text_layer_sha256": "9e15d766d7cab8d34310bbf77a617fd231c4a767f5bc5f3a2467486755a0b473"
+      },
+      {
+        "md_end_line": 955,
+        "md_start_line": 955,
+        "page": 20,
+        "text_layer_char_count": 0,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.2-18含架构图、五层知识库示意图及D2C还原效果对比图（位于PDF图像层）；p.20为PDF末尾空白页。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          20
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T06:06:00-07:00",
+    "removed_at": "2026-10-20T06:06:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/百亿补贴 C 端 AI Coding 实战：端到端 CodingAgent 设计与实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "a9208ca9e9e6ebf094bbb615bce84c2da186001f57ee3fae71d18a19bb79bdb3",
+        "copied_at": "2026-10-20T06:06:00-07:00",
+        "removed_at": "2026-10-20T06:06:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_百补C端CodingAgent.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

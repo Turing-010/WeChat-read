@@ -1,0 +1,415 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0104",
+  "title": "横向拆解 Claude Code、Codex 等六大 Agent 上下文压缩策略后，我们做了第 7 个",
+  "short_title": "Agent上下文压缩",
+  "account": "腾讯技术工程",
+  "author": "mervynyang",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-06-08T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0608 Agent Context Compression.pdf",
+      "original_filename": "0608 Agent Context Compression.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "dc5cd8bf05db75933955f2f2ce355c7c96a7fdffb976949956bacb7495a2680c",
+      "size_bytes": 3193603,
+      "page_count": 14,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [],
+      "publication_evidence": "PDF 第1页：2026年6月8日 02:36；未见时区"
+    }
+  ],
+  "tags": [
+    "Agent成本与上下文预算",
+    "Agent工程循环",
+    "Agent长期记忆",
+    "异常监控与稳定性"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Agent上下文压缩+26.6.8",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Agent上下文压缩.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "横向拆解 Claude  Code 、 Codex 等六大 Agent 上下文压缩策略后,我\n们做了第 7  个\n腾讯程序员 2026 年 6 月 8 日 02 : 36广东原创 腾讯技术工程 441 人\n作者: mervynyang\n1. 同一个问题,六种做法\nAgent 要做上下文压缩,如今几乎成为所有  agent 必做的一环。有意思的是怎么做 —— 我花了\n不少时间把主流方案扒了一遍,发现大家的分歧大得离谱。\n产品 核心策略 一句话概括\nClaude Code 五段流水线,按成本递增排列 便宜的本地操作先上, LLM 摘要\n兜底\nCodex CLI 保留近期用户消息原文,其余全部替换为  hand\noff 摘要\n用户说的话最准确,模型说的可\n以重写\nOpenCode 时间戳标记隐藏  + 结构化摘要  + 回放最后一条\n用户消息 不真删,理论上可恢复\nCline /smol\n(/compact)生成摘要后在同一任务内接续自动  + 手动双模式\nCursor 自动摘要  + 提示开新对话  + 历史可搜索 压缩后仍能回溯原始历史\nAmp 不做递归压缩,用  /handoff  开新线程携带要\n点\n长对话本身就是问题,换线程比\n压缩好\nMemGPT / Lett\na\n上下文  = RAM ,历史  = 磁盘, Agent 自主换入\n换出 操作系统级的内存调度\n六家产品,六种哲学。说明这件事没有显而易见的最优解,每一种选择背后都是取舍。\n后面的内容分三块展开。先横向看看各家的具体做法和设计考量;然后从中提炼几条已经接近\n共识的原则;最后介绍我们在  MUR AI 上最终落地的方案 —— 四级水位线  + 增量摘要,以及\n云端多用户场景下额外需要的几层设计。\n横向拆解六大  Agent 的上下文压缩策略,提炼通用配方,并面向云端多用户的  Agent 场\n景落地一套四级水位线方案。\n",
+    "publication_evidence": "PDF 第1页：2026年6月8日 02:36；未见时区",
+    "full_title_in_capture": "横向拆解 Claude Code、Codex 等六大 Agent 上下文压缩策略后，我们做了第 7 个",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0104",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "dc5cd8bf05db75933955f2f2ce355c7c96a7fdffb976949956bacb7495a2680c"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [],
+    "outputs": [
+      "AI_Agent上下文压缩.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "coverage": "覆盖多产品策略、滑动 stub 导致缓存失效案例、四级水位、内容保护和云端多租户扩展；产品功能未联网核验。留言页未展开。",
+    "fact_checks": [
+      {
+        "item": "四级压缩阈值",
+        "note_value": "60/80/95%",
+        "source_value": "60/80/95%",
+        "pages": [
+          7,
+          8
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "案例 step 数",
+        "note_value": "177",
+        "source_value": "177 steps",
+        "pages": [
+          6
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "案例费用",
+        "note_value": "$77.3 total, $64.8 cache_write (83%)",
+        "source_value": "$77.3; $64.8; 83%",
+        "pages": [
+          6
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "ReplacementCache TTL",
+        "note_value": "30 分钟",
+        "source_value": "TTL 30 分钟",
+        "pages": [
+          9
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "工具结果预算",
+        "note_value": "Read 30KB / Bash 50KB / WebSearch 15KB",
+        "source_value": "Read 30KB / Bash 50KB / WebSearch 15KB",
+        "pages": [
+          9
+        ],
+        "result": "一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Agent上下文压缩.md",
+      "sha256": "8b95396b2d3c68b0ec78344bc81fa136c0c6b3acefbffb9886be7e42f645f82d"
+    },
+    "independent_crosscheck": {
+      "reviewer": "wechat_group1",
+      "note_sha256": "c81b106cb5abbbda702b9933cdfd6ebb782876c881c2b531a4a8e071f8d86719",
+      "review_sha256": "02e4e204d99c779918e50e6b283c84b54c96b012a05e2e62d50d5885427cd561",
+      "status": "passed",
+      "changes": [
+        "复核发现复核后笔记曾有格式性改动：首行多一个空格且末尾原文链接改为引用格式；已去除首行空格以恢复 YAML frontmatter 识别，内容核对仍合格。"
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "1–5",
+          "check": "核对六种外部方案对比及产品策略边界；MemGPT/Letta 作为记忆架构参照，文章案例未被说成作者系统实测。"
+        },
+        {
+          "pages": "6",
+          "check": "放大核对 177 steps、59 分钟、$77.3 总费用、$64.8 cache_write/83%及滑窗导致前缀缓存失效；笔记一致。"
+        },
+        {
+          "pages": "7–11",
+          "check": "核对 60/80/95 水位、Snip/Prune/增量摘要、保护内容、真实 usage、日志分离、ReplacementCache 和双租户隔离；笔记与正文/图一致。"
+        },
+        {
+          "pages": "13–14",
+          "check": "缩略页确认收尾参考资料和留言页无新增核心机制。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "dc5cd8bf05db75933955f2f2ce355c7c96a7fdffb976949956bacb7495a2680c"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "a8008aec1a4dd1b51852ad30708d5a3eb1be1906f469e679d2d29640a18b01de"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 42,
+        "text_layer_sha256": "370b142a92f9aee343f7d61e7319565d18e1d7860be717e00cd7fd7b80ae7371",
+        "text_layer_char_count": 804
+      },
+      {
+        "page": 2,
+        "md_start_line": 50,
+        "md_end_line": 68,
+        "text_layer_sha256": "fa049fc66660b3c83371ecc6036d5809b4bd28cfd4dc1cfda63ac262b05126af",
+        "text_layer_char_count": 744
+      },
+      {
+        "page": 3,
+        "md_start_line": 76,
+        "md_end_line": 102,
+        "text_layer_sha256": "40d9b2870ce8411a6e78dd28c1b231c88cf6c9070a7a80cd79011b1a4205c8e1",
+        "text_layer_char_count": 978
+      },
+      {
+        "page": 4,
+        "md_start_line": 110,
+        "md_end_line": 142,
+        "text_layer_sha256": "973a348790b2683ff2b35d751da474b2ae8cc1e8f6ffda07cb6c94381203d8cc",
+        "text_layer_char_count": 1167
+      },
+      {
+        "page": 5,
+        "md_start_line": 150,
+        "md_end_line": 173,
+        "text_layer_sha256": "0df20b03f34fac8f21b60f3cc07a925d57a94f9a384f24068e5ac7a5e64c8312",
+        "text_layer_char_count": 910
+      },
+      {
+        "page": 6,
+        "md_start_line": 181,
+        "md_end_line": 204,
+        "text_layer_sha256": "aa46dd7852c5c6d821b79a177efac4508b4c72fecec18e185e00f6eb95600198",
+        "text_layer_char_count": 1172
+      },
+      {
+        "page": 7,
+        "md_start_line": 212,
+        "md_end_line": 237,
+        "text_layer_sha256": "300eca7c524096a60c5816e0f746103c03831f3783ff965deb2fb46414f6ec88",
+        "text_layer_char_count": 1036
+      },
+      {
+        "page": 8,
+        "md_start_line": 245,
+        "md_end_line": 273,
+        "text_layer_sha256": "1d935c5933584cbde41e8cec1a73dee97efd0cf910c9500d6aa32395ea4dc0af",
+        "text_layer_char_count": 992
+      },
+      {
+        "page": 9,
+        "md_start_line": 281,
+        "md_end_line": 313,
+        "text_layer_sha256": "b634637be99d5d409b52a64164d23605b2a96c8f43e1ffd8d015cc23feeb6428",
+        "text_layer_char_count": 1368
+      },
+      {
+        "page": 10,
+        "md_start_line": 321,
+        "md_end_line": 349,
+        "text_layer_sha256": "6879af81b1384558c2f729ed7af4ca8b8c5e7b737691b7ea0d5d72fb6665e310",
+        "text_layer_char_count": 1057
+      },
+      {
+        "page": 11,
+        "md_start_line": 357,
+        "md_end_line": 387,
+        "text_layer_sha256": "3d9b68f9d64f694b8ca24f75e6fb9fd8e23c353e0daf1b1ff1d54b508cfb46ec",
+        "text_layer_char_count": 1021
+      },
+      {
+        "page": 12,
+        "md_start_line": 395,
+        "md_end_line": 426,
+        "text_layer_sha256": "644be33cc3b963bed8656706175c2905138b2ca5db0ae5aec4ade091e00a9ad2",
+        "text_layer_char_count": 1076
+      },
+      {
+        "page": 13,
+        "md_start_line": 434,
+        "md_end_line": 447,
+        "text_layer_sha256": "21195ebf1ca124136c746ac6d15dbff8f243e5fcc35401198f04e31386aa70c0",
+        "text_layer_char_count": 481
+      },
+      {
+        "page": 14,
+        "md_start_line": 455,
+        "md_end_line": 455,
+        "text_layer_sha256": "c01129305e3f2701794b59ab978930dc476ea9901ce49f19b59c02b18c1e3171",
+        "text_layer_char_count": 11
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "quality_issues": []
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0608 Agent Context Compression.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "dc5cd8bf05db75933955f2f2ce355c7c96a7fdffb976949956bacb7495a2680c",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent成本与上下文预算.md",
+      "../../20_topics/Harness与模型协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Agent上下文压缩.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

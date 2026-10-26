@@ -1,0 +1,297 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0190",
+  "title": "我对 AI Coding 的一点思考：从 Spec 驱动转向环境与验证驱动",
+  "short_title": "环境与验证驱动AI Coding",
+  "account": "大淘宝技术",
+  "author": "永霸",
+  "author_byline": "本文作者永霸，来自淘天集团-交易业务技术团队。",
+  "source_url": null,
+  "published_at": "2026-08-24",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "营销&交易技术 2026年8月24日 01:15 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 8,
+      "text": "本文作者永霸，来自淘天集团-交易业务技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "Harness与模型协同",
+    "AI研发协同",
+    "Agent工程循环"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/我对 AI Coding 的一点思考：从 Spec 驱动转向环境与验证驱动.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T02:20:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "19507fb6b6e2221fa02840f4bcac80987bdc2fd29d7d7324b9c7b47f2e86d33c",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.1主流模型Coding Benchmark对比表位于PDF图像层，正文已概括关键结论（SWE-bench Pro与Terminal-Bench 2.1达80%上下）。",
+          "pages": [
+            1
+          ],
+          "verification_status": "actual_text_review"
+        }
+      ],
+      "size_bytes": 6002643,
+      "page_count": 9
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T02:20:00-07:00",
+  "directory": "大淘宝技术/环境与验证驱动AI Coding+26.8.24",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_环境与验证驱动AI Coding.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0190",
+    "created_at": "2026-10-20T02:20:00-07:00",
+    "updated_at": "2026-10-20T02:20:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "19507fb6b6e2221fa02840f4bcac80987bdc2fd29d7d7324b9c7b47f2e86d33c"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "1a5121eb04b078b452d3f750d119584faacde2de90a931a3a063b32e34dc64ed"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.1主流模型Coding Benchmark对比表位于PDF图像层，正文已概括关键结论（SWE-bench Pro与Terminal-Bench 2.1达80%上下）。",
+        "pages": [
+          1
+        ],
+        "verification_status": "actual_text_review"
+      }
+    ],
+    "outputs": [
+      "AI_环境与验证驱动AI Coding.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_环境与验证驱动AI Coding.md",
+      "sha256": "4b431e77dee0238aeff658a08b845d7d0e35ccc4684fd9ad2e715dc2b25ea1e5"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T02:20:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "19507fb6b6e2221fa02840f4bcac80987bdc2fd29d7d7324b9c7b47f2e86d33c"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "1a5121eb04b078b452d3f750d119584faacde2de90a931a3a063b32e34dc64ed"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "md_end_line": 41,
+        "md_start_line": 14,
+        "page": 1,
+        "text_layer_char_count": 786,
+        "text_layer_sha256": "d71818030b5238c02d5e64b68feb5afafe2e7f2f9387a9eab2dca2716000ec2f"
+      },
+      {
+        "md_end_line": 60,
+        "md_start_line": 51,
+        "page": 2,
+        "text_layer_char_count": 310,
+        "text_layer_sha256": "0246a008918b8801e3d2d7e3c1efb5940f79cabf74ad803e90d687242736c83d"
+      },
+      {
+        "md_end_line": 102,
+        "md_start_line": 70,
+        "page": 3,
+        "text_layer_char_count": 901,
+        "text_layer_sha256": "e11a5a849332bcbb7afa2858d78e50c05d126683cd89b6e3ba1483b24aaab69c"
+      },
+      {
+        "md_end_line": 132,
+        "md_start_line": 112,
+        "page": 4,
+        "text_layer_char_count": 807,
+        "text_layer_sha256": "c126d2cb7efb120ce27475815d52ed3fc5b010b675eb1a36603219c84d87209c"
+      },
+      {
+        "md_end_line": 167,
+        "md_start_line": 142,
+        "page": 5,
+        "text_layer_char_count": 784,
+        "text_layer_sha256": "1eaa68f06cab6777929ae75dc43ce39abb47cfe3403262a38d84be194c4c45a0"
+      },
+      {
+        "md_end_line": 216,
+        "md_start_line": 177,
+        "page": 6,
+        "text_layer_char_count": 873,
+        "text_layer_sha256": "a571a3a528e9b8f39b8dafb9cc793802983458e20d5e21029429d5e53f047f44"
+      },
+      {
+        "md_end_line": 265,
+        "md_start_line": 226,
+        "page": 7,
+        "text_layer_char_count": 635,
+        "text_layer_sha256": "bbb691dec44295b28f3eef86245891d9fcabe7d4d80c7b895749c285635bebd7"
+      },
+      {
+        "md_end_line": 306,
+        "md_start_line": 275,
+        "page": 8,
+        "text_layer_char_count": 510,
+        "text_layer_sha256": "f33bad7dad885a4557bad73e7bf87e9e6571d2be4f7c4ef77161bec2f6d4e9da"
+      },
+      {
+        "md_end_line": 342,
+        "md_start_line": 316,
+        "page": 9,
+        "text_layer_char_count": 301,
+        "text_layer_sha256": "f5955bc96215a162845fd70c14eee6bfe05a087b009b56dc3a4a47f8788ce2db"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.1主流模型Coding Benchmark对比表位于PDF图像层，正文已概括关键结论（SWE-bench Pro与Terminal-Bench 2.1达80%上下）。",
+        "pages": [
+          1
+        ],
+        "verification_status": "actual_text_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed_sources_removed",
+    "copied_at": "2026-10-20T02:20:00-07:00",
+    "removed_at": "2026-10-20T02:26:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/我对 AI Coding 的一点思考：从 Spec 驱动转向环境与验证驱动.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "19507fb6b6e2221fa02840f4bcac80987bdc2fd29d7d7324b9c7b47f2e86d33c",
+        "copied_at": "2026-10-20T02:20:00-07:00",
+        "removed_at": "2026-10-20T02:26:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_环境与验证驱动AI Coding.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

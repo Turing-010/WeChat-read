@@ -1,0 +1,631 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0159",
+  "title": "从Vibe Coding到AI原生研发团队：一套能落地的工程实践",
+  "short_title": "AI原生研发工程实践",
+  "account": "腾讯技术工程",
+  "author": "masoncai",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-07-21T03:03",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/从 Vibe Coding 到 AI 原生研发团队：一套能落地的工程实践.pdf",
+      "original_filename": "从 Vibe Coding 到 AI 原生研发团队：一套能落地的工程实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "c271200b6d9c34e3239ac4d59fc41fb76dbc80edca72c5b546d881c09f830ecc",
+      "size_bytes": 12362742,
+      "page_count": 30,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "文中流程和工具是团队案例，具体目录、脚本、平台效果未经本次独立部署验证。",
+          "pages": [
+            9,
+            14,
+            22,
+            24
+          ],
+          "status": "pending_review"
+        }
+      ],
+      "publication_evidence": "PDF第1页日期与时间标注"
+    }
+  ],
+  "tags": [
+    "AI研发协同",
+    "Harness与模型协同",
+    "问题澄清",
+    "Agent工程循环",
+    "Agent长期记忆",
+    "异常监控与稳定性"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/AI原生研发工程实践+26.7.21",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI原生研发工程实践.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "从 Vibe  Coding  到 AI  原生研发团队:一套能落地的工程实践\n腾讯程序员 Jul  21 , 2026 , 3 : 03  AM广东原创 腾讯技术工程 747  listened\n作者:masoncai\n 整体概览\n导语  :AI 写个人玩具项目很顺手,但落到真实业务里就是另一回事了。这篇整理了\n我们在打造  AI 原生研发团队上摸出来的一些经验,主要讲四块:通用能力怎么搭、\nHarness 工程实践、开发跟产品怎么协同。我们希望打破职能边界,让不懂代码的产\n品同学也能借  AI 东⻛,自主定义并实现各类内部运营工具,从而带动整个团队的研\n发效能迈上新台阶。  还有踩完坑之后的一些  Lessons 。希望能给大家点参考,尤其是\n正在琢磨怎么用  AI 把团队能力真正提升起来的同学。\n",
+    "publication_evidence": "PDF第1页日期与时间标注",
+    "full_title_in_capture": "从Vibe Coding到AI原生研发团队：一套能落地的工程实践",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0159",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "c271200b6d9c34e3239ac4d59fc41fb76dbc80edca72c5b546d881c09f830ecc"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "文中流程和工具是团队案例，具体目录、脚本、平台效果未经本次独立部署验证。",
+        "pages": [
+          9,
+          14,
+          22,
+          24
+        ],
+        "status": "pending_review"
+      }
+    ],
+    "outputs": [
+      "AI_AI原生研发工程实践.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "detail_pages_reviewed": [
+        9,
+        12,
+        14,
+        15,
+        16,
+        18,
+        20,
+        22,
+        24,
+        27
+      ]
+    },
+    "coverage": "涵盖平台能力、规则分层、测试与验收、文档状态、CLI安全、组件化和容器工作流。",
+    "fact_checks": [
+      {
+        "topic": "测试覆盖率参考",
+        "original_value": "70%",
+        "pages": [
+          14
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "单文件建议",
+        "original_value": "Vue SFC 500行以内",
+        "pages": [
+          16
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "子组件建议",
+        "original_value": "100–200行",
+        "pages": [
+          16
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "Storybook样例",
+        "original_value": "143个story文件",
+        "pages": [
+          16
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "环境启动",
+        "original_value": "自动流程7步",
+        "pages": [
+          22
+        ],
+        "result": "一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_AI原生研发工程实践.md",
+      "sha256": "08bfb2ec46658e65b1e972890ffbbdd1f9576ab6b76aeca00254dd3875945326"
+    },
+    "independent_crosscheck": {
+      "reviewer": "Codex crosscheck group2",
+      "note_sha256": "08bfb2ec46658e65b1e972890ffbbdd1f9576ab6b76aeca00254dd3875945326",
+      "review_sha256": "6cb8cb118f204ec71ff4cb9b5b28d6da05726091dfc5d3756ccd68c5c9230db8",
+      "status": "passed",
+      "changes": [
+        "补足工程护栏、Anydev和协作Lessons主线及页码。"
+      ],
+      "source_spotchecks": [
+        {
+          "source": "reading.txt; sheet-001.jpg; sheet-013.jpg; sheet-025.jpg; review-page-15.jpg; review-page-18.jpg; review-page-22.jpg; review-page-24.jpg",
+          "pages": [
+            1,
+            9,
+            12,
+            14,
+            15,
+            17,
+            18,
+            22,
+            24,
+            25,
+            28,
+            29
+          ],
+          "finding": "核对Rules/Skills、测试/SDD、CLI/DB风险级别、7步容器启动及产品协作；原文命令未执行。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "c271200b6d9c34e3239ac4d59fc41fb76dbc80edca72c5b546d881c09f830ecc"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "7607e9930b6c532f0119646afbaa2c531550f10cff9cbacdb49ddca8b749c0a2"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 19,
+        "text_layer_sha256": "7e21720fd441625fc3ccfd2b2e1aca604f863c246ee4f7548899a8879e5496f4",
+        "text_layer_char_count": 356
+      },
+      {
+        "page": 2,
+        "md_start_line": 27,
+        "md_end_line": 50,
+        "text_layer_sha256": "9cfb1e21c086997df4ca5aa00790d375fc071b295bff3387e9c1b5c5e2451739",
+        "text_layer_char_count": 836
+      },
+      {
+        "page": 3,
+        "md_start_line": 58,
+        "md_end_line": 78,
+        "text_layer_sha256": "bade85979f716afe7a14fb7f2af880e58c60c36cf17a9bc3f4eb5f1acfa5c0cf",
+        "text_layer_char_count": 748
+      },
+      {
+        "page": 4,
+        "md_start_line": 86,
+        "md_end_line": 106,
+        "text_layer_sha256": "3abce0cb59a0ca3159c21732ea0ed2a3cc63f0528ab69d9638bc32e67e26aa67",
+        "text_layer_char_count": 762
+      },
+      {
+        "page": 5,
+        "md_start_line": 114,
+        "md_end_line": 130,
+        "text_layer_sha256": "0a0e341c6daed5b3d3f884d8574eddce178091f7ac208404d79f47b94b6b8868",
+        "text_layer_char_count": 535
+      },
+      {
+        "page": 6,
+        "md_start_line": 138,
+        "md_end_line": 145,
+        "text_layer_sha256": "1e5840cbe3163323b4b4fabece64613502ac1ba562a3bfa1a7fbef6a1d334c4e",
+        "text_layer_char_count": 222
+      },
+      {
+        "page": 7,
+        "md_start_line": 153,
+        "md_end_line": 153,
+        "text_layer_sha256": "888ef696232e4c40f42d03b0398bcd8f4ffcbc9c78f784196ddea637cb28bf1c",
+        "text_layer_char_count": 15
+      },
+      {
+        "page": 8,
+        "md_start_line": 161,
+        "md_end_line": 178,
+        "text_layer_sha256": "65db7a6cdd256b29739ee00918502a534f8fb13ed815bec787b92260fa79bb93",
+        "text_layer_char_count": 619
+      },
+      {
+        "page": 9,
+        "md_start_line": 186,
+        "md_end_line": 211,
+        "text_layer_sha256": "6e334a993235c889e99ec0aaa5484d8abe1cd4f6af24f6d474924123eaa34564",
+        "text_layer_char_count": 792
+      },
+      {
+        "page": 10,
+        "md_start_line": 219,
+        "md_end_line": 241,
+        "text_layer_sha256": "5f2639e48785e01f5d0a8f44a230463f28fef190e21b00aadbde9604a60268e8",
+        "text_layer_char_count": 869
+      },
+      {
+        "page": 11,
+        "md_start_line": 249,
+        "md_end_line": 255,
+        "text_layer_sha256": "dd1f0ac61c2cd60334ad7612077eea26a4cf32e00cae17ec13b6baca53a6d291",
+        "text_layer_char_count": 242
+      },
+      {
+        "page": 12,
+        "md_start_line": 263,
+        "md_end_line": 288,
+        "text_layer_sha256": "0d6890751b5126221a1663ff35e8a91b89ddb0c07caa11da4d618fb9dc6955ce",
+        "text_layer_char_count": 985
+      },
+      {
+        "page": 13,
+        "md_start_line": 296,
+        "md_end_line": 319,
+        "text_layer_sha256": "108a121198953b1ce67f3abedd3e18c87fcf5fe2de178996b1b76b663571c6a1",
+        "text_layer_char_count": 915
+      },
+      {
+        "page": 14,
+        "md_start_line": 327,
+        "md_end_line": 343,
+        "text_layer_sha256": "591a5836fd4841e2a3a535c652259bf28a820312986bac47d9b2ed9ebffad448",
+        "text_layer_char_count": 677
+      },
+      {
+        "page": 15,
+        "md_start_line": 351,
+        "md_end_line": 376,
+        "text_layer_sha256": "223d0df091d5394eb6068b42e0f95915157f0b199b7a83950f30bfeec0950c8e",
+        "text_layer_char_count": 932
+      },
+      {
+        "page": 16,
+        "md_start_line": 384,
+        "md_end_line": 408,
+        "text_layer_sha256": "0a64e0f1d32dad533ac31e7c18b13a018739b28350a6c883b01998df16bc2862",
+        "text_layer_char_count": 912
+      },
+      {
+        "page": 17,
+        "md_start_line": 416,
+        "md_end_line": 439,
+        "text_layer_sha256": "54bdf10c99ae99d061ee705d07e781af7d7478aa7a6ff0c0f84c1bf5f454d480",
+        "text_layer_char_count": 906
+      },
+      {
+        "page": 18,
+        "md_start_line": 447,
+        "md_end_line": 461,
+        "text_layer_sha256": "48312f49ae85e681835ac049cbf8731b054a32cddf94d0a2d1b15fe771c79ffb",
+        "text_layer_char_count": 476
+      },
+      {
+        "page": 19,
+        "md_start_line": 469,
+        "md_end_line": 492,
+        "text_layer_sha256": "9f05664cdc1c72c0065a3c4348e2ff12ea98013288d61e37afa53a908dd6a758",
+        "text_layer_char_count": 862
+      },
+      {
+        "page": 20,
+        "md_start_line": 500,
+        "md_end_line": 517,
+        "text_layer_sha256": "fb29cdb29a11cb815de8514628efafab5142a8ed2e484be18bb24e4edede0a97",
+        "text_layer_char_count": 712
+      },
+      {
+        "page": 21,
+        "md_start_line": 525,
+        "md_end_line": 537,
+        "text_layer_sha256": "a7d560ed9a5276ab69164e1c5a07cd4e021b272fc276b30934fd5cf139135b2d",
+        "text_layer_char_count": 470
+      },
+      {
+        "page": 22,
+        "md_start_line": 545,
+        "md_end_line": 570,
+        "text_layer_sha256": "c29cc019e4257bf8ecd1363dea3ae5409349f64b251de7d795f6211056bc67c9",
+        "text_layer_char_count": 1115
+      },
+      {
+        "page": 23,
+        "md_start_line": 578,
+        "md_end_line": 600,
+        "text_layer_sha256": "c9ac6051f0df6f95db5c782489221e9f59fb5d9a8b110e129804e3c3aee2308b",
+        "text_layer_char_count": 771
+      },
+      {
+        "page": 24,
+        "md_start_line": 608,
+        "md_end_line": 619,
+        "text_layer_sha256": "2c94dfd24c99a98b735e583db636352461ad9208976b3f70fcc13ae059df4f8c",
+        "text_layer_char_count": 357
+      },
+      {
+        "page": 25,
+        "md_start_line": 627,
+        "md_end_line": 641,
+        "text_layer_sha256": "a00fd90c6d8436479950fc5dc5bff333a39b531a877ec37c0b6833f94f5f6322",
+        "text_layer_char_count": 567
+      },
+      {
+        "page": 26,
+        "md_start_line": 649,
+        "md_end_line": 664,
+        "text_layer_sha256": "4a4f81d66aaac6d9fa4ddc39dcf18497e142f12886222017db244db1facd5c88",
+        "text_layer_char_count": 578
+      },
+      {
+        "page": 27,
+        "md_start_line": 672,
+        "md_end_line": 692,
+        "text_layer_sha256": "46ede739b9ad5236817777466ef9abdd0b9dceac93aaacf247b6bdd0e4ce847c",
+        "text_layer_char_count": 842
+      },
+      {
+        "page": 28,
+        "md_start_line": 700,
+        "md_end_line": 707,
+        "text_layer_sha256": "b63c6882d52c12fcc2883e9bd0d0fa853190296158a1ff085c71d45e92b78b0e",
+        "text_layer_char_count": 197
+      },
+      {
+        "page": 29,
+        "md_start_line": 715,
+        "md_end_line": 734,
+        "text_layer_sha256": "40edfb1240b50fe984617e6d56c1dca5918fbee426560672847357d4d1f7fc9f",
+        "text_layer_char_count": 796
+      },
+      {
+        "page": 30,
+        "md_start_line": 742,
+        "md_end_line": 745,
+        "text_layer_sha256": "cf52f389f59b886dc77542b0e50624ec46e6242bab5140cb6c14a25d1bea2a4b",
+        "text_layer_char_count": 29
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "detail_pages_reviewed": [
+        9,
+        12,
+        14,
+        15,
+        16,
+        18,
+        20,
+        22,
+        24,
+        27
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "文中流程和工具是团队案例，具体目录、脚本、平台效果未经本次独立部署验证。",
+        "pages": [
+          9,
+          14,
+          22,
+          24
+        ],
+        "status": "pending_review"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/从 Vibe Coding 到 AI 原生研发团队：一套能落地的工程实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "c271200b6d9c34e3239ac4d59fc41fb76dbc80edca72c5b546d881c09f830ecc",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI技术活动与资料.md",
+      "../../20_topics/AI研发协同.md",
+      "../../20_topics/问题澄清.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_AI原生研发工程实践.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

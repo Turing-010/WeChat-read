@@ -1,0 +1,447 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0063",
+  "title": "重磅！腾讯QQ机器人接入OpenClaw，官方“养虾”指南来了",
+  "short_title": "QQ机器人接入OpenClaw",
+  "account": "腾讯技术工程",
+  "author": "腾讯QQ机器人团队",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-03-16T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0316 腾讯QQ机器人接入OpenClaw养虾指南.pdf",
+      "original_filename": "0316 腾讯QQ机器人接入OpenClaw养虾指南.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "d1863d292684d65f145a53ba9edd6b19c2f7eb9dfd24ae4fcb5d6bf4b3bec50c",
+      "size_bytes": 9357867,
+      "page_count": 17,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "p.3远程安装命令右侧裁切，未补造URL",
+          "pages": [
+            3
+          ],
+          "status": "unresolved"
+        },
+        {
+          "description": "p.6截图含disconnected，与用来展示连通检查的上下文易混，笔记明确仍需实际收发验证",
+          "pages": [
+            6
+          ],
+          "status": "source_issue_preserved"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏 2026-03-16T02:36"
+    }
+  ],
+  "tags": [
+    "模型与开发工具发布",
+    "Agent工程循环",
+    "异常监控与稳定性",
+    "桌面Agent与工作流"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/QQ机器人接入OpenClaw+26.3.16",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_QQ机器人接入OpenClaw.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "重磅!腾讯 QQ 机器人接入 OpenClaw ,官方“养虾”指南来了\n腾讯程序员 2026 年 3 月 16 日 02 : 36广东原创 腾讯技术工程 54 人\n作者:腾讯QQ 机器人团队\n快速注册一个  QQBot\nQQ 机器人开放平台提供了快捷创建  QQ 机器人\n的通道,三步即可创建一个可用的  QQBot ,用于接入  OpenClaw 。\n1. PC 端打开:https://q.qq.com/qqbot/openclaw/login.html, QQ 扫码登录。\n2. 点击创建机器人。点击后会立刻成功,此时  BOT 会给你  QQ 发一条成功消息,头像昵称\n可按用户喜好自定义编辑。\n3. 复制  AppID 和  AppSecret 到  🦞  部署地配置即可,配置成功后,即可通过  QQ 使唤你的\n🦞 。\n",
+    "publication_evidence": "PDF p.1 发布栏 2026-03-16T02:36",
+    "full_title_in_capture": "重磅！腾讯QQ机器人接入OpenClaw，官方“养虾”指南来了",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0063",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "d1863d292684d65f145a53ba9edd6b19c2f7eb9dfd24ae4fcb5d6bf4b3bec50c"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.3远程安装命令右侧裁切，未补造URL",
+        "pages": [
+          3
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "p.6截图含disconnected，与用来展示连通检查的上下文易混，笔记明确仍需实际收发验证",
+        "pages": [
+          6
+        ],
+        "status": "source_issue_preserved"
+      }
+    ],
+    "outputs": [
+      "AI_QQ机器人接入OpenClaw.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        6,
+        12
+      ]
+    },
+    "coverage": "覆盖注册、三种安装、版本选项、加载/通道/能力验收、STT/TTS、Skills和FAQ；省略交流群二维码与不完整远程脚本。",
+    "fact_checks": [
+      {
+        "item": "插件验收",
+        "value": "loaded不等于连通",
+        "pages": 5,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "STT回退",
+        "value": "插件专属→框架级",
+        "pages": 7,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "低置信ASR版本",
+        "value": "1.5.6",
+        "pages": 7,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "群聊限制",
+        "value": "仅创建人私聊",
+        "pages": "2、14",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "恢复窗口",
+        "value": "删除7天内",
+        "pages": 14,
+        "result": "与所读原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_QQ机器人接入OpenClaw.md",
+      "sha256": "a0a984ff90ef524ecc2a3caab08f5edbca5a198eef92fdc55275f9dc629cbfb7"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "d1863d292684d65f145a53ba9edd6b19c2f7eb9dfd24ae4fcb5d6bf4b3bec50c"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "44262c1cb0a49ab04c3f9abb1929566af75d67127254e260a1ab11e71835e7e5"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 20,
+        "text_layer_sha256": "7f50c8b61803fc4b39652c8db7f9ff01b61ca3644105e6cc96aca7f280c2a3c9",
+        "text_layer_char_count": 366
+      },
+      {
+        "page": 2,
+        "md_start_line": 28,
+        "md_end_line": 42,
+        "text_layer_sha256": "35de429916370aa06639a1c82d5d6133aa94168f08a62a59a4c4ec6258e75281",
+        "text_layer_char_count": 620
+      },
+      {
+        "page": 3,
+        "md_start_line": 50,
+        "md_end_line": 76,
+        "text_layer_sha256": "5656efcd78a5b27319119407bf5a7fa73185dfb3301d699abcd02dbd518bda52",
+        "text_layer_char_count": 834
+      },
+      {
+        "page": 4,
+        "md_start_line": 84,
+        "md_end_line": 102,
+        "text_layer_sha256": "e47784a2b608b9018a7ce729ad6d97e42c23508222d04a7b89cb1b97835e32c2",
+        "text_layer_char_count": 698
+      },
+      {
+        "page": 5,
+        "md_start_line": 110,
+        "md_end_line": 133,
+        "text_layer_sha256": "86b82fbad8ea5f1af7b9da54e3caf50742c86a8a93786259d7810430aa5f8581",
+        "text_layer_char_count": 736
+      },
+      {
+        "page": 6,
+        "md_start_line": 141,
+        "md_end_line": 151,
+        "text_layer_sha256": "2fb89ca62f16312f75aff004bb8076424d68d17e977c2512e30b1696781d7a78",
+        "text_layer_char_count": 316
+      },
+      {
+        "page": 7,
+        "md_start_line": 159,
+        "md_end_line": 186,
+        "text_layer_sha256": "77f708be27e02d3e157b3afeea9774b79eca822c6dfeab3d932be0fa3ca5c0de",
+        "text_layer_char_count": 780
+      },
+      {
+        "page": 8,
+        "md_start_line": 194,
+        "md_end_line": 225,
+        "text_layer_sha256": "92b2436a0e0294bcefad9cc7cb16e5dbfc513708b21235600a4c561743f7a6c7",
+        "text_layer_char_count": 738
+      },
+      {
+        "page": 9,
+        "md_start_line": 233,
+        "md_end_line": 237,
+        "text_layer_sha256": "6c89d1cee896f8a9734e3bc3c50685b40ad7d8f8f56c7f11cbbc1e3ebf85d0eb",
+        "text_layer_char_count": 119
+      },
+      {
+        "page": 10,
+        "md_start_line": 245,
+        "md_end_line": 259,
+        "text_layer_sha256": "619a20c1dd8345aca9a63ecb561a5f64933aae19c67053fae805a9373b35e7e6",
+        "text_layer_char_count": 424
+      },
+      {
+        "page": 11,
+        "md_start_line": 267,
+        "md_end_line": 280,
+        "text_layer_sha256": "10b64e614ffab00365c96ff4899b59245f233d91cd71e9734b2f34f39f08adf4",
+        "text_layer_char_count": 374
+      },
+      {
+        "page": 12,
+        "md_start_line": 288,
+        "md_end_line": 287,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 13,
+        "md_start_line": 295,
+        "md_end_line": 320,
+        "text_layer_sha256": "6c7ab4c412540e146bcc58c02eebc6edbc7c57f16e7931229902f3cf65510491",
+        "text_layer_char_count": 794
+      },
+      {
+        "page": 14,
+        "md_start_line": 328,
+        "md_end_line": 347,
+        "text_layer_sha256": "fd31798542ec5f72133cd134ace21f6941353bd2d859f28b6947c7ecf25d2b72",
+        "text_layer_char_count": 658
+      },
+      {
+        "page": 15,
+        "md_start_line": 355,
+        "md_end_line": 371,
+        "text_layer_sha256": "a041cd1ecb529a511e22318ed7ed77fa5eaac327d3fcbc67896350f31be613b9",
+        "text_layer_char_count": 572
+      },
+      {
+        "page": 16,
+        "md_start_line": 379,
+        "md_end_line": 390,
+        "text_layer_sha256": "debfb97ee9e9fd3743ac310df1b152d62d1b713d85eddce023447cdf0da778cb",
+        "text_layer_char_count": 287
+      },
+      {
+        "page": 17,
+        "md_start_line": 398,
+        "md_end_line": 398,
+        "text_layer_sha256": "c01129305e3f2701794b59ab978930dc476ea9901ce49f19b59c02b18c1e3171",
+        "text_layer_char_count": 11
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        6,
+        12
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.3远程安装命令右侧裁切，未补造URL",
+        "pages": [
+          3
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "p.6截图含disconnected，与用来展示连通检查的上下文易混，笔记明确仍需实际收发验证",
+        "pages": [
+          6
+        ],
+        "status": "source_issue_preserved"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0316 腾讯QQ机器人接入OpenClaw养虾指南.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "d1863d292684d65f145a53ba9edd6b19c2f7eb9dfd24ae4fcb5d6bf4b3bec50c",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Skill设计与治理.md",
+      "../../20_topics/模型与开发工具发布.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_QQ机器人接入OpenClaw.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

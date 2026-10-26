@@ -1,0 +1,316 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0076",
+  "title": "“龙虾”也需要看病？一张旧病历，引出三个新确诊",
+  "short_title": "漏洞根因泛化与Harness",
+  "account": "腾讯技术工程",
+  "author": "悟空代码安全团队",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-04-10T02:35",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0410 OpenClaw Vulnerability Diagnosis.pdf",
+      "original_filename": "0410 OpenClaw Vulnerability Diagnosis.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "b999e86381ac97cd25433f5f0add83b1dc32f9bf22d173111fbdb423689f44ef",
+      "size_bytes": 2666652,
+      "page_count": 7,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "官方确认、最新版本修复和团队累计漏洞数均为作者声明，PDF 不包含完整验证及每项修复版本证据",
+          "pages": [
+            2,
+            6
+          ],
+          "status": "明确归因并限制结论"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏 2026-04-10T02:35"
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "Agent评测与反馈",
+    "异常监控与稳定性",
+    "Agent安全与权限"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/漏洞根因泛化与Harness+26.4.10",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_漏洞根因泛化与Harness.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "“⻰虾”也需要看病?一张旧病历,引出三个新确诊\n腾讯程序员 2026 年 4 月 10 日 02 : 35广东原创 腾讯技术工程 199 人\n作者:悟空代码安全团队\n一、 AI 找漏洞,已经超出所有人的预期\nAnthropic 旗下的  Claude ,在参与  FreeBSD 操作系统安全测试期间,不仅发现了一个此前从未\n被注意到的安全漏洞,更成功生成了一份可直接复现的漏洞利用代码。\nClaude 所展示的,是  AI 在漏洞挖掘上的深度—— 能够在特定目标上持续深挖,找到人类研究者\n尚未触及的角落。然而,还有另一个维度同样关键,甚至更具挑战性:广度——发现一个漏洞之\n后, AI 还能顺藤摸瓜,找到什么?\n这正是悟空  Agent 一直试图回答的问题。而在  OpenClaw (我们熟知的 \" 龙虾 \" )上,我们得到了\n三个具体的答案。\n二、三份报告之前:先聊聊 \" 为什么找一个还不够 \"\n设想一位经验丰富的传染病科医生,接诊了一例罕见病例。普通医生的处置逻辑是:确诊→治疗\n→结案。而有经验的医生则会多思考一层:这种疾病的发病机制究竟是什么?还有多少人带有相\n似症状,却尚未得到诊断?\n安全领域的传统做法,更接近前者:发现漏洞→修复→关闭工单→进入下一个目标。鲜有人追\n问:这个漏洞的 \" 同族 \" 潜伏在何处?\n本文是悟空 Agent 泛化能力系列的先导篇。我们不展开技术细节,只回答一个核心问题:为\n什么悟空 Agent在漏洞挖掘中需要泛化能力。后续系列将深入拆解泛化体系的每个环节 ——\n感知、建模、自迭代、规模化验证。如果你对 AI代码安全感兴趣,这是一个值得从头跟下去\n的故事。\n👉文末提供悟空  Agent 试用申请链接\n",
+    "publication_evidence": "PDF p.1 发布栏 2026-04-10T02:35",
+    "full_title_in_capture": "“龙虾”也需要看病？一张旧病历，引出三个新确诊",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0076",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "b999e86381ac97cd25433f5f0add83b1dc32f9bf22d173111fbdb423689f44ef"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "官方确认、最新版本修复和团队累计漏洞数均为作者声明，PDF 不包含完整验证及每项修复版本证据",
+        "pages": [
+          2,
+          6
+        ],
+        "status": "明确归因并限制结论"
+      }
+    ],
+    "outputs": [
+      "AI_漏洞根因泛化与Harness.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4
+      ]
+    },
+    "coverage": "覆盖种子缺陷、三个泛化案例、四项 Harness 原则、评价边界及试用背景；不补写漏洞利用或未公开实现。",
+    "fact_checks": [
+      {
+        "item": "种子编号",
+        "value": "GHSA-3hcm-ggvf-rch5",
+        "pages": "2",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "高相似案例",
+        "value": "GHSA-wpc6-37g7-8q4w，shell init-file",
+        "pages": "2–3",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "中相似案例",
+        "value": "GHSA-x2m8-53h4-6hch，ingress 授权",
+        "pages": "3",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "低相似案例",
+        "value": "GHSA-cxmw-p77q-wchg，输入来源验证",
+        "pages": "4",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "Harness 规则",
+        "value": "根因锚点、约束调参、可审计依据、新结果回填四项",
+        "pages": "4–5",
+        "result": "与所读原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_漏洞根因泛化与Harness.md",
+      "sha256": "c0ed4726342f059b5d6922191a10339d92f7d3013af1ff79996e0ad09c27d618"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "b999e86381ac97cd25433f5f0add83b1dc32f9bf22d173111fbdb423689f44ef"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "1afd667227d64dc1cd1516fd50f7962b934eb615898cf4ae3b8a1a308cc2c189"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 31,
+        "text_layer_sha256": "da08bcb6cfcddb447cb02fbcd704f7c886d4aa3ec4a076c62f90ec5b5eb73e78",
+        "text_layer_char_count": 726
+      },
+      {
+        "page": 2,
+        "md_start_line": 39,
+        "md_end_line": 54,
+        "text_layer_sha256": "c95c703d28145c19ab257fb5ad0b4b8cc2e024c0ec98e451c28f7e5f7430ec6c",
+        "text_layer_char_count": 648
+      },
+      {
+        "page": 3,
+        "md_start_line": 62,
+        "md_end_line": 93,
+        "text_layer_sha256": "36704279bd758e9e2d1a07e1be6f09a6743a4bdffbcd6dcb6cbf73b5d4d774e8",
+        "text_layer_char_count": 1150
+      },
+      {
+        "page": 4,
+        "md_start_line": 101,
+        "md_end_line": 128,
+        "text_layer_sha256": "6e07e9bddb698e63aa10034bf28e0abacd4a21441553a79984a358dc5b5c44ce",
+        "text_layer_char_count": 1053
+      },
+      {
+        "page": 5,
+        "md_start_line": 136,
+        "md_end_line": 164,
+        "text_layer_sha256": "6622e7d04a13d6160f167e05f78c59f3d0de5f7c6fd0d8a2ee1e6404677a2627",
+        "text_layer_char_count": 966
+      },
+      {
+        "page": 6,
+        "md_start_line": 172,
+        "md_end_line": 182,
+        "text_layer_sha256": "956114f82e402e9b6c1da982e6569220a57e8f1c316ca3988159487c893b5af5",
+        "text_layer_char_count": 389
+      },
+      {
+        "page": 7,
+        "md_start_line": 190,
+        "md_end_line": 200,
+        "text_layer_sha256": "9e868f44cbd6682cd8c82cc672afeb8d4daab0ded5eaeeec3d01741a19c2cc24",
+        "text_layer_char_count": 127
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "官方确认、最新版本修复和团队累计漏洞数均为作者声明，PDF 不包含完整验证及每项修复版本证据",
+        "pages": [
+          2,
+          6
+        ],
+        "status": "明确归因并限制结论"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0410 OpenClaw Vulnerability Diagnosis.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "b999e86381ac97cd25433f5f0add83b1dc32f9bf22d173111fbdb423689f44ef",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent安全与权限.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_漏洞根因泛化与Harness.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0328",
+  "title": "腾讯开源框架 Kuikly 再升级！率先适配“液态玻璃”，原生体验更极致",
+  "short_title": "Kuikly液态玻璃原生适配",
+  "account": "腾讯技术工程",
+  "author": "ray",
+  "author_byline": "腾讯程序员 ray",
+  "source_url": null,
+  "published_at": "2025-09-15T20:25",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "腾讯开源框架     Kuikly 再升级！率先适配  “液态玻璃”，原⽣体验更\n极致\n\n腾讯程序员 ray腾讯技术⼯程  2025年9⽉15⽇   20:25⼴东14⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKuikly是腾讯⼴泛应⽤的跨端开发框架，基于Kotlin Multiplatform技术构建，为开发者提供了\n技术栈更统⼀的跨端开发体验，由腾讯⼤前端领域 Oteam（公司级）推出。⽬前已有20+业务\n深度使⽤，服务业务的总页⾯数1000+、⽇活⽤户超5亿，满⾜了这些业务在众多场景下的各\n类复杂需求（应⽤场景案例）。Kuikly 作为腾讯端服务联盟    (tds.qq.com)的重要成员，将持续\n推动跨端开发的技术创新和⽣态建设。\n\n本次是在苹果发布最新iOS 26 系统的背景下，Kuikly新增全新“液态玻璃”适配，进⼀步丰富平\n台特性⽀持、助⼒业务体验提升。\n\n\n\n ⼀、引⾔\n\n在今年的 WWDC25 上，苹果发布了其近⼗多年来最重要的⼀次视觉设计⾰新 —— 液态玻璃\n（Liq",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "跨端开发与性能",
+    "软件复杂性与架构演进"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯开源框架 Kuikly 再升级！率先适配“液态玻璃”，原生体验更极致.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:04:19-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "60b4e844972723703156d4b35b5869d254f5ae8fbbb5bf09cf549774a22e0cdd",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "p5架构图为加载占位，确认源材料缺图；p6/7示例可见。",
+        "对Flutter/CMP无法调用原生API、性能保真等表述过于绝对，需区分平台视图/混合渲染方案并当前官方核查。",
+        "API名称和iOS版本支持仅为2025年文中状态；未编译运行或跨平台测试，页图检查限1、5、6、7。"
+      ],
+      "size_bytes": 2361177,
+      "page_count": 10
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:04:19-07:00",
+  "directory": "腾讯技术工程/Kuikly液态玻璃原生适配+25.9.15",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:04:19-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "60b4e844972723703156d4b35b5869d254f5ae8fbbb5bf09cf549774a22e0cdd",
+    "output_path": "MD.md",
+    "output_sha256": "b950e72f3cd8df03cdcb31c64f8a3e8a2d29fb86ac727b15d6967bf21843bec0",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 10,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "visual_pages": [
+        1,
+        5,
+        6,
+        7
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "p5架构图为加载占位，确认源材料缺图；p6/7示例可见。",
+      "对Flutter/CMP无法调用原生API、性能保真等表述过于绝对，需区分平台视图/混合渲染方案并当前官方核查。",
+      "API名称和iOS版本支持仅为2025年文中状态；未编译运行或跨平台测试，页图检查限1、5、6、7。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯开源框架 Kuikly 再升级！率先适配“液态玻璃”，原生体验更极致.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/Kuikly液态玻璃原生适配+25.9.15/RAW.pdf",
+    "sha256": "60b4e844972723703156d4b35b5869d254f5ae8fbbb5bf09cf549774a22e0cdd",
+    "copied_at": "2026-10-23T06:04:19-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/跨端开发与性能.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

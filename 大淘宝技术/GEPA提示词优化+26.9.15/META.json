@@ -1,0 +1,449 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0011",
+  "title": "agent优化之GEPA——一种提示词自进化的优化方案",
+  "short_title": "GEPA提示词优化",
+  "account": "大淘宝技术",
+  "author": "诗咏",
+  "author_byline": "本文作者诗咏,来自淘天集团 - 营销 & 交易技术团队。本团队承担淘天电商全链路交易技术攻",
+  "source_url": null,
+  "published_at": "2026-09-15",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "description": "PDF第1页标题、公众号和日期与下载总结的frontmatter、主题相符；署名取PDF团队介绍页。",
+    "pdf_page": 1,
+    "header_text": "agent 优化之 GEPA——一种提示词自进化的优化方案\n营销&交易技术 2026 年 9 月 15 日 23 : 12浙江原创 大淘宝技术 33 人\n本文基于GEPA(Genetic-Pareto,Reflective Prompt Evolution)[1]算法,设计并\n实现了一套Prompt 自进化系统,解决当前Prompt优化依赖人工经验导致的盲目性高、\n难以复制、缺乏权衡机制等痛点。该系统构建\"推理 → 评分 → 反思 → 选择\"的自动化闭环,\n通过数据驱动的反思式变异机制,让LLM 自动分析Badcase、归因至Prompt具体规则、\n生成候选变体,并基于帕累托前沿 进行多目标择优,避免单点优化引发的指标对抗性退\n化[1]。系统采用任务无关架构,支持二分类、多分类、评分等多种场",
+    "author_pdf_page": 22,
+    "download_summary_frontmatter": "title: agent优化之GEPA\nsource: 大淘宝技术公众号（营销&交易技术团队，作者诗咏），2026-09-15\ndate: 2026-09-15\ntype: 方法论与案例型\ntags: [GEPA, DSPy, prompt优化, LLM-Judge, 帕累托前沿, 反思式变异, 评估器对齐]\nstatus: 待复习"
+  },
+  "tags": [
+    "Prompt优化",
+    "Agent评测与反馈"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/agent优化之GEPA——一种提示词自进化的优化方案.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-12T00:38:05-07:00",
+      "provenance": "用户已收集的公众号PDF；本次从inbox复制归档，原采集方式与时间未知",
+      "sha256": "9c0ea0f02774ce1b89c2afb17c106f10a2986ae4f98edb4cf532f4d18e629b27",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "原文URL、采集时间与显示时间的时区未确认；未联网核查来源或技术事实。",
+          "verification_status": "unverified"
+        },
+        {
+          "description": "全部页已提取文本层；图片内容、代码框长行与表格版面尚未逐页视觉核验。",
+          "verification_status": "pending_visual_review"
+        }
+      ],
+      "size_bytes": 6795650,
+      "page_count": 23
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-12T00:38:05-07:00",
+  "directory": "大淘宝技术/GEPA提示词优化+26.9.15",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_GEPA提示词优化.md"
+  },
+  "received_artifacts": [
+    {
+      "artifact_id": "summary-001",
+      "kind": "external_ai_summary",
+      "path": "AI_GEPA提示词优化.md",
+      "original_path": "/Users/iw/Downloads/agent优化之GEPA 26·09·15.md",
+      "received_at": "2026-10-12T00:38:05-07:00",
+      "generated_at": null,
+      "model": null,
+      "prompt_version": null,
+      "sha256": "4eb642e1a0dc3cbb1832bca74921d145ced844de8e9c207c739df54dd72c1f25",
+      "size_bytes": 34862,
+      "provenance": "用户用其他模型生成并下载的AI总结；原样保存，未重新生成",
+      "verification_status": "identity_matched_content_not_fully_verified",
+      "candidate_wikilinks": [
+        "Adjusted Rand Index",
+        "Cohen's Kappa与QWK",
+        "DSPy",
+        "GEPA论文",
+        "LLM-as-a-Judge",
+        "LangGraph",
+        "Pareto前沿与多目标优化",
+        "Prompt工程",
+        "RAG评测",
+        "Reward Hacking",
+        "位置偏差（Pairwise Judge）",
+        "双链"
+      ],
+      "wikilink_status": "保留原下载文本中的候选知识关联；并不表示目标笔记均已创建"
+    }
+  ],
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0011",
+    "created_at": "2026-10-12T00:38:05-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "9c0ea0f02774ce1b89c2afb17c106f10a2986ae4f98edb4cf532f4d18e629b27"
+      },
+      {
+        "artifact_id": "summary-001",
+        "path": "AI_GEPA提示词优化.md",
+        "sha256": "99de320f419f59a89e42395c133b63d5c83785b5919b00620405c33fdf4aa708"
+      }
+    ],
+    "method": "本次导入外部AI总结，核对身份，并以PDF文本及收到的总结补充跨文章主题知识。原总结生成过程未知；本次不重写AI总结。",
+    "tools": [
+      "本地文件读取",
+      "pypdf",
+      "pdfplumber",
+      "Python标准库",
+      "pdftoppm（首面渲染并查看）"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages_for_MD_only",
+    "quality_issues": [
+      {
+        "description": "原文URL、采集时间与显示时间的时区未确认；未联网核查来源或技术事实。",
+        "verification_status": "unverified"
+      },
+      {
+        "description": "全部页已提取文本层；图片内容、代码框长行与表格版面尚未逐页视觉核验。",
+        "verification_status": "pending_visual_review"
+      },
+      {
+        "description": "外部AI总结的生成模型、提示词、原始输入版本与生成时间未知；其校对报告及图中解读属于外部总结的自述，不能直接视为本次核验结论。",
+        "verification_status": "external_summary_not_fully_verified"
+      },
+      {
+        "description": "下载总结含图中无法辨认、原文疑点或推断说明；原样保留。",
+        "verification_status": "reported_by_external_summary",
+        "report_path": "AI_GEPA提示词优化.md",
+        "reported_markers_count": 16
+      }
+    ],
+    "outputs": [
+      "AI_GEPA提示词优化.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "generated_summary": {
+      "path": "AI_GEPA提示词优化.md",
+      "sha256": "4eb642e1a0dc3cbb1832bca74921d145ced844de8e9c207c739df54dd72c1f25"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-12T00:38:05-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "9c0ea0f02774ce1b89c2afb17c106f10a2986ae4f98edb4cf532f4d18e629b27"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "40ef9f8d7bae2ae774422edd240532db86684ad47affd82d0861d205c9b46c64"
+    },
+    "extractor": "pdfplumber 0.11.9; Page.extract_text",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "text_layer_extracted_layout_not_fully_verified",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 14,
+        "md_end_line": 35,
+        "text_layer_sha256": "61dbfe0a2785111100a80752802c2921cf399d983b638cb8560da2fc1f2bab27",
+        "text_layer_char_count": 813,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 2,
+        "md_start_line": 45,
+        "md_end_line": 64,
+        "text_layer_sha256": "56435e320be5dcd232938467fce11bcd520588e39aa26c18d1d5d79230466d0f",
+        "text_layer_char_count": 786,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 3,
+        "md_start_line": 74,
+        "md_end_line": 91,
+        "text_layer_sha256": "7c871870650cdbe3a646efeda8654a8c3a632874fb5243cfdb5733b254a4241f",
+        "text_layer_char_count": 513,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 4,
+        "md_start_line": 101,
+        "md_end_line": 132,
+        "text_layer_sha256": "c201e158a71673359695b98b3d292373bce36bee9b6698fb5c1d73a8d1d2649e",
+        "text_layer_char_count": 448,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 5,
+        "md_start_line": 142,
+        "md_end_line": 169,
+        "text_layer_sha256": "37462737130ebd3e818e5367ffe77b0552d80c49cf65d5d7b9b3b5e3fbb52bbe",
+        "text_layer_char_count": 814,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 6,
+        "md_start_line": 179,
+        "md_end_line": 204,
+        "text_layer_sha256": "c8fe8e2ae1bcc4197717d6669eb336cbb86a345466583d86a51b36551ce7cdf5",
+        "text_layer_char_count": 610,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 7,
+        "md_start_line": 214,
+        "md_end_line": 259,
+        "text_layer_sha256": "6849cffa4645c6b9252a2dfff61dc86450df98114a8316e257d108893130d68f",
+        "text_layer_char_count": 870,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 8,
+        "md_start_line": 269,
+        "md_end_line": 301,
+        "text_layer_sha256": "607f56c2d58956aa422e19b86d264b2866f31fcecadea83a34b75539740c359d",
+        "text_layer_char_count": 985,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 9,
+        "md_start_line": 311,
+        "md_end_line": 349,
+        "text_layer_sha256": "050c4e24793791523e45ea8181a6e3d43a58269b78f91fbd4d4379406702a4c3",
+        "text_layer_char_count": 1057,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 10,
+        "md_start_line": 359,
+        "md_end_line": 386,
+        "text_layer_sha256": "536a5da8dd1182e01a8d6bd1047db5900b817562f4d23909c1ffdc78062b58d3",
+        "text_layer_char_count": 849,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 11,
+        "md_start_line": 396,
+        "md_end_line": 414,
+        "text_layer_sha256": "55b66a9cc5ead9c174bbe6de1694409606f2b9fe7a51dcf1dac91c541526b941",
+        "text_layer_char_count": 576,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 12,
+        "md_start_line": 424,
+        "md_end_line": 452,
+        "text_layer_sha256": "03bca91e44cc4f20d4ad7296821b21cb0df3021db85de9b6881e9aed166552f9",
+        "text_layer_char_count": 1177,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 13,
+        "md_start_line": 462,
+        "md_end_line": 488,
+        "text_layer_sha256": "283c5c5c1a858c18b406170f1a409883cd8125b7ef4bdc4426932c2153bde06e",
+        "text_layer_char_count": 949,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 14,
+        "md_start_line": 498,
+        "md_end_line": 521,
+        "text_layer_sha256": "fefb7991db16f325e6067fec14cb4e2a94117db9f4e28f9989789147c075c855",
+        "text_layer_char_count": 703,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 15,
+        "md_start_line": 531,
+        "md_end_line": 562,
+        "text_layer_sha256": "0f286a94aa0eb9e72053367edbdf15d9e64c1a4c834032c4bd0013aabc595f09",
+        "text_layer_char_count": 561,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 16,
+        "md_start_line": 572,
+        "md_end_line": 591,
+        "text_layer_sha256": "65a4c52f57ac602328750f59f80ce95d2d64d54db1000a55433149a3d359aa9e",
+        "text_layer_char_count": 258,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 17,
+        "md_start_line": 601,
+        "md_end_line": 625,
+        "text_layer_sha256": "91fed992e8f63b0e7e06534ea1ef3e4da4d2fa6615d6604190f61a7463f9b6e8",
+        "text_layer_char_count": 746,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 18,
+        "md_start_line": 635,
+        "md_end_line": 635,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 19,
+        "md_start_line": 645,
+        "md_end_line": 672,
+        "text_layer_sha256": "7d76c69c42972af3cc8fab9aae07f3ccfdf2665ab52d80192a5c0cb4cd9e3761",
+        "text_layer_char_count": 498,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 20,
+        "md_start_line": 682,
+        "md_end_line": 705,
+        "text_layer_sha256": "4ceaab6e3ecf2285a4c3193f20ad34869e384f15f12c813ea7557da7968e88f8",
+        "text_layer_char_count": 702,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 21,
+        "md_start_line": 715,
+        "md_end_line": 735,
+        "text_layer_sha256": "4881ca3fe1fa102690a2679dfefb07f452275a60df12cf29e0ebf45aa8ddecae",
+        "text_layer_char_count": 845,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 22,
+        "md_start_line": 745,
+        "md_end_line": 760,
+        "text_layer_sha256": "e1297a9b261e2f8b2a5f4651e59552aa208d81d2e2959b41dff6bcd46a935eae",
+        "text_layer_char_count": 285,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 23,
+        "md_start_line": 770,
+        "md_end_line": 770,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_extracted": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "identity_text_pages_reviewed": [
+        1,
+        22
+      ],
+      "visual_pages_reviewed": [
+        1
+      ],
+      "detail_text_pages_reviewed": [
+        3,
+        20
+      ]
+    }
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Prompt优化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充主题知识；不改变本人记录或自动加入工具库",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed_sources_removed",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/agent优化之GEPA——一种提示词自进化的优化方案.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "9c0ea0f02774ce1b89c2afb17c106f10a2986ae4f98edb4cf532f4d18e629b27",
+        "removed_at": "2026-10-12T00:44:57-07:00"
+      },
+      {
+        "original_path": "/Users/iw/Downloads/agent优化之GEPA 26·09·15.md",
+        "destination_path": "AI_GEPA提示词优化.md",
+        "sha256": "99de320f419f59a89e42395c133b63d5c83785b5919b00620405c33fdf4aa708",
+        "removed_at": "2026-10-12T00:44:57-07:00"
+      }
+    ],
+    "copied_at": "2026-10-12T00:38:05-07:00",
+    "removed_at": "2026-10-12T00:44:57-07:00"
+  },
+  "ai_note": "AI_GEPA提示词优化.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

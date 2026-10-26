@@ -1,0 +1,448 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0153",
+  "title": "iPhone Duo 来了，腾讯 Kuikly 助 App 从容适配",
+  "short_title": "Kuikly折叠屏适配",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-09-09T21:03",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/iPhone Duo来了，腾讯 Kuikly 助 App 从容适配.pdf",
+      "original_filename": "iPhone Duo来了，腾讯 Kuikly 助 App 从容适配.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "3ff724c425792c01f8138b33ad410d6201993e84d783830e907ba25c319cf1dc",
+      "size_bytes": 6223801,
+      "page_count": 14,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "PDF p.2 文本层为空，缩略页显示为界面示例截图/视觉材料，未提取图片内小字。",
+          "pages": [
+            2
+          ],
+          "status": "visual_only"
+        }
+      ],
+      "publication_evidence": "PDF p.1 页眉：2026 年 9 月 9 日 21:03；未标时区。"
+    }
+  ],
+  "tags": [
+    "模型与开发工具发布",
+    "异常监控与稳定性",
+    "Harness与模型协同",
+    "跨端开发与性能"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Kuikly折叠屏适配+26.9.9",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Kuikly折叠屏适配.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "iPhone  Duo 来了,腾讯 Kuikly  助 App  从容适配\n腾讯程序员 2026 年 9 月 9 日 21 : 03广⻄原创 腾讯技术工程 102 人\n前言\n今天凌晨,在苹果秋季发布会上,苹果发布了全新的折叠设备形态。不同于常规的硬件参数\n升级,折叠屏改变了移动设备的可用空间:设备可以在便携的小屏与展开的大屏之间切换,\nApp 界面也需要从固定布局转向能够连续响应窗口变化的多形态设计。\n在苹果入局之前,华为、三星、荣耀、 OPPO 、 vivo 和小米等厂商已经持续推出折叠屏产\n品,迭代节奏不断加快,形态也日趋丰富。苹果的加入进一步扩展了折叠屏的行业覆盖范\n围,也使内容浏览、移动办公、多任务协同等场景的大小屏适配成为更多  App 需要考虑的问\n题。\nAI 也在改变移动终端的信息结构:从单一的问答入口,逐步发展为同时承载上下文资料、工\n具调用、生成结果和人工确认的复合任务界面。与此同时,远程办公、云桌面和跨设备协同\n也需要在有限空间内并行展示更多信息。随着这些场景持续发展,移动终端对显示空间的需\n求将进一步增加,折叠屏与大屏可能逐步成为  AI 超级终端和移动生产力设备的重要发展方\n向。\n趋势背后,一个更加现实的问题也摆在了开发者面前:面对折叠屏带来的可变窗口场景,当\n手机可以在小屏与大屏之间切换, App 应该如何跟着 \" 展开 \" ?现有⻚面能否自然适应?布\n局、路由、动画和手势是否都要重新开发? Android 、 iOS 、 HarmonyOS 多平台又是否需要\n分别适配?\nKuikly 在设计之初便考虑了窗口变化与多形态适配,并已具备成熟的折叠屏支持能力。基于\nKotlin Multiplatform 与共享  UI 体系,开发者可以在共享  Kotlin 代码中统一处理尺寸响\n应、状态管理和多形态布局,将核心逻辑复用于多个平台之上。\nKuikly  是腾讯开源的高性能跨端框架,基于 Kotlin  Multiplatform  技术,覆盖 Android 、 iOS 、\nHarmonyOS 、 H5 、微信小程序、 Mac  六大平台,支撑业务日活用户超 5  亿。当折叠屏适配潮\n加速到来, Kuikly  如何帮助 App  从容适配——单次开发,即可覆盖 Android 、 iOS 、\nHarmonyOS  多端,让同一套⻚面自然适应折叠、展开、分屏和小窗等不同形态。\n",
+    "publication_evidence": "PDF p.1 页眉：2026 年 9 月 9 日 21:03；未标时区。",
+    "full_title_in_capture": "iPhone Duo 来了，腾讯 Kuikly 助 App 从容适配",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0153",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "3ff724c425792c01f8138b33ad410d6201993e84d783830e907ba25c319cf1dc"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "54b9abd3ba10c01ae471ae976e4cac4e780e0184d26b57532dbdd9ee58117225"
+      }
+    ],
+    "method": "按用户指定Obsidian学习笔记提示词（基于MD.md与既有PDF核验记录）重新生成中文学习笔记；正文、数据表、图注与复习卡片均去除页码标注，核验结果统一置于文末折叠校对报告；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对",
+      "MD.md全文核对与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "user_custom_obsidian_prompt_20261015",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71",
+      "override_note": "用户于2026-10-15会话中直接提供完整结构化Obsidian学习笔记提示词（去除正文/表格/卡片内页码标注，保留文末折叠校对报告）。"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "PDF p.2 文本层为空，缩略页显示为界面示例截图/视觉材料，未提取图片内小字。",
+        "pages": [
+          2
+        ],
+        "status": "visual_only"
+      }
+    ],
+    "outputs": [
+      "AI_Kuikly折叠屏适配.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    },
+    "coverage": "通读 p.1–14，查看全页缩略图；覆盖动机、多平台/形态复杂度、共享规则、路由、动画、手势、平台适应、总结和示例链接。p.2 仅图像材料，无法读取其中细字。",
+    "fact_checks": [
+      {
+        "item": "适配目标",
+        "original_value": "同一应用处理不同设备形态和窗口尺寸",
+        "pages": [
+          1,
+          3
+        ],
+        "result": "根据文章目标概括。"
+      },
+      {
+        "item": "布局组织",
+        "original_value": "公共规则与平台差异适配分层",
+        "pages": [
+          4,
+          6
+        ],
+        "result": "按方案描述。"
+      },
+      {
+        "item": "路由",
+        "original_value": "形态切换下页面导航需适配上下文",
+        "pages": [
+          6,
+          8
+        ],
+        "result": "正文机制总结。"
+      },
+      {
+        "item": "交互",
+        "original_value": "手势、动画状态和平台行为需要协调",
+        "pages": [
+          9,
+          11
+        ],
+        "result": "按实现章节总结。"
+      },
+      {
+        "item": "视觉材料",
+        "original_value": "p.2图内小字没有读取",
+        "pages": [
+          2
+        ],
+        "result": "不将图中文字当已确认事实。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading",
+        "clean body without inline page citations"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Kuikly折叠屏适配.md",
+      "sha256": "2743a86c57413971edeb5560f27d0abba3c45fae83fe11d45336cfc2d2e5f1ea",
+      "previous_sha256": "dce35e8edec56e7d8f89ce78d4c3de51f121d16f021fc935ba98688660872d7c"
+    },
+    "independent_crosscheck": {
+      "reviewer": "regenerated_with_user_prompt_20261015",
+      "note_sha256": "2743a86c57413971edeb5560f27d0abba3c45fae83fe11d45336cfc2d2e5f1ea",
+      "review_sha256": "66ecdc4fe06e16cb0667d5fe54ba7eacd3dbd7839af0a6d3e82aac22dad8d7ea",
+      "status": "passed",
+      "changes": [
+        "Regenerated study note from MD.md per user prompt (2026-10-15): structured 10 modules, removed inline page citations from body/tables/flashcards, and consolidated verification in the folded 校对报告."
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "1–4",
+          "check": "核对折叠/展开/分屏带来的布局与交互复杂度，以及多平台共享的适配动机；p.2为视觉示例而非可读正文，笔记和review已明确不确认图内细字。"
+        },
+        {
+          "pages": "5–8",
+          "check": "核对Kuikly共享状态/窗口响应、导航按形态映射、小屏整页与大屏区域切换；笔记描述与图文页一致。"
+        },
+        {
+          "pages": "9–14",
+          "check": "核对大屏区域内动画、区域优先返回和手势作用域、系统安全距离/原生表现、总结与链接。p.13为公众号尾页，p.14空白；没有把代码示例表述为独立实测。"
+        }
+      ],
+      "previous_note_sha256": "57f8f0b0cac236bdbeec1f4978d303cd74b7397cbe4a48ca9581bd484a27fa66"
+    },
+    "updated_at": "2026-10-15T08:21:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "3ff724c425792c01f8138b33ad410d6201993e84d783830e907ba25c319cf1dc"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "54b9abd3ba10c01ae471ae976e4cac4e780e0184d26b57532dbdd9ee58117225"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 35,
+        "text_layer_sha256": "e31b2989ed19208bc2ccf68decd8f7ce01cd2757bdcadfe3a928e61b88e7025c",
+        "text_layer_char_count": 1018
+      },
+      {
+        "page": 2,
+        "md_start_line": 43,
+        "md_end_line": 42,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 3,
+        "md_start_line": 50,
+        "md_end_line": 63,
+        "text_layer_sha256": "5804820c31d9c35a00c85cbd32ea90eae5b5794dd832d4d547caa80acdbf5878",
+        "text_layer_char_count": 430
+      },
+      {
+        "page": 4,
+        "md_start_line": 71,
+        "md_end_line": 74,
+        "text_layer_sha256": "18096353f3687d20c126822e693461f9c5b30b0575e21da4f3939a4e97f4704b",
+        "text_layer_char_count": 133
+      },
+      {
+        "page": 5,
+        "md_start_line": 82,
+        "md_end_line": 113,
+        "text_layer_sha256": "569a49235779d5cf3f8921f2bf87ae99f2f80c3271e4de68177bc8d542bf0d87",
+        "text_layer_char_count": 1081
+      },
+      {
+        "page": 6,
+        "md_start_line": 121,
+        "md_end_line": 140,
+        "text_layer_sha256": "467011f78efb25ecc25dfbc40d782f3b00707edf67dee4a0fc8ba94debf755d0",
+        "text_layer_char_count": 635
+      },
+      {
+        "page": 7,
+        "md_start_line": 148,
+        "md_end_line": 152,
+        "text_layer_sha256": "0830e9a0a4c23ef6de21d3f237a1178b958ea6e6b3d0d309b43b1e012c2e8fcd",
+        "text_layer_char_count": 191
+      },
+      {
+        "page": 8,
+        "md_start_line": 160,
+        "md_end_line": 167,
+        "text_layer_sha256": "5f299f90bf9048ec5bcecffe9ba23a9343289b25989655ee748b01488ae02218",
+        "text_layer_char_count": 269
+      },
+      {
+        "page": 9,
+        "md_start_line": 175,
+        "md_end_line": 175,
+        "text_layer_sha256": "9b709830971ddd9bc73836f3d70cd32f911057904fdae2337d470f0bda586325",
+        "text_layer_char_count": 30
+      },
+      {
+        "page": 10,
+        "md_start_line": 183,
+        "md_end_line": 192,
+        "text_layer_sha256": "c5867756aee6e599ce3321fe77b91888d3fe3e2f151e511e573bd5b01576f465",
+        "text_layer_char_count": 288
+      },
+      {
+        "page": 11,
+        "md_start_line": 200,
+        "md_end_line": 213,
+        "text_layer_sha256": "ba8e33bb6449f3b76f22ae281fd8ccbc7bd93529d022155d9d1527a395bb1fbc",
+        "text_layer_char_count": 509
+      },
+      {
+        "page": 12,
+        "md_start_line": 221,
+        "md_end_line": 246,
+        "text_layer_sha256": "042cf4d47d13a76b40af1244bdee2f9cdc268e2ae96b894014a36123fe621487",
+        "text_layer_char_count": 923
+      },
+      {
+        "page": 13,
+        "md_start_line": 254,
+        "md_end_line": 257,
+        "text_layer_sha256": "c4633aaaa8cb1e34c8cd84c83aa1dcb1eff7992b29a02877489108686e79f783",
+        "text_layer_char_count": 29
+      },
+      {
+        "page": 14,
+        "md_start_line": 265,
+        "md_end_line": 264,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "PDF p.2 文本层为空，缩略页显示为界面示例截图/视觉材料，未提取图片内小字。",
+        "pages": [
+          2
+        ],
+        "status": "visual_only"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/iPhone Duo来了，腾讯 Kuikly 助 App 从容适配.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "3ff724c425792c01f8138b33ad410d6201993e84d783830e907ba25c319cf1dc",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/跨端开发与性能.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Kuikly折叠屏适配.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

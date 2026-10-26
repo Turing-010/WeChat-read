@@ -1,0 +1,122 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0317",
+  "title": "揭秘！腾讯如何训练多智能体像专家一样设计游戏场景",
+  "short_title": "IntelliScene视觉3D布局",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-12-22T02:10",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "揭秘！腾讯如何训练多智能体像专家⼀样设计游戏场景\n\n腾讯技术⼯程 2025年12⽉22⽇   02:10⼴东105⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n引⾔\n\n在游戏开发中，⼤量可探索区域的环境与道具摆放，需要美术与关卡团队反复挑选资产、调整位\n置、尺度、朝向，并处理“有⽀撑、⽆穿插、留通⾏”等基础约束。这类⼯作细节密度⾼、迭代频\n繁，往往消耗⼤量制作时间。围绕提升场景制作的稳定性与⼀致性，腾讯游戏持续探索将AI能⼒\n与传统⼏何、物理⼯具链结合，在可控、可编辑的制作流程中，为场景搭建提供更稳定的辅助能\n⼒与可编辑的布局起点，帮助团队把更多精⼒投⼊到核⼼体验与细节打磨上。\n\n\n\n需要说明的是，这类能⼒主要⽤于研发制作环节：AI输出作为可编辑的候选⽅案，由美术、策\n划、程序在⼯作流中审阅、调整与验收。核⼼关卡、关键镜头与⾼关注区域仍以专业美术的创作\n与精细打磨为主；AI更适合⽤于过渡区域、边缘区域与远景背景等⾮核⼼但必须覆盖的部分（这\n些区域往往没有过多的艺术家的创作空间深度、⾃由度，美术做起来也",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "多模态与生成模型",
+    "Agent架构",
+    "Harness与模型协同"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/揭秘！腾讯如何训练多智能体像专家一样设计游戏场景.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:01:04-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "04688cb623ea17ff0fd17968d2fa3779fb280d2f8c45f8827166d90d35202e8f",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "系统定位为非核心区域可编辑候选与原型，不能写成取代专业美术或全自动商用。",
+        "100名美术学生偏好率与专家评分属于作者报告，未说明全部采样、盲测和不确定性。",
+        "模拟退火不能保证全局最优，原文措辞过强；图中细节只复核1、4、8、9。"
+      ],
+      "size_bytes": 9761154,
+      "page_count": 12
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:01:04-07:00",
+  "directory": "腾讯技术工程/IntelliScene视觉3D布局+25.12.22",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:01:04-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "04688cb623ea17ff0fd17968d2fa3779fb280d2f8c45f8827166d90d35202e8f",
+    "output_path": "MD.md",
+    "output_sha256": "579366bd00d0844174f106f5d5dfbcf2672bfc4ae9f9c3ba7a3c873e9dca01ce",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 12,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visual_pages": [
+        1,
+        4,
+        8,
+        9
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "系统定位为非核心区域可编辑候选与原型，不能写成取代专业美术或全自动商用。",
+      "100名美术学生偏好率与专家评分属于作者报告，未说明全部采样、盲测和不确定性。",
+      "模拟退火不能保证全局最优，原文措辞过强；图中细节只复核1、4、8、9。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/揭秘！腾讯如何训练多智能体像专家一样设计游戏场景.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/IntelliScene视觉3D布局+25.12.22/RAW.pdf",
+    "sha256": "04688cb623ea17ff0fd17968d2fa3779fb280d2f8c45f8827166d90d35202e8f",
+    "copied_at": "2026-10-23T06:01:04-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/具身智能数据闭环.md",
+      "../../20_topics/推荐系统与多模态评测.md",
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

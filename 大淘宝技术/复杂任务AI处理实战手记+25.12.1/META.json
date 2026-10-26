@@ -1,0 +1,394 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0276",
+  "title": "复杂任务AI处理实践：淘宝工程师的实战手记",
+  "short_title": "复杂任务AI处理实战手记",
+  "account": "大淘宝技术",
+  "author": "晟泉",
+  "author_byline": "本文作者晟泉，来自淘天集团-商家&开放平台技术团队。",
+  "source_url": null,
+  "published_at": "2025-12-01",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "商家&开放平台 2025年12月1日 01:26 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 13,
+      "text": "本文作者晟泉，来自淘天集团-商家&开放平台技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "Agent工程循环",
+    "Agent数据分析",
+    "异常监控与稳定性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/复杂任务AI处理实践：淘宝工程师的实战手记.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T19:22:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "fafa036ca541b485e9bc9b143ed3c41b1efcbd3e1a4171b2b0aa5734505635f7",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.1, 6, 8, 9, 10含平台工作流编排截图（位于PDF图像层），作者同时在正文文本层给出了对应的ASCII树状流程还原，无内容缺失。",
+          "pages": [
+            1,
+            6,
+            8,
+            9,
+            10
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 3525147,
+      "page_count": 14
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T19:22:00-07:00",
+  "directory": "大淘宝技术/复杂任务AI处理实战手记+25.12.1",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_复杂任务AI处理实战手记.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0276",
+    "created_at": "2026-10-20T19:22:00-07:00",
+    "updated_at": "2026-10-20T19:22:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "fafa036ca541b485e9bc9b143ed3c41b1efcbd3e1a4171b2b0aa5734505635f7"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "ee79e58914ce287021ba47c77cdff2b8f040b535b774e60ee8025aae210c8351"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.1, 6, 8, 9, 10含平台工作流编排截图（位于PDF图像层），作者同时在正文文本层给出了对应的ASCII树状流程还原，无内容缺失。",
+        "pages": [
+          1,
+          6,
+          8,
+          9,
+          10
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_复杂任务AI处理实战手记.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_复杂任务AI处理实战手记.md",
+      "sha256": "1d1e05cdc3329e55c426cc7bd88d77e7fcc011afe8f4545658b34054e22d3c82"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T19:22:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "fafa036ca541b485e9bc9b143ed3c41b1efcbd3e1a4171b2b0aa5734505635f7"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "ee79e58914ce287021ba47c77cdff2b8f040b535b774e60ee8025aae210c8351"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 52,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 689,
+        "text_layer_sha256": "a40db81f5fc6603ce5d8da877ee2650d9643d7066d32f652b14c7080a632e9c8"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 114,
+        "md_start_line": 60,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 2,
+        "text_layer_char_count": 590,
+        "text_layer_sha256": "e04f61f7224ca38de0ac6680419ff943ea64cb6d48e4b4d57e808fb00b0171f2"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 167,
+        "md_start_line": 122,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 3,
+        "text_layer_char_count": 686,
+        "text_layer_sha256": "3f07c1aaec0859361e1207f6dfa347a1b0e10682d84598c0886eae70821cb640"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 249,
+        "md_start_line": 175,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 4,
+        "text_layer_char_count": 709,
+        "text_layer_sha256": "316ca3177e63481d9535341ef5371a20c63fcea1a291af529bec5bda277f6005"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 303,
+        "md_start_line": 257,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 5,
+        "text_layer_char_count": 592,
+        "text_layer_sha256": "0cba3ae3fce934a3f33a01ca65d7e6a462764163d2b637dc64f7f8fd722d7450"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 366,
+        "md_start_line": 311,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 6,
+        "text_layer_char_count": 714,
+        "text_layer_sha256": "94c4124c003ec985be30940730c1d3c0ed5242508cef2c9eaf412816d631d392"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 420,
+        "md_start_line": 374,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 7,
+        "text_layer_char_count": 493,
+        "text_layer_sha256": "6db64f703f6929e63b8b85a0e8b0bcbf07c3546bd28150a072dad3469ecc3db8"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 484,
+        "md_start_line": 428,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 8,
+        "text_layer_char_count": 750,
+        "text_layer_sha256": "155ca5db37aa7c34b52fc0739d29cd0c3cb171777bfcfefedd7d5c528305d410"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 553,
+        "md_start_line": 492,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 9,
+        "text_layer_char_count": 801,
+        "text_layer_sha256": "c9bc307b79a0fbfda126fab7bd3851e0a37011c7adc042c9c6f3974cdb7dbf02"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 602,
+        "md_start_line": 561,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 10,
+        "text_layer_char_count": 692,
+        "text_layer_sha256": "f93842e3d5bf256550c9e8721c616313a2bc0e920160f1543e22dc8d06227748"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 698,
+        "md_start_line": 610,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 11,
+        "text_layer_char_count": 811,
+        "text_layer_sha256": "0a544e0e0eb627961438ba82760af77adaba63f2cf4c2861613af7c22e3c3bfa"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 773,
+        "md_start_line": 706,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 12,
+        "text_layer_char_count": 824,
+        "text_layer_sha256": "1c02e71651a1a6687a5346e3ae9662bb578f25429f0f9ca558014fda5ed9c47b"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 819,
+        "md_start_line": 781,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 13,
+        "text_layer_char_count": 699,
+        "text_layer_sha256": "2a1b16d300cf06a0498935fed2805feee64dca2fd16e465953bb02c8b054a07b"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 839,
+        "md_start_line": 827,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 14,
+        "text_layer_char_count": 97,
+        "text_layer_sha256": "4cb4c6f2f630f714e3311fce78121ca23c4cd9d1cc6944b9e291d8458602e6f9"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.1, 6, 8, 9, 10含平台工作流编排截图（位于PDF图像层），作者同时在正文文本层给出了对应的ASCII树状流程还原，无内容缺失。",
+        "pages": [
+          1,
+          6,
+          8,
+          9,
+          10
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T19:22:00-07:00",
+    "removed_at": "2026-10-20T19:22:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/复杂任务AI处理实践：淘宝工程师的实战手记.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "fafa036ca541b485e9bc9b143ed3c41b1efcbd3e1a4171b2b0aa5734505635f7",
+        "copied_at": "2026-10-20T19:22:00-07:00",
+        "removed_at": "2026-10-20T19:22:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_复杂任务AI处理实战手记.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

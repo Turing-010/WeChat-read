@@ -1,0 +1,758 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0103",
+  "title": "如何写好 Skill：一份终极实战经验手册",
+  "short_title": "Skill 实战手册",
+  "account": "腾讯技术工程",
+  "author": "jackjchou",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-06-05T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0605 Skill Practical Guide.pdf",
+      "original_filename": "0605 Skill Practical Guide.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "8f24cf00aa1f4f3346c62dff54d5e43180d92546530918577cfb9ff10e9e1cc1",
+      "size_bytes": 6444261,
+      "page_count": 44,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "若干代码、脚本和配置片段存在省略或分页截断；本文按设计示例概述，不补写缺失代码，也未执行。",
+          "pages": [
+            9,
+            10,
+            15,
+            16,
+            17,
+            18
+          ],
+          "status": "已核对缩略页与关键放大页；不作为可运行代码"
+        }
+      ],
+      "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。"
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "Prompt优化",
+    "Agent评测与反馈",
+    "Skill设计与治理"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Skill 实战手册+26.6.5",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Skill 实战手册.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "如何写好 Skill :一份终极实战经验手册\n腾讯程序员 Jun  5 , 2026 , 2 : 36  AM广东原创 腾讯技术工程 1422  listened\n作者: jackjchou\n阅读建议\n文章比较长,不同背景的读者可以按需跳读:\n你的情况 推荐阅读路径\n从没写过  Skill ,想快速上手 一  →  二(重点看  2.5 Quick Start )→  三  →  八\n写过但效果不好,想提升质量三  →  五  →  十二(反模式)→  十三(检查清单)\n负责团队  Skill 规范和管理 四  →  七  →  十一  →  十二\n想了解  MCP 和外部服务集成 六\nSkill 跑不通,想排查问题 九  →  十\n一、先搞清楚  Skill 是什么\n1.1 Skill 到底是啥\n说白了, Skill 就是给  AI 编程助手( Claude Code 、 CodeBuddy 等) \" 加装 \" 的能力包。本质\n上,它是一种结构化的  Prompt Engineering—— 通过标准的文件格式,把分散在人脑中的领\n域知识、操作流程和最佳实践,转化为  AI 可理解、可执行的指令集。\n物理上看,它就是一个文件夹,里面放一个   SKILL.md  文件,再加上一些可选的脚本和参考\n资料。核心就三样东西:\n指令( Instructions ):告诉  AI 该怎么干活,按什么步骤来\n上下文( Context ):给  AI 补课,告诉它你的项目背景、团队规范这些它不可能凭空知道\n的东西\n工具( Tools ):一些辅助脚本、配置模板, AI 可以直接拿来用\n这篇文章把我们写  Skill 踩过的坑、总结出的经验,再加上  Anthropic 官方的一些好做\n法,整理到了一起。希望能帮你少走弯路,把团队积累的知识真正 \" 喂 \" 给  AI ,让它干活\n更靠谱。  本文示例以  Go 语言为主,兼顾  Python 、 Java 等语言,所有原则和技巧适用于\n任何编程语言。\n",
+    "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。",
+    "full_title_in_capture": "如何写好 Skill：一份终极实战经验手册",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0103",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "8f24cf00aa1f4f3346c62dff54d5e43180d92546530918577cfb9ff10e9e1cc1"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "若干代码、脚本和配置片段存在省略或分页截断；本文按设计示例概述，不补写缺失代码，也未执行。",
+        "pages": [
+          9,
+          10,
+          15,
+          16,
+          17,
+          18
+        ],
+        "status": "已核对缩略页与关键放大页；不作为可运行代码"
+      }
+    ],
+    "outputs": [
+      "AI_Skill 实战手册.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "detail_pages_reviewed": [
+        3,
+        8,
+        32
+      ]
+    },
+    "coverage": "覆盖 Skill 定义与三层渐进结构、触发条件和目录/YAML、Rule 与 Skill 的边界、写作设计、拆分复用、工具与安全、评测迭代和团队维护。包含 Go 表驱动测试示例及多处脚本/配置片段。 交叉复核补充：核对p.13–23模块化与MCP/HTTP选择，p.24–26安全边界，p.29–43评测、排障和团队维护；笔记已补入上述机制。 已补核 PDF p.44：提取文字与图像均为公众号阅读/留言尾页，无技术正文；正文覆盖仍止于p.43。",
+    "fact_checks": [
+      {
+        "claim": "约 500 行后考虑拆分",
+        "page": "p.20",
+        "result": "文章建议，经验阈值"
+      },
+      {
+        "claim": "few-shot 示例约 3–5 个",
+        "page": "p.18",
+        "result": "文章建议，非通用定律"
+      },
+      {
+        "claim": "评测通过阈值示例 85%/95%",
+        "page": "p.34",
+        "result": "文章示例数据，非实测通用标准"
+      },
+      {
+        "claim": "技能触发测试约 20 个案例",
+        "page": "p.33",
+        "result": "文章建议的测试规模"
+      },
+      {
+        "claim": "Level 1/2/3 渐进加载模型",
+        "page": "p.4–7",
+        "result": "文章提出的组织方式"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Skill 实战手册.md",
+      "sha256": "6d11a25969e2556db96d16b37b60510c068b3b51f5d3b5dd9bb50371b5fa229d"
+    },
+    "independent_crosscheck": {
+      "reviewer": "crosscheck_a",
+      "status": "passed",
+      "note_sha256": "405d5892c00af8784ac26e6348ab5766659467048f79b3761e9a61a0d16a66c2",
+      "review_sha256": "c55f20a59b2a7b393ea5f03d14747aad41660cf4986c86814b31cc82afe4d502",
+      "changes": [
+        "补充模块拆分与检查点、MCP/HTTP选择、安全、Skill Creator评测、排障和团队生命周期维护，并标注对应页码。",
+        "按新增结构标准核对日期、唯一H1、复习卡片与末尾折叠校对报告；无卡片内容改写。",
+        "新增标准复核通过：含## 复习卡片、5–10条单行问题::答案、date元数据、唯一H1，以及末尾逐行引用的折叠校对报告。"
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "p.4–7",
+          "result": "三层渐进加载模型及Rule/Skill边界。"
+        },
+        {
+          "pages": "p.13–23",
+          "result": "示例、模块拆分、检查点、MCP/HTTP选择条件；图像抽查p.21。"
+        },
+        {
+          "pages": "p.24–26、29–43",
+          "result": "安全原则、Skill Creator评测、排障、版本与团队维护；抽查p.34、39。"
+        },
+        {
+          "pages": "p.44",
+          "result": "已补核 PDF p.44：提取文字与图像均为公众号阅读/留言尾页，无技术正文；正文覆盖仍止于p.43。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "8f24cf00aa1f4f3346c62dff54d5e43180d92546530918577cfb9ff10e9e1cc1"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "dac19188deb45589169aab628ef1ac1a6faa21fb3173c7d1b8a35369724129c1"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 35,
+        "text_layer_sha256": "a12f9cf0b84d365de9f90947d000014281b11b833ef7f35d14138d2d97d5f158",
+        "text_layer_char_count": 859
+      },
+      {
+        "page": 2,
+        "md_start_line": 43,
+        "md_end_line": 79,
+        "text_layer_sha256": "960186b4f6b92176a2b8a77683340c727ce3b4e7d357b9a48bb7fd6ded36aa33",
+        "text_layer_char_count": 1134
+      },
+      {
+        "page": 3,
+        "md_start_line": 87,
+        "md_end_line": 118,
+        "text_layer_sha256": "0bb8688a72132a650ba69c9ce7939cef53bf6ca39e19113d67fcee3fe916cdde",
+        "text_layer_char_count": 833
+      },
+      {
+        "page": 4,
+        "md_start_line": 126,
+        "md_end_line": 159,
+        "text_layer_sha256": "58847675b83fa73ad4f72b5f815b21e6b59582901891036ee85bbb652a8e83ef",
+        "text_layer_char_count": 928
+      },
+      {
+        "page": 5,
+        "md_start_line": 167,
+        "md_end_line": 202,
+        "text_layer_sha256": "e22ef7d1470aa7db633edbf5c39f6a6d400dc8cdafecacd0782f5a61d25d9ab3",
+        "text_layer_char_count": 717
+      },
+      {
+        "page": 6,
+        "md_start_line": 210,
+        "md_end_line": 243,
+        "text_layer_sha256": "186adf2711052d9158648e322c5176e37cee677a352c393a428fc1e4d471af99",
+        "text_layer_char_count": 717
+      },
+      {
+        "page": 7,
+        "md_start_line": 251,
+        "md_end_line": 287,
+        "text_layer_sha256": "728db65bd64c0fd1b6050bc5a5dfeeb77c9d63ca462dd972f523bd1c187ee263",
+        "text_layer_char_count": 961
+      },
+      {
+        "page": 8,
+        "md_start_line": 295,
+        "md_end_line": 324,
+        "text_layer_sha256": "dfc42da27dda0bc1ae30198c5735f8d0885929c0ef77d077eb959ce752b29c7f",
+        "text_layer_char_count": 684
+      },
+      {
+        "page": 9,
+        "md_start_line": 332,
+        "md_end_line": 361,
+        "text_layer_sha256": "edec82aae19d34106363ab5f747e9f1926feed66ed45c9ef617beeda564a694d",
+        "text_layer_char_count": 781
+      },
+      {
+        "page": 10,
+        "md_start_line": 369,
+        "md_end_line": 401,
+        "text_layer_sha256": "69e168128f24971bab9ea7bf52202466f72132efa8fa0f46435c555aa86ce07c",
+        "text_layer_char_count": 1001
+      },
+      {
+        "page": 11,
+        "md_start_line": 409,
+        "md_end_line": 442,
+        "text_layer_sha256": "31acfb7bc109570755e2148d9965d76ef1de07cdfa6d0e824f6ae224b48769de",
+        "text_layer_char_count": 959
+      },
+      {
+        "page": 12,
+        "md_start_line": 450,
+        "md_end_line": 489,
+        "text_layer_sha256": "18f8f8e2452a1b944ab323de75fe3f0d10ae359a9a6c3eb3c0268b4b46871c4f",
+        "text_layer_char_count": 1096
+      },
+      {
+        "page": 13,
+        "md_start_line": 497,
+        "md_end_line": 532,
+        "text_layer_sha256": "be278739cedbe5cc15547ba8821d1fb12bd7a78ba307127adf53cdf80087ec71",
+        "text_layer_char_count": 891
+      },
+      {
+        "page": 14,
+        "md_start_line": 540,
+        "md_end_line": 577,
+        "text_layer_sha256": "22aefe3805c22740d347685cdc4c3425fc81172350dfe139c61f43422abb641f",
+        "text_layer_char_count": 1559
+      },
+      {
+        "page": 15,
+        "md_start_line": 585,
+        "md_end_line": 619,
+        "text_layer_sha256": "4b204f2b6a09d05ad47a3e464e17d4d3ab864c718aae8f4a6d27e57d549f9297",
+        "text_layer_char_count": 915
+      },
+      {
+        "page": 16,
+        "md_start_line": 627,
+        "md_end_line": 655,
+        "text_layer_sha256": "abcdec76da34eebc3b1f7fa9b67295fac2851adc37447d778c038da7bc324a0c",
+        "text_layer_char_count": 757
+      },
+      {
+        "page": 17,
+        "md_start_line": 663,
+        "md_end_line": 700,
+        "text_layer_sha256": "cb93828c685410a4da4e6e65ff671d0e0483187a41761d08cacc8032248ee483",
+        "text_layer_char_count": 1003
+      },
+      {
+        "page": 18,
+        "md_start_line": 708,
+        "md_end_line": 737,
+        "text_layer_sha256": "c4939a72ae792afd26efa2e43e32110a0557aabefe160a8cb8784f1efd94bca4",
+        "text_layer_char_count": 645
+      },
+      {
+        "page": 19,
+        "md_start_line": 745,
+        "md_end_line": 775,
+        "text_layer_sha256": "8416cf019f8a2ade2c56888db3dbf2f1951c55669b74ba1c4a42c0793b5a5014",
+        "text_layer_char_count": 718
+      },
+      {
+        "page": 20,
+        "md_start_line": 783,
+        "md_end_line": 816,
+        "text_layer_sha256": "04de73a4d6a520839957e9002eccba37ab9ce4206918583a5966195b1cc2feec",
+        "text_layer_char_count": 1051
+      },
+      {
+        "page": 21,
+        "md_start_line": 824,
+        "md_end_line": 857,
+        "text_layer_sha256": "b768eb0759a58aa75bc7b573b0d2d036d3e6c4738c80161bdcf964896189ac54",
+        "text_layer_char_count": 927
+      },
+      {
+        "page": 22,
+        "md_start_line": 865,
+        "md_end_line": 897,
+        "text_layer_sha256": "a5de01863d4ca32f8650c555e468a17e41c804d947fefd19620fa561898d6679",
+        "text_layer_char_count": 725
+      },
+      {
+        "page": 23,
+        "md_start_line": 905,
+        "md_end_line": 936,
+        "text_layer_sha256": "f0e2aa6087166240886cca853a57ed416cee42fa8c65ac6c7dd2fa4945eb9d22",
+        "text_layer_char_count": 1004
+      },
+      {
+        "page": 24,
+        "md_start_line": 944,
+        "md_end_line": 976,
+        "text_layer_sha256": "11450b9ca1ca9a5e16b8fc70236d37191160293723c0f78cec3528795cb7187b",
+        "text_layer_char_count": 815
+      },
+      {
+        "page": 25,
+        "md_start_line": 984,
+        "md_end_line": 1018,
+        "text_layer_sha256": "5d0697778fba245e379c41b57bd72b5675b911e35a4bcd7d60eec020cf29b670",
+        "text_layer_char_count": 792
+      },
+      {
+        "page": 26,
+        "md_start_line": 1026,
+        "md_end_line": 1061,
+        "text_layer_sha256": "2edd2f385742d4449aa51b828724219a447ec17b07e1d86ec598eb4f03db6ac1",
+        "text_layer_char_count": 882
+      },
+      {
+        "page": 27,
+        "md_start_line": 1069,
+        "md_end_line": 1108,
+        "text_layer_sha256": "2f417aa9a018c40328dc973c615d5cbee02976544d09b351fe2acd78b1ca87ef",
+        "text_layer_char_count": 2080
+      },
+      {
+        "page": 28,
+        "md_start_line": 1116,
+        "md_end_line": 1151,
+        "text_layer_sha256": "b65b12d0e3d46112e1a1654af57f970403465eb0c610f8b8fed990be127abb82",
+        "text_layer_char_count": 1642
+      },
+      {
+        "page": 29,
+        "md_start_line": 1159,
+        "md_end_line": 1196,
+        "text_layer_sha256": "09cfbccf06d653ab496574474b5d337e3221e73cb15e9b02111defcf2436670c",
+        "text_layer_char_count": 961
+      },
+      {
+        "page": 30,
+        "md_start_line": 1204,
+        "md_end_line": 1240,
+        "text_layer_sha256": "ba771aa3dc13af2748d9511bc753f1e812e74316648b5eda0b0ce26a73385b83",
+        "text_layer_char_count": 725
+      },
+      {
+        "page": 31,
+        "md_start_line": 1248,
+        "md_end_line": 1281,
+        "text_layer_sha256": "3c1b0e2b7853a2ddb61cf1ed92b08b403c24e89e54b2713d319af159343c17c1",
+        "text_layer_char_count": 1298
+      },
+      {
+        "page": 32,
+        "md_start_line": 1289,
+        "md_end_line": 1317,
+        "text_layer_sha256": "91df0576ab79255f1b14f87340d3f03c1ccb31282716ba48bb3d26c4ae9d4e59",
+        "text_layer_char_count": 841
+      },
+      {
+        "page": 33,
+        "md_start_line": 1325,
+        "md_end_line": 1358,
+        "text_layer_sha256": "f66e2f82a00a7704a55fde5e17181afd10ebb67b0c5040a1d9fcfd480ff26f29",
+        "text_layer_char_count": 858
+      },
+      {
+        "page": 34,
+        "md_start_line": 1366,
+        "md_end_line": 1397,
+        "text_layer_sha256": "98e3646d610f5190723863d31cefd9dfc396e9bf8d721a6e3ece7cab931ff9d8",
+        "text_layer_char_count": 865
+      },
+      {
+        "page": 35,
+        "md_start_line": 1405,
+        "md_end_line": 1436,
+        "text_layer_sha256": "787be762b7d046fe6394048ecc6c3ad1f0b3abd9b1ac8ecdc7cc96fb8d876aa8",
+        "text_layer_char_count": 981
+      },
+      {
+        "page": 36,
+        "md_start_line": 1444,
+        "md_end_line": 1473,
+        "text_layer_sha256": "072ecadfd7994ada32874cbfcbb211df618cb3edd90e8b713a68972838e40efd",
+        "text_layer_char_count": 830
+      },
+      {
+        "page": 37,
+        "md_start_line": 1481,
+        "md_end_line": 1518,
+        "text_layer_sha256": "0954fb1cb87dab19dbc1da75d7c5503b82c608c0fa0c784f6f61e15f6f5c170c",
+        "text_layer_char_count": 940
+      },
+      {
+        "page": 38,
+        "md_start_line": 1526,
+        "md_end_line": 1554,
+        "text_layer_sha256": "566f23fa04768d73af3ccb6f785e098eb415b663bc2611b6a1d42d49875596ad",
+        "text_layer_char_count": 832
+      },
+      {
+        "page": 39,
+        "md_start_line": 1562,
+        "md_end_line": 1591,
+        "text_layer_sha256": "e4ac7ee96b7554ad6b16a8a2a902e25ba936526418ac01d2a2730e239c1565b6",
+        "text_layer_char_count": 909
+      },
+      {
+        "page": 40,
+        "md_start_line": 1599,
+        "md_end_line": 1623,
+        "text_layer_sha256": "e7f18b411b3605780404b09ba8845ec7b33fc45438e6d7f0400806a6421799a1",
+        "text_layer_char_count": 625
+      },
+      {
+        "page": 41,
+        "md_start_line": 1631,
+        "md_end_line": 1663,
+        "text_layer_sha256": "4cdf8dcf7c8e7914fbfde36898a63dcfc8d5bab60ea03d12cd8b292e7de1510a",
+        "text_layer_char_count": 909
+      },
+      {
+        "page": 42,
+        "md_start_line": 1671,
+        "md_end_line": 1704,
+        "text_layer_sha256": "a82fc7d7af54d8f4de41391fd148761ecd3f952b93d237efc68b2a50d4bbe4a5",
+        "text_layer_char_count": 907
+      },
+      {
+        "page": 43,
+        "md_start_line": 1712,
+        "md_end_line": 1734,
+        "text_layer_sha256": "db809387870cfd7ad2187024ac81a5b16ddf7ad3749a2d507b77138eabcb5726",
+        "text_layer_char_count": 615
+      },
+      {
+        "page": 44,
+        "md_start_line": 1742,
+        "md_end_line": 1745,
+        "text_layer_sha256": "c5e51a74ef2b260b63bbd8e51c55da96f045ded440315c377b0206ec237709e4",
+        "text_layer_char_count": 29
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "detail_pages_reviewed": [
+        3,
+        8,
+        32
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "若干代码、脚本和配置片段存在省略或分页截断；本文按设计示例概述，不补写缺失代码，也未执行。",
+        "pages": [
+          9,
+          10,
+          15,
+          16,
+          17,
+          18
+        ],
+        "status": "已核对缩略页与关键放大页；不作为可运行代码"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0605 Skill Practical Guide.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "8f24cf00aa1f4f3346c62dff54d5e43180d92546530918577cfb9ff10e9e1cc1",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Skill设计与治理.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Skill 实战手册.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

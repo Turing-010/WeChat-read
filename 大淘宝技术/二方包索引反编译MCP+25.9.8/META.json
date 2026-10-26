@@ -1,0 +1,125 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0298",
+  "title": "让你的大模型读懂二方包",
+  "short_title": "二方包索引反编译MCP",
+  "account": "大淘宝技术",
+  "author": "悟学",
+  "author_byline": "用户互动团队",
+  "source_url": null,
+  "published_at": "2025-09-08T02:46",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "让你的⼤模型读懂⼆⽅包\n\n\n原创 ⽤户互动团队  ⼤淘宝技术  2025年9⽉8⽇ 02:46浙江 14⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n 本 ⽂主要讲述了在开发过程中，⼤模型（如AI编程助⼿）难以理解项⽬所依赖的⼆⽅包\n 代码的问题，并通过⼀个实际案例复盘了从“翻⻋”到“驯服”AI的全过程。作者尝试使⽤\n\n Cursor等AI⼯具直接⽣成调⽤⼆⽅包接⼝的代码，但因AI⽆法读取未在当前⼯程中打\n 开的依赖源码，导致⽣成的代码错误频出，甚⾄出现幻觉式编码。为解决此问题，作者\n 探索了多种⽅案，最终发现，本地反编译M  CP⽅案最有效，能精准解析⼆⽅包中的类与\n ⽅法，显著提升代码⽣成的准确性和可⽤性。⽂章强调，应将AI视为需辅助的“⼯具\n ⼈”，通过提供良好上下⽂与⼯具来增强其能⼒，⽽⾮期待其⽆所不能。\n\n\n\n\n\n\n                        背景\n\n\n\n近期有⼀个需求中需要查询⽤户订单状态，这个功能本身很简单，是⼀个经典的依赖下游场\n景，需要读取交易订单⼆⽅包的代码逻辑，",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "AI研发协同",
+    "MCP与工具接入",
+    "上下文工程"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/让你的大模型读懂二方包.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T05:53:20-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "2219f876bcfe0db9d5a520d0ccf94dfd9480fab5238ca5ca414b31b81bdb5836",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "案例方法名称经脱敏，作者说明前后可能不一致；不能据此当真实接口定义。",
+        "内部MCP实现和安装包未提供，只能学习机制，不能宣称可安装复现。",
+        "部分代码和Prompt右侧裁切；效果是作者单场景陈述，无受控测试。",
+        "只看页图1、8、11、12，截图细节未全部转写。"
+      ],
+      "size_bytes": 6184316,
+      "page_count": 15
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T05:53:20-07:00",
+  "directory": "大淘宝技术/二方包索引反编译MCP+25.9.8",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T05:53:20-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "2219f876bcfe0db9d5a520d0ccf94dfd9480fab5238ca5ca414b31b81bdb5836",
+    "output_path": "MD.md",
+    "output_sha256": "22cf47c351473e7481d081bbda4ea39eff2d9bc75dc91ae6c5df6e5c4ef4289e",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 15,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "visual_pages": [
+        1,
+        8,
+        11,
+        12
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "案例方法名称经脱敏，作者说明前后可能不一致；不能据此当真实接口定义。",
+      "内部MCP实现和安装包未提供，只能学习机制，不能宣称可安装复现。",
+      "部分代码和Prompt右侧裁切；效果是作者单场景陈述，无受控测试。",
+      "只看页图1、8、11、12，截图细节未全部转写。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/让你的大模型读懂二方包.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/大淘宝技术/二方包索引反编译MCP+25.9.8/RAW.pdf",
+    "sha256": "2219f876bcfe0db9d5a520d0ccf94dfd9480fab5238ca5ca414b31b81bdb5836",
+    "copied_at": "2026-10-23T05:53:20-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

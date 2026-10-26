@@ -1,0 +1,147 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0331",
+  "title": "这大概是我见过最通俗易懂的AI发展历程科普详文了",
+  "short_title": "AI技术演进概念科普",
+  "account": "腾讯技术工程",
+  "author": "丁亮亮/smallniding",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-11-21T01:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "这⼤概是我⻅过最通俗易懂的        AI发展历程科普详⽂了\n\n\n原创 腾讯程序员 腾讯技术⼯程  2025年11⽉21⽇ 01:36⼴东2.6万⼈\n\n\n\n作者：  丁亮亮/smallniding\n\n\n\n  本⽂将求根溯源，从历史时间线发展的⾓度⼀起来看看AI是如何诞⽣的，以及在诞⽣后这\n  ⼏⼗年的发展过程中经历了哪些变⾰和演进，在演进的过程中我会介绍⼤量涉及到的细分\n  技术模块，希望⼤家对AI整体的技术模块及互相之间的关系都有系统化的了解（由于篇幅\n  有限，不会⾮常深⼊垂直的去讲某⼀个技术，⼤家对任⼀细分技术感兴趣可以单独交\n  流）。最后，我会结合⾃⼰亲⾃参与的⼀些AI案例来⼀起看如何更好的应⽤AI来帮助我们\n  的业务提升价值，同时，展望  AI未来的前景及发展。\n\n\n\n在如今信息爆炸及互联⽹飞速发展的时代，AI成为了这⼏年全世界最炙⼿可热的科技话题，⽽\n我们每天会⾯对⽆数的AI资讯，⽆论是⼤模型、智能体还是各⾏各业的AI应⽤，⽽这都被动的\n把⼤家推到了AI的风⼝浪尖上：",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "大模型基础与推理优化",
+    "Agent架构",
+    "RAG与知识库",
+    "模型训练与对齐"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/这大概是我见过最通俗易懂的AI发展历程科普详文了.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:38:58-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "4d6805a0f8faf6b5fd26517e1b10cf4306d9f13d7f5838e44ebe49baa6b24efe",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "文章三阶段1956—1989/1990—2016/2017至今是作者教学分期；不能作为机器学习、RNN、CNN和深度学习真正首次出现时间，更不能沿用RNN缺陷催生CNN的线性因果。p29读者也提出此前已存在的异议。",
+        "p14称ChatGPT于2023正式问世应核查，不能进入已确认时间线；1946第一台计算机也需按技术定义限定。",
+        "p13说GPT-4可处理图片，p18—19又说仅文本，文内自相矛盾；GPT-4参数规模等未引官方依据。",
+        "参数类比神经元、深度等于学习步骤多、预训练简单称无监督、开源微调副本/闭源只能适配层等过度概括，需按具体算法与开放范围重讲。",
+        "p23称没有大模型就没有能理解思考的Agent，与p20承认早期智能体冲突；Agent是系统概念，不必有LLM。",
+        "机器学习可泛化未见样本，Transformer也不能保证理解和准确；放大参数不能自动解决域外知识。RAG开卷比喻不保证证据可信或无幻觉。",
+        "p25截图为知识/反馈管理界面，不足以证明发生参数更新或具体SFT/RLHF；只有作者自述，未提供训练日志或评测。图表13、19、24、25已看，其中细小截图未逐字辨清。"
+      ],
+      "size_bytes": 18209741,
+      "page_count": 30
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:38:58-07:00",
+  "directory": "腾讯技术工程/AI技术演进概念科普+25.11.21",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:38:58-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "4d6805a0f8faf6b5fd26517e1b10cf4306d9f13d7f5838e44ebe49baa6b24efe",
+    "output_path": "MD.md",
+    "output_sha256": "79b5a6a411e264423dc75e99db851899198d767a0e259e75d9c384d2b3575cc0",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 30,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "visual_pages": [
+        13,
+        19,
+        24,
+        25
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "文章三阶段1956—1989/1990—2016/2017至今是作者教学分期；不能作为机器学习、RNN、CNN和深度学习真正首次出现时间，更不能沿用RNN缺陷催生CNN的线性因果。p29读者也提出此前已存在的异议。",
+      "p14称ChatGPT于2023正式问世应核查，不能进入已确认时间线；1946第一台计算机也需按技术定义限定。",
+      "p13说GPT-4可处理图片，p18—19又说仅文本，文内自相矛盾；GPT-4参数规模等未引官方依据。",
+      "参数类比神经元、深度等于学习步骤多、预训练简单称无监督、开源微调副本/闭源只能适配层等过度概括，需按具体算法与开放范围重讲。",
+      "p23称没有大模型就没有能理解思考的Agent，与p20承认早期智能体冲突；Agent是系统概念，不必有LLM。",
+      "机器学习可泛化未见样本，Transformer也不能保证理解和准确；放大参数不能自动解决域外知识。RAG开卷比喻不保证证据可信或无幻觉。",
+      "p25截图为知识/反馈管理界面，不足以证明发生参数更新或具体SFT/RLHF；只有作者自述，未提供训练日志或评测。图表13、19、24、25已看，其中细小截图未逐字辨清。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/这大概是我见过最通俗易懂的AI发展历程科普详文了.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/AI技术演进概念科普+25.11.21/RAW.pdf",
+    "sha256": "4d6805a0f8faf6b5fd26517e1b10cf4306d9f13d7f5838e44ebe49baa6b24efe",
+    "copied_at": "2026-10-23T06:38:58-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

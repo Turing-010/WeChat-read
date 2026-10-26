@@ -1,0 +1,410 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0062",
+  "title": "Skills开发技能指南：OpenClaw也好，Skills也好，都别脱离具体场景谈方案",
+  "short_title": "从具体问题开发Skills",
+  "account": "腾讯技术工程",
+  "author": "吕昊俣",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-03-13T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0313 Skills开发技能指南OpenClaw场景方案.pdf",
+      "original_filename": "0313 Skills开发技能指南OpenClaw场景方案.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "f1a41de00878c00da31f3d7be796410c3a9cc374438cfda3182cf51d67647701",
+      "size_bytes": 5290625,
+      "page_count": 12,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "类图/序列图已放大查看，保留结构表达与增量含义，密集业务标识符未逐项转写",
+          "pages": [
+            7,
+            8
+          ],
+          "status": "scope_limited"
+        },
+        {
+          "description": "30秒排错是单次作者案例；未给完整Skill实现及统一效果评测",
+          "pages": [
+            9,
+            10
+          ],
+          "status": "attributed"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区"
+    }
+  ],
+  "tags": [
+    "AI研发协同",
+    "问题澄清",
+    "解决问题",
+    "Skill设计与治理"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/从具体问题开发Skills+26.3.13",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_从具体问题开发Skills.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "Skills 开发技能指南: OpenClaw 也好, Skills 也好,都别脱离具体场\n景谈方案\n2026 年 3 月 13 日 02 : 36广东腾讯技术工程 102 人\n作者:吕昊俣\nSKills 的推导\n首先,我将谈谈我所理解的 Skills 形成的推导过程,我们需要跳出“ 结果 ”视角,从零开始思考\nSkills 的由来。有趣的是:我们需要从另外一个概念 “ 中台 ” 说起。\n借鉴 “ 中台 ” 思维:复用的力量\n中台一词,常常出现在各种软件架构的设计中,其核心理念用两个字就可以概括:复用,即把\n相同功能抽离出来,减少重复建设,如下图:\n好,如果架构可以这样玩,为什么 Prompt 不行?我们做一个大胆的抽象:软件开发的整个过\n程等于所有 Prompt 的总和,那么请诸位回想一下,在你的 VibeCoding 中,有没有属于你的高\n频口头蝉?我想答案是: Yes 。\n这半年来,各种拥有几万个 Skills 的网站层出不穷,面对各种酷炫的 Skills ,我有些茫然!\nSkills 虽强,但  “ 为何要用 ” 是一个值得思考的问题,有时我们有了屠龙刀,但龙呢?带着\n这份困惑,我想分享对 Skills 的一些思考。\n",
+    "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区",
+    "full_title_in_capture": "Skills开发技能指南：OpenClaw也好，Skills也好，都别脱离具体场景谈方案",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0062",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "f1a41de00878c00da31f3d7be796410c3a9cc374438cfda3182cf51d67647701"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "类图/序列图已放大查看，保留结构表达与增量含义，密集业务标识符未逐项转写",
+        "pages": [
+          7,
+          8
+        ],
+        "status": "scope_limited"
+      },
+      {
+        "description": "30秒排错是单次作者案例；未给完整Skill实现及统一效果评测",
+        "pages": [
+          9,
+          10
+        ],
+        "status": "attributed"
+      }
+    ],
+    "outputs": [
+      "AI_从具体问题开发Skills.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "coverage": "覆盖技能推导、归纳/演绎、内外观察、逆向建模三种表达与分步开发、日志定位、自动及人工CR流程；未抄写类图内部密集业务字段与推广素材。",
+    "fact_checks": [
+      {
+        "item": "流程分类",
+        "value": "设计、开发、测试、运维",
+        "pages": [
+          2
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "加载策略",
+        "value": "元信息先载入，匹配后读取内容",
+        "pages": [
+          3
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "建模表达",
+        "value": "UML类图、序列图、伪代码加文字",
+        "pages": [
+          7,
+          8
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "实现顺序",
+        "value": "实体→流程函数与mock→规则细节",
+        "pages": [
+          8
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "单次定位案例",
+        "value": "30秒内定位异常点",
+        "pages": [
+          9
+        ],
+        "result": "matches_pdf"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_从具体问题开发Skills.md",
+      "sha256": "25de4e7192a7f695ea54c2981bb4771d29d4834abf2baa1ca3db4c78544b5a93"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "f1a41de00878c00da31f3d7be796410c3a9cc374438cfda3182cf51d67647701"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "a1d1a36561ad0aeb6fd44669ca5b3d381dad8db9c3fff23d5f102c3f6a57bf2d"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 25,
+        "text_layer_sha256": "4ebb7d3d90e22fa0f4e97f6bb0caab7c1bc58fbc53f3c4c590f50f13c8d5c6c7",
+        "text_layer_char_count": 521
+      },
+      {
+        "page": 2,
+        "md_start_line": 33,
+        "md_end_line": 46,
+        "text_layer_sha256": "84f8c19d3fb208aea42302c61553ec12b7d867ffa5df7d5494cac19fa040c793",
+        "text_layer_char_count": 591
+      },
+      {
+        "page": 3,
+        "md_start_line": 54,
+        "md_end_line": 68,
+        "text_layer_sha256": "7f45a0d01c9b2be6a6e630b8952442d31d5d261a69ba4d6883d22f3fa9fa2db7",
+        "text_layer_char_count": 548
+      },
+      {
+        "page": 4,
+        "md_start_line": 76,
+        "md_end_line": 91,
+        "text_layer_sha256": "39de2cc0626447989a374abf0d7fcfa10c12de4b2ec9bdbfa025ae4da37d655c",
+        "text_layer_char_count": 612
+      },
+      {
+        "page": 5,
+        "md_start_line": 99,
+        "md_end_line": 120,
+        "text_layer_sha256": "1058ab5f60123e1c9b6f082ea1156ba04d44b38ad66f8a8492e42d8de86315b7",
+        "text_layer_char_count": 893
+      },
+      {
+        "page": 6,
+        "md_start_line": 128,
+        "md_end_line": 144,
+        "text_layer_sha256": "22fa757b0c8b82c4a81f5637b69eb2bd32d804c54a7544ab236bc8f1bdf3c216",
+        "text_layer_char_count": 604
+      },
+      {
+        "page": 7,
+        "md_start_line": 152,
+        "md_end_line": 156,
+        "text_layer_sha256": "bf25ea7cf61dfd3b107c169915feef728ed47b96ceb7e8378d5a72ef47a64b9e",
+        "text_layer_char_count": 185
+      },
+      {
+        "page": 8,
+        "md_start_line": 164,
+        "md_end_line": 172,
+        "text_layer_sha256": "04fb82f22a20adeb18d1733290e6da2cbceb2bd34acbb242ed27a093becc01d0",
+        "text_layer_char_count": 363
+      },
+      {
+        "page": 9,
+        "md_start_line": 180,
+        "md_end_line": 188,
+        "text_layer_sha256": "e2748a94fff78be77c57af7b3e29ebb6825d15e0a0fa71383e08eb2ccfa0bf56",
+        "text_layer_char_count": 346
+      },
+      {
+        "page": 10,
+        "md_start_line": 196,
+        "md_end_line": 209,
+        "text_layer_sha256": "b4ce3ef5be9c52ae0c60f300f57f1a64ae63e0ab6aeb348da3ec34fcca20d614",
+        "text_layer_char_count": 512
+      },
+      {
+        "page": 11,
+        "md_start_line": 217,
+        "md_end_line": 224,
+        "text_layer_sha256": "a84401a736cf8edf7e16c00421761659c2736e28b613a89f0f1751a669f68d5f",
+        "text_layer_char_count": 77
+      },
+      {
+        "page": 12,
+        "md_start_line": 232,
+        "md_end_line": 231,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "类图/序列图已放大查看，保留结构表达与增量含义，密集业务标识符未逐项转写",
+        "pages": [
+          7,
+          8
+        ],
+        "status": "scope_limited"
+      },
+      {
+        "description": "30秒排错是单次作者案例；未给完整Skill实现及统一效果评测",
+        "pages": [
+          9,
+          10
+        ],
+        "status": "attributed"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0313 Skills开发技能指南OpenClaw场景方案.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "f1a41de00878c00da31f3d7be796410c3a9cc374438cfda3182cf51d67647701",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Skill设计与治理.md",
+      "../../20_topics/解决问题.md",
+      "../../20_topics/问题澄清.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_从具体问题开发Skills.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

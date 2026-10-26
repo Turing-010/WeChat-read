@@ -1,0 +1,679 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0134",
+  "title": "AI Infra 进阶：如何让大模型输出确定的结果",
+  "short_title": "大模型输出确定性",
+  "account": "腾讯技术工程",
+  "author": "binnnliu",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-05T02:25",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/AI Infra进阶：如何让大模型输出确定的结果.pdf",
+      "original_filename": "AI Infra进阶：如何让大模型输出确定的结果.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "25efe40a3a6769b259d6c918f5257ac94e58be3814e566c4eca114fbc85b1d73",
+      "size_bytes": 10756495,
+      "page_count": 38,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [],
+      "publication_evidence": "PDF p.1: Aug 5, 2026, 2:25 AM; no timezone stated."
+    }
+  ],
+  "tags": [
+    "云网络系统研究",
+    "异常监控与稳定性",
+    "模型与开发工具发布",
+    "大模型推理与算子优化"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/大模型输出确定性+26.8.5",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_大模型输出确定性.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "AI  Infra 进阶:如何让大模型输出确定的结果\n腾讯程序员 Aug  5 , 2026 , 2 : 25  AM广东原创 腾讯技术工程 550  listened\n作者:binnnliu\n背景\n你有没有发现跟大模型对话,同样的提示词每次结果都不一样。  这符合我们对于 “ 大模型的\n本质就是个猜词器 ” 的一贯认知。\n然而,可重复性是科学进步的基石。因此让大模型输出完全确定的结果是一个非常值得研究\n的问题,特别是强化学习需要确定性的  Rollout ,来保证实验的可复现性和训练过程的稳定\n性。\n其实很多同学第一时间会想到:  同样的硬件,同样的提示词:\n1. 是不是把  Temperature 设置为  0 ,关掉随机采样就好了?\n2. 如果业务需要  Temperature > 0 ,那把随机数种子( Seed )锁死,是不是也能保证每次输出\n一样?\n我已经测试过了,环境:vllm serve Qwen/Qwen3-8B  答案:  是也不是。\n是( Run-to-run 确定性):  同一时间,没有其他请求时,多次同样的提示词请求,回答是\n一样的;\n不是( Batch Invariance / 批次不变性):  同一时间,有其他请求时,多次同样的提示词请\n求,回答是不一样的;\n什么!难道不同的请求间会相互影响?不可能,不同请求间的注意力机制是严格物理隔离,\n不存在上下文污染的问题。\n其实这一切的根源是推理引擎底层的动态组批与算子调度策略引发了浮点加法的顺序变化,\n而浮点加法不满足结合律:(a + b) + c ≠ a + (b + c)。\nReproducibility is a bedrock of scientific progress.\n",
+    "publication_evidence": "PDF p.1: Aug 5, 2026, 2:25 AM; no timezone stated.",
+    "full_title_in_capture": "AI Infra 进阶：如何让大模型输出确定的结果",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0134",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "25efe40a3a6769b259d6c918f5257ac94e58be3814e566c4eca114fbc85b1d73"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [],
+    "outputs": [
+      "AI_大模型输出确定性.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "detail_pages_reviewed": [
+        3,
+        8,
+        14,
+        21,
+        23,
+        27,
+        30,
+        32,
+        36,
+        37
+      ]
+    },
+    "coverage": "已读全篇38页并检查全部缩略图；放大复核浮点示例、GEMM/分块参数、vLLM实现、RMSNorm、Attention及NCCL部分。作者明确未展开MoE与更深层NCCL细节。",
+    "fact_checks": [
+      {
+        "item": "FP16舍入示例",
+        "note_value": "2048 + 1 在 RNE 下可舍回 2048",
+        "source_value": "2048 + 1 rounds to 2048",
+        "pages": [
+          6,
+          7
+        ],
+        "result": "一致；作者另说明真实 GEMM 常用 FP32 accumulation，batch 方差不能简单归因于输入精度。"
+      },
+      {
+        "item": "H100每SM共享内存",
+        "note_value": "文中为228 KB",
+        "source_value": "228 KB",
+        "pages": [
+          12
+        ],
+        "result": "一致；限原文架构背景。"
+      },
+      {
+        "item": "RMSNorm hidden size启发式",
+        "note_value": "≤8192时split factor为1；更大时拓扑可能变化",
+        "source_value": "相同",
+        "pages": [
+          27,
+          28
+        ],
+        "result": "一致；限定于文中所述版本/配置路径。"
+      },
+      {
+        "item": "Batch Invariance与采样温度",
+        "note_value": "温度0不保证并发batch变化时结果一致",
+        "source_value": "相同",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "result": "一致。"
+      },
+      {
+        "item": "BI Attention的split限制",
+        "note_value": "将最大split数设为1，可能牺牲小batch decode利用率",
+        "source_value": "max splits 1; lower small-batch decode utilization",
+        "pages": [
+          32,
+          33,
+          34
+        ],
+        "result": "一致；代价与配置依实现路径而定。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_大模型输出确定性.md",
+      "sha256": "779701803f721f9e753dbc35c8fc83f5e89c8f2508bac3b3b9dfb0fc925cbb20",
+      "size_bytes": 40600
+    },
+    "independent_crosscheck": {
+      "reviewer": "/root",
+      "note_sha256": "779701803f721f9e753dbc35c8fc83f5e89c8f2508bac3b3b9dfb0fc925cbb20",
+      "review_sha256": "3c67de69b403d5e9b0194761adfb4ee5798e0033672c86d5a0b4e07379e8fa7a",
+      "status": "passed",
+      "changes": [
+        "Converted Q/A cards and heading to the required single-line format; converted review record into the final folded report."
+      ],
+      "source_spotchecks": [
+        "p.1 separates run-to-run determinism from batch invariance; p.3 states the cause as reduction-topology changes, not merely FP16 storage; p.8 distinguishes workspace reduction from atomic aggregation; p.21/23/30 cover RMSNorm, attention and NCCL paths; contact sheet shows p.37 references and p.38 closing/comments."
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "25efe40a3a6769b259d6c918f5257ac94e58be3814e566c4eca114fbc85b1d73"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "dc00f72a446cda9d8631929711ba9157804e7c8adc53815e0825106cbe00de3b"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 32,
+        "text_layer_sha256": "dce8f2e56bc96dcd067445066909dbede0abb4a68628e07a3d4b96d09986db06",
+        "text_layer_char_count": 740
+      },
+      {
+        "page": 2,
+        "md_start_line": 40,
+        "md_end_line": 53,
+        "text_layer_sha256": "c09e7c18cdae2cd32a9cdfa6a7e48f0b6b20467b3b45dbcfe4786a29d31f8f3f",
+        "text_layer_char_count": 687
+      },
+      {
+        "page": 3,
+        "md_start_line": 61,
+        "md_end_line": 81,
+        "text_layer_sha256": "7e6ab044ccff9ac605a5bfa7366dbe1f65df82667a9ba05ca3a1a87a3c0714dd",
+        "text_layer_char_count": 906
+      },
+      {
+        "page": 4,
+        "md_start_line": 89,
+        "md_end_line": 98,
+        "text_layer_sha256": "0352494eda8511a19dd84d8ac47e885de34e423426ed5b570a5f7f5d81d74d9a",
+        "text_layer_char_count": 440
+      },
+      {
+        "page": 5,
+        "md_start_line": 106,
+        "md_end_line": 116,
+        "text_layer_sha256": "11d8dc8a855bc6e92ff0642ee51c7f0008fca21bc62c361d27f24a6b9eb33643",
+        "text_layer_char_count": 392
+      },
+      {
+        "page": 6,
+        "md_start_line": 124,
+        "md_end_line": 138,
+        "text_layer_sha256": "20d78905b0202ce908467a74cfedbaa031f88d796241488da9af41aec4fceedc",
+        "text_layer_char_count": 522
+      },
+      {
+        "page": 7,
+        "md_start_line": 146,
+        "md_end_line": 157,
+        "text_layer_sha256": "0efe2726d33ccbfdbda926f08a16690258d03194290f42228459f1febe67db0e",
+        "text_layer_char_count": 576
+      },
+      {
+        "page": 8,
+        "md_start_line": 165,
+        "md_end_line": 191,
+        "text_layer_sha256": "83791549eea0a6bacac0355fc67d00d62fb7b1aba214e224c17e817b811ca7ca",
+        "text_layer_char_count": 1173
+      },
+      {
+        "page": 9,
+        "md_start_line": 199,
+        "md_end_line": 222,
+        "text_layer_sha256": "62e2827d2df1aa0a9e450c970244a34d666258c23ef43590e93fc3b9ca819ea9",
+        "text_layer_char_count": 1005
+      },
+      {
+        "page": 10,
+        "md_start_line": 230,
+        "md_end_line": 254,
+        "text_layer_sha256": "6a68da4dca799dcd0e43c19d2766d762eea8ff6879385a56580d741529454b78",
+        "text_layer_char_count": 1084
+      },
+      {
+        "page": 11,
+        "md_start_line": 262,
+        "md_end_line": 312,
+        "text_layer_sha256": "a0836f3e12695eeb941f0575bd06c281d77cb7f5db72b5e8abe5ce93bbe4c1d6",
+        "text_layer_char_count": 1465
+      },
+      {
+        "page": 12,
+        "md_start_line": 320,
+        "md_end_line": 407,
+        "text_layer_sha256": "b63141ccf3b1977638ee8a544c162fc65c396d67828c5eb20a172bca5d7e622f",
+        "text_layer_char_count": 1391
+      },
+      {
+        "page": 13,
+        "md_start_line": 415,
+        "md_end_line": 449,
+        "text_layer_sha256": "7d05fd8839a87eca02d47a70faf6a1bd3167775cb6ef7130c320185f633584f8",
+        "text_layer_char_count": 1426
+      },
+      {
+        "page": 14,
+        "md_start_line": 457,
+        "md_end_line": 472,
+        "text_layer_sha256": "ae5bd549560a0d08785ca8a036a91eaf8f12f9d5af2bc8ec4382659041ca30ba",
+        "text_layer_char_count": 738
+      },
+      {
+        "page": 15,
+        "md_start_line": 480,
+        "md_end_line": 505,
+        "text_layer_sha256": "ad6dc638d70f5cbdfd2196f7f32832956f645c4227054cfc264323c23397c69d",
+        "text_layer_char_count": 1436
+      },
+      {
+        "page": 16,
+        "md_start_line": 513,
+        "md_end_line": 542,
+        "text_layer_sha256": "8d79bf4102df9caa9d9bd823ef0dde4dcdd3a9c1fef223cc1038f95080872424",
+        "text_layer_char_count": 1415
+      },
+      {
+        "page": 17,
+        "md_start_line": 550,
+        "md_end_line": 584,
+        "text_layer_sha256": "3ab74a8239b851294887198d2be649d6004d83b82f705e359ea1f21e8bf14ea9",
+        "text_layer_char_count": 1818
+      },
+      {
+        "page": 18,
+        "md_start_line": 592,
+        "md_end_line": 622,
+        "text_layer_sha256": "c9b3bfb8892fcd989672058d1c1736ca8cba67d36669ec4fb5268c9c10661993",
+        "text_layer_char_count": 1314
+      },
+      {
+        "page": 19,
+        "md_start_line": 630,
+        "md_end_line": 670,
+        "text_layer_sha256": "2a5a016b4b8a8bde0a87b90fc2b32c5c15c0dd7d8689b482a4043dd2568e5b74",
+        "text_layer_char_count": 1836
+      },
+      {
+        "page": 20,
+        "md_start_line": 678,
+        "md_end_line": 687,
+        "text_layer_sha256": "c6a76e693a9404038ebffb1110014c834ee1e6b4a5fc7e2fe417ea6cb214365d",
+        "text_layer_char_count": 405
+      },
+      {
+        "page": 21,
+        "md_start_line": 695,
+        "md_end_line": 711,
+        "text_layer_sha256": "c7a1ee44b39d07d72f4b308f18fb34dc7c13b228b8a7f9edbe7de8db0242bd63",
+        "text_layer_char_count": 865
+      },
+      {
+        "page": 22,
+        "md_start_line": 719,
+        "md_end_line": 784,
+        "text_layer_sha256": "d5eda09a9e384e9da481d2c1bf8c3dfcda624e404c79808efbd0d380179ebd3d",
+        "text_layer_char_count": 1006
+      },
+      {
+        "page": 23,
+        "md_start_line": 792,
+        "md_end_line": 935,
+        "text_layer_sha256": "4922c06d1fda1627cb01e070f95274dc48b525bd613ca4e0ca44c4bef249d6b1",
+        "text_layer_char_count": 1598
+      },
+      {
+        "page": 24,
+        "md_start_line": 943,
+        "md_end_line": 973,
+        "text_layer_sha256": "9ec3832a326997be3f7e87eca478dc4020bbb498862edd803e9f5d9b9acc2abf",
+        "text_layer_char_count": 1173
+      },
+      {
+        "page": 25,
+        "md_start_line": 981,
+        "md_end_line": 992,
+        "text_layer_sha256": "06c66212986a49c0c7ef54d8e6ff966020e7f214c55560f2494667686f98265a",
+        "text_layer_char_count": 657
+      },
+      {
+        "page": 26,
+        "md_start_line": 1000,
+        "md_end_line": 1037,
+        "text_layer_sha256": "1592aad1f61723bc91342c6f9f8c0bb6b3df9eb3abca9ef20a734295a2cda29f",
+        "text_layer_char_count": 1871
+      },
+      {
+        "page": 27,
+        "md_start_line": 1045,
+        "md_end_line": 1084,
+        "text_layer_sha256": "348d023a0f5aecada4a02433245960ef22850a9974a4b2b5070e2a07017c466c",
+        "text_layer_char_count": 1810
+      },
+      {
+        "page": 28,
+        "md_start_line": 1092,
+        "md_end_line": 1107,
+        "text_layer_sha256": "504d8177f7356eb5256fc7249797da3f21d63eeefc510de965c31e047dd99b4e",
+        "text_layer_char_count": 722
+      },
+      {
+        "page": 29,
+        "md_start_line": 1115,
+        "md_end_line": 1170,
+        "text_layer_sha256": "13a2c1182859b2c128e70b6f65467a2800917f3660412f64920be9402676a113",
+        "text_layer_char_count": 1769
+      },
+      {
+        "page": 30,
+        "md_start_line": 1178,
+        "md_end_line": 1199,
+        "text_layer_sha256": "cd7cae884909512439bdc3d945ffdddede128daeb00faa3750cad28c481aed83",
+        "text_layer_char_count": 1235
+      },
+      {
+        "page": 31,
+        "md_start_line": 1207,
+        "md_end_line": 1235,
+        "text_layer_sha256": "3d8b07bdb85259272aea452fb01d0f7f517586b8a37bc40115909ae07d210c5f",
+        "text_layer_char_count": 1431
+      },
+      {
+        "page": 32,
+        "md_start_line": 1243,
+        "md_end_line": 1263,
+        "text_layer_sha256": "321bcf63094b854a7d14c3cb701dab9fd8211b4059048a7946c14f19c2a2c372",
+        "text_layer_char_count": 1002
+      },
+      {
+        "page": 33,
+        "md_start_line": 1271,
+        "md_end_line": 1284,
+        "text_layer_sha256": "9848a5505b10f08809bba50778d478391526a83b8f8fb872b4d31c53edb7798f",
+        "text_layer_char_count": 738
+      },
+      {
+        "page": 34,
+        "md_start_line": 1292,
+        "md_end_line": 1312,
+        "text_layer_sha256": "18c7a377162cf82539709da0dd562accc29817587305e9944630c759dfec379b",
+        "text_layer_char_count": 922
+      },
+      {
+        "page": 35,
+        "md_start_line": 1320,
+        "md_end_line": 1353,
+        "text_layer_sha256": "d6571934504d20e4c1311b191d5eaca2273d4690992471801d4baf782953466a",
+        "text_layer_char_count": 1604
+      },
+      {
+        "page": 36,
+        "md_start_line": 1361,
+        "md_end_line": 1398,
+        "text_layer_sha256": "b63133cade2213499b4adb94780cf28a1e3fef4e2d56c61fd42fabd2242de583",
+        "text_layer_char_count": 1808
+      },
+      {
+        "page": 37,
+        "md_start_line": 1406,
+        "md_end_line": 1428,
+        "text_layer_sha256": "71489d6f3a2b2130027d2745d150ab5023264098f70a1b58ca4546c7f828e378",
+        "text_layer_char_count": 999
+      },
+      {
+        "page": 38,
+        "md_start_line": 1436,
+        "md_end_line": 1441,
+        "text_layer_sha256": "46c306ffdb981200de251ee08539e274dab2f9cfa2b3ac0caf76410651fc0dea",
+        "text_layer_char_count": 43
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "detail_pages_reviewed": [
+        3,
+        8,
+        14,
+        21,
+        23,
+        27,
+        30,
+        32,
+        36,
+        37
+      ]
+    },
+    "quality_issues": []
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/AI Infra进阶：如何让大模型输出确定的结果.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "25efe40a3a6769b259d6c918f5257ac94e58be3814e566c4eca114fbc85b1d73",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/大模型推理与算子优化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_大模型输出确定性.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

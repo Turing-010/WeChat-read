@@ -1,0 +1,357 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0111",
+  "title": "AI 真的能帮你微信下单了！",
+  "short_title": "AI微信下单",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-06-17T02:33",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0617 AI WeChat Order.pdf",
+      "original_filename": "0617 AI WeChat Order.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "e080dc123be489a7f258e1046c02a38f1a33fc291bdd1c9e074a90292714704c",
+      "size_bytes": 2512285,
+      "page_count": 6,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "支付授权和安全实现未展开；p.4彩蛋输入文本不完整。",
+          "pages": [
+            4
+          ],
+          "status": "not_reported_or_truncated"
+        },
+        {
+          "description": "第6页为空白。",
+          "pages": [
+            6
+          ],
+          "status": "no_content_on_page"
+        }
+      ],
+      "publication_evidence": "PDF p.1: Jun 17, 2026, 2:33 AM; timezone not shown."
+    }
+  ],
+  "tags": [
+    "模型与开发工具发布",
+    "桌面Agent与工作流"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/AI微信下单+26.6.17",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI微信下单.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "AI  真的能帮你微信下单了!\nJun  17 , 2026 , 2 : 33  AM广东腾讯技术工程 4  listened\n微信支付正式发布「 AI 专属卡」,WorkBuddy率先接入——团购优惠,下单支付等,喊\nTa 帮你直接买!\n使用步骤\n1 . 先升级 WorkBuddy  PC  端\n将 WorkBuddy  PC  端升级到 5 . 1 . 1  及以上版本。\n2 . 打开「美团生活助手 」\n打开 WorkBuddy ,进入「专家」⻚面,搜索并找到「美团生活助手」。\n找到后,点击「召唤」。\n微信支付正式发布「 AI  专属卡」, WorkBuddy  率先接入。以后在 WorkBuddy  里,不只是可以\n让 AI  回答问题,还可以让它帮你找外卖、选套餐、领券、下单,甚至完成支付。\n",
+    "publication_evidence": "PDF p.1: Jun 17, 2026, 2:33 AM; timezone not shown.",
+    "full_title_in_capture": "AI 真的能帮你微信下单了！",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0111",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "e080dc123be489a7f258e1046c02a38f1a33fc291bdd1c9e074a90292714704c"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "支付授权和安全实现未展开；p.4彩蛋输入文本不完整。",
+        "pages": [
+          4
+        ],
+        "status": "not_reported_or_truncated"
+      },
+      {
+        "description": "第6页为空白。",
+        "pages": [
+          6
+        ],
+        "status": "no_content_on_page"
+      }
+    ],
+    "outputs": [
+      "AI_AI微信下单.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "coverage": "短篇产品介绍已覆盖全部正文、操作流程及支付卡片说明；p.5为阅读/留言区，p.6空白。未登录产品或实际下单验证。",
+    "fact_checks": [
+      {
+        "item": "WorkBuddy版本门槛",
+        "note_value": "PC端5.1.1及以上",
+        "source_value": "PC端升级至5.1.1及以上",
+        "pages": [
+          1
+        ],
+        "result": "match"
+      },
+      {
+        "item": "餐食预算示例",
+        "note_value": "30元、35元",
+        "source_value": "30元以内单人午餐；35元以内不辣",
+        "pages": [
+          2
+        ],
+        "result": "match"
+      },
+      {
+        "item": "助手入口",
+        "note_value": "WorkBuddy专家页搜索美团生活助手并召唤",
+        "source_value": "同笔记",
+        "pages": [
+          2
+        ],
+        "result": "match"
+      },
+      {
+        "item": "AI专属卡描述",
+        "note_value": "在用户设定范围并授权的情况下支持指定场景消费；实现细节未展开",
+        "source_value": "同笔记",
+        "pages": [
+          4
+        ],
+        "result": "match"
+      },
+      {
+        "item": "尾页范围",
+        "note_value": "p.5留言区，p.6空白",
+        "source_value": "同笔记",
+        "pages": [
+          5,
+          6
+        ],
+        "result": "match"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_AI微信下单.md",
+      "sha256": "529e76fe77959aebed84e6237d252aea97725639bf087ad4115449c8ade4fc7d"
+    },
+    "independent_crosscheck": {
+      "reviewer": "root",
+      "note_sha256": "83d9ac2c5598f13f03cf0e623be9af4e49918f72a0748cebe9b6e433d57afeaf",
+      "review_sha256": "fa5465f655c0c98693c68c0b0ae94f1722e86edb08348b43eacaa72aa64afa79",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "1–3",
+          "check": "核对 WorkBuddy 5.1.1版本、助手召唤、购物需求及下单流程；与页图步骤相符。"
+        },
+        {
+          "pages": "4–5",
+          "check": "核对专属卡和安全/授权边界；原文未提供实现细节，笔记未补写。"
+        },
+        {
+          "pages": "5–6",
+          "check": "第5页为账号/留言，第6页空白；笔记覆盖范围与全部缩略图一致。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "e080dc123be489a7f258e1046c02a38f1a33fc291bdd1c9e074a90292714704c"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "9e32d6129f8bc80089fefab6b723881196fdc321eabdd964ba0fc895bd8f9e13"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 21,
+        "text_layer_sha256": "8a25f8896dea1da66d0324fc604a99142670e5c26651aae3d5a709f95a9740f8",
+        "text_layer_char_count": 355
+      },
+      {
+        "page": 2,
+        "md_start_line": 29,
+        "md_end_line": 34,
+        "text_layer_sha256": "609da32efad7737fc22bde205c3275f6f6b4cff7e8a756745a11102a92d3985b",
+        "text_layer_char_count": 113
+      },
+      {
+        "page": 3,
+        "md_start_line": 42,
+        "md_end_line": 43,
+        "text_layer_sha256": "62651ca1440099605b8ed739626a8e462f1cac7d2b976063dec0f0d3c8b52200",
+        "text_layer_char_count": 60
+      },
+      {
+        "page": 4,
+        "md_start_line": 51,
+        "md_end_line": 64,
+        "text_layer_sha256": "56e1c27b283ab0123b0a6e2fe7d1a08a75d134b969ae33bcf97deddd01e2bb33",
+        "text_layer_char_count": 253
+      },
+      {
+        "page": 5,
+        "md_start_line": 72,
+        "md_end_line": 75,
+        "text_layer_sha256": "040688f16493e565373ee628cc6c588b18c74c3b395fea53e5d33fd8f7733983",
+        "text_layer_char_count": 26
+      },
+      {
+        "page": 6,
+        "md_start_line": 83,
+        "md_end_line": 82,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "支付授权和安全实现未展开；p.4彩蛋输入文本不完整。",
+        "pages": [
+          4
+        ],
+        "status": "not_reported_or_truncated"
+      },
+      {
+        "description": "第6页为空白。",
+        "pages": [
+          6
+        ],
+        "status": "no_content_on_page"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0617 AI WeChat Order.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "e080dc123be489a7f258e1046c02a38f1a33fc291bdd1c9e074a90292714704c",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [],
+    "verification_status": "archive_retained_without_new_technical_claims",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_AI微信下单.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

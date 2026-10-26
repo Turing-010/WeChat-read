@@ -1,0 +1,487 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0098",
+  "title": "Marvis 实测：6 个 AI “牛马”扎根桌面之后",
+  "short_title": "Marvis桌面Agent实测",
+  "account": "腾讯技术工程",
+  "author": "marine",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-05-27T03:02",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0527 Marvis Desktop Agents.pdf",
+      "original_filename": "0527 Marvis Desktop Agents.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "947133ad0606ae9488b4ffa985d725bcb99ee10b3ef78ab473cd37101c62ad0a",
+      "size_bytes": 7108981,
+      "page_count": 18,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "PDF p.11–12 的文本层为空；缩略页可见 p.11 为界面截图、p.12 基本空白，截图中的小字未逐项转写。",
+          "pages": [
+            11,
+            12
+          ],
+          "status": "partially_read"
+        }
+      ],
+      "publication_evidence": "PDF p.1 页眉 May 27, 2026, 3:02 AM；未标时区。"
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "Agent任务恢复",
+    "Agent长期记忆",
+    "桌面Agent与工作流"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Marvis桌面Agent实测+26.5.27",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Marvis桌面Agent实测.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "Marvis  实测: 6  个 AI “牛⻢”扎根桌面之后\n腾讯程序员 May  27 , 2026 , 3 : 02  AM广东原创 腾讯技术工程 87  listened\n作者:marine\n与  Marvis 的缘分始于上周刷到的一篇推文。标题写着 —— 「腾讯又双叒做了个  Marvis : 6 个  AI\n牛马扎根你电脑,主打一个丝滑」。点进去,第一段就精准击中了我:「如果你也是那种把文件随\n手丢桌面、靠搜索栏苟活、系统设置从不点开的典型  P 人,恭喜你,你的天选产品来了。」\n看到这段话,我从床上一跃而起。厚着脸皮打听,终于赶在  Mac 正式版发布前一天拿到了安装\n包。产品经理也很负责任地打了预防针:现在还有不少  bug 在修复。但我已经等不了了。\n装好之后,第一件事对着麦克风说了一句话:「晚上看屏幕太刺眼了,帮我开启深色模式,再把\n桌面壁纸也换成暗一点的。」这个也算是测试  AI 助手的固定题目 —— 够具体、够日常、需要系统\n层级操作。然后我就看到了  Marvis 交出的第一份答卷。\n1 、终端调度能力:夯\n基本电脑唤起,20秒之内完成从语音落音到任务执行的完整闭环。不是弹出一个窗口,不是「正\n在理解中」的加载动画 —— 是你话音刚落,深色模式已经切好了,壁纸已经换完了。本地语义理\n解  + 端侧  Agent  调度,将响应压缩到丝滑的量级。\nMarvis 是少数几个让我重新兴奋起来的 —— 不是因为它技术多前沿,而是因为它把前沿技术\n做成了一个普通用户能直接上手、敢放心用的东西。\n",
+    "publication_evidence": "PDF p.1 页眉 May 27, 2026, 3:02 AM；未标时区。",
+    "full_title_in_capture": "Marvis 实测：6 个 AI “牛马”扎根桌面之后",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0098",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "947133ad0606ae9488b4ffa985d725bcb99ee10b3ef78ab473cd37101c62ad0a"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "PDF p.11–12 的文本层为空；缩略页可见 p.11 为界面截图、p.12 基本空白，截图中的小字未逐项转写。",
+        "pages": [
+          11,
+          12
+        ],
+        "status": "partially_read"
+      }
+    ],
+    "outputs": [
+      "AI_Marvis桌面Agent实测.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "detail_pages_reviewed": [
+        3,
+        5,
+        11,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "coverage": "通读 p.1–18；覆盖端侧读资源、多 Agent 规划、跨模态发布、会话记忆边界、Workspace、代码生成、审美、桌面整理、手机通道与结论。p.11–12 文本层空白，按页图检查；p.12 未见可补充正文。；存在部分页面文字层或读者评论范围，详见 quality_issues。",
+    "fact_checks": [
+      {
+        "item": "同一对话内重复发布小红书的六次耗时",
+        "original_value": "同一对话内复现并沉淀为skill的发布流程，共试6次，依次为30→40→10→6→3→2分钟；第2次因新问题耗时增加。",
+        "pages": [
+          5
+        ],
+        "result": "已核对p.5文字与页图。原记录将六次复做误写成六项任务，且引用p.2、4不准确；这是作者同一工作流的迭代体验，不是六种任务或通用性能基准。"
+      },
+      {
+        "item": "语音触发深色模式与壁纸设置",
+        "original_value": "作者称从语音落音到开启深色模式、换成较暗壁纸，20秒之内完成。",
+        "pages": [
+          1
+        ],
+        "result": "已核对p.1文字与页图。原记录“首次设置约20秒”容易误解为安装或首次配置；应限定为该次系统设置指令的执行闭环，时长口径为20秒之内，非约20秒。"
+      },
+      {
+        "item": "首次小红书图文发布流程",
+        "original_value": "生成五张含林宥嘉照片的图文并发布；作者描述通过File Agent生成素材、绕过上传交互限制、使用系统相册和键盘模拟等路径，耗时约30分钟。",
+        "pages": [
+          4
+        ],
+        "result": "已核对p.4文字与页图。首次发布约30分钟出自p.4，非p.6；与p.5六次耗时序列的第1次一致，只记录该案例结果，未执行或验证该流程。"
+      },
+      {
+        "item": "多Agent任务交接",
+        "original_value": "App Agent发现小红书不在自动化白名单后切换browser Agent打开网页版；遇到系统权限问题时转交Computer Agent打开隐私与安全性设置。后续图文生成由File Agent处理。",
+        "pages": [
+          3,
+          4
+        ],
+        "result": "已核对p.3、4文字与页图。将原泛称“规划与执行角色”改为原文明确的应用、浏览器、系统设置及文件分工；p.3视频仅能检查静态预览，交接过程按作者文字记述，不声称回放验证。"
+      },
+      {
+        "item": "手机通道与敏感操作确认边界",
+        "original_value": "作者称微信bot是异步指令通道，只回传结果、不推画面或镜像屏幕，需要看屏幕确认的操作无法通过该手机通道完成；文末称删除、修改和调整核心配置先给执行计划并强制确认，支付等更敏感动作须本人完成。",
+        "pages": [
+          15,
+          16
+        ],
+        "result": "已核对p.15、16文字与页图。原引用p.13不支持该结论；手机通道限制在p.15，敏感操作确认规则在p.16。两者均为作者当时的产品描述，非本次安全审计或当前功能保证。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Marvis桌面Agent实测.md",
+      "sha256": "c2143173a1849e37ac334cd88da50e11ab4e2b075f9ee0431a611ca08e6ff49d"
+    },
+    "independent_crosscheck": {
+      "reviewer": "topic_apps_eval_crosscheck",
+      "note_sha256": "dd0f0ea037a74f16aac7ac1dfbed0931e0b4d2f96280525c16cc64c486bb6f45",
+      "review_sha256": "9a983566687e16c3bc9a018c420060378bf84fa8b31d753bb66f64fe3411abec",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "3–6",
+          "check": "交叉核对开放任务的应用安装检查、白名单阻断后转网页、Computer Agent 权限交接，以及六次复做耗时 30→40→10→6→3→2 分钟和 inherit_agent_id / memory_ids 区别；笔记将提速限定为同会话作者观察，未外推为长期记忆保证。"
+        },
+        {
+          "pages": "14–18",
+          "check": "核对桌面整理三条指令中重命名偶有遗漏、微信 Bot 只传异步指令/结果且看屏确认仍需桌面、iOS 远控当时待上线；p.16 的端云/端侧及高敏操作人工确认是作者产品描述，笔记说明未独立审计。页图显示 p.17 留言、p.18 空白；p.11 为界面截图且文字层无正文，p.12 空白，笔记注明细字未转录。"
+        }
+      ],
+      "post_review_corrections": [
+        {
+          "reviewer": "root with tencent_notes_b source recheck",
+          "pages": [
+            1,
+            3,
+            4,
+            5,
+            15,
+            16
+          ],
+          "scope": "corrected all five metadata fact checks against text and page images; note already correct"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "947133ad0606ae9488b4ffa985d725bcb99ee10b3ef78ab473cd37101c62ad0a"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "66e268efd67bef4aae00af53a550f87c3deb883c2dd7e81249790decac373434"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 26,
+        "text_layer_sha256": "dd1ba6b9b6e1686569d92e143ca50f6df26608df5cc61aa3aa9cf2e2461cdd74",
+        "text_layer_char_count": 665
+      },
+      {
+        "page": 2,
+        "md_start_line": 34,
+        "md_end_line": 42,
+        "text_layer_sha256": "103559f1de5d697c17fee8ed14349ce79e35515223cdb041c0eb459ccf2f7fc9",
+        "text_layer_char_count": 302
+      },
+      {
+        "page": 3,
+        "md_start_line": 50,
+        "md_end_line": 64,
+        "text_layer_sha256": "b8ce128db701acb2373986ee127baabe97c9af1b22f85887a0b44423f3c08507",
+        "text_layer_char_count": 676
+      },
+      {
+        "page": 4,
+        "md_start_line": 72,
+        "md_end_line": 83,
+        "text_layer_sha256": "9f0d2a12ebc0a2ee082ad85645967cfb88803d6cdb1feb24d8b30f8181046453",
+        "text_layer_char_count": 454
+      },
+      {
+        "page": 5,
+        "md_start_line": 91,
+        "md_end_line": 102,
+        "text_layer_sha256": "17dce3d8de7b4721d2ffd944e0d672a04c78ecf7d637c665000a47e004d66192",
+        "text_layer_char_count": 412
+      },
+      {
+        "page": 6,
+        "md_start_line": 110,
+        "md_end_line": 128,
+        "text_layer_sha256": "fb1376fa82eedb6cecd96b82ae3ff1d792ee4b717f8f69657f1e0d8ac09b456b",
+        "text_layer_char_count": 691
+      },
+      {
+        "page": 7,
+        "md_start_line": 136,
+        "md_end_line": 138,
+        "text_layer_sha256": "b1a3659acaaac72b8dedaa17bb0721157da3915215020ab6e8973911c9816cb5",
+        "text_layer_char_count": 35
+      },
+      {
+        "page": 8,
+        "md_start_line": 146,
+        "md_end_line": 162,
+        "text_layer_sha256": "5e199f29ed5457b775f92480073de87f9d9d614d9a9a747fed59411cf40717c5",
+        "text_layer_char_count": 664
+      },
+      {
+        "page": 9,
+        "md_start_line": 170,
+        "md_end_line": 178,
+        "text_layer_sha256": "39fe5bc00924ff7ef3083148058a1b8da9331747c13b193e0d3856a2684e4c43",
+        "text_layer_char_count": 347
+      },
+      {
+        "page": 10,
+        "md_start_line": 186,
+        "md_end_line": 192,
+        "text_layer_sha256": "f0f66a8b693cc252ae5b037af0b648dabb4047d163f862c0e0d916c0a42a6a85",
+        "text_layer_char_count": 264
+      },
+      {
+        "page": 11,
+        "md_start_line": 200,
+        "md_end_line": 200,
+        "text_layer_sha256": "262968504b8dcb6f907b80797ad6d72f100edc0c5cb45985a27cfd59b29ca348",
+        "text_layer_char_count": 37
+      },
+      {
+        "page": 12,
+        "md_start_line": 208,
+        "md_end_line": 207,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 13,
+        "md_start_line": 215,
+        "md_end_line": 214,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 14,
+        "md_start_line": 222,
+        "md_end_line": 229,
+        "text_layer_sha256": "92517b7f571fbc51ecf0729df017b963b2664eb55b61be1c07a0f4bdb8f05096",
+        "text_layer_char_count": 222
+      },
+      {
+        "page": 15,
+        "md_start_line": 237,
+        "md_end_line": 247,
+        "text_layer_sha256": "91eac3c408023f9271e4adee846221d1f04ed87ba90e263df7496106920130c8",
+        "text_layer_char_count": 374
+      },
+      {
+        "page": 16,
+        "md_start_line": 255,
+        "md_end_line": 287,
+        "text_layer_sha256": "7ac306dec907da2ff9c43533fce0462920d2dbc805b801b5104fa8904a31a09c",
+        "text_layer_char_count": 1245
+      },
+      {
+        "page": 17,
+        "md_start_line": 295,
+        "md_end_line": 299,
+        "text_layer_sha256": "6618169763342c0d9ffd9e3554b4a6ab18614642a2d80905feab589f1452af66",
+        "text_layer_char_count": 51
+      },
+      {
+        "page": 18,
+        "md_start_line": 307,
+        "md_end_line": 306,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "detail_pages_reviewed": [
+        3,
+        5,
+        11,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "PDF p.11–12 的文本层为空；缩略页可见 p.11 为界面截图、p.12 基本空白，截图中的小字未逐项转写。",
+        "pages": [
+          11,
+          12
+        ],
+        "status": "partially_read"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0527 Marvis Desktop Agents.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "947133ad0606ae9488b4ffa985d725bcb99ee10b3ef78ab473cd37101c62ad0a",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/桌面Agent与工作流.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Marvis桌面Agent实测.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0308",
+  "title": "不蒸馏也超强？揭秘端到端文档OCR模型 POINTS-Reader",
+  "short_title": "POINTSReader文档解析",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": "腾讯开源",
+  "source_url": null,
+  "published_at": "2025-09-12T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "不蒸馏也超强？揭秘端到端⽂档                     OCR模型      POINTS-   Reader\n\n腾讯开源    腾讯技术⼯程     2025年 9⽉ 12⽇   02:36⼴东    9⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n⽬前论⽂已经被 EM  NLP 2025 主会录取，同时模型已经开源\n\n\n论⽂: https://huggingface.co/papers/2509.01215\n\n\nGithub: https://github.com/Tencent/POINTS-Reader\n\n\nHuggingFace: https://huggingface.co/tencent/POINTS-Reader\n\n\nDemo: https://huggingface.co/spaces/prithivM  Lmods/POINTS-Reader-OCR\n\n\n在论⽂投稿后，我们利⽤⽂章中提出的⽅法持续对模型进⾏优化，当前在 OmniDocBench 上\n取得了领先的优势",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "RAG与知识库",
+    "多模态与生成模型",
+    "AI评测与可观测性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/不蒸馏也超强？揭秘端到端文档OCR模型 POINTS-Reader.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:01:04-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "cfcae9e8926f7a76a4fc35011df891fdf50469bafad21338a7af8c3d2c21d71f",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "页图7表格明确整体指标越低越好，不能把0.133/0.212表述为准确率。",
+        "不依赖蒸馏特指不使用闭源教师OCR标注，合成文本仍借助LLM，过滤仍用传统OCR。",
+        "所有性能与消融属论文团队报告，未复跑；已看页图1、5、6、7，其余示例未逐字符对照。"
+      ],
+      "size_bytes": 3720059,
+      "page_count": 9
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:01:04-07:00",
+  "directory": "腾讯技术工程/POINTSReader文档解析+25.9.12",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:01:04-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "cfcae9e8926f7a76a4fc35011df891fdf50469bafad21338a7af8c3d2c21d71f",
+    "output_path": "MD.md",
+    "output_sha256": "374d402ee679a79f3347e3a50da3849bc3c0788d6692d69abb43fb06564552b0",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 9,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "visual_pages": [
+        1,
+        5,
+        6,
+        7
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "页图7表格明确整体指标越低越好，不能把0.133/0.212表述为准确率。",
+      "不依赖蒸馏特指不使用闭源教师OCR标注，合成文本仍借助LLM，过滤仍用传统OCR。",
+      "所有性能与消融属论文团队报告，未复跑；已看页图1、5、6、7，其余示例未逐字符对照。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/不蒸馏也超强？揭秘端到端文档OCR模型 POINTS-Reader.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/POINTSReader文档解析+25.9.12/RAW.pdf",
+    "sha256": "cfcae9e8926f7a76a4fc35011df891fdf50469bafad21338a7af8c3d2c21d71f",
+    "copied_at": "2026-10-23T06:01:04-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/检索与文档解析.md",
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

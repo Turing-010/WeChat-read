@@ -1,0 +1,117 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0329",
+  "title": "获NVIDIA致谢：悟空Agent的实践、复盘与迭代",
+  "short_title": "悟空安全Agent迭代复盘",
+  "account": "腾讯技术工程",
+  "author": "悟空代码安全团队",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-11-07T01:37",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "获NVIDIA致谢：悟空   Agent的实践、复盘与迭代\n\n腾讯技术⼯程 2025年11⽉7⽇   01:37⼴东492⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n作者：悟空代码安全团队\n\n\n\n  导语： 当代码复杂度爆炸，如何让代码安全审计回归⾼效与理性？本⽂以悟空 Agent\n  获得NVIDIA官⽅致谢为起点，介绍多智能体架构如何闭环，以及在实战中⾯临的真实\n  挑战——上下⽂断流、调度失衡。这是⼀场务实的探索：让 AI 成为安全团队的第⼆双\n  眼，让安全真正融⼊业务⽣产线。\n\n\n\n⼀  、  ⼈ 类，已经看不完代码了\n\n\n\n  AI 的意义不在于取代，⽽在于放⼤⼈类的判断⼒。它让代码安全审计重新回归“⼈”的部\n  分——分析、推理、决策。\n\n\n\n代码安全审计，起初是依靠安全专家经验与直觉的“⼿艺”，后来随着“⼿艺⼈”越来越多，\n经验逐渐被沉淀、规则化，于是诞⽣了 SAST（静态应⽤安全测试）⼯具。\n\n⽆论是靠经验，还是靠规则，都曾是代码安全领域最倚重的报警器。\n\n但当 AI 时代来",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "Agent安全与治理",
+    "上下文工程",
+    "AI评测与可观测性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/获NVIDIA致谢：悟空Agent的实践、复盘与迭代.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:04:19-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "c37daa76bab1c59e8b0612f60ae4261e50c7eba59090e414648e41d78f32290a",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "CVE/受影响版本和修复断言未查官方公告，安全调用建议不能直接照搬所有PyYAML配置。",
+        "耗时-80%、误报-60%、BadCase闭环97%都是作者报告，分母/基线不详。",
+        "RL调度在p5明确是后续计划，不能写已实现；页图检查限1、3、5、6。"
+      ],
+      "size_bytes": 5133575,
+      "page_count": 9
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:04:19-07:00",
+  "directory": "腾讯技术工程/悟空安全Agent迭代复盘+25.11.7",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:04:19-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "c37daa76bab1c59e8b0612f60ae4261e50c7eba59090e414648e41d78f32290a",
+    "output_path": "MD.md",
+    "output_sha256": "62b6d110f046fc033adaeb1004e7c4314536a2f5018fbbeffc5b287103fdcc2c",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 9,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "visual_pages": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "CVE/受影响版本和修复断言未查官方公告，安全调用建议不能直接照搬所有PyYAML配置。",
+      "耗时-80%、误报-60%、BadCase闭环97%都是作者报告，分母/基线不详。",
+      "RL调度在p5明确是后续计划，不能写已实现；页图检查限1、3、5、6。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/获NVIDIA致谢：悟空Agent的实践、复盘与迭代.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/悟空安全Agent迭代复盘+25.11.7/RAW.pdf",
+    "sha256": "c37daa76bab1c59e8b0612f60ae4261e50c7eba59090e414648e41d78f32290a",
+    "copied_at": "2026-10-23T06:04:19-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent安全与权限.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

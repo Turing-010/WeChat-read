@@ -1,0 +1,367 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0282",
+  "title": "从0到1：天猫AI测试用例生成的实践与突破",
+  "short_title": "天猫AI测试用例生成实践",
+  "account": "大淘宝技术",
+  "author": "珞兮",
+  "author_byline": "本文作者珞兮，来自淘天集团-天猫技术质量团队。",
+  "source_url": null,
+  "published_at": "2025-11-10",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "天猫技术质量团队 2025年11月10日 01:28 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 11,
+      "text": "本文作者珞兮，来自淘天集团-天猫技术质量团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "AI研发协同",
+    "检索与文档解析",
+    "Agent评测与反馈"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/从0到1：天猫AI测试用例生成的实践与突破.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T19:42:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "46ec3aac9e1427f60c4da4c4f5579a77728adf46341c7c11a1538862ceedbae6",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.1, 3-10含业界对比表、总体架构流程图、知识库三级拆解图与PRD/生成用例对比截图（位于PDF图像层，p.4-5为纯架构图页）；核心方法论与量化评估指标已在文本层完整提取。",
+          "pages": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 4275789,
+      "page_count": 11
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T19:42:00-07:00",
+  "directory": "大淘宝技术/天猫AI测试用例生成实践+25.11.10",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_天猫AI测试用例生成实践.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0282",
+    "created_at": "2026-10-20T19:42:00-07:00",
+    "updated_at": "2026-10-20T19:42:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "46ec3aac9e1427f60c4da4c4f5579a77728adf46341c7c11a1538862ceedbae6"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "f31a6a99f200c5c97630f4fa03a3536c9f23d169c902943c28e40c83c4dcbfb2"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.1, 3-10含业界对比表、总体架构流程图、知识库三级拆解图与PRD/生成用例对比截图（位于PDF图像层，p.4-5为纯架构图页）；核心方法论与量化评估指标已在文本层完整提取。",
+        "pages": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_天猫AI测试用例生成实践.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_天猫AI测试用例生成实践.md",
+      "sha256": "34f8297e69003b4184a72a6505cd2d370de63415b7390e6449dcbcf691d7709d"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T19:42:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "46ec3aac9e1427f60c4da4c4f5579a77728adf46341c7c11a1538862ceedbae6"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "f31a6a99f200c5c97630f4fa03a3536c9f23d169c902943c28e40c83c4dcbfb2"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 41,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 355,
+        "text_layer_sha256": "818c945dc435b0609e623a14e7b2197ea960c2f4a9e64a104689c82c1d151fdb"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 112,
+        "md_start_line": 49,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 2,
+        "text_layer_char_count": 729,
+        "text_layer_sha256": "57fa668716c0ff202307e20f41d6dfc3a83c10f3868ad269ccafa8d1d258cec4"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 160,
+        "md_start_line": 120,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 3,
+        "text_layer_char_count": 529,
+        "text_layer_sha256": "b080689aab60e85d11ee9dc9657a9ad5e3e8314e67713ab572aa197625d86203"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 170,
+        "md_start_line": 168,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 4,
+        "text_layer_char_count": 0,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 180,
+        "md_start_line": 178,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 5,
+        "text_layer_char_count": 0,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 224,
+        "md_start_line": 188,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 6,
+        "text_layer_char_count": 343,
+        "text_layer_sha256": "edffdf3d28d23a0464c5cd1d762b713d796fb5e1274e60a4ba34733f0d7b7311"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 256,
+        "md_start_line": 232,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 7,
+        "text_layer_char_count": 318,
+        "text_layer_sha256": "0bd6e417963b66aa9747086c1cbd790184a2df4a7889c9ec3f2b742d998e678f"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 296,
+        "md_start_line": 264,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 8,
+        "text_layer_char_count": 429,
+        "text_layer_sha256": "e192c492d0ae497595ad4f594e88a6d4764f14667220820868232f98ba74384a"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 326,
+        "md_start_line": 304,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 9,
+        "text_layer_char_count": 381,
+        "text_layer_sha256": "4652ef326d39e59943c2c5b3b5f22add384e7b24644a7778d6f4d5afc1764dd1"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 343,
+        "md_start_line": 334,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 10,
+        "text_layer_char_count": 92,
+        "text_layer_sha256": "1edee22b790dc5ec9dad1e6848af3ece47f76c6c1e3feb9245f95a5a8c246b7d"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 364,
+        "md_start_line": 351,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 11,
+        "text_layer_char_count": 220,
+        "text_layer_sha256": "f836e830060c0e7672fa57f65310b330c5ef70ae2b8cb1eef8bebfbc2b57cf54"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.1, 3-10含业界对比表、总体架构流程图、知识库三级拆解图与PRD/生成用例对比截图（位于PDF图像层，p.4-5为纯架构图页）；核心方法论与量化评估指标已在文本层完整提取。",
+        "pages": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/检索与文档解析.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T19:42:00-07:00",
+    "removed_at": "2026-10-20T19:42:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/从0到1：天猫AI测试用例生成的实践与突破.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "46ec3aac9e1427f60c4da4c4f5579a77728adf46341c7c11a1538862ceedbae6",
+        "copied_at": "2026-10-20T19:42:00-07:00",
+        "removed_at": "2026-10-20T19:42:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_天猫AI测试用例生成实践.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

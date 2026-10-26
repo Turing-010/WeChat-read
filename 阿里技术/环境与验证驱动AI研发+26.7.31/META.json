@@ -1,0 +1,368 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0034",
+  "title": "从 Spec 驱动转向环境与验证驱动——我对 AI Coding 的一点思考",
+  "short_title": "环境与验证驱动AI研发",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "吴佐衍",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-07-31T03:18",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "Jul 31, 2026, 3:18 AM",
+  "published_timezone": null,
+  "identity_evidence": {
+    "page": 1,
+    "text": [
+      "从 Spec 驱动转向环境与验证驱动——我对 AI Coding 的⼀点思考",
+      "吴佐衍 阿⾥技术 Jul 31, 2026, 3:18 AM 浙江 60 listened",
+      "这是2026年的第 46 篇⽂章",
+      "（ 本⽂阅读时间：约 15 分钟 ）",
+      "最近观察到⼀个现象：多数同学做 AI Coding 研发提效的第⼀反应，是把现有的研发流程"
+    ]
+  },
+  "tags": [
+    "AI研发协同",
+    "Harness与模型协同"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/从 Spec 驱动转向环境与验证驱动——我对 AI Coding 的一点思考.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:47:41-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "8f231aa3685d48f8c03764f75a4631020d18e1c3865f41b55e64b62c4a517f10",
+      "size_bytes": 6636493,
+      "page_count": 9,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.1–2榜单为2026年7月多来源不同口径快照，未联网核验或作统一排名。",
+          "pages": [
+            1,
+            2
+          ],
+          "evidence_type": "text_and_image",
+          "classification": "comparison_scope"
+        },
+        {
+          "description": "p.6趋势图2027+为前瞻示意，未当作已发生统计；“乘积”是作者解释性观点。",
+          "pages": [
+            6
+          ],
+          "evidence_type": "text_and_image",
+          "classification": "proposal_not_verified"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:47:41-07:00",
+  "directory": "阿里技术/环境与验证驱动AI研发+26.7.31",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_环境与验证驱动AI研发.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0034",
+    "created_at": "2026-10-13T02:47:41-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "8f231aa3685d48f8c03764f75a4631020d18e1c3865f41b55e64b62c4a517f10"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.1–2榜单为2026年7月多来源不同口径快照，未联网核验或作统一排名。",
+        "pages": [
+          1,
+          2
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "comparison_scope"
+      },
+      {
+        "description": "p.6趋势图2027+为前瞻示意，未当作已发生统计；“乘积”是作者解释性观点。",
+        "pages": [
+          6
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "proposal_not_verified"
+      }
+    ],
+    "outputs": [
+      "AI_环境与验证驱动AI研发.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "coverage": [
+      {
+        "name": "能力与效率差距",
+        "pages": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "电气化类比",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Workflow与Agentic",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      {
+        "name": "投资边界与基础设施",
+        "pages": [
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_环境与验证驱动AI研发.md",
+      "sha256": "89ec54e5f14303e75cbe853e32b46209920e5805e1be6d13af313ca8b28722a8"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:47:41-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "8f231aa3685d48f8c03764f75a4631020d18e1c3865f41b55e64b62c4a517f10"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "03ed7df70defb4948b903e54c68576e624c3d7bc577403ef57425a33b1dd14d8"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 30,
+        "text_layer_sha256": "818d6c595119042d778e4c09d4dc71e9f1bf3f4a75e421dd2580fb38eb4198ca",
+        "text_layer_char_count": 650
+      },
+      {
+        "page": 2,
+        "md_start_line": 38,
+        "md_end_line": 60,
+        "text_layer_sha256": "82feb799c67f19ea583cdda807260241a52357c0a90ecce2aa70673ac10b0fd8",
+        "text_layer_char_count": 776
+      },
+      {
+        "page": 3,
+        "md_start_line": 68,
+        "md_end_line": 100,
+        "text_layer_sha256": "c808f9019fb0e49947d1678c15c1472edd78173e61b4938d700bff618e624306",
+        "text_layer_char_count": 1157
+      },
+      {
+        "page": 4,
+        "md_start_line": 108,
+        "md_end_line": 130,
+        "text_layer_sha256": "ad83991ea9a6252bd860f6e7b3684287fd55ca43b770c4e045b4520da69765b8",
+        "text_layer_char_count": 914
+      },
+      {
+        "page": 5,
+        "md_start_line": 138,
+        "md_end_line": 158,
+        "text_layer_sha256": "e36560c871c0084ce39714369b5e76c505929411270c3344e3df541a9cb94063",
+        "text_layer_char_count": 745
+      },
+      {
+        "page": 6,
+        "md_start_line": 166,
+        "md_end_line": 187,
+        "text_layer_sha256": "43b384fd0452404d215287ea0b443f7aeca0e72a42907c82bf6f79ff19ae6c52",
+        "text_layer_char_count": 778
+      },
+      {
+        "page": 7,
+        "md_start_line": 195,
+        "md_end_line": 201,
+        "text_layer_sha256": "73c59d10a593221a3f1573e0df135ac69e0bd652c733a2b32c3c28ddc00e5579",
+        "text_layer_char_count": 259
+      },
+      {
+        "page": 8,
+        "md_start_line": 209,
+        "md_end_line": 215,
+        "text_layer_sha256": "530186e6b762e208922b8dbdbb0329c3da08ab32c5e864425d89ada9b4344457",
+        "text_layer_char_count": 88
+      },
+      {
+        "page": 9,
+        "md_start_line": 223,
+        "md_end_line": 237,
+        "text_layer_sha256": "f62414f0c21af9d4cb5173ac15606c450940453d51917da6253feb5df237c5ba",
+        "text_layer_char_count": 270
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.1–2榜单为2026年7月多来源不同口径快照，未联网核验或作统一排名。",
+        "pages": [
+          1,
+          2
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "comparison_scope"
+      },
+      {
+        "description": "p.6趋势图2027+为前瞻示意，未当作已发生统计；“乘积”是作者解释性观点。",
+        "pages": [
+          6
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "proposal_not_verified"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "proposed_topics": [
+      "AI研发协同",
+      "Harness与模型协同",
+      "Agent评测与反馈"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:47:41-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/从 Spec 驱动转向环境与验证驱动——我对 AI Coding 的一点思考.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "8f231aa3685d48f8c03764f75a4631020d18e1c3865f41b55e64b62c4a517f10",
+        "copied_at": "2026-10-13T02:47:41-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

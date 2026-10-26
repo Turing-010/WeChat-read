@@ -1,0 +1,353 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0045",
+  "title": "百万级仿真资产，正在重构机器人训练场：阿里巴巴RoboFlywheel首发",
+  "short_title": "RoboFlywheel具身仿真闭环",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-09-24T03:02",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "2026年9月24日 03:02",
+  "published_timezone": null,
+  "identity_evidence": {
+    "page": 1,
+    "text": [
+      "百万级仿真资产，正在重构机器⼈训练场：阿⾥巴巴RoboFlywheel",
+      "⾸发",
+      "阿⾥技术 2026年9⽉24⽇ 03:02 浙江 听全⽂",
+      "具身智能不难造出⼀个“看起来很真”的世界，难的是造出⼀个机器⼈真正能上⼿的世界。",
+      "杯⼦再逼真，杯把孔洞被碰撞模型封住，机器⼈也抓不住；柜⻔纹理再清晰，没有正确的转轴"
+    ]
+  },
+  "tags": [
+    "具身智能数据闭环"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/百万级仿真资产，正在重构机器人训练场：阿里巴巴RoboFlywheel首发.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T03:13:35-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "9b94b50bea8b03c141f4adac2b5e2fd76116544bcbca35b1820cc466fad8f4b1",
+      "size_bytes": 5178526,
+      "page_count": 7,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.5总结章节与平台章节编号重复为05；p.2标题写“被子”但正文对象是杯子，未以标题错字改变技术内容。",
+          "pages": [
+            2,
+            4,
+            5
+          ],
+          "evidence_type": "text_and_image",
+          "classification": "source_typo"
+        },
+        {
+          "description": "99.93%运动学与99.0%跨引擎被动稳定为不同测试；仿真效果需实物与真机另验。",
+          "pages": [
+            3,
+            4,
+            5
+          ],
+          "evidence_type": "text_and_image",
+          "classification": "evaluation_scope"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T03:13:35-07:00",
+  "directory": "阿里技术/RoboFlywheel具身仿真闭环+26.9.24",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_RoboFlywheel具身仿真闭环.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0045",
+    "created_at": "2026-10-13T03:13:35-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "9b94b50bea8b03c141f4adac2b5e2fd76116544bcbca35b1820cc466fad8f4b1"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.5总结章节与平台章节编号重复为05；p.2标题写“被子”但正文对象是杯子，未以标题错字改变技术内容。",
+        "pages": [
+          2,
+          4,
+          5
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "source_typo"
+      },
+      {
+        "description": "99.93%运动学与99.0%跨引擎被动稳定为不同测试；仿真效果需实物与真机另验。",
+        "pages": [
+          3,
+          4,
+          5
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "evaluation_scope"
+      }
+    ],
+    "outputs": [
+      "AI_RoboFlywheel具身仿真闭环.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "coverage": [
+      {
+        "name": "资产与物理属性",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "name": "World刚体",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "name": "Articulation生成器",
+        "pages": [
+          3
+        ]
+      },
+      {
+        "name": "Soft材料行为",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "name": "平台与训练评测闭环",
+        "pages": [
+          4,
+          5
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_RoboFlywheel具身仿真闭环.md",
+      "sha256": "714a1a68dc1517f546212bd4ebb526ce80c79b1d6884b59c74e2f7740ec737fa"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T03:13:35-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "9b94b50bea8b03c141f4adac2b5e2fd76116544bcbca35b1820cc466fad8f4b1"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "e401c8f644559444a5f552c866b09d2a6bc5ca715f12ca445f11169f78d0b75f"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 37,
+        "text_layer_sha256": "922f6575c6e7fdcdf3aa9503df00e5cb83424f9ee4955de4c8979d38efb307df",
+        "text_layer_char_count": 825
+      },
+      {
+        "page": 2,
+        "md_start_line": 45,
+        "md_end_line": 57,
+        "text_layer_sha256": "416263347b29e76961c5d223e1bf3f2501923322a12d06c34f148c1e53dffecd",
+        "text_layer_char_count": 433
+      },
+      {
+        "page": 3,
+        "md_start_line": 65,
+        "md_end_line": 83,
+        "text_layer_sha256": "f88d832dd84a360f64c8b2b017ae9e90887dfc63782c91986a64a37378cdb561",
+        "text_layer_char_count": 585
+      },
+      {
+        "page": 4,
+        "md_start_line": 91,
+        "md_end_line": 111,
+        "text_layer_sha256": "8a47b1aa8138ba7ca394876430ea497d2f96f1dcb8fc1ac57361cc6a10811e05",
+        "text_layer_char_count": 685
+      },
+      {
+        "page": 5,
+        "md_start_line": 119,
+        "md_end_line": 134,
+        "text_layer_sha256": "c93e67fcf59cbb6d6474a6efa565b97bf5d952dd92bedaa6fe1eab4f295b03c0",
+        "text_layer_char_count": 483
+      },
+      {
+        "page": 6,
+        "md_start_line": 142,
+        "md_end_line": 146,
+        "text_layer_sha256": "b4b2da5e8276a8eb227d804cabf78a3c59d81462bdb27ee11471b377f47a9756",
+        "text_layer_char_count": 36
+      },
+      {
+        "page": 7,
+        "md_start_line": 154,
+        "md_end_line": 154,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.5总结章节与平台章节编号重复为05；p.2标题写“被子”但正文对象是杯子，未以标题错字改变技术内容。",
+        "pages": [
+          2,
+          4,
+          5
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "source_typo"
+      },
+      {
+        "description": "99.93%运动学与99.0%跨引擎被动稳定为不同测试；仿真效果需实物与真机另验。",
+        "pages": [
+          3,
+          4,
+          5
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "evaluation_scope"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/具身智能数据闭环.md"
+    ],
+    "proposed_topics": [
+      "Agent评测与反馈",
+      "Agent工程循环",
+      "具身智能仿真数据"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T03:13:35-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/百万级仿真资产，正在重构机器人训练场：阿里巴巴RoboFlywheel首发.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "9b94b50bea8b03c141f4adac2b5e2fd76116544bcbca35b1820cc466fad8f4b1",
+        "copied_at": "2026-10-13T03:13:35-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

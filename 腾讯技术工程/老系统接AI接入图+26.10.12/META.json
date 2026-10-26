@@ -1,0 +1,350 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0139",
+  "title": "Agent、MCP、Skill、Cli、Model 一次讲透：老系统接入 AI 的概念地图与三条路径",
+  "short_title": "老系统接AI接入图",
+  "account": "腾讯技术工程",
+  "author": "robinji",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-10-12T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Agent、MCP、Skill、Cli、Model 一次讲透：老系统接入 AI 的概念地图与三条路径.pdf",
+      "original_filename": "Agent、MCP、Skill、Cli、Model 一次讲透：老系统接入 AI 的概念地图与三条路径.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "363a3fd5b5e2692bf9a09ffb2b2e6f0fbdc680acf5b79e9faf8ee20f2ae13f3b",
+      "size_bytes": 3132315,
+      "page_count": 8,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [],
+      "publication_evidence": "PDF p.1 页眉 Oct 12, 2026, 2:36 AM；未标时区。"
+    }
+  ],
+  "tags": [
+    "AI研发协同",
+    "Harness与模型协同",
+    "模型与开发工具发布",
+    "桌面Agent与工作流"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/老系统接AI接入图+26.10.12",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_老系统接AI接入图.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "Agent 、 MCP 、 Skill 、 Cli 、 Model  一次讲透:老系统接入 AI  的概念\n地图与三条路径\n腾讯程序员 Oct  12 , 2026 , 2 : 36  AM广东原创 腾讯技术工程 165  listened\n作者: robinji\n一、事情的起因\n客户是国内某大型整车集团研究院的  IT 团队。集团管理层给他们下了一个课题,「让  AI 深入\n老业务系统」。这个提法里没有「上一套新的  AI 系统」。这两个说法差别很大,做过企业  IT 的\n人都懂,上新系统是采购问题,深入老系统是工程问题。管理层点了名,这道题躲不掉。\nIT 同学犯难的地方,先出在概念层。 Agent 、 Skill 、 MCP 、 CLI 、 Model ,这些词现在满天\n飞。它们之间到底是什么关系,谁调用谁,标准和工具各是哪几个,平时没人系统讲过。\n更实际的问题是,手里那些跑了十年八年的老系统,请假销假、 PLM 、各种内部平台,到底\n该从哪里下刀, AI 才用得起来。客户的需求很朴素,先讲明白,再谈怎么改。于是有了这场\n交流和那份  42 页的  PPT 。\n二、五个概念构成一支团队\n客户的第一个问题是,这些概念到底是什么关系。我们的办法是打比方。别背技术名词,把整\n套  AI 系统想象成公司新入职的一支数字化团队。\n概念 团队角色 干什么\nModel (大模型)大脑 负责想,推理与生成引擎\nAgent 数字员工 负责干,目标驱动、自主规划、调用工具的闭环执行体\nSkill 岗位技能手册负责会,把流程和经验封装成  Agent 能加载的技能包\n这篇文章尝试回答两个问题:一是  Agent 、 Skill 、 MCP 、 CLI 、 Model 这五个概念到底是\n什么关系,谁调用谁;二是企业里跑了多年的老系统,该从哪里切入, AI 才用得起来。\n内容包括五概念的关系总图、一次工具调用的完整接力、老系统接入的三条路径( API 封\n装、 CLI 包装、 RPA 兜底)、 MCP 实现形式的完整分类,以及  BS 和  CS 两种架构的实战\n案例。\n",
+    "publication_evidence": "PDF p.1 页眉 Oct 12, 2026, 2:36 AM；未标时区。",
+    "full_title_in_capture": "Agent、MCP、Skill、Cli、Model 一次讲透：老系统接入 AI 的概念地图与三条路径",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0139",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "updated_at": "2026-10-15T01:55:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "363a3fd5b5e2692bf9a09ffb2b2e6f0fbdc680acf5b79e9faf8ee20f2ae13f3b"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "c21607aed430baa374cd353d42d2d676d63cd195ab8049b5517e8c8af4731a5c"
+      }
+    ],
+    "method": "按用户指定Obsidian学习笔记提示词（基于MD.md与既有PDF核验记录）重新生成中文学习笔记；正文、数据表、图注与复习卡片均去除页码标注，核验结果统一置于文末折叠校对报告；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "MD.md全文核对与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "user_custom_obsidian_prompt_20261015",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71",
+      "override_note": "用户于2026-10-15会话中直接提供完整结构化Obsidian学习笔记提示词（去除正文/表格/卡片内页码标注，保留文末折叠校对报告）。"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [],
+    "outputs": [
+      "AI_老系统接AI接入图.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "coverage": "通读 p.1–8 并查看所有缩略页；覆盖起因、五概念、工具接力、三条改造路径、鉴权、MCP 实现形式、B/S 与 C/S 案例及效果。p.7–8 为尾页。",
+    "fact_checks": [
+      {
+        "item": "Agent职责",
+        "original_value": "Agent组织模型、上下文、工具和执行",
+        "pages": [
+          2,
+          3
+        ],
+        "result": "对应正文概念图。"
+      },
+      {
+        "item": "Skill/MCP",
+        "original_value": "Skill描述任务流程；MCP标准化外部能力连接",
+        "pages": [
+          3,
+          4
+        ],
+        "result": "按作者定义，非协议全貌。"
+      },
+      {
+        "item": "接入路径",
+        "original_value": "API、CLI、RPA对应不同改造条件",
+        "pages": [
+          4,
+          6
+        ],
+        "result": "与文中三路径比较一致。"
+      },
+      {
+        "item": "身份权限",
+        "original_value": "真实执行身份与权限校验应在执行层落实",
+        "pages": [
+          5,
+          6
+        ],
+        "result": "据文章安全段总结。"
+      },
+      {
+        "item": "MCP实现形式",
+        "original_value": "文章讨论stdio与Streamable HTTP",
+        "pages": [
+          6
+        ],
+        "result": "只记录文章观点，未独立核实当前状态。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading",
+        "clean body without inline page citations"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_老系统接AI接入图.md",
+      "sha256": "40b21396ec23b73ab2e135e318c0b5a9b1b51d0dfc81442514a083ee33a74593",
+      "previous_sha256": "b5558232ff8e8334c43f915953c00937b0699e2ba522774b9eeec85dcd59cdc0"
+    },
+    "independent_crosscheck": {
+      "reviewer": "regenerated_with_user_prompt_20261015",
+      "note_sha256": "40b21396ec23b73ab2e135e318c0b5a9b1b51d0dfc81442514a083ee33a74593",
+      "previous_note_sha256": "da6258b8ce2818f037f21ef0b97405535872bf6d75b170d4b78d1018f07cf8e2",
+      "review_sha256": "d166be86b03d2f4172e66f5067d6bf0584c8e293319b2375d752069bdaf36d54",
+      "status": "passed",
+      "changes": [
+        "Regenerated study note from MD.md per user prompt (2026-10-15): structured 10 modules, removed inline page citations from body/tables/flashcards, and consolidated verification in the folded 校对报告."
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "1–2",
+          "check": "抽查概念边界和工具链：Model/Agent/Skill/MCP/CLI职责、Agent循环及CLI可被MCP封装；笔记按作者类比转述，没有把协议等同于底层API。"
+        },
+        {
+          "pages": "3–5",
+          "check": "抽查API→CLI→RPA路径、系统评估维度、身份/最小权限/审计要求，以及MCP传输分类；笔记保留“文章口径、未核验时效”边界。"
+        },
+        {
+          "pages": "5–8",
+          "check": "抽查B/S REST API与C/S客户端SDK案例、效果段及尾页：p.7为账号/留言页，p.8空白；未将宣传/留言扩写成技术结论。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "363a3fd5b5e2692bf9a09ffb2b2e6f0fbdc680acf5b79e9faf8ee20f2ae13f3b"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "c21607aed430baa374cd353d42d2d676d63cd195ab8049b5517e8c8af4731a5c"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 34,
+        "text_layer_sha256": "b8d7cd677f659c3c85bd8f7366debe90ff9b1480abfc96c6beaae9413d7bb19d",
+        "text_layer_char_count": 890
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 66,
+        "text_layer_sha256": "b93ef6e87e1ad269ad2cdf26b6d8da3f5e3e4ee4386f7a7b9bd6b15303159575",
+        "text_layer_char_count": 924
+      },
+      {
+        "page": 3,
+        "md_start_line": 74,
+        "md_end_line": 96,
+        "text_layer_sha256": "acf8caf09f9ee35878f159579486afba447718271a6996552360f5ac1cbfb36f",
+        "text_layer_char_count": 700
+      },
+      {
+        "page": 4,
+        "md_start_line": 104,
+        "md_end_line": 123,
+        "text_layer_sha256": "23ee3a3a5d5afafeb807e7971f870ed9117fa23a4258cd79ea20d976c96d223f",
+        "text_layer_char_count": 787
+      },
+      {
+        "page": 5,
+        "md_start_line": 131,
+        "md_end_line": 151,
+        "text_layer_sha256": "2a584d88531cb585ae79ac8264237a660f3655bb69b5804146e8294a17e29442",
+        "text_layer_char_count": 858
+      },
+      {
+        "page": 6,
+        "md_start_line": 159,
+        "md_end_line": 170,
+        "text_layer_sha256": "fba6d137dd2fa089dee72854c6d2b5fc1b35a44e9ae1e05d3191c629c04a2892",
+        "text_layer_char_count": 364
+      },
+      {
+        "page": 7,
+        "md_start_line": 178,
+        "md_end_line": 185,
+        "text_layer_sha256": "8002efac978735f5461ab3aa405dfac2848d92b01a053701918d73344761e2f6",
+        "text_layer_char_count": 77
+      },
+      {
+        "page": 8,
+        "md_start_line": 193,
+        "md_end_line": 192,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "quality_issues": []
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Agent、MCP、Skill、Cli、Model 一次讲透：老系统接入 AI 的概念地图与三条路径.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "363a3fd5b5e2692bf9a09ffb2b2e6f0fbdc680acf5b79e9faf8ee20f2ae13f3b",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Harness与模型协同.md",
+      "../../20_topics/桌面Agent与工作流.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_老系统接AI接入图.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

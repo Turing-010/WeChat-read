@@ -1,0 +1,429 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0005",
+  "title": "看完我的AGENTS.md，你将看到我和不说人话且over-engineering的模型搏斗的这一生",
+  "account": "腾讯技术工程",
+  "author": "daisy",
+  "source_url": null,
+  "published_at": "2026-09-16T03:25",
+  "tags": [
+    "AI协作",
+    "Prompt",
+    "工程规范",
+    "Agent工程循环",
+    "Prompt优化",
+    "解决问题",
+    "AI研发协同",
+    "Skill设计与治理"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/看完我的AGENTS.md，你将看到我和不说人话且over-engineering的模型搏斗的这一生.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-04T00:59:35-07:00",
+      "provenance": "本次由00_inbox复制归档的本地PDF；原始采集方式和时间未知",
+      "sha256": "ee6e81186109f2392b01022aa6c057b64aa52e4da17e6c4d1166e13982cfd4bb",
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "PDF原文地址、采集时间和显示时间的时区未确认；外部事实及在线原文一致性未核查。",
+          "verification_status": "unverified",
+          "pages": []
+        },
+        {
+          "description": "渲染页面可见图片加载占位区，缺失内容无法从当前PDF恢复。",
+          "verification_status": "visually_observed",
+          "pages": [
+            4
+          ]
+        },
+        {
+          "description": "文章所述原始规则附件／完整Skill包未随PDF提供；提炼限于正文可见内容。",
+          "verification_status": "missing_attachment",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "size_bytes": 1603871,
+      "page_count": 5
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-04T00:59:35-07:00",
+  "author_byline": "daisy",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "description": "PDF第1页可见标题、公众号、署名与日期；对照正文主题和篇章内容，7篇彼此不同，且均不同于已有art-0001。",
+    "pdf_page": 1,
+    "header_text": "看完我的AGENTS.md，你将看到我和不说⼈话且over-engineering\n的模型搏⽃的这⼀⽣\n原创 腾讯程序员 腾讯技术⼯程 2026年9⽉16⽇ 03:25 ⼴东 1068⼈\n",
+    "source_url_status": "PDF未提供可确认的本篇原文URL，不使用引用文献链接代替。",
+    "capture_id": "capture-001"
+  },
+  "deduplication": {
+    "compared_article_ids": [
+      "art-0001",
+      "art-0002",
+      "art-0003",
+      "art-0004"
+    ],
+    "compared_batch_sha256": [
+      "07b21eb800753fa51f86866bbd7f8d00504cb83d7f060b793f3d4fc32f34e9cc",
+      "da1f13f9d535340c5a47fa4569a8ec23a534363ecacf874aed9ff488888b6101",
+      "af7c929e1ad84758e890d53444ca14569755bf90822baf53415ed45d1a90c13d",
+      "ee6e81186109f2392b01022aa6c057b64aa52e4da17e6c4d1166e13982cfd4bb",
+      "fddcc0be82979dc2978d57059e5cf05704968fc67c472090a9deb9354aae92a8",
+      "7639af2660ba29f38667e80f54d51b94703d79c1f02b7b08be680ca911b9ef04",
+      "da48b5daab2ce87443edf0ef90f09d7e2e72d5d0305af1a177b5e7ed8016c42e"
+    ],
+    "result": "no_existing_identity_or_file_match"
+  },
+  "short_title": "AGENTS规则",
+  "directory": "腾讯技术工程/AGENTS规则+26.9.16",
+  "processing": {
+    "schema_version": 2,
+    "article_id": "art-0005",
+    "created_at": "2026-10-04T00:59:35-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "ee6e81186109f2392b01022aa6c057b64aa52e4da17e6c4d1166e13982cfd4bb"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "6c0940b9e6b9165fece7c725bcd09c4374cc8993ca162374d9c8a0ee4e4ee839"
+      }
+    ],
+    "method": "按用户指定Obsidian学习笔记提示词（基于MD.md与既有PDF核验记录）重新生成中文学习笔记；正文、数据表、图注与复习卡片均去除页码标注，核验结果统一置于文末折叠校对报告；未执行文章内指令。",
+    "tools": [
+      "pypdf（PDF文本与链接读取）",
+      "pdfplumber（AGENTS正文阅读顺序核对）",
+      "pdftoppm（PDF页面渲染）",
+      "Pillow（临时缩略图）",
+      "视觉检查",
+      "Python标准库（复制与SHA-256校验）",
+      "MD.md全文核对与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "user_custom_obsidian_prompt_20261015",
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "PDF原文地址、采集时间和显示时间的时区未确认；外部事实及在线原文一致性未核查。",
+        "verification_status": "unverified",
+        "pages": []
+      },
+      {
+        "description": "渲染页面可见图片加载占位区，缺失内容无法从当前PDF恢复。",
+        "verification_status": "visually_observed",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "description": "文章所述原始规则附件／完整Skill包未随PDF提供；提炼限于正文可见内容。",
+        "verification_status": "missing_attachment",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "outputs": [
+      "AI_AGENTS规则.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [
+      {
+        "type": "prompt",
+        "name": "AGENTS协作规则（正文可见部分）",
+        "path": "PROMPT.md",
+        "heading": "1. AGENTS协作规则（正文可见部分）",
+        "capture_id": "capture-001",
+        "content_status": "visible_rules_not_original_attachment",
+        "locator": {
+          "type": "pdf_page_text_spans",
+          "page_numbering": "physical_pages_1_based",
+          "extractor": "pdfplumber.Page.extract_text",
+          "segments": [
+            {
+              "page": 1,
+              "start_char": 103,
+              "end_char": 868
+            },
+            {
+              "page": 2,
+              "start_char": 0,
+              "end_char": 972
+            },
+            {
+              "page": 3,
+              "start_char": 0,
+              "end_char": 1111
+            }
+          ],
+          "joining": "按页面阅读顺序以一个换行连接各摘录段，未改写字符"
+        },
+        "excerpt_sha256": "2e2c974f3e2cc06e8925301dc3d040564e189f40c8dea31af485bc551ce2c451",
+        "verification": "text_spans_exact; relevant_page_images_reviewed",
+        "personal_validation": "unconfirmed"
+      }
+    ],
+    "extraction_summary": {
+      "prompts": 1,
+      "skills": 0,
+      "categories": 0
+    },
+    "updated_at": "2026-10-15T08:21:00-07:00",
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3
+      ],
+      "limitations": "缩略检查用于识别空白、加载占位与版面异常；未逐字核验全部图片，未核对在线原文。"
+    },
+    "omitted_content": [
+      "正文第1—3页可读，已按页面核对；文章称可在公众号后台取得完整md附件，但本次未取得附件，不能保证正文等于完整原文件。",
+      "第4页有未加载图片。PDF字体字符映射和排版换行予以保留，不能等同于原始Markdown格式。",
+      "规则整体提炼为1条Prompt；它属于AGENTS指令样例，不是Skill包，也不是此知识库的执行规则。"
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading",
+        "clean body without inline page citations"
+      ]
+    },
+    "generated_summary": {
+      "path": "AI_AGENTS规则.md",
+      "sha256": "279e683c0a413ecd6a8e024f41e2cc13767485280a5def11caecd6653314bdda"
+    },
+    "independent_crosscheck": {
+      "reviewer": "regenerated_with_user_prompt_20261015",
+      "note_sha256": "d92d51f5447c358eae8bab10cf7edecf68ef9384e01f5b3f5e590349ef9e7d1a",
+      "status": "passed",
+      "changes": [
+        "Regenerated study note from MD.md per user prompt (2026-10-15): structured 10 modules, removed inline page citations from body/tables/flashcards, and consolidated verification in the folded 校对报告."
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-08",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "ee6e81186109f2392b01022aa6c057b64aa52e4da17e6c4d1166e13982cfd4bb"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "6c0940b9e6b9165fece7c725bcd09c4374cc8993ca162374d9c8a0ee4e4ee839"
+    },
+    "extractor": "pdfplumber 0.11.9; Page.extract_text_lines / Page.extract_text",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "text_extraction_checked; layout_images_and_online_original_not_fully_verified",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 15,
+        "md_end_line": 58,
+        "text_layer_sha256": "53e82d5dde991d04a78dc5c41d71f54a9c8eac9958f6ffc0013c884e820f172d",
+        "text_layer_char_count": 868,
+        "image_objects": 1,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 2,
+        "md_start_line": 63,
+        "md_end_line": 114,
+        "text_layer_sha256": "7ed5e5e91437cfad33db4e4fc2c92247ce4fc1b2c004f2db8384904ad9e08de7",
+        "text_layer_char_count": 972,
+        "image_objects": 0,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 3,
+        "md_start_line": 119,
+        "md_end_line": 165,
+        "text_layer_sha256": "bab8e455a1d2e109e1970d561fcfdfe6000e6c36fc31c607441014993cf986ef",
+        "text_layer_char_count": 1127,
+        "image_objects": 0,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 4,
+        "md_start_line": 170,
+        "md_end_line": 189,
+        "text_layer_sha256": "6857a6521dd344ee5becc8f7d4fe177d5c22a5a13abb3e53ec845f8251875810",
+        "text_layer_char_count": 132,
+        "image_objects": 1,
+        "status": "text_layer_extracted"
+      },
+      {
+        "page": 5,
+        "md_start_line": 194,
+        "md_end_line": 195,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0,
+        "image_objects": 0,
+        "status": "no_text_layer_content"
+      }
+    ],
+    "quality_issues": [
+      "图片未嵌入MD，使用各页RAW链接核对；保留原始材料的既有质量问题。",
+      "文字来自PDF文本层，字形、阅读顺序、代码缩进、表格结构及裁切显示一致性仍可能需人工核验。"
+    ],
+    "personal_notes_modified": false
+  },
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AGENTS规则.md",
+    "prompts": "PROMPT.md"
+  },
+  "migration_history": [
+    {
+      "date": "2026-10-08",
+      "previous_directory": "10_articles/腾讯技术工程/2026-09-16_AGENTS规则与过度工程__art-0005",
+      "current_directory": "腾讯技术工程/AGENTS规则+26.9.16",
+      "previous_article_readme": "# 看完我的AGENTS.md，你将看到我和不说人话且over-engineering的模型搏斗的这一生\n\n公众号：腾讯技术工程；作者：daisy；页面日期：2026-09-16（时区未确认）。\n\n## 阅读与使用\n\n- [整篇学习笔记](run/learning_note.md)\n- [Prompt合集](run/prompts.md)\n\n## 原始材料\n\n- [归档PDF](source/capture-001.pdf)\n\n图片或附件有缺失，详见下文。已确认可读内容已整理，未将加工完成标为原文完整核验通过。\n",
+      "file_mapping": {
+        "source/capture-001.pdf": "RAW.pdf",
+        "metadata.json": "META.json",
+        "run/run.json": "META.json",
+        "README.md": "MD.md",
+        "run/learning_note.md": "AI_AGENTS规则.md",
+        "run/prompts.md": "PROMPT.md"
+      },
+      "existing_ai_summaries": "preserved_with_link_updates; no_new_summary_generated",
+      "personal_note_template": "90_templates/个人笔记模板.md; create_only_on_user_request_or_start_of_personal_notes"
+    },
+    {
+      "status": "migrated_verified",
+      "copied_at": "2026-10-14T23:52:08-07:00",
+      "removed_at": "2026-10-14T23:54:25-07:00",
+      "files": [
+        {
+          "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/看完我的AGENTS.md，你将看到我和不说人话且over-engineering的模型搏斗的这一生.pdf",
+          "destination_path": "RAW_补采001.pdf",
+          "sha256": "dfc5587ff56785b4964722c64e9b662f2a281c8d9487181538c64b6478f3c53b",
+          "copied_at": "2026-10-14T23:52:08-07:00",
+          "removed_at": "2026-10-14T23:54:25-07:00"
+        }
+      ],
+      "verified_at": "2026-10-14T23:54:24-07:00",
+      "record_status": "historical_migration_of_now_missing_capture_002"
+    }
+  ],
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Prompt优化.md",
+      "../../20_topics/Skill设计与治理.md",
+      "../../20_topics/问题澄清.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "unavailable_captures": [
+    {
+      "capture_id": "capture-002",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/看完我的AGENTS.md，你将看到我和不说人话且over-engineering的模型搏斗的这一生.pdf",
+      "original_filename": "看完我的AGENTS.md，你将看到我和不说人话且over-engineering的模型搏斗的这一生.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "dfc5587ff56785b4964722c64e9b662f2a281c8d9487181538c64b6478f3c53b",
+      "size_bytes": 6142575,
+      "page_count": 9,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "文章呈现个人规则与经验，没有对照实验、量化指标或跨项目验证；留言和平台生成的摘要不构成效果证据。",
+          "pages": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "status": "source_limitation"
+        }
+      ],
+      "publication_evidence": "PDF第1页刊头显示 Sep 16, 2026, 3:25 AM；作者栏为 daisy。",
+      "former_path": "RAW_补采001.pdf",
+      "availability": "missing_on_2026-10-15"
+    }
+  ],
+  "archive_maintenance": {
+    "checked_on": "2026-10-15",
+    "active_capture_id": "capture-001",
+    "reason": "补采002的PDF、转写和AI笔记在本库及Downloads未找到；恢复指向实际保存且内容对应的capture-001。",
+    "available_files": {
+      "AI_AGENTS规则.md": "8f228176273cbc2b77320bf2463b4d8db46d3c1016db81ed6e0875db927cc2e8",
+      "RAW.pdf": "ee6e81186109f2392b01022aa6c057b64aa52e4da17e6c4d1166e13982cfd4bb",
+      "PROMPT.md": "e42202778577a36d4ad5ecb5b84d8cf52ff14ddc4aa4c4447180f418a75bb139",
+      "MD.md": "6c0940b9e6b9165fece7c725bcd09c4374cc8993ca162374d9c8a0ee4e4ee839"
+    },
+    "missing_artifacts": [
+      {
+        "former_path": "MD_补采001.md",
+        "sha256": "0c104f6f04d6ccc9a136a42639767da774cd8335d5b62856c809de9ce51d2f3c"
+      },
+      {
+        "former_path": "AI_AGENTS规则_补充001.md",
+        "sha256": "14073a6aef957b916e60d8798f65e64c13806d955de98d5aeddd4f16c92b23a7"
+      }
+    ],
+    "quality_boundary": "当前PDF为5页早期版，原第4页缺图及原始规则附件未取得的问题保留；不承接缺失9页补采版的完整性或核验结论。",
+    "search_scope": [
+      "/Users/iw/Documents/WeChat_read",
+      "/Users/iw/Downloads"
+    ],
+    "markdown_links_updated": 10
+  },
+  "ai_note": "AI_AGENTS规则.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

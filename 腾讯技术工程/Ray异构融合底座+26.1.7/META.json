@@ -1,0 +1,559 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0151",
+  "title": "Ray异构融合底座重构数据管道：架构演进与万卡落地实践",
+  "short_title": "Ray异构融合底座",
+  "account": "腾讯技术工程",
+  "author": "gray",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-01-07T03:10",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Ray异构融合底座重构数据管道：架构演进与万卡落地实践.pdf",
+      "original_filename": "Ray异构融合底座重构数据管道：架构演进与万卡落地实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "1657a6b40de9067c45ed0ad9928347707366b46dd6aef1b3ef39ff2f952602e8",
+      "size_bytes": 6521042,
+      "page_count": 21,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "部分生产收益缺少完整的基线、置信区间、硬件和负载配置，无法由本文独立复核或外推。",
+          "pages": [
+            19,
+            20,
+            21
+          ],
+          "status": "原文信息不完整"
+        },
+        {
+          "description": "计算与存储分离的恢复语义、外部副作用幂等保障未按所有任务类型完整展开。",
+          "pages": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "status": "原文信息不完整"
+        }
+      ],
+      "publication_evidence": "PDF 第1页标注 2026-01-07 03:10；未见时区"
+    }
+  ],
+  "tags": [
+    "Agent工程循环",
+    "具身智能数据闭环",
+    "数据湖表与互操作",
+    "异常监控与稳定性",
+    "AI研发协同",
+    "分布式计算与数据管道"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Ray异构融合底座+26.1.7",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Ray异构融合底座.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "Ray 异构融合底座重构数据管道:架构演进与万卡落地实践\n腾讯程序员 2026 年 1 月 7 日 03 : 10广东原创 腾讯技术工程 8 人\n作者:gray\n 一、传统大数据引擎在 AI 数据管道中的局限性\n1. 数据管道的本质是离线推理\n数据管道的流程如下:\n数据管道的本质需求\n乍看之下,混元数据管道的形态与传统大数据 ETL 任务颇为相似:两者均属批处理范畴,且输入\n输出端通常对接湖仓表格(如 Iceberg )。然而,深入剖析其内部逻辑可知,数据管道处理的主体\n并非表格数据本身,而是其索引的海量非结构化多模态数据(通常存储于 COS 等对象存储中),\nIceberg 表在此仅承担元数据索引的角色。\n随着大语言模型和多模态技术的蓬勃发展,非结构化多模态数据处理已经成为数据处理\n的重要组成部分。面对海量数据与复杂模型带来的挑战,传统大数据引擎在异构资源调\n度、 Python 生态兼容性等方面的局限性日益凸显。本文将详述基于异构融合底座 Ray 重\n构混元数据管道的相关工作,通过云原生调度融合、计算范式统一及平台化建设,构建\n高效灵活的新一代 AI 数据底座,并深入解析我们在容错、资源利用率、规模化、可观测\n性等方面的优化实践。\n",
+    "publication_evidence": "PDF 第1页标注 2026-01-07 03:10；未见时区",
+    "full_title_in_capture": "Ray异构融合底座重构数据管道：架构演进与万卡落地实践",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0151",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "1657a6b40de9067c45ed0ad9928347707366b46dd6aef1b3ef39ff2f952602e8"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "部分生产收益缺少完整的基线、置信区间、硬件和负载配置，无法由本文独立复核或外推。",
+        "pages": [
+          19,
+          20,
+          21
+        ],
+        "status": "原文信息不完整"
+      },
+      {
+        "description": "计算与存储分离的恢复语义、外部副作用幂等保障未按所有任务类型完整展开。",
+        "pages": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "status": "原文信息不完整"
+      }
+    ],
+    "outputs": [
+      "AI_Ray异构融合底座.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "detail_pages_reviewed": [
+        5,
+        8,
+        12,
+        14,
+        15,
+        19
+      ]
+    },
+    "coverage": "覆盖离线非结构化多模态推理任务、Ray Data 流批处理、KubeRay/联邦集群、抢占资源下的计算存储分离、扩展验收、可观测性与生产收益案例。",
+    "fact_checks": [
+      {
+        "item": "高优先级任务耗时对比",
+        "note_value": "常规 16.21h；分离 16.25h",
+        "source_value": "16.21h / 16.25h",
+        "pages": [
+          12
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "弹性卡任务对比",
+        "note_value": "分离 17.32h 完成；常规模式失败",
+        "source_value": "17.32h 完成；常规模式失败",
+        "pages": [
+          12
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "稳定资源示例",
+        "note_value": "约 5%；20 个推理实例对应 1 个稳定资源实例",
+        "source_value": "约 5%；20实例/1稳定实例",
+        "pages": [
+          12,
+          13
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "扩展验收规模",
+        "note_value": "500节点/1万actors/2万blocks/5 operators 至 2,000节点/4万actors/12万blocks/20 operators",
+        "source_value": "500/1万/2万/5 至 2,000/4万/12万/20",
+        "pages": [
+          14,
+          15,
+          16,
+          17
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "四类生产收益",
+        "note_value": "音频成本节省90%；多模态GPU利用率3倍以上；文本成功率+40%；研发效率1–3倍",
+        "source_value": "90%；3倍以上；40%；1–3倍",
+        "pages": [
+          19,
+          20,
+          21
+        ],
+        "result": "一致，限定为不同管线报告"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Ray异构融合底座.md",
+      "sha256": "6ebfacec012b5e33248c42ad3678f2fb5279119f3ba4e41502cc0cdaed874e85"
+    },
+    "independent_crosscheck": {
+      "reviewer": "Codex crosscheck group2",
+      "note_sha256": "7b0c5061c18a193cebca48dc0c4f9ba31bf28fa70ac660ac20cd64dd4c178601",
+      "review_sha256": "69aa5f053d7718634986d6266a929cdad5fc7750e500fe56d7f3e7e235435c9e",
+      "status": "passed",
+      "changes": [
+        "统一卡片标题和文末折叠报告。"
+      ],
+      "source_spotchecks": [
+        {
+          "source": "reading.txt; sheet-001.jpg; sheet-013.jpg",
+          "pages": [
+            1,
+            12,
+            14,
+            15,
+            18,
+            19,
+            20
+          ],
+          "finding": "核对日期署名、实验耗时、资源比例、扩展规模及生产收益；各指标保留各自条件。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "1657a6b40de9067c45ed0ad9928347707366b46dd6aef1b3ef39ff2f952602e8"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "82d6c7cfc994fd54c1ae69b75b1a404ad8c33f40f5e38f8dda399080943674ac"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 26,
+        "text_layer_sha256": "74f4aced0d010327f1afab0a3b528c6c9e90f1fb641b1a343ca14a4a7e9af560",
+        "text_layer_char_count": 525
+      },
+      {
+        "page": 2,
+        "md_start_line": 34,
+        "md_end_line": 51,
+        "text_layer_sha256": "00d00ea64e253bbfb2fbacc5780bc7f384216e0ba532f59c5d3b48a3f4e5c4b6",
+        "text_layer_char_count": 728
+      },
+      {
+        "page": 3,
+        "md_start_line": 59,
+        "md_end_line": 72,
+        "text_layer_sha256": "cd7102ab7693ff0b0d586e9d2149bcd215749414a7dde942e02f7142613cf84f",
+        "text_layer_char_count": 493
+      },
+      {
+        "page": 4,
+        "md_start_line": 80,
+        "md_end_line": 101,
+        "text_layer_sha256": "ab6bf831f00beba0943d19512c734c80cfb7344779812936c67e0c7baff3beee",
+        "text_layer_char_count": 812
+      },
+      {
+        "page": 5,
+        "md_start_line": 109,
+        "md_end_line": 126,
+        "text_layer_sha256": "e374edd1e2486cc37f6ce278e504e29bc08c3826a4f1f7820fdd11026527624d",
+        "text_layer_char_count": 848
+      },
+      {
+        "page": 6,
+        "md_start_line": 134,
+        "md_end_line": 146,
+        "text_layer_sha256": "a92276abfef5f0fda0a77f808a8795501c077978b059098badc8ff709fe22a6c",
+        "text_layer_char_count": 567
+      },
+      {
+        "page": 7,
+        "md_start_line": 154,
+        "md_end_line": 170,
+        "text_layer_sha256": "87823f5bac7129dc244aca3dd35437c3b4dc8a8baaf184ee81959dfa1889a2bf",
+        "text_layer_char_count": 709
+      },
+      {
+        "page": 8,
+        "md_start_line": 178,
+        "md_end_line": 191,
+        "text_layer_sha256": "59180158aff03af53130a641616bde1dda54a3e7fe01c508bf091d64fed83ce9",
+        "text_layer_char_count": 547
+      },
+      {
+        "page": 9,
+        "md_start_line": 199,
+        "md_end_line": 225,
+        "text_layer_sha256": "086b6d0b268ce1a2763d3770199e2c5466f787f9de0c9c73a7903a50381f58ee",
+        "text_layer_char_count": 1124
+      },
+      {
+        "page": 10,
+        "md_start_line": 233,
+        "md_end_line": 250,
+        "text_layer_sha256": "7b98d8713139fc2a680f57ab0cdc41e95f6990b2d786cf386c32da8e690f8c5e",
+        "text_layer_char_count": 614
+      },
+      {
+        "page": 11,
+        "md_start_line": 258,
+        "md_end_line": 273,
+        "text_layer_sha256": "d729dc2bb1eca2b1d621b119b5e1513f995ffa58dd414055c558f3fedd059d32",
+        "text_layer_char_count": 658
+      },
+      {
+        "page": 12,
+        "md_start_line": 281,
+        "md_end_line": 302,
+        "text_layer_sha256": "8bda4770220c07acb9eefd389edca415d4d22fcc96a81270e68ad3038beab3a0",
+        "text_layer_char_count": 993
+      },
+      {
+        "page": 13,
+        "md_start_line": 310,
+        "md_end_line": 322,
+        "text_layer_sha256": "54a7b9f87ba00206aeb84263e0007cf06a48b92c9d526a71f46ecd20285d3e37",
+        "text_layer_char_count": 479
+      },
+      {
+        "page": 14,
+        "md_start_line": 330,
+        "md_end_line": 365,
+        "text_layer_sha256": "3fd10464f4f5117b329a6a376d2c940dddfe1eec8f5137981ea1ecc06d100e7a",
+        "text_layer_char_count": 1586
+      },
+      {
+        "page": 15,
+        "md_start_line": 373,
+        "md_end_line": 400,
+        "text_layer_sha256": "8c913299518ce11dcfd236882da0574135dea1f69b0e63f24eca71873e7fa847",
+        "text_layer_char_count": 1233
+      },
+      {
+        "page": 16,
+        "md_start_line": 408,
+        "md_end_line": 441,
+        "text_layer_sha256": "47cc68fc80f1d996f569ed3897336dfdb18fed9ab0298f0313f2afc6fadec415",
+        "text_layer_char_count": 1429
+      },
+      {
+        "page": 17,
+        "md_start_line": 449,
+        "md_end_line": 466,
+        "text_layer_sha256": "af7caa7ee3836f80da758f889503494eb391df6202d7773d5fee94269f1fc824",
+        "text_layer_char_count": 695
+      },
+      {
+        "page": 18,
+        "md_start_line": 474,
+        "md_end_line": 486,
+        "text_layer_sha256": "9d10193cc829f05dbc46a6364ad789fd40a3beec70d72c6ee787b8fc8f568e2e",
+        "text_layer_char_count": 506
+      },
+      {
+        "page": 19,
+        "md_start_line": 494,
+        "md_end_line": 508,
+        "text_layer_sha256": "fc66de5f51a14c15b5a38a41ce7916101165b22bf0c7326f1c57d907fe3bde72",
+        "text_layer_char_count": 488
+      },
+      {
+        "page": 20,
+        "md_start_line": 516,
+        "md_end_line": 520,
+        "text_layer_sha256": "ae2a4c41994067e9dc552037b8ac304939072f6e14ee7ec18b2e8c69a318730e",
+        "text_layer_char_count": 103
+      },
+      {
+        "page": 21,
+        "md_start_line": 528,
+        "md_end_line": 528,
+        "text_layer_sha256": "c01129305e3f2701794b59ab978930dc476ea9901ce49f19b59c02b18c1e3171",
+        "text_layer_char_count": 11
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "detail_pages_reviewed": [
+        5,
+        8,
+        12,
+        14,
+        15,
+        19
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "部分生产收益缺少完整的基线、置信区间、硬件和负载配置，无法由本文独立复核或外推。",
+        "pages": [
+          19,
+          20,
+          21
+        ],
+        "status": "原文信息不完整"
+      },
+      {
+        "description": "计算与存储分离的恢复语义、外部副作用幂等保障未按所有任务类型完整展开。",
+        "pages": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "status": "原文信息不完整"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Ray异构融合底座重构数据管道：架构演进与万卡落地实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "1657a6b40de9067c45ed0ad9928347707366b46dd6aef1b3ef39ff2f952602e8",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/分布式计算与数据管道.md",
+      "../../20_topics/数据湖表与互操作.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Ray异构融合底座.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

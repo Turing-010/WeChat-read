@@ -1,0 +1,376 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0192",
+  "title": "AI理解、引擎驱动：零代码搭建实时数据链路",
+  "short_title": "零代码实时数据链路",
+  "account": "大淘宝技术",
+  "author": "曦溪",
+  "author_byline": "本文作者曦溪，来自淘天集团-直播技术数据团队。",
+  "source_url": null,
+  "published_at": "2026-08-18",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "直播技术团队 2026年8月18日 23:31 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 13,
+      "text": "本文作者曦溪，来自淘天集团-直播技术数据团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "分布式计算与数据管道",
+    "Agent数据分析",
+    "Harness与模型协同",
+    "决策知识结构化"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/AI理解、引擎驱动：零代码搭建实时数据链路.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T02:20:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "5e3bf026b078ccb5decf0b143b5e699529d8fc2646c728ef8cb024a954ff7e48",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.10存在原文笔误（“从体检来看：在与用户的人工交互环节”中“体检”应为“体验”）；p.2-8产品界面与生成SQL截图位于PDF图像层，正文已给出完整拓扑分层与Hook协议JSON。",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "verification_status": "actual_text_review"
+        }
+      ],
+      "size_bytes": 5790755,
+      "page_count": 14
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T02:20:00-07:00",
+  "directory": "大淘宝技术/零代码实时数据链路+26.8.18",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_零代码实时数据链路.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0192",
+    "created_at": "2026-10-20T02:20:00-07:00",
+    "updated_at": "2026-10-20T02:20:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "5e3bf026b078ccb5decf0b143b5e699529d8fc2646c728ef8cb024a954ff7e48"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "10a246cbcad9abeb8e42afae217a77e646705f4c11bbd830d2df6db19d6f7b25"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.10存在原文笔误（“从体检来看：在与用户的人工交互环节”中“体检”应为“体验”）；p.2-8产品界面与生成SQL截图位于PDF图像层，正文已给出完整拓扑分层与Hook协议JSON。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10
+        ],
+        "verification_status": "actual_text_review"
+      }
+    ],
+    "outputs": [
+      "AI_零代码实时数据链路.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_零代码实时数据链路.md",
+      "sha256": "843318449b6e964cfe88a80ada59cbb71577250061fffce5cc2382e682674855"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T02:20:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "5e3bf026b078ccb5decf0b143b5e699529d8fc2646c728ef8cb024a954ff7e48"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "10a246cbcad9abeb8e42afae217a77e646705f4c11bbd830d2df6db19d6f7b25"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "md_end_line": 73,
+        "md_start_line": 14,
+        "page": 1,
+        "text_layer_char_count": 890,
+        "text_layer_sha256": "3e350769a8fe988b582f8df589185aafe5a992116c88d39b4f469a3bf89e28d9"
+      },
+      {
+        "md_end_line": 91,
+        "md_start_line": 83,
+        "page": 2,
+        "text_layer_char_count": 176,
+        "text_layer_sha256": "093dd42e5dd88f873c65511f2aabc9dd065d565f83b194ba4d6be583402a9186"
+      },
+      {
+        "md_end_line": 110,
+        "md_start_line": 101,
+        "page": 3,
+        "text_layer_char_count": 128,
+        "text_layer_sha256": "de87aff789d2684ade4f5d7f89187a86945263f023219ba5c07a677aead2e041"
+      },
+      {
+        "md_end_line": 151,
+        "md_start_line": 120,
+        "page": 4,
+        "text_layer_char_count": 400,
+        "text_layer_sha256": "0329eb6993610821bf7a7a13d2d412762e3a4500255812b9c55709351df9e27d"
+      },
+      {
+        "md_end_line": 190,
+        "md_start_line": 161,
+        "page": 5,
+        "text_layer_char_count": 484,
+        "text_layer_sha256": "57c828b7a028394598f7f74bbc6de51abe37a89338ad109b14b20021392d4437"
+      },
+      {
+        "md_end_line": 223,
+        "md_start_line": 200,
+        "page": 6,
+        "text_layer_char_count": 254,
+        "text_layer_sha256": "ea499a8e0544d7f16976fa41f8067ca258470d87ec5975d16546001b7ff01813"
+      },
+      {
+        "md_end_line": 248,
+        "md_start_line": 233,
+        "page": 7,
+        "text_layer_char_count": 264,
+        "text_layer_sha256": "69632ec7531c8b747cb19caf132637b78429275ab16aa1a7618e52c5f767e362"
+      },
+      {
+        "md_end_line": 282,
+        "md_start_line": 258,
+        "page": 8,
+        "text_layer_char_count": 377,
+        "text_layer_sha256": "4769cc683f6a1eedc1cf53523d1806b73f1b1d44162839561fdb074ea0518483"
+      },
+      {
+        "md_end_line": 390,
+        "md_start_line": 292,
+        "page": 9,
+        "text_layer_char_count": 856,
+        "text_layer_sha256": "0d35385ccffa71410d7cc868a18fab815e1c7e22ab9e1da01db299e85d926e96"
+      },
+      {
+        "md_end_line": 479,
+        "md_start_line": 400,
+        "page": 10,
+        "text_layer_char_count": 1138,
+        "text_layer_sha256": "7c36c3ded0d72aaebe2a27939ab5e1f09fe29ba9c66f7c8275ff1889c6e6580b"
+      },
+      {
+        "md_end_line": 555,
+        "md_start_line": 489,
+        "page": 11,
+        "text_layer_char_count": 866,
+        "text_layer_sha256": "22772ed30ba356f83bb4ac03e0ce1086e40ed8a203b356e6d267dc8dca291efe"
+      },
+      {
+        "md_end_line": 644,
+        "md_start_line": 565,
+        "page": 12,
+        "text_layer_char_count": 1127,
+        "text_layer_sha256": "e643eb07e8073f316d1e67a917c7b1241e4a5a2da074b32df4020efcb6c37f40"
+      },
+      {
+        "md_end_line": 710,
+        "md_start_line": 654,
+        "page": 13,
+        "text_layer_char_count": 986,
+        "text_layer_sha256": "9a27aaa288ec4e3bccf1717c736592d4f630dc6f5b73a20544cb27d4193c3b3f"
+      },
+      {
+        "md_end_line": 731,
+        "md_start_line": 720,
+        "page": 14,
+        "text_layer_char_count": 106,
+        "text_layer_sha256": "bca81a02bd877364dfbcb9a191b17ca39056e9f9212a6c20e7b2aeb4449611a7"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.10存在原文笔误（“从体检来看：在与用户的人工交互环节”中“体检”应为“体验”）；p.2-8产品界面与生成SQL截图位于PDF图像层，正文已给出完整拓扑分层与Hook协议JSON。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10
+        ],
+        "verification_status": "actual_text_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent数据分析.md",
+      "../../20_topics/决策知识结构化.md",
+      "../../20_topics/分布式计算与数据管道.md",
+      "../../20_topics/解决问题.md",
+      "../../20_topics/问题澄清.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed_sources_removed",
+    "copied_at": "2026-10-20T02:20:00-07:00",
+    "removed_at": "2026-10-20T02:26:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI理解、引擎驱动：零代码搭建实时数据链路.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "5e3bf026b078ccb5decf0b143b5e699529d8fc2646c728ef8cb024a954ff7e48",
+        "copied_at": "2026-10-20T02:20:00-07:00",
+        "removed_at": "2026-10-20T02:26:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_零代码实时数据链路.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

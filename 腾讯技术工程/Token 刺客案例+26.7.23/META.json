@@ -1,0 +1,412 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0183",
+  "title": "鹅厂员工都碰到过哪些 Token 刺客？",
+  "short_title": "Token 刺客案例",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-07-23T02:44",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/鹅厂员工都碰到过哪些Token刺客？.pdf",
+      "original_filename": "鹅厂员工都碰到过哪些Token刺客？.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "860db3aa40dd93a7c2becfa2ff6cffa3368455635217b9e52ee290ce02a104dd",
+      "size_bytes": 12393526,
+      "page_count": 14,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "token 数字来自员工案例或估算，缺少统一 tokenizer、模型和统计口径；不能视为可比基准。",
+          "pages": [
+            2,
+            5,
+            8,
+            12
+          ],
+          "status": "已标注案例性质"
+        }
+      ],
+      "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。"
+    }
+  ],
+  "tags": [
+    "Agent成本与上下文预算",
+    "Prompt优化",
+    "Agent工程循环"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/Token 刺客案例+26.7.23",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Token 刺客案例.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "鹅厂员工都碰到过哪些 Token 刺客?\n腾讯程序员 Jul  23 , 2026 , 2 : 44  AM广东原创 腾讯技术工程 314  listened\n话题背景\n不知道大家有没有碰到过 Token 刺客的情况,最简单的操作需求、报错自查重试、上下文越\n滚越大  Token 消耗哗哗的狂飙,看一眼余额才月初就不够用了!\n本期来看下鹅厂同学们都碰到什么样的 Token 刺客吧 ! (文末有奖)\n01\ntokenking- 技术产品\n上次输出原型本来只想让  AI 帮我改个前端组件的样式,顺手把整个 src 目录都喂进去\n了,心想 “ 反正它聪明,自己找文件呗 ” 。好家伙,它真去找了,把一堆 i18n 文案、\nmock 数据全读了一遍,吐出来一堆根本不需要动的代码,一看记录:token 消耗量直\n接爆炸,感觉像钱包被偷了。\n  不过最头疼的还是 Agent 跑偏,有时候它开始胡扯,我还抱着侥幸心理等它 “ 自我修\n正 ” ,结果越修越离谱, token 蹭蹭涨。 现在我学会了一个字:断。发现不对劲立⻢掐\n掉,比月底看面板的时候心疼强。\n",
+    "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。",
+    "full_title_in_capture": "鹅厂员工都碰到过哪些 Token 刺客？",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0183",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "860db3aa40dd93a7c2becfa2ff6cffa3368455635217b9e52ee290ce02a104dd"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "token 数字来自员工案例或估算，缺少统一 tokenizer、模型和统计口径；不能视为可比基准。",
+        "pages": [
+          2,
+          5,
+          8,
+          12
+        ],
+        "status": "已标注案例性质"
+      }
+    ],
+    "outputs": [
+      "AI_Token 刺客案例.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        2,
+        5
+      ]
+    },
+    "coverage": "覆盖员工对 token 消耗来源的匿名/个人案例：过量上下文、反复加载历史、顺手扩需求、超长输出、MCP 工具描述、失败重试、脚本批处理及格式选择。第14页无正文。 全部 14 页均核对文字层和缩略图；末页检查结果见笔记校对报告。",
+    "fact_checks": [
+      {
+        "claim": "上下文从约 2k 涨到 50k+",
+        "page": "p.2",
+        "result": "员工案例汇总，口径未统一"
+      },
+      {
+        "claim": "20+ MCP 工具 schema 约 3–5k token",
+        "page": "p.5",
+        "result": "文章估计/案例"
+      },
+      {
+        "claim": "超过 2 次重试建议停止",
+        "page": "p.8",
+        "result": "作者经验建议"
+      },
+      {
+        "claim": "文章包含 10 million tokens 极端说法",
+        "page": "p.12",
+        "result": "评论/个案，未经核验"
+      },
+      {
+        "claim": "共 14 页，末页无正文",
+        "page": "p.14",
+        "result": "逐页检查"
+      },
+      {
+        "claim": "PDF末页 p.14 内容",
+        "source_value": "空白页/空评论区，无额外正文",
+        "pages": [
+          14
+        ],
+        "result": "已核对提取文字与页图；未见正文或评论"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Token 刺客案例.md",
+      "sha256": "6c79361d8447de0e7139af75603fbdb5c6ecf1ca2de12afd2f3a14a4b072e422"
+    },
+    "independent_crosscheck": {
+      "reviewer": "crosscheck_c",
+      "note_sha256": "6c79361d8447de0e7139af75603fbdb5c6ecf1ca2de12afd2f3a14a4b072e422",
+      "review_sha256": "eb0b98768453e85091c287c5a5bbd32ca7c6e2cadc561afe563bed530a440492",
+      "status": "passed",
+      "changes": [
+        "Added the p.14 blank-page extraction/image check; review now accounts for all 14 physical pages."
+      ],
+      "source_spotchecks": [
+        "p.5 enlarged image confirms MCP schema/context-growth/retry figures and the batching anecdote; extracted text p.7–14 supports limits, comments attribution, and blank p.14.",
+        "p.14 extracted text is empty and the page image is blank; no content was omitted."
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "860db3aa40dd93a7c2becfa2ff6cffa3368455635217b9e52ee290ce02a104dd"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "fd511e3cf57900069c02bca22ed1a9ee3cb715a32d0284fb8ce554f5b336c0b8"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 24,
+        "text_layer_sha256": "a3da5ff964ca327cd0917e5546036a3547369dfa5862b8eddaad62777888f257",
+        "text_layer_char_count": 477
+      },
+      {
+        "page": 2,
+        "md_start_line": 32,
+        "md_end_line": 46,
+        "text_layer_sha256": "197bef67ae58325976a5871154b87d7774509ec9de468aead28711df860f545a",
+        "text_layer_char_count": 422
+      },
+      {
+        "page": 3,
+        "md_start_line": 54,
+        "md_end_line": 64,
+        "text_layer_sha256": "42bd5d5b999665c94d6b77e853067e66669be54c3c4c59b9da066f7f2cae3ca0",
+        "text_layer_char_count": 268
+      },
+      {
+        "page": 4,
+        "md_start_line": 72,
+        "md_end_line": 86,
+        "text_layer_sha256": "19756502d037d7d25bfe882b97ebf633d2fd63fccfb9addc4ee583f819952c00",
+        "text_layer_char_count": 352
+      },
+      {
+        "page": 5,
+        "md_start_line": 94,
+        "md_end_line": 110,
+        "text_layer_sha256": "253fb55472bdfded4aae9f90657e79959fa695624edf74193630a9252a3cfe05",
+        "text_layer_char_count": 486
+      },
+      {
+        "page": 6,
+        "md_start_line": 118,
+        "md_end_line": 127,
+        "text_layer_sha256": "bcea5f60579bbd555284e4efda2f4c91217d8cbde12213c19350d550f8c5befe",
+        "text_layer_char_count": 190
+      },
+      {
+        "page": 7,
+        "md_start_line": 135,
+        "md_end_line": 150,
+        "text_layer_sha256": "98a01cf75ae9c8b10b9de6e4da645e45f830036ad9d88486c3d119fb5e453f42",
+        "text_layer_char_count": 358
+      },
+      {
+        "page": 8,
+        "md_start_line": 158,
+        "md_end_line": 201,
+        "text_layer_sha256": "c2dd4e44acd9339381aa7fa86f33a3670efa9b570a926b435159fd114cc9dd2f",
+        "text_layer_char_count": 1105
+      },
+      {
+        "page": 9,
+        "md_start_line": 209,
+        "md_end_line": 259,
+        "text_layer_sha256": "e7b2be86aaa2c01b54c0a598bfae494e536636265fcfc732141ede34ef9b8ad5",
+        "text_layer_char_count": 1467
+      },
+      {
+        "page": 10,
+        "md_start_line": 267,
+        "md_end_line": 312,
+        "text_layer_sha256": "71acf1c9d8ee46196b1f3cae49e1b8fbd6aa19e583a2ff0b44c6815d6ec59d6e",
+        "text_layer_char_count": 1164
+      },
+      {
+        "page": 11,
+        "md_start_line": 320,
+        "md_end_line": 354,
+        "text_layer_sha256": "eebab9ddb382883f63a13c5e9c82649481615e1c82c6554ca911acf00eef0bad",
+        "text_layer_char_count": 1033
+      },
+      {
+        "page": 12,
+        "md_start_line": 362,
+        "md_end_line": 402,
+        "text_layer_sha256": "83a837e921c5991a653458b90c470151ddc6fc7afb01f74bc691ff616c0d7567",
+        "text_layer_char_count": 1259
+      },
+      {
+        "page": 13,
+        "md_start_line": 410,
+        "md_end_line": 443,
+        "text_layer_sha256": "1e17001ad617e1b2a074bb3bfb1f23c114279add3cf0e606063d352b74b5f042",
+        "text_layer_char_count": 970
+      },
+      {
+        "page": 14,
+        "md_start_line": 451,
+        "md_end_line": 450,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        2,
+        5
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "token 数字来自员工案例或估算，缺少统一 tokenizer、模型和统计口径；不能视为可比基准。",
+        "pages": [
+          2,
+          5,
+          8,
+          12
+        ],
+        "status": "已标注案例性质"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/鹅厂员工都碰到过哪些Token刺客？.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "860db3aa40dd93a7c2becfa2ff6cffa3368455635217b9e52ee290ce02a104dd",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent成本与上下文预算.md",
+      "../../20_topics/Harness与模型协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Token 刺客案例.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

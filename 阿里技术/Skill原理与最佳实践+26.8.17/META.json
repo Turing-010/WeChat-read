@@ -1,0 +1,463 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0027",
+  "title": "Harness 工程之道：Skill 原理与最佳实践",
+  "short_title": "Skill原理与最佳实践",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "张梦杰",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-17T04:05",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "text": [
+      "Harness ⼯程之道：Skill 原理与最佳实践",
+      "张梦杰 阿⾥技术 2026年8⽉17⽇ 04:05 浙江 107⼈",
+      "这是2026年的第 52 篇⽂章"
+    ]
+  },
+  "tags": [
+    "Harness与模型协同",
+    "Agent评测与反馈",
+    "Agent任务恢复",
+    "Agent长期记忆"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/Harness 工程之道：Skill 原理与最佳实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:37:19-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "342a8eb58bc254fc9fb33f26eed1d2da81a677fd3b97aac01e1fd698b22fa227",
+      "size_bytes": 5165819,
+      "page_count": 14,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "目录注释及部分长行右裁切",
+          "pages": [
+            3,
+            8,
+            12
+          ],
+          "evidence_type": "page_image",
+          "classification": "source_clipping"
+        },
+        {
+          "description": "零成本与元信息常驻、必填与省略默认、两级与四类作用域未展开口径",
+          "pages": [
+            2,
+            4,
+            6
+          ],
+          "evidence_type": "text",
+          "classification": "source_ambiguity"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:37:19-07:00",
+  "directory": "阿里技术/Skill原理与最佳实践+26.8.17",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Skill原理与最佳实践.md",
+    "prompts": "PROMPT.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0027",
+    "created_at": "2026-10-13T02:37:19-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "342a8eb58bc254fc9fb33f26eed1d2da81a677fd3b97aac01e1fd698b22fa227"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "目录注释及部分长行右裁切",
+        "pages": [
+          3,
+          8,
+          12
+        ],
+        "evidence_type": "page_image",
+        "classification": "source_clipping"
+      },
+      {
+        "description": "零成本与元信息常驻、必填与省略默认、两级与四类作用域未展开口径",
+        "pages": [
+          2,
+          4,
+          6
+        ],
+        "evidence_type": "text",
+        "classification": "source_ambiguity"
+      }
+    ],
+    "outputs": [
+      "AI_Skill原理与最佳实践.md",
+      "PROMPT.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [
+      {
+        "kind": "prompt",
+        "status": "complete_short_examples",
+        "pages": [
+          11,
+          12
+        ],
+        "count": 6,
+        "file": "PROMPT.md",
+        "description": "六条作者告诉AI的简短创建/更新指令，xxx占位符照原文保留；未执行"
+      },
+      {
+        "kind": "skill",
+        "status": "fragment_only",
+        "pages": [
+          3,
+          7,
+          8
+        ],
+        "description": "frontmatter、路由和目录片段，不是完整可安装Skill"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        4,
+        7,
+        8
+      ]
+    },
+    "coverage": [
+      {
+        "name": "原理",
+        "pages": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "结构字段",
+        "pages": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "触发与作用域",
+        "pages": [
+          5,
+          6
+        ]
+      },
+      {
+        "name": "工程最佳实践",
+        "pages": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "创建流程与参考",
+        "pages": [
+          10,
+          11,
+          12
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_Skill原理与最佳实践.md",
+      "sha256": "37957a2cf8a5dabb7a894c4a329ee221eb1fec711a382ba603907f8b3e957446"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:37:19-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "342a8eb58bc254fc9fb33f26eed1d2da81a677fd3b97aac01e1fd698b22fa227"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "80b529427ab7b757815af78736f85e7ed13952d93876deb3e19b81e439129c87"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 30,
+        "text_layer_sha256": "ee7caacaf37bc830127660f00a42ee58b22b93f75ce4d26f1e2012297ecd12b5",
+        "text_layer_char_count": 617
+      },
+      {
+        "page": 2,
+        "md_start_line": 38,
+        "md_end_line": 66,
+        "text_layer_sha256": "1b704a3120062635f91c1918560b2e87db875e1d80e42aab837225bb917c2904",
+        "text_layer_char_count": 1077
+      },
+      {
+        "page": 3,
+        "md_start_line": 74,
+        "md_end_line": 101,
+        "text_layer_sha256": "5b0b9c878ef7171f09dafcac871bc08a9121c63202777805b976c18ba2e28c30",
+        "text_layer_char_count": 834
+      },
+      {
+        "page": 4,
+        "md_start_line": 109,
+        "md_end_line": 163,
+        "text_layer_sha256": "4aff83d408eb4f949f279425dbe8cd668393fabb9b31aab948e4d765dbe339bc",
+        "text_layer_char_count": 779
+      },
+      {
+        "page": 5,
+        "md_start_line": 171,
+        "md_end_line": 208,
+        "text_layer_sha256": "6cc1ff4ad93825aa1e82c6c915867d030c5c09d8eb8fd2fcbcdf686d57dff66a",
+        "text_layer_char_count": 708
+      },
+      {
+        "page": 6,
+        "md_start_line": 216,
+        "md_end_line": 244,
+        "text_layer_sha256": "a692b488f2211f46840c6b193e17ecfbe123e9506d3d841ed17e0a6c66860986",
+        "text_layer_char_count": 915
+      },
+      {
+        "page": 7,
+        "md_start_line": 252,
+        "md_end_line": 274,
+        "text_layer_sha256": "38e3cd6a6ee76da7d0aed458872ea511234ecd5bb095b18acf0e28d94c00486e",
+        "text_layer_char_count": 719
+      },
+      {
+        "page": 8,
+        "md_start_line": 282,
+        "md_end_line": 311,
+        "text_layer_sha256": "037cf68d56e7da1430cb60cb870d268ad7d663925bd988dcc4166448eb128304",
+        "text_layer_char_count": 1088
+      },
+      {
+        "page": 9,
+        "md_start_line": 319,
+        "md_end_line": 345,
+        "text_layer_sha256": "e80b92c9b520a6cb148e28512528c731fb86bb730348f67eda804fe1d8cb0a95",
+        "text_layer_char_count": 813
+      },
+      {
+        "page": 10,
+        "md_start_line": 353,
+        "md_end_line": 379,
+        "text_layer_sha256": "10da429b5baa21a424899702f0266de92763efeaf49a16693721f7ff26904bff",
+        "text_layer_char_count": 746
+      },
+      {
+        "page": 11,
+        "md_start_line": 387,
+        "md_end_line": 413,
+        "text_layer_sha256": "f0e07a9653f271c536c182b54f1f24482e96a9cc6a7bf43cc50a64ade2ef5cea",
+        "text_layer_char_count": 762
+      },
+      {
+        "page": 12,
+        "md_start_line": 421,
+        "md_end_line": 447,
+        "text_layer_sha256": "376fff8a9d8f429e738a268c36b372c5520a1d9d48726206825f56820429eb30",
+        "text_layer_char_count": 555
+      },
+      {
+        "page": 13,
+        "md_start_line": 455,
+        "md_end_line": 463,
+        "text_layer_sha256": "d1daac3e6b8cbd80368e65db0aeafb2425f49fdaa50a653b00f4e5cb279aa9d1",
+        "text_layer_char_count": 123
+      },
+      {
+        "page": 14,
+        "md_start_line": 471,
+        "md_end_line": 479,
+        "text_layer_sha256": "c21b11429c6d46a6b3225364ce07e43eef848ac9e0b9a10c13ffd32cd90ad13b",
+        "text_layer_char_count": 100
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail_pages_reviewed": [
+        4,
+        7,
+        8
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "目录注释及部分长行右裁切",
+        "pages": [
+          3,
+          8,
+          12
+        ],
+        "evidence_type": "page_image",
+        "classification": "source_clipping"
+      },
+      {
+        "description": "零成本与元信息常驻、必填与省略默认、两级与四类作用域未展开口径",
+        "pages": [
+          2,
+          4,
+          6
+        ],
+        "evidence_type": "text",
+        "classification": "source_ambiguity"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Skill设计与治理.md"
+    ],
+    "proposed_topics": [
+      "Harness与模型协同",
+      "Agent任务恢复",
+      "Agent评测与反馈"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:37:19-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/Harness 工程之道：Skill 原理与最佳实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "342a8eb58bc254fc9fb33f26eed1d2da81a677fd3b97aac01e1fd698b22fa227",
+        "copied_at": "2026-10-13T02:37:19-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  },
+  "publication_time_evidence": "2026年8月17日 04:05"
+}

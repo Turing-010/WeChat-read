@@ -1,0 +1,416 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0016",
+  "title": "淘宝直播数字人互动Harness-Aware Training实践：让Agent Model随Harness一起进化",
+  "short_title": "直播数字人HAT",
+  "account": "大淘宝技术",
+  "author": "语瀚",
+  "author_byline": "本文作者语瀚,来自淘天集团-直播 AIGC 团队。作为直播电商智能化领域的先行者,始终致力",
+  "source_url": null,
+  "published_at": "2026-10-08",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "description": "PDF第1页标题、公众号和日期与下载总结的frontmatter、主题相符；署名取PDF团队介绍页。",
+    "pdf_page": 1,
+    "header_text": "淘宝直播数字人互动 Harness - Aware  Training 实践:让 Agent\nModel 随 Harness 一起进化\n直播技术团队 2026 年 10 月 8 日 23 : 04浙江原创 大淘宝技术 听全文\n本文提出Harness-Aware Training (HAT)方法,解决直播电商数字人Agent在低延迟要\n求下适应业务规则频繁变化的挑战。HAT将动态执行环境(Harness)状态显式纳入训练分\n布,通过三阶段训练:在多样化Harness配置下进行监督微调(HSA-SFT)提升工具调用\n能力;通用指令蒸馏(OPD)恢复领域训练中损失的通用能力;强化学习(HSA-RL)在模拟\n环境中学习真实交互。该方法使Qwen3.6-35B-A3B轻量模型在直播问答任务上达到\n94",
+    "author_pdf_page": 18,
+    "download_summary_frontmatter": "title: 淘宝直播数字人互动Harness-Aware Training实践\nsource: 大淘宝技术公众号（直播技术团队）；Technical Report https://arxiv.org/pdf/2608.15763 ；HF Paper https://huggingface.co/papers/2608.15763\ndate: 2026-10-08\ntype: 方法论与案例型（含技术报告结构）\ntags: [Agent, Harness, Harness-Aware-Training, SFT, OPD, RL, 数字人, 直播电商, MTP, LLM-as-a-Judge]\nstatus: 待复习"
+  },
+  "tags": [
+    "Harness与模型协同",
+    "Agent评测与反馈"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/淘宝直播数字人互动Harness-Aware Training实践：让Agent Model随Harness一起进化.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-12T00:38:05-07:00",
+      "provenance": "用户已收集的公众号PDF；本次从inbox复制归档，原采集方式与时间未知",
+      "sha256": "07dd1d13bf41473f651a7cbb7c8a4a00afa02ee1650b4506b0589e98be0fc6bc",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "原文URL、采集时间与显示时间的时区未确认；未联网核查来源或技术事实。",
+          "verification_status": "unverified"
+        },
+        {
+          "description": "全部页已提取文本层；图片内容、代码框长行与表格版面尚未逐页视觉核验。",
+          "verification_status": "pending_visual_review"
+        }
+      ],
+      "size_bytes": 3872292,
+      "page_count": 19
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-12T00:38:05-07:00",
+  "directory": "大淘宝技术/直播数字人HAT+26.10.8",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_直播数字人HAT.md"
+  },
+  "received_artifacts": [
+    {
+      "artifact_id": "summary-001",
+      "kind": "external_ai_summary",
+      "path": "AI_直播数字人HAT.md",
+      "original_path": "/Users/iw/Downloads/淘宝直播数字人HAT实践 26·10·08.md",
+      "received_at": "2026-10-12T00:38:05-07:00",
+      "generated_at": null,
+      "model": null,
+      "prompt_version": null,
+      "sha256": "cc25db1508d7555fb55052818a70bc5c13ca4b1d77ea928871262ee427c683b2",
+      "size_bytes": 24071,
+      "provenance": "用户用其他模型生成并下载的AI总结；原样保存，未重新生成",
+      "verification_status": "identity_matched_content_not_fully_verified",
+      "candidate_wikilinks": [
+        "Agent Harness",
+        "Agent Hooks",
+        "Agent 评测体系",
+        "GRPO",
+        "IFEval",
+        "LLM-as-a-Judge",
+        "LangGraph",
+        "MTP",
+        "On-Policy Distillation",
+        "Prompt Robustness",
+        "RAG",
+        "SFT",
+        "Skills 渐进式披露",
+        "Speculative Decoding",
+        "强化学习 Reward 设计",
+        "灾难性遗忘"
+      ],
+      "wikilink_status": "保留原下载文本中的候选知识关联；并不表示目标笔记均已创建"
+    }
+  ],
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0016",
+    "created_at": "2026-10-12T00:38:05-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "07dd1d13bf41473f651a7cbb7c8a4a00afa02ee1650b4506b0589e98be0fc6bc"
+      },
+      {
+        "artifact_id": "summary-001",
+        "path": "AI_直播数字人HAT.md",
+        "sha256": "8296100f25c0db977b11d5c8943c2c009d0184fcf031e2a8cf3f69aae81a4257"
+      }
+    ],
+    "method": "本次导入外部AI总结，核对身份，并以PDF文本及收到的总结补充跨文章主题知识。原总结生成过程未知；本次不重写AI总结。",
+    "tools": [
+      "本地文件读取",
+      "pypdf",
+      "pdfplumber",
+      "Python标准库",
+      "pdftoppm（首面渲染并查看）"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages_for_MD_only",
+    "quality_issues": [
+      {
+        "description": "原文URL、采集时间与显示时间的时区未确认；未联网核查来源或技术事实。",
+        "verification_status": "unverified"
+      },
+      {
+        "description": "全部页已提取文本层；图片内容、代码框长行与表格版面尚未逐页视觉核验。",
+        "verification_status": "pending_visual_review"
+      },
+      {
+        "description": "外部AI总结的生成模型、提示词、原始输入版本与生成时间未知；其校对报告及图中解读属于外部总结的自述，不能直接视为本次核验结论。",
+        "verification_status": "external_summary_not_fully_verified"
+      },
+      {
+        "description": "下载总结含图中无法辨认、原文疑点或推断说明；原样保留。",
+        "verification_status": "reported_by_external_summary",
+        "report_path": "AI_直播数字人HAT.md",
+        "reported_markers_count": 15
+      }
+    ],
+    "outputs": [
+      "AI_直播数字人HAT.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "generated_summary": {
+      "path": "AI_直播数字人HAT.md",
+      "sha256": "cc25db1508d7555fb55052818a70bc5c13ca4b1d77ea928871262ee427c683b2"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-12T00:38:05-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "07dd1d13bf41473f651a7cbb7c8a4a00afa02ee1650b4506b0589e98be0fc6bc"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "60dd584561d5a9a27dbca3ed9708c89f9dc4015255b629488a3086785aaf1aa9"
+    },
+    "extractor": "pdfplumber 0.11.9; Page.extract_text",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "text_layer_extracted_layout_not_fully_verified",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 14,
+        "md_end_line": 32,
+        "text_layer_sha256": "6ef5cda52e443e4e7bdea3e120e7967ed0895a9fa2b3e08add9248c812a561b3",
+        "text_layer_char_count": 779,
+        "image_objects": 3,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 73,
+        "text_layer_sha256": "0b3e50f4f55fc78c69d0f089456548a8bddba61007979d0c2b50d1cd817e0292",
+        "text_layer_char_count": 1239,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 3,
+        "md_start_line": 83,
+        "md_end_line": 98,
+        "text_layer_sha256": "5e08c35ba41ecbfa824133ee8143b381033f7d7637d9a773714ed71eeb93488a",
+        "text_layer_char_count": 548,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 4,
+        "md_start_line": 108,
+        "md_end_line": 118,
+        "text_layer_sha256": "a38e17685f260149dc3f484b1f937e851003c40ad150f67a15a95a81aad3a88a",
+        "text_layer_char_count": 372,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 5,
+        "md_start_line": 128,
+        "md_end_line": 154,
+        "text_layer_sha256": "c9b4f2f0c0d0df98678130f7b7b86d245e58ca19597472ffefba257a60aa5cd4",
+        "text_layer_char_count": 907,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 6,
+        "md_start_line": 164,
+        "md_end_line": 180,
+        "text_layer_sha256": "de23fd5891327f17769c4de5981c5724fac4d1338fa11cef5674d6789a52ecd0",
+        "text_layer_char_count": 577,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 7,
+        "md_start_line": 190,
+        "md_end_line": 205,
+        "text_layer_sha256": "75ce73c2a07f49fcf0b484dc43c013adad5c0a989a69b557cfe1739f5b9d6e46",
+        "text_layer_char_count": 613,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 8,
+        "md_start_line": 215,
+        "md_end_line": 228,
+        "text_layer_sha256": "7fb1f0e64a49e4955469ee78568f00c899ea4fafccd9f35d8694c423eb57829c",
+        "text_layer_char_count": 538,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 9,
+        "md_start_line": 238,
+        "md_end_line": 255,
+        "text_layer_sha256": "39c15358c08a92e0886fbe18e60c751674d25643ba9d86519989f16f8424ee2f",
+        "text_layer_char_count": 670,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 10,
+        "md_start_line": 265,
+        "md_end_line": 295,
+        "text_layer_sha256": "3167ede54fbaaca0391618519cfbf3af5f141781ee339aa0937d6494a4a057e0",
+        "text_layer_char_count": 1047,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 11,
+        "md_start_line": 305,
+        "md_end_line": 316,
+        "text_layer_sha256": "e69e7a18248ac90e777c4a84ad9ff1ffd9e13fdb51dfdf40919ac8bfb0e159d5",
+        "text_layer_char_count": 265,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 12,
+        "md_start_line": 326,
+        "md_end_line": 342,
+        "text_layer_sha256": "bb6e772f3f737c8dfeb7ac85c435ec7d2618ad2f2e14ec2f1365b081e53dab27",
+        "text_layer_char_count": 584,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 13,
+        "md_start_line": 352,
+        "md_end_line": 358,
+        "text_layer_sha256": "af88abe07520ab423926399e531cd764a022391f8ca855df5ede25a6289c68e4",
+        "text_layer_char_count": 278,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 14,
+        "md_start_line": 368,
+        "md_end_line": 376,
+        "text_layer_sha256": "3dd2b2a81aeb71d8fb719d43cddcadee23fc50a8c0e5d667269b853941a5f1f1",
+        "text_layer_char_count": 215,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 15,
+        "md_start_line": 386,
+        "md_end_line": 396,
+        "text_layer_sha256": "c04b0a11e1bb98df5afbc528d39da5c681bca2cca2769122a172ab9609c67255",
+        "text_layer_char_count": 471,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 16,
+        "md_start_line": 406,
+        "md_end_line": 419,
+        "text_layer_sha256": "7369f038086e2c3b82e68efec1154d22b4fb443d299f27d0128253d86d1c192c",
+        "text_layer_char_count": 445,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 17,
+        "md_start_line": 429,
+        "md_end_line": 442,
+        "text_layer_sha256": "f9ae9908a0cc7611e7fd13012f5fe716b879d3dec47b35b5f59daf1e9cd1e88c",
+        "text_layer_char_count": 442,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 18,
+        "md_start_line": 452,
+        "md_end_line": 468,
+        "text_layer_sha256": "50a7c6cbc14a886ffb030f3d9a260e29e115ce0d2915ded4078151a16d6d7b59",
+        "text_layer_char_count": 679,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 19,
+        "md_start_line": 478,
+        "md_end_line": 485,
+        "text_layer_sha256": "f6b349ecef16074f18846aa3af1899b7b6f7156399c95f579624b7225bdef460",
+        "text_layer_char_count": 87,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_extracted": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "identity_text_pages_reviewed": [
+        1,
+        18
+      ],
+      "visual_pages_reviewed": [
+        1
+      ],
+      "detail_text_pages_reviewed": [
+        9,
+        12
+      ]
+    }
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent评测与反馈.md",
+      "../../20_topics/Harness与模型协同.md",
+      "../../20_topics/大模型推理与算子优化.md",
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充主题知识；不改变本人记录或自动加入工具库",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed_sources_removed",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝直播数字人互动Harness-Aware Training实践：让Agent Model随Harness一起进化.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "07dd1d13bf41473f651a7cbb7c8a4a00afa02ee1650b4506b0589e98be0fc6bc",
+        "removed_at": "2026-10-12T00:44:57-07:00"
+      },
+      {
+        "original_path": "/Users/iw/Downloads/淘宝直播数字人HAT实践 26·10·08.md",
+        "destination_path": "AI_直播数字人HAT.md",
+        "sha256": "8296100f25c0db977b11d5c8943c2c009d0184fcf031e2a8cf3f69aae81a4257",
+        "removed_at": "2026-10-12T00:44:57-07:00"
+      }
+    ],
+    "copied_at": "2026-10-12T00:38:05-07:00",
+    "removed_at": "2026-10-12T00:44:57-07:00"
+  },
+  "ai_note": "AI_直播数字人HAT.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

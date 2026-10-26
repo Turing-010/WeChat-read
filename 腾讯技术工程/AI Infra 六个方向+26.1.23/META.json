@@ -1,0 +1,454 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0121",
+  "title": "读懂 AI Infra，看这六个关键词就够了",
+  "short_title": "AI Infra 六个方向",
+  "account": "腾讯技术工程",
+  "author": "dorianbian、larrylyyu",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-01-23T01:14",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260123_AI_Infrastructure_Six_Keywords.pdf",
+      "original_filename": "20260123_AI_Infrastructure_Six_Keywords.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "17946808db99875b3d9d01b6ddfa05d146c87860a6ab07094bea976d388bfd71",
+      "size_bytes": 6120475,
+      "page_count": 18,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "p.6、p.8等页面有嵌入图未加载的占位；笔记依正文叙述，不从占位推断图中细节。p.18为空白。"
+      ],
+      "publication_evidence": "PDF第1页署名行：2026年1月23日 01:14；未添加时区。"
+    }
+  ],
+  "tags": [
+    "Agent成本与上下文预算",
+    "Harness与模型协同",
+    "Agent安全与隔离"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/AI Infra 六个方向+26.1.23",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI Infra 六个方向.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "读懂 AI  Infra ,看这六个关键词就够了\n腾讯程序员 2026 年 1 月 23 日 01 : 14广东原创 腾讯技术工程 197 人\n作者:dorianbian ,larrylyyu\n一、分布式推理\n前置知识点的一句话理解:\n1. 混合专家模型  MoE :由门控网络 + 若干个专家模型组成,门控网络负责选择适合某类问题的专\n家模型进行激活并处理请求,不同的专家模型擅长处理不同领域的问题,单一请求一般只激活少\n部分专家进行处理,即稀疏激活特性。\n2. 自回归仅解码架构  Decode-Only :基于前文逐步生成下一个词的方式,推理分为 prefill 和\ndecode 两个阶段, prefill 将输入计算为 K 、 V , decode 基于前序得到的 K 、 V 逐词生成输出,意味\n着 P 和 D 两个阶段对资源的需求完全不同。\n目前主流的 MoE 模型  + Decoder-Only 推理架构,针对 MoE 的稀疏激活、推理不同阶段资源需求\n不同的特性,进一步将不同阶段或模块解耦进行部署以提升效率,主要为以下三个方向:\n1.PD 分离的持续演进\nDecode-Only 最初是 Prefill 和 Decode 两个阶段混合部署在一起的,在优化 TTFT (首个 token 响应\n时间)和 TPOT (后续平均每个 token 生成时间)两个核心指标的过程中,出现了两个棘手的核心\n问题: Prefill-Decode 两个阶段的强干扰和资源分配与并行策略的耦合。\n( 1 ) PD 分离部署的提出\n为了通过解决 Prefill 和 Decode 两个阶段资源需求不同而带来的强干扰和并行策略耦合的问题,来\n提升 TTFT 和 TPOT 两个核心指标, DistServe 论文首次提出了 PD 分离的概念。\n2025 年初, DeepSeek 的走红让更多人明白,不仅仅是模型本身,训练和推理过程中工程上\n的优化同样重要。元旦假期看了朱亦博老师的一篇帖子,很受启发, 2025 年过去了,我想应\n该尝试来把亦博老师总结的 25 年 AI Infra 六个重点方向尽可能以一些简单易懂的方式向大家\n介绍一下,也希望让更多的同学可以对这一年里 AI Infra 的发展有一些简要的了解。\n",
+    "publication_evidence": "PDF第1页署名行：2026年1月23日 01:14；未添加时区。",
+    "full_title_in_capture": "读懂 AI Infra，看这六个关键词就够了",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0121",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "17946808db99875b3d9d01b6ddfa05d146c87860a6ab07094bea976d388bfd71"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      "p.6、p.8等页面有嵌入图未加载的占位；笔记依正文叙述，不从占位推断图中细节。p.18为空白。"
+    ],
+    "outputs": [
+      "AI_AI Infra 六个方向.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "detail_pages_reviewed": [
+        2,
+        5
+      ]
+    },
+    "coverage": "逐页阅读p.1–17并检查全18页缩略图；p.18为空白。放大核查p.2 Prefill/Decode与PD分离示意、p.5 MoE/DeepEP示意。覆盖六个方向：推理解耦、Tile语言、训推分离、模型系统协同、Agent Infra、超节点。",
+    "fact_checks": [
+      {
+        "claim": "六个方向的目录",
+        "source_value": "分布式推理、Tile语言、RL训推分离、模型系统协同、Agent Infra、超节点",
+        "pages": [
+          1,
+          5,
+          7,
+          9,
+          10,
+          15
+        ],
+        "result": "笔记依目录顺序覆盖"
+      },
+      {
+        "claim": "Prefill与Decode瓶颈定义",
+        "source_value": "Prefill偏计算与TTFT；Decode偏访存与TPOT",
+        "pages": [
+          2
+        ],
+        "result": "放大图文核对一致"
+      },
+      {
+        "claim": "动态PD分离的目标能力",
+        "source_value": "负载预测、配比建议、混合请求缓解、实例扩缩容",
+        "pages": [
+          3
+        ],
+        "result": "笔记一致"
+      },
+      {
+        "claim": "DeepEP与TRMT网络表述",
+        "source_value": "DeepEP面向MoE稀疏通信；TRMT针对RoCE表现优化",
+        "pages": [
+          4,
+          5
+        ],
+        "result": "放大图和文字核对一致；性能未独立复测"
+      },
+      {
+        "claim": "Agent Infra落地关键技术要求",
+        "source_value": "强隔离、长程稳定、状态持久化、可观测与审计",
+        "pages": [
+          14
+        ],
+        "result": "笔记一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_AI Infra 六个方向.md",
+      "sha256": "7cc953e9df80c9dc24868d00b86afa280c8ca7963821916ea0bd4afe3dc3cc6a"
+    },
+    "independent_crosscheck": {
+      "reviewer": "crosscheck_a",
+      "status": "passed",
+      "note_sha256": "7b0c81f6da12045fb160e6aee790871f7c0f5180f9d2c7384cbb289e9bd6e680",
+      "review_sha256": "3d5b3dae618eef93df0e9807528aa5e2608258f06f9642eb3b473b185fbb7745",
+      "changes": [
+        "将9/9/5/9/9条复习卡由“Q:… A:…”改为要求的单行“问题::答案”，未改变答案内容。",
+        "按新增结构标准核对日期、唯一H1、复习卡片与末尾折叠校对报告；无卡片内容改写。",
+        "新增标准复核通过：含## 复习卡片、5–10条单行问题::答案、date元数据、唯一H1，以及末尾逐行引用的折叠校对报告。"
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "p.1–5",
+          "result": "分布式推理、PD/AFD与MoE稀疏通信。"
+        },
+        {
+          "pages": "p.5–8",
+          "result": "TileLang、RL训推分离、SeamlessFlow；图表按来源叙述。"
+        },
+        {
+          "pages": "p.9–16",
+          "result": "模型系统协同、Agent Infra安全/沙箱、超节点；未来硬件判断保持来源归因。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "17946808db99875b3d9d01b6ddfa05d146c87860a6ab07094bea976d388bfd71"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "a3d29601bcbe0333aada2aaef6847bb8c748bc73cef469a4c03d79ee657f8107"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 33,
+        "text_layer_sha256": "7e8f5dd132dc2799df07b155db08aa8ef95c00ab0b5318020a826abbbb94a55b",
+        "text_layer_char_count": 955
+      },
+      {
+        "page": 2,
+        "md_start_line": 41,
+        "md_end_line": 59,
+        "text_layer_sha256": "7c59e7dbf69a98e7b1f6c8dc37a4ac35196f64b538a58302eb67be857c5fb8ba",
+        "text_layer_char_count": 807
+      },
+      {
+        "page": 3,
+        "md_start_line": 67,
+        "md_end_line": 91,
+        "text_layer_sha256": "964e65f8c4b3c0769a261c939f351924224ae4a720db92a34fba5a95cc545d5e",
+        "text_layer_char_count": 965
+      },
+      {
+        "page": 4,
+        "md_start_line": 99,
+        "md_end_line": 113,
+        "text_layer_sha256": "9dd49065a1b3f49b1ca64895e61ac5e8c8c16f107a132cb206186db0564e0325",
+        "text_layer_char_count": 596
+      },
+      {
+        "page": 5,
+        "md_start_line": 121,
+        "md_end_line": 142,
+        "text_layer_sha256": "218bee00957fd77b0a8ad7cf52801ca827e9efe8798aee6d8ce046cb8a0eeb48",
+        "text_layer_char_count": 779
+      },
+      {
+        "page": 6,
+        "md_start_line": 150,
+        "md_end_line": 160,
+        "text_layer_sha256": "5cd89b5e62042e318d61f252a08f24cbdc256cec29831da3c15f3aa01399fb54",
+        "text_layer_char_count": 381
+      },
+      {
+        "page": 7,
+        "md_start_line": 168,
+        "md_end_line": 180,
+        "text_layer_sha256": "dd90065a91205c2fea65e838b5f8c9bf37ae80a02e97d08d5d434b789b8900a8",
+        "text_layer_char_count": 422
+      },
+      {
+        "page": 8,
+        "md_start_line": 188,
+        "md_end_line": 200,
+        "text_layer_sha256": "25f871cbecc9118fce9d38f98fab64eed59fbbf8855676d1656e2f35b57df3ce",
+        "text_layer_char_count": 482
+      },
+      {
+        "page": 9,
+        "md_start_line": 208,
+        "md_end_line": 231,
+        "text_layer_sha256": "9cf6149bcebc9e2b60592cb6e525df590ba2b41215d43ad5fa08efc81f97f2a7",
+        "text_layer_char_count": 1098
+      },
+      {
+        "page": 10,
+        "md_start_line": 239,
+        "md_end_line": 285,
+        "text_layer_sha256": "8176b79026f5ee03c2eeb491a4569590c90377ffac012380125973d67d04b179",
+        "text_layer_char_count": 601
+      },
+      {
+        "page": 11,
+        "md_start_line": 293,
+        "md_end_line": 304,
+        "text_layer_sha256": "c4b53d85f6ab86990575c798629268eca327d0b8e9c2e33457db4c8ca2f827d5",
+        "text_layer_char_count": 445
+      },
+      {
+        "page": 12,
+        "md_start_line": 312,
+        "md_end_line": 341,
+        "text_layer_sha256": "2a21870084a8b088375d3842b9eb4970b0a7ebf6015e0ccb6a0cbfcfe5c61127",
+        "text_layer_char_count": 654
+      },
+      {
+        "page": 13,
+        "md_start_line": 349,
+        "md_end_line": 404,
+        "text_layer_sha256": "204d98c11c135b8f7907f2f9e169cd5a9c94351d6358634f085206158bd65c50",
+        "text_layer_char_count": 957
+      },
+      {
+        "page": 14,
+        "md_start_line": 412,
+        "md_end_line": 443,
+        "text_layer_sha256": "8eaf8f52c37a406a44d830c90e3c5fc550f7b3d537448419bb6e6101c1050eff",
+        "text_layer_char_count": 1171
+      },
+      {
+        "page": 15,
+        "md_start_line": 451,
+        "md_end_line": 468,
+        "text_layer_sha256": "122cd3e55e9732bfcac9609c9bfd32cd9082cf385a61c0ffe773edabd8204086",
+        "text_layer_char_count": 393
+      },
+      {
+        "page": 16,
+        "md_start_line": 476,
+        "md_end_line": 506,
+        "text_layer_sha256": "0dc2a2926b1368853e8c279bbb1924b07e8104d8ef527981c86b38c8da046e50",
+        "text_layer_char_count": 1541
+      },
+      {
+        "page": 17,
+        "md_start_line": 514,
+        "md_end_line": 517,
+        "text_layer_sha256": "b0f963d4329b61906a594260222b97d54e7df50768dd766a3b54d757c719daf4",
+        "text_layer_char_count": 29
+      },
+      {
+        "page": 18,
+        "md_start_line": 525,
+        "md_end_line": 524,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "detail_pages_reviewed": [
+        2,
+        5
+      ]
+    },
+    "quality_issues": [
+      "p.6、p.8等页面有嵌入图未加载的占位；笔记依正文叙述，不从占位推断图中细节。p.18为空白。"
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260123_AI_Infrastructure_Six_Keywords.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "17946808db99875b3d9d01b6ddfa05d146c87860a6ab07094bea976d388bfd71",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Harness与模型协同.md",
+      "../../20_topics/大模型推理与算子优化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_AI Infra 六个方向.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

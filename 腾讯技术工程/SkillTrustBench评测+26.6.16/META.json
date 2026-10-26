@@ -1,0 +1,356 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0110",
+  "title": "谁是 Agent 最强守门员？首个 Agent 技能安全评测基准 SkillTrustBench 正式发布",
+  "short_title": "SkillTrustBench评测",
+  "account": "腾讯技术工程",
+  "author": "香港中文大学（深圳）与腾讯朱雀实验室",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-06-16T02:33",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0616 SkillTrustBench.pdf",
+      "original_filename": "0616 SkillTrustBench.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "002ce37c62472abb47c994d5bb5301c2f6c621e7e9e1f4d430a244352b6afb6a",
+      "size_bytes": 4817723,
+      "page_count": 9,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [],
+      "publication_evidence": "PDF 第1页标注 2026年6月16日 02:33；未见时区"
+    }
+  ],
+  "tags": [
+    "Agent评测与反馈",
+    "异常监控与稳定性",
+    "Agent工程循环",
+    "Agent安全与权限",
+    "Skill设计与治理"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/SkillTrustBench评测+26.6.16",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_SkillTrustBench评测.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "谁是 Agent  最强守⻔员?首个 Agent  技能安全评测基准\nSkillTrustBench  正式发布\n2026 年 6 月 16 日 02 : 33广东腾讯技术工程 4 人\n作者:香港中文大学(深圳) & 腾讯朱雀实验室\n导语\n随着  Agent 技能( Skills )快速融入  AI 应用生态,它正逐步成为全新的安全边界与供应链攻\n击入口。为了防范恶意  Skill 导致的数据泄露与  Agent 劫持,构建安全可信的  Skill 运行环境\n已成为行业共识。尽管  ClawHub 等主流技能市场已上线检测机制,开源社区也涌现出大量\n扫描工具,但在实际落地中,用户常面临两难境地。\n一方面,部分扫描方案偏向高召回但频发误报,极易导致安全告警疲劳;另一方面,部分方\n案虽判定精准,却在面对隐蔽的对抗手法时容易漏报。此外,基于  LLM 的扫描器在切换底层\n模型时研判偏好差异显著。在缺乏系统性评估标准的当下,行业亟需客观的衡量标尺,既用\n于度量安全方案的检测效能,也用于评估  Skill 本身的安全可信度。\n针对这些痛点,腾讯朱雀实验室 联合香港中文大学(深圳)吴保元教授课题组正式发\n布  SkillTrustBench —— 首个面向真实落地场景、兼顾  Agent Skills 安全可信度与外部扫描方\n案检测效能的双重评测基准。该基准从主流技能市场的  62,652 个  Skill 中提炼出  5,520 个评\n测用例,涵盖九大类常⻅安全威胁,为评估并提升  Agent 技能的安全性提供客观参考。\n从首期评测数据中,我们总结了几个关键点:\n大模型底座表现:在本次评测中,Claude Opus 4.6 与  GLM 5.1  在安全扫描场景下展现\n出极强的语义推理与安全约束理解能力,处于第一梯队;DeepSeek V4 Flash 与  Hy3\npreview 则在性能与成本之间取得了优异平衡,性价比优势显著。\n开源工具效能:以  OpenClaw  + Skill Vetter 为代表的轻量级开源审计方案,已具备发现\n多数恶意  Skill ⻛险的基础能力,但在复杂噪声干扰下的误报控制上仍有较大优化空间。\nSkill 本身的安全可信度:评测发现大量非恶意  Skill 同样存在不可信隐患。诸如硬编码凭\n证 、敏感权限滥用、以及易受命令注入等不安全编码缺陷广泛存在,这些行为虽主观无\n害,却因其自身的安全脆弱性,极易成为供应链劫持的二次攻击入口。\n项目官网(点击阅读原文):https://matrix.tencent.com/skilltrustbench\n",
+    "publication_evidence": "PDF 第1页标注 2026年6月16日 02:33；未见时区",
+    "full_title_in_capture": "谁是 Agent 最强守门员？首个 Agent 技能安全评测基准 SkillTrustBench 正式发布",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0110",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "002ce37c62472abb47c994d5bb5301c2f6c621e7e9e1f4d430a244352b6afb6a"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [],
+    "outputs": [
+      "AI_SkillTrustBench评测.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "coverage": "涵盖基准由来、真实 Skill 生态风险、样本设计、T01-T09 风险分类、扫描器横评、底座模型结论和共建目标；机构介绍及留言页未展开。",
+    "fact_checks": [
+      {
+        "item": "原始 Skill 数",
+        "note_value": "62,652",
+        "source_value": "62,652",
+        "pages": [
+          1,
+          4
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "评测用例总数",
+        "note_value": "5,520",
+        "source_value": "5,520",
+        "pages": [
+          1,
+          4
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "样本类别比例",
+        "note_value": "malicious 46.3%, suspicious 24.0%, normal 29.8%",
+        "source_value": "46.3%, 24.0%, 29.8%",
+        "pages": [
+          4
+        ],
+        "result": "放大页图核对一致"
+      },
+      {
+        "item": "Skill Vetter + OpenClaw",
+        "note_value": "召回 97.949%, F1 96.537%",
+        "source_value": "97.949%, 96.537%",
+        "pages": [
+          6
+        ],
+        "result": "放大页图核对一致"
+      },
+      {
+        "item": "Cisco 误报率",
+        "note_value": "24.699%",
+        "source_value": "24.699%",
+        "pages": [
+          6
+        ],
+        "result": "放大页图核对一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_SkillTrustBench评测.md",
+      "sha256": "1eb7e7c1faa0bd7ffbb154aa34bafc590962bf47f6ccd7f1ac0b71a615dca2fa"
+    },
+    "independent_crosscheck": {
+      "reviewer": "wechat_group1",
+      "note_sha256": "361a18f1a2cf366b70021fc5c3ca62cc91a6bca6cffef89e9b88752727f44cbf",
+      "review_sha256": "1a8311f8c02ccf687aa85d1804eae04a3a945c4c8ff186df30f1f68bdc4ad5cd",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "1–3",
+          "check": "核对 Skill 同时涉及提示、代码、依赖、权限和运行上下文；笔记区分攻击意图与安全缺陷。"
+        },
+        {
+          "pages": "4",
+          "check": "放大核对 5,520 样本类别图：malicious 2,553/46.3%、suspicious 1,324/24.0%、secure 1,643/29.8%；一致。"
+        },
+        {
+          "pages": "5–6",
+          "check": "核对 T01–T09、T09 不安全编码、固定底座的工具横评和替换底座的模型比较；表中召回/误报数值及归因一致。"
+        },
+        {
+          "pages": "7–9",
+          "check": "确认共建和留言页没有改变首期基准范围；笔记明确榜单不是普遍安全背书。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "002ce37c62472abb47c994d5bb5301c2f6c621e7e9e1f4d430a244352b6afb6a"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "1238ee9a737084ca6b12d0a1823ec02d8503ee418849f6a7db131299ce7048c4"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 36,
+        "text_layer_sha256": "ceeae445fe17d0298f455942422f7a346d10b92852b349571e58faf0f7597286",
+        "text_layer_char_count": 1103
+      },
+      {
+        "page": 2,
+        "md_start_line": 44,
+        "md_end_line": 66,
+        "text_layer_sha256": "c4a93b547aa347e2d71f1345a67d623ba9f5a9c8ffd8096ba3e72808e454af35",
+        "text_layer_char_count": 1207
+      },
+      {
+        "page": 3,
+        "md_start_line": 74,
+        "md_end_line": 98,
+        "text_layer_sha256": "d2a7a4537b97ccb4e8246337c03d5bc7f0a6178f0e334feba9ec2531b59fe290",
+        "text_layer_char_count": 919
+      },
+      {
+        "page": 4,
+        "md_start_line": 106,
+        "md_end_line": 124,
+        "text_layer_sha256": "f17d9a9998934ce555129cb82a3fa233f4bee9d69bac6ee35f2ab9d9885a233e",
+        "text_layer_char_count": 609
+      },
+      {
+        "page": 5,
+        "md_start_line": 132,
+        "md_end_line": 151,
+        "text_layer_sha256": "a1338af09b22d955f89c7be3bae8892efd37ebe9b3fa1d91cc41db9a94c1c269",
+        "text_layer_char_count": 883
+      },
+      {
+        "page": 6,
+        "md_start_line": 159,
+        "md_end_line": 182,
+        "text_layer_sha256": "0e37e59eec8fb5543ca01bdef0b765823418df986fb08af173c0727c242beeb4",
+        "text_layer_char_count": 974
+      },
+      {
+        "page": 7,
+        "md_start_line": 190,
+        "md_end_line": 212,
+        "text_layer_sha256": "46d8705ff5893c7acc367ac4560bce3f468a5229ae1974e1c82104cc505eac4c",
+        "text_layer_char_count": 1023
+      },
+      {
+        "page": 8,
+        "md_start_line": 220,
+        "md_end_line": 234,
+        "text_layer_sha256": "c121242a4f4e59959988827d9e12babcebf82bfa127112037189d0e2037eccc9",
+        "text_layer_char_count": 453
+      },
+      {
+        "page": 9,
+        "md_start_line": 242,
+        "md_end_line": 242,
+        "text_layer_sha256": "c01129305e3f2701794b59ab978930dc476ea9901ce49f19b59c02b18c1e3171",
+        "text_layer_char_count": 11
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "quality_issues": []
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0616 SkillTrustBench.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "002ce37c62472abb47c994d5bb5301c2f6c621e7e9e1f4d430a244352b6afb6a",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent安全与权限.md",
+      "../../20_topics/Skill设计与治理.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_SkillTrustBench评测.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

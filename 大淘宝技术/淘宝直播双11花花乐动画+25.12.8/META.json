@@ -1,0 +1,503 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0275",
+  "title": "2025淘宝直播双11花花乐动画实现方案思考&分享",
+  "short_title": "淘宝直播双11花花乐动画",
+  "account": "大淘宝技术",
+  "author": "酒舟",
+  "author_byline": "本文作者酒舟，来自淘天集团 - 直播用户终端技术团队。",
+  "source_url": null,
+  "published_at": "2025-12-08",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "直播用户终端技术 2025年12月8日 01:03 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 19,
+      "text": "本文作者酒舟，来自淘天集团 - 直播用户终端技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "跨端开发与性能",
+    "异常监控与稳定性",
+    "AI研发协同"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/2025淘宝直播双11花花乐动画实现方案思考&分享.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T19:22:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "4e05696ef30062a2d96ab02c06700a773bdd94c90e5e9b1e419173b1c2cb7ce1",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.1-2, 4-11, 13-15, 18含设计师Demo录屏帧、Spine网格拉伸图、状态机图、AE曲线对比图与分帧JSON截图（位于PDF图像层），p.20为空白尾页；全部技术原理与工程保障细节均在正文文本层完整提取。",
+          "pages": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15,
+            18,
+            20
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 8711647,
+      "page_count": 20
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T19:22:00-07:00",
+  "directory": "大淘宝技术/淘宝直播双11花花乐动画+25.12.8",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_淘宝直播双11花花乐动画.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0275",
+    "created_at": "2026-10-20T19:22:00-07:00",
+    "updated_at": "2026-10-20T19:22:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "4e05696ef30062a2d96ab02c06700a773bdd94c90e5e9b1e419173b1c2cb7ce1"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "a11c94c69abda6b8f163cd01102f417db34a241bc4b64fe586f1cc31f5b4c9f5"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.1-2, 4-11, 13-15, 18含设计师Demo录屏帧、Spine网格拉伸图、状态机图、AE曲线对比图与分帧JSON截图（位于PDF图像层），p.20为空白尾页；全部技术原理与工程保障细节均在正文文本层完整提取。",
+        "pages": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15,
+          18,
+          20
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_淘宝直播双11花花乐动画.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_淘宝直播双11花花乐动画.md",
+      "sha256": "967fbfa5a273abbddb8c7d480f73f1267b40b669412abfd4f5fa473393a67936"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T19:22:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "4e05696ef30062a2d96ab02c06700a773bdd94c90e5e9b1e419173b1c2cb7ce1"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "a11c94c69abda6b8f163cd01102f417db34a241bc4b64fe586f1cc31f5b4c9f5"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 47,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 435,
+        "text_layer_sha256": "7253b265e459107e142f3aff15d389daaa34d6243fadfd6020f569446da1f0f6"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 90,
+        "md_start_line": 55,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 2,
+        "text_layer_char_count": 433,
+        "text_layer_sha256": "8f1eb6cf7f7e7f4f2b955224d6cd5a8fb9321948a5e994724b4b1cddaec4e5c3"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 155,
+        "md_start_line": 98,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 3,
+        "text_layer_char_count": 742,
+        "text_layer_sha256": "334174f9f07db75980be9a0e118ce6f3b5f26eaebf5c54ae94276066607a1d00"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 187,
+        "md_start_line": 163,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 4,
+        "text_layer_char_count": 313,
+        "text_layer_sha256": "f55df3a126386aff8537d409af3234ea8c71a4691360be74ee3fbd32027916d3"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 220,
+        "md_start_line": 195,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 5,
+        "text_layer_char_count": 216,
+        "text_layer_sha256": "b1c5ca04c96fa3ed9bcf4a3c248542857e26c5aa51a7a6b9736d6791d9a5fd8f"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 257,
+        "md_start_line": 228,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 6,
+        "text_layer_char_count": 382,
+        "text_layer_sha256": "4597ccda54a130f7b053132a551f5f19544d0fb6d8942097096d8d961f4cc56d"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 279,
+        "md_start_line": 265,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 7,
+        "text_layer_char_count": 200,
+        "text_layer_sha256": "0a942b1e0a84f34121fee621fa7ab2ace3a9b35b1c90efe1dc3d08b37ab76139"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 312,
+        "md_start_line": 287,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 8,
+        "text_layer_char_count": 263,
+        "text_layer_sha256": "afda706dcbbd1a60824f786ff113ecea23c0732ea19cc6732189a5c87e7c3f3e"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 340,
+        "md_start_line": 320,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 9,
+        "text_layer_char_count": 213,
+        "text_layer_sha256": "f064f2cab71ae9e3610a15b6a18b24d1d316525789bedfd0cbe28a2c9de2a526"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 382,
+        "md_start_line": 348,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 10,
+        "text_layer_char_count": 408,
+        "text_layer_sha256": "4d93621e1f276668040073590b7f37476c1aa69b04ed887cbe0b985190eb66e2"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 402,
+        "md_start_line": 390,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 11,
+        "text_layer_char_count": 198,
+        "text_layer_sha256": "5e343c63e4ba3426a9bd5486b58b0f9a96432feeb95680b204cb149a72fcaead"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 440,
+        "md_start_line": 410,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 12,
+        "text_layer_char_count": 427,
+        "text_layer_sha256": "01cfba0937f3b0726182554319b698562a9c5ec8cc132eb93c5d410322d09c64"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 453,
+        "md_start_line": 448,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 13,
+        "text_layer_char_count": 54,
+        "text_layer_sha256": "08a57603dfe23710720a63fcac60d09e2aed56808d1edb4709757b9ca51690c3"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 478,
+        "md_start_line": 461,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 14,
+        "text_layer_char_count": 205,
+        "text_layer_sha256": "9a15606831c2e12d31cd7c550702547e5bc0c5719f2198fcae2ed83e4b1c86e1"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 524,
+        "md_start_line": 486,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 15,
+        "text_layer_char_count": 435,
+        "text_layer_sha256": "a97cda57585c75eceed9c8d7b1910c7b1f90d8f949665a97f4cb2e538a6b0a70"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 626,
+        "md_start_line": 532,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 16,
+        "text_layer_char_count": 963,
+        "text_layer_sha256": "e37ab1945124b21236532fbe0ff10462c34ad91ef16a042ecc3ec3a18f6fadbf"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 718,
+        "md_start_line": 634,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 17,
+        "text_layer_char_count": 893,
+        "text_layer_sha256": "353380c6f2230dd369dc0c4c4e84781a355dc65d148ff7f63f0ff96f675e70e7"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 736,
+        "md_start_line": 726,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 18,
+        "text_layer_char_count": 195,
+        "text_layer_sha256": "f671ae5bbd10b07d9ccbbca4fed2517c03de8ae6d6e859a6493e95df251d2997"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 768,
+        "md_start_line": 744,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 19,
+        "text_layer_char_count": 323,
+        "text_layer_sha256": "13e5c876b37f59d59f1865d71b5ddb305398ded9c4f8aa8a4fc77f499cb110eb"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 778,
+        "md_start_line": 776,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 20,
+        "text_layer_char_count": 0,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.1-2, 4-11, 13-15, 18含设计师Demo录屏帧、Spine网格拉伸图、状态机图、AE曲线对比图与分帧JSON截图（位于PDF图像层），p.20为空白尾页；全部技术原理与工程保障细节均在正文文本层完整提取。",
+        "pages": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15,
+          18,
+          20
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/异常监控与稳定性.md",
+      "../../20_topics/跨端开发与性能.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T19:22:00-07:00",
+    "removed_at": "2026-10-20T19:22:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/2025淘宝直播双11花花乐动画实现方案思考&分享.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "4e05696ef30062a2d96ab02c06700a773bdd94c90e5e9b1e419173b1c2cb7ce1",
+        "copied_at": "2026-10-20T19:22:00-07:00",
+        "removed_at": "2026-10-20T19:22:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_淘宝直播双11花花乐动画.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

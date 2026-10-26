@@ -1,0 +1,122 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0299",
+  "title": "00后黑客落网！曾运营大型僵尸网络，频繁攻击腾讯游戏、DeepSeek、X平台",
+  "short_title": "RapperBot样本与情报分析",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": "腾讯程序员",
+  "source_url": null,
+  "published_at": "2025-09-22T02:35",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "00后⿊客落⽹！曾运营⼤型僵⼫⽹络，频繁攻击腾讯游戏、\nDeepSeek、   X平台\n\n\n原创 腾讯程序员    腾讯技术⼯程    2025年 9⽉22⽇   02:35⼴东  398⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n据美国司法部通报     ，活跃多年的⾼危DDoS     僵⼫⽹络“RapperBot”（历史频繁攻击腾讯游戏、\nDeepSeek、X平台的幕后⿊⼿）现已被成功取缔。该僵⼫⽹络主谋、22岁的美国俄勒冈州男\n⼦Ethan Faulds已于2025年8⽉6⽇被搜查住所，其基础设施控制权被执法部门依法接管，⽬\n前他⾯临协助及教唆计算机⼊侵罪的指控，最⾼可判处10年监禁。                 这⼀消息与腾讯宙斯盾情\n报系统监测到RapperBot僵⼫⽹络活跃度数据吻合。Ethan Faulds于6号被捕后，7⽇该僵⼫⽹\n络活跃度直接清零，其攻击趋势如下图所⽰。\n\n\n\n\n\n\n  一、  RapperBot僵尸网络家族回顾\n\n1.1 家族简介\n\nRapperBo",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "Agent安全与治理",
+    "MCP与工具接入",
+    "AI评测与可观测性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/00后黑客落网！曾运营大型僵尸网络，频繁攻击腾讯游戏、DeepSeek、X平台.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T05:57:03-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "4cc3f85a4ba35c2050d8b71f849ad0f0e90f573555f254bc1330b43a1b2edf2d",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "p2、9、10页图可见加载占位和旋转圈，确认部分样本截图及架构图未加载，原材料不完整。",
+        "p2指令字节编号重叠且有upd_flood拼写等疑点，不将其作为可直接实现的协议规范。",
+        "抓捕、攻击归因、数量和效率指标为作者陈述，本任务不网页核查；不能视为独立事实确认。",
+        "已看页图1、2、9、10，其余图片范围未复核。"
+      ],
+      "size_bytes": 3846127,
+      "page_count": 12
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T05:57:03-07:00",
+  "directory": "腾讯技术工程/RapperBot样本与情报分析+25.9.22",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T05:57:03-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "4cc3f85a4ba35c2050d8b71f849ad0f0e90f573555f254bc1330b43a1b2edf2d",
+    "output_path": "MD.md",
+    "output_sha256": "022e8afc921f80f1decf06159e5bf66136c976589fe4c6ca605455cd1b8aaff3",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 12,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visual_pages": [
+        1,
+        2,
+        9,
+        10
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "p2、9、10页图可见加载占位和旋转圈，确认部分样本截图及架构图未加载，原材料不完整。",
+      "p2指令字节编号重叠且有upd_flood拼写等疑点，不将其作为可直接实现的协议规范。",
+      "抓捕、攻击归因、数量和效率指标为作者陈述，本任务不网页核查；不能视为独立事实确认。",
+      "已看页图1、2、9、10，其余图片范围未复核。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/00后黑客落网！曾运营大型僵尸网络，频繁攻击腾讯游戏、DeepSeek、X平台.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/RapperBot样本与情报分析+25.9.22/RAW.pdf",
+    "sha256": "4cc3f85a4ba35c2050d8b71f849ad0f0e90f573555f254bc1330b43a1b2edf2d",
+    "copied_at": "2026-10-23T05:57:03-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent安全与权限.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

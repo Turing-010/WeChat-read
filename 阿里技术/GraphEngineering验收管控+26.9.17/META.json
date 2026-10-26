@@ -1,0 +1,510 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0043",
+  "title": "把「达标判定」从大模型手里收回来：Graph Engineering实践",
+  "short_title": "GraphEngineering验收管控",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "刘必成",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-09-17T03:18",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "Sep 17, 2026, 3:18 AM",
+  "published_timezone": null,
+  "identity_evidence": {
+    "page": 1,
+    "text": [
+      "把「达标判定」从⼤模型⼿⾥收回来：Graph Engineering实践",
+      "原创 刘必成 阿⾥技术 Sep 17, 2026, 3:18 AM 浙江 28 listened",
+      "这是2026年的第 61 篇⽂章",
+      "（ 本⽂阅读时间：约 30 分钟 ）",
+      "前⾔："
+    ]
+  },
+  "tags": [
+    "Agent评测与反馈",
+    "Prompt优化",
+    "Agent工程循环",
+    "决策知识结构化",
+    "Agent长期记忆"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/把「达标判定」从大模型手里收回来：Graph Engineering实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T03:10:40-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "b7468ccd9424d86ac455e006ec0957698df113686f568f7c5305433cb7a57792",
+      "size_bytes": 9219312,
+      "page_count": 19,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "素材更新中/预售例子是机制说明，不代表新增生产实验；改造后未提供统一线上收益指标。",
+          "pages": [
+            8,
+            9,
+            17
+          ],
+          "evidence_type": "text_and_image",
+          "classification": "experiment_scope"
+        },
+        {
+          "description": "p.16图优化入口90%与发现出口95%属不同阶段；保留各自位置，不作同一阈值。",
+          "pages": [
+            12,
+            16
+          ],
+          "evidence_type": "text_and_image",
+          "classification": "threshold_scope"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T03:10:40-07:00",
+  "directory": "阿里技术/GraphEngineering验收管控+26.9.17",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_GraphEngineering验收管控.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0043",
+    "created_at": "2026-10-13T03:10:40-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "b7468ccd9424d86ac455e006ec0957698df113686f568f7c5305433cb7a57792"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "素材更新中/预售例子是机制说明，不代表新增生产实验；改造后未提供统一线上收益指标。",
+        "pages": [
+          8,
+          9,
+          17
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "experiment_scope"
+      },
+      {
+        "description": "p.16图优化入口90%与发现出口95%属不同阶段；保留各自位置，不作同一阈值。",
+        "pages": [
+          12,
+          16
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "threshold_scope"
+      }
+    ],
+    "outputs": [
+      "AI_GraphEngineering验收管控.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        1,
+        7,
+        9,
+        10,
+        12,
+        14,
+        16
+      ]
+    },
+    "coverage": [
+      {
+        "name": "旧业务与单Loop失败",
+        "pages": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "双侧评测",
+        "pages": [
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "目标失败路由和经验",
+        "pages": [
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "职责分离与异步控制",
+        "pages": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "双Loop当前流程",
+        "pages": [
+          15,
+          16
+        ]
+      },
+      {
+        "name": "治理展望",
+        "pages": [
+          17
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 10,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_GraphEngineering验收管控.md",
+      "sha256": "69cba4c7d4665e5cf315224bbc211d75e7cbc0ff0f150f2aeb306692eccea985"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T03:10:40-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "b7468ccd9424d86ac455e006ec0957698df113686f568f7c5305433cb7a57792"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "4741d2591f6e2ed70862952b4213cc8ba91c28b1697ce705d0e24ed76f16c5be"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 34,
+        "text_layer_sha256": "401ecaf0b7edd45da959e8eed5c09ad1bc817896999f456fd63b10e4c8dd9d8c",
+        "text_layer_char_count": 761
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 59,
+        "text_layer_sha256": "417a2d7c647a60b6b37cdc4a95c8ccf60f51c7c46b369e73bee8b0af25f3bb70",
+        "text_layer_char_count": 597
+      },
+      {
+        "page": 3,
+        "md_start_line": 67,
+        "md_end_line": 84,
+        "text_layer_sha256": "6e836d0d91212da37cf65cd798e8d75b55da553a59684444bf546bf572eb1ef7",
+        "text_layer_char_count": 643
+      },
+      {
+        "page": 4,
+        "md_start_line": 92,
+        "md_end_line": 109,
+        "text_layer_sha256": "b2415b782d3547fddd583dd1661a75990193c948f7a5a004c0803db1477894c0",
+        "text_layer_char_count": 624
+      },
+      {
+        "page": 5,
+        "md_start_line": 117,
+        "md_end_line": 138,
+        "text_layer_sha256": "635ef182e7f5891c10d436d9408a788b8e4ca7e3002b23bb697387b9538ad3c3",
+        "text_layer_char_count": 724
+      },
+      {
+        "page": 6,
+        "md_start_line": 146,
+        "md_end_line": 167,
+        "text_layer_sha256": "e40177a0a3e00a9da822f53bb0232adbcf6e581305c361aeca8d493de7d462ac",
+        "text_layer_char_count": 681
+      },
+      {
+        "page": 7,
+        "md_start_line": 175,
+        "md_end_line": 198,
+        "text_layer_sha256": "99f43574b0c61df14b788dc7b967b5e65a9eceed3d1f239c531f9dde640d3c05",
+        "text_layer_char_count": 692
+      },
+      {
+        "page": 8,
+        "md_start_line": 206,
+        "md_end_line": 229,
+        "text_layer_sha256": "87899600c814009618b46d638de29d3618a5220c0c2346f94964bc9f4b39cadc",
+        "text_layer_char_count": 882
+      },
+      {
+        "page": 9,
+        "md_start_line": 237,
+        "md_end_line": 255,
+        "text_layer_sha256": "0b157c4e8bb8e6dba392cbb222a3928d872c0a18bbac29ba0f8ad63dc27cc1f4",
+        "text_layer_char_count": 678
+      },
+      {
+        "page": 10,
+        "md_start_line": 263,
+        "md_end_line": 287,
+        "text_layer_sha256": "d67b2ff3824136a4a86ba9036415919e6f6c235444e733ad827a49afdcbb467f",
+        "text_layer_char_count": 706
+      },
+      {
+        "page": 11,
+        "md_start_line": 295,
+        "md_end_line": 318,
+        "text_layer_sha256": "029463fa5ff435f679540a05501a3ff821c436979311f561283b63a5cf42cb32",
+        "text_layer_char_count": 797
+      },
+      {
+        "page": 12,
+        "md_start_line": 326,
+        "md_end_line": 342,
+        "text_layer_sha256": "e430ab5138ddaf286112cafb8d15b783bfca55ae75f75d394a14ebe5736b39ec",
+        "text_layer_char_count": 619
+      },
+      {
+        "page": 13,
+        "md_start_line": 350,
+        "md_end_line": 372,
+        "text_layer_sha256": "0639e556ff42d2431e27c59191135131bd2640ee39461c288398eece3c9cb8ae",
+        "text_layer_char_count": 809
+      },
+      {
+        "page": 14,
+        "md_start_line": 380,
+        "md_end_line": 405,
+        "text_layer_sha256": "743d03405e23f53d08290591b07316cf385a8553e11b6e841b4debb625bb4721",
+        "text_layer_char_count": 862
+      },
+      {
+        "page": 15,
+        "md_start_line": 413,
+        "md_end_line": 435,
+        "text_layer_sha256": "79c08fa8d2eccd8f8274d18d4c51b919b40228a3d5ffb8e0f97fb1eb523c74b6",
+        "text_layer_char_count": 740
+      },
+      {
+        "page": 16,
+        "md_start_line": 443,
+        "md_end_line": 466,
+        "text_layer_sha256": "71492c272e5f62f3fde4fe1bb10e1a57870524de29dee59898543e8f6cd88aa7",
+        "text_layer_char_count": 758
+      },
+      {
+        "page": 17,
+        "md_start_line": 474,
+        "md_end_line": 493,
+        "text_layer_sha256": "5c74b0f810b9cbafff26342c45185c0e3b65c95f081526f84b19eb7f8a357eb5",
+        "text_layer_char_count": 692
+      },
+      {
+        "page": 18,
+        "md_start_line": 501,
+        "md_end_line": 511,
+        "text_layer_sha256": "49878152b1a3eb0f864e98c4cd6127c0ab7da934a7a6a2a869c4bcbbe62f5bd3",
+        "text_layer_char_count": 219
+      },
+      {
+        "page": 19,
+        "md_start_line": 519,
+        "md_end_line": 532,
+        "text_layer_sha256": "9004d86872c627884ac7c86a329a56edc28224292210491881443d4042797f2e",
+        "text_layer_char_count": 334
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        1,
+        7,
+        9,
+        10,
+        12,
+        14,
+        16
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "素材更新中/预售例子是机制说明，不代表新增生产实验；改造后未提供统一线上收益指标。",
+        "pages": [
+          8,
+          9,
+          17
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "experiment_scope"
+      },
+      {
+        "description": "p.16图优化入口90%与发现出口95%属不同阶段；保留各自位置，不作同一阈值。",
+        "pages": [
+          12,
+          16
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "threshold_scope"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md",
+      "../../20_topics/Agent评测与反馈.md",
+      "../../20_topics/Prompt优化.md"
+    ],
+    "proposed_topics": [
+      "Agent评测与反馈",
+      "Prompt优化",
+      "Agent工程循环",
+      "Agent长期记忆"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T03:10:40-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/把「达标判定」从大模型手里收回来：Graph Engineering实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "b7468ccd9424d86ac455e006ec0957698df113686f568f7c5305433cb7a57792",
+        "copied_at": "2026-10-13T03:10:40-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

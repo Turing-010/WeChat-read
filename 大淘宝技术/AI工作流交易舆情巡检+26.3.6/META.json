@@ -1,0 +1,317 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0249",
+  "title": "AI工作流在淘宝交易舆情巡检上的探索与实践",
+  "short_title": "AI工作流交易舆情巡检",
+  "account": "大淘宝技术",
+  "author": "潇沁",
+  "author_byline": "本文作者潇沁，来自淘天集团-交易业务技术团队。",
+  "source_url": null,
+  "published_at": "2026-03-06",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "交易业务技术团队 2026年3月6日 02:25 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 7,
+      "text": "本文作者潇沁，来自淘天集团-交易业务技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "Skill设计与治理",
+    "检索与文档解析",
+    "决策知识结构化",
+    "异常监控与稳定性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/AI工作流在淘宝交易舆情巡检上的探索与实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T18:25:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "daadd54bf5c871811f206bc4ff92729227a0645d7f6617f7003ea6d2dcd556ff",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.2-5含工作流与四步AI模块示意图（位于PDF图像层），p.8为空白留言尾页；全部核心节点、演进对比与预警规则均已在文本层完整转写。",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            8
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 3822184,
+      "page_count": 8
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T18:25:00-07:00",
+  "directory": "大淘宝技术/AI工作流交易舆情巡检+26.3.6",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI工作流交易舆情巡检.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0249",
+    "created_at": "2026-10-20T18:25:00-07:00",
+    "updated_at": "2026-10-20T18:25:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "daadd54bf5c871811f206bc4ff92729227a0645d7f6617f7003ea6d2dcd556ff"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "2834fdcd73672c645cd611ec7b3965ba6a933bf8eb3bd1f873652e808281cba3"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.2-5含工作流与四步AI模块示意图（位于PDF图像层），p.8为空白留言尾页；全部核心节点、演进对比与预警规则均已在文本层完整转写。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          8
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_AI工作流交易舆情巡检.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_AI工作流交易舆情巡检.md",
+      "sha256": "de1bab62559e842a8b706676ec101c800cdfc9b891371aa4b5570d60866b3695"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T18:25:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "daadd54bf5c871811f206bc4ff92729227a0645d7f6617f7003ea6d2dcd556ff"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "2834fdcd73672c645cd611ec7b3965ba6a933bf8eb3bd1f873652e808281cba3"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 58,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 719,
+        "text_layer_sha256": "d7ed27d58296cb3170cc09fc3385c48a8a3ada43902379259ea3957e05991072"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 95,
+        "md_start_line": 66,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 2,
+        "text_layer_char_count": 363,
+        "text_layer_sha256": "fd62c1e6a8de64d22519e0ff70bf02fdc2f9c561b29ca827917370e24fffb98e"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 142,
+        "md_start_line": 103,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 3,
+        "text_layer_char_count": 434,
+        "text_layer_sha256": "efa90e4f493232217608d405d5af4e560870fac678e8f16d4ff6a1209ddabbd7"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 182,
+        "md_start_line": 150,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 4,
+        "text_layer_char_count": 349,
+        "text_layer_sha256": "9cb2736272b893aa653cb141f8e4d87dba92ca3df9b25333b919e975dc1c511f"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 223,
+        "md_start_line": 190,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 5,
+        "text_layer_char_count": 404,
+        "text_layer_sha256": "ed65772aeecd2e4422bfd5b11ceb561166689175340aa0d1577700329b62732a"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 298,
+        "md_start_line": 231,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 6,
+        "text_layer_char_count": 994,
+        "text_layer_sha256": "f3522edcacc18761d76781246247d33511fd17ca13493657447744b9e01faaec"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 329,
+        "md_start_line": 306,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 7,
+        "text_layer_char_count": 330,
+        "text_layer_sha256": "3efadeec23a63e9d5bf6a69213a2ede71d4762de7a0bf6436c3f5d2d01eccf45"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 340,
+        "md_start_line": 337,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 8,
+        "text_layer_char_count": 11,
+        "text_layer_sha256": "93ef397fab818d24a5c83f698a4c9fa6948ba59b67898d4ba5afecdd561864bb"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.2-5含工作流与四步AI模块示意图（位于PDF图像层），p.8为空白留言尾页；全部核心节点、演进对比与预警规则均已在文本层完整转写。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          8
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/决策知识结构化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T18:25:00-07:00",
+    "removed_at": "2026-10-20T18:25:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI工作流在淘宝交易舆情巡检上的探索与实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "daadd54bf5c871811f206bc4ff92729227a0645d7f6617f7003ea6d2dcd556ff",
+        "copied_at": "2026-10-20T18:25:00-07:00",
+        "removed_at": "2026-10-20T18:25:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_AI工作流交易舆情巡检.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

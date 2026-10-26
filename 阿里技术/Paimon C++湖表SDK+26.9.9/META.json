@@ -1,0 +1,334 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0026",
+  "title": "Apache Paimon C++ ：从阿里数据湖走向开源社区",
+  "short_title": "Paimon C++湖表SDK",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "刘欣瑀",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-09-09T03:18",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "2026年9月9日 03:18",
+  "published_timezone": null,
+  "identity_evidence": "p.1“刘欣瑀 阿里技术 2026年9月9日 03:18 浙江”",
+  "tags": [
+    "数据湖表与互操作"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/Apache Paimon C++ ：从阿里数据湖走向开源社区.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:47:41-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "2bba32a0436495c6fe3dc4679b3f6d5c41a2e64f8bcc52cf08eef51d25e53a01",
+      "size_bytes": 5327476,
+      "page_count": 11,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": []
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:47:41-07:00",
+  "directory": "阿里技术/Paimon C++湖表SDK+26.9.9",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Paimon C++湖表SDK.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0026",
+    "created_at": "2026-10-13T02:47:41-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "2bba32a0436495c6fe3dc4679b3f6d5c41a2e64f8bcc52cf08eef51d25e53a01"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [],
+    "outputs": [
+      "AI_Paimon C++湖表SDK.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "coverage": [
+      {
+        "name": "背景和接入状态",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "语义边界与插件设计",
+        "pages": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "读写两阶段与索引检索",
+        "pages": [
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "性能机制和对照",
+        "pages": [
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "社区路线",
+        "pages": [
+          9
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 9,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_Paimon C++湖表SDK.md",
+      "sha256": "2930e84ebd7f96d6249455aefdcc512be54bc8081f10fdcab801eea700323378"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:47:41-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "2bba32a0436495c6fe3dc4679b3f6d5c41a2e64f8bcc52cf08eef51d25e53a01"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "7eb82b76384989dde1e1700ea9b9cc06a3d21ab8cab723138fb5e88409bd6c1a"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 30,
+        "text_layer_sha256": "43d4c3a9086373797dea0f6f0c10bd2c08e620d59bd9efde1ba5ebc0209273f7",
+        "text_layer_char_count": 741
+      },
+      {
+        "page": 2,
+        "md_start_line": 38,
+        "md_end_line": 61,
+        "text_layer_sha256": "7efde6d2e710c919e781ff47df966b4c0d821ffbec67c8bb67c5e962e840f21f",
+        "text_layer_char_count": 754
+      },
+      {
+        "page": 3,
+        "md_start_line": 69,
+        "md_end_line": 100,
+        "text_layer_sha256": "ee7dea8d944a0ce642f030081a8ec4aea4942c5d2d4313a0dc9110ac0fd06089",
+        "text_layer_char_count": 1163
+      },
+      {
+        "page": 4,
+        "md_start_line": 108,
+        "md_end_line": 135,
+        "text_layer_sha256": "beb8aa713b97adf7ef43f4e94af428a7ecbb392ad68e57189491037b37993d12",
+        "text_layer_char_count": 974
+      },
+      {
+        "page": 5,
+        "md_start_line": 143,
+        "md_end_line": 162,
+        "text_layer_sha256": "00a7106ffd51944b9107da39526379f511b9af4759785ca62a723929c170bc64",
+        "text_layer_char_count": 766
+      },
+      {
+        "page": 6,
+        "md_start_line": 170,
+        "md_end_line": 188,
+        "text_layer_sha256": "401c07c6b9ad0962127011dc01bbcca041aa43b09e3f49f86250bef2c8cc5aca",
+        "text_layer_char_count": 642
+      },
+      {
+        "page": 7,
+        "md_start_line": 196,
+        "md_end_line": 218,
+        "text_layer_sha256": "7f3d20c23b787a8c93839b975777d735251327e2264bb75c6c94795633e739de",
+        "text_layer_char_count": 742
+      },
+      {
+        "page": 8,
+        "md_start_line": 226,
+        "md_end_line": 251,
+        "text_layer_sha256": "db2a4ec57497fd38d364783c393af76a621ea84b009706d54294e534f8868b7f",
+        "text_layer_char_count": 954
+      },
+      {
+        "page": 9,
+        "md_start_line": 259,
+        "md_end_line": 284,
+        "text_layer_sha256": "37727df1a5c8f2c0572ddb274c5a68ceca4e90765aa8dcc8a771a90f34d448f4",
+        "text_layer_char_count": 1027
+      },
+      {
+        "page": 10,
+        "md_start_line": 292,
+        "md_end_line": 294,
+        "text_layer_sha256": "f90b5ec15d3ef88fa765d9cac7182f1b8138d9e4f0d6f85c6985898a435c0cc7",
+        "text_layer_char_count": 36
+      },
+      {
+        "page": 11,
+        "md_start_line": 302,
+        "md_end_line": 304,
+        "text_layer_sha256": "5b7441e5f9ba58678f4496f53582d5a75934898f18fad8c931c6d57f07d6f817",
+        "text_layer_char_count": 17
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "quality_issues": []
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/数据湖表与互操作.md"
+    ],
+    "proposed_topics": [
+      "数据湖表语义",
+      "多模态检索",
+      "Agent评测与反馈"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:47:41-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/Apache Paimon C++ ：从阿里数据湖走向开源社区.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "2bba32a0436495c6fe3dc4679b3f6d5c41a2e64f8bcc52cf08eef51d25e53a01",
+        "copied_at": "2026-10-13T02:47:41-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0300",
+  "title": "2025年终必看：开源大模型哪家强？9大模型架构演变历程一次性看明白",
+  "short_title": "2025九大模型架构比较",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-11-10T01:43",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "2025年终必看：开源⼤模型哪家强？        9⼤模型架构演变历程⼀次性\n看明⽩\n\n\n原创腾讯程序员  腾讯技术⼯程 2025年11⽉10⽇   01:43⼴东109⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n当⼤模型开始“ 进化论”——⼀场静默却颠覆认知的技术跃迁。2025 年已即将结束，开源⼤模\n型的演进速度，是否已让你感到“迭代焦虑”？半年多前我们还在解析DeepSeek的架构设计，\n⽽今天，新⼀轮模型爆发已重新定义竞争的边界。国庆前各⼤模型争相更新也是让⼈感受到领\n域的卷度。\n\n当我们看到Claude在复杂逻辑推理中展现近乎⼈类的连贯性，当Kimi-K2轻松处理数百万字的\n上下⽂⽽不“失焦”，当越来越多企业⽤开源模型跑通了过去只有闭源API才能⽀撑的业务场景\n——⼀个问题⾃然浮现：在这静默却汹涌的半年⾥，⼤模型究竟    “进化”了什么？\n\n这不是⼀次简单的参数刷新或基准测试分数的提升，⽽是⼀场由内⽽外的“能⼒质变”。模型开\n始从“回答者”蜕变为“思考者”，从单⼀语⾔处理器演进",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "大模型基础与推理优化",
+    "多模态与生成模型"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/2025年终必看：开源大模型哪家强？9大模型架构演变历程一次性看明白.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:19:51-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "83991f4c822908afd8a596e02da735f3480cdf016db3dc05349ae3ff37bb984f",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "p5速读全局/局部5:1与p23每5局部1全局相反；采用p23细述作历史观点并待官方核查。",
+        "GPT-3/4合标175B、Qwen密集模型称7却列6、KimiK2段落出现Kimi2.5等明显混用，不能照抄为规格。",
+        "MoE激活参数少不等于所有权重占用显存下降；并行通信、带宽和部署驻留仍需计入。",
+        "多处机制动机明确是作者猜测，不能当模型开发者确认；价格、上下文、基准和开放状态均历史限定。",
+        "仅看页图9、14、18、23；未逐图核查42页全部表格/数值。"
+      ],
+      "size_bytes": 14573675,
+      "page_count": 42
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:19:51-07:00",
+  "directory": "腾讯技术工程/2025九大模型架构比较+25.11.10",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:19:51-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "83991f4c822908afd8a596e02da735f3480cdf016db3dc05349ae3ff37bb984f",
+    "output_path": "MD.md",
+    "output_sha256": "9bd371b3e637251967b5e51d1b70157a377be8cfbf834ec29b82125c8ab3dfee",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 42,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "visual_pages": [
+        9,
+        14,
+        18,
+        23
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "p5速读全局/局部5:1与p23每5局部1全局相反；采用p23细述作历史观点并待官方核查。",
+      "GPT-3/4合标175B、Qwen密集模型称7却列6、KimiK2段落出现Kimi2.5等明显混用，不能照抄为规格。",
+      "MoE激活参数少不等于所有权重占用显存下降；并行通信、带宽和部署驻留仍需计入。",
+      "多处机制动机明确是作者猜测，不能当模型开发者确认；价格、上下文、基准和开放状态均历史限定。",
+      "仅看页图9、14、18、23；未逐图核查42页全部表格/数值。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/2025年终必看：开源大模型哪家强？9大模型架构演变历程一次性看明白.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/2025九大模型架构比较+25.11.10/RAW.pdf",
+    "sha256": "83991f4c822908afd8a596e02da735f3480cdf016db3dc05349ae3ff37bb984f",
+    "copied_at": "2026-10-23T06:19:51-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

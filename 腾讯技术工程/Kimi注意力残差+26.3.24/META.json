@@ -1,0 +1,357 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0068",
+  "title": "“将注意力旋转 90°”：深入浅出解读 Kimi 最新出圈成果",
+  "short_title": "Kimi注意力残差",
+  "account": "腾讯技术工程",
+  "author": "dorianbian",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-03-24T02:49",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0324 Kimi注意力残差论文解读.pdf",
+      "original_filename": "0324 Kimi注意力残差论文解读.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "5031bd6b92344279908eb6edf64103854054b95a2e9ac8e4f143522104e17fba",
+      "size_bytes": 3556690,
+      "page_count": 10,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "⚠️[原文疑点] p.8 表格上界 N+S 且 S 定义为每块层数，正文简写“块数+层数”存在粒度歧义；保留公式与定义。",
+          "pages": [
+            8
+          ],
+          "status": "unresolved"
+        }
+      ],
+      "publication_evidence": "PDF p.1 可见 2026-03-24T02:49"
+    }
+  ],
+  "tags": [
+    "模型架构与训练"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Kimi注意力残差+26.3.24",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Kimi注意力残差.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "\"将注意力旋转 90° \":深入浅出解读 Kimi  最新出圈成果\n鹅厂程序员 2026 年 3 月 24 日 02 : 49广东原创 腾讯技术工程 132 人\n作者:dorianbian\n前几天,一篇来自 Kimi 的论文「 ATTENTION RESIDUALS 」在  AI 圈引发了激烈讨论 —— 马斯克\n罕见地发出评价: \"Impressive work from Kimi\" 。\n同时,两位前 Openai 大佬也同样发出了高度评价, OpenAI 「推理模型之父」 Jerry Tworek 表示\n“ 深度学习 2.0 时代即将到来 ” 。\nOpenai 创始团队成员之一 Andrej Karpathy 看过此文后感叹, “ 我们对 Attention is All You Need 的\n理解还是片面了 ” 。\n",
+    "publication_evidence": "PDF p.1 可见 2026-03-24T02:49",
+    "full_title_in_capture": "“将注意力旋转 90°”：深入浅出解读 Kimi 最新出圈成果",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0068",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "5031bd6b92344279908eb6edf64103854054b95a2e9ac8e4f143522104e17fba"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "⚠️[原文疑点] p.8 表格上界 N+S 且 S 定义为每块层数，正文简写“块数+层数”存在粒度歧义；保留公式与定义。",
+        "pages": [
+          8
+        ],
+        "status": "unresolved"
+      }
+    ],
+    "outputs": [
+      "AI_Kimi注意力残差.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "coverage": "覆盖标准、Full、Block机制、工程代价、五种矩阵分析及论文链接；省略名人评价和读者留言，矩阵保留结构含义而非逐格重排",
+    "fact_checks": [
+      {
+        "item": "推荐示例块数",
+        "value": "N=8",
+        "pages": [
+          5
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "矩阵示意",
+        "value": "4×4",
+        "pages": [
+          5
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "Standard半可分秩",
+        "value": "1",
+        "pages": [
+          8
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "Full半可分秩",
+        "value": "L",
+        "pages": [
+          8
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "Block半可分秩",
+        "value": "[N,N+S]，S为每块层数",
+        "pages": [
+          8
+        ],
+        "result": "核对原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Kimi注意力残差.md",
+      "sha256": "54d6f50bfb5b16ef8386621133d1afed2f41b2f199844640566bfba7031e3b0a"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "5031bd6b92344279908eb6edf64103854054b95a2e9ac8e4f143522104e17fba"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "5bdb3da639ad148190411ce53329f5fe2d3fa0a978c7c4997947be0a02bdcf21"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 18,
+        "text_layer_sha256": "a715dcaae7df6948c858015e71bf97903bcbd5a4c9fb6236d8bfbc1f78df98db",
+        "text_layer_char_count": 365
+      },
+      {
+        "page": 2,
+        "md_start_line": 26,
+        "md_end_line": 49,
+        "text_layer_sha256": "58cf5b4488e7a0b0da6ed0090f031d6d00514c3ed15699df8f1a1fb8816ea209",
+        "text_layer_char_count": 764
+      },
+      {
+        "page": 3,
+        "md_start_line": 57,
+        "md_end_line": 76,
+        "text_layer_sha256": "61db687e6b2ffc8f95005dfa34dc9cccc67ab3a51ea9779a82558303d5730cc2",
+        "text_layer_char_count": 836
+      },
+      {
+        "page": 4,
+        "md_start_line": 84,
+        "md_end_line": 106,
+        "text_layer_sha256": "9901289d82fb3ee6abc5bb12c1669a07a9e588d4635f194282d777af84cb01b4",
+        "text_layer_char_count": 750
+      },
+      {
+        "page": 5,
+        "md_start_line": 114,
+        "md_end_line": 133,
+        "text_layer_sha256": "d265ce15c5e1edac4d085cd54e19eb5af52999cc843a77cedbc9cd8a313bbda2",
+        "text_layer_char_count": 637
+      },
+      {
+        "page": 6,
+        "md_start_line": 141,
+        "md_end_line": 157,
+        "text_layer_sha256": "7d23c98d07771074a2394a8e23f077fb4392ad65bf58f43f884c25411dfe2d1f",
+        "text_layer_char_count": 450
+      },
+      {
+        "page": 7,
+        "md_start_line": 165,
+        "md_end_line": 181,
+        "text_layer_sha256": "23d89d1cbfb32e2f7f690a129c6e9b8f7d1a4ca536f39df0e416a48fecf66826",
+        "text_layer_char_count": 450
+      },
+      {
+        "page": 8,
+        "md_start_line": 189,
+        "md_end_line": 216,
+        "text_layer_sha256": "55f3922955489a19dd7cefb8cd098dfa72ee37606f9383fefd2f156221839f03",
+        "text_layer_char_count": 916
+      },
+      {
+        "page": 9,
+        "md_start_line": 224,
+        "md_end_line": 244,
+        "text_layer_sha256": "00d6879d1d06429a6380dd69cfb6b63df61edf029dcf243a43c15df4681a7be2",
+        "text_layer_char_count": 425
+      },
+      {
+        "page": 10,
+        "md_start_line": 252,
+        "md_end_line": 259,
+        "text_layer_sha256": "c1b9ae288541302a353d37c2919be4cad09482d9df48a635eac55457492c5da5",
+        "text_layer_char_count": 149
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "⚠️[原文疑点] p.8 表格上界 N+S 且 S 定义为每块层数，正文简写“块数+层数”存在粒度歧义；保留公式与定义。",
+        "pages": [
+          8
+        ],
+        "status": "unresolved"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0324 Kimi注意力残差论文解读.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "5031bd6b92344279908eb6edf64103854054b95a2e9ac8e4f143522104e17fba",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Kimi注意力残差.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

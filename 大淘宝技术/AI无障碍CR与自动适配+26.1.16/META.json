@@ -1,0 +1,326 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0264",
+  "title": "AI 无障碍 CR 与自动适配实践：从问题洞察到效果验证",
+  "short_title": "AI无障碍CR与自动适配",
+  "account": "大淘宝技术",
+  "author": "曹西",
+  "author_byline": "本文作者曹西，来自淘天集团-基础交易终端团队。",
+  "source_url": null,
+  "published_at": "2026-01-16",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "基础交易终端团队 2026年1月16日 01:16 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 9,
+      "text": "本文作者曹西，来自淘天集团-基础交易终端团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "AI研发协同",
+    "跨端开发与性能",
+    "Agent评测与反馈"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/AI 无障碍 CR 与自动适配实践：从问题洞察到效果验证.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T19:22:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "11cad51044f7c0e27630dd256882cff4721b3ff0cf8bb35554fdbf2c521e7ac1",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.1, 3, 4, 8含流程图与示意截图（位于PDF图像层），核心架构、检测维度及全部验证表格均在PDF文本层完整提取。",
+          "pages": [
+            1,
+            3,
+            4,
+            8
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 3771954,
+      "page_count": 9
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T19:22:00-07:00",
+  "directory": "大淘宝技术/AI无障碍CR与自动适配+26.1.16",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI无障碍CR与自动适配.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0264",
+    "created_at": "2026-10-20T19:22:00-07:00",
+    "updated_at": "2026-10-20T19:22:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "11cad51044f7c0e27630dd256882cff4721b3ff0cf8bb35554fdbf2c521e7ac1"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "2c025c5cfb41f83d4ce8dd91aab26e64c42376dba96138d6f6e5f7e5aa315f07"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.1, 3, 4, 8含流程图与示意截图（位于PDF图像层），核心架构、检测维度及全部验证表格均在PDF文本层完整提取。",
+        "pages": [
+          1,
+          3,
+          4,
+          8
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_AI无障碍CR与自动适配.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_AI无障碍CR与自动适配.md",
+      "sha256": "27f129a1c1a58332fe44d6b53e5d86878ef058c0240695f627c4fac270bfdb7d"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T19:22:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "11cad51044f7c0e27630dd256882cff4721b3ff0cf8bb35554fdbf2c521e7ac1"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "2c025c5cfb41f83d4ce8dd91aab26e64c42376dba96138d6f6e5f7e5aa315f07"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 55,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 523,
+        "text_layer_sha256": "156567345db1d1a935e8610449a67eeeb204a58f1c91eb835793e9426fe73037"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 110,
+        "md_start_line": 63,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 2,
+        "text_layer_char_count": 606,
+        "text_layer_sha256": "ac7611469a8566ad911c1fda9278aba424a41d61cffa0b9bf2bdc4a2aa0517db"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 162,
+        "md_start_line": 118,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 3,
+        "text_layer_char_count": 432,
+        "text_layer_sha256": "d8efedf1055b6fa6eb76926b3626606549e47651a7442bc0d1c03e12f9140a38"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 210,
+        "md_start_line": 170,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 4,
+        "text_layer_char_count": 547,
+        "text_layer_sha256": "ee461a081da0527513e497a4053068401bf2678b02c8944966e457b991b517c0"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 268,
+        "md_start_line": 218,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 5,
+        "text_layer_char_count": 628,
+        "text_layer_sha256": "27f55ca0b131818d69c181ee6251aac1a1e50296a1f75e77a85726d91c4177e9"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 313,
+        "md_start_line": 276,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 6,
+        "text_layer_char_count": 415,
+        "text_layer_sha256": "1dc594fb3d407892e7172ddf380ff173fd7fbc25f9087be499a493b4524854aa"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 365,
+        "md_start_line": 321,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 7,
+        "text_layer_char_count": 486,
+        "text_layer_sha256": "fbc8cc54a4367ba9022e337af408bcdbddaef8f1f32935b9994ab10e3cc9a14f"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 411,
+        "md_start_line": 373,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 8,
+        "text_layer_char_count": 629,
+        "text_layer_sha256": "82427b0d85bd1120a69c44de872a21ecfd7e14dac7b68be223fb16428ce772a2"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 437,
+        "md_start_line": 419,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 9,
+        "text_layer_char_count": 234,
+        "text_layer_sha256": "7dc5f5cfc7dc3d30690360339178d912a6c41aecd54ea03846d146f297613ee9"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.1, 3, 4, 8含流程图与示意截图（位于PDF图像层），核心架构、检测维度及全部验证表格均在PDF文本层完整提取。",
+        "pages": [
+          1,
+          3,
+          4,
+          8
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T19:22:00-07:00",
+    "removed_at": "2026-10-20T19:22:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI 无障碍 CR 与自动适配实践：从问题洞察到效果验证.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "11cad51044f7c0e27630dd256882cff4721b3ff0cf8bb35554fdbf2c521e7ac1",
+        "copied_at": "2026-10-20T19:22:00-07:00",
+        "removed_at": "2026-10-20T19:22:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_AI无障碍CR与自动适配.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

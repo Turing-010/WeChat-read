@@ -1,0 +1,381 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0201",
+  "title": "百亿补贴 C 端 AI Coding 实战：基于 SDD 的服务端 AI Coding 实践",
+  "short_title": "百补服务端SDD实践",
+  "account": "大淘宝技术",
+  "author": "码一",
+  "author_byline": "本文作者码一，来自淘天集团-天猫技术团队。",
+  "source_url": null,
+  "published_at": "2026-07-27",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "天猫技术 2026年7月27日 01:49 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 14,
+      "text": "本文作者码一，来自淘天集团-天猫技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "AI研发协同",
+    "Agent长期记忆",
+    "Harness与模型协同",
+    "Agent成本与上下文预算"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/百亿补贴 C 端 AI Coding 实战：基于 SDD 的服务端 AI Coding 实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T06:06:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "ac4aa4e97426aab8d40b3490adbac3ae255bf17c07ecb22bedbe02f8c8d66769",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.4-11含P2C多Agent工作流图、SDD文件组织架构图与自进化记忆分层图（位于PDF图像层），核心机制与4000+行0手写交付数据已在正文完整阐述。",
+          "pages": [
+            4,
+            6,
+            7,
+            8,
+            10,
+            11
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 4325671,
+      "page_count": 15
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T06:06:00-07:00",
+  "directory": "大淘宝技术/百补服务端SDD实践+26.7.27",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_百补服务端SDD实践.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0201",
+    "created_at": "2026-10-20T06:06:00-07:00",
+    "updated_at": "2026-10-20T06:06:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "ac4aa4e97426aab8d40b3490adbac3ae255bf17c07ecb22bedbe02f8c8d66769"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "d39cd8b22ec6e099e70f0c4325edbbcd4b76c2904daed96789fc12975054c948"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.4-11含P2C多Agent工作流图、SDD文件组织架构图与自进化记忆分层图（位于PDF图像层），核心机制与4000+行0手写交付数据已在正文完整阐述。",
+        "pages": [
+          4,
+          6,
+          7,
+          8,
+          10,
+          11
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_百补服务端SDD实践.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_百补服务端SDD实践.md",
+      "sha256": "e76c95a2dbb8c78f14e418f475ebcde00a45f514245dd827d54be44bd710a853"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T06:06:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "ac4aa4e97426aab8d40b3490adbac3ae255bf17c07ecb22bedbe02f8c8d66769"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "d39cd8b22ec6e099e70f0c4325edbbcd4b76c2904daed96789fc12975054c948"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "md_end_line": 74,
+        "md_start_line": 14,
+        "page": 1,
+        "text_layer_char_count": 792,
+        "text_layer_sha256": "db71be3a08060fc3210dd728e669414e8befa668e65f764bfdfb1b4f29509c44"
+      },
+      {
+        "md_end_line": 127,
+        "md_start_line": 84,
+        "page": 2,
+        "text_layer_char_count": 690,
+        "text_layer_sha256": "206a53fc6185723136f38a45e13e43dabd151caecb5ad2f2e28c01db7f6917fb"
+      },
+      {
+        "md_end_line": 174,
+        "md_start_line": 137,
+        "page": 3,
+        "text_layer_char_count": 675,
+        "text_layer_sha256": "38255851f84fc55f6dff1db2dd29e98c408999558b6ac240c0296f5e6b5a363f"
+      },
+      {
+        "md_end_line": 226,
+        "md_start_line": 184,
+        "page": 4,
+        "text_layer_char_count": 793,
+        "text_layer_sha256": "afd30f074d9714803db84aef72f479cf1229cc1f147254d4e52b79f9546f7613"
+      },
+      {
+        "md_end_line": 303,
+        "md_start_line": 236,
+        "page": 5,
+        "text_layer_char_count": 866,
+        "text_layer_sha256": "7a24b10674f04aca31cec4715eecefe738b82eaa7158e3489bd1170f863fb0a6"
+      },
+      {
+        "md_end_line": 372,
+        "md_start_line": 313,
+        "page": 6,
+        "text_layer_char_count": 1039,
+        "text_layer_sha256": "8e5dd153f30dc1e3747d837017c29d3982f3b7d09d52bb98d28fa9fd6bed3181"
+      },
+      {
+        "md_end_line": 410,
+        "md_start_line": 382,
+        "page": 7,
+        "text_layer_char_count": 399,
+        "text_layer_sha256": "47106be5ca11d5e682fe4fcc0ac224b02a2659680428027e9e5a3c43e2134cbf"
+      },
+      {
+        "md_end_line": 479,
+        "md_start_line": 420,
+        "page": 8,
+        "text_layer_char_count": 859,
+        "text_layer_sha256": "a8b30201f73577cadaa7737acc17a2f60a785062eccd1a1c585eb2b8dc3395e4"
+      },
+      {
+        "md_end_line": 533,
+        "md_start_line": 489,
+        "page": 9,
+        "text_layer_char_count": 714,
+        "text_layer_sha256": "c5d311e1720045990a33634ac6f036bb2402b5cac24a566eabbc0cb88a73db35"
+      },
+      {
+        "md_end_line": 594,
+        "md_start_line": 543,
+        "page": 10,
+        "text_layer_char_count": 778,
+        "text_layer_sha256": "d65e2e26f2ddae43395cda748f345efa505b9e2f789e7b730065cb12f74a723d"
+      },
+      {
+        "md_end_line": 605,
+        "md_start_line": 604,
+        "page": 11,
+        "text_layer_char_count": 59,
+        "text_layer_sha256": "38228a4e12cd083ab4899c9def064e836d1d06fab8d1c303db7506dca05c6822"
+      },
+      {
+        "md_end_line": 653,
+        "md_start_line": 615,
+        "page": 12,
+        "text_layer_char_count": 653,
+        "text_layer_sha256": "4ea47f71d8130498648f5e38bce833fd87b88bd8f91cfb89a69cc4b63db3e7f6"
+      },
+      {
+        "md_end_line": 726,
+        "md_start_line": 663,
+        "page": 13,
+        "text_layer_char_count": 865,
+        "text_layer_sha256": "53011ccc8749d3c9943207053b3f5d8148966f3a33ad1d317707338286058784"
+      },
+      {
+        "md_end_line": 773,
+        "md_start_line": 736,
+        "page": 14,
+        "text_layer_char_count": 740,
+        "text_layer_sha256": "e541198ba31b0d4ff9e7bd404b595b7e96c0ebaeb8b196a63fd3be94d1d2a524"
+      },
+      {
+        "md_end_line": 795,
+        "md_start_line": 783,
+        "page": 15,
+        "text_layer_char_count": 132,
+        "text_layer_sha256": "6b20789084efa4e8fdcfa75f8f7a337aa32eb52b96733b8ee88e1f390abf5e48"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.4-11含P2C多Agent工作流图、SDD文件组织架构图与自进化记忆分层图（位于PDF图像层），核心机制与4000+行0手写交付数据已在正文完整阐述。",
+        "pages": [
+          4,
+          6,
+          7,
+          8,
+          10,
+          11
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T06:06:00-07:00",
+    "removed_at": "2026-10-20T06:06:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/百亿补贴 C 端 AI Coding 实战：基于 SDD 的服务端 AI Coding 实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "ac4aa4e97426aab8d40b3490adbac3ae255bf17c07ecb22bedbe02f8c8d66769",
+        "copied_at": "2026-10-20T06:06:00-07:00",
+        "removed_at": "2026-10-20T06:06:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_百补服务端SDD实践.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

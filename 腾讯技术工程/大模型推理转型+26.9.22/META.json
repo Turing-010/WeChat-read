@@ -1,0 +1,714 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0007",
+  "title": "腾讯15年资深后台工程师，转战大模型推理的抉择",
+  "account": "腾讯技术工程",
+  "author": "吴银光",
+  "source_url": null,
+  "published_at": "2026-09-22T03:55",
+  "tags": [
+    "学习方法",
+    "大模型推理",
+    "职业发展",
+    "自我认识",
+    "模型与开发工具发布",
+    "AI研发协同"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/腾讯15年资深后台工程师，转战大模型推理的抉择.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-04T00:59:35-07:00",
+      "provenance": "本次由00_inbox复制归档的本地PDF；原始采集方式和时间未知",
+      "sha256": "7639af2660ba29f38667e80f54d51b94703d79c1f02b7b08be680ca911b9ef04",
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "PDF原文地址、采集时间和显示时间的时区未确认；外部事实及在线原文一致性未核查。",
+          "verification_status": "unverified",
+          "pages": []
+        },
+        {
+          "description": "渲染页面可见图片加载占位区，缺失内容无法从当前PDF恢复。",
+          "verification_status": "visually_observed",
+          "pages": [
+            9,
+            10
+          ]
+        }
+      ],
+      "size_bytes": 2480380,
+      "page_count": 11
+    },
+    {
+      "capture_id": "capture-002",
+      "path": "RAW_补采001.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯15年资深后台工程师，转战大模型推理的抉择.pdf",
+      "original_filename": "腾讯15年资深后台工程师，转战大模型推理的抉择.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "345b33caf7eb41216e3c065db0833eb0730120242c25a39891e6154d96c74b98",
+      "size_bytes": 3767681,
+      "page_count": 10,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "issue": "职业转型和产业判断为作者个人复盘；文中技术资源及框架现状随时间变化。",
+          "pages": [
+            1,
+            2,
+            5,
+            7,
+            8,
+            9
+          ],
+          "impact": "笔记将其限定为作者经历和文章时点的学习路线，不作为普遍职业建议或当前版本声明。"
+        }
+      ],
+      "publication_evidence": "PDF p.1: Sep 22, 2026, 3:55 AM; no timezone stated."
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-04T00:59:35-07:00",
+  "author_byline": "吴银光",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "腾讯 15 年资深后台工程师,转战大模型推理的抉择\n腾讯程序员 Sep  22 , 2026 , 3 : 55  AM广东腾讯技术工程 136  listened\n作者:吴银光\n1. 前言\n我工作了  15 年, 2016 年加入腾讯, 2022 年凭借搜索中台的工作晋升  T12 ,是一名资深搜索\n后台工程师。 2025 年初,我切换到大模型推理工程团队,放下过往的资历与经验积累,以归\n零心态从头开始。本文既是我的自省回顾,也希望能给在  AI 时代犹豫迷茫的同行人一些鼓\n励,并与各位交流共勉,一起追赶浪潮、推动效率新时代的到来。\n2. 大模型推理工程的零级新人\n从  2024 年到  2025 年,我最大的变化是从资深搜索后台工程师和基干变成大模型推理工程的\n新人。 \" 新人 \" 不是一个谦词,是字面意义上的 \" 新人 \" ,如同实习生、应届生一般,没有高级头\n衔,也不做任务分发。最初三个月,我的工作任务集中在性能评测、服务部署等大模型周边的\n琐碎事项;不过在这个过程中,我也抽时间深入阅读了  SGLang  源码。\n导语:本文讲述腾讯 15 年资深后台工程师,在  AI 时代如何入门大模型推理工程。全文围\n绕三条主线展开:从资深后台工程师到推理工程新人的抉择、推理工程的入门路径与自检\n方法、 AI Infra 与通用  Infra 的同源与分野。\n",
+    "publication_evidence": "PDF p.1: Sep 22, 2026, 3:55 AM; no timezone stated.",
+    "full_title_in_capture": "腾讯 15 年资深后台工程师，转战大模型推理的抉择",
+    "identity_comparison": "same title/account/author/publication date and corresponding content; preserve permanent article ID"
+  },
+  "deduplication": {
+    "compared_article_ids": [
+      "art-0001",
+      "art-0002",
+      "art-0003",
+      "art-0004",
+      "art-0005",
+      "art-0006"
+    ],
+    "compared_batch_sha256": [
+      "07b21eb800753fa51f86866bbd7f8d00504cb83d7f060b793f3d4fc32f34e9cc",
+      "da1f13f9d535340c5a47fa4569a8ec23a534363ecacf874aed9ff488888b6101",
+      "af7c929e1ad84758e890d53444ca14569755bf90822baf53415ed45d1a90c13d",
+      "ee6e81186109f2392b01022aa6c057b64aa52e4da17e6c4d1166e13982cfd4bb",
+      "fddcc0be82979dc2978d57059e5cf05704968fc67c472090a9deb9354aae92a8",
+      "7639af2660ba29f38667e80f54d51b94703d79c1f02b7b08be680ca911b9ef04",
+      "da48b5daab2ce87443edf0ef90f09d7e2e72d5d0305af1a177b5e7ed8016c42e"
+    ],
+    "result": "no_existing_identity_or_file_match"
+  },
+  "short_title": "大模型推理转型",
+  "directory": "腾讯技术工程/大模型推理转型+26.9.22",
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0007",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-002",
+        "path": "RAW_补采001.pdf",
+        "sha256": "345b33caf7eb41216e3c065db0833eb0730120242c25a39891e6154d96c74b98"
+      },
+      {
+        "path": "MD_补采001.md",
+        "sha256": "9e5968ac7c542a42becc24fb245e6248c72bc290c721b3f8c16f77ba9f780721"
+      }
+    ],
+    "method": "按用户指定Obsidian学习笔记提示词（基于MD_补采001.md与既有PDF核验记录）重新生成中文学习笔记；正文、数据表、图注与复习卡片均去除页码标注，核验结果统一置于文末折叠校对报告；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对",
+      "MD_补采001.md全文核对与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "user_custom_obsidian_prompt_20261015",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71",
+      "override_note": "用户于2026-10-15会话中直接提供完整结构化Obsidian学习笔记提示词（去除正文/表格/卡片内页码标注，保留文末折叠校对报告）。"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "issue": "职业转型和产业判断为作者个人复盘；文中技术资源及框架现状随时间变化。",
+        "pages": [
+          1,
+          2,
+          5,
+          7,
+          8,
+          9
+        ],
+        "impact": "笔记将其限定为作者经历和文章时点的学习路线，不作为普遍职业建议或当前版本声明。"
+      }
+    ],
+    "outputs": [
+      "AI_大模型推理转型_补充001.md",
+      "AI_大模型推理转型.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        9
+      ]
+    },
+    "coverage": "全篇10页文字与缩略图已检查；放大复核作者转型、推理层次、共享前缀与Beam Search练习、传统Infra/Agent Infra分析。p.10为评论区。",
+    "fact_checks": [
+      {
+        "item": "作者转入AI推理工程时间",
+        "note_value": "2025年初",
+        "source_value": "2025年初",
+        "pages": [
+          1,
+          3
+        ],
+        "result": "一致；自述经历。"
+      },
+      {
+        "item": "推理系统核心资源权衡",
+        "note_value": "算力、显存、通信",
+        "source_value": "相同",
+        "pages": [
+          3,
+          4
+        ],
+        "result": "一致。"
+      },
+      {
+        "item": "推理工程指标",
+        "note_value": "TTFT、TPOT、QPS、TPS、Concurrency和成本",
+        "source_value": "相同",
+        "pages": [
+          4
+        ],
+        "result": "一致。"
+      },
+      {
+        "item": "Beam Search经历",
+        "note_value": "作者曾在SGLang实现，后续有更强定制实现",
+        "source_value": "文章如是表述",
+        "pages": [
+          7
+        ],
+        "result": "一致；按作者经历和写作时点记录。"
+      },
+      {
+        "item": "Agent Infra工程挑战",
+        "note_value": "长会话调度、状态持久化、记忆、工具隔离、可观测和评估",
+        "source_value": "相同类别",
+        "pages": [
+          9
+        ],
+        "result": "一致。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading",
+        "clean body without inline page citations"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_大模型推理转型_补充001.md",
+      "sha256": "8590ac0ca7ca44d6d8beff8f9707245506716fa15274ac7f08189b12994dad76",
+      "previous_sha256": "bc1e094487c0b9e78ef7bc08a8eb05eb6d6ef7b9211987f0396a6c234a9fe7f2",
+      "synced_legacy_path": "AI_大模型推理转型.md",
+      "synced_legacy_sha256": "0083a7484e1ad1946b6c6963926a59176efc85a6a5d47b2cff789ce3280fc985"
+    },
+    "independent_crosscheck": {
+      "reviewer": "regenerated_with_user_prompt_20261015",
+      "note_sha256": "96786486b45ad48b5b3eda6b47853ebf1cb2ba140b1c369868742b0ad96fe607",
+      "review_sha256": "d8fdf7faf67a963afb7cdafaef9e105cab5e89aaded095700ee9112d25928c5d",
+      "status": "passed",
+      "changes": [
+        "规范旧Q::A卡片及复核记录。",
+        "Regenerated study note from MD_补采001.md per user prompt (2026-10-15): structured 10 modules, removed inline page citations from body/tables/flashcards, and consolidated verification in the folded 校对报告."
+      ],
+      "source_spotchecks": [
+        {
+          "source": "reading.txt; sheet-001.jpg",
+          "pages": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "finding": "核对作者转型、推理分层/指标、三个练习及Agent Infra联系；个人判断归因作者。"
+        }
+      ],
+      "previous_note_sha256": "527b6e34ce58611651336a08ee3169225828185eb9b21b1abc6a2e9391983781"
+    },
+    "updated_at": "2026-10-15T08:21:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-002",
+    "input": {
+      "path": "RAW_补采001.pdf",
+      "sha256": "345b33caf7eb41216e3c065db0833eb0730120242c25a39891e6154d96c74b98"
+    },
+    "output": {
+      "path": "MD_补采001.md",
+      "sha256": "9e5968ac7c542a42becc24fb245e6248c72bc290c721b3f8c16f77ba9f780721"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 25,
+        "text_layer_sha256": "a641058d3c6a0f2756f8f8ff24b62a41fec192dae81a7f71ac11d932b6592365",
+        "text_layer_char_count": 586
+      },
+      {
+        "page": 2,
+        "md_start_line": 33,
+        "md_end_line": 69,
+        "text_layer_sha256": "d412194d49876f29b01ad3341cb6118db5bd8628c404380b04990f285836707a",
+        "text_layer_char_count": 1394
+      },
+      {
+        "page": 3,
+        "md_start_line": 77,
+        "md_end_line": 110,
+        "text_layer_sha256": "5b505f1ce79dc94731fc6c3fd176ddf3ecf6cd4176f1270393571d6907014c90",
+        "text_layer_char_count": 1410
+      },
+      {
+        "page": 4,
+        "md_start_line": 118,
+        "md_end_line": 152,
+        "text_layer_sha256": "a17fd455569a3333f7e8b60b730b5677e663f50d6e5e5655f02d6ad4fb552073",
+        "text_layer_char_count": 1253
+      },
+      {
+        "page": 5,
+        "md_start_line": 160,
+        "md_end_line": 193,
+        "text_layer_sha256": "68f62811e353de731af8762ff0925fd41f28249d5cd61c03e9e5db832a776b48",
+        "text_layer_char_count": 1346
+      },
+      {
+        "page": 6,
+        "md_start_line": 201,
+        "md_end_line": 235,
+        "text_layer_sha256": "e365e67962107b3ff1962e3e1b00b70c7a597c65cb7c50ceb5257ce351582453",
+        "text_layer_char_count": 1372
+      },
+      {
+        "page": 7,
+        "md_start_line": 243,
+        "md_end_line": 276,
+        "text_layer_sha256": "46489358d168dc6cf3f0657c169734e79c18d15b3194dbd0fd00b300d1cdfc70",
+        "text_layer_char_count": 1415
+      },
+      {
+        "page": 8,
+        "md_start_line": 284,
+        "md_end_line": 318,
+        "text_layer_sha256": "9832cca920275d91ae91d54d077bdb20da25a89bb359862372a07c03706e9474",
+        "text_layer_char_count": 1368
+      },
+      {
+        "page": 9,
+        "md_start_line": 326,
+        "md_end_line": 337,
+        "text_layer_sha256": "cffdc5b5183e9666e4a78f6d306e46bbfd27f1f62803d2bc587a6dd5d6153f23",
+        "text_layer_char_count": 416
+      },
+      {
+        "page": 10,
+        "md_start_line": 345,
+        "md_end_line": 356,
+        "text_layer_sha256": "9f7c3a41ab7fdb4a15fa0197db38ae0f7ced378a15bda24602215cb0aa742b3c",
+        "text_layer_char_count": 133
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        9
+      ]
+    },
+    "quality_issues": [
+      {
+        "issue": "职业转型和产业判断为作者个人复盘；文中技术资源及框架现状随时间变化。",
+        "pages": [
+          1,
+          2,
+          5,
+          7,
+          8,
+          9
+        ],
+        "impact": "笔记将其限定为作者经历和文章时点的学习路线，不作为普遍职业建议或当前版本声明。"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯15年资深后台工程师，转战大模型推理的抉择.pdf",
+        "destination_path": "RAW_补采001.pdf",
+        "sha256": "345b33caf7eb41216e3c065db0833eb0730120242c25a39891e6154d96c74b98",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "files": {
+    "raw": "RAW_补采001.pdf",
+    "markdown": "MD_补采001.md",
+    "ai_summary": "AI_大模型推理转型_补充001.md"
+  },
+  "processing_history": [
+    {
+      "schema_version": 2,
+      "article_id": "art-0007",
+      "created_at": "2026-10-04T00:59:35-07:00",
+      "inputs": [
+        {
+          "capture_id": "capture-001",
+          "path": "RAW.pdf",
+          "sha256": "7639af2660ba29f38667e80f54d51b94703d79c1f02b7b08be680ca911b9ef04"
+        }
+      ],
+      "method": "直接读取PDF文本层；全页缩略检查，重点页面视觉核对；按实际可见内容生成学习笔记及扁平合集。无全文整理产物，无代码执行或Skill安装。",
+      "tools": [
+        "pypdf（PDF文本与链接读取）",
+        "pypdf文本提取",
+        "pdftoppm（PDF页面渲染）",
+        "Pillow（临时缩略图）",
+        "视觉检查",
+        "Python标准库（复制与SHA-256校验）"
+      ],
+      "model": null,
+      "model_version": null,
+      "prompt_version": "本次读取的agent.md与90_templates，未修改",
+      "processing_status": "completed",
+      "source_completeness": "incomplete",
+      "page_mapping_status": "pdf_physical_pages",
+      "quality_issues": [
+        {
+          "description": "PDF原文地址、采集时间和显示时间的时区未确认；外部事实及在线原文一致性未核查。",
+          "verification_status": "unverified",
+          "pages": []
+        },
+        {
+          "description": "渲染页面可见图片加载占位区，缺失内容无法从当前PDF恢复。",
+          "verification_status": "visually_observed",
+          "pages": [
+            9,
+            10
+          ]
+        }
+      ],
+      "outputs": [
+        "AI_大模型推理转型.md"
+      ],
+      "personal_notes_modified": false,
+      "extracted_items": [],
+      "extraction_summary": {
+        "prompts": 0,
+        "skills": 0,
+        "categories": 0
+      },
+      "updated_at": "2026-10-04T00:59:35-07:00",
+      "review_scope": {
+        "text_pages_read": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "thumbnail_pages_reviewed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "detail_pages_reviewed": [],
+        "limitations": "缩略检查用于识别空白、加载占位与版面异常；未逐字核验全部图片，未核对在线原文。"
+      },
+      "omitted_content": [
+        "第9—10页含加载占位区，第11页为空白；正文内容已读取，图片缺失仍保留为质量问题。",
+        "模型结构趋势、开源版本合并情况和行业判断未外部核实。",
+        "文章中的学习清单与自检练习是方法说明，没有实际Prompt或Skill定义，因此不生成合集。"
+      ]
+    }
+  ],
+  "conversion_history": [
+    {
+      "created_at": "2026-10-08",
+      "source_capture_id": "capture-001",
+      "input": {
+        "path": "RAW.pdf",
+        "sha256": "7639af2660ba29f38667e80f54d51b94703d79c1f02b7b08be680ca911b9ef04"
+      },
+      "output": {
+        "path": "MD.md",
+        "sha256": "669d8057922ed98e1908e7361144c30db533361b7c8e35d524a00343f32db7ab"
+      },
+      "extractor": "pdfplumber 0.11.9; Page.extract_text_lines / Page.extract_text",
+      "page_numbering": "physical_pages_1_based",
+      "status": "text_layer_conversion_completed",
+      "verification_status": "text_extraction_checked; layout_images_and_online_original_not_fully_verified",
+      "pages": [
+        {
+          "page": 1,
+          "md_start_line": 14,
+          "md_end_line": 37,
+          "text_layer_sha256": "e74adf12773a936d86caf01a446def345a06189265afe96f0e6c687e07c92d54",
+          "text_layer_char_count": 463,
+          "image_objects": 2,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 2,
+          "md_start_line": 42,
+          "md_end_line": 89,
+          "text_layer_sha256": "e5dd34121ba72b27d1bdf6563f83b0154bcdb6bd6770367124b4a93ee51ce152",
+          "text_layer_char_count": 1334,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 3,
+          "md_start_line": 94,
+          "md_end_line": 139,
+          "text_layer_sha256": "a1af759003e8a7502162c75b5bb3f9d9977c5628cf1eefab68d8a009b7fb7153",
+          "text_layer_char_count": 1361,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 4,
+          "md_start_line": 144,
+          "md_end_line": 193,
+          "text_layer_sha256": "bb6a7dd01e4584f15c37dfd753bedeb30033a02601287e8e850fb8cade5b6f2e",
+          "text_layer_char_count": 1215,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 5,
+          "md_start_line": 198,
+          "md_end_line": 249,
+          "text_layer_sha256": "f31d32ed448c1c39d6d3827ca3adb4eaebf76dd2109661933185de768f5f0a05",
+          "text_layer_char_count": 1357,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 6,
+          "md_start_line": 254,
+          "md_end_line": 304,
+          "text_layer_sha256": "5904974bae38b80b26b96771b944aa8d351ae27e205cfa661d27f1adddfa2027",
+          "text_layer_char_count": 1215,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 7,
+          "md_start_line": 309,
+          "md_end_line": 358,
+          "text_layer_sha256": "bca686e10f49e296b3a742794a52146015f933841e65e1f88317574c9a3b873a",
+          "text_layer_char_count": 1354,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 8,
+          "md_start_line": 363,
+          "md_end_line": 411,
+          "text_layer_sha256": "12d382d80f6e71f7888d42489cd277064bdbc9212ad5100f82b45559e1b28799",
+          "text_layer_char_count": 1283,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 9,
+          "md_start_line": 416,
+          "md_end_line": 438,
+          "text_layer_sha256": "1bc502406c3ed056db28e748171db7b73970cd34640e52fa654f35c1701f9edd",
+          "text_layer_char_count": 590,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 10,
+          "md_start_line": 443,
+          "md_end_line": 454,
+          "text_layer_sha256": "2751a4f517689e9be306a6420b2f5417ed52e596507d557735c0e571a6f3e250",
+          "text_layer_char_count": 54,
+          "image_objects": 1,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 11,
+          "md_start_line": 459,
+          "md_end_line": 460,
+          "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text_layer_char_count": 0,
+          "image_objects": 0,
+          "status": "no_text_layer_content"
+        }
+      ],
+      "quality_issues": [
+        "图片未嵌入MD，使用各页RAW链接核对；保留原始材料的既有质量问题。",
+        "文字来自PDF文本层，字形、阅读顺序、代码缩进、表格结构及裁切显示一致性仍可能需人工核验。"
+      ],
+      "personal_notes_modified": false
+    }
+  ],
+  "migration_history": [
+    {
+      "date": "2026-10-08",
+      "previous_directory": "10_articles/腾讯技术工程/2026-09-22_后台工程师转型大模型推理__art-0007",
+      "current_directory": "腾讯技术工程/大模型推理转型+26.9.22",
+      "previous_article_readme": "# 腾讯15年资深后台工程师，转战大模型推理的抉择\n\n公众号：腾讯技术工程；作者：吴银光；页面日期：2026-09-22（时区未确认）。\n\n## 阅读与使用\n\n- [整篇学习笔记](run/learning_note.md)\n\n## 原始材料\n\n- [归档PDF](source/capture-001.pdf)\n\n图片或附件有缺失，详见下文。已确认可读内容已整理，未将加工完成标为原文完整核验通过。\n",
+      "file_mapping": {
+        "source/capture-001.pdf": "RAW.pdf",
+        "metadata.json": "META.json",
+        "run/run.json": "META.json",
+        "README.md": "MD.md",
+        "run/learning_note.md": "AI_大模型推理转型.md"
+      },
+      "existing_ai_summaries": "preserved_with_link_updates; no_new_summary_generated",
+      "personal_note_template": "90_templates/个人笔记模板.md; create_only_on_user_request_or_start_of_personal_notes"
+    }
+  ],
+  "identity_evidence_history": [
+    {
+      "description": "PDF第1页可见标题、公众号、署名与日期；对照正文主题和篇章内容，7篇彼此不同，且均不同于已有art-0001。",
+      "pdf_page": 1,
+      "header_text": "腾讯 15 年资深后台⼯程师，转战⼤模型推理的抉择\n腾讯程序员 2026 年 9 ⽉ 22 ⽇ 03 : 55⼴东腾讯技术⼯程 126 ⼈\n",
+      "source_url_status": "PDF未提供可确认的本篇原文URL，不使用引用文献链接代替。"
+    }
+  ],
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/大模型推理与算子优化.md",
+      "../../20_topics/学习方法.md",
+      "../../20_topics/自我认识.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_大模型推理转型_补充001.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

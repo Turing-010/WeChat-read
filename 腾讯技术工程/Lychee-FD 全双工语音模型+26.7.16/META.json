@@ -1,0 +1,352 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0171",
+  "title": "腾讯 PCG 联合深圳河套学院：在全双工语音大模型领域取得重要突破，获 ACL 2026 杰出论文奖",
+  "short_title": "Lychee-FD 全双工语音模型",
+  "account": "腾讯技术工程",
+  "author": "未注明（署名为腾讯技术工程公众号）",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-07-16T02:52",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯PCG联合深圳河套学院：在全双工语音大模型领域取得重要突破，获 ACL 2026 杰出论文奖.pdf",
+      "original_filename": "腾讯PCG联合深圳河套学院：在全双工语音大模型领域取得重要突破，获 ACL 2026 杰出论文奖.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "fa2b3af324a8d8b8a510d41ab0a74e9c2a6ea82df5fc8aa1de9663c68fbd0bd5",
+      "size_bytes": 8495302,
+      "page_count": 10,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "文章为研究发布摘要，未完整列出评测协议、基线配置和区间估计；只依据可见文字/图表记录数据，不独立复现。"
+      ],
+      "publication_evidence": "PDF第1页署名行：2026年7月16日 02:52；无个人作者名，未补推作者。"
+    }
+  ],
+  "tags": [
+    "语音模型与交互",
+    "模型评测与反馈",
+    "Harness与模型协同",
+    "模型架构与训练",
+    "模型与开发工具发布"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/Lychee-FD 全双工语音模型+26.7.16",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Lychee-FD 全双工语音模型.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "腾讯 PCG 联合深圳河套学院:在全双工语音大模型领域取得重要突\n破,获 ACL  2026  杰出论文奖\n腾讯技术工程 Jul  16 , 2026 , 2 : 52  AM广东腾讯技术工程 1  listened\n近日,自然语言处理领域顶级国际学术会议 ACL  2026 公布获奖结果,腾讯 PCG 技术线-\nAI 创新应用中心联合深圳河套学院 AI 训练平台张⺠教授团队凭借全双工语音大模型研究成果\n《 Hierarchical  Acoustic - Semantic  Modeling : Modality  Separation  and  Semantic\nCoherence  for  Full - Duplex  SLMs 》 斩获大会杰出论文奖。 ACL (国际计算语言学协会年\n会)迄今 64  届,是 NLP 领域历史最悠久、学术地位最高的国际顶会,被中国计算机学会\n( CCF )列为 A  类推荐会议、国际 CORE  评级体系列为 A  等级。本届 ACL 共收到投稿逾 1 . 2\n万篇,杰出论文仅 18 篇。\n🔗  论文地址:\nhttps :// www . researchgate . net / publication / 408700315 _ Hierarchical _ Acoustic -\nSemantic _ Modeling _ Modality _ Separation _ and _ Semantic _ Coherence _ for _ Full -\nDuplex _ SLMs\n01  问题:为什么过去的语音交互总是不自然?\n",
+    "publication_evidence": "PDF第1页署名行：2026年7月16日 02:52；无个人作者名，未补推作者。",
+    "full_title_in_capture": "腾讯 PCG 联合深圳河套学院：在全双工语音大模型领域取得重要突破，获 ACL 2026 杰出论文奖",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0171",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "fa2b3af324a8d8b8a510d41ab0a74e9c2a6ea82df5fc8aa1de9663c68fbd0bd5"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      "文章为研究发布摘要，未完整列出评测协议、基线配置和区间估计；只依据可见文字/图表记录数据，不独立复现。"
+    ],
+    "outputs": [
+      "AI_Lychee-FD 全双工语音模型.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        6,
+        7,
+        8
+      ]
+    },
+    "coverage": "逐页阅读p.1–8技术正文，检查全10页缩略图；p.9为文末公众号信息，p.10为留言区。高分辨率核对p.6梯度图、p.7架构与梯度比例图、p.8推理性能图。",
+    "fact_checks": [
+      {
+        "claim": "Spoken QA结果",
+        "source_value": "平均提升7.4%",
+        "pages": [
+          7
+        ],
+        "result": "按文章报告记录"
+      },
+      {
+        "claim": "FullDuplexBench结果",
+        "source_value": "平均提升28.5%，三个benchmark共10项指标领先",
+        "pages": [
+          7,
+          8
+        ],
+        "result": "图文核对一致；评测协议未独立复现"
+      },
+      {
+        "claim": "音频与文本的时间尺度差异",
+        "source_value": "语音约25Hz，文本约3Hz，正文还提及文本填充占比较高",
+        "pages": [
+          4,
+          5
+        ],
+        "result": "作为作者架构动机转述"
+      },
+      {
+        "claim": "服务推理加速",
+        "source_value": "约2.96x",
+        "pages": [
+          8
+        ],
+        "result": "放大图表核对；基线条件以来源为准"
+      },
+      {
+        "claim": "GPU资源数字",
+        "source_value": "GPU利用率约100%至77%，显存减少约23%",
+        "pages": [
+          8
+        ],
+        "result": "图表核对一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Lychee-FD 全双工语音模型.md",
+      "sha256": "d033b944bec96589e9a0cc8c0ce4cbb21494fb7bc80e54b2fc6c5f4ffe13e1c0"
+    },
+    "independent_crosscheck": {
+      "reviewer": "crosscheck_c",
+      "note_sha256": "d033b944bec96589e9a0cc8c0ce4cbb21494fb7bc80e54b2fc6c5f4ffe13e1c0",
+      "review_sha256": "2d62d36b9553a8f56c94d8971d655305b4c7c8838e5206281dd71109f274c817",
+      "status": "passed",
+      "changes": [
+        "Reformatted all eight review cards as single-line 问题::答案 entries and converted the ending校对报告 to the quoted folded block format."
+      ],
+      "source_spotchecks": [
+        "p.7 enlarged chart: gradient separation and architecture figure align with the note; p.8 reading text confirms +7.4%, +28.5%, 2.96x and resource values. Review attribution/caveat is accurate."
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "fa2b3af324a8d8b8a510d41ab0a74e9c2a6ea82df5fc8aa1de9663c68fbd0bd5"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "a877565b04e89df0aa4dcc6748d9f6f17098261ae07406c6ffedc4940493180b"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 24,
+        "text_layer_sha256": "944c4371545f2f954648ba102c7108847d78cb10aaa91e90894a997004dd415e",
+        "text_layer_char_count": 699
+      },
+      {
+        "page": 2,
+        "md_start_line": 32,
+        "md_end_line": 56,
+        "text_layer_sha256": "94b2236c7ba968be0fd52017912c0d04cd6c5b5cd6d94e25752278d10ee91f40",
+        "text_layer_char_count": 948
+      },
+      {
+        "page": 3,
+        "md_start_line": 64,
+        "md_end_line": 70,
+        "text_layer_sha256": "662f86d0bd5d61c6b27f2b9fa59ebb82462e1287568fd209472abc035aeec52a",
+        "text_layer_char_count": 141
+      },
+      {
+        "page": 4,
+        "md_start_line": 78,
+        "md_end_line": 86,
+        "text_layer_sha256": "d1acb572a1bf1ee3279bce959e286fe661c9ecb3c197a473c9464dc2b63843bc",
+        "text_layer_char_count": 214
+      },
+      {
+        "page": 5,
+        "md_start_line": 94,
+        "md_end_line": 100,
+        "text_layer_sha256": "aaca9db9e416ad443bf44a9b4047be8312bde4ef1864942518c37e11a62df072",
+        "text_layer_char_count": 204
+      },
+      {
+        "page": 6,
+        "md_start_line": 108,
+        "md_end_line": 119,
+        "text_layer_sha256": "eb343184fa17ca7fff68d0469d8a62a8d806a73a5943c7e53350b2208ab2a510",
+        "text_layer_char_count": 477
+      },
+      {
+        "page": 7,
+        "md_start_line": 127,
+        "md_end_line": 137,
+        "text_layer_sha256": "f3604466da7fd139b811beb9a3a518e1a9f77db2bcc2b6a4abb79215d7ff0143",
+        "text_layer_char_count": 371
+      },
+      {
+        "page": 8,
+        "md_start_line": 145,
+        "md_end_line": 167,
+        "text_layer_sha256": "7f081d04790b146000f2862aca7a02d04ffe611eb2ac552b56ca08fbbfbe961a",
+        "text_layer_char_count": 872
+      },
+      {
+        "page": 9,
+        "md_start_line": 175,
+        "md_end_line": 183,
+        "text_layer_sha256": "4d16f5fdfc32a6d0d483e289bdc136958e3c2fa309e4dbe18633c5ff2c82e3eb",
+        "text_layer_char_count": 118
+      },
+      {
+        "page": 10,
+        "md_start_line": 191,
+        "md_end_line": 191,
+        "text_layer_sha256": "c01129305e3f2701794b59ab978930dc476ea9901ce49f19b59c02b18c1e3171",
+        "text_layer_char_count": 11
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        6,
+        7,
+        8
+      ]
+    },
+    "quality_issues": [
+      "文章为研究发布摘要，未完整列出评测协议、基线配置和区间估计；只依据可见文字/图表记录数据，不独立复现。"
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯PCG联合深圳河套学院：在全双工语音大模型领域取得重要突破，获 ACL 2026 杰出论文奖.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "fa2b3af324a8d8b8a510d41ab0a74e9c2a6ea82df5fc8aa1de9663c68fbd0bd5",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Lychee-FD 全双工语音模型.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

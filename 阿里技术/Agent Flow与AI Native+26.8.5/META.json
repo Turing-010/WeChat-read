@@ -1,0 +1,342 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0033",
+  "title": "从 Agent Flow 到 AI Native：为什么通用 Agent 是“饮鸩止渴”",
+  "short_title": "Agent Flow与AI Native",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "陈以强",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-05T03:18",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "Aug 5, 2026, 3:18 AM",
+  "published_timezone": null,
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "text": [
+      "从 Agent Flow 到 AI Native：为什么通⽤ Agent 是“饮鸩⽌渴”",
+      "原创 陈以强 阿⾥技术 Aug 5, 2026, 3:18 AM 浙江 62 listened",
+      "这是2026年的第 48 篇⽂章"
+    ]
+  },
+  "tags": [
+    "AI研发协同",
+    "Harness与模型协同",
+    "问题澄清"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/从 Agent Flow 到 AI Native：为什么通用 Agent 是“饮鸩止渴”.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:47:41-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "b3892f58cdd05b561b8dafbe426f2d8c4fb33df3af25d5bd94c9fa68c3fd0f3f",
+      "size_bytes": 3398161,
+      "page_count": 10,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "末页为空白导出页",
+          "pages": [
+            10
+          ],
+          "evidence_type": "page_image",
+          "classification": "blank_export_page"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:47:41-07:00",
+  "directory": "阿里技术/Agent Flow与AI Native+26.8.5",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Agent Flow与AI Native.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0033",
+    "created_at": "2026-10-13T02:47:41-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "b3892f58cdd05b561b8dafbe426f2d8c4fb33df3af25d5bd94c9fa68c3fd0f3f"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "末页为空白导出页",
+        "pages": [
+          10
+        ],
+        "evidence_type": "page_image",
+        "classification": "blank_export_page"
+      }
+    ],
+    "outputs": [
+      "AI_Agent Flow与AI Native.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        1
+      ]
+    },
+    "coverage": [
+      {
+        "name": "Flow与最小单元",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "产品价值与Hardcode",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "name": "AI Native及研发基建",
+        "pages": [
+          5,
+          6
+        ]
+      },
+      {
+        "name": "组织与回到Flow",
+        "pages": [
+          6,
+          7
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_Agent Flow与AI Native.md",
+      "sha256": "d50a90e01f273dd0dc5d98cdef52a38ad5abb463c652b90ab1c7d9c6686d369a"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:47:41-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "b3892f58cdd05b561b8dafbe426f2d8c4fb33df3af25d5bd94c9fa68c3fd0f3f"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "89f195e2f337d8cd507b22a31b5fd2664e7cdd9867863057e4f914bbba1828a6"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 23,
+        "text_layer_sha256": "803f7184c7ddc491c5a670e019c8a060e1c5de834f438f0ec53d773bcac9735e",
+        "text_layer_char_count": 416
+      },
+      {
+        "page": 2,
+        "md_start_line": 31,
+        "md_end_line": 63,
+        "text_layer_sha256": "7b561263c887b9e4d30ad666227c39771eeeb4b701e646a73b4ff12198b0b5fe",
+        "text_layer_char_count": 1275
+      },
+      {
+        "page": 3,
+        "md_start_line": 71,
+        "md_end_line": 101,
+        "text_layer_sha256": "32078ed0cacee6fa951d7523c6423c6e898349c57c5dd08df10b0a0221defba1",
+        "text_layer_char_count": 1068
+      },
+      {
+        "page": 4,
+        "md_start_line": 109,
+        "md_end_line": 141,
+        "text_layer_sha256": "905f2e957944e8d3caf8f663f0c36b23c1a74aad5ccda6e639529909d9e1fa43",
+        "text_layer_char_count": 1190
+      },
+      {
+        "page": 5,
+        "md_start_line": 149,
+        "md_end_line": 180,
+        "text_layer_sha256": "ab60ca73b82d469ef72ce4b631c4057d2bb8ae8c430dd0e7f0648dd0002af91f",
+        "text_layer_char_count": 1183
+      },
+      {
+        "page": 6,
+        "md_start_line": 188,
+        "md_end_line": 221,
+        "text_layer_sha256": "824f85f212141ee4651446368abe2567747e3c7aff5b5a033db9dc1f1f642b0c",
+        "text_layer_char_count": 1331
+      },
+      {
+        "page": 7,
+        "md_start_line": 229,
+        "md_end_line": 259,
+        "text_layer_sha256": "0f290d4a7e767cdb60cd346088074e9e0dccad050c3fc47963a8639d4fb1f816",
+        "text_layer_char_count": 1032
+      },
+      {
+        "page": 8,
+        "md_start_line": 267,
+        "md_end_line": 273,
+        "text_layer_sha256": "f3f70755cca349d933a0e41ab4e99f8d553aa0120ec583078c39a1142333b3ba",
+        "text_layer_char_count": 88
+      },
+      {
+        "page": 9,
+        "md_start_line": 281,
+        "md_end_line": 314,
+        "text_layer_sha256": "f08d3143267c27595f8aae58ea0c66f08924b27aabb90928d623b0965fa8e0b9",
+        "text_layer_char_count": 980
+      },
+      {
+        "page": 10,
+        "md_start_line": 322,
+        "md_end_line": 322,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        1
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "末页为空白导出页",
+        "pages": [
+          10
+        ],
+        "evidence_type": "page_image",
+        "classification": "blank_export_page"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md",
+      "../../20_topics/问题澄清.md"
+    ],
+    "proposed_topics": [
+      "Harness与模型协同",
+      "AI研发协同",
+      "问题澄清"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:47:41-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/从 Agent Flow 到 AI Native：为什么通用 Agent 是“饮鸩止渴”.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "b3892f58cdd05b561b8dafbe426f2d8c4fb33df3af25d5bd94c9fa68c3fd0f3f",
+        "copied_at": "2026-10-13T02:47:41-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

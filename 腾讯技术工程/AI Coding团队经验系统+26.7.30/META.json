@@ -1,0 +1,417 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0132",
+  "title": "AI Coding 的下一站，不是更会写代码，而是更懂团队",
+  "short_title": "AI Coding团队经验系统",
+  "account": "腾讯技术工程",
+  "author": "linjangyang, lypeerluo, kehawang, yansycao",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-07-30T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/AI Coding的下一站，不是更会写代码，而是更懂团队.pdf",
+      "original_filename": "AI Coding的下一站，不是更会写代码，而是更懂团队.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "c687ed2bdd69f2ba4a582b579f96c0aec5cd0c56702d00c6e7e19941b4a2986c",
+      "size_bytes": 4609277,
+      "page_count": 13,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "issue": "p.13文本层为空且页图为空白；已补查文字层和缩略图。",
+          "pages": [
+            13
+          ],
+          "impact": "无额外正文内容，不影响p.1–12正文覆盖。"
+        }
+      ],
+      "publication_evidence": "PDF p.1: Jul 30, 2026, 2:36 AM; no timezone stated."
+    }
+  ],
+  "tags": [
+    "Agent长期记忆",
+    "决策知识结构化",
+    "Agent评测与反馈",
+    "Harness与模型协同"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/AI Coding团队经验系统+26.7.30",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI Coding团队经验系统.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "AI  Coding 的下一站,不是更会写代码,而是更懂团队\n腾讯程序员 Jul  30 , 2026 , 2 : 36  AM广东原创 腾讯技术工程 663  listened\n作者: linjangyang 、 lypeerluo 、 kehawang 、 yansycao\n一、 “ 别那么干,这个  hook 不能同步上报 ”\n这是半年前的一次  CodeBuddy session 。当时我们在开发一个  stop hook 的上报功能, AI 很\n自然地给出了同步上报的实现 —— 合理,绝大多数上报场景同步就够了。我们  review 代码时\n改了:必须异步,否则  stop hook 会阻塞进程,后续操作直接超时。 AI 根据反馈修正了代\n码, session 正常结束。\n问题出在结束之后。\n一周后,另一个同事的  session 触发了同样的场景。 AI 没有那次  session 的上下文,给出的\n仍然是同步上报。同事不是那块代码的原始开发者, review 时没有发现这个陷阱。代码合入\n了,直到测试环境才暴露 ——stop hook 场景下进程阻塞,一连串超时错误。  这就是经验断\n层。不是  AI 不行 —— 它在自己的  session 里被纠正过一次,做得很好。但那次纠正只在发起\n那轮  session 的开发者脑子里, AI 完全不记得发生过什么。\n更普遍地看,我们团队在持续深入使用  AI Coding 一段时间后,陆续碰到四类这类问题:\n经验即抛:一次  session 反复纠偏踩出来的路径, session 结束就清零。下一个同事碰同\n样问题, AI 又是零基础起步。\n重复踩坑:项目的隐性约束 ——“ 这个目录下的代码访问第三方服务需要走特殊代理 ”“ 模块\n间开关引用不能直接用字符串参数,因为开关使用时机问题会导致永远默认关 ”—— 这些规\n则写在  git blame 里,但从来不进文档。换个人、换个  session ,很大概率照踩不误。\n个人  AI Coding 的效率提升已无悬念,但团队规模铺开后,一个更深的短板暴露了:每次\nsession 踩坑、纠偏产出的有效经验, session 结束即归零。业界在  Agent 经验管理上的\n探索多聚焦 \" 个人记忆 \" ,而要打破 AI 每次进项目都 \" 从零开始 \" 的循环,需要的是一套能持\n续捕获、提纯、沉淀团队经验,让 AI 带着项目语境进场的系统。本文分享从  0 到  1 建设\n这套系统的完整过程 —— 从初版  90% 候选经验为废料的起点,到打磨出\nReview/Dedup/Merge 三层治理链路,每一步踩在真实问题上的演化路径,以及驱动策略\n设计的实验数据和可复用方法论。\n",
+    "publication_evidence": "PDF p.1: Jul 30, 2026, 2:36 AM; no timezone stated.",
+    "full_title_in_capture": "AI Coding 的下一站，不是更会写代码，而是更懂团队",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0132",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "c687ed2bdd69f2ba4a582b579f96c0aec5cd0c56702d00c6e7e19941b4a2986c"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "issue": "p.13文本层为空且页图为空白；已补查文字层和缩略图。",
+        "pages": [
+          13
+        ],
+        "impact": "无额外正文内容，不影响p.1–12正文覆盖。"
+      }
+    ],
+    "outputs": [
+      "AI_AI Coding团队经验系统.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "detail_pages_reviewed": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "coverage": "已阅读12页正文并检查全部13页缩略图；放大核验p.5–12的治理、评测、样例和统计图表。p.13为推广页。",
+    "fact_checks": [
+      {
+        "item": "初版候选垃圾比例",
+        "note_value": "约90%",
+        "source_value": "约90%",
+        "pages": [
+          2
+        ],
+        "result": "一致；以召回后行为是否正向改变为价值标准。"
+      },
+      {
+        "item": "Dedup评测",
+        "note_value": "260条、4批次总体F1 71.79%；严格重复Recall 91.67%",
+        "source_value": "260条/4批次；F1 71.79%；Recall 91.67%",
+        "pages": [
+          7
+        ],
+        "result": "一致；作者同时报告批次方差明显。"
+      },
+      {
+        "item": "Merge六轮评测",
+        "note_value": "157样本F1 94.27%；Create F1 96.46%；Skip Precision 100%、Recall 85.71%",
+        "source_value": "相同",
+        "pages": [
+          8
+        ],
+        "result": "一致；限定为文中评测集。"
+      },
+      {
+        "item": "流水线运行规模",
+        "note_value": "6个仓库、50+研发人员、1,236会话、1,022候选、789入库、30+次运行",
+        "source_value": "相同",
+        "pages": [
+          8,
+          9
+        ],
+        "result": "一致；作者报告数据。"
+      },
+      {
+        "item": "125次真实检索指标",
+        "note_value": "请求级Recall 68.8%、no_hit 4.8%、平均2.4条、均值1,299ms",
+        "source_value": "相同",
+        "pages": [
+          10
+        ],
+        "result": "一致；命中不代表采纳或行为改善。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_AI Coding团队经验系统.md",
+      "sha256": "50b79dad83565508e46ef588309caa65f7104c4cbcd11d52a44d11f28b986613"
+    },
+    "independent_crosscheck": {
+      "reviewer": "/root",
+      "note_sha256": "50b79dad83565508e46ef588309caa65f7104c4cbcd11d52a44d11f28b986613",
+      "review_sha256": "281ae35a0f88a9ac2eaa4ea71c17e43426ff06e11ab3789ca159329fcc7cf732",
+      "status": "passed",
+      "changes": [
+        "Converted Q/A cards and heading to the required single-line format; converted review record into the final folded report; added p.13 text-layer and blank-thumbnail check to note and review metadata."
+      ],
+      "source_spotchecks": [
+        "p.1 establishes cross-session experience loss; p.5 nine garbage categories and three governance layers; p.8 reports F1/precision/recall and pipeline counts as author data; p.11 names unresolved behavior observation, expiry and evaluation limits; p.13 text layer is empty and thumbnail is blank."
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "c687ed2bdd69f2ba4a582b579f96c0aec5cd0c56702d00c6e7e19941b4a2986c"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "369b48b6d984910083b81c5329757bfcce2250cd7b492d5dec802413d252091e"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 36,
+        "text_layer_sha256": "08bcb40396388ac25abe9340775a7c51183c0879ec581a6bad768a26ceeae34d",
+        "text_layer_char_count": 1157
+      },
+      {
+        "page": 2,
+        "md_start_line": 44,
+        "md_end_line": 76,
+        "text_layer_sha256": "e902669801ad780ebc72ec3ffdcedf418a8fedf999826bceca6377b53979d6dc",
+        "text_layer_char_count": 1302
+      },
+      {
+        "page": 3,
+        "md_start_line": 84,
+        "md_end_line": 108,
+        "text_layer_sha256": "7d24043be123ffb1aeadbefc5890a7bb42216910d247974fca380172bac7f7d8",
+        "text_layer_char_count": 1024
+      },
+      {
+        "page": 4,
+        "md_start_line": 116,
+        "md_end_line": 145,
+        "text_layer_sha256": "b37f116528edac946d1bf9c1b0090c4e2977e7adec0592745230557bc635c831",
+        "text_layer_char_count": 1180
+      },
+      {
+        "page": 5,
+        "md_start_line": 153,
+        "md_end_line": 176,
+        "text_layer_sha256": "1521328740baf63e15f06f6bda6474d13e26fb326b2df58b18c82228c1043ad9",
+        "text_layer_char_count": 822
+      },
+      {
+        "page": 6,
+        "md_start_line": 184,
+        "md_end_line": 218,
+        "text_layer_sha256": "61f50fb5dfcd73c2bb80594ca33bfe8eb9307e390f668a691e6b5c9918189555",
+        "text_layer_char_count": 1568
+      },
+      {
+        "page": 7,
+        "md_start_line": 226,
+        "md_end_line": 258,
+        "text_layer_sha256": "14eb9cf4b5b40aa4bf54f1a0746c74a888863ff50058df8e8752e652d96f507d",
+        "text_layer_char_count": 1181
+      },
+      {
+        "page": 8,
+        "md_start_line": 266,
+        "md_end_line": 291,
+        "text_layer_sha256": "e97b3d9c657dec6babb08e73e139c5c970400ead2eed1ed9b26a7230b3ed37b2",
+        "text_layer_char_count": 1115
+      },
+      {
+        "page": 9,
+        "md_start_line": 299,
+        "md_end_line": 305,
+        "text_layer_sha256": "e404f18dae7bbe68d8078c30d953da70d0d3debbc48a49051fa3a033ef574064",
+        "text_layer_char_count": 295
+      },
+      {
+        "page": 10,
+        "md_start_line": 313,
+        "md_end_line": 332,
+        "text_layer_sha256": "d3b3a8acc5842dd2dacffa1c32b1064069c4b77df6a921c852b398d35eecb750",
+        "text_layer_char_count": 730
+      },
+      {
+        "page": 11,
+        "md_start_line": 340,
+        "md_end_line": 373,
+        "text_layer_sha256": "e29d6d87fb55e29201f0db187322b7f1f71c6f9d64ed416598356004d4ef19fb",
+        "text_layer_char_count": 1253
+      },
+      {
+        "page": 12,
+        "md_start_line": 381,
+        "md_end_line": 388,
+        "text_layer_sha256": "c93c7e32d85bc40a7163a6c82b8f434d279a86a47ee74814421c71e01ec51bc1",
+        "text_layer_char_count": 77
+      },
+      {
+        "page": 13,
+        "md_start_line": 396,
+        "md_end_line": 395,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "detail_pages_reviewed": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "quality_issues": [
+      {
+        "issue": "p.13文本层为空且页图为空白；已补查文字层和缩略图。",
+        "pages": [
+          13
+        ],
+        "impact": "无额外正文内容，不影响p.1–12正文覆盖。"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/AI Coding的下一站，不是更会写代码，而是更懂团队.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "c687ed2bdd69f2ba4a582b579f96c0aec5cd0c56702d00c6e7e19941b4a2986c",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent长期记忆.md",
+      "../../20_topics/决策知识结构化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_AI Coding团队经验系统.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

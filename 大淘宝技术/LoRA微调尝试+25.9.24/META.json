@@ -1,0 +1,133 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0295",
+  "title": "一位淘宝工程同学的大模型LoRA微调尝试",
+  "short_title": "LoRA微调尝试",
+  "account": "大淘宝技术",
+  "author": "霄杨",
+  "author_byline": "用户场景营销技术",
+  "source_url": null,
+  "published_at": "2025-09-24T01:35",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "⼀位淘宝⼯程同学的⼤模型         LoRA微调尝试\n\n\n原创 ⽤户场景营销技术  ⼤淘宝技术  2025年9⽉24⽇ 01:35浙江 13⼈\n\n\n\n\n\n\n\n\n\n\n\n\n 本⽂主要介绍了⼤模型时代下，如何通过 LoRA （Low-Rank Adaptation）这⼀参数⾼\n 效微调技术，实现对⼤模型的轻量级定制。⽂章从微调的基本概念出发，详细阐述了\n LoRA 的原理、优势与局限性，并结合本地原⽣实现（Transformers + PEF T）和百炼\n 平台两种⽅式，展示了在⼩样本、低资源场景下的实战流程。结果表明，LoRA 能以极低\n 的计算成本让通⽤⼤模型有效学习业务知识，显著提升其在特定任务中的表现，真正实现\n “让⼤模型懂业务”，推动 AI 从“可⽤”⾛向“好⽤”。\n\n\n\n\n\n\n\n                        前⾔\n\n\n\n如今⼤模型时代，深刻重塑了很多⾏业的业务形态与技术架构。从智能客服到内容⽣成，从代\n码辅助到推荐系统，⼤模型正以前所未有的速度渗透到互联⽹",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "大模型基础与推理优化",
+    "AI评测与可观测性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/一位淘宝工程同学的大模型LoRA微调尝试.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T05:53:20-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "29594ad8504e17dff673e16580d15896c674f8b3ac9d860c89c6cd5a87be417b",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "p4前文BA、后文AB和矩阵符号切换；精确公式需回查原论文，不能直接抄作统一记号。",
+        "原文p6说使用1.5B，p7—14路径和展示写7B，p12成本示例又为qwen3-14b；属于不同示例/不一致，不能合并为单次实验。",
+        "训练代码右侧有裁切，缩进和部分字段不可靠；未执行。",
+        "原文称基座只参与前向、冻结能保证通用能力等表述过强，需官方/论文核查；小样本演示自述过拟合。",
+        "只有页图1、4、9、15已看，截图内测试输出未逐字转写。"
+      ],
+      "size_bytes": 4499437,
+      "page_count": 22
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T05:53:20-07:00",
+  "directory": "大淘宝技术/LoRA微调尝试+25.9.24",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T05:53:20-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "29594ad8504e17dff673e16580d15896c674f8b3ac9d860c89c6cd5a87be417b",
+    "output_path": "MD.md",
+    "output_sha256": "308086b43d1809b118bd1b056ebc92a23f76d5284e604f746b719d81e13d6d76",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 22,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "visual_pages": [
+        1,
+        4,
+        9,
+        15
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "p4前文BA、后文AB和矩阵符号切换；精确公式需回查原论文，不能直接抄作统一记号。",
+      "原文p6说使用1.5B，p7—14路径和展示写7B，p12成本示例又为qwen3-14b；属于不同示例/不一致，不能合并为单次实验。",
+      "训练代码右侧有裁切，缩进和部分字段不可靠；未执行。",
+      "原文称基座只参与前向、冻结能保证通用能力等表述过强，需官方/论文核查；小样本演示自述过拟合。",
+      "只有页图1、4、9、15已看，截图内测试输出未逐字转写。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/一位淘宝工程同学的大模型LoRA微调尝试.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/大淘宝技术/LoRA微调尝试+25.9.24/RAW.pdf",
+    "sha256": "29594ad8504e17dff673e16580d15896c674f8b3ac9d860c89c6cd5a87be417b",
+    "copied_at": "2026-10-23T05:53:20-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

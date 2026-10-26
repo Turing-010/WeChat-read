@@ -1,0 +1,1005 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0091",
+  "title": "从0开发大模型的17种Agent架构演进详细拆解",
+  "short_title": "十七种Agent架构的控制流",
+  "account": "腾讯技术工程",
+  "author": "linkxzhou（公众号《周末程序猿》）",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-05-18T02:39",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0518 Agent Architectures.pdf",
+      "original_filename": "0518 Agent Architectures.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "094b667945991fc0db1670a0f0bef9de3a7fb228823ae6bbe672b119e1e31f29",
+      "size_bytes": 5634024,
+      "page_count": 48,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "p.11、14、16、19、24、25、29、33、35、36、38图位置显示加载占位；无法恢复原图，原材料不完整",
+          "pages": [
+            11,
+            14,
+            16,
+            19,
+            24,
+            25,
+            29,
+            33,
+            35,
+            36,
+            38
+          ],
+          "status": "incomplete_source_images"
+        },
+        {
+          "description": "p.2与48空白，多个代码长行右侧截断；ToT expand与图谱写入明确省略，不可视为完整可运行实现",
+          "pages": [
+            2,
+            7,
+            8,
+            13,
+            18,
+            30,
+            32,
+            36,
+            38,
+            48
+          ],
+          "status": "preserved_unexecuted"
+        },
+        {
+          "description": "p.23模型ID gpt-5-mini-mini疑似笔误；p.16预先物化Step规则与p.38动态创建Step口径不同，未在线核验版本",
+          "pages": [
+            16,
+            23,
+            38
+          ],
+          "status": "unresolved_source_code"
+        },
+        {
+          "description": "PEV重规划复用plan_step会重置intermediate；Dry-Run示例未隔离真实工具权限或绑定批准载荷；代码阅读推断已明确标注，未执行",
+          "pages": [
+            13,
+            16,
+            35,
+            36
+          ],
+          "status": "analytical_limit_not_runtime_test"
+        },
+        {
+          "description": "Graph示例关系schema缺年份字段却询问年份，写入函数省略；Self-Improve示例仅进程内样例列表且无参数训练，不等于RLHF",
+          "pages": [
+            30,
+            40,
+            41
+          ],
+          "status": "qualified"
+        },
+        {
+          "description": "ReAct适合80%任务、critic更稳定为作者经验表述，无统计实验；框架API均为原文版本描述",
+          "pages": [
+            8,
+            11
+          ],
+          "status": "attributed"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区"
+    }
+  ],
+  "tags": [
+    "Agent工程循环",
+    "Agent评测与反馈",
+    "Agent长期记忆",
+    "Agent安全与权限",
+    "Harness与模型协同"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/十七种Agent架构的控制流+26.5.18",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_十七种Agent架构的控制流.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "从 0 开发大模型的 17 种 Agent 架构演进详细拆解\n2026 年 5 月 18 日 02 : 39广东腾讯技术工程 75 人\n作者: linkxzhou ,公众号《周末程序猿》\n在  github 看到一个项目  all-agentic-architectures,实现的是关于  17 种  Agent 模\n式大全,我把  all-agentic-architectures  这个项目完整过了一遍。  它最有价值的地\n方,不是列了  17 中  Agent 代码,而是把  17 次系统升级拆解:上一个架构为什么不够、下一\n个架构到底多了什么控制能力、复杂度又是从哪里开始失控的。  这些信息真正决定一个\nagent 系统能不能落地的,通常不是模型回答是不是够好,而是:\n状态有没有被正确建模\n控制流有没有被显式表达\n错误能不能被局部截断\n副作用能不能被关进闸门\n系统知不知道自己什么时候该停\n不过  all-agentic-architectures  是用  langchain 和  langgraph  实现的,但是  agn\no  框架更加简洁,于是  用  agno  把这  17 种控制流从头写一遍。  为了说明一件事:\nAgent architecture 的本质不是  prompt engineering ,也不是某个框架的  DSL ,而是控制流\n设计。  它应该能在任何体面的  agent 框架里复现,以下是  Agent 演化路径:\n从单次生成到反思闭环\n从反思闭环到工具交互\n从工具交互到观察 - 行动循环\n从局部决策到显式规划\n从无验证执行到验证驱动重规划\n从单  agent到多  agent 编排\n从短期上下文到长期记忆系统\n从线性推理到搜索、模拟与涌现计算\n从能做事到可信任\n总演化图:\n",
+    "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区",
+    "full_title_in_capture": "从0开发大模型的17种Agent架构演进详细拆解",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0091",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "094b667945991fc0db1670a0f0bef9de3a7fb228823ae6bbe672b119e1e31f29"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.11、14、16、19、24、25、29、33、35、36、38图位置显示加载占位；无法恢复原图，原材料不完整",
+        "pages": [
+          11,
+          14,
+          16,
+          19,
+          24,
+          25,
+          29,
+          33,
+          35,
+          36,
+          38
+        ],
+        "status": "incomplete_source_images"
+      },
+      {
+        "description": "p.2与48空白，多个代码长行右侧截断；ToT expand与图谱写入明确省略，不可视为完整可运行实现",
+        "pages": [
+          2,
+          7,
+          8,
+          13,
+          18,
+          30,
+          32,
+          36,
+          38,
+          48
+        ],
+        "status": "preserved_unexecuted"
+      },
+      {
+        "description": "p.23模型ID gpt-5-mini-mini疑似笔误；p.16预先物化Step规则与p.38动态创建Step口径不同，未在线核验版本",
+        "pages": [
+          16,
+          23,
+          38
+        ],
+        "status": "unresolved_source_code"
+      },
+      {
+        "description": "PEV重规划复用plan_step会重置intermediate；Dry-Run示例未隔离真实工具权限或绑定批准载荷；代码阅读推断已明确标注，未执行",
+        "pages": [
+          13,
+          16,
+          35,
+          36
+        ],
+        "status": "analytical_limit_not_runtime_test"
+      },
+      {
+        "description": "Graph示例关系schema缺年份字段却询问年份，写入函数省略；Self-Improve示例仅进程内样例列表且无参数训练，不等于RLHF",
+        "pages": [
+          30,
+          40,
+          41
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "ReAct适合80%任务、critic更稳定为作者经验表述，无统计实验；框架API均为原文版本描述",
+        "pages": [
+          8,
+          11
+        ],
+        "status": "attributed"
+      }
+    ],
+    "outputs": [
+      "AI_十七种Agent架构的控制流.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        11,
+        16,
+        23,
+        32,
+        36,
+        38,
+        40
+      ]
+    },
+    "coverage": "通读48页文本，逐一覆盖17模式的状态、控制流、失败边界与选型，覆盖统一框架和五类评价；未复制所有不完整代码，图缺失处仅依据文字重构。",
+    "fact_checks": [
+      {
+        "item": "架构数量",
+        "value": "17种；正文第4至20节",
+        "pages": [
+          44
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "PEV局部阈值",
+        "value": "失败次数≥2触发重规划",
+        "pages": [
+          16
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "演示价格",
+        "value": "get_stock_price固定返回$172.35，并非实时数据",
+        "pages": [
+          9
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "ToT预算",
+        "value": "最多3候选动作，默认max_depth=10",
+        "pages": [
+          32
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "模拟默认时域",
+        "value": "horizon=5",
+        "pages": [
+          34
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "自我边界阈值",
+        "value": "confidence_threshold=0.7",
+        "pages": [
+          37
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "质量循环停止",
+        "value": "critic批准或revision≥3；只批准结果入样例库",
+        "pages": [
+          40
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "元胞更新",
+        "value": "四邻、快照同步更新、默认50步",
+        "pages": [
+          42
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "评价类型",
+        "value": "LLM Judge、critic、程序化、人工、多场景演示共5类",
+        "pages": [
+          43
+        ],
+        "result": "matches_pdf"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_十七种Agent架构的控制流.md",
+      "sha256": "b9dc5cb3a7a4ac651653eef1235f27f6810ea60ecfe82907a5306b4d063362f6"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "094b667945991fc0db1670a0f0bef9de3a7fb228823ae6bbe672b119e1e31f29"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "206bc8c33aa414d60b2baecf83a8f74120e3585cef58618e5e3d8f81e9336b81"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 36,
+        "text_layer_sha256": "a4de42e92f68f0d9be76c5ae05685a451fd35b34dc54c304d534d46ce11486d6",
+        "text_layer_char_count": 771
+      },
+      {
+        "page": 2,
+        "md_start_line": 44,
+        "md_end_line": 43,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 3,
+        "md_start_line": 51,
+        "md_end_line": 50,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 4,
+        "md_start_line": 58,
+        "md_end_line": 85,
+        "text_layer_sha256": "92c388e310e40738a09baac524ba6ab9b801b8dde51d624598f11ecfee4474f2",
+        "text_layer_char_count": 761
+      },
+      {
+        "page": 5,
+        "md_start_line": 93,
+        "md_end_line": 156,
+        "text_layer_sha256": "6d4b446e678c96fe95afb24b854ac5881c0a1f33385f4605034c7d799f930f5e",
+        "text_layer_char_count": 1200
+      },
+      {
+        "page": 6,
+        "md_start_line": 164,
+        "md_end_line": 235,
+        "text_layer_sha256": "1e38292f830f94dcca077643a97bd729185ffc468240cefb9f160a1d87710a84",
+        "text_layer_char_count": 1220
+      },
+      {
+        "page": 7,
+        "md_start_line": 243,
+        "md_end_line": 272,
+        "text_layer_sha256": "f933621127502f9cf76d5ae2a5ea6cc96ed31eb8e0cfb0e775f7a20289c14adf",
+        "text_layer_char_count": 1291
+      },
+      {
+        "page": 8,
+        "md_start_line": 280,
+        "md_end_line": 314,
+        "text_layer_sha256": "0044c05e94f40a3e883ed7b468b885fda36d5cde9e7a82cd0980d149c33c8352",
+        "text_layer_char_count": 1460
+      },
+      {
+        "page": 9,
+        "md_start_line": 322,
+        "md_end_line": 353,
+        "text_layer_sha256": "3fb69c885d263f604631845497cb0b380b7c1aa476f7e7d17c61aefcb088c61f",
+        "text_layer_char_count": 1149
+      },
+      {
+        "page": 10,
+        "md_start_line": 361,
+        "md_end_line": 391,
+        "text_layer_sha256": "ed953ba944114280b2f35d0e6e00a0084ccf3c7f67e54f07bfc4fc5c8d2aa221",
+        "text_layer_char_count": 1147
+      },
+      {
+        "page": 11,
+        "md_start_line": 399,
+        "md_end_line": 425,
+        "text_layer_sha256": "f8734459955d321ce61c55b905ab547501b6eca121e063366702ecfb2d1f316d",
+        "text_layer_char_count": 938
+      },
+      {
+        "page": 12,
+        "md_start_line": 433,
+        "md_end_line": 459,
+        "text_layer_sha256": "67829eae13f42fecf52027e65b00ccaa9bd550f725eab077edbe7a1b5c04eb7c",
+        "text_layer_char_count": 923
+      },
+      {
+        "page": 13,
+        "md_start_line": 467,
+        "md_end_line": 505,
+        "text_layer_sha256": "d9b89a95ad00ed6a5a2325673f86b2e351c0a822ac877e98f314c64895d62466",
+        "text_layer_char_count": 1632
+      },
+      {
+        "page": 14,
+        "md_start_line": 513,
+        "md_end_line": 537,
+        "text_layer_sha256": "dad5c105ab370689679f29be059b1343e529ccc8e07d1495163af4fde099da86",
+        "text_layer_char_count": 920
+      },
+      {
+        "page": 15,
+        "md_start_line": 545,
+        "md_end_line": 586,
+        "text_layer_sha256": "c83480bc1f8fab17c656125dcece43520b5bb4eafe79ce3c86330bb434ffc567",
+        "text_layer_char_count": 1605
+      },
+      {
+        "page": 16,
+        "md_start_line": 594,
+        "md_end_line": 629,
+        "text_layer_sha256": "64e98b7cb5be08b0de04c6b496284ab8d904d9c6ad24586eeee4f69fea87720f",
+        "text_layer_char_count": 1386
+      },
+      {
+        "page": 17,
+        "md_start_line": 637,
+        "md_end_line": 663,
+        "text_layer_sha256": "386379b522ee9681495340e279ba4b3e00104081ab65f1110a606c1b1d53c465",
+        "text_layer_char_count": 806
+      },
+      {
+        "page": 18,
+        "md_start_line": 671,
+        "md_end_line": 708,
+        "text_layer_sha256": "2c47c10d6bcd43380571350995920ed42ff947af8b2d2cf6ca5f1f8138552005",
+        "text_layer_char_count": 1307
+      },
+      {
+        "page": 19,
+        "md_start_line": 716,
+        "md_end_line": 749,
+        "text_layer_sha256": "1bb82185bf7197d00091ace65b00008de4e40bf3bb8669128f6b3e78c906b3db",
+        "text_layer_char_count": 1106
+      },
+      {
+        "page": 20,
+        "md_start_line": 757,
+        "md_end_line": 787,
+        "text_layer_sha256": "c8dc19ed5939ebc1ca43c789c939af58f0c70ff870475f25f199eda942fb0a4b",
+        "text_layer_char_count": 981
+      },
+      {
+        "page": 21,
+        "md_start_line": 795,
+        "md_end_line": 837,
+        "text_layer_sha256": "e2b2e0c325af1a77997da8e2a987d9f194f1a8aab35d7c10f8bf2c03797cd570",
+        "text_layer_char_count": 1544
+      },
+      {
+        "page": 22,
+        "md_start_line": 845,
+        "md_end_line": 863,
+        "text_layer_sha256": "40221fb1868a97b3fa62fe422c4466cf664c88033c8f6d4a39e44d5f863d5610",
+        "text_layer_char_count": 404
+      },
+      {
+        "page": 23,
+        "md_start_line": 871,
+        "md_end_line": 906,
+        "text_layer_sha256": "d84575c328aefce06c891000e15e00dbf2f7d6a1ecdcf1d3b1e9d3d5e230a1ef",
+        "text_layer_char_count": 1058
+      },
+      {
+        "page": 24,
+        "md_start_line": 914,
+        "md_end_line": 934,
+        "text_layer_sha256": "bef43630073e9bf203b4e824088fe2cbb630be8e34f6f76f58a51fe00a28c8ea",
+        "text_layer_char_count": 706
+      },
+      {
+        "page": 25,
+        "md_start_line": 942,
+        "md_end_line": 963,
+        "text_layer_sha256": "0ef75671e343a59550f515e3a5915266eb82e24e9f4c1f7908b22ff98cc1a035",
+        "text_layer_char_count": 616
+      },
+      {
+        "page": 26,
+        "md_start_line": 971,
+        "md_end_line": 1010,
+        "text_layer_sha256": "85875dd06b9c3d5f48d8742a91ca224cc20ffbfe4273b67c4bc1d3a74f906e31",
+        "text_layer_char_count": 1733
+      },
+      {
+        "page": 27,
+        "md_start_line": 1018,
+        "md_end_line": 1046,
+        "text_layer_sha256": "04a5aaf17b941862f0ff3be6156353fbe3be10d0fe6ff920e2309980e58b6e98",
+        "text_layer_char_count": 785
+      },
+      {
+        "page": 28,
+        "md_start_line": 1054,
+        "md_end_line": 1096,
+        "text_layer_sha256": "bb461d66ecb99593685eaa7d3096845c580609969a72b6c63a5e5c00123865cc",
+        "text_layer_char_count": 1391
+      },
+      {
+        "page": 29,
+        "md_start_line": 1104,
+        "md_end_line": 1128,
+        "text_layer_sha256": "273c8b484c79298172dca9a0465440f8de052d72a533b7eacdac96b7ffafe48d",
+        "text_layer_char_count": 608
+      },
+      {
+        "page": 30,
+        "md_start_line": 1136,
+        "md_end_line": 1172,
+        "text_layer_sha256": "21a55db484e5c503232a4ec050a7d91d2a8bd1c53530247f595a9e6398c04986",
+        "text_layer_char_count": 1455
+      },
+      {
+        "page": 31,
+        "md_start_line": 1180,
+        "md_end_line": 1209,
+        "text_layer_sha256": "1e0de26203227912c621e86eae0f463236056e8a6759caf40fcc457b10ca1e96",
+        "text_layer_char_count": 964
+      },
+      {
+        "page": 32,
+        "md_start_line": 1217,
+        "md_end_line": 1249,
+        "text_layer_sha256": "05844ef485b27c585c67f1e799e3182fb64c8986e3e846a77e9cf88f0a5e8c5a",
+        "text_layer_char_count": 1263
+      },
+      {
+        "page": 33,
+        "md_start_line": 1257,
+        "md_end_line": 1272,
+        "text_layer_sha256": "6dea42d44aa418bdd5707ed6917485a91a9312ce5de0a4280a234725a328c37f",
+        "text_layer_char_count": 425
+      },
+      {
+        "page": 34,
+        "md_start_line": 1280,
+        "md_end_line": 1320,
+        "text_layer_sha256": "a16d13e0d24f9c1c3003284387b0bcf59d5084ccbf4cf8bc6ad9b7eb8c61438d",
+        "text_layer_char_count": 1796
+      },
+      {
+        "page": 35,
+        "md_start_line": 1328,
+        "md_end_line": 1353,
+        "text_layer_sha256": "c7fe9f7e65a39c008f865d5c76427abbd085b871a9cfc1dbcbd3af7accadc9af",
+        "text_layer_char_count": 1009
+      },
+      {
+        "page": 36,
+        "md_start_line": 1361,
+        "md_end_line": 1395,
+        "text_layer_sha256": "d57d0c315e1f25ed0ce76cceae637f71b9f8a30089722259ef7eb7caa13850a8",
+        "text_layer_char_count": 1261
+      },
+      {
+        "page": 37,
+        "md_start_line": 1403,
+        "md_end_line": 1437,
+        "text_layer_sha256": "21cac3b8af32ed1f8eb2ba3a6b6c82e088115783f7b0396dc7b1f139fe225571",
+        "text_layer_char_count": 1302
+      },
+      {
+        "page": 38,
+        "md_start_line": 1445,
+        "md_end_line": 1470,
+        "text_layer_sha256": "45ce3872af78fe919043ca2230c74c295524f369a40f66fafbbac5491a33c090",
+        "text_layer_char_count": 1121
+      },
+      {
+        "page": 39,
+        "md_start_line": 1478,
+        "md_end_line": 1506,
+        "text_layer_sha256": "fabc1b319b19dbb8e7a7a02a17cfc524b0b03dcc0542934ffe9766034a298dd0",
+        "text_layer_char_count": 948
+      },
+      {
+        "page": 40,
+        "md_start_line": 1514,
+        "md_end_line": 1554,
+        "text_layer_sha256": "5ec5e4287b6f918eb78e96f9e5551070700e9fd8bc9e4039df97b7f5d871ea88",
+        "text_layer_char_count": 1603
+      },
+      {
+        "page": 41,
+        "md_start_line": 1562,
+        "md_end_line": 1595,
+        "text_layer_sha256": "6b02fc83ab71cb8a62e1d87902e3533b2a8d5f6ddb77fa775e57fe99a54db9ce",
+        "text_layer_char_count": 894
+      },
+      {
+        "page": 42,
+        "md_start_line": 1603,
+        "md_end_line": 1641,
+        "text_layer_sha256": "efaeb11075f564792cc4c6dba365d5363a62d7a15324f5cc38c96d3e3d5b1885",
+        "text_layer_char_count": 1510
+      },
+      {
+        "page": 43,
+        "md_start_line": 1649,
+        "md_end_line": 1682,
+        "text_layer_sha256": "ac80f82f7a1d62c74cd649ab4b6d101b9deb26a1e9b40d6cce27cdb6d895fa4b",
+        "text_layer_char_count": 892
+      },
+      {
+        "page": 44,
+        "md_start_line": 1690,
+        "md_end_line": 1751,
+        "text_layer_sha256": "e978daee5b5a89c046a35139d7fb3c8ed0a0e67b9887c297e72485046572f7ce",
+        "text_layer_char_count": 1193
+      },
+      {
+        "page": 45,
+        "md_start_line": 1759,
+        "md_end_line": 1790,
+        "text_layer_sha256": "53ad8c9d9fc358ede31ee69a7642e478dffd9c33848f02bfe14246807e28f7c6",
+        "text_layer_char_count": 861
+      },
+      {
+        "page": 46,
+        "md_start_line": 1798,
+        "md_end_line": 1821,
+        "text_layer_sha256": "5e929045ff4365f1ffa859a4e27941f9abe8f4e311085725094a774257c46772",
+        "text_layer_char_count": 851
+      },
+      {
+        "page": 47,
+        "md_start_line": 1829,
+        "md_end_line": 1836,
+        "text_layer_sha256": "a84401a736cf8edf7e16c00421761659c2736e28b613a89f0f1751a669f68d5f",
+        "text_layer_char_count": 77
+      },
+      {
+        "page": 48,
+        "md_start_line": 1844,
+        "md_end_line": 1843,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        11,
+        16,
+        23,
+        32,
+        36,
+        38,
+        40
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.11、14、16、19、24、25、29、33、35、36、38图位置显示加载占位；无法恢复原图，原材料不完整",
+        "pages": [
+          11,
+          14,
+          16,
+          19,
+          24,
+          25,
+          29,
+          33,
+          35,
+          36,
+          38
+        ],
+        "status": "incomplete_source_images"
+      },
+      {
+        "description": "p.2与48空白，多个代码长行右侧截断；ToT expand与图谱写入明确省略，不可视为完整可运行实现",
+        "pages": [
+          2,
+          7,
+          8,
+          13,
+          18,
+          30,
+          32,
+          36,
+          38,
+          48
+        ],
+        "status": "preserved_unexecuted"
+      },
+      {
+        "description": "p.23模型ID gpt-5-mini-mini疑似笔误；p.16预先物化Step规则与p.38动态创建Step口径不同，未在线核验版本",
+        "pages": [
+          16,
+          23,
+          38
+        ],
+        "status": "unresolved_source_code"
+      },
+      {
+        "description": "PEV重规划复用plan_step会重置intermediate；Dry-Run示例未隔离真实工具权限或绑定批准载荷；代码阅读推断已明确标注，未执行",
+        "pages": [
+          13,
+          16,
+          35,
+          36
+        ],
+        "status": "analytical_limit_not_runtime_test"
+      },
+      {
+        "description": "Graph示例关系schema缺年份字段却询问年份，写入函数省略；Self-Improve示例仅进程内样例列表且无参数训练，不等于RLHF",
+        "pages": [
+          30,
+          40,
+          41
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "ReAct适合80%任务、critic更稳定为作者经验表述，无统计实验；框架API均为原文版本描述",
+        "pages": [
+          8,
+          11
+        ],
+        "status": "attributed"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0518 Agent Architectures.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "094b667945991fc0db1670a0f0bef9de3a7fb228823ae6bbe672b119e1e31f29",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_十七种Agent架构的控制流.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

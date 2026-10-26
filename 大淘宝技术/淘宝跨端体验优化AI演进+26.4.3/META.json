@@ -1,0 +1,441 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0242",
+  "title": "淘宝跨端体验优化 AI 演进之路",
+  "short_title": "淘宝跨端体验优化AI演进",
+  "account": "大淘宝技术",
+  "author": "染陌",
+  "author_byline": "本文作者染陌，来自淘天集团-跨端技术团队。",
+  "source_url": null,
+  "published_at": "2026-04-03",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "跨端技术团队 2026年4月3日 02:16 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 15,
+      "text": "本文作者染陌，来自淘天集团-跨端技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "跨端开发与性能",
+    "异常监控与稳定性",
+    "AI研发协同",
+    "Harness与模型协同"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/淘宝跨端体验优化 AI 演进之路.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T06:25:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "90c5f1ca9136c2f1d69ac2b23cc3edb32b410d0e8b6cafc2513df73fc4f2fca6",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.2-14含跨端研发平台架构图、Cursor+Opus 4.5试点截图、会员中心多态图、长尾聚类Workflow图与四阶段产品演示截图（位于PDF图像层），全部核心架构与演进表已在正文完整还原。",
+          "pages": [
+            2,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 17407491,
+      "page_count": 16
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T06:25:00-07:00",
+  "directory": "大淘宝技术/淘宝跨端体验优化AI演进+26.4.3",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_淘宝跨端体验优化AI演进.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0242",
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "updated_at": "2026-10-20T06:25:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "90c5f1ca9136c2f1d69ac2b23cc3edb32b410d0e8b6cafc2513df73fc4f2fca6"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "34c6fa799554a12a771a99b6a312568fa1d09da76304fc7f2b43050062223b42"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.2-14含跨端研发平台架构图、Cursor+Opus 4.5试点截图、会员中心多态图、长尾聚类Workflow图与四阶段产品演示截图（位于PDF图像层），全部核心架构与演进表已在正文完整还原。",
+        "pages": [
+          2,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_淘宝跨端体验优化AI演进.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_淘宝跨端体验优化AI演进.md",
+      "sha256": "e10e5578b16a5d98ae384f7f52f7bb74a20912e979b7c88264c7c8f631054dc3"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "90c5f1ca9136c2f1d69ac2b23cc3edb32b410d0e8b6cafc2513df73fc4f2fca6"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "34c6fa799554a12a771a99b6a312568fa1d09da76304fc7f2b43050062223b42"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 65,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 909,
+        "text_layer_sha256": "1596d171d60b10d81aa7aa36a1e2128ff0203cd7bffef5fee0469d449b3a0983"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 116,
+        "md_start_line": 73,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 2,
+        "text_layer_char_count": 566,
+        "text_layer_sha256": "b3c6234b27565b0c10127762c2a66a589f26c8089e6ed250caf3b5ffc7e091ff"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 174,
+        "md_start_line": 124,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 3,
+        "text_layer_char_count": 668,
+        "text_layer_sha256": "8ebd049d640181b414f7a1ae416e9a4401d6150cc63197dac52447e482964d3b"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 277,
+        "md_start_line": 182,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 4,
+        "text_layer_char_count": 725,
+        "text_layer_sha256": "b7e94e3195970ee7349f43f8cfa7478c830d0c17b227a0088c417753d81ea03c"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 334,
+        "md_start_line": 285,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 5,
+        "text_layer_char_count": 546,
+        "text_layer_sha256": "fa85181d63961b7c3521ca13430eeadaad8770251ff744016006269a817fbdc0"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 380,
+        "md_start_line": 342,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 6,
+        "text_layer_char_count": 374,
+        "text_layer_sha256": "dc9a107a65c889ae0f8e90fc65c40052c3442d0728a2814e5157b0da7f0f4cb5"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 448,
+        "md_start_line": 388,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 7,
+        "text_layer_char_count": 791,
+        "text_layer_sha256": "947702ef1510ad7e13e136920abe5abb525eea3f929c4ac4d24b0e0379ac3fef"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 496,
+        "md_start_line": 456,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 8,
+        "text_layer_char_count": 453,
+        "text_layer_sha256": "6c18cc9ed686e3ec2cb6d389b427c7b1cb57ec60a0a76b0b8b6955e0e2b01fa6"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 524,
+        "md_start_line": 504,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 9,
+        "text_layer_char_count": 208,
+        "text_layer_sha256": "5fff07816418abb8ac4820b6228aaa712d1a1d9bc980a8c1a251b9461a0b61a1"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 585,
+        "md_start_line": 532,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 10,
+        "text_layer_char_count": 738,
+        "text_layer_sha256": "30c2f865039ada3dd3e69058aa59f592e22a4b836573d260a5116af99d655964"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 621,
+        "md_start_line": 593,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 11,
+        "text_layer_char_count": 406,
+        "text_layer_sha256": "45379be82652d72edafb08a35e0fa6c0f8dfe760742548b3bd0e8bde8df38851"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 690,
+        "md_start_line": 629,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 12,
+        "text_layer_char_count": 755,
+        "text_layer_sha256": "34efbde295b4b654c23c501e648f755d8aa7b68d409be041fff83faa51fbc364"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 737,
+        "md_start_line": 698,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 13,
+        "text_layer_char_count": 446,
+        "text_layer_sha256": "d240d95c06b237809e0af5138f88b0ef7fa7048fc5f9243ca13a20d4b5976480"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 792,
+        "md_start_line": 745,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 14,
+        "text_layer_char_count": 406,
+        "text_layer_sha256": "f56f4421612fab04b774cc4209160412eae32b27366744601c32bb1bbefd2d07"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 809,
+        "md_start_line": 800,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 15,
+        "text_layer_char_count": 187,
+        "text_layer_sha256": "8b35f7e2893af62c740858846064217c8b62034de5642b24c4e6fb25cc743240"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 830,
+        "md_start_line": 817,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 16,
+        "text_layer_char_count": 106,
+        "text_layer_sha256": "388afdacc930fd0ad77119e655a75fcbbe750985b4d8cc65862c796c8d6c3695"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.2-14含跨端研发平台架构图、Cursor+Opus 4.5试点截图、会员中心多态图、长尾聚类Workflow图与四阶段产品演示截图（位于PDF图像层），全部核心架构与演进表已在正文完整还原。",
+        "pages": [
+          2,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md",
+      "../../20_topics/异常监控与稳定性.md",
+      "../../20_topics/跨端开发与性能.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T06:25:00-07:00",
+    "removed_at": "2026-10-20T06:25:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝跨端体验优化 AI 演进之路.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "90c5f1ca9136c2f1d69ac2b23cc3edb32b410d0e8b6cafc2513df73fc4f2fca6",
+        "copied_at": "2026-10-20T06:25:00-07:00",
+        "removed_at": "2026-10-20T06:25:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_淘宝跨端体验优化AI演进.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

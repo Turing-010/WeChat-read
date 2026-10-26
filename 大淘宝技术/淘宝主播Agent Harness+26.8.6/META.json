@@ -1,0 +1,483 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0197",
+  "title": "淘宝主播Agent的Harness工程实战",
+  "short_title": "淘宝主播Agent Harness",
+  "account": "大淘宝技术",
+  "author": "澄沨",
+  "author_byline": "本文作者澄沨，来自淘天集团-直播技术团队。",
+  "source_url": null,
+  "published_at": "2026-08-06",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "直播技术团队 2026年8月6日 00:48 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 20,
+      "text": "本文作者澄沨，来自淘天集团-直播技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "Harness与模型协同",
+    "Agent成本与上下文预算",
+    "Agent工程循环",
+    "Agent评测与反馈"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/淘宝主播Agent的Harness工程实战.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T06:06:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "9b7abd09b4c99254507c9a0aef6e2236ff56ca99b40233d7c1d250e5e3b2ddec",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.2-19含多张直播间主播Agent架构图、双轨抢占状态机与三层上下文滑窗示意图（位于PDF图像层），核心机制已在正文中完整阐述。",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 8961843,
+      "page_count": 21
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T06:06:00-07:00",
+  "directory": "大淘宝技术/淘宝主播Agent Harness+26.8.6",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_淘宝主播Agent Harness.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0197",
+    "created_at": "2026-10-20T06:06:00-07:00",
+    "updated_at": "2026-10-20T06:06:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "9b7abd09b4c99254507c9a0aef6e2236ff56ca99b40233d7c1d250e5e3b2ddec"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "ab1e390ce323fe78ee5766e70399f659c4bae1b06931975bfd920001b999d986"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.2-19含多张直播间主播Agent架构图、双轨抢占状态机与三层上下文滑窗示意图（位于PDF图像层），核心机制已在正文中完整阐述。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_淘宝主播Agent Harness.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_淘宝主播Agent Harness.md",
+      "sha256": "bdc40a4618d77eb59000e73d364ea10744956749888e5680b99412d64fef9288"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T06:06:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "9b7abd09b4c99254507c9a0aef6e2236ff56ca99b40233d7c1d250e5e3b2ddec"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "ab1e390ce323fe78ee5766e70399f659c4bae1b06931975bfd920001b999d986"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "md_end_line": 71,
+        "md_start_line": 14,
+        "page": 1,
+        "text_layer_char_count": 1080,
+        "text_layer_sha256": "5d0abc66152fd3de13ccc20be2f3e903ece4d6494406e3a3c0764077bb6aefd7"
+      },
+      {
+        "md_end_line": 98,
+        "md_start_line": 81,
+        "page": 2,
+        "text_layer_char_count": 333,
+        "text_layer_sha256": "e0532e3573178dbe4f87893c1b760b7ceaa1af4c5919a8983cb4092b541b5a59"
+      },
+      {
+        "md_end_line": 163,
+        "md_start_line": 108,
+        "page": 3,
+        "text_layer_char_count": 914,
+        "text_layer_sha256": "ec7ea61d7584c44c844588a79847a42fdc470bd96c3ce9f171fe970e8c056c1d"
+      },
+      {
+        "md_end_line": 221,
+        "md_start_line": 173,
+        "page": 4,
+        "text_layer_char_count": 835,
+        "text_layer_sha256": "753b3ba0a2b5258775c90c2e36be1805ca0418b993284662bd3892ee23467a6b"
+      },
+      {
+        "md_end_line": 237,
+        "md_start_line": 231,
+        "page": 5,
+        "text_layer_char_count": 137,
+        "text_layer_sha256": "cd59e99ce73ddf6037c6b58664c50847cda32e2b021a0642bbae92c6fff502d0"
+      },
+      {
+        "md_end_line": 273,
+        "md_start_line": 247,
+        "page": 6,
+        "text_layer_char_count": 577,
+        "text_layer_sha256": "faa42c05c4d470091fe5b195a4781a720289684aab787b8e08179164001bd3fe"
+      },
+      {
+        "md_end_line": 320,
+        "md_start_line": 283,
+        "page": 7,
+        "text_layer_char_count": 772,
+        "text_layer_sha256": "259ed13b1273b7a261496b9b4897b1950a5f9c9b0057ee761cb31951d7e5c5d9"
+      },
+      {
+        "md_end_line": 381,
+        "md_start_line": 330,
+        "page": 8,
+        "text_layer_char_count": 953,
+        "text_layer_sha256": "dbdbbda935830bdc01c0036e3ecfbf6351744cd2d0f46a2dfca38bd84c77ea7d"
+      },
+      {
+        "md_end_line": 458,
+        "md_start_line": 391,
+        "page": 9,
+        "text_layer_char_count": 887,
+        "text_layer_sha256": "6b90ef5a8ca1b1c981b3c763bc051dea3dc6761e25caf65f104f61f8280a248e"
+      },
+      {
+        "md_end_line": 504,
+        "md_start_line": 468,
+        "page": 10,
+        "text_layer_char_count": 515,
+        "text_layer_sha256": "0f7fff91ec30a9ba3f7b53e959a326f54383bc9b4724c8bb35d2124c1f45bd39"
+      },
+      {
+        "md_end_line": 552,
+        "md_start_line": 514,
+        "page": 11,
+        "text_layer_char_count": 657,
+        "text_layer_sha256": "a9e526c065da34050fe9680b023ffa5deb30a5b64719a1bce72698dd6e946530"
+      },
+      {
+        "md_end_line": 587,
+        "md_start_line": 562,
+        "page": 12,
+        "text_layer_char_count": 436,
+        "text_layer_sha256": "8f8754661312c6c1706e457a3ff0ceee8cf37d0c5ae7f6e8c887eccb2ca088d7"
+      },
+      {
+        "md_end_line": 597,
+        "md_start_line": 597,
+        "page": 13,
+        "text_layer_char_count": 0,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "md_end_line": 627,
+        "md_start_line": 607,
+        "page": 14,
+        "text_layer_char_count": 288,
+        "text_layer_sha256": "faae2624e94f10647c8b0a11664466ba09ae8b830e7c008554ecdb0f96d126aa"
+      },
+      {
+        "md_end_line": 654,
+        "md_start_line": 637,
+        "page": 15,
+        "text_layer_char_count": 322,
+        "text_layer_sha256": "58ab572c299369e698014489831c4b9694b26b8e580b7cfec315e268f39f22a1"
+      },
+      {
+        "md_end_line": 677,
+        "md_start_line": 664,
+        "page": 16,
+        "text_layer_char_count": 267,
+        "text_layer_sha256": "554919f4a471b9cba7062e1a8c8fdf41aec8739ba79a408a2cd0254c96a70ba5"
+      },
+      {
+        "md_end_line": 706,
+        "md_start_line": 687,
+        "page": 17,
+        "text_layer_char_count": 333,
+        "text_layer_sha256": "13ac0313de5e87dda061631d49591c848a269683e5aaba90e04b3265f10120ae"
+      },
+      {
+        "md_end_line": 740,
+        "md_start_line": 716,
+        "page": 18,
+        "text_layer_char_count": 422,
+        "text_layer_sha256": "3a0302d29670200c357989851a351e94bac8251465cd967d789d1e2dd33fdf42"
+      },
+      {
+        "md_end_line": 791,
+        "md_start_line": 750,
+        "page": 19,
+        "text_layer_char_count": 798,
+        "text_layer_sha256": "24be53d172be5069c635577d2a4f426fe3f7683503109cb9ca33cc9c9d9d6afd"
+      },
+      {
+        "md_end_line": 820,
+        "md_start_line": 801,
+        "page": 20,
+        "text_layer_char_count": 278,
+        "text_layer_sha256": "6606375a998a6cb4de9c9708a953e8e56c0ad4157af1393e76be2f4fb3423c0c"
+      },
+      {
+        "md_end_line": 830,
+        "md_start_line": 830,
+        "page": 21,
+        "text_layer_char_count": 0,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.2-19含多张直播间主播Agent架构图、双轨抢占状态机与三层上下文滑窗示意图（位于PDF图像层），核心机制已在正文中完整阐述。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Harness与模型协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T06:06:00-07:00",
+    "removed_at": "2026-10-20T06:06:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝主播Agent的Harness工程实战.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "9b7abd09b4c99254507c9a0aef6e2236ff56ca99b40233d7c1d250e5e3b2ddec",
+        "copied_at": "2026-10-20T06:06:00-07:00",
+        "removed_at": "2026-10-20T06:06:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_淘宝主播Agent Harness.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

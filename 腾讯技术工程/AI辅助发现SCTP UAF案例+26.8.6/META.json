@@ -1,0 +1,348 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0148",
+  "title": "Linux 内核藏了 18 年的漏洞，这次 AI 比所有人先找到",
+  "short_title": "AI辅助发现SCTP UAF案例",
+  "account": "腾讯技术工程",
+  "author": "腾讯OS安全团队",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-06T02:37",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Linux 内核藏了 18 年的漏洞，这次 AI 比所有人先找到.pdf",
+      "original_filename": "Linux 内核藏了 18 年的漏洞，这次 AI 比所有人先找到.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "eb4c43b2b36b981e4f4b6cdb88478621f025fa0fc537527478f5a1c6e9d619d0",
+      "size_bytes": 6686930,
+      "page_count": 7,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "文章未逐一列出受影响内核版本范围与所有配置组合；结论按文中已验证环境限定。p.7为空白页。"
+      ],
+      "publication_evidence": "PDF第1页署名行：2026年8月6日 02:37；作者列为腾讯OS安全团队。"
+    }
+  ],
+  "tags": [
+    "安全研究与漏洞披露",
+    "Harness与模型协同",
+    "Agent评测与反馈",
+    "操作系统与内存管理",
+    "Agent安全与权限"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/AI辅助发现SCTP UAF案例+26.8.6",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI辅助发现SCTP UAF案例.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "Linux  内核藏了 18  年的漏洞,这次 AI  比所有人先找到\nAug  6 , 2026 , 2 : 37  AM广东腾讯技术工程 48  listened\n作者:TencentOS 安全团队\n2026 年 7 月 23 日, Linux 内核主线合入了一份很短的补丁。\n它只改动了 6 行代码,修复的是一个已在 Linux 内核中存在超过 18 年的  0day 漏洞( CVE-\n2026-64564 )。攻击者可以利用它从普通用户权限提升到服务器  root 权限;另外,在容\n器内部,攻击者还可能利用其突破容器隔离,取得宿主机 root 权限。\n在这 18 年间, Linux 内核经历数百个版本迭代,接受全球数千名开发者审阅,被 Google\nsyzkaller 等顶级fuzzer反复测试,也经无数安全研究者与  Agent 反复审计,却始终无人发\n现。我们将这个漏洞命名为  SCTPhantom( SCTP 协议栈中⻓期潜伏的幽灵般漏洞)。\n发现它的,是 TencentOS 安全团队打造的内核漏洞研究智能体  —— 科维斯  AI( Corvus\nAI )。\n这是科维斯  AI 的第一次公开亮相。\n科维斯  AI 的诞生\n2026 年, AI 能够编写代码、分析代码并发现漏洞,已经不再新鲜。\n前沿模型能力的持续提升,显著推动了漏洞发现数量的增⻓,也让 AI 进入高度专业的漏洞研\n究领域成为一件可被验证的事。然而,从发现内存错误到构造出稳定可用的利用,仍然是一\n",
+    "publication_evidence": "PDF第1页署名行：2026年8月6日 02:37；作者列为腾讯OS安全团队。",
+    "full_title_in_capture": "Linux 内核藏了 18 年的漏洞，这次 AI 比所有人先找到",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0148",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "eb4c43b2b36b981e4f4b6cdb88478621f025fa0fc537527478f5a1c6e9d619d0"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      "文章未逐一列出受影响内核版本范围与所有配置组合；结论按文中已验证环境限定。p.7为空白页。"
+    ],
+    "outputs": [
+      "AI_AI辅助发现SCTP UAF案例.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        2,
+        5
+      ]
+    },
+    "coverage": "逐页阅读p.1–6正文并检查全7页缩略图；p.7为空白。放大核对p.2研究流程与漏洞概述、p.5漏洞响应时间线。笔记不披露PoC或利用步骤。 PDF末页核查：p.7空白。",
+    "fact_checks": [
+      {
+        "claim": "漏洞与CVE",
+        "source_value": "SCTP地址删除路径use-after-free；CVE-2026-64564",
+        "pages": [
+          1,
+          2
+        ],
+        "result": "与文章一致；不复述利用链"
+      },
+      {
+        "claim": "验证发行版",
+        "source_value": "TencentOS Server、Debian 13、Ubuntu 24.04默认配置；RHEL 9.8/Rocky 9.8需加载SCTP",
+        "pages": [
+          3,
+          4
+        ],
+        "result": "笔记明确保留模块与配置限制"
+      },
+      {
+        "claim": "跨内核移植所需时间",
+        "source_value": "约3小时",
+        "pages": [
+          4
+        ],
+        "result": "按文章报告记录"
+      },
+      {
+        "claim": "漏洞披露时间线",
+        "source_value": "7月12发现、14日上游确认、23日主线修复、27日容器验证、8月3稳定分支修复、4日分配CVE/TencentOS修复",
+        "pages": [
+          5
+        ],
+        "result": "放大时间线核对一致"
+      },
+      {
+        "claim": "CVE-2026-64531归属",
+        "source_value": "Open vSwitch另一漏洞，由外部研究者先前报告",
+        "pages": [
+          4
+        ],
+        "result": "笔记与本案分开归因"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_AI辅助发现SCTP UAF案例.md",
+      "sha256": "480b91fb3867ca070c1c4d2acaad937bebe3345b82b476b7ff1821feb6137783",
+      "size_bytes": 19742
+    },
+    "independent_crosscheck": {
+      "reviewer": "/root/crosscheck_b",
+      "note_sha256": "480b91fb3867ca070c1c4d2acaad937bebe3345b82b476b7ff1821feb6137783",
+      "review_sha256": "9ebbea178c40c4cc85fc91ff14eac914928eaa9f2523bc6f53cb2798c1b42607",
+      "status": "passed",
+      "changes": [
+        "Applied the required note structure: one H1, an explicit 复习卡片 section with one-line Q::A cards, and a final fully quoted folded 校对报告.",
+        "Checked all 7 physical pages; inspected the final blank/comment page in extracted text and page image, recorded the boundary in note and review, and aligned text_pages_read with the full physical page range.",
+        "Converted the eight bullet Q/A cards to the required one-line Q::A format."
+      ],
+      "source_spotchecks": [
+        {
+          "pages": [
+            2,
+            5
+          ],
+          "finding": "放大页图中的研究流程、SCTP 漏洞披露日期和 11 天主线修复间隔与笔记一致。"
+        },
+        {
+          "pages": [
+            3,
+            4
+          ],
+          "finding": "跨版本复核和容器影响仍限定为文章报告的环境；外部研究者的 Open vSwitch CVE 未归为本团队发现。"
+        },
+        {
+          "pages": [
+            1,
+            7
+          ],
+          "finding": "CVE 与正文主张有来源定位；p.7 空白被记录，未补造正文。"
+        },
+        {
+          "pages": [
+            7
+          ],
+          "finding": "p.7抽取文本为空且页图为空白。"
+        }
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "eb4c43b2b36b981e4f4b6cdb88478621f025fa0fc537527478f5a1c6e9d619d0"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "10d62bf1eb79644f2411706f8581d570c367f5ac9f0171613c802ec8e66b3544"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 26,
+        "text_layer_sha256": "0786ab77df12d7808216576453520e9c962ab7c329df9a0fafda98b9ee8d0b49",
+        "text_layer_char_count": 647
+      },
+      {
+        "page": 2,
+        "md_start_line": 34,
+        "md_end_line": 57,
+        "text_layer_sha256": "2e4208b899add2fc8b6f6655a28e11961c25e8b8fd164e1f5b605c9af8b33206",
+        "text_layer_char_count": 815
+      },
+      {
+        "page": 3,
+        "md_start_line": 65,
+        "md_end_line": 78,
+        "text_layer_sha256": "2ca5c335840c5068559e25f1c6497de7579757a2a3aa5c3935603d3c050ecbf0",
+        "text_layer_char_count": 479
+      },
+      {
+        "page": 4,
+        "md_start_line": 86,
+        "md_end_line": 118,
+        "text_layer_sha256": "c32defcfcdebf2e75a7e2c386d3fe591e461831c4130cf6814658ac54239aeec",
+        "text_layer_char_count": 1196
+      },
+      {
+        "page": 5,
+        "md_start_line": 126,
+        "md_end_line": 158,
+        "text_layer_sha256": "fe3af4622c4ab73e712fbab7a9d5cb6629d9aa9dfb428c0297102508ed571a83",
+        "text_layer_char_count": 1197
+      },
+      {
+        "page": 6,
+        "md_start_line": 166,
+        "md_end_line": 177,
+        "text_layer_sha256": "570144cab3e0ad60612e341b0182c9a2f0caddde2139bc6b44b0f7645b0eeb9d",
+        "text_layer_char_count": 311
+      },
+      {
+        "page": 7,
+        "md_start_line": 185,
+        "md_end_line": 184,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        2,
+        5
+      ]
+    },
+    "quality_issues": [
+      "文章未逐一列出受影响内核版本范围与所有配置组合；结论按文中已验证环境限定。p.7为空白页。"
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Linux 内核藏了 18 年的漏洞，这次 AI 比所有人先找到.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "eb4c43b2b36b981e4f4b6cdb88478621f025fa0fc537527478f5a1c6e9d619d0",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/操作系统与内存管理.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_AI辅助发现SCTP UAF案例.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

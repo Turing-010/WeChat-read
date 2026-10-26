@@ -1,0 +1,336 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0250",
+  "title": "ICLR 2026｜基于概念蒸馏的生成式视频复原算法 Vivid-VR",
+  "short_title": "概念蒸馏视频复原Vivid-VR",
+  "account": "大淘宝技术",
+  "author": "音视频技术团队",
+  "author_byline": "该工作由淘天音视频技术团队独立完成。",
+  "source_url": null,
+  "published_at": "2026-03-04",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "音视频技术团队 2026年3月4日 00:28 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 8,
+      "text": "该工作由淘天音视频技术团队独立完成。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "推荐系统与多模态评测",
+    "跨端开发与性能",
+    "模型架构与训练"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/ICLR 2026｜基于概念蒸馏的生成式视频复原算法 Vivid-VR.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T18:25:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "368957fe7d2150062adc98cab67d250933a9a8ebff41aa5fef6790f7fc32cfd9",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.2, 4-8含复原视觉对比图、架构图3、双分支连接器公式及表1/表2实验结果截图（位于PDF图像层），p.9为拓展阅读尾页；正文文本层已完整给出数据集、对比基线、评价指标与定性/消融结论。",
+          "pages": [
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 9993739,
+      "page_count": 9
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T18:25:00-07:00",
+  "directory": "大淘宝技术/概念蒸馏视频复原Vivid-VR+26.3.4",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_概念蒸馏视频复原Vivid-VR.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0250",
+    "created_at": "2026-10-20T18:25:00-07:00",
+    "updated_at": "2026-10-20T18:25:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "368957fe7d2150062adc98cab67d250933a9a8ebff41aa5fef6790f7fc32cfd9"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "cc250b6ad69ba7c73a48addb643a023dd2a8464fc41affb52cc155c70e371761"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.2, 4-8含复原视觉对比图、架构图3、双分支连接器公式及表1/表2实验结果截图（位于PDF图像层），p.9为拓展阅读尾页；正文文本层已完整给出数据集、对比基线、评价指标与定性/消融结论。",
+        "pages": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_概念蒸馏视频复原Vivid-VR.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_概念蒸馏视频复原Vivid-VR.md",
+      "sha256": "b668451d2a3c93af8cc0cb01def661fbf50b658c781a305a47f27f7d83529ad2"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T18:25:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "368957fe7d2150062adc98cab67d250933a9a8ebff41aa5fef6790f7fc32cfd9"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "cc250b6ad69ba7c73a48addb643a023dd2a8464fc41affb52cc155c70e371761"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 55,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 813,
+        "text_layer_sha256": "114e1330bce37437f90b297df3305f236457aab8efd5a0f2971a01bec1306e6f"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 101,
+        "md_start_line": 63,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 2,
+        "text_layer_char_count": 758,
+        "text_layer_sha256": "e20b82db424569b5d5fa21d71cb3e982bb86f679f2e58f1198a9fb4756acbbe1"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 163,
+        "md_start_line": 109,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 3,
+        "text_layer_char_count": 959,
+        "text_layer_sha256": "3187ab0242f7ac6964769b142bfcd37d24222e0292e9e9374432b75d45040794"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 208,
+        "md_start_line": 171,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 4,
+        "text_layer_char_count": 586,
+        "text_layer_sha256": "951b79f50fe0de60475e0fb147886a56b922927125d8655c444fbdc8ac17559c"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 250,
+        "md_start_line": 216,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 5,
+        "text_layer_char_count": 513,
+        "text_layer_sha256": "ac8a739bbd409cfc27ea4b82312c0e0d8758b13f40c9ab24ef07330d52052e2e"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 274,
+        "md_start_line": 258,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 6,
+        "text_layer_char_count": 327,
+        "text_layer_sha256": "fc7474ffcfc8d016bd9116fecd16648ce6de6d19f02d6caf7562c01a0dbba85b"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 303,
+        "md_start_line": 282,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 7,
+        "text_layer_char_count": 176,
+        "text_layer_sha256": "4afa2633000600a46a80d0982367a8a7af4af3bc44390da8cc4d7884c339ca75"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 355,
+        "md_start_line": 311,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 8,
+        "text_layer_char_count": 812,
+        "text_layer_sha256": "2e546fd36a0428a4d92fe3ad616328d94bd7a4b97fc47ec52ce0f34ab863e297"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 376,
+        "md_start_line": 363,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 9,
+        "text_layer_char_count": 106,
+        "text_layer_sha256": "236740114e12d8324d5ec7f48187786ebf2d53dea6c143f9446312cc72621283"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.2, 4-8含复原视觉对比图、架构图3、双分支连接器公式及表1/表2实验结果截图（位于PDF图像层），p.9为拓展阅读尾页；正文文本层已完整给出数据集、对比基线、评价指标与定性/消融结论。",
+        "pages": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/推荐系统与多模态评测.md",
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T18:25:00-07:00",
+    "removed_at": "2026-10-20T18:25:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/ICLR 2026｜基于概念蒸馏的生成式视频复原算法 Vivid-VR.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "368957fe7d2150062adc98cab67d250933a9a8ebff41aa5fef6790f7fc32cfd9",
+        "copied_at": "2026-10-20T18:25:00-07:00",
+        "removed_at": "2026-10-20T18:25:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_概念蒸馏视频复原Vivid-VR.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

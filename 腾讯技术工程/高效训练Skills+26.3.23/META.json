@@ -1,0 +1,392 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0067",
+  "title": "让 AI 变成 Super 员工的秘密：高效训练 Skills",
+  "short_title": "高效训练Skills",
+  "account": "腾讯技术工程",
+  "author": "solonnliu",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-03-23T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0323 高效训练Skills.pdf",
+      "original_filename": "0323 高效训练Skills.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "52ee46ac808c1984893e518f1ce1a2c1e590b86d168aa6f74a58aa1f4b7e2250",
+      "size_bytes": 2866604,
+      "page_count": 13,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "⚠️[材料缺失] 正文指向的红框截图及前后页面层级对比图未出现在 p.4–5；相关效果只按文字转述。",
+          "pages": [
+            4,
+            5
+          ],
+          "status": "confirmed_missing"
+        }
+      ],
+      "publication_evidence": "PDF p.1 可见 2026-03-23T02:36"
+    }
+  ],
+  "tags": [
+    "Agent工程循环",
+    "Agent评测与反馈",
+    "Agent任务恢复",
+    "Skill设计与治理"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/高效训练Skills+26.3.23",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_高效训练Skills.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "让 AI 变成 Super 员工的秘密:高效训练 Skills\n腾讯程序员 2026 年 3 月 23 日 02 : 36广东原创 腾讯技术工程 633 人\n作者: solonnliu\nOpenClaw 火了以后,一个变化非常明显:几乎每个人都拥有了一个 “ 什么都能干一点 ” 的  AI\n助手。\n写文案、查资料、写代码、做分析、跑测试,它都能上。\n但真正把  AI 拉进工作流之后,问题很快就暴露了:\nAI 不是不能干活,而是经常干得不稳、不深、不像一个真正懂你业务的人。\n它能执行,但不一定知道你这个场景里什么算 “ 完成 ” 。  它能输出,但不一定知道你团队真正\n要的交付物长什么样。  它能连续干很久,但上下文一长,它就会开始 “ 失忆 ” 、偷步骤、压缩\n细节,最后给你一个“ 看起来做完了,实际上没做全 ”的结果。\n缘起\n我最近一直在打磨一个   web-testing Skill ,目标是:\n给它任意一个网站的链接,它都能深入完整的探索到每一层页面的每一个细节,并输出完整的\n测试报告。测试报告包含总评分,站点地图, UI/UX 设计审查、功能测试、 CURD 全链路测\n试、每个测试点的截图等,自动梳理出每个页面的  bug 并按严重程度归类。输出格式包含可\n修改的  md 文件和更美观的  html 文件,人工审查没问题后,再交给  AI 按照报告自动修复。\n实现全自主的自动化测试、自动修复、再次自动测试验证,形成发现问题  →  解决问题的  AI\n自驱动式全链路自动化测试,为产品质量保驾护航。\n为什么  AI 很聪明,却总干不好复杂任务?不是模型不行,而是欠缺 “ 业务  SOP” ! 本文复\n盘了打造  web-testing Skill 时的  4 个真实翻车教训,分享一套极具实操性的工程化训练\n心法(门禁规则、 Checklist 、自动迭代)。教你告别玄学  Prompt ,把  AI 真正调教成能闭\n环交付的  S 级员工!不是  AI 不够强,而是大多数  AI 还没有被你训练成 “ 懂业务、会自\n检、能稳定交付 ” 的员工。\n",
+    "publication_evidence": "PDF p.1 可见 2026-03-23T02:36",
+    "full_title_in_capture": "让 AI 变成 Super 员工的秘密：高效训练 Skills",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0067",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "52ee46ac808c1984893e518f1ce1a2c1e590b86d168aa6f74a58aa1f4b7e2250"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "⚠️[材料缺失] 正文指向的红框截图及前后页面层级对比图未出现在 p.4–5；相关效果只按文字转述。",
+        "pages": [
+          4,
+          5
+        ],
+        "status": "confirmed_missing"
+      }
+    ],
+    "outputs": [
+      "AI_高效训练Skills.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "detail_pages_reviewed": [
+        3,
+        5,
+        10
+      ]
+    },
+    "coverage": "实质覆盖四类失败、四项训练方法、复盘指令及文件职责；页尾推广与留言省略；正文提及的页面对比截图缺失",
+    "fact_checks": [
+      {
+        "item": "真实任务试跑",
+        "value": "3–5次",
+        "pages": [
+          8
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "页面发现深度",
+        "value": "2层→4层，作者正文报告",
+        "pages": [
+          5
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "交付顺序",
+        "value": "sitemap.md→test-report.md→test-report.html",
+        "pages": [
+          6
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "文件最低检查",
+        "value": "存在且大小大于0",
+        "pages": [
+          6
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "结构不变量",
+        "value": "页面模块数与page-card数量均等于页面数",
+        "pages": [
+          7
+        ],
+        "result": "核对原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_高效训练Skills.md",
+      "sha256": "bc32be4619e47c3c8fda763e4202e6b1c1989a3fd94ae819edbfb66b91ff59ab"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "52ee46ac808c1984893e518f1ce1a2c1e590b86d168aa6f74a58aa1f4b7e2250"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "6135ee02e3482c713b729d7fd25e668e68a58db94f7e088892e2d537e0c3321c"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 33,
+        "text_layer_sha256": "05088238512e4dd7ba6a1e2a78134a3e16c6ed60d8b3bc6d5c5438f98b567132",
+        "text_layer_char_count": 891
+      },
+      {
+        "page": 2,
+        "md_start_line": 41,
+        "md_end_line": 70,
+        "text_layer_sha256": "8d907a19f901b98ae53f2b8af1fe5c045e26343b44e7368d2efe9bf8da7ec471",
+        "text_layer_char_count": 704
+      },
+      {
+        "page": 3,
+        "md_start_line": 78,
+        "md_end_line": 102,
+        "text_layer_sha256": "b573996046848c81bca3d30528a6cd4c4ddd4cef671fd21d091e305c12d2149d",
+        "text_layer_char_count": 666
+      },
+      {
+        "page": 4,
+        "md_start_line": 110,
+        "md_end_line": 137,
+        "text_layer_sha256": "c630d36e30e3a5fef27c5c6d24a0869f962ddd0d1c5d672dde44209da401b50f",
+        "text_layer_char_count": 692
+      },
+      {
+        "page": 5,
+        "md_start_line": 145,
+        "md_end_line": 172,
+        "text_layer_sha256": "095fb51c674a258e8fd07b0e8acc69491bf3ed3e828b76c80bc689dbc80c78e1",
+        "text_layer_char_count": 609
+      },
+      {
+        "page": 6,
+        "md_start_line": 180,
+        "md_end_line": 207,
+        "text_layer_sha256": "43efd9393eec163a4579e6418f548b21e4ef7dc7417d35a639cb9332133d6cfc",
+        "text_layer_char_count": 721
+      },
+      {
+        "page": 7,
+        "md_start_line": 215,
+        "md_end_line": 240,
+        "text_layer_sha256": "3754ba4cc8149a975b6d2fcfbc6534314ad68af0a06aa3dd7b0191b66866e570",
+        "text_layer_char_count": 574
+      },
+      {
+        "page": 8,
+        "md_start_line": 248,
+        "md_end_line": 277,
+        "text_layer_sha256": "f3201bfd50afdda9c7b6fdea764f016487109ca95556b612a3c05018190029ce",
+        "text_layer_char_count": 597
+      },
+      {
+        "page": 9,
+        "md_start_line": 285,
+        "md_end_line": 313,
+        "text_layer_sha256": "9d544255fed6d67f2a810c1c868faa741db6bf884375c82bff5b29f74b63f35c",
+        "text_layer_char_count": 586
+      },
+      {
+        "page": 10,
+        "md_start_line": 321,
+        "md_end_line": 352,
+        "text_layer_sha256": "cdb8e7a369a7f46c843ea223b4df047f1a39725d7f705b3794ff6729ec927226",
+        "text_layer_char_count": 732
+      },
+      {
+        "page": 11,
+        "md_start_line": 360,
+        "md_end_line": 385,
+        "text_layer_sha256": "80ad8858fafee9cdd57b7dfb79071085f6974bc0a3f25962d3439499c7291606",
+        "text_layer_char_count": 718
+      },
+      {
+        "page": 12,
+        "md_start_line": 393,
+        "md_end_line": 405,
+        "text_layer_sha256": "dd164a3296f68ad9dd4070c3156f447a9d0db41594c321a801d0c39c1d9dc482",
+        "text_layer_char_count": 278
+      },
+      {
+        "page": 13,
+        "md_start_line": 413,
+        "md_end_line": 414,
+        "text_layer_sha256": "b861a12bff6fc1f921658bbcba42a13aaa2a519b448746cd739bcdb995fc6a05",
+        "text_layer_char_count": 21
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "detail_pages_reviewed": [
+        3,
+        5,
+        10
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "⚠️[材料缺失] 正文指向的红框截图及前后页面层级对比图未出现在 p.4–5；相关效果只按文字转述。",
+        "pages": [
+          4,
+          5
+        ],
+        "status": "confirmed_missing"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0323 高效训练Skills.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "52ee46ac808c1984893e518f1ce1a2c1e590b86d168aa6f74a58aa1f4b7e2250",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Skill设计与治理.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_高效训练Skills.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

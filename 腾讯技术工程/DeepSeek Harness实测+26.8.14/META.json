@@ -1,0 +1,501 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0143",
+  "title": "DeepSeek Harness 实测｜模型之外的那一半，到底带来了什么",
+  "short_title": "DeepSeek Harness实测",
+  "account": "腾讯技术工程",
+  "author": "osli",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-14T18:30",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/DeepSeek Harness 实测｜模型之外的那一半，到底带来了什么.pdf",
+      "original_filename": "DeepSeek Harness 实测｜模型之外的那一半，到底带来了什么.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "ee259f21367d9fad341f21186b244f999bc18732037c8db79223f8ab2ee80b7d",
+      "size_bytes": 4823555,
+      "page_count": 13,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "实验是作者的小样本本机体验，模型、工具面、权限和运行条件不完全相同；不能视为严谨模型基准或产品排名。",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "status": "source_limitation"
+        },
+        {
+          "description": "源码结构和配置描述对应文章发布时的 Developer Preview 版本，后续版本可能变化。",
+          "pages": [
+            1,
+            2,
+            10,
+            11,
+            12,
+            13
+          ],
+          "status": "pending_review"
+        }
+      ],
+      "publication_evidence": "PDF第1页刊头显示 2026年8月14日 18:30；作者栏为 osli。"
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "Agent评测与反馈",
+    "Agent成本与上下文预算",
+    "Agent工程循环"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/DeepSeek Harness实测+26.8.14",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_DeepSeek Harness实测.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "DeepSeek  Harness  实测 | 模型之外的那一半,到底带来了什么\n2026 年 8 月 14 日 18 : 30广东腾讯技术工程 143 人\n作者: osli 元宝产品经理;相关团队:元宝产品中心、元宝模型工程中心、元宝大模型应用\n算法中心\nDeepSeek-V4-Pro 正式版上线当天,DeepSeek Harness 也开源了。之前注册 Deepseek\nHarness 公众号已经吵闹过一阵。 V4 Flash 发布报告的模型卡里只漏过一句  DSH,外界却\n已经猜测了很久,可谓期待值拉满了。\n源码摊开以后,预期和实物略有点对不上号。很多人等的是  DeepSeek 版  Codex 。当前开\n源的这套东⻄更像还能继续造  Agent 的  runtime 。 Web coding agent 有,Headless、\nPython SDK 、 ACP 和  JSON-RPC 也有。模型、工具、会话、权限、沙箱、 Agent Loop 和\nUI ,都可以拆开再装。\n我第一时间基于开源仓库,在本机把  npm 、 Web 、 Headless 和  Python SDK 都跑通了,拆\n开默认配置和  session log ,又拿同一个  Kimi K3 对照  DSH 与  Kimi Code,最后让  V4\nPro 连续做一条带视觉产物的复杂任务。\n跑完以后总体印象是: DSH 现在更像是一个开放的  Agent 平台脚手架,默认产品还带着预\n览版的毛边,留待社区的打磨。一切皆插件的理念挺新颖, Trajectory 的源码设计口碑不\n错,值得学习。\n",
+    "publication_evidence": "PDF第1页刊头显示 2026年8月14日 18:30；作者栏为 osli。",
+    "full_title_in_capture": "DeepSeek Harness 实测｜模型之外的那一半，到底带来了什么",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0143",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "ee259f21367d9fad341f21186b244f999bc18732037c8db79223f8ab2ee80b7d"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "实验是作者的小样本本机体验，模型、工具面、权限和运行条件不完全相同；不能视为严谨模型基准或产品排名。",
+        "pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "status": "source_limitation"
+      },
+      {
+        "description": "源码结构和配置描述对应文章发布时的 Developer Preview 版本，后续版本可能变化。",
+        "pages": [
+          1,
+          2,
+          10,
+          11,
+          12,
+          13
+        ],
+        "status": "pending_review"
+      }
+    ],
+    "outputs": [
+      "AI_DeepSeek Harness实测.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "detail_pages_reviewed": [
+        4,
+        6,
+        8,
+        10,
+        11
+      ]
+    },
+    "coverage": "覆盖 DSH 插件化 runtime、Agent Loop/工具/Provider/Session/沙箱、Trajectory 追加事件日志、小任务对照、跳一跳实现、Token与上下文、PTC和权限边界；实验结论严格限定在作者单次本机体验。 PDF末页核查：p.13为公众号页脚/留言区，无技术内容。",
+    "fact_checks": [
+      {
+        "item": "DSH产品形态",
+        "note_value": "可重组的Agent runtime",
+        "source_value": "模型、工具、会话、权限、沙箱、Agent Loop与UI可拆装",
+        "pages": [
+          1,
+          2
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "Trajectory用途",
+        "note_value": "由事件日志重建请求和执行轨迹",
+        "source_value": "事件追加记录及运行重建",
+        "pages": [
+          4,
+          6
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "对比实验边界",
+        "note_value": "小样本体验，不是基准",
+        "source_value": "任务条件与工具/权限不完全相同",
+        "pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "Token预算观察",
+        "note_value": "系统开销会挤占任务上下文",
+        "source_value": "文章对Token与上下文占用的案例分析",
+        "pages": [
+          8,
+          9
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "产品成熟度",
+        "note_value": "发布时仍属Developer Preview",
+        "source_value": "Developer Preview",
+        "pages": [
+          1,
+          11,
+          12
+        ],
+        "result": "一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_DeepSeek Harness实测.md",
+      "sha256": "352a25bb9f490da27c5473c3a1b8ddc7a61bc40cb99b93db5daef7b71e6c7e04",
+      "size_bytes": 24964
+    },
+    "independent_crosscheck": {
+      "reviewer": "/root/crosscheck_b",
+      "note_sha256": "352a25bb9f490da27c5473c3a1b8ddc7a61bc40cb99b93db5daef7b71e6c7e04",
+      "review_sha256": "932bcd448ddd5f882ef3546427ed60315534ed54b444f71f0496543f603e30c6",
+      "status": "passed",
+      "changes": [
+        "Applied the required note structure: one H1, an explicit 复习卡片 section with one-line Q::A cards, and a final fully quoted folded 校对报告.",
+        "Checked all 13 physical pages; inspected the final blank/comment page in extracted text and page image, recorded the boundary in note and review, and aligned text_pages_read with the full physical page range."
+      ],
+      "source_spotchecks": [
+        {
+          "pages": [
+            7
+          ],
+          "finding": "图文核对显示两边模型工具面和轨迹不同，Kimi Code 无 token usage；笔记正确拒绝据此比较成本。"
+        },
+        {
+          "pages": [
+            4,
+            6,
+            7
+          ],
+          "finding": "PONG token量和小样本任务对照按单次本机实验描述，限制条件与 source limitation 一致。"
+        },
+        {
+          "pages": [
+            10,
+            11
+          ],
+          "finding": "Profile/Preset 与 PTC 说明的职责边界保留；执行隔离没有被说成完整安全保证。"
+        },
+        {
+          "pages": [
+            13
+          ],
+          "finding": "p.13抽取文本及页图显示公众号页脚、阅读量和留言区，无技术正文。"
+        }
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "ee259f21367d9fad341f21186b244f999bc18732037c8db79223f8ab2ee80b7d"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "910c85a1fd1ea20a4ee3486347839951ce0f7282d87f16d64c67916fd81c3dfa"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 26,
+        "text_layer_sha256": "660e13d022d45da900326fb0c3b1ffa98361c789b718ed82877870d54b2be874",
+        "text_layer_char_count": 697
+      },
+      {
+        "page": 2,
+        "md_start_line": 34,
+        "md_end_line": 54,
+        "text_layer_sha256": "1526b7fc24a0d1538f272cf552cd5e60e93981a9d0a6daf3b537b6d28798f73e",
+        "text_layer_char_count": 769
+      },
+      {
+        "page": 3,
+        "md_start_line": 62,
+        "md_end_line": 94,
+        "text_layer_sha256": "f626f8f5427fa568d740df7b5b7008fc0f0504669cf6078d0ac1937705719681",
+        "text_layer_char_count": 1321
+      },
+      {
+        "page": 4,
+        "md_start_line": 102,
+        "md_end_line": 124,
+        "text_layer_sha256": "a4c33b29686cc2664e80704c01538408341c53290543dac4c6c463a25cc194c0",
+        "text_layer_char_count": 887
+      },
+      {
+        "page": 5,
+        "md_start_line": 132,
+        "md_end_line": 158,
+        "text_layer_sha256": "5c4c8eebafc6bc492d106c0513303a2142b2a239a9479a976a2b1b54894f6139",
+        "text_layer_char_count": 776
+      },
+      {
+        "page": 6,
+        "md_start_line": 166,
+        "md_end_line": 199,
+        "text_layer_sha256": "5384fe7e95217c5326295aca3694c2ad61a469917cf64f63038861063fb6e51c",
+        "text_layer_char_count": 1118
+      },
+      {
+        "page": 7,
+        "md_start_line": 207,
+        "md_end_line": 239,
+        "text_layer_sha256": "39d0d7db6aa6ce4a7d912c3cb61af8c2033b4e56374f9863188f23254aa6e8cb",
+        "text_layer_char_count": 1496
+      },
+      {
+        "page": 8,
+        "md_start_line": 247,
+        "md_end_line": 270,
+        "text_layer_sha256": "7c54f2a42039221efd8f45909f86795962f4013bbea6ecbb21cff6d5cc090c5b",
+        "text_layer_char_count": 945
+      },
+      {
+        "page": 9,
+        "md_start_line": 278,
+        "md_end_line": 312,
+        "text_layer_sha256": "ee11d326172c89147bb0f3cc3a2882ad75c9e509b8f4fcd71b2f7b4887e10a2d",
+        "text_layer_char_count": 1421
+      },
+      {
+        "page": 10,
+        "md_start_line": 320,
+        "md_end_line": 351,
+        "text_layer_sha256": "da3cf3e7b8e53c4dc93535c040437ecf4a836240fbdd0291866e01ec4fc8e831",
+        "text_layer_char_count": 1332
+      },
+      {
+        "page": 11,
+        "md_start_line": 359,
+        "md_end_line": 389,
+        "text_layer_sha256": "e03787532d1e42f5adbfab8bf7c74b836bc4a4b27cc49e1ef9141924b08bedca",
+        "text_layer_char_count": 952
+      },
+      {
+        "page": 12,
+        "md_start_line": 397,
+        "md_end_line": 423,
+        "text_layer_sha256": "8afbfc074836816553bd7336050e5916518d4e461e0cbaa0748baf9a3d92fc15",
+        "text_layer_char_count": 601
+      },
+      {
+        "page": 13,
+        "md_start_line": 431,
+        "md_end_line": 434,
+        "text_layer_sha256": "38c83eb3769e61b518d20db0c0425f059f917f4eccda3f2028b58e0260b3d2e3",
+        "text_layer_char_count": 48
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "detail_pages_reviewed": [
+        4,
+        6,
+        8,
+        10,
+        11
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "实验是作者的小样本本机体验，模型、工具面、权限和运行条件不完全相同；不能视为严谨模型基准或产品排名。",
+        "pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "status": "source_limitation"
+      },
+      {
+        "description": "源码结构和配置描述对应文章发布时的 Developer Preview 版本，后续版本可能变化。",
+        "pages": [
+          1,
+          2,
+          10,
+          11,
+          12,
+          13
+        ],
+        "status": "pending_review"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/DeepSeek Harness 实测｜模型之外的那一半，到底带来了什么.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "ee259f21367d9fad341f21186b244f999bc18732037c8db79223f8ab2ee80b7d",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Harness与模型协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_DeepSeek Harness实测.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

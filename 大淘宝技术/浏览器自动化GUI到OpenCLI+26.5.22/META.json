@@ -1,0 +1,372 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0225",
+  "title": "浏览器自动化：从GUI到OpenCLI",
+  "short_title": "浏览器自动化GUI到OpenCLI",
+  "account": "大淘宝技术",
+  "author": "明径",
+  "author_byline": "明径 2026年5月22日 02:13 浙江 大淘宝技术",
+  "source_url": null,
+  "published_at": "2026-05-22",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "明径 2026年5月22日 02:13 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 1,
+      "text": "明径 2026年5月22日 02:13 浙江 大淘宝技术",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "桌面Agent与工作流",
+    "Skill设计与治理",
+    "Harness与模型协同"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/浏览器自动化：从GUI到OpenCLI.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T06:25:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "caf3496478d68814c8c8571186114c0430a3323235977a8f7883266bb9b200a6",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.1-10含CLI执行流程图、Record录制流程图与内部平台案例截图（位于PDF图像层），p.8-9的opencli SKILL.md代码块右侧略有排版截断，已结合上下文完整提取至SKILL.md。",
+          "pages": [
+            1,
+            2,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 3442578,
+      "page_count": 11
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T06:25:00-07:00",
+  "directory": "大淘宝技术/浏览器自动化GUI到OpenCLI+26.5.22",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_浏览器自动化GUI到OpenCLI.md",
+    "skills": "SKILL.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0225",
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "updated_at": "2026-10-20T06:25:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "caf3496478d68814c8c8571186114c0430a3323235977a8f7883266bb9b200a6"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "4fee8d59d91e35977569057aa642f6d7746fc3552d297a5bb0e85f0da093945c"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.1-10含CLI执行流程图、Record录制流程图与内部平台案例截图（位于PDF图像层），p.8-9的opencli SKILL.md代码块右侧略有排版截断，已结合上下文完整提取至SKILL.md。",
+        "pages": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_浏览器自动化GUI到OpenCLI.md",
+      "SKILL.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [
+      {
+        "type": "skill",
+        "path": "SKILL.md",
+        "sha256": "d2713aa8eebcc1ae25880492713cfd640527fba293d727f11b53b10f83057af8"
+      }
+    ],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 1,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_浏览器自动化GUI到OpenCLI.md",
+      "sha256": "e3f03f1d2f04a31b7f83a551a307eec0c016f3e6c12d09c54bdf67e58b88946b"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "caf3496478d68814c8c8571186114c0430a3323235977a8f7883266bb9b200a6"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "4fee8d59d91e35977569057aa642f6d7746fc3552d297a5bb0e85f0da093945c"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 32,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 273,
+        "text_layer_sha256": "787c10e11961d65e47d0df30a15b0250724da5bee58b77ff2a9469f71897e71a"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 59,
+        "md_start_line": 40,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 2,
+        "text_layer_char_count": 215,
+        "text_layer_sha256": "a9f230879b6f037dfbd25736c75773d977098e8e9d3da8641726f7314382498c"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 126,
+        "md_start_line": 67,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 3,
+        "text_layer_char_count": 635,
+        "text_layer_sha256": "094e4d1f4eab2fba434b15bae5a26f5c1f84b9251650142195545628f3783470"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 184,
+        "md_start_line": 134,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 4,
+        "text_layer_char_count": 796,
+        "text_layer_sha256": "543d8130a66ecc4dec25f30a2aa0cd5258be91d4ec1e3c90a2f1b7b0bf3aaa36"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 208,
+        "md_start_line": 192,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 5,
+        "text_layer_char_count": 114,
+        "text_layer_sha256": "0dad58ded0ddbea6f2dad9893eae1b54c2f8f92ddbf5b3f9461a619cd8fd08df"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 247,
+        "md_start_line": 216,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 6,
+        "text_layer_char_count": 407,
+        "text_layer_sha256": "b588f80f4b58d101c30b5dc1bba2dc2719bfa41d7b06cd32208a38921f848a47"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 276,
+        "md_start_line": 255,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 7,
+        "text_layer_char_count": 372,
+        "text_layer_sha256": "e0c205dfc7a1542cb13725f6d12b4442268e3f46ba473cb71ff6b8c82b147630"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 388,
+        "md_start_line": 284,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 8,
+        "text_layer_char_count": 1354,
+        "text_layer_sha256": "fa9824a60732122859598c316d064d7c85d358335442fa83431845947df6837f"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 436,
+        "md_start_line": 396,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 9,
+        "text_layer_char_count": 453,
+        "text_layer_sha256": "49b3de570a084849cfc03e866bea67276585c7bc413f07afdf301f901404131b"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 466,
+        "md_start_line": 444,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 10,
+        "text_layer_char_count": 337,
+        "text_layer_sha256": "f957a7ac8dbc3883430e2967371743dac6c8bb1975e5966ca9857ee2ac6988c3"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 483,
+        "md_start_line": 474,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 11,
+        "text_layer_char_count": 87,
+        "text_layer_sha256": "05301bfc33d9670c777cc6a4349e87dc9ef2fdb9c83c9daf3d9b9d92d9aa5084"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.1-10含CLI执行流程图、Record录制流程图与内部平台案例截图（位于PDF图像层），p.8-9的opencli SKILL.md代码块右侧略有排版截断，已结合上下文完整提取至SKILL.md。",
+        "pages": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/桌面Agent与工作流.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T06:25:00-07:00",
+    "removed_at": "2026-10-20T06:25:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/浏览器自动化：从GUI到OpenCLI.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "caf3496478d68814c8c8571186114c0430a3323235977a8f7883266bb9b200a6",
+        "copied_at": "2026-10-20T06:25:00-07:00",
+        "removed_at": "2026-10-20T06:25:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_浏览器自动化GUI到OpenCLI.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

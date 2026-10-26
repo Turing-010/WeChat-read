@@ -1,0 +1,969 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0096",
+  "title": "AI Infra入门干货总结：大模型是如何高效推理的",
+  "short_title": "大模型推理数据流与调度",
+  "account": "腾讯技术工程",
+  "author": "binnnliu",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-05-25T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0525 AI Infra Basics.pdf",
+      "original_filename": "0525 AI Infra Basics.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "9e1c46afc487ac643d781472b07a04d0eaabedca0b22235e4336f8f0c8d46fe8",
+      "size_bytes": 4882284,
+      "page_count": 27,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "p.11、12、17 各有图片加载占位，相关原图未保存；原 complete_with_limits 判定不成立，已改为 incomplete。笔记仅据可见文字与已保存图像说明。",
+          "pages": [
+            11,
+            12,
+            17
+          ],
+          "status": "confirmed_missing_images"
+        },
+        {
+          "description": "p.22、27 为整页空白，与图片加载占位不同；p.26 是公众号结尾。p.23–24 跨页调度图已放大阅读。",
+          "pages": [
+            22,
+            23,
+            24,
+            26,
+            27
+          ],
+          "status": "visually_verified"
+        },
+        {
+          "description": "运行时表同时列 num_tokens=105、num_computed_tokens=105、num_sched_tokens=1、seq_lens=106。若当同一时点，待算差值为0而非1；原文未交代是否混用状态更新时点，不把该组数当作调度规则的已验证实例。",
+          "pages": [
+            3,
+            20
+          ],
+          "status": "source_ambiguity_flagged"
+        },
+        {
+          "description": "p.18 将 O 与 Down 的行切分权重统写为 [H/TP,H]；结合 p.14 Down=[I,H]，Down 应区分为 [I/TP,H]。笔记明确此为根据原文前段矩阵形状的推导。",
+          "pages": [
+            14,
+            18
+          ],
+          "status": "qualified_in_note"
+        },
+        {
+          "description": "前文按逻辑 [输入维,输出维] 表示乘法权重，p.20–21 参数表为存储 [输出维,输入维]；已说明转置约定，未误报为数值矛盾。",
+          "pages": [
+            8,
+            13,
+            14,
+            20,
+            21
+          ],
+          "status": "notation_clarified"
+        },
+        {
+          "description": "vLLM 版本行为、cache 路径、去除 swap 与性能瓶颈来自作者源码总结，未外部核验或运行复现；Compute-bound/Memory-bound 只作依赖负载与硬件的倾向，图中的历史硬件数字不作当前测试值。",
+          "pages": [
+            1,
+            10,
+            11,
+            12,
+            23,
+            24,
+            25
+          ],
+          "status": "source_claim_only"
+        },
+        {
+          "description": "代码片段只是示意：p.14 类示例未完整初始化所用属性，p.16 JSON 样例含注释/省略号；未执行或验证可运行性。",
+          "pages": [
+            14,
+            16,
+            18
+          ],
+          "status": "illustrative_code_not_executed"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏：2026年5月25日02:36；时区未提供"
+    }
+  ],
+  "tags": [
+    "大模型推理与算子优化"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/大模型推理数据流与调度+26.5.25",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_大模型推理数据流与调度.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "AI  Infra 入⻔干货总结:大模型是如何高效推理的\n腾讯程序员 2026 年 5 月 25 日 02 : 36广东原创 腾讯技术工程 626 人\n作者: binnnliu\n看了很多的文章和视频,我以为我理解大模型的工作原理了,直到看了 vLLM 的代码,我\n发现很多地方理解的太过表面。因此花了大概 2 个月的业余时间,深入阅读了 vLLM 的源\n码,本文算是对于学习代码的一个总结。另外由于当前主流 LLM 都是  Decoder-Only 架\n构,本文会聚焦 LLM ,不会像网络上其他介绍 Transformers 的文章从原始论文的\nEncoder-Decoder 架构讲起。\n",
+    "publication_evidence": "PDF p.1 发布栏：2026年5月25日02:36；时区未提供",
+    "full_title_in_capture": "AI Infra入门干货总结：大模型是如何高效推理的",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0096",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "9e1c46afc487ac643d781472b07a04d0eaabedca0b22235e4336f8f0c8d46fe8"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.11、12、17 各有图片加载占位，相关原图未保存；原 complete_with_limits 判定不成立，已改为 incomplete。笔记仅据可见文字与已保存图像说明。",
+        "pages": [
+          11,
+          12,
+          17
+        ],
+        "status": "confirmed_missing_images"
+      },
+      {
+        "description": "p.22、27 为整页空白，与图片加载占位不同；p.26 是公众号结尾。p.23–24 跨页调度图已放大阅读。",
+        "pages": [
+          22,
+          23,
+          24,
+          26,
+          27
+        ],
+        "status": "visually_verified"
+      },
+      {
+        "description": "运行时表同时列 num_tokens=105、num_computed_tokens=105、num_sched_tokens=1、seq_lens=106。若当同一时点，待算差值为0而非1；原文未交代是否混用状态更新时点，不把该组数当作调度规则的已验证实例。",
+        "pages": [
+          3,
+          20
+        ],
+        "status": "source_ambiguity_flagged"
+      },
+      {
+        "description": "p.18 将 O 与 Down 的行切分权重统写为 [H/TP,H]；结合 p.14 Down=[I,H]，Down 应区分为 [I/TP,H]。笔记明确此为根据原文前段矩阵形状的推导。",
+        "pages": [
+          14,
+          18
+        ],
+        "status": "qualified_in_note"
+      },
+      {
+        "description": "前文按逻辑 [输入维,输出维] 表示乘法权重，p.20–21 参数表为存储 [输出维,输入维]；已说明转置约定，未误报为数值矛盾。",
+        "pages": [
+          8,
+          13,
+          14,
+          20,
+          21
+        ],
+        "status": "notation_clarified"
+      },
+      {
+        "description": "vLLM 版本行为、cache 路径、去除 swap 与性能瓶颈来自作者源码总结，未外部核验或运行复现；Compute-bound/Memory-bound 只作依赖负载与硬件的倾向，图中的历史硬件数字不作当前测试值。",
+        "pages": [
+          1,
+          10,
+          11,
+          12,
+          23,
+          24,
+          25
+        ],
+        "status": "source_claim_only"
+      },
+      {
+        "description": "代码片段只是示意：p.14 类示例未完整初始化所用属性，p.16 JSON 样例含注释/省略号；未执行或验证可运行性。",
+        "pages": [
+          14,
+          16,
+          18
+        ],
+        "status": "illustrative_code_not_executed"
+      }
+    ],
+    "outputs": [
+      "AI_大模型推理数据流与调度.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    "coverage": "独立通读27页文本、查看27页缩略图并逐页查看图像；p.3、4、6、7、8、10–21、23–24另用1800像素长边渲染核对。覆盖token预算例、PagedAttention/block table/slot mapping、BPE训练和使用、Embedding、RMSNorm/QKV/RoPE/GQA/FlashAttention/FFN/LM Head形状、Prefill与Decode、采样、Llama 3 8B配置与权重约定、RUNNING/WAITING调度及抢占、TP和长上下文延伸。补齐原笔记薄弱章节；省略公众号推广、重复代码抄录、未读取外部参考文献的内容。缺失配图不重构，内部数值/维度疑点保留。",
+    "fact_checks": [
+      {
+        "item": "发布信息",
+        "value": "作者 binnnliu；2026-05-25 02:36；时区未知",
+        "pages": [
+          1
+        ],
+        "result": "matches_pdf_image"
+      },
+      {
+        "item": "单步调度预算图",
+        "value": "budget8192；A100、B506-505=1、C8091；总计8192；query_start_loc=[0,100,101,8192]",
+        "pages": [
+          3
+        ],
+        "result": "matches_image_and_arithmetic"
+      },
+      {
+        "item": "KV物理槽位",
+        "value": "block_size16；token位置25→虚拟块1、偏移9；物理块8→8×16+9=137",
+        "pages": [
+          4
+        ],
+        "result": "matches_image_and_arithmetic"
+      },
+      {
+        "item": "BPE图与Embedding",
+        "value": "p.6是使用已学合并规则的分词流程，p.7是统计频次合并的训练流程；Embedding按ID查[V,H]表得[T,H]",
+        "pages": [
+          6,
+          7
+        ],
+        "result": "image_only_diagrams_read_and_text_checked"
+      },
+      {
+        "item": "Llama 3 8B配置与融合宽度",
+        "value": "H4096、Q头32、KV头8、每头128、KV宽1024、QKV宽6144；I14336、Gate/Up宽28672；V128256、层数32",
+        "pages": [
+          8,
+          19,
+          20
+        ],
+        "result": "matches_tables_and_arithmetic"
+      },
+      {
+        "item": "GQA与因果Attention",
+        "value": "每4个Q头共享1个KV头；通过索引而非物理复制；softmax(QKᵀ/√d+M)V保留因果mask",
+        "pages": [
+          9,
+          10
+        ],
+        "result": "matches_text_formula_and_tables"
+      },
+      {
+        "item": "min-p及采样阈值",
+        "value": "temperature<1e-5为示例greedy阈值；min_p0.1乘p_top0.4/0.9/0.08得到0.04/0.09/0.008；q~Exp(1)，argmax(p/q)",
+        "pages": [
+          16,
+          17,
+          18
+        ],
+        "result": "matches_text_formula_and_arithmetic_missing_illustration_not_inferred"
+      },
+      {
+        "item": "运行时状态表示例",
+        "value": "num_tokens105、num_computed_tokens105、num_sched_tokens1、seq_lens106；105-105=0，状态时点未明",
+        "pages": [
+          3,
+          20
+        ],
+        "result": "source_ambiguity_recorded_not_accepted_as_consistent_snapshot"
+      },
+      {
+        "item": "TP行切分维度",
+        "value": "p.14 Down=[I,H]，p.18将O/Down均写[H/TP,H]；按前文shape区分O=[H/TP,H]与Down=[I/TP,H]",
+        "pages": [
+          14,
+          18,
+          20
+        ],
+        "result": "source_overgeneralization_qualified_with_dimension_derivation"
+      },
+      {
+        "item": "跨页调度图和抢占",
+        "value": "先RUNNING；KV分配失败可抢占释放并清零进度；WAITING分配失败退出本轮循环；发生抢占后跳过WAITING避免进一步显存压力",
+        "pages": [
+          23,
+          24,
+          25
+        ],
+        "result": "matches_enlarged_flowchart_and_text"
+      },
+      {
+        "item": "图像捕获完整性",
+        "value": "p.11/12/17加载占位；p.22/27白页；p.26公众号结尾；不存在可据此宣称全图完整的证据",
+        "pages": [
+          11,
+          12,
+          17,
+          22,
+          26,
+          27
+        ],
+        "result": "visually_verified_incomplete"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_大模型推理数据流与调度.md",
+      "sha256": "18ad898c26d46a98d68daeb023d6bdea2eac60a1be4901b575e3708dc55c9abf"
+    },
+    "independent_crosscheck": {
+      "reviewer": "tencent_notes_b",
+      "reviewed_at": "2026-10-14",
+      "status": "passed",
+      "note_sha256": "69baaf8257479a6cf661948af64edfae3266b06813e0a74cad3516e1e1729d72",
+      "review_sha256": "969b442dabf920444e7c3cdeb7f88d22f8bb30a4ae32c5cc3b2e34d493c0573f",
+      "raw_sha256": "9e1c46afc487ac643d781472b07a04d0eaabedca0b22235e4336f8f0c8d46fe8",
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "high_resolution_pages": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24
+      ],
+      "scope": "独立通读全部reading.txt与note/review，查看所有缩略页及逐页图像，对关键图表/公式/代码/调度图使用1800像素渲染。检查范围仅046，不判断写入者身份，不修改原PDF或正式库。",
+      "source_completeness": "incomplete",
+      "changes": [
+        "撤销complete_with_limits，按p.11、12、17实际加载占位标记incomplete；分别记录空白p.22、27。",
+        "补齐BPE训练/使用、Embedding、调度预算实例、主要shape和TP/长上下文延伸，修正Attention公式缺失mask，补各复习卡页码。",
+        "标记p.20状态表105/105与调度1的时点歧义；区分p.18 O/Down行切分维度，澄清逻辑权重与存储权重转置约定。",
+        "校对报告、review的覆盖与页码按本次实际阅读重写；原文版本/性能结论保留归属，代码未执行。"
+      ],
+      "source_spotchecks": [
+        "p.1作者binnnliu、日期2026-05-25 02:36；p.3图预算100+1+8091=8192；p.4槽位8×16+9=137。",
+        "p.6–7 BPE图像独占文本已读；p.8/19–20 Q/KV32/8、头128、H4096、I14336、V128256、层数32；QKV6144、Gate/Up28672复算。",
+        "p.9–10因果mask、请求边界与GQA映射；p.14 Down=[I,H]，p.18 TP说明概括过度已限定。",
+        "p.16–18 greedy阈值1e-5、min-p0.04/0.09/0.008、指数分布采样公式；只校对原文未运行。",
+        "p.20运行时表时点歧义；p.23–24调度图含RUNNING抢占、WAITING分配失败退出本轮与chunked prefill条件。",
+        "p.11/12/17加载占位与p.22/27全白页已分别确认；p.26公众号结尾。"
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "9e1c46afc487ac643d781472b07a04d0eaabedca0b22235e4336f8f0c8d46fe8"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "51660c979ab04a1ed8c4a997200f0943b0d23be27aa4a1c43da2f67f2b835227"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 17,
+        "text_layer_sha256": "3b22d4546b60d84e21fb7293627ddae75a76b45c4615f897650cfed7ff239c18",
+        "text_layer_char_count": 296
+      },
+      {
+        "page": 2,
+        "md_start_line": 25,
+        "md_end_line": 36,
+        "text_layer_sha256": "16cc001c9f2e707dd4156ea84bb977413ee256aaa87b8b3a2a7ad2d549840629",
+        "text_layer_char_count": 493
+      },
+      {
+        "page": 3,
+        "md_start_line": 44,
+        "md_end_line": 62,
+        "text_layer_sha256": "0f01aaeb94673ae2cb4296cc7e9cd48d1dec64695073a0b3f52aa8247e138975",
+        "text_layer_char_count": 753
+      },
+      {
+        "page": 4,
+        "md_start_line": 70,
+        "md_end_line": 93,
+        "text_layer_sha256": "c17bc2e6bcb4a03e830f2238a3597715942067ac43882da81e9dafb9595091f1",
+        "text_layer_char_count": 1267
+      },
+      {
+        "page": 5,
+        "md_start_line": 101,
+        "md_end_line": 114,
+        "text_layer_sha256": "9705d9db5fdbce6cdb6b125110f6d5eec96d4e3a14c501cec95af7e5b48472bb",
+        "text_layer_char_count": 577
+      },
+      {
+        "page": 6,
+        "md_start_line": 122,
+        "md_end_line": 122,
+        "text_layer_sha256": "11b9c42b4da24de25a0c2bbe50a62a14f078fc31810583cdf8f06f928be167df",
+        "text_layer_char_count": 15
+      },
+      {
+        "page": 7,
+        "md_start_line": 130,
+        "md_end_line": 152,
+        "text_layer_sha256": "d459b10169ba350ecbead5015f9dfe2e793145847a9ca01e1d53009d9fe911b0",
+        "text_layer_char_count": 309
+      },
+      {
+        "page": 8,
+        "md_start_line": 160,
+        "md_end_line": 234,
+        "text_layer_sha256": "9df6e90d47af94cfc7a911420bb9fc0cf04fe058a856f9e8f728266642b155cb",
+        "text_layer_char_count": 1108
+      },
+      {
+        "page": 9,
+        "md_start_line": 242,
+        "md_end_line": 275,
+        "text_layer_sha256": "c6019df3dbd25360c7052e6a37aa778d1ad8aa8dd1fab055ccb113c2b7669663",
+        "text_layer_char_count": 1513
+      },
+      {
+        "page": 10,
+        "md_start_line": 283,
+        "md_end_line": 328,
+        "text_layer_sha256": "e330eea77bf7ba0c73d8e5046c33b66f6fd86f9bc28feb2d836491c5cd5cdc6a",
+        "text_layer_char_count": 1771
+      },
+      {
+        "page": 11,
+        "md_start_line": 336,
+        "md_end_line": 350,
+        "text_layer_sha256": "73b1a3628c61fa0930ed166c0cf815fbc391243973ede42cbe5f990ca08d49ed",
+        "text_layer_char_count": 944
+      },
+      {
+        "page": 12,
+        "md_start_line": 358,
+        "md_end_line": 395,
+        "text_layer_sha256": "f78e6785c0ca00704ad29ac327690a007626fd6fd5f40e368e886d03d8fd5197",
+        "text_layer_char_count": 1234
+      },
+      {
+        "page": 13,
+        "md_start_line": 403,
+        "md_end_line": 486,
+        "text_layer_sha256": "c801817435dc33994f88df538bdd6c55c0da160c82660d0947ab3439b8a3ad07",
+        "text_layer_char_count": 1203
+      },
+      {
+        "page": 14,
+        "md_start_line": 494,
+        "md_end_line": 542,
+        "text_layer_sha256": "efcc02abdabc007a6db262d745093176e6eb38bb50c553a9762e150d44d34f2b",
+        "text_layer_char_count": 1302
+      },
+      {
+        "page": 15,
+        "md_start_line": 550,
+        "md_end_line": 597,
+        "text_layer_sha256": "01a872ddd65acf104a93e1e85e8e375a4abba79ee036463450ea7e44b00aa825",
+        "text_layer_char_count": 1196
+      },
+      {
+        "page": 16,
+        "md_start_line": 605,
+        "md_end_line": 640,
+        "text_layer_sha256": "52d27df8126eadbc927c9703b7d3c47580e1c22b85abd73cea39d6e6052b6c2f",
+        "text_layer_char_count": 1257
+      },
+      {
+        "page": 17,
+        "md_start_line": 648,
+        "md_end_line": 672,
+        "text_layer_sha256": "212488475e6c8e2594c0058febea3935497066477c1db93bc17622da80308ee5",
+        "text_layer_char_count": 955
+      },
+      {
+        "page": 18,
+        "md_start_line": 680,
+        "md_end_line": 705,
+        "text_layer_sha256": "7f45a987fe4652bd276a349d067a2860d5531291c25024234864d557a18367c8",
+        "text_layer_char_count": 1094
+      },
+      {
+        "page": 19,
+        "md_start_line": 713,
+        "md_end_line": 738,
+        "text_layer_sha256": "dd051b69f1878b531da87a5eee82d427fb58b77a2e0befbdae0ebc61c9b154e0",
+        "text_layer_char_count": 1057
+      },
+      {
+        "page": 20,
+        "md_start_line": 746,
+        "md_end_line": 801,
+        "text_layer_sha256": "b218cd79553dad59954dbf247b67b4c26b268769ec6cbaa94fbb7b5cf818eb23",
+        "text_layer_char_count": 973
+      },
+      {
+        "page": 21,
+        "md_start_line": 809,
+        "md_end_line": 825,
+        "text_layer_sha256": "f3a4419368a764916fadf8a477c9149524aeff16134be838f49cede41775b369",
+        "text_layer_char_count": 385
+      },
+      {
+        "page": 22,
+        "md_start_line": 833,
+        "md_end_line": 832,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 23,
+        "md_start_line": 840,
+        "md_end_line": 839,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 24,
+        "md_start_line": 847,
+        "md_end_line": 871,
+        "text_layer_sha256": "fd6799654abe9e336098b2a349c731c3fec6f081f2502a3cfa96727545d966a3",
+        "text_layer_char_count": 1074
+      },
+      {
+        "page": 25,
+        "md_start_line": 879,
+        "md_end_line": 900,
+        "text_layer_sha256": "01b96204e9be3137cf0788e46c40235fd1cd5505091a113310731759fb3613f4",
+        "text_layer_char_count": 1080
+      },
+      {
+        "page": 26,
+        "md_start_line": 908,
+        "md_end_line": 915,
+        "text_layer_sha256": "8cd7e7ec5c63b7dfe3a7c1c67e29b6cab621733f168906817bfa4313be38670c",
+        "text_layer_char_count": 77
+      },
+      {
+        "page": 27,
+        "md_start_line": 923,
+        "md_end_line": 922,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.11、12、17 各有图片加载占位，相关原图未保存；原 complete_with_limits 判定不成立，已改为 incomplete。笔记仅据可见文字与已保存图像说明。",
+        "pages": [
+          11,
+          12,
+          17
+        ],
+        "status": "confirmed_missing_images"
+      },
+      {
+        "description": "p.22、27 为整页空白，与图片加载占位不同；p.26 是公众号结尾。p.23–24 跨页调度图已放大阅读。",
+        "pages": [
+          22,
+          23,
+          24,
+          26,
+          27
+        ],
+        "status": "visually_verified"
+      },
+      {
+        "description": "运行时表同时列 num_tokens=105、num_computed_tokens=105、num_sched_tokens=1、seq_lens=106。若当同一时点，待算差值为0而非1；原文未交代是否混用状态更新时点，不把该组数当作调度规则的已验证实例。",
+        "pages": [
+          3,
+          20
+        ],
+        "status": "source_ambiguity_flagged"
+      },
+      {
+        "description": "p.18 将 O 与 Down 的行切分权重统写为 [H/TP,H]；结合 p.14 Down=[I,H]，Down 应区分为 [I/TP,H]。笔记明确此为根据原文前段矩阵形状的推导。",
+        "pages": [
+          14,
+          18
+        ],
+        "status": "qualified_in_note"
+      },
+      {
+        "description": "前文按逻辑 [输入维,输出维] 表示乘法权重，p.20–21 参数表为存储 [输出维,输入维]；已说明转置约定，未误报为数值矛盾。",
+        "pages": [
+          8,
+          13,
+          14,
+          20,
+          21
+        ],
+        "status": "notation_clarified"
+      },
+      {
+        "description": "vLLM 版本行为、cache 路径、去除 swap 与性能瓶颈来自作者源码总结，未外部核验或运行复现；Compute-bound/Memory-bound 只作依赖负载与硬件的倾向，图中的历史硬件数字不作当前测试值。",
+        "pages": [
+          1,
+          10,
+          11,
+          12,
+          23,
+          24,
+          25
+        ],
+        "status": "source_claim_only"
+      },
+      {
+        "description": "代码片段只是示意：p.14 类示例未完整初始化所用属性，p.16 JSON 样例含注释/省略号；未执行或验证可运行性。",
+        "pages": [
+          14,
+          16,
+          18
+        ],
+        "status": "illustrative_code_not_executed"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0525 AI Infra Basics.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "9e1c46afc487ac643d781472b07a04d0eaabedca0b22235e4336f8f0c8d46fe8",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/大模型推理与算子优化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_大模型推理数据流与调度.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

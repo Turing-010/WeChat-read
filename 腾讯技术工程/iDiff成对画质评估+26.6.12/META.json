@@ -1,0 +1,443 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0108",
+  "title": "微信测试团队斩获 CVPR 2026 NTIRE RAIM 挑战赛冠军",
+  "short_title": "iDiff成对画质评估",
+  "account": "腾讯技术工程",
+  "author": "孙暕晖（IH-VQA 团队队长）",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-06-12T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0612 CVPR RAIM Winner.pdf",
+      "original_filename": "0612 CVPR RAIM Winner.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "2e51b56b783338f2b9109d4e1f66bdb9f0601d1d9862fce759ad5045df695ba8",
+      "size_bytes": 6634142,
+      "page_count": 13,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "PDF p.13呈空白页，无可读正文。",
+          "pages": [
+            13
+          ],
+          "status": "no_content_on_page"
+        },
+        {
+          "description": "业务落地段列出使用场景，未提供业务侧量化样本或效果数据；笔记按应用方向表述。",
+          "pages": [
+            10,
+            11
+          ],
+          "status": "not_reported"
+        }
+      ],
+      "publication_evidence": "PDF p.1: Jun 12, 2026, 2:36 AM; no timezone shown."
+    }
+  ],
+  "tags": [
+    "Agent评测与反馈",
+    "因果推断与评测归因",
+    "决策知识结构化",
+    "推荐系统与多模态评测"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/iDiff成对画质评估+26.6.12",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_iDiff成对画质评估.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "微信测试团队斩获 CVPR  2026  NTIRE  RAIM 挑战赛冠军\nJun  12 , 2026 , 2 : 36  AM广东腾讯技术工程 3  listened\n作者:孙暕晖, IH-VQA 团队队长\n比赛队员:岳新立、侯欢、邵涛\n导语\n在  CVPR 2026 NTIRE \"The 3rd Restore Any Image Model (RAIM ): Professional Image\nQuality Assessment - Track 1\" 挑战赛中,来自  微信测试中心的  IH-VQA 团队斩获大赛冠军。\n本届  RAIM 由  OPPO Y-Lab 与香港理工大学  VC-Lab 联合主办,赛题首次将 \" 专业级图像质量\n评估 \" 从单一标量打分推进到  \" 高分辨率多模态推理  + 专家级偏好预测 \" 的全新范式。比赛中,\nIH-VQA 团队首创的  iDiff  可解释成对差异感知框架( Interpretable Difference-aware\nFramework for Pairwise IQA ),在  ACC 偏好准确率与思维链推理质量两大维度均刷新了赛事\n基线,最终以  Final Score 0.7305 在高校与业界的众多强队中夺魁。\n本次比赛获得亚军的是  VCIP Pi Group ( 0.7253 ),季军是  I2 Group ( 0.7040 ), 4-6 名分别为\nfugui 、 LZ 、 ongaku 团队(中科大、国科大、西工大等一众高校实验室团队)。在去年成功夺\n得  CVPR 2025 NTIRE Image-Text Alignment 冠军、 ICCV 2025 MIPI Detailed IQA 冠军后,\n微信测试中心 IH-VQA 算法团队再次站上国际顶级视觉质量评估赛事的最高领奖台,进一步巩\n固了其在  AI 多模态质量评估领域的领先地位。\niDiff 视觉海报 / 团队封面图\n冠军论文链接:\nhttps://openaccess.thecvf.com/content/CVPR2026W/NTIRE/html/Yue_iDiff_Interpretable_Di\nfference-\n",
+    "publication_evidence": "PDF p.1: Jun 12, 2026, 2:36 AM; no timezone shown.",
+    "full_title_in_capture": "微信测试团队斩获 CVPR 2026 NTIRE RAIM 挑战赛冠军",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0108",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "2e51b56b783338f2b9109d4e1f66bdb9f0601d1d9862fce759ad5045df695ba8"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "PDF p.13呈空白页，无可读正文。",
+        "pages": [
+          13
+        ],
+        "status": "no_content_on_page"
+      },
+      {
+        "description": "业务落地段列出使用场景，未提供业务侧量化样本或效果数据；笔记按应用方向表述。",
+        "pages": [
+          10,
+          11
+        ],
+        "status": "not_reported"
+      }
+    ],
+    "outputs": [
+      "AI_iDiff成对画质评估.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "detail_pages_reviewed": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "coverage": "已覆盖赛事任务、评分、iDiff双分支与两支机制、消融数字、榜单及业务应用方向。p.12为账号/留言页，p.13空白。未访问赛事或论文链接，未复现实验。",
+    "fact_checks": [
+      {
+        "item": "RAIM总分计算",
+        "note_value": "0.5×Phase 2 + 0.5×Phase 3",
+        "source_value": "Final Score = 0.5 × Phase 2 Score + 0.5 × Phase 3 Score",
+        "pages": [
+          5,
+          10
+        ],
+        "result": "match"
+      },
+      {
+        "item": "IH-VQA阶段分与最终分",
+        "note_value": "0.6943、0.7667、0.7305",
+        "source_value": "榜单图列出Phase 2 0.6943、Phase 3 0.7667、Final 0.7305",
+        "pages": [
+          10
+        ],
+        "result": "match"
+      },
+      {
+        "item": "多视图拆分准确率变化",
+        "note_value": "0.5784→0.6961",
+        "source_value": "0.5784提升到0.6961",
+        "pages": [
+          7
+        ],
+        "result": "match"
+      },
+      {
+        "item": "多骨干投票准确率",
+        "note_value": "0.7745→0.9118",
+        "source_value": "0.7745进一步提升至0.9118",
+        "pages": [
+          8
+        ],
+        "result": "match"
+      },
+      {
+        "item": "模板推理 BLEU-4 / ROUGE-L",
+        "note_value": "0.0221→0.0858；0.2200→0.2825",
+        "source_value": "同值",
+        "pages": [
+          9
+        ],
+        "result": "match"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_iDiff成对画质评估.md",
+      "sha256": "a4641c0d4355f6e1b2ba32fb16fb6f810096c14e19de6901a5d85b1445d0f7bd"
+    },
+    "independent_crosscheck": {
+      "reviewer": "root",
+      "note_sha256": "d4c3cabc0d6c38249ebef01951f9caedae5f1b6cb4275e15abdbba15a29c3df0",
+      "review_sha256": "7d58680c0b5269ff0c1011ca2b521c15bbc8149f127b7deed7b20974c9127218",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "5–9",
+          "check": "核对赛事评分与 Answer/Thinking 双分支、消融数字；笔记各数值与图表相符并保留具体任务范围。"
+        },
+        {
+          "pages": "10–12",
+          "check": "核对榜单、业务应用说明及展望；没有把团队描述的落地方向写成线上评测结论。"
+        },
+        {
+          "pages": "13",
+          "check": "页图为空白页；review 与笔记均记明，不纳入正文。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "2e51b56b783338f2b9109d4e1f66bdb9f0601d1d9862fce759ad5045df695ba8"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "ec4311b76b6a3d2ee2874836ef64393765f20caa2249e7f2b94e0b3533fbf894"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 30,
+        "text_layer_sha256": "97cec782c060f3bb38592b5db642f51677c3f8b37f968c3f717177db376cee6f",
+        "text_layer_char_count": 943
+      },
+      {
+        "page": 2,
+        "md_start_line": 38,
+        "md_end_line": 40,
+        "text_layer_sha256": "8fcb3ae329d1c5543499ff505b00ce0eeff576a8e308d6ab4e0ee847931e6a0d",
+        "text_layer_char_count": 150
+      },
+      {
+        "page": 3,
+        "md_start_line": 48,
+        "md_end_line": 58,
+        "text_layer_sha256": "d8cd7021d2f2195cb60c1d4f00676ecd10843a2e0d854b94b1bfc12fa62264bc",
+        "text_layer_char_count": 449
+      },
+      {
+        "page": 4,
+        "md_start_line": 66,
+        "md_end_line": 90,
+        "text_layer_sha256": "a01dea55598dade08bfb3222e016823ee1bb3f60ac60265b8804a44f14238adf",
+        "text_layer_char_count": 932
+      },
+      {
+        "page": 5,
+        "md_start_line": 98,
+        "md_end_line": 116,
+        "text_layer_sha256": "3fe5cd5d7f4f8ac956a84565b70ca8e7fb518b8ac953593c1945d5f4146a6a95",
+        "text_layer_char_count": 722
+      },
+      {
+        "page": 6,
+        "md_start_line": 124,
+        "md_end_line": 151,
+        "text_layer_sha256": "9c2f5e1f518cd7e1f0fd73f57c92d8ad9478eb667874ee6e59daa6f75b8431b0",
+        "text_layer_char_count": 1074
+      },
+      {
+        "page": 7,
+        "md_start_line": 159,
+        "md_end_line": 181,
+        "text_layer_sha256": "514a16c7d6056ce91369ae54f28ddc0ffb6b1789918a3408850a675b0b62f855",
+        "text_layer_char_count": 935
+      },
+      {
+        "page": 8,
+        "md_start_line": 189,
+        "md_end_line": 214,
+        "text_layer_sha256": "c76040553a1ed87fce251f89c33314d5c5da506bbdc4259ad5c88962d4a52b70",
+        "text_layer_char_count": 1180
+      },
+      {
+        "page": 9,
+        "md_start_line": 222,
+        "md_end_line": 256,
+        "text_layer_sha256": "af0b57547bf829f506bd82061bf427b5dc4bdc1df209b80daabcc89adfcef44f",
+        "text_layer_char_count": 1655
+      },
+      {
+        "page": 10,
+        "md_start_line": 264,
+        "md_end_line": 281,
+        "text_layer_sha256": "0bf79452040c313573688e4b3ae07bef4d0057f4440810ad47b744ddc4a82ba0",
+        "text_layer_char_count": 697
+      },
+      {
+        "page": 11,
+        "md_start_line": 289,
+        "md_end_line": 315,
+        "text_layer_sha256": "773834e83075822602e89a952161b58f7fddffd6ef1a2add69cdf38c8f06dea3",
+        "text_layer_char_count": 1056
+      },
+      {
+        "page": 12,
+        "md_start_line": 323,
+        "md_end_line": 330,
+        "text_layer_sha256": "4f7dbd5bb4725cb52487271972fe29b191012d8fa763c6d6d5ccc055e829b419",
+        "text_layer_char_count": 74
+      },
+      {
+        "page": 13,
+        "md_start_line": 338,
+        "md_end_line": 337,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "detail_pages_reviewed": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "PDF p.13呈空白页，无可读正文。",
+        "pages": [
+          13
+        ],
+        "status": "no_content_on_page"
+      },
+      {
+        "description": "业务落地段列出使用场景，未提供业务侧量化样本或效果数据；笔记按应用方向表述。",
+        "pages": [
+          10,
+          11
+        ],
+        "status": "not_reported"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0612 CVPR RAIM Winner.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "2e51b56b783338f2b9109d4e1f66bdb9f0601d1d9862fce759ad5045df695ba8",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/推荐系统与多模态评测.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_iDiff成对画质评估.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

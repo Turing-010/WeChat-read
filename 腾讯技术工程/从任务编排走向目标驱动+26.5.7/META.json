@@ -1,0 +1,515 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0087",
+  "title": "十年老技术开发的 AI Agent 探索之路",
+  "short_title": "从任务编排走向目标驱动",
+  "account": "腾讯技术工程",
+  "author": "zhiyuanfu",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-05-07T02:34",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0507 Ten Years of AI Agent.pdf",
+      "original_filename": "0507 Ten Years of AI Agent.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "4d9f3da340ea1b4f356572ef2d5a31e5e73c616cba77d99495b509116da8106f",
+      "size_bytes": 4326487,
+      "page_count": 17,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "并发数量、80% 需求无需 AI 和模型/脚手架成本效果比例为个人经验，缺乏样本、对照与指标定义。",
+          "pages": [
+            1,
+            2,
+            7,
+            10
+          ],
+          "status": "qualified"
+        },
+        {
+          "description": "调度代码为伪代码，未定义其依赖；共享任务板的预算、性能及日期是示例，未作为实测或任务授权。",
+          "pages": [
+            6,
+            14,
+            15
+          ],
+          "status": "qualified"
+        },
+        {
+          "description": "协议时间线及工具描述 JSON 按作者叙述理解，未外部核验，扩展字段不视作标准协议必需字段。",
+          "pages": [
+            11,
+            12
+          ],
+          "status": "qualified"
+        }
+      ],
+      "publication_evidence": "PDF p.1 可见 2026-05-07T02:34"
+    }
+  ],
+  "tags": [
+    "Agent工程循环",
+    "Agent任务恢复",
+    "Agent评测与反馈",
+    "Harness与模型协同",
+    "AI研发协同"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/从任务编排走向目标驱动+26.5.7",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_从任务编排走向目标驱动.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "十年老技术开发的 AI  Agent  探索之路\n腾讯程序员 2026 年 5 月 7 日 02 : 34广东腾讯技术工程 116 人\n作者: zhiyuanfu\n4-6 个终端的并发上限,怎么突破\n80% 的  AI 需求, 10 行  Bash 就够了\nVibe Coding  翻车全记录\n24h 无人值守的代码开发  Agent 怎么造\n从  Task-Driven 到  Goal-Driven 的认知跃迁\n第一章:起点 —— 人是瓶颈\n此刻我的屏幕上开着  5 个终端。\n左上角, codex 正在跑一组单元测试,终端里绿色的  pass 和偶尔的红色  fail 交替滚动。右上\n角, gemini-cli 在按照我刚给的方案改一个接口的入参校验。左下角, claude 在根据最新的\nAPI 变更生成文档。右边整块屏幕留给了  Cursor,里面同时开着两个  Agent 窗口 —— 一个\n在重构组件,一个在补集成测试。\n看起来很酷?\n真实体验是这样的: codex 那个终端跑了五分钟没动静,我得翻上去看是卡住了还是在等确\n认; gemini 改完接口了,但我忘了它改的是哪个分支; claude 写的文档引用了一个旧接口\n名,因为我忘了告诉它刚才  gemini 改过了; Cursor 里的重构窗口弹了个确认框,我一直没注\n意到,白白等了十分钟。\n这种模式的上限大概就是  4-6 个并发。再多,人脑的  context switch 就开始崩溃。\n人工并发有三个硬伤:\n曾经前端被戏称为 \" 娱乐圈 \"—— 工具、框架层出不穷,今年 🔥  的明年就过时。现在  AI 把\n这个周期压缩到了以月计:这个月的新概念,下个月可能就是旧闻。这篇文章,就是一个\n在 \"AI 娱乐圈 \" 摸爬滚打的老开发,试图从月抛式的焦虑中找到不会过期的东西,为大家\n抛砖引玉。\n",
+    "publication_evidence": "PDF p.1 可见 2026-05-07T02:34",
+    "full_title_in_capture": "十年老技术开发的 AI Agent 探索之路",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0087",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "4d9f3da340ea1b4f356572ef2d5a31e5e73c616cba77d99495b509116da8106f"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "并发数量、80% 需求无需 AI 和模型/脚手架成本效果比例为个人经验，缺乏样本、对照与指标定义。",
+        "pages": [
+          1,
+          2,
+          7,
+          10
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "调度代码为伪代码，未定义其依赖；共享任务板的预算、性能及日期是示例，未作为实测或任务授权。",
+        "pages": [
+          6,
+          14,
+          15
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "协议时间线及工具描述 JSON 按作者叙述理解，未外部核验，扩展字段不视作标准协议必需字段。",
+        "pages": [
+          11,
+          12
+        ],
+        "status": "qualified"
+      }
+    ],
+    "outputs": [
+      "AI_从任务编排走向目标驱动.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "detail_pages_reviewed": [
+        3,
+        6,
+        9,
+        14,
+        15
+      ]
+    },
+    "coverage": "覆盖终端瓶颈、确定性工具优先、SDD、CLI 编排、故障恢复、项目并发、自修复、治理评测、协议分工与目标驱动；完整保留调度伪代码和共享任务板。压缩产品时间线、工具 JSON 示意与重复感想。",
+    "fact_checks": [
+      {
+        "item": "空队列等待",
+        "value": "10 秒",
+        "pages": [
+          6
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "配额耗尽冷却",
+        "value": "300 秒，即 5 分钟",
+        "pages": [
+          6
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "并发隔离",
+        "value": "不同项目并行、同项目串行",
+        "pages": [
+          7
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "观测维度",
+        "value": "目标、步骤、工具、失败、恢复、成本",
+        "pages": [
+          9
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "共享面板性能目标",
+        "value": "示例 P95 从 800ms 降到 200ms",
+        "pages": [
+          14
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "共享面板预算",
+        "value": "示例每日 API 成本不超过 $5",
+        "pages": [
+          14
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "目标驱动前提",
+        "value": "目标明确、边界明确、状态可见、过程可追溯、权限可控",
+        "pages": [
+          14
+        ],
+        "result": "核对原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_从任务编排走向目标驱动.md",
+      "sha256": "6d84625c4846b0b87d96951a4f6b085a2d90070506bd23dee66b7cceb967970c"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "4d9f3da340ea1b4f356572ef2d5a31e5e73c616cba77d99495b509116da8106f"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "596ca091b61effca78ac4bb27b7e4bfd1877e16ac2d5f2fa44852aae3a08adf2"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 34,
+        "text_layer_sha256": "b7312098e49b453737e049a594da5f49586adaaaca5f6c9f7fbbee402c23ccdd",
+        "text_layer_char_count": 790
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 71,
+        "text_layer_sha256": "54f521a2f264c7065d88f5f2afb52c5bc3b6e68a944adb266f6028e010e790fc",
+        "text_layer_char_count": 981
+      },
+      {
+        "page": 3,
+        "md_start_line": 79,
+        "md_end_line": 93,
+        "text_layer_sha256": "ac66550b8866662eeb239df6fbcc9393071bb5966e5108e44b9c48f84f28dcba",
+        "text_layer_char_count": 451
+      },
+      {
+        "page": 4,
+        "md_start_line": 101,
+        "md_end_line": 131,
+        "text_layer_sha256": "748e37b506ba835e17aa568ee2a1da57cadd3ec6d1846f59103817bd01d17b30",
+        "text_layer_char_count": 1043
+      },
+      {
+        "page": 5,
+        "md_start_line": 139,
+        "md_end_line": 164,
+        "text_layer_sha256": "1ed049b2ea5a748776013fe9825a7373fe578bd2755f9b2702ab7ce682e94194",
+        "text_layer_char_count": 847
+      },
+      {
+        "page": 6,
+        "md_start_line": 172,
+        "md_end_line": 207,
+        "text_layer_sha256": "7389bce03550a1fecc02a9bd981c850c6d15f4d68019869357a83e18a872c677",
+        "text_layer_char_count": 1351
+      },
+      {
+        "page": 7,
+        "md_start_line": 215,
+        "md_end_line": 246,
+        "text_layer_sha256": "7dba283ac3841fc429a8a66af94123891a6989e86680a1491c17d1d61d794cd9",
+        "text_layer_char_count": 960
+      },
+      {
+        "page": 8,
+        "md_start_line": 254,
+        "md_end_line": 279,
+        "text_layer_sha256": "5393396f44cd6c42a61f373ebd888102b70fd99e1f4afabb0e84837e80595f59",
+        "text_layer_char_count": 841
+      },
+      {
+        "page": 9,
+        "md_start_line": 287,
+        "md_end_line": 318,
+        "text_layer_sha256": "d4594a27ceb84abc24ee8be389e5d28df60d2d598b5a3d16c35e748ae7598fa7",
+        "text_layer_char_count": 987
+      },
+      {
+        "page": 10,
+        "md_start_line": 326,
+        "md_end_line": 354,
+        "text_layer_sha256": "b5787f94a0db11d12ddc731a155cf876b9aa6746e245291b3479441a775a7ef9",
+        "text_layer_char_count": 788
+      },
+      {
+        "page": 11,
+        "md_start_line": 362,
+        "md_end_line": 402,
+        "text_layer_sha256": "6f417ccd5148f144d398e1d4a0654b903fb4580c06e0f6bc35abec9c9b3c598e",
+        "text_layer_char_count": 1002
+      },
+      {
+        "page": 12,
+        "md_start_line": 410,
+        "md_end_line": 442,
+        "text_layer_sha256": "668157d27b81302d78e13a5bd956be3f6cfd3c95deb1452ffb936b25e7a63eac",
+        "text_layer_char_count": 1036
+      },
+      {
+        "page": 13,
+        "md_start_line": 450,
+        "md_end_line": 467,
+        "text_layer_sha256": "f01998667dde2f179388ca1dde3dab621b56d9cb8e87bcd18ca2d905283272c1",
+        "text_layer_char_count": 427
+      },
+      {
+        "page": 14,
+        "md_start_line": 475,
+        "md_end_line": 507,
+        "text_layer_sha256": "7bc1d22e7991c1d87b9aaebf08086e7bb881cd7c5e41e46e1debbcde3ae18575",
+        "text_layer_char_count": 926
+      },
+      {
+        "page": 15,
+        "md_start_line": 515,
+        "md_end_line": 545,
+        "text_layer_sha256": "962cc04b3f0d6d3d10d1947601b2c266d6f9460abe406d87f46a55b9a6734e8a",
+        "text_layer_char_count": 886
+      },
+      {
+        "page": 16,
+        "md_start_line": 553,
+        "md_end_line": 568,
+        "text_layer_sha256": "38bb48e10bdc3ee2bc38ef771d115ac2ea12b816d717fb7e00eb05ed25d5f69f",
+        "text_layer_char_count": 425
+      },
+      {
+        "page": 17,
+        "md_start_line": 576,
+        "md_end_line": 578,
+        "text_layer_sha256": "6a4ddd6af581d481346225c503f309e16dc4651e8dd80793e9400a140107b31c",
+        "text_layer_char_count": 18
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "detail_pages_reviewed": [
+        3,
+        6,
+        9,
+        14,
+        15
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "并发数量、80% 需求无需 AI 和模型/脚手架成本效果比例为个人经验，缺乏样本、对照与指标定义。",
+        "pages": [
+          1,
+          2,
+          7,
+          10
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "调度代码为伪代码，未定义其依赖；共享任务板的预算、性能及日期是示例，未作为实测或任务授权。",
+        "pages": [
+          6,
+          14,
+          15
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "协议时间线及工具描述 JSON 按作者叙述理解，未外部核验，扩展字段不视作标准协议必需字段。",
+        "pages": [
+          11,
+          12
+        ],
+        "status": "qualified"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0507 Ten Years of AI Agent.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "4d9f3da340ea1b4f356572ef2d5a31e5e73c616cba77d99495b509116da8106f",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md",
+      "../../20_topics/问题澄清.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_从任务编排走向目标驱动.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

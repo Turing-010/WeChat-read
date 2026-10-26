@@ -1,0 +1,519 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0081",
+  "title": "从提需求到部署发布，全 AI 全自动化后，研发效能全面跃升",
+  "short_title": "AI全链路交付实践",
+  "account": "腾讯技术工程",
+  "author": "jacksondeng、yuxuanlai、gcchaoguo",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-04-20T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0420 AI Full Automation.pdf",
+      "original_filename": "0420 AI Full Automation.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "270c3ceac73ad8d5769ffc74d9cbb595a965e580b75b7ebd62578e8efb627193",
+      "size_bytes": 10494784,
+      "page_count": 19,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "若只读文本层，p.8、12–14、16等图表会遗漏；已放大读取关键表格与回退案例。嵌图中的少量微小界面文字未逐字转写。",
+          "pages": [
+            8,
+            12,
+            13,
+            14,
+            16
+          ],
+          "status": "reviewed_with_limits"
+        },
+        {
+          "description": "“全自动”架构介绍与p.14仍含测试/发布/结束交互并存；按试点和初步能力表述，不推定完全无人值守。",
+          "pages": [
+            14,
+            15,
+            18
+          ],
+          "status": "source_boundary"
+        }
+      ],
+      "publication_evidence": "PDF p.1 可见 2026-04-20T02:36"
+    }
+  ],
+  "tags": [
+    "AI研发协同",
+    "Agent工程循环",
+    "Agent评测与反馈",
+    "异常监控与稳定性"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/AI全链路交付实践+26.4.20",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI全链路交付实践.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "从提需求到部署发布,全 AI 全自动化后,研发效能全面跃升\n腾讯程序员 2026 年 4 月 20 日 02 : 36广东原创 腾讯技术工程 428 人\n作者:jacksondeng 、 yuxuanlai 、 gcchaoguo\n1 、背景与挑战\n1.1 背景\n当前从需求到交付的全链路中,大量人工仍耗费在方案设计、代码评审、测试验证等非编码环\n节,频繁的上下文切换与协作等待严重制约了研发效能。为此,我们在深耕 AI 编码能力的同\n时,正将自动化向上游的需求、方案设计与下游的测试、部署环节延伸,旨在通过 AI 将各环节\n无缝串联,最终实现需求至部署的全自动化交付与研发效能的全面跃升。\n1.2现状\n审核将 AI 全自动化演进规划为 L1 (纯人工)、 L2 (人机协同)、 L3 (全自动)三个阶段。\n2025 年,我们处于以 “ 技术方案生成代码 ” 为核心的 L2 阶段。基于 “ 研发效能提升需突破单点、\n覆盖全链路 ” 的共识,我们正从聚焦 Coding ,向需求、测试、部署等环节系统化辐射。最终目\n标是借由 AI 将各环节无缝串联,构建需求至部署的端到端自动化交付能力,驱动整体研发效能\n实现 80% 的效能提升,具体演进路线可以参考图 1.1 所示:\n图1.1 演进路线图\n审核迈向 L3 需经历三段式能力阶梯:先夯实技术方案生成代码,再打通技术方案至交付链\n路,最终实现需求到交付的端到端跑通。在此基础之上,我们才会全面进入 L3 的全自动化交\n付阶段。详细信息如下:\n",
+    "publication_evidence": "PDF p.1 可见 2026-04-20T02:36",
+    "full_title_in_capture": "从提需求到部署发布，全 AI 全自动化后，研发效能全面跃升",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0081",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "270c3ceac73ad8d5769ffc74d9cbb595a965e580b75b7ebd62578e8efb627193"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "若只读文本层，p.8、12–14、16等图表会遗漏；已放大读取关键表格与回退案例。嵌图中的少量微小界面文字未逐字转写。",
+        "pages": [
+          8,
+          12,
+          13,
+          14,
+          16
+        ],
+        "status": "reviewed_with_limits"
+      },
+      {
+        "description": "“全自动”架构介绍与p.14仍含测试/发布/结束交互并存；按试点和初步能力表述，不推定完全无人值守。",
+        "pages": [
+          14,
+          15,
+          18
+        ],
+        "status": "source_boundary"
+      }
+    ],
+    "outputs": [
+      "AI_AI全链路交付实践.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "coverage": "覆盖L1至L3演进、工具联通、需求与知识库、门禁回退、试点数据、需求/编码问题清单和治理规划；重点表格从页图补读，嵌入的微小对话截图不逐字转写",
+    "fact_checks": [
+      {
+        "item": "测试至部署步骤",
+        "value": "12→5，2为理想目标",
+        "pages": [
+          7
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "环境耗时节约",
+        "value": "平均1h，60%+，未统计自动化测试",
+        "pages": [
+          7
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "试点规模",
+        "value": "6需求、三轮迭代",
+        "pages": [
+          15
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "代码采纳",
+        "value": "90%以上",
+        "pages": [
+          15
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "AI生成",
+        "value": "80%以上",
+        "pages": [
+          15
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "CR首次功能比对",
+        "value": "10项中9项一致、1项不符合",
+        "pages": [
+          13
+        ],
+        "result": "核对原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_AI全链路交付实践.md",
+      "sha256": "0e9277b0fe94e27b835235f70c05ffb3cf5033cfc4de10f07efbadb171c6793d"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "270c3ceac73ad8d5769ffc74d9cbb595a965e580b75b7ebd62578e8efb627193"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "5916b0b49d26577d654b12cf5f4e4237a5fdce9c1790be31f90b85c348c28d2a"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 28,
+        "text_layer_sha256": "7953f538c371727e03d0ed952a29b0257f4184e6190452b6fa11067bb5b9b331",
+        "text_layer_char_count": 646
+      },
+      {
+        "page": 2,
+        "md_start_line": 36,
+        "md_end_line": 53,
+        "text_layer_sha256": "0437331d9b6fea87cf5ee5ddcc7fe72513b94238c93fd2a67be01c1b13ff2fdb",
+        "text_layer_char_count": 527
+      },
+      {
+        "page": 3,
+        "md_start_line": 61,
+        "md_end_line": 94,
+        "text_layer_sha256": "32ee8b5b9b7d331236f04ed1d9a3c05a92c56876a5f564ce5eb230a5785f0c3d",
+        "text_layer_char_count": 929
+      },
+      {
+        "page": 4,
+        "md_start_line": 102,
+        "md_end_line": 122,
+        "text_layer_sha256": "89ccf4f50bc19769e733b8f53797c3cfb53dd39091409cd33dba09d266221e79",
+        "text_layer_char_count": 650
+      },
+      {
+        "page": 5,
+        "md_start_line": 130,
+        "md_end_line": 131,
+        "text_layer_sha256": "41537424dcdf392d99798ccae28d969453b673d6cba12d908aeb53b239c33d00",
+        "text_layer_char_count": 51
+      },
+      {
+        "page": 6,
+        "md_start_line": 139,
+        "md_end_line": 151,
+        "text_layer_sha256": "e7715baac4fac78ca750935f379415fd48f294caf462a0248041f76ee8847c14",
+        "text_layer_char_count": 293
+      },
+      {
+        "page": 7,
+        "md_start_line": 159,
+        "md_end_line": 172,
+        "text_layer_sha256": "b070e46226463e620a0c4d480b37e47cbed05c60428f344fb14fe47d916e0233",
+        "text_layer_char_count": 394
+      },
+      {
+        "page": 8,
+        "md_start_line": 180,
+        "md_end_line": 179,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 9,
+        "md_start_line": 187,
+        "md_end_line": 190,
+        "text_layer_sha256": "b93225e6e96bc3fc0e3695c2092a5cbb093deba5f3ed1fdcd857d592dcce204e",
+        "text_layer_char_count": 126
+      },
+      {
+        "page": 10,
+        "md_start_line": 198,
+        "md_end_line": 206,
+        "text_layer_sha256": "41310efdfefc9425fca3d18a4083911c62e4b9c00e152f93f8f7b2277ff026d4",
+        "text_layer_char_count": 333
+      },
+      {
+        "page": 11,
+        "md_start_line": 214,
+        "md_end_line": 217,
+        "text_layer_sha256": "ef100e5e0dfb21127731f8d0b23ab5f6ce2e934da27318a1520ec76daf09a22a",
+        "text_layer_char_count": 95
+      },
+      {
+        "page": 12,
+        "md_start_line": 225,
+        "md_end_line": 224,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 13,
+        "md_start_line": 232,
+        "md_end_line": 231,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 14,
+        "md_start_line": 239,
+        "md_end_line": 242,
+        "text_layer_sha256": "c4cc7dd3fcc86f19d5ef354223bc4aea04cd543c7dd5e2efe394238728af2ce5",
+        "text_layer_char_count": 117
+      },
+      {
+        "page": 15,
+        "md_start_line": 250,
+        "md_end_line": 257,
+        "text_layer_sha256": "2f7b316a281470690da93bdbd7134209413764e120d0232779a164922a6d16fa",
+        "text_layer_char_count": 275
+      },
+      {
+        "page": 16,
+        "md_start_line": 265,
+        "md_end_line": 265,
+        "text_layer_sha256": "a9d1cf40e6fde1830f058358116e5a2b14577c37ae9698cb4fc674f0b8315188",
+        "text_layer_char_count": 8
+      },
+      {
+        "page": 17,
+        "md_start_line": 273,
+        "md_end_line": 285,
+        "text_layer_sha256": "5018f2b3c9abaa803d3b754259dc4b301b92f635ea1eabd04367f3d36f475876",
+        "text_layer_char_count": 548
+      },
+      {
+        "page": 18,
+        "md_start_line": 293,
+        "md_end_line": 302,
+        "text_layer_sha256": "53327bbd1c5ce6d3320dd89a9dcdcb466a17ab141d9e03ec4563cbcaef75eda1",
+        "text_layer_char_count": 242
+      },
+      {
+        "page": 19,
+        "md_start_line": 310,
+        "md_end_line": 316,
+        "text_layer_sha256": "c728042e1ff8dc0253d53265d6e3061c3e7d0c1a74cc983cab9db1a764ea42ac",
+        "text_layer_char_count": 101
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "若只读文本层，p.8、12–14、16等图表会遗漏；已放大读取关键表格与回退案例。嵌图中的少量微小界面文字未逐字转写。",
+        "pages": [
+          8,
+          12,
+          13,
+          14,
+          16
+        ],
+        "status": "reviewed_with_limits"
+      },
+      {
+        "description": "“全自动”架构介绍与p.14仍含测试/发布/结束交互并存；按试点和初步能力表述，不推定完全无人值守。",
+        "pages": [
+          14,
+          15,
+          18
+        ],
+        "status": "source_boundary"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0420 AI Full Automation.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "270c3ceac73ad8d5769ffc74d9cbb595a965e580b75b7ebd62578e8efb627193",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md",
+      "../../20_topics/问题澄清.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_AI全链路交付实践.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

@@ -1,0 +1,411 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0054",
+  "title": "马斯克说到做到：开源X平台核心推荐算法",
+  "short_title": "X平台推荐算法",
+  "account": "腾讯技术工程",
+  "author": "腾讯广告推荐技术团队，周超博士",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-02-12T01:39",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0212 马斯克开源X平台推荐算法.pdf",
+      "original_filename": "0212 马斯克开源X平台推荐算法.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "4d4805e6c1f17be97f2e6da94fc8e816580211e2f3e4c93527cdeaab671c982e",
+      "size_bytes": 4421828,
+      "page_count": 16,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.11 上方示意图与作者依据代码给出的因果注意力修正不一致，笔记明确区分两者",
+          "pages": [
+            11
+          ],
+          "status": "source_issue_preserved"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏 2026-02-12T01:39"
+    }
+  ],
+  "tags": [
+    "检索与文档解析",
+    "模型与开发工具发布",
+    "推荐系统与多模态评测"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/X平台推荐算法+26.2.12",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_X平台推荐算法.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "⻢斯克说到做到:开源 X 平台核心推荐算法\n腾讯程序员 Feb  12 , 2026 , 1 : 39  AM广东原创 腾讯技术工程 548  listened\n作者:腾讯广告推荐技术团队,周超博士\n1 . 结论\n●  X 开源的是内容推荐( Feed  on  X )的召回、精排的在线请求视⻆的推理、策略/过滤代码,\n未开源训练(含 Loss 设计、样本组织的代码)。\n●  模型参数配置较小(例如用户行为序列是 32 ),应是实际部署代码的简化 Demo 版本。推\n测开源核心目的是为了体现 X 的透明性,解除广告主与 X 的用户对 X 的 Feed 推荐策略受到非\n内容因素干扰的担忧。\n●  召回\n    ○双塔模型,用户塔是双层的 Decoder - Only 的 Transformer ,采用 Causal  Attention ,\nOutput 是取所有位置的平均池化( mean  pooling ),再进行 L2 的归一化;内容塔是两层的\nMLP ;采用 dot  product 进行检索(因用户、内容都做了 L2 归一化,等价于 cosine )。\n    ○  输入:用户塔【用户特征,用户行为序列 S ⻓度】,内容塔是帖子标识+帖子作者\n●  精排\n    ○ 双层的 Decoder - Only 的 Transformer ,对于用户特征、用户行为序列是 Causal\nAttention ,对于候选是 Candidate  Isolation 。\n    ○ 输入:【用户特征,用户行为序列 S ⻓度,候选 1 ,...,候选 N 】\n●  召回、精排的用户 ID 、作者 ID 、帖子 ID 都用 multi - hash 查询 embedding  table 。\n1 , X 开源内容推荐 Feed  on  X 召回、精排推理、策略代码。参数配置小应是简化版本。 \n2 ,召回是双塔模型,用户塔输入是【用户特征, S ⻓度的行为序列】,内容塔是帖子标识\n与帖子作者。用户塔是双层的 Causal  Attention 的 Decoder - Only 的 Transformer , Output 取\n所有位置的平均池化,进行 L2 归一化;内容塔是两层 MLP ;采用 dot  product 检索。 \n3 ,精排采用双层 Causal  Attention 的 Decoder - Only 的 Transformer 。精排输入是【用户特\n征, S ⻓度行为序列,候选 1 ~候选 N 】,对候选采用 Candidate  Isolation 。\n",
+    "publication_evidence": "PDF p.1 发布栏 2026-02-12T01:39",
+    "full_title_in_capture": "马斯克说到做到：开源X平台核心推荐算法",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0054",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "4d4805e6c1f17be97f2e6da94fc8e816580211e2f3e4c93527cdeaab671c982e"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.11 上方示意图与作者依据代码给出的因果注意力修正不一致，笔记明确区分两者",
+        "pages": [
+          11
+        ],
+        "status": "source_issue_preserved"
+      }
+    ],
+    "outputs": [
+      "AI_X平台推荐算法.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "detail_pages_reviewed": [
+        4,
+        11,
+        13
+      ]
+    },
+    "coverage": "覆盖系统链路、召回特征与双塔、排序掩码、输出与参数、策略过滤和开源边界；不抄录所有推广文字。",
+    "fact_checks": [
+      {
+        "item": "embedding",
+        "value": "128",
+        "pages": "8、13",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "history",
+        "value": "32",
+        "pages": "9、13",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "candidate",
+        "value": "8",
+        "pages": 13,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "行为输出",
+        "value": "19",
+        "pages": 13,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "Q/KV heads",
+        "value": "2/2",
+        "pages": 14,
+        "result": "与所读原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_X平台推荐算法.md",
+      "sha256": "ab15a0634371287619401618f3f53bda187d20c065203654b4297d8d264a9225"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "4d4805e6c1f17be97f2e6da94fc8e816580211e2f3e4c93527cdeaab671c982e"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "27324a06fe919352c13be0968d5b834b2222c46b38939788a45f7f9e46dc05ff"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 34,
+        "text_layer_sha256": "35bd68e8fbc3fe4c05a48ae256b50729b03a2cd5a79899c6fe48889963435b9f",
+        "text_layer_char_count": 1100
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 50,
+        "text_layer_sha256": "f4da8f5c361a0695020bd4fdc43e0989702eed5a40ab75abd9f6f274d149520c",
+        "text_layer_char_count": 441
+      },
+      {
+        "page": 3,
+        "md_start_line": 58,
+        "md_end_line": 58,
+        "text_layer_sha256": "636708ca97ea078c201d58cc9d0923c7c5c193cc963beac69005fca38a13000a",
+        "text_layer_char_count": 6
+      },
+      {
+        "page": 4,
+        "md_start_line": 66,
+        "md_end_line": 66,
+        "text_layer_sha256": "214291acc502e45508ed670573d170506fabae24e7a600c697c21edf8d99f16a",
+        "text_layer_char_count": 25
+      },
+      {
+        "page": 5,
+        "md_start_line": 74,
+        "md_end_line": 100,
+        "text_layer_sha256": "ea827a7f541847549c670a756acd2ffe30f1060da558d4d0ee1f7ac173289417",
+        "text_layer_char_count": 872
+      },
+      {
+        "page": 6,
+        "md_start_line": 108,
+        "md_end_line": 134,
+        "text_layer_sha256": "53f7b577ca704fbc61e325e93edb1218830fcddd8e7c73ca34221b5ad93aa5ad",
+        "text_layer_char_count": 860
+      },
+      {
+        "page": 7,
+        "md_start_line": 142,
+        "md_end_line": 162,
+        "text_layer_sha256": "b3df291e77d305a66c888ab7311d8a6c65fb6320801486a8638e9c434edf839f",
+        "text_layer_char_count": 735
+      },
+      {
+        "page": 8,
+        "md_start_line": 170,
+        "md_end_line": 189,
+        "text_layer_sha256": "1105e7219da2931018da56e8d57d09aeb5424ff9bbbb075756359a101c66baf7",
+        "text_layer_char_count": 746
+      },
+      {
+        "page": 9,
+        "md_start_line": 197,
+        "md_end_line": 209,
+        "text_layer_sha256": "c8085a2683f61bd720a9a4616dda724bb6f367a55ee91dbdc0490388fda559fb",
+        "text_layer_char_count": 338
+      },
+      {
+        "page": 10,
+        "md_start_line": 217,
+        "md_end_line": 222,
+        "text_layer_sha256": "ef351aa4069260a22d161b971a19d03e35f5db66a2e98466711b8121eaee5b35",
+        "text_layer_char_count": 218
+      },
+      {
+        "page": 11,
+        "md_start_line": 230,
+        "md_end_line": 237,
+        "text_layer_sha256": "7bc49206668ecd8c3d0edea7cae35db62560026b56897d9ef0ffb939c5d5c75b",
+        "text_layer_char_count": 273
+      },
+      {
+        "page": 12,
+        "md_start_line": 245,
+        "md_end_line": 256,
+        "text_layer_sha256": "b76d6971a93424e3d4bfdd78c82ec1e0d47e994e15a1a7c1f37a3ea765974d1e",
+        "text_layer_char_count": 495
+      },
+      {
+        "page": 13,
+        "md_start_line": 264,
+        "md_end_line": 270,
+        "text_layer_sha256": "5afef9cd2a0c42cd2208426d2e3fb85372069a939252de222dde560ec7d45d83",
+        "text_layer_char_count": 195
+      },
+      {
+        "page": 14,
+        "md_start_line": 278,
+        "md_end_line": 295,
+        "text_layer_sha256": "f28c19f30fb210e530607edca0c1ec9c8c5a7e127babaf484ee7bd13ea238a1f",
+        "text_layer_char_count": 516
+      },
+      {
+        "page": 15,
+        "md_start_line": 303,
+        "md_end_line": 310,
+        "text_layer_sha256": "7b4e756053174d43385545f392d4d85df3acad1c3df93bc38ec2323bf3a0927f",
+        "text_layer_char_count": 77
+      },
+      {
+        "page": 16,
+        "md_start_line": 318,
+        "md_end_line": 317,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "detail_pages_reviewed": [
+        4,
+        11,
+        13
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.11 上方示意图与作者依据代码给出的因果注意力修正不一致，笔记明确区分两者",
+        "pages": [
+          11
+        ],
+        "status": "source_issue_preserved"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:24-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0212 马斯克开源X平台推荐算法.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "4d4805e6c1f17be97f2e6da94fc8e816580211e2f3e4c93527cdeaab671c982e",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:24-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/推荐系统与多模态评测.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_X平台推荐算法.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

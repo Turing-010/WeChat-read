@@ -1,0 +1,121 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0315",
+  "title": "微信测试中心刷新业界标准，斩获 ICCV 图像质量评估挑战赛冠军",
+  "short_title": "iDetex细节图像质量评估",
+  "account": "腾讯技术工程",
+  "author": "孙暕晖、邵涛",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-11-05T01:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "微信测试中 ⼼刷新业界标准，斩获 ICCV 图像质量评估挑战赛冠军\n\n腾讯技术⼯程   2025年11⽉5⽇   01:36四川25⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n作者：孙暕晖，   IH-VQA团队队⻓ ；邵涛， IH-VQA队员\n\n导语\n\n在  ICCV 2025 MIPI Detailed Image Quality Assessment挑战赛中 ，来 ⾃微信测试中⼼的\nIH-VQA团队斩获⼤ 赛冠军 。 在⽐赛中 ， IH-VQA团队⾸创的 iDetex细节质量评估⽅案，刷新\n了细节图像质量评价的 业界标准，为 图⽚质量优化提供更精准的 迭代⽅向。 本次⽐赛获得亚\n军 的 是 来 ⾃Bilibili以及上海交⼤ 的 联合团队，季军 是 来 ⾃理光中 国 研究院的 团队。 我们能从\n众多优秀团队中 胜出，展示了微信在 业界图像质量评估研究⼯作的 ⼀ 些成果。 研究成果\niDetex也正在 微信视频号、⾳视频通话、 微信电商等业务落地中 。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "多模态与生成模型",
+    "AI评测与可观测性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/微信测试中心刷新业界标准，斩获 ICCV 图像质量评估挑战赛冠军.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:01:04-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "1f93a335715d8de400d00349dd703ea9cf62df9414875053a0e1f9e3e9da0cd6",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "主观属性/描述部分来自GPT-4生成，不能把所有ViDA标签当纯人工真值。",
+        "模型对失真作解释不等于经因果实验确认损伤根因；业务截图是例示。",
+        "页图检查限1、4、6、12；其余图内表格未完整转写，未复跑竞赛。"
+      ],
+      "size_bytes": 12430092,
+      "page_count": 14
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:01:04-07:00",
+  "directory": "腾讯技术工程/iDetex细节图像质量评估+25.11.5",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:01:04-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "1f93a335715d8de400d00349dd703ea9cf62df9414875053a0e1f9e3e9da0cd6",
+    "output_path": "MD.md",
+    "output_sha256": "2873986484c5ce65ec09cd0787001f144c534aaf7cde700ff84366f70c02ce24",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 14,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "visual_pages": [
+        1,
+        4,
+        6,
+        12
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "主观属性/描述部分来自GPT-4生成，不能把所有ViDA标签当纯人工真值。",
+      "模型对失真作解释不等于经因果实验确认损伤根因；业务截图是例示。",
+      "页图检查限1、4、6、12；其余图内表格未完整转写，未复跑竞赛。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/微信测试中心刷新业界标准，斩获 ICCV 图像质量评估挑战赛冠军.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/iDetex细节图像质量评估+25.11.5/RAW.pdf",
+    "sha256": "1f93a335715d8de400d00349dd703ea9cf62df9414875053a0e1f9e3e9da0cd6",
+    "copied_at": "2026-10-23T06:01:04-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/推荐系统与多模态评测.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

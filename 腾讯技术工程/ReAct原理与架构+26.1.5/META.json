@@ -1,0 +1,517 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0168",
+  "title": "拥抱大模型：深入剖析 ReAct 的核心原理、技术架构及其对 AI 领域的深远影响",
+  "short_title": "ReAct原理与架构",
+  "account": "腾讯技术工程",
+  "author": "lingnyliang",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-01-05T01:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/拥抱大模型：深入剖析ReAct的核心原理、技术架构及其对AI领域的深远影响.pdf",
+      "original_filename": "拥抱大模型：深入剖析ReAct的核心原理、技术架构及其对AI领域的深远影响.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "43ec2a50181d277a9d23e14be1e8db49fdcd983ada93a57fe9a21b49ecd30166",
+      "size_bytes": 4700199,
+      "page_count": 16,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "代码摘录跨页截断且截图部分行裁切/不可辨，无法恢复为完整可执行代码；笔记未补全。",
+          "pages": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "status": "实质缺失"
+        },
+        {
+          "description": "文章引用的实验结果未在本文中完整提供实验设置与统计区间，无法据此判断普遍效果。",
+          "pages": [
+            12,
+            13,
+            14
+          ],
+          "status": "原文信息不完整"
+        }
+      ],
+      "publication_evidence": "PDF 第1页标注 2026-01-05 01:36；未见时区"
+    }
+  ],
+  "tags": [
+    "Agent工程循环",
+    "Harness与模型协同",
+    "Prompt优化",
+    "Agent评测与反馈"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/ReAct原理与架构+26.1.5",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_ReAct原理与架构.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "拥抱大模型:深入剖析 ReAct 的核心原理、技术架构及其对 AI 领域的\n深远影响\n2026 年 1 月 5 日 01 : 36广东腾讯技术工程 88 人\n作者: lingnyliang\n一、什么是 ReAct ?\n2022 年,普林斯顿大学和谷歌的研究团队在论文《 ReAct: Synergizing Reasoning and Acting\nin Language Models 》中提出的 ReAct 范式,通过构建 “ 推理 - 行动 - 观察 ” ( TAO )的闭环机制,\n首次实现了语言模型推理能力与外部环境交互能力的深度协同,为解决上述瓶颈提供了里程碑\n式的方案。\nReAct = Reasoning (推理) +  Acting (行动),本质是一种让语言模型通过与外部工具、环\n境动态交互完成复杂任务的智能体架构范式。其核心目标是打破传统语言模型 “ 输入 - 输出 ” 的\n单向链路,构建 “ 感知 - 决策 - 执行 - 反馈 ” 的智能闭环,使模型从 “ 被动应答者 ” 升级为 “ 主动问题\n解决者 ” 。\n在人工智能的演进历程中,大语言模型展现出了令人惊叹的文本生成能力,但其 “ 黑箱 ” 特\n性也带来了显著挑战 —— 模型经常产生看似合理但实际错误的 “ 幻觉 ” 回答,缺乏透明推理\n过程,且无法与外部世界交互获取实时信息。ReAct ( Reasoning+Acting )通过将思考过\n程外显化和工具使用标准化,构建了一个可解释、可验证、可扩展的智能体架构。本文将\n深入剖析 ReAct 的核心原理、技术架构及其对整个 AI 领域的深远影响。\n",
+    "publication_evidence": "PDF 第1页标注 2026-01-05 01:36；未见时区",
+    "full_title_in_capture": "拥抱大模型：深入剖析 ReAct 的核心原理、技术架构及其对 AI 领域的深远影响",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0168",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "43ec2a50181d277a9d23e14be1e8db49fdcd983ada93a57fe9a21b49ecd30166"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "代码摘录跨页截断且截图部分行裁切/不可辨，无法恢复为完整可执行代码；笔记未补全。",
+        "pages": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "status": "实质缺失"
+      },
+      {
+        "description": "文章引用的实验结果未在本文中完整提供实验设置与统计区间，无法据此判断普遍效果。",
+        "pages": [
+          12,
+          13,
+          14
+        ],
+        "status": "原文信息不完整"
+      }
+    ],
+    "outputs": [
+      "AI_ReAct原理与架构.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "detail_pages_reviewed": [
+        2,
+        4,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "coverage": "覆盖 ReAct Thought-Action-Observation 循环、提示协议、运行时执行、上下文与终止条件、文章引用的实验结果以及工具/评测边界；代码页有裁切，未补齐源码。",
+    "fact_checks": [
+      {
+        "item": "ReAct 循环结构",
+        "note_value": "Thought -> Action -> Observation -> continue/final",
+        "source_value": "Thought/Action/Observation 交替循环",
+        "pages": [
+          2,
+          3,
+          4
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "上下文示例参数",
+        "note_value": "max_length 4000字符，保留最近3轮",
+        "source_value": "4000字符/最近3轮",
+        "pages": [
+          9,
+          10,
+          11
+        ],
+        "result": "一致，限定为示例"
+      },
+      {
+        "item": "连续失败停止策略",
+        "note_value": "连续3次失败后停止",
+        "source_value": "连续失败3次停止",
+        "pages": [
+          10,
+          11,
+          12
+        ],
+        "result": "一致，限定为文章所述策略"
+      },
+      {
+        "item": "ALFWorld 对比结果",
+        "note_value": "ReAct 71%，引用的 RL 方案37%",
+        "source_value": "71% vs 37%",
+        "pages": [
+          12,
+          13
+        ],
+        "result": "一致，属引用实验"
+      },
+      {
+        "item": "错误率对比",
+        "note_value": "ReAct 8.2%，CoT 23.5%",
+        "source_value": "8.2% vs 23.5%",
+        "pages": [
+          13,
+          14
+        ],
+        "result": "一致，属引用实验"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_ReAct原理与架构.md",
+      "sha256": "589ecbfa4a82e9a8a4a4b4f30b0b611370e9a4d44f9313394b424273cff85e2b"
+    },
+    "independent_crosscheck": {
+      "reviewer": "Codex crosscheck group2",
+      "note_sha256": "b167d4c6c44dff66b72051dd20e67f30835a4007e8792582310809151972733f",
+      "review_sha256": "19381b16eafbbca01496956e4541ffc6f2088f53f6d36c3cdbfae8f04a5ebc6d",
+      "status": "passed",
+      "changes": [
+        "统一卡片和文末校对报告格式。"
+      ],
+      "source_spotchecks": [
+        {
+          "source": "reading.txt; sheet-001.jpg; sheet-013.jpg",
+          "pages": [
+            1,
+            2,
+            4,
+            6,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "finding": "核对TAO循环、执行器、代码裁切、上下文/停止参数和论文指标；代码未补全、未执行。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "43ec2a50181d277a9d23e14be1e8db49fdcd983ada93a57fe9a21b49ecd30166"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "d006c36b11085d6797e1e704ff15f817f41fdad4854ddb946a833c1ab298b7c0"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 27,
+        "text_layer_sha256": "e2cef59c8a639c0399e5a520e6bae3d551d6ab8f261c21d49e3240a584c162ee",
+        "text_layer_char_count": 694
+      },
+      {
+        "page": 2,
+        "md_start_line": 35,
+        "md_end_line": 53,
+        "text_layer_sha256": "2963c57cc24759257229022a062656c11251ec63f16f21ae3e33795f68d9b9c8",
+        "text_layer_char_count": 730
+      },
+      {
+        "page": 3,
+        "md_start_line": 61,
+        "md_end_line": 80,
+        "text_layer_sha256": "94b67f7f20b192779d128af489def42f70667a7f05a61f794a5cfa1c972086d5",
+        "text_layer_char_count": 663
+      },
+      {
+        "page": 4,
+        "md_start_line": 88,
+        "md_end_line": 111,
+        "text_layer_sha256": "a9c79e32d8fe7d03ecbe8ce5606b271ade2df645015fb5529c512e21704bd34c",
+        "text_layer_char_count": 879
+      },
+      {
+        "page": 5,
+        "md_start_line": 119,
+        "md_end_line": 138,
+        "text_layer_sha256": "9b84dd0651e9e057087ce93b9e719d9f2a340255ae46fc7050630adc52453b23",
+        "text_layer_char_count": 774
+      },
+      {
+        "page": 6,
+        "md_start_line": 146,
+        "md_end_line": 169,
+        "text_layer_sha256": "7fa2cc55f9424049abc4808f49d7e5b6afee7192ca49f75ad696f0167b3d2147",
+        "text_layer_char_count": 841
+      },
+      {
+        "page": 7,
+        "md_start_line": 177,
+        "md_end_line": 194,
+        "text_layer_sha256": "0517229bf2724f64ca5d51f2144bb6337cd3e4257b10aeeaad33d967786b7246",
+        "text_layer_char_count": 719
+      },
+      {
+        "page": 8,
+        "md_start_line": 202,
+        "md_end_line": 234,
+        "text_layer_sha256": "e566fcdac347025161b18bf336e0ba2f76bf991072deba5c19ea2922e4f49fe9",
+        "text_layer_char_count": 1193
+      },
+      {
+        "page": 9,
+        "md_start_line": 242,
+        "md_end_line": 283,
+        "text_layer_sha256": "220b1ce79823eb6052ab64d0589ec594f8254f7120de56bed74fbb7cc9a2ddd4",
+        "text_layer_char_count": 1565
+      },
+      {
+        "page": 10,
+        "md_start_line": 291,
+        "md_end_line": 335,
+        "text_layer_sha256": "8f5c9c74a468977a261f34c3831963b0320bc3af541df563aff60cb54f369748",
+        "text_layer_char_count": 1848
+      },
+      {
+        "page": 11,
+        "md_start_line": 343,
+        "md_end_line": 389,
+        "text_layer_sha256": "78fd581c838188c8ecec5146dcc65cb4af9f0910bae0b5a59654d34bacb1f261",
+        "text_layer_char_count": 1741
+      },
+      {
+        "page": 12,
+        "md_start_line": 397,
+        "md_end_line": 437,
+        "text_layer_sha256": "8d9a25d27ffbff7a1e79c955b20f5e83dff14bb21b8c717753b3cc8b19ffcb9c",
+        "text_layer_char_count": 1455
+      },
+      {
+        "page": 13,
+        "md_start_line": 445,
+        "md_end_line": 476,
+        "text_layer_sha256": "bb1ec801a385022f2c693148282d13db34b957dd3fe263f1d29fe791c93889d6",
+        "text_layer_char_count": 1236
+      },
+      {
+        "page": 14,
+        "md_start_line": 484,
+        "md_end_line": 502,
+        "text_layer_sha256": "729d496762cb5927f41874ce5f3d85bf05e63c89cff4eac583ad728647ad3676",
+        "text_layer_char_count": 865
+      },
+      {
+        "page": 15,
+        "md_start_line": 510,
+        "md_end_line": 517,
+        "text_layer_sha256": "14c7d33ff1fc0d1385b9cba29567b29fc6f6ec71efd0e5bb5772f002e05c2fdc",
+        "text_layer_char_count": 74
+      },
+      {
+        "page": 16,
+        "md_start_line": 525,
+        "md_end_line": 524,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "detail_pages_reviewed": [
+        2,
+        4,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "代码摘录跨页截断且截图部分行裁切/不可辨，无法恢复为完整可执行代码；笔记未补全。",
+        "pages": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "status": "实质缺失"
+      },
+      {
+        "description": "文章引用的实验结果未在本文中完整提供实验设置与统计区间，无法据此判断普遍效果。",
+        "pages": [
+          12,
+          13,
+          14
+        ],
+        "status": "原文信息不完整"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/拥抱大模型：深入剖析ReAct的核心原理、技术架构及其对AI领域的深远影响.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "43ec2a50181d277a9d23e14be1e8db49fdcd983ada93a57fe9a21b49ecd30166",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_ReAct原理与架构.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

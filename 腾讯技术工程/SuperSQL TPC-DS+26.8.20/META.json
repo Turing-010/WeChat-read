@@ -1,0 +1,398 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0175",
+  "title": "腾讯大数据 SuperSQL 刷新 TPC-DS 世界纪录，性能、性价比双料第一",
+  "short_title": "SuperSQL TPC-DS",
+  "account": "腾讯技术工程",
+  "author": "腾讯数据计算平台",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-20T02:34",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯大数据 SuperSQL 刷新 TPC-DS 世界纪录，性能、性价比双料第一.pdf",
+      "original_filename": "腾讯大数据 SuperSQL 刷新 TPC-DS 世界纪录，性能、性价比双料第一.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "548bc0699f656be289fac446d903a4c6cf7d4a14ac5d6591f89a59ffbac846c2",
+      "size_bytes": 6634532,
+      "page_count": 12,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "性能、成本及排名由文章报告，未提供可独立复现的完整环境配置；客户价值页只有概括性主张，没有具体客户收益数字。",
+          "pages": [
+            3,
+            4,
+            10
+          ],
+          "status": "已放大核对；保持作者报告口径"
+        }
+      ],
+      "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。"
+    }
+  ],
+  "tags": [
+    "数据湖表与互操作",
+    "Agent数据分析",
+    "Agent评测与反馈",
+    "云网络系统研究",
+    "分布式计算与数据管道"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/SuperSQL TPC-DS+26.8.20",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_SuperSQL TPC-DS.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "腾讯大数据 SuperSQL  刷新 TPC - DS  世界纪录,性能、性价比双\n料第一\nAug  20 , 2026 , 2 : 34  AM广东腾讯技术工程 8  listened\n作者:腾讯数据计算平台\nTPC 官方榜单截图\n近日,国际事务处理性能委员会( TPC )官网正式上线天穹  SuperSQL TPC-DS 成绩,天\n穹  SuperSQL 通过严苛的  TPC-DS 全流程测试,综合性能成绩达  6.54 亿,是此前最高纪录\n的近  10 倍;单位性能成本降至  11.04 元,仅为此前的约六分之一,成为 TPC-DS 100TB 官\n方榜单上全球性能、性价比双双领先的大数据计算平台。\n当企业数据规模从  TB 级迈向  PB 级,传统数据库与大数据架构正面临多重挑战:复杂查询\n能否稳定完成?计算资源能否高效利用?系统性能能否随集群规模持续扩展?要回答这些问\n题,仅靠实验室中的单点性能测试远远不够,还需要一套覆盖数据加载、复杂查询、并发吞\n吐与数据维护的系统化评估体系。 TPC-DS 正是数据分析领域公认的权威基准测试之一。\nTPC-DS :数据分析领域的 “ 试金石 ”\nTPC ( Transaction Processing Performance Council ,事务处理性能委员会)是国际权威\n的非营利性基准测试组织,其成员涵盖全球主流软硬件、数据库与云计算厂商。与常规性能\n测试不同, TPC 测试对软硬件配置、测试流程、执行结果和成本信息均有严格规范,正式结\n果还需经过独立审计,因而具备较高的可复核性和横向比较价值。\nTPC-DS 是全球数据分析领域最具代表性的性能测试之一,主要衡量一套系统处理海量、复\n杂数据任务的综合能力。过去多年, Oracle 、 IBM 、Databricks 等海外技术厂商均曾参与\nTPC 相关测试,其中  100TB 也是  TPC-DS 目前设置的最大测试规模之一。\n近日,国际事务处理性能委员会( TPC )官网正式上线天穹 SuperSQL  TPC - DS  成绩,天穹\nSuperSQL  通过严苛的 TPC - DS  全流程测试,综合性能成绩达 6 . 54  亿,是此前最高纪录的近\n10  倍;单位性能成本降至 11 . 04  元,仅为此前的约六分之一,成为 TPC - DS  100TB  官方榜单\n上全球性能、性价比双双领先的大数据计算平台。\n",
+    "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。",
+    "full_title_in_capture": "腾讯大数据 SuperSQL 刷新 TPC-DS 世界纪录，性能、性价比双料第一",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0175",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "548bc0699f656be289fac446d903a4c6cf7d4a14ac5d6591f89a59ffbac846c2"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "性能、成本及排名由文章报告，未提供可独立复现的完整环境配置；客户价值页只有概括性主张，没有具体客户收益数字。",
+        "pages": [
+          3,
+          4,
+          10
+        ],
+        "status": "已放大核对；保持作者报告口径"
+      }
+    ],
+    "outputs": [
+      "AI_SuperSQL TPC-DS.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        4,
+        5,
+        8,
+        9,
+        10
+      ]
+    },
+    "coverage": "覆盖 TPC-DS 100TB 测试口径、排名与比较值，以及 SuperSQL 的执行引擎、向量化、自适应编码/算子、统一内存、Shuffle/vRDMA、AutoCTE、Runtime Filter、HBO/AQE 与 LLM 诊断/DataAgent；第10页已放大核对客户价值三项。 全部 12 页均核对文字层和缩略图；末页检查结果见笔记校对报告。",
+    "fact_checks": [
+      {
+        "claim": "TPC-DS 数据规模 100TB",
+        "page": "p.3",
+        "result": "文章测试描述"
+      },
+      {
+        "claim": "得分 6.54 亿",
+        "page": "p.3",
+        "result": "文章报告结果"
+      },
+      {
+        "claim": "性能成本 11.04 元",
+        "page": "p.3",
+        "result": "文章报告结果"
+      },
+      {
+        "claim": "99 类查询/4 路并发/396 查询",
+        "page": "p.4",
+        "result": "文章测试描述"
+      },
+      {
+        "claim": "客户价值三项：降成本、快决策、简架构",
+        "page": "p.10",
+        "result": "页面标题和三张价值卡片"
+      },
+      {
+        "claim": "PDF末页 p.12 内容",
+        "source_value": "空白页/空评论区，无额外正文",
+        "pages": [
+          12
+        ],
+        "result": "已核对提取文字与页图；未见正文或评论"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_SuperSQL TPC-DS.md",
+      "sha256": "d85042c5c03efa01a266bb6e9581a0923234cf6a2857414a18c42b9cbaed2653",
+      "size_bytes": 23243
+    },
+    "independent_crosscheck": {
+      "reviewer": "crosscheck_c",
+      "note_sha256": "d85042c5c03efa01a266bb6e9581a0923234cf6a2857414a18c42b9cbaed2653",
+      "review_sha256": "6bf7d19b95defc6349f10a6008083d1a6fec74747e4ca2a4b0388b97669eb564",
+      "status": "passed",
+      "changes": [
+        "Expanded the note to cover the major engine, Shuffle, diagnosis and DataAgent mechanisms. Added the p.11–12 tail check; review now accounts for all 12 physical pages."
+      ],
+      "source_spotchecks": [
+        "p.3 enlarged image confirms platform/TEngine description and reported phase timings; p.8 confirms adaptive Shuffle, vRDMA and AI diagnostic figures; p.9 confirms DataAgent 76.23% and three-step validation loop.",
+        "p.11 image shows article tail/account table; p.12 extracted text and image show the empty comments area. Both omitted pages were checked and contain no additional technical article content."
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "548bc0699f656be289fac446d903a4c6cf7d4a14ac5d6591f89a59ffbac846c2"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "b4833dc07ac4a8c57f6eb27c398a44457000aef2b17e08b3e97e27ae510a87fa"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 34,
+        "text_layer_sha256": "63181d8828c79c98a47ada4635d46c4cbc3daa0b3e6ebc272a58b126bf42ffff",
+        "text_layer_char_count": 1029
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 71,
+        "text_layer_sha256": "55918a679817cc913f0b51b5aab6f76add01e8424b6e061b610fbc2e12298627",
+        "text_layer_char_count": 916
+      },
+      {
+        "page": 3,
+        "md_start_line": 79,
+        "md_end_line": 92,
+        "text_layer_sha256": "1809cbfe385f0efa2d76e65e2b74a0bc749c166a06eae76568b7ae0d17f049e2",
+        "text_layer_char_count": 453
+      },
+      {
+        "page": 4,
+        "md_start_line": 100,
+        "md_end_line": 123,
+        "text_layer_sha256": "701b87e50d7e83652abbcb9524d4535e2154c55ac03f638d613eba65bb39f0a9",
+        "text_layer_char_count": 933
+      },
+      {
+        "page": 5,
+        "md_start_line": 131,
+        "md_end_line": 142,
+        "text_layer_sha256": "2ea57bb9d2f6466854ccc79efb40d914941c9255de807eb44a48e2d9086ba713",
+        "text_layer_char_count": 494
+      },
+      {
+        "page": 6,
+        "md_start_line": 150,
+        "md_end_line": 169,
+        "text_layer_sha256": "32bd858c104604aee885317b433219d7609593081da747f75a67b7562b410ab3",
+        "text_layer_char_count": 790
+      },
+      {
+        "page": 7,
+        "md_start_line": 177,
+        "md_end_line": 191,
+        "text_layer_sha256": "2218bb3b5309785956bc65f45de7121c98989825fcbe48f5f526be6bf406809e",
+        "text_layer_char_count": 499
+      },
+      {
+        "page": 8,
+        "md_start_line": 199,
+        "md_end_line": 225,
+        "text_layer_sha256": "3a29ca6790f98ccb29150d5168351811a798ce8ba85d05c8d0bb1a86638894c9",
+        "text_layer_char_count": 1041
+      },
+      {
+        "page": 9,
+        "md_start_line": 233,
+        "md_end_line": 247,
+        "text_layer_sha256": "1fa4e424e3014595e93e5ffa49de511ca8c677a0454bdd170e144bfc86374088",
+        "text_layer_char_count": 592
+      },
+      {
+        "page": 10,
+        "md_start_line": 255,
+        "md_end_line": 267,
+        "text_layer_sha256": "400ff71a6b7e92783d0a4b2ebbc2f646a7f72881baed6f39a18189e14e1d39fd",
+        "text_layer_char_count": 350
+      },
+      {
+        "page": 11,
+        "md_start_line": 275,
+        "md_end_line": 274,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 12,
+        "md_start_line": 282,
+        "md_end_line": 285,
+        "text_layer_sha256": "d36154872b64f7a792383e9c59dc73fd04477a240206927a7493e6c183c41c01",
+        "text_layer_char_count": 26
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        4,
+        5,
+        8,
+        9,
+        10
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "性能、成本及排名由文章报告，未提供可独立复现的完整环境配置；客户价值页只有概括性主张，没有具体客户收益数字。",
+        "pages": [
+          3,
+          4,
+          10
+        ],
+        "status": "已放大核对；保持作者报告口径"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯大数据 SuperSQL 刷新 TPC-DS 世界纪录，性能、性价比双料第一.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "548bc0699f656be289fac446d903a4c6cf7d4a14ac5d6591f89a59ffbac846c2",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/云网络系统研究.md",
+      "../../20_topics/分布式计算与数据管道.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_SuperSQL TPC-DS.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

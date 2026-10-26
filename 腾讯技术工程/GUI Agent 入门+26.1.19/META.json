@@ -1,0 +1,480 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0119",
+  "title": "有手就行，教你从0到1快速手搓搭建个 GUI Agent",
+  "short_title": "GUI Agent 入门",
+  "account": "腾讯技术工程",
+  "author": "zishanshi",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-01-19T01:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260119_GUI_Agent_From_Zero.pdf",
+      "original_filename": "20260119_GUI_Agent_From_Zero.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "e9aecdb325366a466ac90d1ab0a78e9a7c91c46fde474382f642028cef2b4c00",
+      "size_bytes": 6968510,
+      "page_count": 19,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "代码段在 PDF/提取文本中有省略、缺行和 OCR 错误；无法确认完整依赖或语法，本文未补写也未执行。示例禁用 fail-safe，但未讨论由此产生的风险。",
+          "pages": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "status": "已放大核对；实现完整性与安全性待作者代码源确认"
+        }
+      ],
+      "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。"
+    }
+  ],
+  "tags": [
+    "Agent工程循环",
+    "Harness与模型协同",
+    "Agent任务恢复",
+    "桌面Agent与工作流"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/GUI Agent 入门+26.1.19",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_GUI Agent 入门.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "有手就行,教你从 0 到 1 快速手搓搭建个 GUI  Agent\n腾讯程序员 Jan  19 , 2026 , 1 : 36  AM广东原创 腾讯技术工程 1539  listened\n作者: zishanshi\n一、前言\n什么是 GUI Agent ?简单来说,就是一个能够 \" 看懂 \" 屏幕( mobile/pc/web )并进行自动操作\n的 AI Agent 。比如用户发送指令 “ 整理文件 ” , PC GUI Agent 就可以基于纯 GUI 界面理解页面内\n容,进行逐步决策 & 操作,直到完成用户任务。\n随着 GUI Agent 的应用前景逐渐明朗, GUI Agent 在 25 年的发展很迅猛,其中一个比较明显的\n新趋势是,通用大模型也在训练 GUI 上的能力:\n随着通用大模型向着 agentic 以及 GUI 理解增强的方向发展,现在 Gemini 3 Flash 等通用大\n模型已经可以直接用来搭建一个效果还不错的 GUI Agent ,并且实践难度大幅降低,半小\n时左右就可以从 0 到 1 手搓出来。本文详细介绍如何逐步搭建一个 GUI Agent ,从实践中也\n可快速了解 GUI Agent 的原理。\n",
+    "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。",
+    "full_title_in_capture": "有手就行，教你从0到1快速手搓搭建个 GUI Agent",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0119",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "e9aecdb325366a466ac90d1ab0a78e9a7c91c46fde474382f642028cef2b4c00"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "代码段在 PDF/提取文本中有省略、缺行和 OCR 错误；无法确认完整依赖或语法，本文未补写也未执行。示例禁用 fail-safe，但未讨论由此产生的风险。",
+        "pages": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "status": "已放大核对；实现完整性与安全性待作者代码源确认"
+      }
+    ],
+    "outputs": [
+      "AI_GUI Agent 入门.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        2,
+        7,
+        10
+      ]
+    },
+    "coverage": "覆盖 GUI Agent 感知、决策、执行闭环；多模态模型封装、对话历史、PyAutoGUI 操作、中文剪贴板输入、截图、归一化坐标、LangGraph 状态图与条件退出。正文代码示例在第11–15页有明显缺行/转写损坏。 已补核 PDF p.19：提取文字与图像均为公众号阅读/留言尾页，无技术正文。",
+    "fact_checks": [
+      {
+        "claim": "坐标示例范围 0–1000",
+        "page": "p.7",
+        "result": "文章示例约定"
+      },
+      {
+        "claim": "代码展示覆盖到第15页",
+        "page": "p.11–15",
+        "result": "图片和转写均显示片段不完整"
+      },
+      {
+        "claim": "使用 StateGraph 构造循环",
+        "page": "p.8–10",
+        "result": "架构说明"
+      },
+      {
+        "claim": "操作示例使用 PyAutoGUI",
+        "page": "p.6–9",
+        "result": "文章实现选择"
+      },
+      {
+        "claim": "模型输出通过约定动作格式解析",
+        "page": "p.5–7",
+        "result": "文章示例"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_GUI Agent 入门.md",
+      "sha256": "328f9fe147d87d1de0f7405033e1884053e4861c2a66c76cc9386000e0016894"
+    },
+    "independent_crosscheck": {
+      "reviewer": "crosscheck_a",
+      "status": "passed",
+      "note_sha256": "9e354c010696458920a944436b28a68c3848de85effc759185ef9eedec85ec08",
+      "review_sha256": "2689bb7cb968eaea95d9dc816406ab1afbd8b17872e3f09eda5aa619123e287b",
+      "changes": [
+        "未发现需修复的实质问题；未改写风格。",
+        "按新增结构标准核对日期、唯一H1、复习卡片与末尾折叠校对报告；无卡片内容改写。",
+        "新增标准复核通过：含## 复习卡片、5–10条单行问题::答案、date元数据、唯一H1，以及末尾逐行引用的折叠校对报告。"
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "p.3",
+          "result": "环境、感知、决策、操作器四部分结构。"
+        },
+        {
+          "pages": "p.7–10",
+          "result": "归一化坐标、历史状态与StateGraph循环。"
+        },
+        {
+          "pages": "p.11–15",
+          "result": "代码图像显示片段/OCR不完整；笔记明确未验证可运行性，未执行命令。"
+        },
+        {
+          "pages": "p.19",
+          "result": "已补核 PDF p.19：提取文字与图像均为公众号阅读/留言尾页，无技术正文。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "e9aecdb325366a466ac90d1ab0a78e9a7c91c46fde474382f642028cef2b4c00"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "0e1afda1d112dfae78461094e48b62ab44deae1e2231c63fbec36622c307b913"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 22,
+        "text_layer_sha256": "9495e2bdadd5d468ef3b53b054c566b2c0a5de6a87c56eea6370667272fdffed",
+        "text_layer_char_count": 520
+      },
+      {
+        "page": 2,
+        "md_start_line": 30,
+        "md_end_line": 34,
+        "text_layer_sha256": "3d84dcc74d7bf8354a192b80ad92d21ce7423a7068efc1f3961890f1eb772759",
+        "text_layer_char_count": 183
+      },
+      {
+        "page": 3,
+        "md_start_line": 42,
+        "md_end_line": 75,
+        "text_layer_sha256": "030b47d14020de9599d7a2c233660ac23a209ebfc7181afa7ab0639031d51574",
+        "text_layer_char_count": 1133
+      },
+      {
+        "page": 4,
+        "md_start_line": 83,
+        "md_end_line": 122,
+        "text_layer_sha256": "d400d983567f535520c62d1930bd8a0d24214f3c88855722bcb6b7406ca0fcd9",
+        "text_layer_char_count": 1019
+      },
+      {
+        "page": 5,
+        "md_start_line": 130,
+        "md_end_line": 158,
+        "text_layer_sha256": "077fde6db9f15f4a9ac7f343e5f1224d4b2b74216699967657ff46a03957460f",
+        "text_layer_char_count": 1016
+      },
+      {
+        "page": 6,
+        "md_start_line": 166,
+        "md_end_line": 208,
+        "text_layer_sha256": "ab7c0b62e22f0ac2266bf44da0bac00b1c14ee14b9871f8665a9e5258bf21f34",
+        "text_layer_char_count": 1316
+      },
+      {
+        "page": 7,
+        "md_start_line": 216,
+        "md_end_line": 239,
+        "text_layer_sha256": "e8f48d54929a5907598f4ebb47011c830e32ba3031944ad00e73872f072c7137",
+        "text_layer_char_count": 656
+      },
+      {
+        "page": 8,
+        "md_start_line": 247,
+        "md_end_line": 288,
+        "text_layer_sha256": "8b8776200953915e9d4125ef98cdb114d1a41b34aced820a6e275bff6a64d36f",
+        "text_layer_char_count": 1760
+      },
+      {
+        "page": 9,
+        "md_start_line": 296,
+        "md_end_line": 329,
+        "text_layer_sha256": "7c17f483613c69a4dbd6d3154301a951ef249b0b616b88c6ab8d899d627f31d4",
+        "text_layer_char_count": 1002
+      },
+      {
+        "page": 10,
+        "md_start_line": 337,
+        "md_end_line": 367,
+        "text_layer_sha256": "b8b80194b35859ff68a84388594f78e4b0b210689e7419341d2d13359a7e45bb",
+        "text_layer_char_count": 825
+      },
+      {
+        "page": 11,
+        "md_start_line": 375,
+        "md_end_line": 415,
+        "text_layer_sha256": "5cc1bebb4de171975888080c13969efb85da641d74081ed30ec70081f07ce78e",
+        "text_layer_char_count": 1309
+      },
+      {
+        "page": 12,
+        "md_start_line": 423,
+        "md_end_line": 469,
+        "text_layer_sha256": "eb62fe7afb05af9336fbacec8912a5d16ee5661d582a12c814743e9a4d1cb6e9",
+        "text_layer_char_count": 1801
+      },
+      {
+        "page": 13,
+        "md_start_line": 477,
+        "md_end_line": 523,
+        "text_layer_sha256": "24e21417d91c8bbee48df46ca7e5457e9b366b600740b8f3af51ea3805e287d8",
+        "text_layer_char_count": 1653
+      },
+      {
+        "page": 14,
+        "md_start_line": 531,
+        "md_end_line": 577,
+        "text_layer_sha256": "1208996ad767bd1f4172a5c9dd943ee27ca690877b05098130b9450931768a61",
+        "text_layer_char_count": 2137
+      },
+      {
+        "page": 15,
+        "md_start_line": 585,
+        "md_end_line": 631,
+        "text_layer_sha256": "14d35548349cef16820169f8ef365a22874130be37ca55ed1134868100b4e071",
+        "text_layer_char_count": 1986
+      },
+      {
+        "page": 16,
+        "md_start_line": 639,
+        "md_end_line": 668,
+        "text_layer_sha256": "de1b64d604fa6ebaf66597869e721533e8c0ff370873f5591ec2c654924075e7",
+        "text_layer_char_count": 878
+      },
+      {
+        "page": 17,
+        "md_start_line": 676,
+        "md_end_line": 677,
+        "text_layer_sha256": "94309b5428562099f6f846d2592f192afce8436d1f938ba127ee256533887601",
+        "text_layer_char_count": 70
+      },
+      {
+        "page": 18,
+        "md_start_line": 685,
+        "md_end_line": 694,
+        "text_layer_sha256": "409d4f5761b520abbc62fd0ca0d81018691ea1edad5d3548cd55c43a90a1a769",
+        "text_layer_char_count": 268
+      },
+      {
+        "page": 19,
+        "md_start_line": 702,
+        "md_end_line": 705,
+        "text_layer_sha256": "7d884dc94de9741c0e3c066d48dd77bb0c64f311f24114ee7812e42bc739ccb0",
+        "text_layer_char_count": 29
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        2,
+        7,
+        10
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "代码段在 PDF/提取文本中有省略、缺行和 OCR 错误；无法确认完整依赖或语法，本文未补写也未执行。示例禁用 fail-safe，但未讨论由此产生的风险。",
+        "pages": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "status": "已放大核对；实现完整性与安全性待作者代码源确认"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260119_GUI_Agent_From_Zero.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "e9aecdb325366a466ac90d1ab0a78e9a7c91c46fde474382f642028cef2b4c00",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/桌面Agent与工作流.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_GUI Agent 入门.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

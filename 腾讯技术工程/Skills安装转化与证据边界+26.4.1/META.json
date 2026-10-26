@@ -1,0 +1,399 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0072",
+  "title": "3.3万个Skills，为什么大多数都死在“安装”这一步？",
+  "short_title": "Skills安装转化与证据边界",
+  "account": "腾讯技术工程",
+  "author": "Rambo, sherry, laven",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-04-01T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0401 Tencent Skills Installation.pdf",
+      "original_filename": "0401 Tencent Skills Installation.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "c8a266d2b5d96483c6c4327c58537b5f6756bf965aabd40c73cb233e4af696b8",
+      "size_bytes": 2786551,
+      "page_count": 7,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "⚠️[原文疑点] 安装效率正文为每千次下载的安装数，表头却为%，不可直接换算",
+          "pages": [
+            2,
+            3
+          ],
+          "status": "unresolved"
+        },
+        {
+          "description": "⚠️[材料缺失] 开发/编程供给条形右端超出可见图域，精确数量不可辨认",
+          "pages": [
+            2
+          ],
+          "status": "unresolved"
+        },
+        {
+          "description": "⚠️[原文疑点] 头部成功特征实际可见四项，正文称五条，未补造缺项",
+          "pages": [
+            3,
+            4
+          ],
+          "status": "unresolved"
+        },
+        {
+          "description": "Key与安装量对比为单次快照观察性分析，未做因果识别；p.7作者评论还提示安装统计偏小",
+          "pages": [
+            5,
+            7
+          ],
+          "status": "attributed"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区"
+    }
+  ],
+  "tags": [
+    "因果推断与评测归因",
+    "决策方法",
+    "模型与开发工具发布",
+    "Agent评测与反馈",
+    "Skill设计与治理"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Skills安装转化与证据边界+26.4.1",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Skills安装转化与证据边界.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "3 . 3 万个 Skills ,为什么大多数都死在“安装”这一步?\n腾讯程序员 Apr  1 , 2026 , 2 : 36  AM广东原创 腾讯技术工程 33  listened\n作者:Rambo , sherry , laven\n我们拆了 2026 年 3 月 24 日的一份 Clawhub 公开数据快照,样本共 33,760 个 skills 。\n这个市场的问题,不是供给不足,而是大部分供给没有穿过安装这道门。\n下一阶段真正会赢的,不是功能最多的,也不是概念最大的,而是那些能让用户迅速完成一个动\n作、迅速看到结果、迅速形成依赖的  skill 。\n这意味着 Clawhub 已经不缺供给,缺的是能真正形成安装的供给。很多 skill 完成了曝光,没有完\n成安装,而安装,已经明显向头部集中。\n一、问题不在供给,在安装 \n先看这份  2026 年  3 月  24 日核心数据\n📦 33,760\nSkills 总量\n⬇ 23,269,103\n总下载次数\n📥 185,212\n总安装次数\n⭐ 41,357\n总点赞数\n下载量看起来很壮观,但继续往下拆,问题就暴露了\n中位数真相:下载中位数  198 |安装中位数  0 |点赞中位数  0 大多数  skill 有下载,但没有安装,\n也没有点赞。\n指标 数值 说明\n零安装占比 57.5% 超过一半的  skill 从未被安装\n谁先成为入口,谁才配留在桌面上。\n",
+    "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区",
+    "full_title_in_capture": "3.3万个Skills，为什么大多数都死在“安装”这一步？",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0072",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "c8a266d2b5d96483c6c4327c58537b5f6756bf965aabd40c73cb233e4af696b8"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "⚠️[原文疑点] 安装效率正文为每千次下载的安装数，表头却为%，不可直接换算",
+        "pages": [
+          2,
+          3
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "⚠️[材料缺失] 开发/编程供给条形右端超出可见图域，精确数量不可辨认",
+        "pages": [
+          2
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "⚠️[原文疑点] 头部成功特征实际可见四项，正文称五条，未补造缺项",
+        "pages": [
+          3,
+          4
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "Key与安装量对比为单次快照观察性分析，未做因果识别；p.7作者评论还提示安装统计偏小",
+        "pages": [
+          5,
+          7
+        ],
+        "status": "attributed"
+      }
+    ],
+    "outputs": [
+      "AI_Skills安装转化与证据边界.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        5,
+        7
+      ]
+    },
+    "coverage": "覆盖总量分布、类别供给、安装效率、任务特征、头部/垂直案例、行业难点和配置成本；明确图右端裁切、单位冲突与观察性证据边界，评论统计限制单独归因。",
+    "fact_checks": [
+      {
+        "item": "快照样本",
+        "value": "33,760个Skills，2026-03-24",
+        "pages": [
+          1
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "安装中位数",
+        "value": "0",
+        "pages": [
+          1
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "零安装比例",
+        "value": "57.5%",
+        "pages": [
+          1
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "Top100安装占比",
+        "value": "50.4%",
+        "pages": [
+          2
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "Key分组均值",
+        "value": "无需Key 11.4；需要Key 3.5",
+        "pages": [
+          5
+        ],
+        "result": "matches_pdf"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Skills安装转化与证据边界.md",
+      "sha256": "23348d9c6ee6460f98e6bb22b8c8e5f1f30ca903c0d90f1040c92218b8418d12"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "c8a266d2b5d96483c6c4327c58537b5f6756bf965aabd40c73cb233e4af696b8"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "8b8a650904da39bdff0f7f164562fe902f8c67f9644bfe311b7afa7414f4bae7"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 34,
+        "text_layer_sha256": "07193c84c421c39a2655fe068e864ee9ef3e71077a311671ee1076720898ab80",
+        "text_layer_char_count": 610
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 71,
+        "text_layer_sha256": "d04b95225bae716285fa0332a6a10dd132b2a0307cbf676c064c89f6a5ae153a",
+        "text_layer_char_count": 660
+      },
+      {
+        "page": 3,
+        "md_start_line": 79,
+        "md_end_line": 110,
+        "text_layer_sha256": "fbcf830592440dc4cd45b7617d98ec3c6fa18498b73d711f770ce074e5d27a7a",
+        "text_layer_char_count": 721
+      },
+      {
+        "page": 4,
+        "md_start_line": 118,
+        "md_end_line": 148,
+        "text_layer_sha256": "41137f8a088a0a1de53cd3d80b1198cd673841a0158f68b4a485e5b17f33ad0e",
+        "text_layer_char_count": 741
+      },
+      {
+        "page": 5,
+        "md_start_line": 156,
+        "md_end_line": 185,
+        "text_layer_sha256": "4ee31f2ac13c315752b118527a555110c1b92878de5ab9420c9548bc4923cb4c",
+        "text_layer_char_count": 821
+      },
+      {
+        "page": 6,
+        "md_start_line": 193,
+        "md_end_line": 213,
+        "text_layer_sha256": "d28734aafdf578c3b4190e3157fb0d720e5ebcf863ddf582d7f8d890aad46a58",
+        "text_layer_char_count": 376
+      },
+      {
+        "page": 7,
+        "md_start_line": 221,
+        "md_end_line": 245,
+        "text_layer_sha256": "92514ac3555d37e9822db94f85ee44508c3f85c9dbd26bccf0323c0d80aa95ce",
+        "text_layer_char_count": 375
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        5,
+        7
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "⚠️[原文疑点] 安装效率正文为每千次下载的安装数，表头却为%，不可直接换算",
+        "pages": [
+          2,
+          3
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "⚠️[材料缺失] 开发/编程供给条形右端超出可见图域，精确数量不可辨认",
+        "pages": [
+          2
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "⚠️[原文疑点] 头部成功特征实际可见四项，正文称五条，未补造缺项",
+        "pages": [
+          3,
+          4
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "Key与安装量对比为单次快照观察性分析，未做因果识别；p.7作者评论还提示安装统计偏小",
+        "pages": [
+          5,
+          7
+        ],
+        "status": "attributed"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0401 Tencent Skills Installation.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "c8a266d2b5d96483c6c4327c58537b5f6756bf965aabd40c73cb233e4af696b8",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Skill设计与治理.md",
+      "../../20_topics/决策方法.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Skills安装转化与证据边界.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

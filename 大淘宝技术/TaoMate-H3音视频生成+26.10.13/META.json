@@ -1,0 +1,321 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0186",
+  "title": "淘宝TaoMate-H3开源：三步生成「分钟级」音视频连续创作",
+  "short_title": "TaoMate-H3音视频生成",
+  "account": "大淘宝技术",
+  "author": "祁隽",
+  "author_byline": "本文作者祁隽，来自淘天集团-直播 AIGC 团队。",
+  "source_url": null,
+  "published_at": "2026-10-13",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "直播技术团队 2026年10月13日 19:27 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 9,
+      "text": "本文作者祁隽，来自淘天集团-直播 AIGC 团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "模型架构与训练",
+    "大模型推理与算子优化",
+    "模型与开发工具发布"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/淘宝TaoMate-H3开源：三步生成「分钟级」音视频连续创作.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T02:20:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "3abef6c3723912b65adda452a0a8eb3fdcdf75009ea84f922daa325322fb4186",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.1-5包含微信内嵌演示视频静态封面帧（带时长角标），动态音视频效果无法在静态PDF中播放，核心技术机制与8×H20实测数据在p.5-8完整给出。",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "verification_status": "actual_text_review"
+        }
+      ],
+      "size_bytes": 13189789,
+      "page_count": 10
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T02:20:00-07:00",
+  "directory": "大淘宝技术/TaoMate-H3音视频生成+26.10.13",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_TaoMate-H3音视频生成.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0186",
+    "created_at": "2026-10-20T02:20:00-07:00",
+    "updated_at": "2026-10-20T02:20:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "3abef6c3723912b65adda452a0a8eb3fdcdf75009ea84f922daa325322fb4186"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "a21c30b7fcc11226f8cd8b0bae554ea929d378a310a2e9fbd0ac34ed3a7fe6c7"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.1-5包含微信内嵌演示视频静态封面帧（带时长角标），动态音视频效果无法在静态PDF中播放，核心技术机制与8×H20实测数据在p.5-8完整给出。",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7
+        ],
+        "verification_status": "actual_text_review"
+      }
+    ],
+    "outputs": [
+      "AI_TaoMate-H3音视频生成.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_TaoMate-H3音视频生成.md",
+      "sha256": "f20101edc5b8b99054e7e8b956e4706b3b6c8a896ad5d9eb1c628084e8e6c91f"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T02:20:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "3abef6c3723912b65adda452a0a8eb3fdcdf75009ea84f922daa325322fb4186"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "a21c30b7fcc11226f8cd8b0bae554ea929d378a310a2e9fbd0ac34ed3a7fe6c7"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "md_end_line": 40,
+        "md_start_line": 14,
+        "page": 1,
+        "text_layer_char_count": 565,
+        "text_layer_sha256": "931d8fa561a4d1a0f47c838578e11af930fbdb9cb7f81de7f6160486743d9743"
+      },
+      {
+        "md_end_line": 77,
+        "md_start_line": 50,
+        "page": 2,
+        "text_layer_char_count": 660,
+        "text_layer_sha256": "32e195d221ccf9de2f171baeb7c828200f9b94aa722848a11492654f6ec2e98e"
+      },
+      {
+        "md_end_line": 107,
+        "md_start_line": 87,
+        "page": 3,
+        "text_layer_char_count": 264,
+        "text_layer_sha256": "3b528b63d96f891176bc64982a3038dbb4988a9bbb2b067f37094d6e51d4195e"
+      },
+      {
+        "md_end_line": 132,
+        "md_start_line": 117,
+        "page": 4,
+        "text_layer_char_count": 309,
+        "text_layer_sha256": "1e91aad0a79e3090e44b99f1898c16f734615db7a1e924c970fbf9e5b492b0d2"
+      },
+      {
+        "md_end_line": 165,
+        "md_start_line": 142,
+        "page": 5,
+        "text_layer_char_count": 490,
+        "text_layer_sha256": "8934284b533b0097de7041d13affc33ca6a4e4fd85e5c082ab9e939e9fd2e5c6"
+      },
+      {
+        "md_end_line": 212,
+        "md_start_line": 175,
+        "page": 6,
+        "text_layer_char_count": 957,
+        "text_layer_sha256": "8eb6bccf7e3840c867912c992cd5cf7039c9211aa477e30457ebc8f3514cd290"
+      },
+      {
+        "md_end_line": 267,
+        "md_start_line": 222,
+        "page": 7,
+        "text_layer_char_count": 882,
+        "text_layer_sha256": "de33c016716165c7a75d22f29eba0d89de9ee95dda0dd5812c2288870701abc5"
+      },
+      {
+        "md_end_line": 324,
+        "md_start_line": 277,
+        "page": 8,
+        "text_layer_char_count": 596,
+        "text_layer_sha256": "325e0df5bfae6496750a67ffc24db7c38257f4d27162d4c35b676fe5b954f39e"
+      },
+      {
+        "md_end_line": 371,
+        "md_start_line": 334,
+        "page": 9,
+        "text_layer_char_count": 628,
+        "text_layer_sha256": "ee4aa15d666033eca0dc1b0f062097518155e1fa4e56620be71a82b9f0d9e2f2"
+      },
+      {
+        "md_end_line": 382,
+        "md_start_line": 381,
+        "page": 10,
+        "text_layer_char_count": 11,
+        "text_layer_sha256": "93ef397fab818d24a5c83f698a4c9fa6948ba59b67898d4ba5afecdd561864bb"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.1-5包含微信内嵌演示视频静态封面帧（带时长角标），动态音视频效果无法在静态PDF中播放，核心技术机制与8×H20实测数据在p.5-8完整给出。",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7
+        ],
+        "verification_status": "actual_text_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/大模型推理与算子优化.md",
+      "../../20_topics/模型与开发工具发布.md",
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed_sources_removed",
+    "copied_at": "2026-10-20T02:20:00-07:00",
+    "removed_at": "2026-10-20T02:26:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝TaoMate-H3开源：三步生成「分钟级」音视频连续创作.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "3abef6c3723912b65adda452a0a8eb3fdcdf75009ea84f922daa325322fb4186",
+        "copied_at": "2026-10-20T02:20:00-07:00",
+        "removed_at": "2026-10-20T02:26:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_TaoMate-H3音视频生成.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

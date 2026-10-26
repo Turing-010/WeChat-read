@@ -1,0 +1,381 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0015",
+  "title": "改变世界前先认识世界-Ontology 决策结构化实践",
+  "short_title": "Ontology决策结构化",
+  "account": "大淘宝技术",
+  "author": "汀叶",
+  "author_byline": "本文作者汀叶,来自淘天集团-商家与开放平台团队。团队聚焦淘天商家工具的持续升级,通",
+  "source_url": null,
+  "published_at": "2026-09-27",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "description": "PDF第1页标题、公众号和日期与下载总结的frontmatter、主题相符；署名取PDF团队介绍页。",
+    "pdf_page": 1,
+    "header_text": "改变世界前先认识世界 : Ontology  决策结构化实践\n供给技术团队 2026 年 9 月 27 日 23 : 47江苏原创 大淘宝技术 24 人\n本文介绍了商家财务团队通过 Ontology(本体)与决策结构化实践,实现 Agent 工\n作全托管的经验。团队摒弃了预设固定 workflow 或打包 Skill 的传统方式,将业务知\n识建模为包含业务、系统、交付和治理四层的 Ontology 图谱,并将专家判断固化为可\n执行的 decision_fu nction。Agent 在执行时严格遵循“先取证、再决策、后行动”的闭\n环,根据证据动态生成工作流,完成需求开发、工单处理及数据订正等 120 多项任务。\n同时,团队采用碎片化知识积累模式,每天沉淀小决策产生复利。实践证明,模型和编\n排",
+    "author_pdf_page": 15,
+    "download_summary_frontmatter": "title: \"改变世界前先认识世界：Ontology 决策结构化实践\"\nsource: \"大淘宝技术公众号（原创，作者汀叶，淘天集团-商家与开放平台团队）\"\ndate: 2026-09-27\ntype: 方法论与案例型\ntags:\n  - Agent\n  - Ontology\n  - decision_function\n  - 知识工程\n  - 全托管\n  - 案例\nstatus: 待复习"
+  },
+  "tags": [
+    "决策知识结构化",
+    "Agent工程循环",
+    "Agent长期记忆"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/改变世界前先认识世界-Ontology 决策结构化实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-12T00:38:05-07:00",
+      "provenance": "用户已收集的公众号PDF；本次从inbox复制归档，原采集方式与时间未知",
+      "sha256": "2e79369e2aa4668510585b9b89a63b521952efdf5ffd987b60c79650fbec8d00",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "原文URL、采集时间与显示时间的时区未确认；未联网核查来源或技术事实。",
+          "verification_status": "unverified"
+        },
+        {
+          "description": "全部页已提取文本层；图片内容、代码框长行与表格版面尚未逐页视觉核验。",
+          "verification_status": "pending_visual_review"
+        }
+      ],
+      "size_bytes": 8213256,
+      "page_count": 16
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-12T00:38:05-07:00",
+  "directory": "大淘宝技术/Ontology决策结构化+26.9.27",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Ontology决策结构化.md"
+  },
+  "received_artifacts": [
+    {
+      "artifact_id": "summary-001",
+      "kind": "external_ai_summary",
+      "path": "AI_Ontology决策结构化.md",
+      "original_path": "/Users/iw/Downloads/改变世界前先认识世界 26·09·27.md",
+      "received_at": "2026-10-12T00:38:05-07:00",
+      "generated_at": null,
+      "model": null,
+      "prompt_version": null,
+      "sha256": "461f8f6c80466e0e377e266cde4444c8cbe1cdf6eab20aaafdc986181f3a5dee",
+      "size_bytes": 24268,
+      "provenance": "用户用其他模型生成并下载的AI总结；原样保存，未重新生成",
+      "verification_status": "identity_matched_content_not_fully_verified",
+      "candidate_wikilinks": [
+        "Agent 治理与人机协同",
+        "Agent 编排与 workflow",
+        "Agent 评测与回归测试",
+        "LangGraph",
+        "MCP 与工具调用",
+        "Ontology",
+        "Palantir Ontology",
+        "RAG 知识库",
+        "Skill 设计",
+        "知识图谱",
+        "金字塔原理"
+      ],
+      "wikilink_status": "保留原下载文本中的候选知识关联；并不表示目标笔记均已创建"
+    }
+  ],
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0015",
+    "created_at": "2026-10-12T00:38:05-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "2e79369e2aa4668510585b9b89a63b521952efdf5ffd987b60c79650fbec8d00"
+      },
+      {
+        "artifact_id": "summary-001",
+        "path": "AI_Ontology决策结构化.md",
+        "sha256": "a71a995dbe5f16b49d72deb8b8a979f847b0098094f7dc3d8fafd5917956a35e"
+      }
+    ],
+    "method": "本次导入外部AI总结，核对身份，并以PDF文本及收到的总结补充跨文章主题知识。原总结生成过程未知；本次不重写AI总结。",
+    "tools": [
+      "本地文件读取",
+      "pypdf",
+      "pdfplumber",
+      "Python标准库",
+      "pdftoppm（首面渲染并查看）"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages_for_MD_only",
+    "quality_issues": [
+      {
+        "description": "原文URL、采集时间与显示时间的时区未确认；未联网核查来源或技术事实。",
+        "verification_status": "unverified"
+      },
+      {
+        "description": "全部页已提取文本层；图片内容、代码框长行与表格版面尚未逐页视觉核验。",
+        "verification_status": "pending_visual_review"
+      },
+      {
+        "description": "外部AI总结的生成模型、提示词、原始输入版本与生成时间未知；其校对报告及图中解读属于外部总结的自述，不能直接视为本次核验结论。",
+        "verification_status": "external_summary_not_fully_verified"
+      },
+      {
+        "description": "下载总结含图中无法辨认、原文疑点或推断说明；原样保留。",
+        "verification_status": "reported_by_external_summary",
+        "report_path": "AI_Ontology决策结构化.md",
+        "reported_markers_count": 5
+      }
+    ],
+    "outputs": [
+      "AI_Ontology决策结构化.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "generated_summary": {
+      "path": "AI_Ontology决策结构化.md",
+      "sha256": "461f8f6c80466e0e377e266cde4444c8cbe1cdf6eab20aaafdc986181f3a5dee"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-12T00:38:05-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "2e79369e2aa4668510585b9b89a63b521952efdf5ffd987b60c79650fbec8d00"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "daf35b058ac9165d3cf6b0cac46b266df32edf95bc2a8173587651f2baa00a30"
+    },
+    "extractor": "pdfplumber 0.11.9; Page.extract_text",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "text_layer_extracted_layout_not_fully_verified",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 14,
+        "md_end_line": 31,
+        "text_layer_sha256": "6d97ea3502a7bd7054c38a34c81112705f345d057d23270aca5448b7f1bfde5d",
+        "text_layer_char_count": 700,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 2,
+        "md_start_line": 41,
+        "md_end_line": 59,
+        "text_layer_sha256": "b93e9ee1e9eca7b85c10f2d4fd2ad79782afe2d9326e8f9c3d7e143383ad53d8",
+        "text_layer_char_count": 598,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 3,
+        "md_start_line": 69,
+        "md_end_line": 90,
+        "text_layer_sha256": "f3b82eb63b0410aa4e4c71936574a66e187d9ebfdf98dbe7c660c1d0d0d126c3",
+        "text_layer_char_count": 590,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 4,
+        "md_start_line": 100,
+        "md_end_line": 115,
+        "text_layer_sha256": "aef6043d66225f9cb2ee11e3c5f43c76c78a2ff208e81eec5551fb561e1faf79",
+        "text_layer_char_count": 610,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 5,
+        "md_start_line": 125,
+        "md_end_line": 145,
+        "text_layer_sha256": "4bbf90ad71adca5c5654fea8f22354b12842a50a6515cba25ce364be1401b88a",
+        "text_layer_char_count": 658,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 6,
+        "md_start_line": 155,
+        "md_end_line": 175,
+        "text_layer_sha256": "0a87f9c7bbcb7edfd07420bf03f9468d99782cad13dbfbcf6033494657c283ce",
+        "text_layer_char_count": 783,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 7,
+        "md_start_line": 185,
+        "md_end_line": 219,
+        "text_layer_sha256": "4814d846648faed70a376baadb04d707dec1dcac9eb5c3c8f1c01c32fb17b01e",
+        "text_layer_char_count": 1092,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 8,
+        "md_start_line": 229,
+        "md_end_line": 252,
+        "text_layer_sha256": "4c44063ed6a63c0494db0448729ae2e5dd4b563ceed9972b9ef0dcbf76fc9ec7",
+        "text_layer_char_count": 1113,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 9,
+        "md_start_line": 262,
+        "md_end_line": 285,
+        "text_layer_sha256": "837aa20f606efa8257144ad1292f24f555b67a83ec9737fa6471e623347dbc30",
+        "text_layer_char_count": 1111,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 10,
+        "md_start_line": 295,
+        "md_end_line": 312,
+        "text_layer_sha256": "c9b790bf3acdc0c5ccb201c385105054d7ab0d158ff798513cd7efe9644c770d",
+        "text_layer_char_count": 526,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 11,
+        "md_start_line": 322,
+        "md_end_line": 346,
+        "text_layer_sha256": "2320d7eddd9d7d19319b61af09f9e9c22d396fb9ce1e6822f4c63f9202d01132",
+        "text_layer_char_count": 1054,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 12,
+        "md_start_line": 356,
+        "md_end_line": 384,
+        "text_layer_sha256": "fd5629f3bea84059f2bd273a12f290e539692d5e397929aa4a3864eaa9881dbc",
+        "text_layer_char_count": 1135,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 13,
+        "md_start_line": 394,
+        "md_end_line": 404,
+        "text_layer_sha256": "583e2d44aca62e82b0ab1fb742b1aaea014fd5dcafe718bdebe58c9fb005037f",
+        "text_layer_char_count": 452,
+        "image_objects": 3,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 14,
+        "md_start_line": 414,
+        "md_end_line": 432,
+        "text_layer_sha256": "5833811bba211f39e9347f4237e94ae2b5bb926452da26953307467378e27ce8",
+        "text_layer_char_count": 730,
+        "image_objects": 3,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 15,
+        "md_start_line": 442,
+        "md_end_line": 456,
+        "text_layer_sha256": "74349636656cc22c2cc263152bfd27f40b6e16d9e450e389f3e7726b3a851e2c",
+        "text_layer_char_count": 273,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 16,
+        "md_start_line": 466,
+        "md_end_line": 466,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_extracted": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "identity_text_pages_reviewed": [
+        1,
+        15
+      ],
+      "visual_pages_reviewed": [
+        1
+      ],
+      "detail_text_pages_reviewed": [
+        5,
+        13
+      ]
+    }
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent数据分析.md",
+      "../../20_topics/Agent长期记忆.md",
+      "../../20_topics/决策知识结构化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充主题知识；不改变本人记录或自动加入工具库",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed_sources_removed",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/改变世界前先认识世界-Ontology 决策结构化实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "2e79369e2aa4668510585b9b89a63b521952efdf5ffd987b60c79650fbec8d00",
+        "removed_at": "2026-10-12T00:44:57-07:00"
+      },
+      {
+        "original_path": "/Users/iw/Downloads/改变世界前先认识世界 26·09·27.md",
+        "destination_path": "AI_Ontology决策结构化.md",
+        "sha256": "a71a995dbe5f16b49d72deb8b8a979f847b0098094f7dc3d8fafd5917956a35e",
+        "removed_at": "2026-10-12T00:44:57-07:00"
+      }
+    ],
+    "copied_at": "2026-10-12T00:38:05-07:00",
+    "removed_at": "2026-10-12T00:44:57-07:00"
+  },
+  "ai_note": "AI_Ontology决策结构化.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

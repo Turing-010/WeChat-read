@@ -1,0 +1,403 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0047",
+  "title": "连续五天登上 GitHub Trending 首页的思考",
+  "short_title": "AI开源工程与社区循环",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "李峥峰",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-11T03:18",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "Aug 11, 2026, 3:18 AM",
+  "published_timezone": null,
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "text": [
+      "连续五天登上 GitHub Trending ⾸⻚的思考",
+      "原创 李峥峰 阿⾥技术 Aug 11, 2026, 3:18 AM 浙江 31 listened",
+      "这是2026年的第 49 篇⽂章"
+    ]
+  },
+  "tags": [
+    "AI研发协同",
+    "Agent工程循环",
+    "问题澄清"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/连续五天登上 GitHub Trending 首页的思考.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:47:41-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "cc4d21e7116727c22ff4343d1d1a99102450de1e09d94c9533d039404d7dd9b2",
+      "size_bytes": 3636514,
+      "page_count": 11,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "100个正式版本与两个月89版本统计窗口/类别未解释",
+          "pages": [
+            3,
+            5,
+            8
+          ],
+          "evidence_type": "text",
+          "classification": "source_ambiguity"
+        },
+        {
+          "description": "7月23–28区间与连续5天措辞口径未说明",
+          "pages": [
+            9
+          ],
+          "evidence_type": "table",
+          "classification": "source_ambiguity"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:47:41-07:00",
+  "directory": "阿里技术/AI开源工程与社区循环+26.8.11",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI开源工程与社区循环.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0047",
+    "created_at": "2026-10-13T02:47:41-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "cc4d21e7116727c22ff4343d1d1a99102450de1e09d94c9533d039404d7dd9b2"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "100个正式版本与两个月89版本统计窗口/类别未解释",
+        "pages": [
+          3,
+          5,
+          8
+        ],
+        "evidence_type": "text",
+        "classification": "source_ambiguity"
+      },
+      {
+        "description": "7月23–28区间与连续5天措辞口径未说明",
+        "pages": [
+          9
+        ],
+        "evidence_type": "table",
+        "classification": "source_ambiguity"
+      }
+    ],
+    "outputs": [
+      "AI_AI开源工程与社区循环.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [
+      {
+        "kind": "skill",
+        "status": "names_only",
+        "pages": [
+          5
+        ],
+        "description": "八个维护Skill仅名称与职责，无完整Prompt/Skill正文，不创建文件"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        6,
+        9
+      ]
+    },
+    "coverage": [
+      {
+        "name": "定位与最小交付",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "易用性与响应",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      {
+        "name": "All in Code及决策事故",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "name": "社区传播和三层条件",
+        "pages": [
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "总结时间线与统计补充",
+        "pages": [
+          9,
+          11
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_AI开源工程与社区循环.md",
+      "sha256": "36c5ae03fa75bb0f6eb3019d0047d217e4495951f2bfea59014a4355831b28f0"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:47:41-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "cc4d21e7116727c22ff4343d1d1a99102450de1e09d94c9533d039404d7dd9b2"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "8224f452324a91964751ac68e2de19259789d6ebccbea3a7a416a6adf608137c"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 23,
+        "text_layer_sha256": "b6e7dbd4a3285a4452749211cfe37b68e2f05050dfb71e292722785bbe9d1799",
+        "text_layer_char_count": 389
+      },
+      {
+        "page": 2,
+        "md_start_line": 31,
+        "md_end_line": 64,
+        "text_layer_sha256": "dc7b23b49bb4aac1f62f16c5b5971ea90c33e7b0fe9dbb55b6792300352a9595",
+        "text_layer_char_count": 1229
+      },
+      {
+        "page": 3,
+        "md_start_line": 72,
+        "md_end_line": 103,
+        "text_layer_sha256": "5a1632622f337165cc7c5aced2ff6bd56ce847e91742015811b16150df2800c2",
+        "text_layer_char_count": 1080
+      },
+      {
+        "page": 4,
+        "md_start_line": 111,
+        "md_end_line": 139,
+        "text_layer_sha256": "823600d65d83052478a17ae8527d2d3726af0b2e3d61c733517f9b9659d23534",
+        "text_layer_char_count": 952
+      },
+      {
+        "page": 5,
+        "md_start_line": 147,
+        "md_end_line": 178,
+        "text_layer_sha256": "cca228a7c83bac129066bcd8ad4be3f365af1ad60d1c6eac1af6355d1f04e41b",
+        "text_layer_char_count": 1006
+      },
+      {
+        "page": 6,
+        "md_start_line": 186,
+        "md_end_line": 216,
+        "text_layer_sha256": "30429adddc4195605495e5ca529d5897ff00e203fc23ad847238dbf573ffd6cc",
+        "text_layer_char_count": 1048
+      },
+      {
+        "page": 7,
+        "md_start_line": 224,
+        "md_end_line": 248,
+        "text_layer_sha256": "4725b177b511d3fda465adcb0066961bcea50c1506ed79d235c8cecc1b504fd0",
+        "text_layer_char_count": 753
+      },
+      {
+        "page": 8,
+        "md_start_line": 256,
+        "md_end_line": 284,
+        "text_layer_sha256": "96e1dbf6223f3aef3c801d3db5bfe516eff14bdabd0a42a2fd03ea9d8d03db63",
+        "text_layer_char_count": 756
+      },
+      {
+        "page": 9,
+        "md_start_line": 292,
+        "md_end_line": 315,
+        "text_layer_sha256": "f66ac0e74c79052a359bc5151064150c74364af6c74fd75290b6ea1c2a317497",
+        "text_layer_char_count": 677
+      },
+      {
+        "page": 10,
+        "md_start_line": 323,
+        "md_end_line": 330,
+        "text_layer_sha256": "3a665df451f090e15cc92e05905944e9cc5051c60098a7983f86b134763a3b2e",
+        "text_layer_char_count": 78
+      },
+      {
+        "page": 11,
+        "md_start_line": 338,
+        "md_end_line": 354,
+        "text_layer_sha256": "31aa9490c0b16062a0d35c1defec9ce722510b2f7d6583722e45b71f45fe69e6",
+        "text_layer_char_count": 364
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        6,
+        9
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "100个正式版本与两个月89版本统计窗口/类别未解释",
+        "pages": [
+          3,
+          5,
+          8
+        ],
+        "evidence_type": "text",
+        "classification": "source_ambiguity"
+      },
+      {
+        "description": "7月23–28区间与连续5天措辞口径未说明",
+        "pages": [
+          9
+        ],
+        "evidence_type": "table",
+        "classification": "source_ambiguity"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md",
+      "../../20_topics/问题澄清.md"
+    ],
+    "proposed_topics": [
+      "AI研发协同",
+      "Agent评测与反馈",
+      "问题澄清"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:47:41-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/连续五天登上 GitHub Trending 首页的思考.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "cc4d21e7116727c22ff4343d1d1a99102450de1e09d94c9533d039404d7dd9b2",
+        "copied_at": "2026-10-13T02:47:41-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

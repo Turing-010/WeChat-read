@@ -1,0 +1,411 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0162",
+  "title": "从胡言乱语到精准改代码：我是如何让 AI 读懂老项目的",
+  "short_title": "AI 读懂老项目",
+  "account": "腾讯技术工程",
+  "author": "被删",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-07T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/从胡言乱语到精准改代码：我是如何让 AI 读懂老项目的.pdf",
+      "original_filename": "从胡言乱语到精准改代码：我是如何让 AI 读懂老项目的.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "025fad9b7285f1481c34b8d3436bf5c7f79d77fbe27657332ab415fbdb6f7e6a",
+      "size_bytes": 4560350,
+      "page_count": 12,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "这是个人项目实践，未提供定量对照；AI MR review 被明确限制为审查辅助，运行验证仍需单独完成。",
+          "pages": [
+            6,
+            8,
+            9,
+            10
+          ],
+          "status": "已标注经验边界"
+        }
+      ],
+      "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。"
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "AI研发协同",
+    "检索与文档解析",
+    "解决问题"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/AI 读懂老项目+26.8.7",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI 读懂老项目.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "从胡言乱语到精准改代码:我是如何让 AI  读懂老项目的\n腾讯程序员 Aug  7 , 2026 , 2 : 36  AM广东原创 腾讯技术工程 265  listened\n作者:被删\n在  AI 很强的现在,依然很多人会认为,AI 更适用于新项目快速迭代,但很难在一个背负着沉\n重的历史包袱的项目中起到很大的用处。\n最近大半年都在重构项目,从前期使用  AI 依然困难重重,到如今  AI 能高效定位问题、给到十\n分贴合项目需要的解决方案,中间特别明显的一个转折点,在于开始给项目搭建  AI 上下文工\n程。\n当然,这一年来  AI 的能力本身也在不断加强,我们项目的质量和架构的合理性在我的努力重\n构下也在稳步提升,但  AI 上下文的搭建依然起到了十分关键的作用。\n今天给大家分享的,主要是如何在重构过程中,将  AI 总是胡言乱语,变成了  AI 也可高效助力\n的一个项目。\n思考: AI 提效到底是在提效什么?\n在过去的一年里, AI 的能力有大幅度的提升,从最初只能做点明确的小任务,到如今能协助\n排查问题、提出可落地的解决方案、自执行落地和自测等等,在我们工作中参与的幅度越来越\n大。\n如今很多新业务直接是  AI 原生项目,意味着从立项到上线,开发未亲自写过一行代码,基本\n上都是  AI 自行完成的。\n但即使在  AI 能力很强的今天,大家还是有些共识,比如一个历史债务很重的项目中, AI 能发\n挥的作用很少,还是需要开发的介入更多。\n这很大一部分原因是:AI 的上下文知识不够。\n业务瓶颈常在上下文\n其实  AI 和开发并没有太大的区别,很多时候区别只是在于,我们比  AI 拥有更多的上下文,这\n些上下文包括:\nAI 时代赋予  AI 的新角色: AI 铲屎官。\n",
+    "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。",
+    "full_title_in_capture": "从胡言乱语到精准改代码：我是如何让 AI 读懂老项目的",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0162",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "025fad9b7285f1481c34b8d3436bf5c7f79d77fbe27657332ab415fbdb6f7e6a"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "这是个人项目实践，未提供定量对照；AI MR review 被明确限制为审查辅助，运行验证仍需单独完成。",
+        "pages": [
+          6,
+          8,
+          9,
+          10
+        ],
+        "status": "已标注经验边界"
+      }
+    ],
+    "outputs": [
+      "AI_AI 读懂老项目.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        5,
+        8,
+        9
+      ]
+    },
+    "coverage": "覆盖老项目上下文建设：根目录 AGENTS.md 索引、业务/运行时/架构知识、清理废弃代码和过度设计、规则与组件库、分阶段测试、测试账号数据清理、视觉回归和 MR 审查边界。 PDF末页核查：p.12为公众号页脚/留言区，无新增方法内容。",
+    "fact_checks": [
+      {
+        "claim": "根目录 AGENTS.md 作为索引",
+        "page": "p.3",
+        "result": "作者实践"
+      },
+      {
+        "claim": "示例经过两轮重构",
+        "page": "p.6",
+        "result": "文章案例"
+      },
+      {
+        "claim": "测试分四阶段推进",
+        "page": "p.8",
+        "result": "作者提出的实施步骤"
+      },
+      {
+        "claim": "视觉验证分整屏与组件两层",
+        "page": "p.9",
+        "result": "文章方法"
+      },
+      {
+        "claim": "作者字段标为“被删”",
+        "page": "p.1",
+        "result": "PDF 页面署名原文"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_AI 读懂老项目.md",
+      "sha256": "9e99593fd65e69815273574921df0fb39afcd5d7d7fae8121e7b425f7503e7d9",
+      "size_bytes": 22388
+    },
+    "independent_crosscheck": {
+      "reviewer": "/root/crosscheck_b",
+      "note_sha256": "9e99593fd65e69815273574921df0fb39afcd5d7d7fae8121e7b425f7503e7d9",
+      "review_sha256": "5ec8c223b4ab9be744f8f133376d6130a49d2d8941408cbe7b8bd30855388e9d",
+      "status": "passed",
+      "changes": [
+        "Applied the required note structure: one H1, an explicit 复习卡片 section with one-line Q::A cards, and a final fully quoted folded 校对报告.",
+        "Checked all 12 physical pages; inspected the final blank/comment page in extracted text and page image, recorded the boundary in note and review, and aligned text_pages_read with the full physical page range."
+      ],
+      "source_spotchecks": [
+        {
+          "pages": [
+            3,
+            5,
+            6,
+            8,
+            9,
+            10
+          ],
+          "finding": "老项目知识索引、真实运行信息、分轮重构、四阶段测试与双层视觉回归均出现在来源；AI MR review 未被当作运行验证。"
+        },
+        {
+          "pages": [
+            1,
+            12
+          ],
+          "finding": "作者署名与末尾信息按原文标记；12 页文末/页脚边界及个人项目无量化对照的限制有记录。"
+        },
+        {
+          "pages": [
+            12
+          ],
+          "finding": "p.12抽取文本/页图为公众号页脚及留言区，无新方法说明。"
+        }
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "025fad9b7285f1481c34b8d3436bf5c7f79d77fbe27657332ab415fbdb6f7e6a"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "48a7045c6985811e79dab6674d94e5d9963e12de7f28c9453f32a81525ff6fec"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 34,
+        "text_layer_sha256": "1d2ca44dfd15af6e10fe211453f6fded7c3faef498fe6bb20df8c0762645210b",
+        "text_layer_char_count": 744
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 75,
+        "text_layer_sha256": "d7ff547211bf06cd409bb9587f60fb04cd2d0bd34c488b2ac085c021750f0160",
+        "text_layer_char_count": 1180
+      },
+      {
+        "page": 3,
+        "md_start_line": 83,
+        "md_end_line": 115,
+        "text_layer_sha256": "fc50d8e59ae4fa087ccff9538046193b0bf401e2d815598a63b04435c986be72",
+        "text_layer_char_count": 1043
+      },
+      {
+        "page": 4,
+        "md_start_line": 123,
+        "md_end_line": 135,
+        "text_layer_sha256": "9bd618ae23396f81d4f670632292570d2a694714607f1a661ff9e4e0854b4047",
+        "text_layer_char_count": 502
+      },
+      {
+        "page": 5,
+        "md_start_line": 143,
+        "md_end_line": 153,
+        "text_layer_sha256": "91ff92ddd2df87fdbe2154242d3ed33c80481710c57e13c6c81d664f744ae094",
+        "text_layer_char_count": 282
+      },
+      {
+        "page": 6,
+        "md_start_line": 161,
+        "md_end_line": 205,
+        "text_layer_sha256": "e08e66f597f097f9f98314cb6be96839aaec8e02f38a97505b460596465456d9",
+        "text_layer_char_count": 1053
+      },
+      {
+        "page": 7,
+        "md_start_line": 213,
+        "md_end_line": 234,
+        "text_layer_sha256": "dd9b46352d9c8c4fb065cf2f4279f11eb9dd81a4dc48f0a8168c3f4e4e4d2cec",
+        "text_layer_char_count": 728
+      },
+      {
+        "page": 8,
+        "md_start_line": 242,
+        "md_end_line": 287,
+        "text_layer_sha256": "e1f215daec51968c70631f7d16893d8e68806deb41f70473b0066ee7e208b16c",
+        "text_layer_char_count": 1147
+      },
+      {
+        "page": 9,
+        "md_start_line": 295,
+        "md_end_line": 309,
+        "text_layer_sha256": "b04b09dc5e3388fe01e01dcbed76746d803f6783fb2d40a7ef1e84a87d398d90",
+        "text_layer_char_count": 478
+      },
+      {
+        "page": 10,
+        "md_start_line": 317,
+        "md_end_line": 324,
+        "text_layer_sha256": "7c856d225c720b27c30710bad44840f153e80092a6423768402572747a4c1713",
+        "text_layer_char_count": 212
+      },
+      {
+        "page": 11,
+        "md_start_line": 332,
+        "md_end_line": 354,
+        "text_layer_sha256": "d0e7c8848b539ccbae41097a5c4a6b777c91bf65f6d9e352080b2f6a0b7f5168",
+        "text_layer_char_count": 592
+      },
+      {
+        "page": 12,
+        "md_start_line": 362,
+        "md_end_line": 366,
+        "text_layer_sha256": "c82530e35fe017900d6293a48071fc0a9f6d04b6a0191de2f06a483dc901968b",
+        "text_layer_char_count": 33
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        5,
+        8,
+        9
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "这是个人项目实践，未提供定量对照；AI MR review 被明确限制为审查辅助，运行验证仍需单独完成。",
+        "pages": [
+          6,
+          8,
+          9,
+          10
+        ],
+        "status": "已标注经验边界"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/从胡言乱语到精准改代码：我是如何让 AI 读懂老项目的.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "025fad9b7285f1481c34b8d3436bf5c7f79d77fbe27657332ab415fbdb6f7e6a",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md",
+      "../../20_topics/解决问题.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_AI 读懂老项目.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

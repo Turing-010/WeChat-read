@@ -1,0 +1,474 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0124",
+  "title": "打造 Jarvis，OpenClaw 很野，但 Agent Studio 简直变态",
+  "short_title": "Agent Studio 对比",
+  "account": "腾讯技术工程",
+  "author": "kong",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-01-30T01:08",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260130_OpenClaw_Agent_Studio.pdf",
+      "original_filename": "20260130_OpenClaw_Agent_Studio.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "077f61a96775f8a53699f9d7d10820e1665f237c572b3ed15633b1cb5d5fa3e4",
+      "size_bytes": 5486825,
+      "page_count": 19,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "产品能力、平台数量与本地/私有属性来自作者体验，未独立验证；功能随版本可能变化。示例命令含凭证形态字段，未在笔记复现。",
+          "pages": [
+            5,
+            8,
+            13,
+            14,
+            16
+          ],
+          "status": "按文章主张标记；不联网验证"
+        }
+      ],
+      "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。"
+    }
+  ],
+  "tags": [
+    "Agent工程循环",
+    "Harness与模型协同",
+    "Agent长期记忆",
+    "桌面Agent与工作流"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Agent Studio 对比+26.1.30",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Agent Studio 对比.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "打造 Jarvis , OpenClaw 很野,但 Agent  Studio 简直变态\n腾讯程序员 2026 年 1 月 30 日 01 : 08广东原创 腾讯技术工程 990 人\n作者:kong\n前言:每个人都想要一个  Jarvis\n还记得《钢铁侠》里的  Jarvis 吗?一个随时在线、无所不能的  AI 助手 —— 它能帮你处理工作、\n管理项目、分析数据、甚至还能和你闲聊几句。这不就是我们一直梦想的终极  AI 助手吗?\n在  AI Agent 领域,有不少项目都在朝着这个方向努力。比如  OpenClaw (原名 clawdbot ),它\n确实很 \" 野 \"—— 把  AI Agent 和  WhatsApp 、 Telegram 、 Discord 等消息应用打通,让你能在手机\n上随时随地和  AI 对话。听起来很酷对吧?\n但今天我要给你介绍一个更加 \" 丧心病狂 \" 的方案:Agent Studio。\n实际上,在企业微信上招呼  AI 干活,已经是我的日常,在通勤路上,吃饭时间等几乎全天候在\n与  AI 协同,全拜 Agent Studio 支撑。\n场景对比:从手机访问你的  AI Agent\nOpenClaw (原名 clawdbot ) 的方案\nOpenClaw (原名 clawdbot )的核心思路是:通过消息应用网关来访问  AI Agent 。\n它支持多个平台:\n📱  WhatsApp ( 通过  Baileys 协议 )\n丨  导语  OpenClaw (原名 clawdbot )突然就火了,了解后发现多终端协同的人机协同方式\n的 jarvis 正是自己的日常工作方式!在此之前,为了方便自己用  AI ,我基于  claude agent\nsdk 手搓了一整套工具链,打造自己的  Jarvis , IM 接入功能算是基操了。  本文带大家快速体\n验一下  Agent Studio 在企业微信快速接入过程。\n",
+    "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。",
+    "full_title_in_capture": "打造 Jarvis，OpenClaw 很野，但 Agent Studio 简直变态",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0124",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "077f61a96775f8a53699f9d7d10820e1665f237c572b3ed15633b1cb5d5fa3e4"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "产品能力、平台数量与本地/私有属性来自作者体验，未独立验证；功能随版本可能变化。示例命令含凭证形态字段，未在笔记复现。",
+        "pages": [
+          5,
+          8,
+          13,
+          14,
+          16
+        ],
+        "status": "按文章主张标记；不联网验证"
+      }
+    ],
+    "outputs": [
+      "AI_Agent Studio 对比.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        5,
+        14
+      ]
+    },
+    "coverage": "覆盖作者对 OpenClaw 与 Agent Studio 的个人实践比较，包括本地工作台、Web UI、企业微信接入、定时任务、自定义 Agent、A2A gateway、MCP 管理工具和用户场景取舍。 复核全19页；p.7、p.9提取文字层为空，图像为企业微信接入与对话截图，已视觉阅读。p.7、p.9中的凭证字段被遮挡，笔记未转录；p.8的提取文本与图像一致。",
+    "fact_checks": [
+      {
+        "claim": "MCP 管理工具约 22 个",
+        "page": "p.14",
+        "result": "作者对产品功能的描述"
+      },
+      {
+        "claim": "文章提到 9+ 平台/100+ 命令",
+        "page": "p.8",
+        "result": "作者对 OpenClaw 的描述"
+      },
+      {
+        "claim": "A2A gateway 为功能之一",
+        "page": "p.13–14",
+        "result": "文章描述，未独立测试"
+      },
+      {
+        "claim": "企业微信接入涉及隧道和命令",
+        "page": "p.5",
+        "result": "流程截图/描述"
+      },
+      {
+        "claim": "两产品定位不同",
+        "page": "p.16",
+        "result": "作者体验结论"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Agent Studio 对比.md",
+      "sha256": "c622d5d6005e5a05583945c8ce1aa7a336183c18a8c91aa462211193aff4492a"
+    },
+    "independent_crosscheck": {
+      "reviewer": "crosscheck_a",
+      "status": "passed",
+      "note_sha256": "11520d3f502ce305f2fa1832694df4f5c2c4d1a36aea77fcada16b2a4333b0bc",
+      "review_sha256": "023a38a9e3e8f6e14da89827a80ee6045ef2b81650a8b14248b51d5b48b8ee18",
+      "changes": [
+        "未发现需修复的实质问题；未改写风格。",
+        "按新增结构标准核对日期、唯一H1、复习卡片与末尾折叠校对报告；无卡片内容改写。",
+        "新增标准复核通过：含## 复习卡片、5–10条单行问题::答案、date元数据、唯一H1，以及末尾逐行引用的折叠校对报告。"
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "p.1–5",
+          "result": "OpenClaw与Agent Studio产品路径、企业微信隧道接入步骤。"
+        },
+        {
+          "pages": "p.8、13–16",
+          "result": "平台/命令数、约22个MCP管理工具、A2A与两产品定位；都注明为作者描述/体验。"
+        },
+        {
+          "pages": "p.7–9",
+          "result": "复核全19页；p.7、p.9提取文字层为空，图像为企业微信接入与对话截图，已视觉阅读。p.7、p.9中的凭证字段被遮挡，笔记未转录；p.8的提取文本与图像一致。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "077f61a96775f8a53699f9d7d10820e1665f237c572b3ed15633b1cb5d5fa3e4"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "b2a226926d9c86b8bc2d1b5892341ec6717727f75ffdd2869aa3e83748515a14"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 30,
+        "text_layer_sha256": "29585b8d8af2b5fad139209a278fc71b29dc0b2f4779b68bc2ab1a082f44ca2b",
+        "text_layer_char_count": 831
+      },
+      {
+        "page": 2,
+        "md_start_line": 38,
+        "md_end_line": 67,
+        "text_layer_sha256": "fbca17eace4d139daf6f7edf4d7bdde5fb569e6bbf2cd03d49f742bdc51169cc",
+        "text_layer_char_count": 1041
+      },
+      {
+        "page": 3,
+        "md_start_line": 75,
+        "md_end_line": 78,
+        "text_layer_sha256": "a7188ed25fd96dcc33863c052af4414a129a512a921637586d4611727ffc550e",
+        "text_layer_char_count": 128
+      },
+      {
+        "page": 4,
+        "md_start_line": 86,
+        "md_end_line": 99,
+        "text_layer_sha256": "20e85bc76a492f27456a9fb8f683e9e05786ad069dd44cb41f89048254b1e5e9",
+        "text_layer_char_count": 470
+      },
+      {
+        "page": 5,
+        "md_start_line": 107,
+        "md_end_line": 118,
+        "text_layer_sha256": "5525115f28836020e4fb39c3301899e7f4a4d4efd5692e7cc2954b524f3613c7",
+        "text_layer_char_count": 342
+      },
+      {
+        "page": 6,
+        "md_start_line": 126,
+        "md_end_line": 126,
+        "text_layer_sha256": "a67893a668916b314eb24097046d67324d9387b9a71415ae2e544e8c6397558c",
+        "text_layer_char_count": 23
+      },
+      {
+        "page": 7,
+        "md_start_line": 134,
+        "md_end_line": 133,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 8,
+        "md_start_line": 141,
+        "md_end_line": 143,
+        "text_layer_sha256": "881949e7267c2d6011be9234b7c6779c3cbfcf9e8d300425c176b06c064141de",
+        "text_layer_char_count": 100
+      },
+      {
+        "page": 9,
+        "md_start_line": 151,
+        "md_end_line": 150,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 10,
+        "md_start_line": 158,
+        "md_end_line": 174,
+        "text_layer_sha256": "1801504b9ff1d17ec55c35ae100cf424c9fa2dfbafeee58cd6774a8d2dc82bf4",
+        "text_layer_char_count": 525
+      },
+      {
+        "page": 11,
+        "md_start_line": 182,
+        "md_end_line": 188,
+        "text_layer_sha256": "8dfdae2a355c70b181d7c9c81d077627bc86608362bc58af4e98d2c74668d6ae",
+        "text_layer_char_count": 248
+      },
+      {
+        "page": 12,
+        "md_start_line": 196,
+        "md_end_line": 214,
+        "text_layer_sha256": "246030ede7285d6d19510fec1e198f64f5880b28486f2b16e62205e7029f4bf4",
+        "text_layer_char_count": 395
+      },
+      {
+        "page": 13,
+        "md_start_line": 222,
+        "md_end_line": 241,
+        "text_layer_sha256": "7b7015cb3a457f9722a566e0a168eb6a0193be4594307ab82a8a3c71bb632e73",
+        "text_layer_char_count": 677
+      },
+      {
+        "page": 14,
+        "md_start_line": 249,
+        "md_end_line": 268,
+        "text_layer_sha256": "9c295fd84f7b74c3aa67128db818e9a43895c114b73087cf47b6393aa7d93500",
+        "text_layer_char_count": 682
+      },
+      {
+        "page": 15,
+        "md_start_line": 276,
+        "md_end_line": 300,
+        "text_layer_sha256": "ce18e0a8697fa2e27615ba47e0723827532ef11f587326d216bba584687cc437",
+        "text_layer_char_count": 928
+      },
+      {
+        "page": 16,
+        "md_start_line": 308,
+        "md_end_line": 334,
+        "text_layer_sha256": "e61f2c59ecac8cf68b98daa8dd2db2e5363f4f801d73b4742b7204d51a5acb5f",
+        "text_layer_char_count": 676
+      },
+      {
+        "page": 17,
+        "md_start_line": 342,
+        "md_end_line": 363,
+        "text_layer_sha256": "e9da819fd3cbb513a9c04d97774ddf270d1111f48c8aaa14ac4bac80449bcc27",
+        "text_layer_char_count": 749
+      },
+      {
+        "page": 18,
+        "md_start_line": 371,
+        "md_end_line": 387,
+        "text_layer_sha256": "15556373170e856c524ea0a21caccbbc79103dd2bb0297157da53c0d748983af",
+        "text_layer_char_count": 182
+      },
+      {
+        "page": 19,
+        "md_start_line": 395,
+        "md_end_line": 407,
+        "text_layer_sha256": "7f8eeac33f6976e9aa857c89d6deca788adc6163fbc057b1f64011e6bdfdc011",
+        "text_layer_char_count": 200
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "detail_pages_reviewed": [
+        5,
+        14
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "产品能力、平台数量与本地/私有属性来自作者体验，未独立验证；功能随版本可能变化。示例命令含凭证形态字段，未在笔记复现。",
+        "pages": [
+          5,
+          8,
+          13,
+          14,
+          16
+        ],
+        "status": "按文章主张标记；不联网验证"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260130_OpenClaw_Agent_Studio.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "077f61a96775f8a53699f9d7d10820e1665f237c572b3ed15633b1cb5d5fa3e4",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Harness与模型协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Agent Studio 对比.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

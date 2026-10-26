@@ -1,0 +1,120 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0313",
+  "title": "开源项目的死与新生！",
+  "short_title": "开源维护与渐进迁移",
+  "account": "腾讯技术工程",
+  "author": "云游君（YunYouJun）",
+  "author_byline": "腾讯程序员",
+  "source_url": null,
+  "published_at": "2025-09-19T03:07",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "开源项⽬的死与新⽣！\n\n腾讯程序员  腾讯技术⼯程    2025年9⽉19⽇   03:07⼴东164⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                          ⽂末抽奖~\n                          ⽂末抽奖~\n                          ⽂末抽奖~\n  导语\n\n「⽣存还是毁灭？    」这对开源项⽬来说也是个问题。\n\n\n\n  「我曾见过那些你们⼈类不会置信的事。我曾⽬睹战舰在猎户座的边缘燃起烈⽕，我看过\n  C 射线在唐怀瑟之门边际的⿊暗中明灭闪耀。所有这些瞬间，都会消逝在时间之中，⼀如\n  眼泪消失在⾬中。正是死期。                                                              」\n\n\n\n许多开发者早期带着⼀腔热⾎，加⼊到开源社区，⽆私地贡献代码。 只是随着时间的流逝，\n⼈员变更、⽅向调整、技术迭代等种种因素接踵⽽⾄，许多开源项⽬最终逃脱不了的",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "软件复杂性与架构演进",
+    "AI研发协同"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/开源项目的死与新生！.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T05:57:03-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "7ba903ccabbfe716ee70c3ce1a125e3d9552831e65f66e8b3a25176818e7ad37",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "工程案例主要来自作者经验，未提供代码仓、受控实验或故障日志，不能把观点当实测规律。",
+        "Node/Bun、Vite、Vue等生态状态与具体版本叙述为2025年历史观点，需当前核查。",
+        "页图检查限1、4、6、7；不提炼活动抽奖与个人生活部分。"
+      ],
+      "size_bytes": 5162383,
+      "page_count": 12
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T05:57:03-07:00",
+  "directory": "腾讯技术工程/开源维护与渐进迁移+25.9.19",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T05:57:03-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "7ba903ccabbfe716ee70c3ce1a125e3d9552831e65f66e8b3a25176818e7ad37",
+    "output_path": "MD.md",
+    "output_sha256": "89df2c023e95caec3e0e56b35fb7ff3629d9a76d01f111a20cfd652bb244f18c",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 12,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visual_pages": [
+        1,
+        4,
+        6,
+        7
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "工程案例主要来自作者经验，未提供代码仓、受控实验或故障日志，不能把观点当实测规律。",
+      "Node/Bun、Vite、Vue等生态状态与具体版本叙述为2025年历史观点，需当前核查。",
+      "页图检查限1、4、6、7；不提炼活动抽奖与个人生活部分。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/开源项目的死与新生！.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/开源维护与渐进迁移+25.9.19/RAW.pdf",
+    "sha256": "7ba903ccabbfe716ee70c3ce1a125e3d9552831e65f66e8b3a25176818e7ad37",
+    "copied_at": "2026-10-23T05:57:03-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md",
+      "../../20_topics/解决问题.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

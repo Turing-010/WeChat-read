@@ -1,0 +1,433 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0216",
+  "title": "用 AI Skills 打通中间件迁移：定位服务从 Android 到鸿蒙的完整实践",
+  "short_title": "AI Skills鸿蒙定位服务迁移",
+  "account": "大淘宝技术",
+  "author": "镜像",
+  "author_byline": "本文作者镜像，来自淘天集团-终端平台技术团队。",
+  "source_url": null,
+  "published_at": "2026-06-14",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "终端技术 2026年6月14日 01:01 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 14,
+      "text": "本文作者镜像，来自淘天集团-终端平台技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "Skill设计与治理",
+    "跨端开发与性能",
+    "AI研发协同",
+    "决策知识结构化"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/用 AI Skills 打通中间件迁移：定位服务从 Android 到鸿蒙的完整实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T06:25:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "0851d1a54fdbe9033f06b16dacb4addc5e640f9949817c70c9df804346ef3b14",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.2-13含Android/iOS向HarmonyOS NEXT迁移架构图、Skill目录结构与编译自愈流程图（位于PDF图像层），p.15为空白尾页；核心迁移规范与验证指标已在正文完整还原。",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            15
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 4688568,
+      "page_count": 15
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T06:25:00-07:00",
+  "directory": "大淘宝技术/AI Skills鸿蒙定位服务迁移+26.6.14",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI Skills鸿蒙定位服务迁移.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0216",
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "updated_at": "2026-10-20T06:25:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "0851d1a54fdbe9033f06b16dacb4addc5e640f9949817c70c9df804346ef3b14"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "6df9d086da253ba550b4b70af7fb373fdf5802c13ea099814416f752abcc96d0"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.2-13含Android/iOS向HarmonyOS NEXT迁移架构图、Skill目录结构与编译自愈流程图（位于PDF图像层），p.15为空白尾页；核心迁移规范与验证指标已在正文完整还原。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_AI Skills鸿蒙定位服务迁移.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_AI Skills鸿蒙定位服务迁移.md",
+      "sha256": "07e7e0f66655486c46f3f766020e781c37c72572745df3c4394b6d721f8ba4dc"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T06:25:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "0851d1a54fdbe9033f06b16dacb4addc5e640f9949817c70c9df804346ef3b14"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "6df9d086da253ba550b4b70af7fb373fdf5802c13ea099814416f752abcc96d0"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 79,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 881,
+        "text_layer_sha256": "e22da6f3a3086d52efcc797ead4da66e320ff3db7bbccd16679f29c44f800cb6"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 125,
+        "md_start_line": 87,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 2,
+        "text_layer_char_count": 336,
+        "text_layer_sha256": "f67770e2de381a3a268d13f057f7e0873ad81ae2680ccc7dd77e8dce99348a0a"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 161,
+        "md_start_line": 133,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 3,
+        "text_layer_char_count": 198,
+        "text_layer_sha256": "ddf004278aa8ca0dcb55aa466a1904e03dc9cdccc108f91c71cd97906a1dc21d"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 179,
+        "md_start_line": 169,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 4,
+        "text_layer_char_count": 67,
+        "text_layer_sha256": "2059c1ca421ca76b8449295b546950520e81e9a5cc073763ca5203939395bb1b"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 228,
+        "md_start_line": 187,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 5,
+        "text_layer_char_count": 460,
+        "text_layer_sha256": "9ba64599910d5f725a0ceee892b7aeb69b49c5aa6dcbeb8e3bc4254f90ac9ae4"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 322,
+        "md_start_line": 236,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 6,
+        "text_layer_char_count": 814,
+        "text_layer_sha256": "4430544278db1c2832b7d056cf605a28843c7840300b3257ec17ef7ea0c89718"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 425,
+        "md_start_line": 330,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 7,
+        "text_layer_char_count": 965,
+        "text_layer_sha256": "229fa79533ab95eb26b23a3c8cc03865b8b4063c9ce394934110b6724a9789f3"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 456,
+        "md_start_line": 433,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 8,
+        "text_layer_char_count": 301,
+        "text_layer_sha256": "a473ddd4c9d1d640f059df42ae763584b688df166950b56927dd3678e3511df5"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 484,
+        "md_start_line": 464,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 9,
+        "text_layer_char_count": 245,
+        "text_layer_sha256": "6156e8da95bfd8943f99af2bda0e61dadb52e0cc2c72711541ce51aa5c5d8811"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 502,
+        "md_start_line": 492,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 10,
+        "text_layer_char_count": 164,
+        "text_layer_sha256": "1887c73c374ac80c3fc5ae5dc571ea05a616294db711b201132981be48892443"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 526,
+        "md_start_line": 510,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 11,
+        "text_layer_char_count": 109,
+        "text_layer_sha256": "f23b2c679dd39879e25f0f8541159cbb58ddcc8560105d617cfaa02fd7b3eac8"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 554,
+        "md_start_line": 534,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 12,
+        "text_layer_char_count": 184,
+        "text_layer_sha256": "fc44b2b1cfb46a454d012b54371e4db78c94563e2ce24b5b2e2eb34112f34471"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 581,
+        "md_start_line": 562,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 13,
+        "text_layer_char_count": 181,
+        "text_layer_sha256": "48a82f227798077cbf206be5d5e7dabc5e407aad81effba4a4ae1b1b0ccfbf99"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 627,
+        "md_start_line": 589,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 14,
+        "text_layer_char_count": 471,
+        "text_layer_sha256": "1fe3997904f011ce622331a40f27394e14c014d506b5925cf9753ed15af24eec"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 639,
+        "md_start_line": 635,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 15,
+        "text_layer_char_count": 15,
+        "text_layer_sha256": "0cab4ca7e7728c1cf6011ce115672f6be34750006c6ae77f8b67c4dd262fc904"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.2-13含Android/iOS向HarmonyOS NEXT迁移架构图、Skill目录结构与编译自愈流程图（位于PDF图像层），p.15为空白尾页；核心迁移规范与验证指标已在正文完整还原。",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Skill设计与治理.md",
+      "../../20_topics/跨端开发与性能.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T06:25:00-07:00",
+    "removed_at": "2026-10-20T06:25:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/用 AI Skills 打通中间件迁移：定位服务从 Android 到鸿蒙的完整实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "0851d1a54fdbe9033f06b16dacb4addc5e640f9949817c70c9df804346ef3b14",
+        "copied_at": "2026-10-20T06:25:00-07:00",
+        "removed_at": "2026-10-20T06:25:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_AI Skills鸿蒙定位服务迁移.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

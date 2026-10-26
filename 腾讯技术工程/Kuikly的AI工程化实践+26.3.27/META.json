@@ -1,0 +1,405 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0070",
+  "title": "腾讯广泛使用的跨端开发框架——Kuikly在搜狗输入法中的AI Coding实践",
+  "short_title": "Kuikly的AI工程化实践",
+  "account": "腾讯技术工程",
+  "author": "搜狗输入法 hesleyliang",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-03-27T02:35",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0327 Kuikly跨端开发框架AI Coding实践.pdf",
+      "original_filename": "0327 Kuikly跨端开发框架AI Coding实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "9d204f5054dd6d6556481ea18bb13247f6b88087db67d36a4785c679b03f3266",
+      "size_bytes": 7658117,
+      "page_count": 12,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "效率与准确率提升未给原始基线、样本、分母和测量窗口，只保留作者报告口径",
+          "pages": [
+            5,
+            6
+          ],
+          "status": "attributed"
+        },
+        {
+          "description": "页1发布为3月27日，页11注明3月28日修改；日期使用发布栏，不把修改日替换发布日期",
+          "pages": [
+            1,
+            11
+          ],
+          "status": "resolved"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区"
+    }
+  ],
+  "tags": [
+    "AI研发协同",
+    "Agent评测与反馈",
+    "Harness与模型协同",
+    "跨端开发与性能"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Kuikly的AI工程化实践+26.3.27",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Kuikly的AI工程化实践.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "腾讯广泛使用的跨端开发框架——Kuikly 在搜狗输入法中的 AI\nCoding 实践\n腾讯程序员 2026 年 3 月 27 日 02 : 35广东腾讯技术工程 15 人\n作者:搜狗输入法  hesleyliang\n导语\nAI 以超乎预期的速度席卷开发领域, AI 工程化也成为各业务团队优先探讨的命题。输入法团\n队从实际需求出发,在 Kuikly 跨端项目中逐步探索并沉淀出一套  AI 工程化方案,目前已有不\n少需求按此流程完成开发并上线。以此文与大家分享其中的实践经验与思考,希望为同样在\nAI Coding 工程化路上探索的团队提供一些可参考的思路。\nKuikly 是腾讯广泛使用的跨端开发框架,提供了使用 Kotlin 语言开发 Android 、 iOS 、鸿蒙、\nWeb 、小程序、 MAC 跨端应用能力。目前已在  QQ 、腾讯新闻、 QQ 音乐、搜狗输入法、 QQ\n浏览器等 20+ 业务深度使用,服务业务的总页面数 1000+ 、日活用户超 5 亿,满足了这些业务\n在众多场景下的各类复杂需求(应用场景案例)\n一、背景\n在 AI 时代,各业务团队都在积极探索 AI Coding ,目标相似 —— 希望实现需求自动关联、代码\n生成、效果测试一站式的 AI 愿景,达到 “L3 级别 ” 的代码生成。网上各类 Vibe Coding 演示,从 0\n到 1 搭建 Demo 应用的过程已经相当流畅,似乎也印证了这一方向的可行性。\n输入法 Kuikly 跨端项目同样面临这样的机遇,作为一个横跨  Android 、 iOS 、鸿蒙、 H5 多端的\n复杂跨平台工程,在跨端的背景下已经大幅提升了开发效率,新页面通常由单人完成多端交\n付。而在  AI 时代,我们希望更进一步 —— 借助  AI Coding 的能力,将开发效率再提升一个台\n阶。\n从 2025 年下半年起,团队开始逐步落地实践。辅助问答、文档查询、代码生成等能力确实为\n开发带来了一定提效,但在面对完整页面需求时, AI 生成的代码虽然能运行,但距离真正 “ 可\n用 ” 仍有差距。\n● 存量工程理解有幻觉。输入法  Kuikly 工程经过多年积累,已封装了大量基础能力,但  AI 对\n我们工程的理解仍存在明显偏差,常出现  API 调用幻觉,遇到需求时倾向于重复造轮子等问\n题。此外,对于客户端常见的页面迭代场景, AI 也难有效处理。\n",
+    "publication_evidence": "PDF p.1 发布栏（文字与页图核对）；未提供时区",
+    "full_title_in_capture": "腾讯广泛使用的跨端开发框架——Kuikly在搜狗输入法中的AI Coding实践",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0070",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "9d204f5054dd6d6556481ea18bb13247f6b88087db67d36a4785c679b03f3266"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "效率与准确率提升未给原始基线、样本、分母和测量窗口，只保留作者报告口径",
+        "pages": [
+          5,
+          6
+        ],
+        "status": "attributed"
+      },
+      {
+        "description": "页1发布为3月27日，页11注明3月28日修改；日期使用发布栏，不把修改日替换发布日期",
+        "pages": [
+          1,
+          11
+        ],
+        "status": "resolved"
+      }
+    ],
+    "outputs": [
+      "AI_Kuikly的AI工程化实践.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        4,
+        6,
+        9
+      ]
+    },
+    "coverage": "覆盖四个工程层面、文档多角色迭代、Spec流程、框架/业务规则分工、灵感词库完整案例与后续计划；图表只记录可核对标签与明确数字，不从柱高估计数值。",
+    "fact_checks": [
+      {
+        "item": "文档阈值",
+        "value": "第1轮≥75；第2轮≥82；第5轮≥95",
+        "pages": [
+          4
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "文档统计",
+        "value": "理解模块+107%、编码准确率+114%、维护+137%",
+        "pages": [
+          5
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "代码产物",
+        "value": "16个Kotlin文件，约2000行",
+        "pages": [
+          9
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "模型与组件",
+        "value": "3个数据模型、7个UI组件",
+        "pages": [
+          9
+        ],
+        "result": "matches_pdf"
+      },
+      {
+        "item": "案例工期",
+        "value": "传统约3天，AI主体开发1天",
+        "pages": [
+          9
+        ],
+        "result": "matches_pdf"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Kuikly的AI工程化实践.md",
+      "sha256": "cbcf1cd53223d0ceb869da83bb43d14239ccaddfe6fb5c1caddaad351e3c77b2"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "9d204f5054dd6d6556481ea18bb13247f6b88087db67d36a4785c679b03f3266"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "fa2edc5a56086810033896dc51cf463b6ec5354ceb8682f9bf555ad27c12d1df"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 36,
+        "text_layer_sha256": "84f37c71ae31e626c6ddb2e2eb502091177ab306ca0c61b501a2712f7e9c566f",
+        "text_layer_char_count": 1012
+      },
+      {
+        "page": 2,
+        "md_start_line": 44,
+        "md_end_line": 60,
+        "text_layer_sha256": "4a1f7b6c947882549cae7de09106a0c06ac732329a63e0cfdbbe4c5f48a71010",
+        "text_layer_char_count": 652
+      },
+      {
+        "page": 3,
+        "md_start_line": 68,
+        "md_end_line": 83,
+        "text_layer_sha256": "f5e4c2060b824299a8f49bc37392e1891365e0db785d7230176a2382d9763a9e",
+        "text_layer_char_count": 647
+      },
+      {
+        "page": 4,
+        "md_start_line": 91,
+        "md_end_line": 96,
+        "text_layer_sha256": "d2f57ed23065b0c8349978894b5fb5ccf7af03402fa634880c02603fc241d5fb",
+        "text_layer_char_count": 256
+      },
+      {
+        "page": 5,
+        "md_start_line": 104,
+        "md_end_line": 107,
+        "text_layer_sha256": "f9e3c29407dac0af7ce4ab422ccd917e9364d7edf69587ef78e8cca3fb13eac2",
+        "text_layer_char_count": 189
+      },
+      {
+        "page": 6,
+        "md_start_line": 115,
+        "md_end_line": 130,
+        "text_layer_sha256": "563282875537148ee47e5ffc0f727e45929db89b0ce090052800e20bfa9897e1",
+        "text_layer_char_count": 536
+      },
+      {
+        "page": 7,
+        "md_start_line": 138,
+        "md_end_line": 159,
+        "text_layer_sha256": "995187584a391df3003f4a77377bfb99e066d998c296d62b9b2f47537cdba067",
+        "text_layer_char_count": 873
+      },
+      {
+        "page": 8,
+        "md_start_line": 167,
+        "md_end_line": 174,
+        "text_layer_sha256": "3c2d959c1a8e48301cc4a7e2fa2493fb2737b895d10fff952236dbc47b6a5de0",
+        "text_layer_char_count": 337
+      },
+      {
+        "page": 9,
+        "md_start_line": 182,
+        "md_end_line": 204,
+        "text_layer_sha256": "25b6087af4cb66021e7dc9fb5e51eb9cd868ddd6a12b26f6c841ac218254a597",
+        "text_layer_char_count": 743
+      },
+      {
+        "page": 10,
+        "md_start_line": 212,
+        "md_end_line": 228,
+        "text_layer_sha256": "10ea92f2f3101d49ba5a0f6a7a869c200177446f4321a1f2cc09527a3885f24f",
+        "text_layer_char_count": 586
+      },
+      {
+        "page": 11,
+        "md_start_line": 236,
+        "md_end_line": 243,
+        "text_layer_sha256": "ffecf3565ed555748d7cc59196fb972a37697c652435b4803536eea2795e9cc1",
+        "text_layer_char_count": 92
+      },
+      {
+        "page": 12,
+        "md_start_line": 251,
+        "md_end_line": 250,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        4,
+        6,
+        9
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "效率与准确率提升未给原始基线、样本、分母和测量窗口，只保留作者报告口径",
+        "pages": [
+          5,
+          6
+        ],
+        "status": "attributed"
+      },
+      {
+        "description": "页1发布为3月27日，页11注明3月28日修改；日期使用发布栏，不把修改日替换发布日期",
+        "pages": [
+          1,
+          11
+        ],
+        "status": "resolved"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0327 Kuikly跨端开发框架AI Coding实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "9d204f5054dd6d6556481ea18bb13247f6b88087db67d36a4785c679b03f3266",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Kuikly的AI工程化实践.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

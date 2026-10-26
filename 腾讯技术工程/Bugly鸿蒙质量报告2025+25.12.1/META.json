@@ -1,0 +1,118 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0325",
+  "title": "腾讯Bugly2025鸿蒙应用行业质量分析报告",
+  "short_title": "Bugly鸿蒙质量报告2025",
+  "account": "腾讯技术工程",
+  "author": "腾讯Bugly",
+  "author_byline": "转载自腾讯端服务，作者腾讯Bugly",
+  "source_url": null,
+  "published_at": "2025-12-01T01:53",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "腾讯  Bugly2025鸿蒙应⽤⾏业质量分析报告\n\n腾讯技术⼯程   2025年12⽉1⽇  01:53⼴东  7⼈\n\n\n以下⽂章来 源于 腾讯端服务   ，作者腾讯   Bugly\n\n\n      腾讯端服务\n      腾讯端服务，简称   TDS，由腾讯 Bugly团队发起并创⽴的腾讯集团内的⼤前端技术产      …\n\n\n\n尊敬的 开发 者伙伴们，随着鸿蒙⽣态的 蓬勃发 展，应⽤质量已成为决定⽤户体验与 业务成\n败的 关键。  为 帮助⼴⼤ 开发 者洞察⾏业现状、 优化应⽤性能，         B ugly推出本年 度鸿蒙应\n⽤⾏业质量分析报告，旨在  为 ⼴⼤ 开发 者提供⼀ 份客观、 全⾯的质量参考，助⼒⼤ 家精准\n定位问题、 优化应⽤性能，共同提升鸿蒙⽣态的 应⽤体验。\n\n\n免责声明： 本报告数 据源因样本范围、 统计⼝径及应⽤类型的 差异，可能与 全量市场的 实际情况存在\n偏差。 报告内 容及结论仅供参考，不构成任何确定性建议。\n\n\n\n ⼀ 、 鸿蒙⽣态现状概览\n\n1",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "跨端开发与性能",
+    "AI评测与可观测性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯Bugly2025鸿蒙应用行业质量分析报告.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:04:19-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "4a14a1a6203bcb08b303bf555c27c5623f8e503ab6b3675e195372a0d4c0bc14",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "统计截至2025-11；样本来自Bugly接入业务且排除游戏，不能代表全市场。",
+        "p4平均Crash率与P50及其文字解读需核查分母和排序定义；报告未给样本量、加权方式，不自行补。",
+        "转载来源腾讯端服务是另一发布身份，保留当前腾讯技术工程身份；原发布精确日期未知。",
+        "已看页图1、4、5、7，其余图表未逐项校验。"
+      ],
+      "size_bytes": 2965611,
+      "page_count": 9
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:04:19-07:00",
+  "directory": "腾讯技术工程/Bugly鸿蒙质量报告2025+25.12.1",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:04:19-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "4a14a1a6203bcb08b303bf555c27c5623f8e503ab6b3675e195372a0d4c0bc14",
+    "output_path": "MD.md",
+    "output_sha256": "30190c07a12379f6e92131f54bad08e0545e65b4537d09a821dadcba968fcff3",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 9,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "visual_pages": [
+        1,
+        4,
+        5,
+        7
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "统计截至2025-11；样本来自Bugly接入业务且排除游戏，不能代表全市场。",
+      "p4平均Crash率与P50及其文字解读需核查分母和排序定义；报告未给样本量、加权方式，不自行补。",
+      "转载来源腾讯端服务是另一发布身份，保留当前腾讯技术工程身份；原发布精确日期未知。",
+      "已看页图1、4、5、7，其余图表未逐项校验。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯Bugly2025鸿蒙应用行业质量分析报告.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/Bugly鸿蒙质量报告2025+25.12.1/RAW.pdf",
+    "sha256": "4a14a1a6203bcb08b303bf555c27c5623f8e503ab6b3675e195372a0d4c0bc14",
+    "copied_at": "2026-10-23T06:04:19-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/异常监控与稳定性.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

@@ -1,0 +1,669 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0155",
+  "title": "一篇讲透 Agent 自进化飞轮怎么搭：评测 → 记忆 → 落地 → 控制",
+  "short_title": "Agent自进化飞轮",
+  "account": "腾讯技术工程",
+  "author": "yannisyang、ethanytzhou",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-26T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/一篇讲透Agent自进化飞轮怎么搭：评测→记忆→落地→控制.pdf",
+      "original_filename": "一篇讲透Agent自进化飞轮怎么搭：评测→记忆→落地→控制.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "63692ff29317035d26f9dd32d486f432fb58af58b601ce020908be5780c53290",
+      "size_bytes": 12571616,
+      "page_count": 32,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "若干性能与案例收益来自文章引用的外部团队/框架，未在本次联网核实或重跑。",
+          "pages": [
+            3,
+            29,
+            30
+          ],
+          "status": "source_limitation"
+        }
+      ],
+      "publication_evidence": "PDF第1页刊头“2026年8月26日 02:36”。"
+    }
+  ],
+  "tags": [
+    "Agent评测与反馈",
+    "Agent长期记忆",
+    "Agent工程循环",
+    "Harness与模型协同",
+    "Agent成本与上下文预算"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/Agent自进化飞轮+26.8.26",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Agent自进化飞轮.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "一篇讲透 Agent 自进化⻜轮怎么搭:评测 → 记忆 → 落地 → 控制\n腾讯程序员 2026 年 8 月 26 日 02 : 36广东原创 腾讯技术工程 1627 人\n作者: yannisyang 、 ethanytzhou\n开篇:一个被拆散的系统\n最近几个月,我观察到一个普遍且致命的现象:评测、记忆、 Self-Improve 这三件事,在大\n多数团队里是被拆散着做的。\n评测团队搭了一套评分系统,跑完打个分就结束了 —— 分数去了周报,没有去到  Prompt 或\nSkill 的改进链路里。记忆团队做了一套向量检索,存了一堆对话历史 —— 但召回的东西噪声\n太高, Agent 反而被干扰了,最后记忆模块被默默关掉。 Self-Improve 团队在探索  Skill 自动\n生成 —— 但生成出来的  Skill 质量参差不齐,没有评测来筛选好坏,没有版本管理来回滚出错\n的。\n每个团队都在认真地做自己那一块。但飞轮没有转起来。\n为什么?因为这三件事不是三个独立的功能点 —— 它们是同一个闭环的不同环节。评测是闭环\n的 \" 眼睛 \" (感知哪里有问题),记忆是闭环的 \" 大脑 \" (积累可复用的经验), Self-Improve 是闭\n环的 \" 手脚 \" (把经验变成实际的改进),人机协作是闭环的 \" 方向盘和刹车 \" (确保进化方向不\n跑偏)。拆开来做,每一块都能说 \" 我做了 \" ,但合在一起却不产生复利 ——因为环节之间的数\n据通路是断的。\n这篇文章要做的事是:把这四个环节当作一个完整的工程系统来讲 —— 它们各自的核心矛盾是\n什么,应该怎么建设,有哪些坑是前人用血泪验证过必须避开的,最重要的是,它们之间怎么\n咬合起来形成一个持续转动的飞轮。\n你的  Agent 上线半年了。回头看看 —— 它比第一天聪明了吗?它可能还在犯三个月前就\n犯过的错。还在重复三个月前就走过的弯路。还在对三个月前就见过的场景表现得像个新\n手。半年的线上流量喂过去,它一点经验都没攒下来。问题不在模型不够强。问题在于\n—— 没有人给它搭一条从 \" 做过 \" 到 \" 记住 \" 到 \" 变好 \" 的路。这篇文章基于对  Anthropic 递归\n自改进报告、斯坦福  CS329A 课程、 EvoAgentX 等开源框架的深度研读,结合业界多个\n团队已验证的优秀实践,提炼出一套评测→记忆→落地→控制的四齿飞轮方法论 —— 不是\n某个环节的最佳实践,而是一个完整的、可落地的、经过验证的工程闭环。\n",
+    "publication_evidence": "PDF第1页刊头“2026年8月26日 02:36”。",
+    "full_title_in_capture": "一篇讲透 Agent 自进化飞轮怎么搭：评测 → 记忆 → 落地 → 控制",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0155",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "63692ff29317035d26f9dd32d486f432fb58af58b601ce020908be5780c53290"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "若干性能与案例收益来自文章引用的外部团队/框架，未在本次联网核实或重跑。",
+        "pages": [
+          3,
+          29,
+          30
+        ],
+        "status": "source_limitation"
+      }
+    ],
+    "outputs": [
+      "AI_Agent自进化飞轮.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "detail_pages_reviewed": [
+        8,
+        9,
+        14,
+        22,
+        28
+      ]
+    },
+    "coverage": "覆盖自进化三层、评测七难题、Judge分层与数据集隔离、Skill增量评测、记忆治理、八环节修复、Dreaming、人机边界和四阶段路线；尾页公众号内容未展开。 PDF末页核查：p.32空白。",
+    "fact_checks": [
+      {
+        "item": "评测集比例建议",
+        "note_value": "train 50–60%；val 20–30%；test 15–20%",
+        "source_value": "同值",
+        "pages": [
+          9
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "评测集更新节奏",
+        "note_value": "val 2–4周；test 1–2月",
+        "source_value": "同值",
+        "pages": [
+          9
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "记忆最大注入数",
+        "note_value": "最多6条",
+        "source_value": "最多6条",
+        "pages": [
+          16
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "灰度建议",
+        "note_value": "10%流量、7天",
+        "source_value": "10%流量、7天",
+        "pages": [
+          18,
+          20
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "Phase 1规划",
+        "note_value": "50–100 case、1–2周",
+        "source_value": "50–100 case、1–2周",
+        "pages": [
+          30
+        ],
+        "result": "一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_Agent自进化飞轮.md",
+      "sha256": "cda0079b4a058ca78cf87e71db847ecb4096a34a782bac0999dceef5d231c771",
+      "size_bytes": 31106
+    },
+    "independent_crosscheck": {
+      "reviewer": "/root/crosscheck_b",
+      "note_sha256": "cda0079b4a058ca78cf87e71db847ecb4096a34a782bac0999dceef5d231c771",
+      "review_sha256": "c2be2798ccd546a9ceafc505ec68789d916410f340a58afb0dbc4907dcc3c856",
+      "status": "passed",
+      "changes": [
+        "Applied the required note structure: one H1, an explicit 复习卡片 section with one-line Q::A cards, and a final fully quoted folded 校对报告.",
+        "Checked all 32 physical pages; inspected the final blank/comment page in extracted text and page image, recorded the boundary in note and review, and aligned text_pages_read with the full physical page range."
+      ],
+      "source_spotchecks": [
+        {
+          "pages": [
+            8,
+            9,
+            14,
+            22,
+            28
+          ],
+          "finding": "图文抽查支持评测集隔离、记忆治理、Dreaming 输出建议及阶段路线；记忆更新仍须人工审核。"
+        },
+        {
+          "pages": [
+            3,
+            9,
+            16,
+            18,
+            21,
+            22,
+            26,
+            30
+          ],
+          "finding": "比例、节奏、记忆条数、灰度周期和初始 case 数均标为文章建议/作者报告；未表述为通用基准。"
+        },
+        {
+          "pages": [
+            29,
+            30,
+            31,
+            32
+          ],
+          "finding": "作者引用数据及末尾公众号信息按 review 所述处理，没有执行 Prompt/Skill。"
+        },
+        {
+          "pages": [
+            32
+          ],
+          "finding": "p.32抽取文本为空且页图为空白。"
+        }
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "63692ff29317035d26f9dd32d486f432fb58af58b601ce020908be5780c53290"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "47447a58880686efaf85489aa9184ba92f63d9a66630a28c5f68b11ca89aa259"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 36,
+        "text_layer_sha256": "1dbce50b2428576a686abc7e449a0d6ebf517fe315395c99b2cb0e28d163ac19",
+        "text_layer_char_count": 1052
+      },
+      {
+        "page": 2,
+        "md_start_line": 44,
+        "md_end_line": 63,
+        "text_layer_sha256": "af42813e011ed3adb98f36870c400da73a3fc46700216f0bfbdfe977d30700f2",
+        "text_layer_char_count": 661
+      },
+      {
+        "page": 3,
+        "md_start_line": 71,
+        "md_end_line": 96,
+        "text_layer_sha256": "f3cf98307e19030c64083132828dd2dc43225fa631700d1653efc7e63b2add82",
+        "text_layer_char_count": 1139
+      },
+      {
+        "page": 4,
+        "md_start_line": 104,
+        "md_end_line": 125,
+        "text_layer_sha256": "43edbe5cbd81ff2557170d981d5f956ac0632f36d6e3e89e4942fd29ee67cd3f",
+        "text_layer_char_count": 829
+      },
+      {
+        "page": 5,
+        "md_start_line": 133,
+        "md_end_line": 143,
+        "text_layer_sha256": "ba010735bbb8e3b2cff6ce81e1665ccfe9789be56d9d85cac1308731c3b3ab6e",
+        "text_layer_char_count": 364
+      },
+      {
+        "page": 6,
+        "md_start_line": 151,
+        "md_end_line": 182,
+        "text_layer_sha256": "7daa42b151377c0996758f86fa0fe94193a4dfaad15936eb7c1f15fa7f3f1ecb",
+        "text_layer_char_count": 1271
+      },
+      {
+        "page": 7,
+        "md_start_line": 190,
+        "md_end_line": 212,
+        "text_layer_sha256": "a220f488db8b171ab5c9a824b1567889fac29d765c37baca173d4aeafde5acf2",
+        "text_layer_char_count": 833
+      },
+      {
+        "page": 8,
+        "md_start_line": 220,
+        "md_end_line": 245,
+        "text_layer_sha256": "56db57be41dfb9088c79e0ca093a8a72e3eb24053c78e5d5a244249ef931f228",
+        "text_layer_char_count": 938
+      },
+      {
+        "page": 9,
+        "md_start_line": 253,
+        "md_end_line": 274,
+        "text_layer_sha256": "aa77d5d5ab7baeaddad7586b3e616b983cd3a8331af80175a15d58522155edc8",
+        "text_layer_char_count": 872
+      },
+      {
+        "page": 10,
+        "md_start_line": 282,
+        "md_end_line": 305,
+        "text_layer_sha256": "0a51875a81a85eff053df444d334b36ef8005d5c3f36cb23ca1d165a336b61ae",
+        "text_layer_char_count": 836
+      },
+      {
+        "page": 11,
+        "md_start_line": 313,
+        "md_end_line": 337,
+        "text_layer_sha256": "3ff46a83647db09797d2cdeed70cb2a61d476ea8d3cd71185402e2deb11b46d1",
+        "text_layer_char_count": 1070
+      },
+      {
+        "page": 12,
+        "md_start_line": 345,
+        "md_end_line": 358,
+        "text_layer_sha256": "14d77c52a64fd52169947c6b52a8a976d28aad2029c2fc8ce6cee65a90fbfe9f",
+        "text_layer_char_count": 494
+      },
+      {
+        "page": 13,
+        "md_start_line": 366,
+        "md_end_line": 390,
+        "text_layer_sha256": "4deb41d9c185893ce6bc4615aaefa3dd8082db9c0b188f1fbf2919f20a2fafc7",
+        "text_layer_char_count": 982
+      },
+      {
+        "page": 14,
+        "md_start_line": 398,
+        "md_end_line": 418,
+        "text_layer_sha256": "bc955c25c9aa608b041e58e7c53a12ed1d0273597c456f4788e2a1966912bb5b",
+        "text_layer_char_count": 803
+      },
+      {
+        "page": 15,
+        "md_start_line": 426,
+        "md_end_line": 440,
+        "text_layer_sha256": "209a7fbdcc18eeda5306789a9519e9010c48b3d9089df3722bda99b3a47d4551",
+        "text_layer_char_count": 513
+      },
+      {
+        "page": 16,
+        "md_start_line": 448,
+        "md_end_line": 472,
+        "text_layer_sha256": "133878f4a8121a809112b967b0272c21d54510a8185044dcbf7980eb20d8b1f9",
+        "text_layer_char_count": 898
+      },
+      {
+        "page": 17,
+        "md_start_line": 480,
+        "md_end_line": 496,
+        "text_layer_sha256": "8af1bea7cea1a4f93492e5b10032792fc7d83715cc90d002e814adbc49c639e9",
+        "text_layer_char_count": 658
+      },
+      {
+        "page": 18,
+        "md_start_line": 504,
+        "md_end_line": 528,
+        "text_layer_sha256": "3965a5eb5e1758aebda22ee7815916d1b19e9787c3335e0460270caeee2842c4",
+        "text_layer_char_count": 1077
+      },
+      {
+        "page": 19,
+        "md_start_line": 536,
+        "md_end_line": 558,
+        "text_layer_sha256": "8235e0e012bba550885d9fdd058ed1f69cb3d4e191d5ab30987d198b69f9d079",
+        "text_layer_char_count": 875
+      },
+      {
+        "page": 20,
+        "md_start_line": 566,
+        "md_end_line": 584,
+        "text_layer_sha256": "e0dca2b063aa0a1baf1c6b716969daf107acf38dd71e0778dd341d1095bd2c64",
+        "text_layer_char_count": 667
+      },
+      {
+        "page": 21,
+        "md_start_line": 592,
+        "md_end_line": 617,
+        "text_layer_sha256": "5caa9a584bb0fd7e4c43e456a5a9e3abec547768dec62b4dd84cb8f446c89083",
+        "text_layer_char_count": 946
+      },
+      {
+        "page": 22,
+        "md_start_line": 625,
+        "md_end_line": 646,
+        "text_layer_sha256": "bd2decc68baaf795e3eafd0a2bfde867287cfd2e4cd73edfaf790ddac011533b",
+        "text_layer_char_count": 756
+      },
+      {
+        "page": 23,
+        "md_start_line": 654,
+        "md_end_line": 667,
+        "text_layer_sha256": "b3e85410c9f9a1692b68869d8ae51af3712e425bb788ece7d6621ede088a30e5",
+        "text_layer_char_count": 482
+      },
+      {
+        "page": 24,
+        "md_start_line": 675,
+        "md_end_line": 700,
+        "text_layer_sha256": "02e345e830ea4765b131e740c4a40d72c8e2789434c6dc780573bce8ab5e7f9f",
+        "text_layer_char_count": 1025
+      },
+      {
+        "page": 25,
+        "md_start_line": 708,
+        "md_end_line": 731,
+        "text_layer_sha256": "c6672f1c5ba7b5910cba6718c8dac308e6e4bace1b284683853c8e42b1c5d386",
+        "text_layer_char_count": 843
+      },
+      {
+        "page": 26,
+        "md_start_line": 739,
+        "md_end_line": 764,
+        "text_layer_sha256": "02efa619a7df6a00a5a3bbd8082508a157b409854b0d732f7130d2b3d36b7c71",
+        "text_layer_char_count": 884
+      },
+      {
+        "page": 27,
+        "md_start_line": 772,
+        "md_end_line": 787,
+        "text_layer_sha256": "e8c6ff93363f127b0d86e63ce5eac5d9a50eb789dd58cc78f7b8e6389c526e1b",
+        "text_layer_char_count": 528
+      },
+      {
+        "page": 28,
+        "md_start_line": 795,
+        "md_end_line": 818,
+        "text_layer_sha256": "4b62e5fb77dd6b27fc17a4fd69b7a7522147c6783a387bcfa685eaf5f55a91d3",
+        "text_layer_char_count": 930
+      },
+      {
+        "page": 29,
+        "md_start_line": 826,
+        "md_end_line": 848,
+        "text_layer_sha256": "b79f920909bf7b9f8fcd460d4f01dd23117f51ea6f55da3b7dfd1e208b040cc9",
+        "text_layer_char_count": 899
+      },
+      {
+        "page": 30,
+        "md_start_line": 856,
+        "md_end_line": 882,
+        "text_layer_sha256": "bfdfb8884827044d7f68951319264c60b6de423b33cbeff83a7e4443438496bc",
+        "text_layer_char_count": 1008
+      },
+      {
+        "page": 31,
+        "md_start_line": 890,
+        "md_end_line": 901,
+        "text_layer_sha256": "3dcecfd2ce334b058796ab54c1765a4bcd7ba39f8119651eb9ebfa99e92fd9e8",
+        "text_layer_char_count": 225
+      },
+      {
+        "page": 32,
+        "md_start_line": 909,
+        "md_end_line": 908,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "detail_pages_reviewed": [
+        8,
+        9,
+        14,
+        22,
+        28
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "若干性能与案例收益来自文章引用的外部团队/框架，未在本次联网核实或重跑。",
+        "pages": [
+          3,
+          29,
+          30
+        ],
+        "status": "source_limitation"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/一篇讲透Agent自进化飞轮怎么搭：评测→记忆→落地→控制.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "63692ff29317035d26f9dd32d486f432fb58af58b601ce020908be5780c53290",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md",
+      "../../20_topics/Agent评测与反馈.md",
+      "../../20_topics/Agent长期记忆.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Agent自进化飞轮.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

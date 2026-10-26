@@ -1,0 +1,455 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0050",
+  "title": "面向监控场景的无订阅异常发现：问题、思路与边界",
+  "short_title": "无订阅异常发现",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "孙晴",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-07-30T04:55",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "2026年7月30日 04:55",
+  "published_timezone": null,
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "text": [
+      "⾯向监控场景的⽆订阅异常发现：问题、思路与边界",
+      "原创 孙晴 阿⾥技术 2026年7⽉30⽇ 04:55 浙江 5⼈",
+      "这是2026年的第 44 篇⽂章"
+    ]
+  },
+  "tags": [
+    "异常监控与稳定性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/面向监控场景的无订阅异常发现：问题、思路与边界.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T03:15:22-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "91c36f74ed8e84dbf45a926d25575a1933e737ec81c6b29a4f7b7d09c3eb89a4",
+      "size_bytes": 6792084,
+      "page_count": 12,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "正文称日期业务标识隐去、区间或定性呈现、不展示内部状态/精确评分门槛，但截图仍有日期2026-06-08至2026-07-14/验证2026-06-19、shadow_only、置信度与门槛；图9/10有精确比例/误差",
+          "pages": [
+            1,
+            7,
+            8,
+            9,
+            10
+          ],
+          "evidence_type": "text_and_page_image",
+          "classification": "source_ambiguity"
+        },
+        {
+          "description": "原图数据为脱敏/相对化样例，没有总体样本真值和准确率/召回等完整结果，不推总体性能或通用阈值",
+          "pages": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "evidence_type": "source_scope",
+          "classification": "verification_scope"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T03:15:22-07:00",
+  "directory": "阿里技术/无订阅异常发现+26.7.30",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_无订阅异常发现.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0050",
+    "created_at": "2026-10-13T03:15:22-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "91c36f74ed8e84dbf45a926d25575a1933e737ec81c6b29a4f7b7d09c3eb89a4"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "正文称日期业务标识隐去、区间或定性呈现、不展示内部状态/精确评分门槛，但截图仍有日期2026-06-08至2026-07-14/验证2026-06-19、shadow_only、置信度与门槛；图9/10有精确比例/误差",
+        "pages": [
+          1,
+          7,
+          8,
+          9,
+          10
+        ],
+        "evidence_type": "text_and_page_image",
+        "classification": "source_ambiguity"
+      },
+      {
+        "description": "原图数据为脱敏/相对化样例，没有总体样本真值和准确率/召回等完整结果，不推总体性能或通用阈值",
+        "pages": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "evidence_type": "source_scope",
+        "classification": "verification_scope"
+      }
+    ],
+    "outputs": [
+      "AI_无订阅异常发现.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "coverage": [
+      {
+        "name": "问题与五段链路",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "数据坐标与形态",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "画像策略路由",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      {
+        "name": "时间前推选模",
+        "pages": [
+          7,
+          8
+        ]
+      },
+      {
+        "name": "候选与完整回放",
+        "pages": [
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "通知边界与结论",
+        "pages": [
+          10,
+          11
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 10,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_无订阅异常发现.md",
+      "sha256": "ae752cf6cb10bdde8ba03a6cc3cd2893505d159b0dd3caa5df483446b6c82973"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T03:15:22-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "91c36f74ed8e84dbf45a926d25575a1933e737ec81c6b29a4f7b7d09c3eb89a4"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "35c44872a453fdf2994ca62ff9bd4d518f6977c5dcc33cfe76111c0c2ce8cc67"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 34,
+        "text_layer_sha256": "f75047910147dbb1161bc8a25926c8f4ab91f86bd2be1db96b99acbac8a462b8",
+        "text_layer_char_count": 699
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 58,
+        "text_layer_sha256": "6ee46630fd878eecad78265fd2867142e6bc37ec7c1adf676e4b79617065236f",
+        "text_layer_char_count": 600
+      },
+      {
+        "page": 3,
+        "md_start_line": 66,
+        "md_end_line": 99,
+        "text_layer_sha256": "41e904c67a8709c95f77f41541ffa73f7ae09b0eb206e6cc66aff622dfcbe865",
+        "text_layer_char_count": 1085
+      },
+      {
+        "page": 4,
+        "md_start_line": 107,
+        "md_end_line": 118,
+        "text_layer_sha256": "f1dea4b34291e95fb75e49e2a22eb43f529eede78652324168df4693457db977",
+        "text_layer_char_count": 390
+      },
+      {
+        "page": 5,
+        "md_start_line": 126,
+        "md_end_line": 138,
+        "text_layer_sha256": "6085907b883363d9e1b6370a1dc129fecde4460dc08a45c65c4cf50badbdecaa",
+        "text_layer_char_count": 468
+      },
+      {
+        "page": 6,
+        "md_start_line": 146,
+        "md_end_line": 163,
+        "text_layer_sha256": "61f37e56e138e34a4b605d158d7df4548eabebf5799aff8a5b1430fc2936fe9a",
+        "text_layer_char_count": 685
+      },
+      {
+        "page": 7,
+        "md_start_line": 171,
+        "md_end_line": 190,
+        "text_layer_sha256": "1f470534bf11d6f1691ade9de8380ce0c8f341855aa7d906c60384d4cafea621",
+        "text_layer_char_count": 665
+      },
+      {
+        "page": 8,
+        "md_start_line": 198,
+        "md_end_line": 220,
+        "text_layer_sha256": "5dfaaf6d778bb91e1d520b7bf744075cb4ec069a4e3c7732fefe2425521c1b26",
+        "text_layer_char_count": 693
+      },
+      {
+        "page": 9,
+        "md_start_line": 228,
+        "md_end_line": 243,
+        "text_layer_sha256": "e2104e4e69b8693cfe4a7a6c194bd177e0a714534bfe593a94ff72371c6f7121",
+        "text_layer_char_count": 485
+      },
+      {
+        "page": 10,
+        "md_start_line": 251,
+        "md_end_line": 276,
+        "text_layer_sha256": "29f6053ba109fb20e7ca0c6f2e6876ab9bad00e89cc0241ec3cb1a3589e6ec4e",
+        "text_layer_char_count": 971
+      },
+      {
+        "page": 11,
+        "md_start_line": 284,
+        "md_end_line": 296,
+        "text_layer_sha256": "0a13564425835345784b8ba2f2b2a263d454e3692ee577292ac37be19a150475",
+        "text_layer_char_count": 400
+      },
+      {
+        "page": 12,
+        "md_start_line": 304,
+        "md_end_line": 315,
+        "text_layer_sha256": "76868017eda41eed00073fbb82fee0945dc39002ac23aff579a392b9055b03b5",
+        "text_layer_char_count": 91
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "正文称日期业务标识隐去、区间或定性呈现、不展示内部状态/精确评分门槛，但截图仍有日期2026-06-08至2026-07-14/验证2026-06-19、shadow_only、置信度与门槛；图9/10有精确比例/误差",
+        "pages": [
+          1,
+          7,
+          8,
+          9,
+          10
+        ],
+        "evidence_type": "text_and_page_image",
+        "classification": "source_ambiguity"
+      },
+      {
+        "description": "原图数据为脱敏/相对化样例，没有总体样本真值和准确率/召回等完整结果，不推总体性能或通用阈值",
+        "pages": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "evidence_type": "source_scope",
+        "classification": "verification_scope"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/异常监控与稳定性.md"
+    ],
+    "proposed_topics": [
+      "监控异常检测",
+      "Agent数据分析",
+      "Agent评测与反馈"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T03:15:22-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/面向监控场景的无订阅异常发现：问题、思路与边界.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "91c36f74ed8e84dbf45a926d25575a1933e737ec81c6b29a4f7b7d09c3eb89a4",
+        "copied_at": "2026-10-13T03:15:22-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

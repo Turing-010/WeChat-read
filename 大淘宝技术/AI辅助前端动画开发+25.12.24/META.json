@@ -1,0 +1,514 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0270",
+  "title": "AI 辅助前端动画开发",
+  "short_title": "AI辅助前端动画开发",
+  "account": "大淘宝技术",
+  "author": "齐纪",
+  "author_byline": "本文作者齐纪，来自淘天集团-用户&内容技术团队。",
+  "source_url": null,
+  "published_at": "2025-12-24",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "用户&内容技术 2025年12月24日 01:49 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 19,
+      "text": "本文作者齐纪，来自淘天集团-用户&内容技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "跨端开发与性能",
+    "AI研发协同",
+    "Skill设计与治理"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/AI 辅助前端动画开发.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T19:22:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "acdad8581639e81f7422ff0e78ddc1496b6cf6d509bbb809d809b21f08ee8e48",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.1-12, 18-19含流程图、Cursor运行截图与视频预览帧（位于PDF图像层），p.4, 13-18代码块最右侧有少量字符截断，已结合上下文完整还原。",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 9802967,
+      "page_count": 20
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T19:22:00-07:00",
+  "directory": "大淘宝技术/AI辅助前端动画开发+25.12.24",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI辅助前端动画开发.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0270",
+    "created_at": "2026-10-20T19:22:00-07:00",
+    "updated_at": "2026-10-20T19:22:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "acdad8581639e81f7422ff0e78ddc1496b6cf6d509bbb809d809b21f08ee8e48"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "551ee9f45cc2bc17e5214581bb772fba2d7a378128e4f26c80ad08db7f904d09"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.1-12, 18-19含流程图、Cursor运行截图与视频预览帧（位于PDF图像层），p.4, 13-18代码块最右侧有少量字符截断，已结合上下文完整还原。",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_AI辅助前端动画开发.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_AI辅助前端动画开发.md",
+      "sha256": "ba89a653dc267e32466dad52b7a0775dfcedf4a9fd76d6cc372b6c50a7110da3"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T19:22:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "acdad8581639e81f7422ff0e78ddc1496b6cf6d509bbb809d809b21f08ee8e48"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "551ee9f45cc2bc17e5214581bb772fba2d7a378128e4f26c80ad08db7f904d09"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 61,
+        "md_start_line": 13,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 1,
+        "text_layer_char_count": 573,
+        "text_layer_sha256": "60d3c4a4a458f008b5cc503835d69e716f45663e0e059ca3953dc3aae6fe6e4e"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 94,
+        "md_start_line": 69,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 2,
+        "text_layer_char_count": 411,
+        "text_layer_sha256": "eb0c7331021bb7726a57b10b54af425ddac9b46f97aa73440c18254c779a0625"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 119,
+        "md_start_line": 102,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 3,
+        "text_layer_char_count": 245,
+        "text_layer_sha256": "a0d7e6469ae3fdb56783fd4f59b84feffd9ea167baa5819e5b08f00756180ca4"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 260,
+        "md_start_line": 127,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 4,
+        "text_layer_char_count": 1061,
+        "text_layer_sha256": "a2be27e407398654ced671c563bd86204daa643f0e81322b157bae271d4c05e8"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 325,
+        "md_start_line": 268,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 5,
+        "text_layer_char_count": 691,
+        "text_layer_sha256": "177d1d5abd3900f373268ee0fd6aeb1a8ee80629ebc1fb927b709360caf89a86"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 346,
+        "md_start_line": 333,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 6,
+        "text_layer_char_count": 171,
+        "text_layer_sha256": "afaa456da88fdeba407447be8631d498be47e4953d1b36d86db8cc5665e0df49"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 385,
+        "md_start_line": 354,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 7,
+        "text_layer_char_count": 512,
+        "text_layer_sha256": "4cb3d853fb97a9d5ee77c133bcdda9f2bc46a541d66934f07e9afd26068fa2f7"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 402,
+        "md_start_line": 393,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 8,
+        "text_layer_char_count": 99,
+        "text_layer_sha256": "d11edc5899e5b4f7634cf01ea2f342bd1c03cf049c95f98c938656a1107d42ed"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 419,
+        "md_start_line": 410,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 9,
+        "text_layer_char_count": 199,
+        "text_layer_sha256": "17e88e880a86f51798b362fa5cf654cfca704681d8af08c1b57de9d1b66085f4"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 430,
+        "md_start_line": 427,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 10,
+        "text_layer_char_count": 56,
+        "text_layer_sha256": "028659d9ef1e8e4a02ef5dbeeeffadda2f80ea5700825e9c8bfcc5d9f12b90d0"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 445,
+        "md_start_line": 438,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 11,
+        "text_layer_char_count": 75,
+        "text_layer_sha256": "afc44a4e3100dfa3f09bfeba5d903abcd40be903bbc67c0898ce8694c0a740c2"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 479,
+        "md_start_line": 453,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 12,
+        "text_layer_char_count": 241,
+        "text_layer_sha256": "372106b17b74990d0b5d256b1da3d61b4a60195a06d956f69c21f458b71408e0"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 581,
+        "md_start_line": 487,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 13,
+        "text_layer_char_count": 964,
+        "text_layer_sha256": "f9c2bd1afda505b331ad0159c243c2168072d20a87346e9f269f2807b7892c61"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 717,
+        "md_start_line": 589,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 14,
+        "text_layer_char_count": 1207,
+        "text_layer_sha256": "a39b9ecda73e55e104589ab4a6f0e32b0221153119521a4c6f79375da5dc7376"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 823,
+        "md_start_line": 725,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 15,
+        "text_layer_char_count": 964,
+        "text_layer_sha256": "fceade12a7681523d935cc107b3885d3f4af9a9c1200a042bbc102fbbfb476ef"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 919,
+        "md_start_line": 831,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 16,
+        "text_layer_char_count": 1140,
+        "text_layer_sha256": "4d7fdea3159fe85f1a9d0f02ee305ace8a1088cb4edc9074db9a3b5aa8e89eb3"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1025,
+        "md_start_line": 927,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 17,
+        "text_layer_char_count": 730,
+        "text_layer_sha256": "ecf1f7254259fc260808237244865a6f516abfd109b904c3de24ddde64d0129f"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 1084,
+        "md_start_line": 1033,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 18,
+        "text_layer_char_count": 576,
+        "text_layer_sha256": "6c8bb07d71177b20517fd8597c70f6f63efaddf73d358abfe0398d942ee6f1ed"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 1135,
+        "md_start_line": 1092,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 19,
+        "text_layer_char_count": 576,
+        "text_layer_sha256": "a1c2b4eab2c1ce475aed819a39d549ff33a2d576cafcbc79cb21b9203e5c1ffb"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1149,
+        "md_start_line": 1143,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 20,
+        "text_layer_char_count": 26,
+        "text_layer_sha256": "fdbc02a61d8d7ced6f474eaf6319b8831e539fb8ace85ff35377aff4bf1f0e76"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.1-12, 18-19含流程图、Cursor运行截图与视频预览帧（位于PDF图像层），p.4, 13-18代码块最右侧有少量字符截断，已结合上下文完整还原。",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/跨端开发与性能.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T19:22:00-07:00",
+    "removed_at": "2026-10-20T19:22:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI 辅助前端动画开发.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "acdad8581639e81f7422ff0e78ddc1496b6cf6d509bbb809d809b21f08ee8e48",
+        "copied_at": "2026-10-20T19:22:00-07:00",
+        "removed_at": "2026-10-20T19:22:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_AI辅助前端动画开发.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

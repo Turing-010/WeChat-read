@@ -1,0 +1,848 @@
+{
+  "directory": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术",
+  "requested": null,
+  "scope": {
+    "mode": "year",
+    "year": 2025
+  },
+  "before": {
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI 驱动研发体系的实践和思考.pdf": [
+      4822873,
+      1792405346120504828
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝动效解决方案分享.pdf": [
+      8746556,
+      1792434425252431353
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构.pdf": [
+      2415363,
+      1792431987219532731
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI Coding思考：从工具提效到范式变革，我们还缺什么？.pdf": [
+      4461257,
+      1792438034491222829
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/设计模式Trustworthy Generation：提升RAG信赖度.pdf": [
+      5563551,
+      1792439907709331392
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/重构协同：关于AI Native团队的思考.pdf": [
+      4202818,
+      1792408553036897568
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/ICCV25 | 淘宝人脸吸引力预测算法FPEM.pdf": [
+      4628104,
+      1792443326710300039
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Jimi：打造Java程序员专属的开源ClaudeCode.pdf": [
+      6604959,
+      1792467216626444901
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/【手猫研发提效随笔】七句话搞定一年AB实验下线：CodingAgent的魔法时刻.pdf": [
+      11324023,
+      1792411586037452860
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/支配树算法原理及鸿蒙工具实践.pdf": [
+      4353174,
+      1792460159299542891
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/场景营销互动&体验 AI Coding — 构建 Agent 自主执行闭环.pdf": [
+      8043154,
+      1792405932165322554
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI架构师的诞生：AI+传统DDD模式 = 实现开发效率提升75%.pdf": [
+      3290539,
+      1792466161731681290
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型.pdf": [
+      17423348,
+      1792414955171551510
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘天营销中后台生码工作流最佳实践.pdf": [
+      13917139,
+      1792431668319508201
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/天猫AI助手：调度框架重构与AI Coding工程化实践.pdf": [
+      4302389,
+      1792409200029000098
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/软件为何越做越乱？万字长文讲透软件的“复杂性”.pdf": [
+      4144681,
+      1792436857683330350
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/GenAI输出内容控制的5种设计模式.pdf": [
+      3749629,
+      1792461169902193840
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/CCIG 2026｜TaoAvatar：3D真人数字人在淘宝Vision领域的应用.pdf": [
+      13980623,
+      1792423672466552032
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/万级实时推理的商品领域Agent实践思考和总结.pdf": [
+      11819321,
+      1792427014793846967
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/CVPR 2026｜重思基于扩散模型的视频超分辨率：利用对齐特征的稠密引导 DGAF-VSR.pdf": [
+      6497922,
+      1792415959244040554
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/从代码生成到自主决策：打造一个Coding驱动的“自我编程”Agent.pdf": [
+      7763035,
+      1792466642626525105
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝跨端体验优化 AI 演进之路.pdf": [
+      17407491,
+      1792433165126086916
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘天集团自营技术运营算法团队4年2次荣膺INFORMS“杰出实践奖”决选荣誉：以策略正则化突破DRL在库存管理中的落地瓶颈.pdf": [
+      5013108,
+      1792441192270598801
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/浏览器自动化：从GUI到OpenCLI.pdf": [
+      3442578,
+      1792427466110942257
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI Agent 的 Skill 系统设计.pdf": [
+      6638547,
+      1792417344583945296
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/RAG 全链路技术详解.pdf": [
+      5530993,
+      1792428871338005614
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/TLiveOmni 1.0 直播视频多模态理解大模型.pdf": [
+      8007247,
+      1792428209144201009
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘天集团2027届实习生校招大事件_请查收_淘天集团27届实习生校招大事件，文末阅读原文报名宣讲会.pdf": [
+      3987722,
+      1792436223062502596
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI 评测还在看准确率？数据科学早就用因果推断做归因分析了.pdf": [
+      9613452,
+      1792409537857719890
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/《AI重塑经营：2026中国电商AI应用白皮书》正式发布！.pdf": [
+      8896969,
+      1792423183073667743
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI理解、引擎驱动：零代码搭建实时数据链路.pdf": [
+      5790755,
+      1792407452748553977
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/信任需要基础设施：如何让AI可靠的取数.pdf": [
+      3860928,
+      1792405578770585374
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘天自研编码器斩获MSU 6项冠军，视频编码技术支撑内容体验升级.pdf": [
+      5950538,
+      1792404817335614455
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘特端侧模型从微调到应用的全链路实践.pdf": [
+      8628355,
+      1792403807646142050
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/TMAP平台图生视频推理加速实践.pdf": [
+      18764314,
+      1792412724200749936
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI 动画辅助实现（实践篇）：从 AE 到可运行代码的全链路方案.pdf": [
+      10890832,
+      1792417599888074135
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI真人数字人语音对话性能优化实践总结.pdf": [
+      4906120,
+      1792438973297739781
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI Coding前端实践后的复盘总结.pdf": [
+      2384219,
+      1792436404263573143
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/【AI Coding】借助cursor实现业务需求全栈交付实践.pdf": [
+      24245849,
+      1792440394886438671
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/SIGGRAPH Asia 2025｜只用一部手机创建和渲染高质量3D数字人.pdf": [
+      15909722,
+      1792466821669513056
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Copilot 需求交付 Skill 如何实现数据需求24h交付.pdf": [
+      7068440,
+      1792413227805476274
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/2025淘宝直播双11花花乐动画实现方案思考&分享.pdf": [
+      8711647,
+      1792467363801662963
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI工程vs传统工程 —「道法术」中的变与不变.pdf": [
+      5465946,
+      1792461693512382131
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Agent skill 迭代式编写实战.pdf": [
+      5487148,
+      1792422046759048560
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/高价率运营 AI 工作台：约定驱动与 AI 编排的评测优化实践.pdf": [
+      8627496,
+      1792414050265994623
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/百亿补贴 C 端 AI Coding 实战：基于 SDD 的服务端 AI Coding 实践.pdf": [
+      4325671,
+      1792412180160953043
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/告别“伪智能”代码：用 Spec + RAG 打造真正懂你的 AI 程序员.pdf": [
+      9113908,
+      1792435358273885943
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/从定制Workflow到AI自主决策的架构演进——以TMIC AI小新为例.pdf": [
+      24615822,
+      1792426238628721432
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/天猫新品团队AI编码实战指南（下）.pdf": [
+      11526284,
+      1792430701983353241
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/拒绝“感觉有效”：用数据证明 AI Coding 的真实团队价值【天猫AI Coding实践系列】.pdf": [
+      8569934,
+      1792433856192098964
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI+时代工程师的空间在哪儿——从范式演进看技术机会.pdf": [
+      19415309,
+      1792458635652796214
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝TaoMate-H3开源：三步生成「分钟级」音视频连续创作.pdf": [
+      13189789,
+      1792404273972221632
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/一次大文件处理性能优化实录.pdf": [
+      3488597,
+      1792440772428427502
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI-Generated UI 技术深度解析 模型流式输出与 UI 渲染实践.pdf": [
+      3519793,
+      1792429953007526054
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/MNN-Sana-Edit-V2：端侧运行的图像漫画风编辑大模型.pdf": [
+      3125197,
+      1792432304308182616
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/百亿补贴 C 端 AI Coding 实战：端到端 CodingAgent 设计与实践.pdf": [
+      7845565,
+      1792411157893632472
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/复杂任务AI处理实践：淘宝工程师的实战手记.pdf": [
+      3525147,
+      1792467492666263206
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI编码实践：从Vibe Coding到SDD.pdf": [
+      4100376,
+      1792467019926663536
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘天业务技术2025年度热门文章盘点.pdf": [
+      1668185,
+      1792460766165743987
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/我对 AI Coding 的一点思考：从 Spec 驱动转向环境与验证驱动.pdf": [
+      6002643,
+      1792406274491931588
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/场景营销前端 AI Coding — 从问题到方案.pdf": [
+      18979526,
+      1792419601126865423
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/用自然语言替代复杂代码.pdf": [
+      2924812,
+      1792434146084903192
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Agentic Coding场景下基于职责分离的上下文管理思路分享.pdf": [
+      5548254,
+      1792441910881170709
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/CVPR 2026｜面向视频扩散模型的局部细节偏好优化方法 LocalDPO.pdf": [
+      9037143,
+      1792416821432624993
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝直播数字人 AgenticRL 实践：从 RLVR 到 MultiAgent RL.pdf": [
+      11320339,
+      1792415637086996377
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/从 Vibe Coding 到范式编程：用 Spec 打造淘系交易的 AI 领域专家.pdf": [
+      19981867,
+      1792435720370258899
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/浅谈 SKILL 研发的最佳实践——以百补详情助手为例.pdf": [
+      5746279,
+      1792406849727141571
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/场景营销前端 AI Coding — AI Native 的视觉稿还原.pdf": [
+      22926676,
+      1792418700990609175
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/从人机协作到AI主导：我们是怎么把代码质量交给“数字SRE”的？.pdf": [
+      6265214,
+      1792426493469292756
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI工作流在淘宝交易舆情巡检上的探索与实践.pdf": [
+      3822184,
+      1792437216799696394
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/从全量启动到最小核：手淘外链唤端链路的三次架构演进.pdf": [
+      4361295,
+      1792434691060591363
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/告别 AI Demo 页面：构建支持淘内货品运营、可C端投放的会场 Agent Harness.pdf": [
+      15576077,
+      1792403193709065315
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI 答疑助手优化实践：从 RAG 到 LightRAG 的全链路升级.pdf": [
+      5316600,
+      1792435004479036659
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/知识基座：让“AI 越用越懂业务”的团队经验实践【天猫AI Coding实践系列】.pdf": [
+      7443386,
+      1792435995230658733
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/ICLR 2026｜基于视觉自回归模型的前馈式主体驱动图像生成算法 EchoGen.pdf": [
+      5558860,
+      1792416369192036631
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/如何构建一个更“好”的知识库？.pdf": [
+      11605955,
+      1792422890210756982
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/用 AI Skills 打通中间件迁移：定位服务从 Android 到鸿蒙的完整实践.pdf": [
+      4688568,
+      1792421461876386635
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/ICLR 2026｜基于概念蒸馏的生成式视频复原算法 Vivid-VR.pdf": [
+      9993739,
+      1792437582100724994
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/【淘宝直播数字人互动LLM】告别AI感：基于真人ASR数据的拟人化探索.pdf": [
+      3732641,
+      1792441584658326008
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/面向智能导购的Agent评测实践.pdf": [
+      4661534,
+      1792429337280576084
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/缓存使用实践总结：以淘宝交易结算场景为例.pdf": [
+      2059521,
+      1792430217123938251
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI 无障碍 CR 与自动适配实践：从问题洞察到效果验证.pdf": [
+      3771954,
+      1792459419973994286
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/QoderWork Skills 开发实践：从传统数科到 AI 数科的转型探索-我的Skills进阶之旅.pdf": [
+      5884827,
+      1792417970724076746
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝订单列表体验优化实践.pdf": [
+      10409943,
+      1792459042063154743
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/天猫新品营销技术团队AI编码实战指南（上）.pdf": [
+      20151081,
+      1792431214639307255
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/卡片式对话的协议方案探索和思考.pdf": [
+      3628271,
+      1792432861203526089
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/如何设计一个AI Agent系统.pdf": [
+      10112339,
+      1792442612443818800
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Codeindex · 让大模型更好地理解你的代码.pdf": [
+      3976512,
+      1792432596624959228
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/天猫超市数据AI实践总结.pdf": [
+      7021857,
+      1792466276149980858
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/首届淘宝电商AI挑战赛来了！设350万赛事奖金和千万扶持资源.pdf": [
+      3269684,
+      1792438512845444703
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/Agent-Memory 评测全景：基准、评估与记忆系统（理论篇）.pdf": [
+      31749332,
+      1792424571226602299
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/面向Skills编程-淘宝企业购端对端研发提效实践.pdf": [
+      9601464,
+      1792420650380793042
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/浙江大学经济学院百人计划研究员、博士生导师评价《2026 中国电商AI应用白皮书》：AI 从技术可得走向经营能力平权.pdf": [
+      1313458,
+      1792421092909238842
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI 辅助前端动画开发.pdf": [
+      9802967,
+      1792466408534142635
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/复杂业务团队的 AI Coding 交付实践：知识库、RD 流程和质量门禁.pdf": [
+      6804351,
+      1792410834307182573
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/从应用架构的视角看退小宝AI助手落地现状.pdf": [
+      7381084,
+      1792439489862372767
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？.pdf": [
+      6625629,
+      1792424868949801883
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI时代的数据研发-Semantic（语义层）实践总结.pdf": [
+      10304976,
+      1792407962786532542
+    ],
+    "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝主播Agent的Harness工程实战.pdf": [
+      8961843,
+      1792410016017615309
+    ]
+  },
+  "saved": [
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/重构一个类，JVM竟省下2.9G内存?.pdf",
+      "bytes": 3500793,
+      "pages": 18,
+      "sha256": "cf29bc9515a1cb2f60be419b5eae8015acfb4dc8093afc04956b3de25fe34186",
+      "content_quality": "unverified",
+      "title": "重构一个类，JVM竟省下2.9G内存?",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-11-28",
+      "timing_id": "9f429a37d14a4b868a758ee23cb38cb6"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI互动前端开发的思考和实践_.pdf",
+      "bytes": 6650872,
+      "pages": 27,
+      "sha256": "23b2dc7a42547d04a37cb3b715a82f1a0ff681795834617e2255bbf3713fea03",
+      "content_quality": "unverified",
+      "title": "AI互动前端开发的思考和实践_",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-11-24",
+      "timing_id": "6db0b52cd0a1464d8767ae7b51963367"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/代码染色&无效代码清理.pdf",
+      "bytes": 5462612,
+      "pages": 22,
+      "sha256": "910583883a2e4fbfb131da525d0543de958df0079f2c56529ad3228025129915",
+      "content_quality": "unverified",
+      "title": "代码染色&无效代码清理",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-11-21",
+      "timing_id": "523696359f34491e854bb5f6f5c81a15"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/交易订单表如何做索引优化.pdf",
+      "bytes": 7398393,
+      "pages": 37,
+      "sha256": "8855f8c12f4f795029471df4340566d4d0c665a1ab68ddd02167c2782c80a7e2",
+      "content_quality": "unverified",
+      "title": "交易订单表如何做索引优化",
+      "url": null,
+      "note": "已翻至公众号页脚；37页 PDF，结构完整性核验通过，页面内容未逐页抽查。",
+      "date": "2025-11-19",
+      "timing_id": "30241e44cdbc4990992cedae6dad54bd"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/页面搭建方案(TurboUIBuilder)在穿搭星球的实践.pdf",
+      "bytes": 9449034,
+      "pages": 24,
+      "sha256": "b3c55380858b993265c3e0e966a36dfa5ceebf93be42c418cf4a57d669913bbc",
+      "content_quality": "unverified",
+      "title": "页面搭建方案(TurboUIBuilder)在穿搭星球的实践",
+      "url": null,
+      "note": "已翻至公众号页脚；24页 PDF，结构完整性核验通过，页面内容未逐页抽查。",
+      "date": "2025-11-14",
+      "timing_id": "c35c7b345e994a96b933e814e9f9bdef"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/从0到1：天猫AI测试用例生成的实践与突破.pdf",
+      "bytes": 4275789,
+      "pages": 11,
+      "sha256": "46ec3aac9e1427f60c4da4c4f5579a77728adf46341c7c11a1538862ceedbae6",
+      "content_quality": "unverified",
+      "title": "从0到1：天猫AI测试用例生成的实践与突破",
+      "url": null,
+      "note": "已翻至公众号页脚；PDF 结构完整性核验通过，页面内容未逐页抽查。",
+      "date": "2025-11-10",
+      "timing_id": "0f6add374fc245adabbdb0f77ff6e092"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/让AI打出丝滑连招：编码-部署-自测-改bug.pdf",
+      "bytes": 3788776,
+      "pages": 11,
+      "sha256": "2a3e7ade103e744356b2491d29fc4e4ee1e12d8dde849ac0681f94e1c912ff30",
+      "content_quality": "unverified",
+      "title": "让AI打出丝滑连招：编码-部署-自测-改bug",
+      "url": null,
+      "note": "2025-11-07; 11 pages; footer verified",
+      "date": "2025-11-07",
+      "timing_id": "ff49e456890045c6af31c468639aa08d"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/别让故障复盘流于形式：用AI挖掘每一次“跌倒”的价值.pdf",
+      "bytes": 11483719,
+      "pages": 35,
+      "sha256": "d90ad12d0cb7e2894470feb2cfb6a6a8d70384cf2680afe84ffabfc1f147621b",
+      "content_quality": "unverified",
+      "title": "别让故障复盘流于形式：用AI挖掘每一次“跌倒”的价值",
+      "url": null,
+      "note": "2025-11-03; 35 pages; footer verified",
+      "date": "2025-11-03",
+      "timing_id": "1d98848f6dad46b0bde73d8b24300e35"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI Coding 长文分享：如何真正把工具用起来，从原理到实践.pdf",
+      "bytes": 4667411,
+      "pages": 28,
+      "sha256": "399ec724bb6f7b762b0b83f01919db4520bcdf23c778d4da3669b5dc979f0dbe",
+      "content_quality": "unverified",
+      "title": "AI Coding 长文分享：如何真正把工具用起来，从原理到实践",
+      "url": null,
+      "note": "已逐屏翻至公众号账号卡片；PDF存在且结构校验通过。",
+      "date": "2025-10-29",
+      "timing_id": "ce432865dd1240af8a76b40d4b801dbe"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/我的研发实践：高准确率AICoding工作流设计.pdf",
+      "bytes": 10150653,
+      "pages": 50,
+      "sha256": "418d6d15236325ce9e92cd0af5fc4da070c0eb54fe8c09323a0a5cd2c8fac926",
+      "content_quality": "unverified",
+      "title": "我的研发实践：高准确率AICoding工作流设计",
+      "url": null,
+      "note": "已翻至公众号账号卡片；PDF 50 页，结构校验通过。",
+      "date": "2025-10-27",
+      "timing_id": "37a40370755d48f6ba0160798a1d8db3"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/一次AI驱动的淘宝客户端需求开发实战.pdf",
+      "bytes": 3126546,
+      "pages": 17,
+      "sha256": "385a8a8b80c66a8e3f8f3aa24847145f5d558e8e2264fb9749b9c7ed64fee322",
+      "content_quality": "unverified",
+      "title": "一次AI驱动的淘宝客户端需求开发实战",
+      "url": null,
+      "note": "已逐屏翻至公众号账号卡片；PDF 17 页，结构校验通过。",
+      "date": "2025-10-22",
+      "timing_id": "4a2af290565549d5b7d978867a134c92"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/天猫行业中后台前端研发Agent设计.pdf",
+      "bytes": 19394132,
+      "pages": 45,
+      "sha256": "2a6fc892e667682c2424ee4c8a8ddf97bb0f9e0cc4886003b4634d2b861654cb",
+      "content_quality": "unverified",
+      "title": "天猫行业中后台前端研发Agent设计",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-10-20",
+      "timing_id": "3a25f3c757dc490abb67bab2c49a6094"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/初探：从0开始的AI-Agent开发踩坑实录.pdf",
+      "bytes": 5346086,
+      "pages": 20,
+      "sha256": "89c84f985f03aec33070bd0051d5738ba3a0712493a345f517ea7f4ba6c22a54",
+      "content_quality": "unverified",
+      "title": "初探：从0开始的AI-Agent开发踩坑实录",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-10-15",
+      "timing_id": "3b0c033e90b246579174596669488437"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/AI动画辅助实现的方案与实践.pdf",
+      "bytes": 10259527,
+      "pages": 22,
+      "sha256": "fcfc596c5d12018ae1400ff13678e98744ac042bc6a2780543d5ea138c81d353",
+      "content_quality": "unverified",
+      "title": "AI动画辅助实现的方案与实践",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-10-13",
+      "timing_id": "331468e3e8af4ac480e9a9cf7c88e7ec"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/从Prompt到Context：为什么Think Tool是形式化的必然？.pdf",
+      "bytes": 3700956,
+      "pages": 8,
+      "sha256": "a782dfbf0db1ae612bc9aaee63b95809d973b64a359ea95f5b67edb5a2b627f7",
+      "content_quality": "unverified",
+      "title": "从Prompt到Context：为什么Think Tool是形式化的必然？",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-10-09",
+      "timing_id": "79eccf54461b464899dc83cd11cd656f"
+    },
+    {
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/产品经理也能“开发”需求？淘宝信息流从需求到上线的AI端到端实践.pdf",
+      "bytes": 6666550,
+      "pages": 14,
+      "sha256": "7944941ae18fb1eee78aead5105fa2579c8fd19073b344c1fa8af8f4951a77ea",
+      "content_quality": "unverified",
+      "title": "产品经理也能“开发”需求？淘宝信息流从需求到上线的AI端到端实践",
+      "url": null,
+      "note": "Not visually audited page by page",
+      "date": "2025-09-29",
+      "timing_id": "67cc33d5135246f183e692b7f79bb0f4"
+    }
+  ],
+  "version": 2,
+  "cursor": {
+    "last_success": {
+      "title": "产品经理也能“开发”需求？淘宝信息流从需求到上线的AI端到端实践",
+      "path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/产品经理也能“开发”需求？淘宝信息流从需求到上线的AI端到端实践.pdf",
+      "date": "2025-09-29"
+    },
+    "next_article": {
+      "title": "一位淘宝工程同学的大模型LoRA微调尝试",
+      "date": "2025-09-24"
+    },
+    "boundary": null,
+    "list_hint": "列表中可见 2025年9月24日和完整标题"
+  },
+  "timing": {
+    "totals": {
+      "open": 760.2302348613739,
+      "extra_wait": 7.066864490509033,
+      "body": 4177.969087600708,
+      "print_save": 1481.1316168308258,
+      "verify": 33.46120285987854,
+      "return_list": 652.5675382614136
+    },
+    "articles": {
+      "9f429a37d14a4b868a758ee23cb38cb6": {
+        "title": "重构一个类，JVM竟省下2.9G内存?",
+        "date": "2025-11-28",
+        "phases": {
+          "open": 11.513738870620728,
+          "extra_wait": 0.5055561065673828,
+          "body": 61.53960609436035,
+          "print_save": 18.691558837890625,
+          "verify": 1.0549430847167969,
+          "return_list": 7.1971659660339355
+        }
+      },
+      "6db0b52cd0a1464d8767ae7b51963367": {
+        "title": "AI互动前端开发的思考和实践_",
+        "date": "2025-11-24",
+        "phases": {
+          "body": 71.99893069267273,
+          "open": 8.963186979293823,
+          "print_save": 28.197795152664185,
+          "verify": 1.0564768314361572,
+          "return_list": 20.841833114624023
+        }
+      },
+      "523696359f34491e854bb5f6f5c81a15": {
+        "title": "代码染色&无效代码清理",
+        "date": "2025-11-21",
+        "phases": {
+          "body": 79.03532099723816,
+          "extra_wait": 0.5055861473083496,
+          "print_save": 21.003700971603394,
+          "verify": 1.0543906688690186,
+          "return_list": 12.144837141036987
+        }
+      },
+      "30241e44cdbc4990992cedae6dad54bd": {
+        "title": "交易订单表如何做索引优化",
+        "date": "2025-11-19",
+        "phases": {
+          "body": 3.7795450687408447,
+          "open": 194.41306471824646,
+          "extra_wait": 0.50555419921875,
+          "print_save": 57.47481393814087,
+          "verify": 1.0941040515899658,
+          "return_list": 9.29745888710022
+        }
+      },
+      "c35c7b345e994a96b933e814e9f9bdef": {
+        "title": "页面搭建方案(TurboUIBuilder)在穿搭星球的实践",
+        "date": "2025-11-14",
+        "phases": {
+          "body": 82.20397090911865,
+          "open": 18.279849767684937,
+          "extra_wait": 0.5055642127990723,
+          "print_save": 30.241734266281128,
+          "verify": 1.094261646270752,
+          "return_list": 13.100809335708618
+        }
+      },
+      "0f6add374fc245adabbdb0f77ff6e092": {
+        "title": "从0到1：天猫AI测试用例生成的实践与突破",
+        "date": "2025-11-10",
+        "phases": {
+          "body": 0.06926369667053223,
+          "open": 52.180538177490234,
+          "extra_wait": 0.5056788921356201,
+          "print_save": 26.568140983581543,
+          "verify": 1.087580919265747,
+          "return_list": 25.580438137054443
+        }
+      },
+      "ff49e456890045c6af31c468639aa08d": {
+        "title": "让AI打出丝滑连招：编码-部署-自测-改bug",
+        "date": "2025-11-07",
+        "phases": {
+          "body": 29.228482007980347,
+          "open": 33.597784996032715,
+          "extra_wait": 0.5023829936981201,
+          "print_save": 35.66569185256958,
+          "verify": 17.510856866836548,
+          "return_list": 9.137214183807373
+        }
+      },
+      "1d98848f6dad46b0bde73d8b24300e35": {
+        "title": "别让故障复盘流于形式：用AI挖掘每一次“跌倒”的价值",
+        "date": "2025-11-03",
+        "phases": {
+          "body": 527.2974870204926,
+          "extra_wait": 2.0169739723205566,
+          "print_save": 284.1618547439575,
+          "verify": 1.0949151515960693,
+          "return_list": 172.56419610977173
+        }
+      },
+      "ce432865dd1240af8a76b40d4b801dbe": {
+        "title": "AI Coding 长文分享：如何真正把工具用起来，从原理到实践",
+        "date": "2025-10-29",
+        "phases": {
+          "body": 528.4763786792755,
+          "verify": 1.0542490482330322,
+          "return_list": 51.013697147369385
+        }
+      },
+      "37a40370755d48f6ba0160798a1d8db3": {
+        "title": "我的研发实践：高准确率AICoding工作流设计",
+        "date": "2025-10-27",
+        "phases": {
+          "body": 455.8922688961029,
+          "verify": 1.0559639930725098,
+          "return_list": 35.20281004905701
+        }
+      },
+      "4a2af290565549d5b7d978867a134c92": {
+        "title": "一次AI驱动的淘宝客户端需求开发实战",
+        "date": "2025-10-22",
+        "phases": {
+          "body": 127.93118023872375,
+          "verify": 1.0529367923736572,
+          "return_list": 32.90701699256897
+        }
+      },
+      "3a25f3c757dc490abb67bab2c49a6094": {
+        "title": "天猫行业中后台前端研发Agent设计",
+        "date": "2025-10-20",
+        "phases": {
+          "body": 955.3897857666016,
+          "print_save": 187.39082503318787,
+          "verify": 1.0627760887145996,
+          "return_list": 85.31617784500122
+        }
+      },
+      "3b0c033e90b246579174596669488437": {
+        "title": "初探：从0开始的AI-Agent开发踩坑实录",
+        "date": "2025-10-15",
+        "phases": {
+          "open": 43.00879192352295,
+          "body": 311.84090399742126,
+          "print_save": 119.17748713493347,
+          "verify": 1.0466959476470947,
+          "return_list": 28.6436710357666
+        }
+      },
+      "331468e3e8af4ac480e9a9cf7c88e7ec": {
+        "title": "AI动画辅助实现的方案与实践",
+        "date": "2025-10-13",
+        "phases": {
+          "open": 45.55154085159302,
+          "body": 383.12676525115967,
+          "print_save": 153.48378586769104,
+          "verify": 1.0479419231414795,
+          "return_list": 87.60204720497131
+        }
+      },
+      "79eccf54461b464899dc83cd11cd656f": {
+        "title": "从Prompt到Context：为什么Think Tool是形式化的必然？",
+        "date": "2025-10-09",
+        "phases": {
+          "open": 46.55704689025879,
+          "body": 230.52799916267395,
+          "print_save": 336.02861499786377,
+          "verify": 1.0459837913513184,
+          "return_list": 34.92432713508606
+        }
+      },
+      "67cc33d5135246f183e692b7f79bb0f4": {
+        "title": "产品经理也能“开发”需求？淘宝信息流从需求到上线的AI端到端实践",
+        "date": "2025-09-29",
+        "phases": {
+          "open": 68.34971070289612,
+          "body": 329.6311991214752,
+          "print_save": 183.04561305046082,
+          "verify": 1.047126054763794,
+          "return_list": 27.09383797645569
+        }
+      }
+    },
+    "active": {
+      "name": "paused",
+      "started_at": 1792744074.208351,
+      "article_id": null
+    },
+    "unmeasured": [
+      {
+        "reason": "unattributed_before_interruption",
+        "phases": {
+          "open": 115.96794533729553,
+          "extra_wait": 1.5138027667999268
+        }
+      },
+      {
+        "name": "open",
+        "started_at": 1792735074.088951,
+        "article_id": null,
+        "reason": "interrupted_interval"
+      },
+      {
+        "reason": "unattributed_before_interruption",
+        "phases": {
+          "open": 31.166412830352783,
+          "extra_wait": 0.5057651996612549
+        }
+      },
+      {
+        "reason": "unattributed_before_interruption",
+        "phases": {
+          "open": 17.052170038223267
+        }
+      },
+      {
+        "name": "open",
+        "started_at": 1792736208.8604312,
+        "article_id": null,
+        "reason": "interrupted_interval"
+      }
+    ],
+    "waits": {
+      "loading": 7.0
+    },
+    "awaiting_title": true,
+    "unassigned": {
+      "open": 73.62845277786255
+    }
+  },
+  "current_id": null,
+  "current": null
+}

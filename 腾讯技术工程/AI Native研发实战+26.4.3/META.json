@@ -1,0 +1,462 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0073",
+  "title": "当整个团队开始0人工Coding：一份万字AI Native研发实战手册",
+  "short_title": "AI Native研发实战",
+  "account": "腾讯技术工程",
+  "author": "binxiong",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-04-03T04:07",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0403 AI Native Coding Playbook.pdf",
+      "original_filename": "0403 AI Native Coding Playbook.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "221a2e9cb197f74de6ced347c3e639b8409841847e96dbaaa2d3e1527b99045f",
+      "size_bytes": 5224718,
+      "page_count": 18,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "p.11降级文字说读本地version.json，而代码示意写git clone，两者不完全一致",
+          "pages": [
+            11
+          ],
+          "status": "unresolved"
+        },
+        {
+          "description": "p.12 skill-bundle代码长行右侧裁切；内部安装命令和完整脚本不随材料提供",
+          "pages": [
+            8,
+            12,
+            13
+          ],
+          "status": "unresolved"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏 2026-04-03T04:07"
+    }
+  ],
+  "tags": [
+    "AI研发协同",
+    "Agent工程循环",
+    "Harness与模型协同"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/AI Native研发实战+26.4.3",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI Native研发实战.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "当整个团队开始 0  人工 Coding :一份万字 AI  Native 研发实战手册\n腾讯程序员 2026 年 4 月 3 日 04 : 07日本原创 腾讯技术工程 473 人\n作者: binxiong\n写在前面\n如果你也在用  AI 写代码,你大概率经历过这样的场景:\n打开  CodeBuddy ,对着对话框敲下一段需求描述, AI \" 唰唰唰 \" 吐出一段代码。你看了看,好\n像对?复制粘贴,跑一下 —— 报错了。于是开始新一轮的 \" 对话 - 调试 - 再对话 \" 循环。\n运气好的话,折腾半小时能搞定。运气不好,你发现  AI 写的代码和项目架构完全不搭,甚至\n用了一个你们团队根本没有的库。\n这不是  AI 的问题,是我们 \" 用法 \" 的问题。\n我们团队在  2025 年就开始大规模使用  AI 辅助编码,标准软件、产品市场、极光平台都跑通\n了实际案例。但随着使用深入,一个共识越来越清晰:\n2026 年初,我们正式决定 ——全面转向  AI Native 研发模式,目标是 \"0 人工  Coding\"。\n这篇文章,就是这段旅程的全记录。\n一、为什么要搞  AI Native ? \" 辅助编码 \" 到底差在哪?\n先说个残酷的事实:即便团队里的  AI 老手,用  AI 辅助编码的效率提升也很难超过  50%。原\n因不是模型不够聪明,而是我们的协作方式有结构性缺陷。\n导语: 2023 年我们开始用  AI 辅助解决问题, 2025 年我们验证了  AI Coding 的可行性,\n2026 年我们决定更进一步 —— 不再让  AI 当 \" 打字员 \" ,而是让它当 \" 施工队长 \" 。这篇文章\n记录了我们团队在  AI Native 研发模式落地过程中的思考、踩坑和最终形成的一套可复制\n的方法论。\n把  AI 当打字员用,天花板很低。把  AI 当施工队用,才有真正的效率革命。\n",
+    "publication_evidence": "PDF p.1 发布栏 2026-04-03T04:07",
+    "full_title_in_capture": "当整个团队开始0人工Coding：一份万字AI Native研发实战手册",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0073",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "221a2e9cb197f74de6ced347c3e639b8409841847e96dbaaa2d3e1527b99045f"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.11降级文字说读本地version.json，而代码示意写git clone，两者不完全一致",
+        "pages": [
+          11
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "p.12 skill-bundle代码长行右侧裁切；内部安装命令和完整脚本不随材料提供",
+        "pages": [
+          8,
+          12,
+          13
+        ],
+        "status": "unresolved"
+      }
+    ],
+    "outputs": [
+      "AI_AI Native研发实战.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "detail_pages_reviewed": [
+        5,
+        7,
+        11,
+        12
+      ]
+    },
+    "coverage": "覆盖痛点、角色分工、三/六步工作流、前端原型、知识/MCP/Skills、安装器全结构及三项设计、版本管理、上手、扩展指令和MR规范；不复制不可用内部安装地址。",
+    "fact_checks": [
+      {
+        "item": "任务建议",
+        "value": "15项以内",
+        "pages": "5、15",
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "桥接版本",
+        "value": "v0.4.2 false→v0.4.3 true",
+        "pages": 10,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "Skill规模",
+        "value": "600+行SOP",
+        "pages": 8,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "归档前提",
+        "value": "MR通过",
+        "pages": 4,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "人职责",
+        "value": "决策、审批、把关",
+        "pages": 3,
+        "result": "与所读原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_AI Native研发实战.md",
+      "sha256": "cb9f87a93803ad599674e399c8cca3d7a321ef078e10eb82999ad6347ec54ea5"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "221a2e9cb197f74de6ced347c3e639b8409841847e96dbaaa2d3e1527b99045f"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "2dcd203eebe20ed1979c0d705592e3a4f08f6a05c7458590852617cc78e10584"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 31,
+        "text_layer_sha256": "310546f1a072e35963b78ee5558e5f8c86d0f3116eb62195fbbd78839c26b8b6",
+        "text_layer_char_count": 805
+      },
+      {
+        "page": 2,
+        "md_start_line": 39,
+        "md_end_line": 71,
+        "text_layer_sha256": "97c8d3303f9436d58900f4ee05e1f649c577fd6694f5098f73778fc4d508daea",
+        "text_layer_char_count": 731
+      },
+      {
+        "page": 3,
+        "md_start_line": 79,
+        "md_end_line": 99,
+        "text_layer_sha256": "1a5339c989b7a058b65e17379634da8fc79c35c7e5e832795e96c54a30e84678",
+        "text_layer_char_count": 630
+      },
+      {
+        "page": 4,
+        "md_start_line": 107,
+        "md_end_line": 124,
+        "text_layer_sha256": "db02138da890c99b00d280a70ed3f8c31fa0fcda441f8de7baf5c4182e259294",
+        "text_layer_char_count": 469
+      },
+      {
+        "page": 5,
+        "md_start_line": 132,
+        "md_end_line": 139,
+        "text_layer_sha256": "dcea9bb14dff7c2ae8b4c1cb260c3c7ce7d965ed5c618e2d3d744d78092f23ff",
+        "text_layer_char_count": 314
+      },
+      {
+        "page": 6,
+        "md_start_line": 147,
+        "md_end_line": 176,
+        "text_layer_sha256": "cfc8a3ca6292c588d5e5a3a35d896fb82682774339a2d06b537ba72b08bfd3f9",
+        "text_layer_char_count": 917
+      },
+      {
+        "page": 7,
+        "md_start_line": 184,
+        "md_end_line": 203,
+        "text_layer_sha256": "2c4d6a2fad411eb48b905cf4f055b1aa854262b02fce4500fcee4ea31c4320b5",
+        "text_layer_char_count": 801
+      },
+      {
+        "page": 8,
+        "md_start_line": 211,
+        "md_end_line": 245,
+        "text_layer_sha256": "04079376c413a3fea1995026f0657e2a5503fc207a935077973a5e68faf02855",
+        "text_layer_char_count": 1403
+      },
+      {
+        "page": 9,
+        "md_start_line": 253,
+        "md_end_line": 284,
+        "text_layer_sha256": "2ffdc806d9b76a9b56f530a071856e67a139822ac0d8b49cfc1c2b856f589ebe",
+        "text_layer_char_count": 1126
+      },
+      {
+        "page": 10,
+        "md_start_line": 292,
+        "md_end_line": 321,
+        "text_layer_sha256": "80fbb5180fb9bef6d056a93146446a2b4ffee263aa34ee05d0b7c8433913d42f",
+        "text_layer_char_count": 1326
+      },
+      {
+        "page": 11,
+        "md_start_line": 329,
+        "md_end_line": 364,
+        "text_layer_sha256": "72f8925f7a2b2af4fbd6fcb975b2376e1fefc02757a6b91dda24b539be5b164d",
+        "text_layer_char_count": 1165
+      },
+      {
+        "page": 12,
+        "md_start_line": 372,
+        "md_end_line": 405,
+        "text_layer_sha256": "13cc8094f8dc8917db100f37f4b5d337f29a7832a74a4fe857be0230fc14a3a3",
+        "text_layer_char_count": 1237
+      },
+      {
+        "page": 13,
+        "md_start_line": 413,
+        "md_end_line": 441,
+        "text_layer_sha256": "783e05082af7379cfb915da5d51f567618e09920623676f017a5b2974c5af5c0",
+        "text_layer_char_count": 884
+      },
+      {
+        "page": 14,
+        "md_start_line": 449,
+        "md_end_line": 479,
+        "text_layer_sha256": "c1c11f1a8d82fc21edf516a91dbbf57767df9c2c339c8d55786945487ea73df8",
+        "text_layer_char_count": 919
+      },
+      {
+        "page": 15,
+        "md_start_line": 487,
+        "md_end_line": 515,
+        "text_layer_sha256": "ce4304b3420c004f7ac3d684bf9e42a7d69875bbcd7d087d169c3de595b9768a",
+        "text_layer_char_count": 813
+      },
+      {
+        "page": 16,
+        "md_start_line": 523,
+        "md_end_line": 558,
+        "text_layer_sha256": "1f6faa56c464720cf4f46a69f844844fdea850f1e56fa800287f643c4890f85f",
+        "text_layer_char_count": 1091
+      },
+      {
+        "page": 17,
+        "md_start_line": 566,
+        "md_end_line": 579,
+        "text_layer_sha256": "14de6152eadbbf9f78019f7714486060e7fc6b23e014a2b2be17a599c504a562",
+        "text_layer_char_count": 228
+      },
+      {
+        "page": 18,
+        "md_start_line": 587,
+        "md_end_line": 588,
+        "text_layer_sha256": "134a2f2ff54dcd675ce21cf32baaf9a4f1819a3a604e2bffd5b7c72f861ed091",
+        "text_layer_char_count": 21
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "detail_pages_reviewed": [
+        5,
+        7,
+        11,
+        12
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.11降级文字说读本地version.json，而代码示意写git clone，两者不完全一致",
+        "pages": [
+          11
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "p.12 skill-bundle代码长行右侧裁切；内部安装命令和完整脚本不随材料提供",
+        "pages": [
+          8,
+          12,
+          13
+        ],
+        "status": "unresolved"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0403 AI Native Coding Playbook.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "221a2e9cb197f74de6ced347c3e639b8409841847e96dbaaa2d3e1527b99045f",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_AI Native研发实战.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

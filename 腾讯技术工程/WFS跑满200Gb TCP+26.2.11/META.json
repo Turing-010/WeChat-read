@@ -1,0 +1,420 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0129",
+  "title": "微信 WFS 传统 TCP 网络 Fio 跑满 200Gb 网卡实践",
+  "short_title": "WFS跑满200Gb TCP",
+  "account": "腾讯技术工程",
+  "author": "微信 WFS 团队",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-02-11T01:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260211_WeChat_WFS_TCP_Fio_200Gb.pdf",
+      "original_filename": "20260211_WeChat_WFS_TCP_Fio_200Gb.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "232acae345c7e91f2376201c28e7801eefb5457340688c6666c464e7fce2f98a",
+      "size_bytes": 3173112,
+      "page_count": 9,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "性能结论来自作者内部环境，文章未完整给出机器配置、Fio参数、缓存控制与独立复现材料；不能直接外推到其他集群。",
+          "pages": [
+            1,
+            7,
+            8,
+            9
+          ],
+          "status": "source_limitation"
+        },
+        {
+          "description": "sendfile模式不支持实时CRC；定期巡检用于降低静默损坏数据被访问的概率，不能替代实时校验。",
+          "pages": [
+            5
+          ],
+          "status": "pending_review"
+        }
+      ],
+      "publication_evidence": "PDF第1页刊头显示 Feb 11, 2026, 1:36 AM；作者栏为微信 WFS 团队。"
+    }
+  ],
+  "tags": [
+    "云网络系统研究",
+    "异常监控与稳定性",
+    "AI研发协同",
+    "分布式计算与数据管道"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/WFS跑满200Gb TCP+26.2.11",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_WFS跑满200Gb TCP.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "微信 WFS 传统 TCP 网络 Fio 跑满 200Gb 网卡实践\n腾讯程序员 Feb  11 , 2026 , 1 : 36  AM广东原创 腾讯技术工程 14  listened\n作者:微信 WFS 团队\nDeepSeek  在去年二月对外开源了 3FS ,凭借基于 RDMA  的架构设计实现了极高吞吐,成\n为业界关注的标杆,网友纷纷复现其在 100Gb  网络下 Fio  跑满带宽的惊艳表现。微信\nWFS  团队也在第一时间跟进学习,但受限于内部庞大存量集群环境不支持 RDMA  通信,我\n们转而聚焦在传统 TCP  网络下的吞吐优化,启动了 WFS  Ultra  极限性能优化项目。最终,\n在同等 200Gb  网络环境中,实现 Fio  吞吐超越 RDMA  加持的 3FS 。目前该优化已在内部\n跑了半年,本文将分享优化的关键思路。\n性能数据\nClient  : 1  台 T0 - CM6AX  Server  : 6  台 T0 - CM6AX  ( WFS , 3FS 同环境部署)\nFio  测试 WFS  可以轻松打满 200G 网卡带宽\n此外,针对 DirectIO  与 BufferIO  不同块大小的读吞吐测试中, WFS  经过本次优化后,对\n比 3FS  均展现出一定的性能优势。\n目前公开资料看, WFS 是业界首个能够在传统网络下,不依赖 RDMA , Fio 跑满 200Gb 网卡\n的 DFS 。\nDirectIO 性能对比\n",
+    "publication_evidence": "PDF第1页刊头显示 Feb 11, 2026, 1:36 AM；作者栏为微信 WFS 团队。",
+    "full_title_in_capture": "微信 WFS 传统 TCP 网络 Fio 跑满 200Gb 网卡实践",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0129",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "232acae345c7e91f2376201c28e7801eefb5457340688c6666c464e7fce2f98a"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "性能结论来自作者内部环境，文章未完整给出机器配置、Fio参数、缓存控制与独立复现材料；不能直接外推到其他集群。",
+        "pages": [
+          1,
+          7,
+          8,
+          9
+        ],
+        "status": "source_limitation"
+      },
+      {
+        "description": "sendfile模式不支持实时CRC；定期巡检用于降低静默损坏数据被访问的概率，不能替代实时校验。",
+        "pages": [
+          5
+        ],
+        "status": "pending_review"
+      }
+    ],
+    "outputs": [
+      "AI_WFS跑满200Gb TCP.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        2,
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    "coverage": "覆盖 TCP 200Gb Fio 背景、异步Run-to-Completion、绑核、客户端splice与服务端sendfile、CRC边界、负载自适应预读、模型预热加载、随机读结果及RDMA适用边界。 交叉复核补充：p.1还报告同等200Gb环境下WFS Fio吞吐超过RDMA版3FS，笔记已补记并明确归因于作者内部测试。",
+    "fact_checks": [
+      {
+        "item": "网络带宽",
+        "note_value": "200Gb",
+        "source_value": "200Gb",
+        "pages": [
+          1,
+          9
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "客户端旧数据路径拷贝",
+        "note_value": "5次",
+        "source_value": "5次",
+        "pages": [
+          4
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "服务端旧数据路径拷贝",
+        "note_value": "3次",
+        "source_value": "3次",
+        "pages": [
+          4
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "优化减少CPU拷贝",
+        "note_value": "8次",
+        "source_value": "8次",
+        "pages": [
+          5
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "DeepSeek-R1模型预热加载",
+        "note_value": "23s",
+        "source_value": "23s",
+        "pages": [
+          7
+        ],
+        "result": "一致"
+      },
+      {
+        "claim": "同等200Gb环境下与3FS的Fio比较",
+        "note_value": "作者称WFS吞吐超过RDMA加持的3FS",
+        "source_value": "同等200Gb网络环境中实现Fio吞吐超越RDMA加持的3FS",
+        "pages": [
+          1
+        ],
+        "result": "按原文作者内部测试结论记录；未独立复测"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_WFS跑满200Gb TCP.md",
+      "sha256": "09a55c4f1a7a0f2a69ffc5dbe0d5574e84c094c3b1f4dfa3b62cc7d387a37000"
+    },
+    "independent_crosscheck": {
+      "reviewer": "crosscheck_a",
+      "status": "passed",
+      "note_sha256": "91af3d78010a20629c64e87079c67e2f7ac51c244325ccef4d03025ab802fa21",
+      "review_sha256": "4a4e2d4a67a2ceedc1f2bb8af11e0e62e516891fe532c24d49a25f62b4caba0a",
+      "changes": [
+        "补入p.1作者关于同等200Gb环境Fio吞吐超过RDMA版3FS的比较结论，并明确其为内部测试陈述。",
+        "按新增结构标准核对日期、唯一H1、复习卡片与末尾折叠校对报告；无卡片内容改写。",
+        "新增标准复核通过：含## 复习卡片、5–10条单行问题::答案、date元数据、唯一H1，以及末尾逐行引用的折叠校对报告。"
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "p.1–2",
+          "result": "文章称同等200Gb下WFS Fio跑满并超过RDMA版3FS；已补入且归因于作者内部测试。"
+        },
+        {
+          "pages": "p.2–6",
+          "result": "同步等待改异步Run-to-Completion、绑核、splice/sendfile及实时CRC限制、自适应预读。"
+        },
+        {
+          "pages": "p.7–9",
+          "result": "预热表和随机读数据、RDMA适用边界；受测配置有限，未外推。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "232acae345c7e91f2376201c28e7801eefb5457340688c6666c464e7fce2f98a"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "0bb437b703b29d2cdafff9c784fc234dee5ec2c7a2b5d1531e7e320c8bb815a9"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 26,
+        "text_layer_sha256": "8ac55fb7c58d9c0641c16aceb1dd2b6c4194a080e899ad8ad396459861547bf9",
+        "text_layer_char_count": 639
+      },
+      {
+        "page": 2,
+        "md_start_line": 34,
+        "md_end_line": 47,
+        "text_layer_sha256": "48851a6352a33c544ee42431f2400d441094953c994428c2d8f98b1feeab1a64",
+        "text_layer_char_count": 492
+      },
+      {
+        "page": 3,
+        "md_start_line": 55,
+        "md_end_line": 64,
+        "text_layer_sha256": "ce391f43e33fc34ec2a7ba7263c51fbe050231700d32f0ebff5be6df3d12e0f5",
+        "text_layer_char_count": 364
+      },
+      {
+        "page": 4,
+        "md_start_line": 72,
+        "md_end_line": 85,
+        "text_layer_sha256": "daa7238dae87859ce5ed601c4782719b07ff7f1cade61a8ac9cb18151a15d191",
+        "text_layer_char_count": 577
+      },
+      {
+        "page": 5,
+        "md_start_line": 93,
+        "md_end_line": 105,
+        "text_layer_sha256": "3e815912962cf6ab330c18768f982d0730c12bed28816347b2bb0858a19177d0",
+        "text_layer_char_count": 452
+      },
+      {
+        "page": 6,
+        "md_start_line": 113,
+        "md_end_line": 119,
+        "text_layer_sha256": "63ecd1c5fa8c68fe893fc8b28ff46e86a8c86b95a10be465fd888e2bc888bba7",
+        "text_layer_char_count": 274
+      },
+      {
+        "page": 7,
+        "md_start_line": 127,
+        "md_end_line": 133,
+        "text_layer_sha256": "259873f7b0109d91bb5d9fce3db5ffc37bf448071c122ce949e1c39516ea2eb6",
+        "text_layer_char_count": 216
+      },
+      {
+        "page": 8,
+        "md_start_line": 141,
+        "md_end_line": 148,
+        "text_layer_sha256": "30313895e7fa0c6f3b0a515755a7e8a26432181db37d8edabc2951784714fd56",
+        "text_layer_char_count": 295
+      },
+      {
+        "page": 9,
+        "md_start_line": 156,
+        "md_end_line": 166,
+        "text_layer_sha256": "7bdd03ba10537fee2fa4f901d96d61a10de1ba1391558fadd3d5f1f0ebe0558d",
+        "text_layer_char_count": 196
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        2,
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "性能结论来自作者内部环境，文章未完整给出机器配置、Fio参数、缓存控制与独立复现材料；不能直接外推到其他集群。",
+        "pages": [
+          1,
+          7,
+          8,
+          9
+        ],
+        "status": "source_limitation"
+      },
+      {
+        "description": "sendfile模式不支持实时CRC；定期巡检用于降低静默损坏数据被访问的概率，不能替代实时校验。",
+        "pages": [
+          5
+        ],
+        "status": "pending_review"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260211_WeChat_WFS_TCP_Fio_200Gb.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "232acae345c7e91f2376201c28e7801eefb5457340688c6666c464e7fce2f98a",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/云网络系统研究.md",
+      "../../20_topics/分布式计算与数据管道.md",
+      "../../20_topics/操作系统与内存管理.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_WFS跑满200Gb TCP.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

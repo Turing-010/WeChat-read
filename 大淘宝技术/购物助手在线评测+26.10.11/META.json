@@ -1,0 +1,697 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0019",
+  "title": "淘宝AI购物助手在线评测落地实践",
+  "short_title": "购物助手在线评测",
+  "account": "大淘宝技术",
+  "author": "盈衣",
+  "author_byline": "本文作者盈衣，来自淘天集团-交易数据技术团队。",
+  "source_url": null,
+  "published_at": "2026-10-11",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "Oct 11, 2026, 7:59 PM",
+      "source_type": "header_text_and_render",
+      "timezone": null
+    },
+    "author": {
+      "page": 19,
+      "text": "本文作者盈衣，来自淘天集团-交易数据技术团队。",
+      "source_type": "body_text_and_render"
+    },
+    "evidence_type": "actual_pdf_text_and_page_images"
+  },
+  "tags": [
+    "Agent评测与反馈",
+    "Prompt优化"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/淘宝AI购物助手在线评测落地实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:04:01-07:00",
+      "provenance": "用户收集于inbox的公众号PDF，原采集方式与时刻未确认；本次复制核验后迁移",
+      "sha256": "66a4b87140d486fa0e2ee8f4aa9543f1026366ca59a588d1b0cce194d060ac01",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.16修复表与正文总结计数不一致：正文2类显著修复，表仅1类显著修复；无兜底+张冠李戴基本持平且占失败池比反升。未统一。",
+          "pages": [
+            16
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": [
+            "extracted_text",
+            "rendered_table"
+          ],
+          "classification": null,
+          "impact": "cannot assert two categories were significantly fixed"
+        },
+        {
+          "description": "p.17看板截图数值区打码/模糊，无法辨认精确通过率。图存在并已加载。",
+          "pages": [
+            17
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": [
+            "rendered_image_magnification"
+          ],
+          "classification": null,
+          "impact": "no exact performance numbers transcribed"
+        },
+        {
+          "description": "CI样本量给约数，未说明置信水平、基准通过率和计算公式。",
+          "pages": [
+            14
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": [
+            "extracted_text",
+            "rendered_text"
+          ],
+          "classification": null,
+          "impact": "retained as contextual estimates, not universal exact sample budgets"
+        },
+        {
+          "description": "生产日志不记录卡片结构化内容属于文章报告的评测输入盲区，不是此PDF图缺失。",
+          "pages": [
+            4,
+            10
+          ],
+          "verification_status": "actual_text_and_visual_review",
+          "evidence_type": [
+            "extracted_text",
+            "rendered_text"
+          ],
+          "classification": null,
+          "impact": "card-dependent rubric subitem N/A retained"
+        }
+      ],
+      "size_bytes": 5065823,
+      "page_count": 20
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:04:01-07:00",
+  "directory": "大淘宝技术/购物助手在线评测+26.10.11",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_购物助手在线评测.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0019",
+    "created_at": "2026-10-13T02:04:01-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "66a4b87140d486fa0e2ee8f4aa9543f1026366ca59a588d1b0cce194d060ac01"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成新学习笔记；读取全部页文本并查看全部页缩略图，关键图表／代码按实际范围放大核对；保留原文观点、推断、材料缺失与规划状态。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "页面图像与正文核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "用户提供的2026-10-12提示词；文件校验值见prompt_reference",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71",
+      "original_path": "/Users/iw/Downloads/Obsidian学习笔记生成提示词 26·10·12.md"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.16修复表与正文总结计数不一致：正文2类显著修复，表仅1类显著修复；无兜底+张冠李戴基本持平且占失败池比反升。未统一。",
+        "pages": [
+          16
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": [
+          "extracted_text",
+          "rendered_table"
+        ],
+        "classification": null,
+        "impact": "cannot assert two categories were significantly fixed"
+      },
+      {
+        "description": "p.17看板截图数值区打码/模糊，无法辨认精确通过率。图存在并已加载。",
+        "pages": [
+          17
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": [
+          "rendered_image_magnification"
+        ],
+        "classification": null,
+        "impact": "no exact performance numbers transcribed"
+      },
+      {
+        "description": "CI样本量给约数，未说明置信水平、基准通过率和计算公式。",
+        "pages": [
+          14
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": [
+          "extracted_text",
+          "rendered_text"
+        ],
+        "classification": null,
+        "impact": "retained as contextual estimates, not universal exact sample budgets"
+      },
+      {
+        "description": "生产日志不记录卡片结构化内容属于文章报告的评测输入盲区，不是此PDF图缺失。",
+        "pages": [
+          4,
+          10
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": [
+          "extracted_text",
+          "rendered_text"
+        ],
+        "classification": null,
+        "impact": "card-dependent rubric subitem N/A retained"
+      },
+      {
+        "description": "未联网核对在线原文、技术事实或当前产品版本；完整原文链接和采集时刻未知。",
+        "pages": [],
+        "verification_status": "unverified"
+      }
+    ],
+    "outputs": [
+      "AI_购物助手在线评测.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "source_item_review": {
+      "complete_prompts": [],
+      "prompt_fragments": [
+        {
+          "name": "事实来源锚定指令",
+          "page": 12,
+          "complete_prompt": false
+        },
+        {
+          "name": "摘录证据后判断指令",
+          "page": 12,
+          "complete_prompt": false
+        },
+        {
+          "name": "信息不足输出剔除指令",
+          "page": 12,
+          "complete_prompt": false
+        },
+        {
+          "name": "时间锚点判断指令",
+          "page": 12,
+          "complete_prompt": false
+        },
+        {
+          "name": "卡片结构化数据取证禁令",
+          "page": 10,
+          "complete_prompt": false
+        }
+      ],
+      "complete_skills": [],
+      "skill_mentions": "正文skill指业务Agent能力模块，不是可安装SKILL.md定义；未取得脚本、依赖或完整Skill原文。",
+      "workflow_method_candidates": "四层清洗、Check放行、六层Rubric、Prompt约束、打标校准、四层归因与定点回测均有方法说明；不是原文交付的完整可安装skill。"
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        4,
+        5,
+        9,
+        14,
+        16,
+        17
+      ]
+    },
+    "coverage": [
+      {
+        "name": "业务背景与问题定义",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "整体方案设计",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "name": "3.1 数据清洗与加工",
+        "pages": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "3.2 平台使用与工作流设计",
+        "pages": [
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "3.3 模型选型",
+        "pages": [
+          7,
+          8
+        ]
+      },
+      {
+        "name": "3.4 Rubric设计",
+        "pages": [
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "3.5 Prompt设计",
+        "pages": [
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "3.6 多轮打标优化",
+        "pages": [
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "4.1-4.4 评测归因与落地边界",
+        "pages": [
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "name": "5.1-5.2 现存局限与规划",
+        "pages": [
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "name": "团队介绍",
+        "pages": [
+          19
+        ]
+      }
+    ],
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "flashcard_count": 10,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_购物助手在线评测.md",
+      "sha256": "4cd3ac0848ca76aefe239394dbd0ba01f276efa33a6df1cb260b038cece95e1c"
+    },
+    "updated_at": "2026-10-13T02:04:01-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:04:01-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "66a4b87140d486fa0e2ee8f4aa9543f1026366ca59a588d1b0cce194d060ac01"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "8e0fffb634e51c56eb22937b8e4984afd71e5727a96450414c18d978ab9923e5"
+    },
+    "extractor": "pdfplumber.Page.extract_text 0.11.9; default parameters",
+    "raw_character_preservation": "No Unicode normalization; None -> empty string only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_information_not_part_of_MD_text_layer",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 14,
+        "md_end_line": 39,
+        "text_layer_sha256": "69321c02e67a96552eabe0048178250de3dd58d38f769062b217c0d2e145ce6d",
+        "text_layer_char_count": 943
+      },
+      {
+        "page": 2,
+        "md_start_line": 49,
+        "md_end_line": 75,
+        "text_layer_sha256": "f66f360c16a2fda4c84ffef82394f56a70926c483a34b28f39481875a5c91b5c",
+        "text_layer_char_count": 1088
+      },
+      {
+        "page": 3,
+        "md_start_line": 85,
+        "md_end_line": 98,
+        "text_layer_sha256": "5e95d527027b56b8cd8508a7e1ed7d83d682ff20cc392d0784f67382958c2156",
+        "text_layer_char_count": 446
+      },
+      {
+        "page": 4,
+        "md_start_line": 108,
+        "md_end_line": 139,
+        "text_layer_sha256": "bd1c11b8637d95d354bb0b80eb33e315673c92d76842edcae55b652ba7889edc",
+        "text_layer_char_count": 1137
+      },
+      {
+        "page": 5,
+        "md_start_line": 149,
+        "md_end_line": 178,
+        "text_layer_sha256": "424d555eb7ccd82108886f15e6b2818ddc51959757f86d7ae91be2494c9e75af",
+        "text_layer_char_count": 994
+      },
+      {
+        "page": 6,
+        "md_start_line": 188,
+        "md_end_line": 214,
+        "text_layer_sha256": "a68a1c5284ce684ca6af46f618b8b67fcd2454fb9a77626ddb1237fc9eaccb85",
+        "text_layer_char_count": 773
+      },
+      {
+        "page": 7,
+        "md_start_line": 224,
+        "md_end_line": 252,
+        "text_layer_sha256": "70b9e1ae0846c4fdb075092902ebda405243c85a9eb2002354c17d38a0fbb184",
+        "text_layer_char_count": 933
+      },
+      {
+        "page": 8,
+        "md_start_line": 262,
+        "md_end_line": 292,
+        "text_layer_sha256": "71d5d9dc6149e0b1985c11ce3fbfd5970799e176b04e74dc7176568213c1684d",
+        "text_layer_char_count": 1017
+      },
+      {
+        "page": 9,
+        "md_start_line": 302,
+        "md_end_line": 327,
+        "text_layer_sha256": "57d72fe530e1e99449e4ab8a9a7c6629df24be1283115831b35124786757c8b1",
+        "text_layer_char_count": 899
+      },
+      {
+        "page": 10,
+        "md_start_line": 337,
+        "md_end_line": 369,
+        "text_layer_sha256": "228a7d637ebafac571b4460aed11e622438d5523b73f54d8e186130c51644dba",
+        "text_layer_char_count": 1257
+      },
+      {
+        "page": 11,
+        "md_start_line": 379,
+        "md_end_line": 407,
+        "text_layer_sha256": "14c79e4e4f15c87fcd23aebd3294604b9149d18b85df5b3a8ba23078f71858a8",
+        "text_layer_char_count": 1045
+      },
+      {
+        "page": 12,
+        "md_start_line": 417,
+        "md_end_line": 448,
+        "text_layer_sha256": "a03d3277876505bd8b5711523395be79848ec030ff7017b0084d45c0a6b68e5d",
+        "text_layer_char_count": 1134
+      },
+      {
+        "page": 13,
+        "md_start_line": 458,
+        "md_end_line": 484,
+        "text_layer_sha256": "52996fd9cb276f86eb880712d23314ce7a114eb1217c5a2ef10dcebe75f2f71a",
+        "text_layer_char_count": 930
+      },
+      {
+        "page": 14,
+        "md_start_line": 494,
+        "md_end_line": 514,
+        "text_layer_sha256": "029acba92786c1b26f4552d8e98c0c999207520adb47778ba46269e67e13b396",
+        "text_layer_char_count": 783
+      },
+      {
+        "page": 15,
+        "md_start_line": 524,
+        "md_end_line": 552,
+        "text_layer_sha256": "e53c2c40e0de1e32a1771ac885579e50ab25d3fa3f554868d3cf0d9f7a012d78",
+        "text_layer_char_count": 1075
+      },
+      {
+        "page": 16,
+        "md_start_line": 562,
+        "md_end_line": 582,
+        "text_layer_sha256": "5d294d67f8d9368d07b771b96a63ce151a435326400a714fac4cc4e772d43896",
+        "text_layer_char_count": 800
+      },
+      {
+        "page": 17,
+        "md_start_line": 592,
+        "md_end_line": 604,
+        "text_layer_sha256": "136a1888e223beadbd9fa0cd3e12b2274c01fca0f182db46b5f869aa3dd9f2ab",
+        "text_layer_char_count": 455
+      },
+      {
+        "page": 18,
+        "md_start_line": 614,
+        "md_end_line": 647,
+        "text_layer_sha256": "cd98efd6b23397cf0a9591b5b36d2aaf933efc9e27662cfdf8cad704d36bb02e",
+        "text_layer_char_count": 1331
+      },
+      {
+        "page": 19,
+        "md_start_line": 657,
+        "md_end_line": 678,
+        "text_layer_sha256": "0e11a9fb1e62c2580e2bfbfdb3f24fb92687a0746e3b5b4b6b055aef04ec98e2",
+        "text_layer_char_count": 535
+      },
+      {
+        "page": 20,
+        "md_start_line": 688,
+        "md_end_line": 689,
+        "text_layer_sha256": "8375f416727b926562d728ec0a098eaacda3a7952a5f1b5bbe78f946b6ba6181",
+        "text_layer_char_count": 14
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        4,
+        5,
+        9,
+        14,
+        16,
+        17
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.16修复表与正文总结计数不一致：正文2类显著修复，表仅1类显著修复；无兜底+张冠李戴基本持平且占失败池比反升。未统一。",
+        "pages": [
+          16
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": [
+          "extracted_text",
+          "rendered_table"
+        ],
+        "classification": null,
+        "impact": "cannot assert two categories were significantly fixed"
+      },
+      {
+        "description": "p.17看板截图数值区打码/模糊，无法辨认精确通过率。图存在并已加载。",
+        "pages": [
+          17
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": [
+          "rendered_image_magnification"
+        ],
+        "classification": null,
+        "impact": "no exact performance numbers transcribed"
+      },
+      {
+        "description": "CI样本量给约数，未说明置信水平、基准通过率和计算公式。",
+        "pages": [
+          14
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": [
+          "extracted_text",
+          "rendered_text"
+        ],
+        "classification": null,
+        "impact": "retained as contextual estimates, not universal exact sample budgets"
+      },
+      {
+        "description": "生产日志不记录卡片结构化内容属于文章报告的评测输入盲区，不是此PDF图缺失。",
+        "pages": [
+          4,
+          10
+        ],
+        "verification_status": "actual_text_and_visual_review",
+        "evidence_type": [
+          "extracted_text",
+          "rendered_text"
+        ],
+        "classification": null,
+        "impact": "card-dependent rubric subitem N/A retained"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent评测与反馈.md",
+      "../../20_topics/Prompt优化.md",
+      "../../20_topics/分布式计算与数据管道.md",
+      "../../20_topics/因果推断与评测归因.md",
+      "../../20_topics/异常监控与稳定性.md",
+      "../../20_topics/推荐系统与多模态评测.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed_sources_removed",
+    "copied_at": "2026-10-13T02:04:01-07:00",
+    "removed_at": "2026-10-13T02:08:19-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/淘宝AI购物助手在线评测落地实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "66a4b87140d486fa0e2ee8f4aa9543f1026366ca59a588d1b0cce194d060ac01",
+        "removed_at": "2026-10-13T02:08:19-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_购物助手在线评测.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

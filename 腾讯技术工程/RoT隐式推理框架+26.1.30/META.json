@@ -1,0 +1,372 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0125",
+  "title": "大模型思维链推理速度倍增！——RoT新框架把思维链「画」进隐空间",
+  "short_title": "RoT隐式推理框架",
+  "account": "腾讯技术工程",
+  "author": "ethanntang、wyattyfwang",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-01-30T01:08",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260130_RoT_Reasoning_Acceleration.pdf",
+      "original_filename": "20260130_RoT_Reasoning_Acceleration.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "8e28ca68d9d878db646e7639aa549bf649d4ef213d78f8541f4227e684023725",
+      "size_bytes": 5472067,
+      "page_count": 9,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "第4页公式未能从文本层完整提取，已查看图像；论文实验结论本次未复现。",
+          "pages": [
+            4,
+            6,
+            7,
+            8
+          ],
+          "status": "pending_review"
+        }
+      ],
+      "publication_evidence": "PDF第1页日期与时间标注"
+    }
+  ],
+  "tags": [
+    "模型与开发工具发布",
+    "Agent评测与反馈",
+    "Agent成本与上下文预算",
+    "模型架构与训练",
+    "大模型推理与算子优化"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/RoT隐式推理框架+26.1.30",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_RoT隐式推理框架.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "大模型思维链推理速度倍增!——RoT 新框架把思维链「画」进隐空\n间\n腾讯程序员 2026 年 1 月 30 日 01 : 08广东腾讯技术工程 7 人\n作者: ethanntang  、 wyattyfwang\n引言\n随着大模型规模的扩展,思维链( Chain - of - Thought , CoT )已成为处理复杂推理任务的标\n准范式。但我们在实际应用中发现, CoT  的有效性往往建立在生成大量中间文本的基础\n上。这种对⻓序列生成的依赖,不可避免地导致了推理延迟的增加和显存(特别是 KV\nCache )的过度消耗。虽然目前业界存在一些针对显式 CoT  的压缩尝试,例如通过启发式\n算法筛选关键 Token  或利用强化学习缩短推理路径,但这些方法依然受限于离散的文本表\n征,难以在保留完整推理逻辑的同时,实现计算效率的数量级提升。\n为了突破文本生成的限制,研究界开始探索“隐式 CoT ”方向,即尝试将推理过程内化为连\n续的隐状态向量,而非输出具体的文本。虽然 Coconut 、 CoLaR  等早期工作验证了这一方\n向的可行性,但我们在复现和研究中发现,这类方法面临着严峻的优化挑战。由于要求模型\n在没有任何语义约束的情况下,从零开始在潜空间构建推理拓扑,训练过程往往极不稳定,\n容易出现表征坍缩。此外,现有的隐式方法通常缺乏对中间过程的监督,导致推理过程变得\n不可解释。\n有什么方案既保证推理速度快,又使得过程可分析,还无需昂贵的预训练?\n我们提出了一种全新的范式——Render - of - Thought  ( RoT )。我们的核心思路极具想象\n力:利用多模态模型( VLM )中冻结的视觉编码器作为“语义锚点”,将文本推理步骤“渲\n染”为图像的视觉嵌入。 这种方法不仅利用了视觉模态的高信息密度来实现 3 - 4  倍的\nToken  压缩,更重要的是,它通过视觉化让隐式推理过程变得可分析。通过将 LLM  的隐状\n态与结构化的视觉表征对⻬,我们实现了一种无过多训练的高效推理方案。实验证明, RoT\n在大幅提升推理速度的同时,依然保持了强大的逻辑推理能力,为推理场景开辟了一条新路\n径。\n",
+    "publication_evidence": "PDF第1页日期与时间标注",
+    "full_title_in_capture": "大模型思维链推理速度倍增！——RoT新框架把思维链「画」进隐空间",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0125",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "8e28ca68d9d878db646e7639aa549bf649d4ef213d78f8541f4227e684023725"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "第4页公式未能从文本层完整提取，已查看图像；论文实验结论本次未复现。",
+        "pages": [
+          4,
+          6,
+          7,
+          8
+        ],
+        "status": "pending_review"
+      }
+    ],
+    "outputs": [
+      "AI_RoT隐式推理框架.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "coverage": "覆盖问题背景、三种推理范式、RoT结构、两阶段训练、停止策略、实验图表及适用限制。",
+    "fact_checks": [
+      {
+        "topic": "压缩率",
+        "original_value": "约3–4倍Token压缩",
+        "pages": [
+          1
+        ],
+        "result": "一致"
+      },
+      {
+        "topic": "训练流程",
+        "original_value": "两阶段",
+        "pages": [
+          4
+        ],
+        "result": "与图示一致"
+      },
+      {
+        "topic": "停止策略",
+        "original_value": "动态/固定预算两类",
+        "pages": [
+          5
+        ],
+        "result": "与图示一致"
+      },
+      {
+        "topic": "评价材料",
+        "original_value": "基准与热力图结果",
+        "pages": [
+          6
+        ],
+        "result": "按原图记录"
+      },
+      {
+        "topic": "消融",
+        "original_value": "单行/多行及阶段消融",
+        "pages": [
+          7
+        ],
+        "result": "与原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_RoT隐式推理框架.md",
+      "sha256": "d9f73835a53256dd8ee4ce01ec5b9d4a53960488ac48e85bbd159b0e2f52a0f8"
+    },
+    "independent_crosscheck": {
+      "reviewer": "/root",
+      "note_sha256": "b4dd7fd96e91499f6db455bb24751959aa477578625b9f7b0fafd92b2274342f",
+      "review_sha256": "94a8fb652cac0c59c844962dbf5ab1c1c8253c21b774282561152a067a92d1f5",
+      "status": "passed",
+      "changes": [
+        "Renamed review-card heading to `## 复习卡片` to match the common format."
+      ],
+      "source_spotchecks": [
+        "p.3 diagram distinguishes explicit CoT, implicit CoT and Render-of-Thought; p.4 formula and two-stage alignment checked against PDF image; p.6 benchmark values and p.7 ablation retained as author results; p.8 limitations; p.9 comment page checked and contains no article body."
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "8e28ca68d9d878db646e7639aa549bf649d4ef213d78f8541f4227e684023725"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "8785e2e0a4408b6590be9adc3a58b58ab70b4d80c864c7814b33cc7faa9d9785"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 34,
+        "text_layer_sha256": "7e87f68e56717fdd57ce3ad689c38b45add3cb6654dd14efe6bb96721b1883e5",
+        "text_layer_char_count": 912
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 52,
+        "text_layer_sha256": "18384ba2a069ca56faf4ee468a17d47ae7d65779d4917fe836bbb7a0e91c0f31",
+        "text_layer_char_count": 525
+      },
+      {
+        "page": 3,
+        "md_start_line": 60,
+        "md_end_line": 69,
+        "text_layer_sha256": "462575d868278215c1cf8ce29e5d9cf50d570587d0f12b6dc521b86c44f90177",
+        "text_layer_char_count": 372
+      },
+      {
+        "page": 4,
+        "md_start_line": 77,
+        "md_end_line": 98,
+        "text_layer_sha256": "f0a33bbc78a473b4c4e0ac8b8a12abb7ec2cb5cb8a329aa085466f65b34f08db",
+        "text_layer_char_count": 816
+      },
+      {
+        "page": 5,
+        "md_start_line": 106,
+        "md_end_line": 125,
+        "text_layer_sha256": "64c3ec0c0afb84b43d7e7417b75b0301d7effe1f976af9f814e2000593bc2602",
+        "text_layer_char_count": 735
+      },
+      {
+        "page": 6,
+        "md_start_line": 133,
+        "md_end_line": 140,
+        "text_layer_sha256": "2308e02bc5c205b1fe86aab0b49aae5cdad1a1df2b79e1f218b6ea6442f7e006",
+        "text_layer_char_count": 343
+      },
+      {
+        "page": 7,
+        "md_start_line": 148,
+        "md_end_line": 166,
+        "text_layer_sha256": "890f7b82fe33669864cf4067b49ae6be69a26c1731c2cf44f4ff7054388e1fbe",
+        "text_layer_char_count": 642
+      },
+      {
+        "page": 8,
+        "md_start_line": 174,
+        "md_end_line": 191,
+        "text_layer_sha256": "de738a84be01d9bb265561e98bdf1c5064f23884ff6ba873057f381d6561a054",
+        "text_layer_char_count": 545
+      },
+      {
+        "page": 9,
+        "md_start_line": 199,
+        "md_end_line": 201,
+        "text_layer_sha256": "6a4ddd6af581d481346225c503f309e16dc4651e8dd80793e9400a140107b31c",
+        "text_layer_char_count": 18
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "第4页公式未能从文本层完整提取，已查看图像；论文实验结论本次未复现。",
+        "pages": [
+          4,
+          6,
+          7,
+          8
+        ],
+        "status": "pending_review"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260130_RoT_Reasoning_Acceleration.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "8e28ca68d9d878db646e7639aa549bf649d4ef213d78f8541f4227e684023725",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/模型架构与训练.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_RoT隐式推理框架.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

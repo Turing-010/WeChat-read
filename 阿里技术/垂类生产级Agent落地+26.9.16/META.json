@@ -1,0 +1,706 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0040",
+  "title": "垂类业务如何落地生产级 Agent",
+  "short_title": "垂类生产级Agent落地",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "孙敦灿",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-09-16T03:18",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "2026年9月16日 03:18",
+  "published_timezone": null,
+  "identity_evidence": {
+    "page": 1,
+    "text": [
+      "垂类业务如何落地⽣产级 Agent",
+      "原创 孙敦灿 阿⾥技术 2026年9⽉16⽇ 03:18 浙江 52⼈",
+      "这是2026年的第 60 篇⽂章",
+      "（ 本⽂阅读时间：约 30 分钟 ）",
+      "前⾔"
+    ]
+  },
+  "tags": [
+    "Agent评测与反馈",
+    "Agent任务恢复",
+    "Agent工程循环",
+    "决策知识结构化"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/垂类业务如何落地生产级 Agent.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T03:05:06-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "0bb45916b95940383ffa2f8c5bd93f86544c10ced9b8ae3afedb3edbb3c56eb9",
+      "size_bytes": 15852019,
+      "page_count": 31,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "页面浮动“Harness工程实践”按钮遮住若干表格末端文字；相关正文/文本层可读，未补造不可见表格内容。",
+          "pages": [
+            7,
+            13,
+            17,
+            19,
+            26,
+            28
+          ],
+          "evidence_type": "image",
+          "classification": "overlay_occlusion"
+        },
+        {
+          "description": "文内公开案例数据、平台能力和协议时间为作者转述，未联网或独立核验；不视为本次平台测试。",
+          "pages": [
+            2,
+            3,
+            5,
+            6,
+            23,
+            24,
+            27,
+            28
+          ],
+          "evidence_type": "text",
+          "classification": "external_claim_scope"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T03:05:06-07:00",
+  "directory": "阿里技术/垂类生产级Agent落地+26.9.16",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_垂类生产级Agent落地.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0040",
+    "created_at": "2026-10-13T03:05:06-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "0bb45916b95940383ffa2f8c5bd93f86544c10ced9b8ae3afedb3edbb3c56eb9"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "页面浮动“Harness工程实践”按钮遮住若干表格末端文字；相关正文/文本层可读，未补造不可见表格内容。",
+        "pages": [
+          7,
+          13,
+          17,
+          19,
+          26,
+          28
+        ],
+        "evidence_type": "image",
+        "classification": "overlay_occlusion"
+      },
+      {
+        "description": "文内公开案例数据、平台能力和协议时间为作者转述，未联网或独立核验；不视为本次平台测试。",
+        "pages": [
+          2,
+          3,
+          5,
+          6,
+          23,
+          24,
+          27,
+          28
+        ],
+        "evidence_type": "text",
+        "classification": "external_claim_scope"
+      }
+    ],
+    "outputs": [
+      "AI_垂类生产级Agent落地.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [
+      {
+        "name": "垂类能力单元字段与渐进披露",
+        "pages": [
+          17
+        ],
+        "completeness": "设计说明与字段清单，未给完整Prompt或Skill原文"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "detail_pages_reviewed": [
+        1,
+        7,
+        10,
+        15,
+        17,
+        19,
+        25,
+        26,
+        28
+      ]
+    },
+    "coverage": [
+      {
+        "name": "生产四关与小场景",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "目标边界与风险",
+        "pages": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "业务知识与编译",
+        "pages": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "name": "经验能力化",
+        "pages": [
+          17,
+          18
+        ]
+      },
+      {
+        "name": "循环控制",
+        "pages": [
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      {
+        "name": "系统接入",
+        "pages": [
+          22,
+          23,
+          24
+        ]
+      },
+      {
+        "name": "恢复",
+        "pages": [
+          24,
+          25
+        ]
+      },
+      {
+        "name": "治理进化平台",
+        "pages": [
+          26,
+          27,
+          28
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 9,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_垂类生产级Agent落地.md",
+      "sha256": "05abde273173b87c71973aeabba01a74657d0634cd57d34fac9748d0c29d787a"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T03:05:06-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "0bb45916b95940383ffa2f8c5bd93f86544c10ced9b8ae3afedb3edbb3c56eb9"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "930a1912cab62d1ec106c601f3759676d6f4431f7002b459a9022df5113e063c"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 33,
+        "text_layer_sha256": "17285c5c958bc1cbbac44d8c5e80cc4b9737a6ec0edebf59eebc291fee6979fd",
+        "text_layer_char_count": 741
+      },
+      {
+        "page": 2,
+        "md_start_line": 41,
+        "md_end_line": 63,
+        "text_layer_sha256": "02cb0ba3fdb2a80a841e17167ee03cce499788475f83a13e91268435ebb1abc4",
+        "text_layer_char_count": 806
+      },
+      {
+        "page": 3,
+        "md_start_line": 71,
+        "md_end_line": 96,
+        "text_layer_sha256": "bd79513c212c2de60a084b051603cf8000946baf0b31c3a0f54d4bc83d519596",
+        "text_layer_char_count": 764
+      },
+      {
+        "page": 4,
+        "md_start_line": 104,
+        "md_end_line": 129,
+        "text_layer_sha256": "1beb926c4784bc296e21985bc4ec6a542b67a4abb9202ae002dd59ba3fdf590b",
+        "text_layer_char_count": 587
+      },
+      {
+        "page": 5,
+        "md_start_line": 137,
+        "md_end_line": 158,
+        "text_layer_sha256": "bedb0f1bcd11761b353b6796d4a38a175fac8a9ce206e3aeb8797a6b0e02086e",
+        "text_layer_char_count": 649
+      },
+      {
+        "page": 6,
+        "md_start_line": 166,
+        "md_end_line": 204,
+        "text_layer_sha256": "cf9038fb27e3fcf21ca51d7f4c9ee864f3d6899b243f450a0c5fa561e961c4d1",
+        "text_layer_char_count": 994
+      },
+      {
+        "page": 7,
+        "md_start_line": 212,
+        "md_end_line": 236,
+        "text_layer_sha256": "dd1fefee641d0d32e78d1d67ceae38381bcd5288d9b687bb6dd2dff1e7a3c1fb",
+        "text_layer_char_count": 494
+      },
+      {
+        "page": 8,
+        "md_start_line": 244,
+        "md_end_line": 266,
+        "text_layer_sha256": "0cbe6d33de794bb26c10988d3e443887c1a0434ef10f0e371aafe6bbc17f4637",
+        "text_layer_char_count": 539
+      },
+      {
+        "page": 9,
+        "md_start_line": 274,
+        "md_end_line": 297,
+        "text_layer_sha256": "e0c15b241be4eba719a24689f9ebae43c267f1ac067204f11272f97b899bef5e",
+        "text_layer_char_count": 705
+      },
+      {
+        "page": 10,
+        "md_start_line": 305,
+        "md_end_line": 313,
+        "text_layer_sha256": "7b249ecd1408974c4a7dcfa18e5bc7053d69c130a39084a10a76b1e4152f7990",
+        "text_layer_char_count": 330
+      },
+      {
+        "page": 11,
+        "md_start_line": 321,
+        "md_end_line": 344,
+        "text_layer_sha256": "c6a8cc3ebd46f4c840413d4640d9b2f83353a48118e82132c384f51e5d80da40",
+        "text_layer_char_count": 675
+      },
+      {
+        "page": 12,
+        "md_start_line": 352,
+        "md_end_line": 377,
+        "text_layer_sha256": "ca451033f31eb7191721ab5c662a8b17fabda9872883baed96331ad2adc5acdb",
+        "text_layer_char_count": 823
+      },
+      {
+        "page": 13,
+        "md_start_line": 385,
+        "md_end_line": 425,
+        "text_layer_sha256": "0274ac69fead4769eaad884e9008c864f2c472bc5f85744c21b9c08ce423acf0",
+        "text_layer_char_count": 1181
+      },
+      {
+        "page": 14,
+        "md_start_line": 433,
+        "md_end_line": 458,
+        "text_layer_sha256": "743d6d823cf75011917905f01df7de2cc6d71f5f0ac32f112bf0476dd4f55e6b",
+        "text_layer_char_count": 783
+      },
+      {
+        "page": 15,
+        "md_start_line": 466,
+        "md_end_line": 491,
+        "text_layer_sha256": "40232807d0792721c4b62d94380a43eb954e93302dd637e9347215125b7f8ee0",
+        "text_layer_char_count": 539
+      },
+      {
+        "page": 16,
+        "md_start_line": 499,
+        "md_end_line": 535,
+        "text_layer_sha256": "edbf5c5e3001a61a200cf3ff30660f283b98fcec1f4e3c099253a871b2cf5835",
+        "text_layer_char_count": 893
+      },
+      {
+        "page": 17,
+        "md_start_line": 543,
+        "md_end_line": 575,
+        "text_layer_sha256": "27cc711a3febee629bbacec05e89c944e08a03e210f1f0b077f7e8e800440f10",
+        "text_layer_char_count": 1120
+      },
+      {
+        "page": 18,
+        "md_start_line": 583,
+        "md_end_line": 593,
+        "text_layer_sha256": "34809c831f69911add8239232b4aed6aefe2a0b64dc6611460a8c81c93aa9346",
+        "text_layer_char_count": 267
+      },
+      {
+        "page": 19,
+        "md_start_line": 601,
+        "md_end_line": 636,
+        "text_layer_sha256": "d9f212f09455ff88b79fa0d3d745a593bfbafe5af839f7a595e95185e5a9b619",
+        "text_layer_char_count": 942
+      },
+      {
+        "page": 20,
+        "md_start_line": 644,
+        "md_end_line": 670,
+        "text_layer_sha256": "9e3f7a39486d07db89e9b972eafe3e206b1716eda5f4e83abcd2054ab8496043",
+        "text_layer_char_count": 672
+      },
+      {
+        "page": 21,
+        "md_start_line": 678,
+        "md_end_line": 697,
+        "text_layer_sha256": "2801760923621f4ecdc03adeb11341b987c02963a905a396c671f2187997315f",
+        "text_layer_char_count": 616
+      },
+      {
+        "page": 22,
+        "md_start_line": 705,
+        "md_end_line": 737,
+        "text_layer_sha256": "7a2336155cb1962da2fa312046f22139829066b01ad8ffd222a7835fb2fdfe4c",
+        "text_layer_char_count": 908
+      },
+      {
+        "page": 23,
+        "md_start_line": 745,
+        "md_end_line": 767,
+        "text_layer_sha256": "ff6e9b38ae58ad0a079a74d5185e8dc0b36c6f05b02ec32330476aa606e31de6",
+        "text_layer_char_count": 728
+      },
+      {
+        "page": 24,
+        "md_start_line": 775,
+        "md_end_line": 809,
+        "text_layer_sha256": "3af07e760b56978dd92de4a8e7b7bba34591c6edd2822bbe7de74de9dc3285db",
+        "text_layer_char_count": 828
+      },
+      {
+        "page": 25,
+        "md_start_line": 817,
+        "md_end_line": 840,
+        "text_layer_sha256": "ee031498c53408c6512e732a9117dfc061be300cef21d782b4ec1a9c7597a996",
+        "text_layer_char_count": 561
+      },
+      {
+        "page": 26,
+        "md_start_line": 848,
+        "md_end_line": 877,
+        "text_layer_sha256": "3b6e560204638bc6d381e3d0cafac5dab9032de66651160c4caa01c7279460bb",
+        "text_layer_char_count": 827
+      },
+      {
+        "page": 27,
+        "md_start_line": 885,
+        "md_end_line": 909,
+        "text_layer_sha256": "f3c74bd98ff3544c778f1b48e8c9424de20df3e2f7d2c5785f27b2e7952e3373",
+        "text_layer_char_count": 540
+      },
+      {
+        "page": 28,
+        "md_start_line": 917,
+        "md_end_line": 961,
+        "text_layer_sha256": "b34a450a11cd189b803a6cc6cacf295926f58ed2cc3487390866287cfffe94eb",
+        "text_layer_char_count": 863
+      },
+      {
+        "page": 29,
+        "md_start_line": 969,
+        "md_end_line": 977,
+        "text_layer_sha256": "b51f1b0cf5ae74612a26c47f32fd54be97ec66e37281ab8ef654c5ccf7cb0cca",
+        "text_layer_char_count": 126
+      },
+      {
+        "page": 30,
+        "md_start_line": 985,
+        "md_end_line": 1016,
+        "text_layer_sha256": "028d24351c9220b6416895eb47e3805b6910e2c0f87fdba37f86a6f81c69fe84",
+        "text_layer_char_count": 741
+      },
+      {
+        "page": 31,
+        "md_start_line": 1024,
+        "md_end_line": 1024,
+        "text_layer_sha256": "6c7f154b48318e7f75c6ffc503439d2262a6ce90f5923f1836d3a9c279905520",
+        "text_layer_char_count": 11
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "detail_pages_reviewed": [
+        1,
+        7,
+        10,
+        15,
+        17,
+        19,
+        25,
+        26,
+        28
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "页面浮动“Harness工程实践”按钮遮住若干表格末端文字；相关正文/文本层可读，未补造不可见表格内容。",
+        "pages": [
+          7,
+          13,
+          17,
+          19,
+          26,
+          28
+        ],
+        "evidence_type": "image",
+        "classification": "overlay_occlusion"
+      },
+      {
+        "description": "文内公开案例数据、平台能力和协议时间为作者转述，未联网或独立核验；不视为本次平台测试。",
+        "pages": [
+          2,
+          3,
+          5,
+          6,
+          23,
+          24,
+          27,
+          28
+        ],
+        "evidence_type": "text",
+        "classification": "external_claim_scope"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent任务恢复.md",
+      "../../20_topics/Agent安全与权限.md",
+      "../../20_topics/Agent工程循环.md",
+      "../../20_topics/Agent评测与反馈.md",
+      "../../20_topics/桌面Agent与工作流.md"
+    ],
+    "proposed_topics": [
+      "决策知识结构化",
+      "Agent任务恢复",
+      "Agent工程循环",
+      "Agent评测与反馈"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T03:05:06-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/垂类业务如何落地生产级 Agent.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "0bb45916b95940383ffa2f8c5bd93f86544c10ced9b8ae3afedb3edbb3c56eb9",
+        "copied_at": "2026-10-13T03:05:06-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

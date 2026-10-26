@@ -1,0 +1,339 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0117",
+  "title": "腾讯 AngelSlim 重磅升级！面向全模态的大模型压缩算法工具包，推理速度飙升1.8倍！",
+  "short_title": "AngelSlim Eagle3",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-01-13T00:56",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260113_Tencent_AngelSlim_Multimodal_1.8x.pdf",
+      "original_filename": "20260113_Tencent_AngelSlim_Multimodal_1.8x.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "2675f9bf959ccee843a6497255fda62a8eb50a6af12d7768cd74090b22dc5eaf",
+      "size_bytes": 3475359,
+      "page_count": 7,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "加速与接受长度是文章报告，缺少足够环境配置用于独立复现；文章含部署/训练命令，本笔记未执行。",
+          "pages": [
+            4,
+            5,
+            6
+          ],
+          "status": "标记为作者测量和实现说明"
+        }
+      ],
+      "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。"
+    }
+  ],
+  "tags": [
+    "Agent成本与上下文预算",
+    "Agent工程循环",
+    "模型与开发工具发布",
+    "大模型推理与算子优化"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/AngelSlim Eagle3+26.1.13",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AngelSlim Eagle3.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "腾讯 AngelSlim 重磅升级!面向全模态的大模型压缩算法工具包,推\n理速度飙升 1 . 8 倍!\n腾讯程序员 Jan  13 , 2026 , 12 : 56  AM广东腾讯技术工程 11  listened\n近年来,大模型正从能力竞赛走向工程落地,推理阶段的成本、时延与稳定性逐渐成为制约规\n模化应用的核心因素。在长上下文、高并发与多模态场景下,解码过程受限于算力与显存带\n宽,单纯依赖模型压缩或硬件堆叠的优化路径正逼近边际收益,促使业界重新审视推理机制本\n身的优化空间。\n在这一背景下,投机采样( Speculative Decoding )通过 “ 小模型多步生成  + 大模型并行验\n证 ” ,在保证生成质量的前提下减少大模型的有效前向计算。腾讯混元近期升级的  AngelSlim\n围绕  Eagle3 投机采样训练范式  构建系统化实现,将投机采样提升为可训练、可迁移的加速能\n力,并扩展至  LLM 、视觉语言与语音等多模态场景,在实际部署中最高可实现  1.9× 的推理加\n速,为多模态  AI 的实时化与规模化应用奠定基础。\n一、 AngelSlim + 投机采样\n投机采样是一种通过小模型多步预测  + 大模型一步验证的推理加速技术,其核心思想是:使\n用一个轻量级的草稿模型生成多个候选  token ,由目标模型对候选结果进行并行验证是否接\n受,以此来并行解码加速,在有效利用大模型解码阶段的算力冗余,提升推理吞吐并降低单请\n求延迟。\nAngelSlim 是一款集成了包括量化、投机采样等压缩算法,面向全模态的大模型压缩算法工具\n包。此次对投机采样训练进行了重磅升级,支持了大语言、多模态理解、语音等不同模态大模\n型投机采样草稿模型训练能力。\nAngelSlim 以 “Eagle3 训练即部署” 为设计核心,提供从数据处理、模型封装到投机采样算法训\n练的完整链路,帮助开发在不侵入现有模型结构的前提下,显著降低推理时延与计算成本,各\n模态、各类大模型加速可达1.4-1.9 倍。\n",
+    "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。",
+    "full_title_in_capture": "腾讯 AngelSlim 重磅升级！面向全模态的大模型压缩算法工具包，推理速度飙升1.8倍！",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0117",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "2675f9bf959ccee843a6497255fda62a8eb50a6af12d7768cd74090b22dc5eaf"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "加速与接受长度是文章报告，缺少足够环境配置用于独立复现；文章含部署/训练命令，本笔记未执行。",
+        "pages": [
+          4,
+          5,
+          6
+        ],
+        "status": "标记为作者测量和实现说明"
+      }
+    ],
+    "outputs": [
+      "AI_AngelSlim Eagle3.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        3,
+        5
+      ],
+      "root_supplement": "主对话核对第7页文本层为空并查看该页页图，确认空白尾页。"
+    },
+    "coverage": "覆盖 AngelSlim 的多模态 speculative decoding/Eagle3 工作流：数据重采样、统一 TargetModel 接口、目标/草稿模型模块、在线与离线训练、断点状态、推理配置以及文章报告的接受长度/加速范围。部署代码和仓库命令只作说明，未执行。 已补核 PDF p.6：账号推广与留言尾页；p.7提取文字为空且图像为空白页。两页均不含技术正文，p.7不计入text_pages_read。",
+    "fact_checks": [
+      {
+        "claim": "num_speculative_tokens=2 或 4",
+        "page": "p.5",
+        "result": "文章实验配置"
+      },
+      {
+        "claim": "接受长度约 1.8–3.5",
+        "page": "p.5",
+        "result": "文章报告"
+      },
+      {
+        "claim": "最大加速约 1.4–1.9 倍",
+        "page": "p.5",
+        "result": "文章报告，标题概括为 1.8 倍"
+      },
+      {
+        "claim": "TargetModel 统一接口",
+        "page": "p.3",
+        "result": "架构说明"
+      },
+      {
+        "claim": "离线 hidden states 是未来计划之一",
+        "page": "p.5",
+        "result": "文章计划章节"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_AngelSlim Eagle3.md",
+      "sha256": "473fa4a5c15dfd27a343acee7c8d6ba966a10b6e0fc24f3a39aec13a42d5084d"
+    },
+    "independent_crosscheck": {
+      "reviewer": "crosscheck_a",
+      "status": "passed",
+      "note_sha256": "ed6a009d1f1db4e8f9d6d38fc9206da6185fcddfe7d16e1ce893c8fd20a67f29",
+      "review_sha256": "526a163938ffcd62bc71f1cf99e770f0719242133b23b3ab6dc4f4284019c273",
+      "changes": [
+        "将9/9/5/9/9条复习卡由“Q:… A:…”改为要求的单行“问题::答案”，未改变答案内容。",
+        "按新增结构标准核对日期、唯一H1、复习卡片与末尾折叠校对报告；无卡片内容改写。",
+        "新增标准复核通过：含## 复习卡片、5–10条单行问题::答案、date元数据、唯一H1，以及末尾逐行引用的折叠校对报告。"
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "p.1–3",
+          "result": "AngelSlim目标、数据/模型抽象与Eagle3流程图。"
+        },
+        {
+          "pages": "p.5",
+          "result": "num_speculative_tokens=2/4、接受长度约1.8–3.5、最高加速约1.4–1.9；以文章报告表述，未来计划与已实现区分。"
+        },
+        {
+          "pages": "p.6–7",
+          "result": "已补核 PDF p.6：账号推广与留言尾页；p.7提取文字为空且图像为空白页。两页均不含技术正文，p.7不计入text_pages_read。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "2675f9bf959ccee843a6497255fda62a8eb50a6af12d7768cd74090b22dc5eaf"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "b2a479577fca9a2c26f010dc89c2a7446d22f7f1fc22e7388c7a4a7e779ae0a8"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 32,
+        "text_layer_sha256": "66ac0c2a9653b8865f3c4714a87e481a6d68187931cee48d818a32f9afba659a",
+        "text_layer_char_count": 855
+      },
+      {
+        "page": 2,
+        "md_start_line": 40,
+        "md_end_line": 50,
+        "text_layer_sha256": "8e25a5ce98278a597a68e054984a5c69c6b64b6c146400881df027141edccad1",
+        "text_layer_char_count": 268
+      },
+      {
+        "page": 3,
+        "md_start_line": 58,
+        "md_end_line": 70,
+        "text_layer_sha256": "bdb0730c48d6a5078cc643eb540273ffd45c5f0324a2835102bd0d3e17266cc4",
+        "text_layer_char_count": 365
+      },
+      {
+        "page": 4,
+        "md_start_line": 78,
+        "md_end_line": 99,
+        "text_layer_sha256": "d387cbee25a733e586199991adade6f8866d2e4644961cd538aa2212ecacf59f",
+        "text_layer_char_count": 708
+      },
+      {
+        "page": 5,
+        "md_start_line": 107,
+        "md_end_line": 125,
+        "text_layer_sha256": "f8234321300dd161ec8c7bcd393e1bf4c728a5968e55c273cb9e8a76b8a7899d",
+        "text_layer_char_count": 762
+      },
+      {
+        "page": 6,
+        "md_start_line": 133,
+        "md_end_line": 140,
+        "text_layer_sha256": "5dffa9a517e6628ae49604c8bfab69f4c667540c94b7e7d6e31d896929d2310f",
+        "text_layer_char_count": 74
+      },
+      {
+        "page": 7,
+        "md_start_line": 148,
+        "md_end_line": 147,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        3,
+        5
+      ],
+      "root_supplement": "主对话核对第7页文本层为空并查看该页页图，确认空白尾页。"
+    },
+    "quality_issues": [
+      {
+        "description": "加速与接受长度是文章报告，缺少足够环境配置用于独立复现；文章含部署/训练命令，本笔记未执行。",
+        "pages": [
+          4,
+          5,
+          6
+        ],
+        "status": "标记为作者测量和实现说明"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260113_Tencent_AngelSlim_Multimodal_1.8x.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "2675f9bf959ccee843a6497255fda62a8eb50a6af12d7768cd74090b22dc5eaf",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/大模型推理与算子优化.md",
+      "../../20_topics/模型与开发工具发布.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_AngelSlim Eagle3.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

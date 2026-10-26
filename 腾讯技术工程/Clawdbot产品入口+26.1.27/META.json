@@ -1,0 +1,320 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0122",
+  "title": "一夜爆火，Clawdbot 是否才是真正的 AI 入口产品?",
+  "short_title": "Clawdbot产品入口",
+  "account": "腾讯技术工程",
+  "author": "nevil",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-01-27T19:01",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260127_Clawdbot_AI_Entry_Product.pdf",
+      "original_filename": "20260127_Clawdbot_AI_Entry_Product.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "4e890a2c9a342f79b2fe5d96cb1f4a1b717d05e543df0d7298eef917f81846d5",
+      "size_bytes": 2609581,
+      "page_count": 7,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [],
+      "publication_evidence": "PDF p.1 页眉：2026 年 1 月 27 日 19:01；未标时区。"
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "Agent长期记忆",
+    "AI研发协同",
+    "桌面Agent与工作流"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Clawdbot产品入口+26.1.27",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Clawdbot产品入口.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "一夜爆火, Clawdbot 是否才是真正的 AI 入口产品?\n腾讯程序员 2026 年 1 月 27 日 19 : 01广东原创 腾讯技术工程 174 人\n作者:nevil\n一、项目介绍\n首先,我们来介绍下:什么是  Clawdbot ?(由于Anthropic 认为Clawdbot这个名字太容易被市\n场误解为 Claude Code 的延展产品,所以要求创始人改名,所以目前Clawdbot 刚改名为\nMoltbot ,以下皆用Clawdbot 代替。)\n丨  导语   在过去的一年里,我们已经习惯了与  ChatGPT 或  Claude 进行对话。但现在的  AI\n正在从 “ 对话框里的聊天伴侣 ” 进化为 “ 操作系统里的执行者 ” 。今天向大家介绍一个近期在\nGitHub 上爆火的开源项目: Clawdbot 。它不是一个简单的聊天机器人,而是一个运行在你\n本地设备、拥有 “ 手脚 ” 和 “ 记忆 ” 的  AI 智能体。\n",
+    "publication_evidence": "PDF p.1 页眉：2026 年 1 月 27 日 19:01；未标时区。",
+    "full_title_in_capture": "一夜爆火，Clawdbot 是否才是真正的 AI 入口产品?",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0122",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "4e890a2c9a342f79b2fe5d96cb1f4a1b717d05e543df0d7298eef917f81846d5"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [],
+    "outputs": [
+      "AI_Clawdbot产品入口.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        5
+      ]
+    },
+    "coverage": "通读 p.1–7 并查看全页缩略图；覆盖项目定位、部署示例、消息入口、工具/技能、产品判断、安全提醒和附录链接。留言尾页未扩写。",
+    "fact_checks": [
+      {
+        "item": "产品定位",
+        "original_value": "以消息平台作为Agent入口并连接工具/技能",
+        "pages": [
+          1,
+          3
+        ],
+        "result": "按作者的产品形态描述。"
+      },
+      {
+        "item": "入口价值",
+        "original_value": "常驻消息通道降低触达门槛",
+        "pages": [
+          2,
+          4
+        ],
+        "result": "作者判断，非用户研究结论。"
+      },
+      {
+        "item": "能力组成",
+        "original_value": "消息入口、模型、工具、技能共同组成体验",
+        "pages": [
+          3,
+          5
+        ],
+        "result": "根据正文组件说明。"
+      },
+      {
+        "item": "安全提醒",
+        "original_value": "开放执行能力需考虑触发权限与工具暴露面",
+        "pages": [
+          5,
+          6
+        ],
+        "result": "不是完整安全评估。"
+      },
+      {
+        "item": "部署示例",
+        "original_value": "文中提供部署/配置示例",
+        "pages": [
+          6
+        ],
+        "result": "仅确认文档存在，未执行命令。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Clawdbot产品入口.md",
+      "sha256": "780e342ac642ff0bf44be23abdebeafaaa4c85072bd6d48156b64c294fa6a12e"
+    },
+    "independent_crosscheck": {
+      "reviewer": "topic_apps_eval_crosscheck",
+      "note_sha256": "b2789be24228518293bf36159dc407a1a55d57045b4f48e56955056ac373a7b8",
+      "review_sha256": "bf05fee7ecc071dc119fc7e8805f320458af6e98412976a2f61f92325ab3bc49",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "1–4",
+          "check": "核对文章对 Clawdbot/Moltbot 改名的时间性说明、Node.js v20+、可选 Bun、Telegram 配置与 ALLOWED_USER_IDS；部署命令保留为当时示例且笔记说明未执行。"
+        },
+        {
+          "pages": "5–7",
+          "check": "核对“聊天作入口、本地/服务器进程调用工具”的产品判断与 p.6 高权限代理安全警告；笔记区分作者观点和实际能力/隐私证明。p.7 是留言尾页，未扩写。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "4e890a2c9a342f79b2fe5d96cb1f4a1b717d05e543df0d7298eef917f81846d5"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "7031e55517ff7688b9be9ff1623f21f71ce39801f8fddf1fe90e13a517d52129"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 20,
+        "text_layer_sha256": "e30610f44818779694b67d23b1a293198fb4251b9fb3d19909a730f869085e97",
+        "text_layer_char_count": 424
+      },
+      {
+        "page": 2,
+        "md_start_line": 28,
+        "md_end_line": 33,
+        "text_layer_sha256": "ebde5ae2e92773d93ac13c9d35b29ac78c3fa621f483cb9521bf90d48428dab1",
+        "text_layer_char_count": 274
+      },
+      {
+        "page": 3,
+        "md_start_line": 41,
+        "md_end_line": 58,
+        "text_layer_sha256": "9fc5156498278c1406c685a432cb60a841d1064d8151aad3732510f28049a28e",
+        "text_layer_char_count": 504
+      },
+      {
+        "page": 4,
+        "md_start_line": 66,
+        "md_end_line": 92,
+        "text_layer_sha256": "d94276c3cd512696cf289d630fdc63e90db4dea2db5d177ccb2b9a4c87879780",
+        "text_layer_char_count": 920
+      },
+      {
+        "page": 5,
+        "md_start_line": 100,
+        "md_end_line": 128,
+        "text_layer_sha256": "9b695815e4014d48629b16be8458e96d34c7bc362022c3885dc54f45fa1b0bd4",
+        "text_layer_char_count": 1060
+      },
+      {
+        "page": 6,
+        "md_start_line": 136,
+        "md_end_line": 152,
+        "text_layer_sha256": "11a23187922586720c31672cd42ebd48cbdf84c9c1ab10aa01b0f0db10b9881b",
+        "text_layer_char_count": 546
+      },
+      {
+        "page": 7,
+        "md_start_line": 160,
+        "md_end_line": 163,
+        "text_layer_sha256": "3957965c1e4ddcc70b9a64943c3f6d2c98a96b30ee53218fd1dab0ecd4f08173",
+        "text_layer_char_count": 29
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        5
+      ]
+    },
+    "quality_issues": []
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260127_Clawdbot_AI_Entry_Product.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "4e890a2c9a342f79b2fe5d96cb1f4a1b717d05e543df0d7298eef917f81846d5",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Harness与模型协同.md",
+      "../../20_topics/桌面Agent与工作流.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Clawdbot产品入口.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

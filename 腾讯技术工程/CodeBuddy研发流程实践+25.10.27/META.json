@@ -1,0 +1,149 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0304",
+  "title": "AI编程上瘾指南，一天不用浑身难受",
+  "short_title": "CodeBuddy研发流程实践",
+  "account": "腾讯技术工程",
+  "author": "dickenslian",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-10-27T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "AI编程上瘾指南，⼀天不⽤浑身难受\n\n\n原创腾讯程序员  腾讯技术⼯程  2025年10⽉27⽇ 02:36⼴东3244⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n作者：dickenslian\n\n📝 导语\n\n还记得第⼀次听说  AI编程时 的 反应吗？\"这玩意⼉能靠谱吗？\"\"会 不会 把我的 ⼯作抢\n了？\"\"代码质量能保证吗？\"相信很多开发者都有过这样的疑虑。然⽽，当你真正开始使⽤\nAI编程⼯具，体验到10分钟完成原本需要 1⼩时的 CRUD开发，看到AI⾃动⽣成的测试⽤例覆\n盖了你没想到的边界情况，感受到从需求到代码交付时间缩短      30%的效率提升时，你会 发\n现⾃⼰正在经历⼀场变⾰。那些最初坚决抗拒的开发者，现在已经变成了忠实的⽤户。⼀天\n不⽤AI编程，就浑身难受。本⽂是我和团队近   2个⽉来在 AI编程领域的经验总结，我将带你\n⾛过这个完整的转变历程：从理解   AI编程的战略价值，到掌握具体的技术实现，从建⽴科学\n的 ⽅法论，到实现团队的规模化应⽤。 这 不仅是 ⼀份技术指",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "AI研发协同",
+    "上下文工程",
+    "MCP与工具接入",
+    "Agent安全与治理"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/AI编程上瘾指南，一天不用浑身难受.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:19:51-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "ddfb1d76877886db3b6b9fb2957094f4e9f40140ded0050eefba141cb77168a3",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "大量效率/覆盖/缺陷比例未给样本、基线与统计协议，不能作因果或普适结论。",
+        "newState=AI(currentState,action)是显式状态设计类比，不使概率模型成为确定纯函数。",
+        "AI生成测试与自愈不保证断言正确或完整，先功能后安全的阶段建议不能代替发布前安全验收。",
+        "产品参数、Figma forceCode配置、模型能力属于2025年经验，待官方核查；页图仅1、18、24、27。"
+      ],
+      "size_bytes": 9156817,
+      "page_count": 38
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:19:51-07:00",
+  "directory": "腾讯技术工程/CodeBuddy研发流程实践+25.10.27",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:19:51-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "ddfb1d76877886db3b6b9fb2957094f4e9f40140ded0050eefba141cb77168a3",
+    "output_path": "MD.md",
+    "output_sha256": "d9a26373e420ded0bd90a1f646d4eb308edeab6d78d8ae0a0959b673a722dadc",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 38,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "visual_pages": [
+        1,
+        18,
+        24,
+        27
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "大量效率/覆盖/缺陷比例未给样本、基线与统计协议，不能作因果或普适结论。",
+      "newState=AI(currentState,action)是显式状态设计类比，不使概率模型成为确定纯函数。",
+      "AI生成测试与自愈不保证断言正确或完整，先功能后安全的阶段建议不能代替发布前安全验收。",
+      "产品参数、Figma forceCode配置、模型能力属于2025年经验，待官方核查；页图仅1、18、24、27。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/AI编程上瘾指南，一天不用浑身难受.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/CodeBuddy研发流程实践+25.10.27/RAW.pdf",
+    "sha256": "ddfb1d76877886db3b6b9fb2957094f4e9f40140ded0050eefba141cb77168a3",
+    "copied_at": "2026-10-23T06:19:51-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

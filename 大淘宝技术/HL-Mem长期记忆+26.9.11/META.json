@@ -1,0 +1,409 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0010",
+  "title": "让 Agent 像人一样记忆：本地长期记忆系统 HL-Mem 的设计与取舍",
+  "short_title": "HL-Mem长期记忆",
+  "account": "大淘宝技术",
+  "author": "子安",
+  "author_byline": "本文作者子安,来自淘天集团-直播 AIGC 团队,作为直播电商智能化领域的先行者,始终致力",
+  "source_url": null,
+  "published_at": "2026-09-11",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "description": "PDF第1页标题、公众号和日期与下载总结的frontmatter、主题相符；署名取PDF团队介绍页。",
+    "pdf_page": 1,
+    "header_text": "让 Agent  像人一样记忆:本地⻓期记忆系统 HL - Mem  的设计与取\n舍\n直播技术团队 2026 年 9 月 11 日 01 : 32浙江原创 大淘宝技术 41 人\nHL-Mem 是一套旨在让 Agent 像人一样具备⻓期记忆能力的本地化记忆系统,其核心\n设计理念是将记忆视为受治理的认知系统而非简单的数据存储。该系统借鉴认知科学原\n理,采用事实与经验双通道架构,通过保留不可变的原始事件(Event)和可更新的结构\n化事实(Claim),实现了证据可追溯、时间可解释(区分有效时间与记录时间)以及记\n忆的动态修正与遗忘。在工程实现上,HL-Mem 坚持运行时独立和本地优先原则,默认\n仅依赖 SQLite 单文件部署,通过后台异步 Worker 处理去重、冲突消解和生命周期管\n理,有效",
+    "author_pdf_page": 15,
+    "download_summary_frontmatter": "title: 让 Agent 像人一样记忆：本地长期记忆系统 HL-Mem 的设计与取舍\nsource: 大淘宝技术公众号 · 直播技术团队（作者子安）· 2026年9月11日\ndate: 2026-09-11\ntype: 方法论与案例型\ntags: [Agent, 长期记忆, HL-Mem, 记忆治理, SQLite, 认知科学, 设计取舍]\nstatus: 待复习"
+  },
+  "tags": [
+    "Agent长期记忆",
+    "Agent工程循环"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/让 Agent 像人一样记忆：本地长期记忆系统 HL-Mem 的设计与取舍.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-12T00:38:05-07:00",
+      "provenance": "用户已收集的公众号PDF；本次从inbox复制归档，原采集方式与时间未知",
+      "sha256": "2624fd89fe430230b14b3dd9943819aa0e9270f9916e4c784f02eb98a2e45441",
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "原文URL、采集时间与显示时间的时区未确认；未联网核查来源或技术事实。",
+          "verification_status": "unverified"
+        },
+        {
+          "description": "全部页已提取文本层；图片内容、代码框长行与表格版面尚未逐页视觉核验。",
+          "verification_status": "pending_visual_review"
+        },
+        {
+          "description": "第1页视觉检查可见图片加载圆圈与空白占位区域；缺失图像尚未补采。",
+          "verification_status": "visually_observed",
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "size_bytes": 3471058,
+      "page_count": 16
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-12T00:38:05-07:00",
+  "directory": "大淘宝技术/HL-Mem长期记忆+26.9.11",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_HL-Mem长期记忆.md"
+  },
+  "received_artifacts": [
+    {
+      "artifact_id": "summary-001",
+      "kind": "external_ai_summary",
+      "path": "AI_HL-Mem长期记忆.md",
+      "original_path": "/Users/iw/Downloads/让 Agent 像人一样记忆 26·09·11.md",
+      "received_at": "2026-10-12T00:38:05-07:00",
+      "generated_at": null,
+      "model": null,
+      "prompt_version": null,
+      "sha256": "119672c5d22ad23642412e6725a24a68da8cb41deef5d5cf7ed02b817aa0613d",
+      "size_bytes": 26167,
+      "provenance": "用户用其他模型生成并下载的AI总结；原样保存，未重新生成",
+      "verification_status": "identity_matched_content_not_fully_verified",
+      "candidate_wikilinks": [
+        "Agent Runtime",
+        "Agent 评测体系",
+        "Embedding",
+        "LangGraph",
+        "Letta 与 MemGPT",
+        "LongMemEval",
+        "Lost in the Middle",
+        "MCP",
+        "Mem0",
+        "RAG",
+        "RRF 混合检索",
+        "SQLite FTS5",
+        "Zep 与 Graphiti",
+        "中文分词 Jieba",
+        "双时间模型",
+        "向量检索",
+        "知识图谱",
+        "被遗忘权",
+        "认知科学与记忆"
+      ],
+      "wikilink_status": "保留原下载文本中的候选知识关联；并不表示目标笔记均已创建"
+    }
+  ],
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0010",
+    "created_at": "2026-10-12T00:38:05-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "2624fd89fe430230b14b3dd9943819aa0e9270f9916e4c784f02eb98a2e45441"
+      },
+      {
+        "artifact_id": "summary-001",
+        "path": "AI_HL-Mem长期记忆.md",
+        "sha256": "be6a5832d1218b59a976f98d2c5e796409828ea2c8aa96396e8933ba930afc3a"
+      }
+    ],
+    "method": "本次导入外部AI总结，核对身份，并以PDF文本及收到的总结补充跨文章主题知识。原总结生成过程未知；本次不重写AI总结。",
+    "tools": [
+      "本地文件读取",
+      "pypdf",
+      "pdfplumber",
+      "Python标准库",
+      "pdftoppm（首面渲染并查看）"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages_for_MD_only",
+    "quality_issues": [
+      {
+        "description": "原文URL、采集时间与显示时间的时区未确认；未联网核查来源或技术事实。",
+        "verification_status": "unverified"
+      },
+      {
+        "description": "全部页已提取文本层；图片内容、代码框长行与表格版面尚未逐页视觉核验。",
+        "verification_status": "pending_visual_review"
+      },
+      {
+        "description": "外部AI总结的生成模型、提示词、原始输入版本与生成时间未知；其校对报告及图中解读属于外部总结的自述，不能直接视为本次核验结论。",
+        "verification_status": "external_summary_not_fully_verified"
+      },
+      {
+        "description": "下载总结含图中无法辨认、原文疑点或推断说明；原样保留。",
+        "verification_status": "reported_by_external_summary",
+        "report_path": "AI_HL-Mem长期记忆.md",
+        "reported_markers_count": 11
+      },
+      {
+        "description": "第1页视觉检查可见图片加载圆圈与空白占位区域；缺失图像尚未补采。",
+        "verification_status": "visually_observed",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "description": "PDF第7页与下载总结“记忆锚点”的时间示例存在矛盾：5月搬去北京，却把4月的实际地点写为北京。本次保留原文与总结，不采用该例证明双时间语义。",
+        "verification_status": "text_compared_logical_inconsistency",
+        "pages": [
+          7
+        ],
+        "summary_path": "AI_HL-Mem长期记忆.md"
+      }
+    ],
+    "outputs": [
+      "AI_HL-Mem长期记忆.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "generated_summary": {
+      "path": "AI_HL-Mem长期记忆.md",
+      "sha256": "119672c5d22ad23642412e6725a24a68da8cb41deef5d5cf7ed02b817aa0613d"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-12T00:38:05-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "2624fd89fe430230b14b3dd9943819aa0e9270f9916e4c784f02eb98a2e45441"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "9017f587e3ba1bfc003d745ff66b57c07193b3c7b7667c4f6e3523c88e113d07"
+    },
+    "extractor": "pdfplumber 0.11.9; Page.extract_text",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "text_layer_extracted_layout_not_fully_verified",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 14,
+        "md_end_line": 37,
+        "text_layer_sha256": "b3dc980e801ad81b4c65cb2c896f2bb979e24ca97c613906f8bec93aa7b0268a",
+        "text_layer_char_count": 882,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 2,
+        "md_start_line": 47,
+        "md_end_line": 71,
+        "text_layer_sha256": "a49959084706f2811c41d30cf6d28a169fda1db016afd50d359fc0829b507bc9",
+        "text_layer_char_count": 698,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 3,
+        "md_start_line": 81,
+        "md_end_line": 104,
+        "text_layer_sha256": "9befe87de802f40cf358d8ca536d9943f60792af66f6ac201e661951e225ac2b",
+        "text_layer_char_count": 823,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 4,
+        "md_start_line": 114,
+        "md_end_line": 146,
+        "text_layer_sha256": "a3da6a9abe9bcdbc203b4cae882118ca68cfdf8f91868e7ee75aa7911a81e9f9",
+        "text_layer_char_count": 1134,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 5,
+        "md_start_line": 156,
+        "md_end_line": 181,
+        "text_layer_sha256": "c4371d8b9aca497b456b28c0369e956817e8d1c27847fb234cd42468fc77e74b",
+        "text_layer_char_count": 876,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 6,
+        "md_start_line": 191,
+        "md_end_line": 215,
+        "text_layer_sha256": "a1c84424fc53c3e0333dd6a0fa06d024ff0f8cd7ca7eb59eaa411019c68593e3",
+        "text_layer_char_count": 972,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 7,
+        "md_start_line": 225,
+        "md_end_line": 245,
+        "text_layer_sha256": "a4037500a7623c0c965a9cf80b11bdc14b9b62067c39f7950f57e1edc02afab3",
+        "text_layer_char_count": 683,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 8,
+        "md_start_line": 255,
+        "md_end_line": 281,
+        "text_layer_sha256": "8c139204ebf04b9f4f5b918f23c0c646c52964f88fc13380084846f2a10feb9b",
+        "text_layer_char_count": 1087,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 9,
+        "md_start_line": 291,
+        "md_end_line": 317,
+        "text_layer_sha256": "0632e71afdd87fea215fadfaabc7fed4cf4361a05dc8267255e4e18a3333eb90",
+        "text_layer_char_count": 999,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 10,
+        "md_start_line": 327,
+        "md_end_line": 349,
+        "text_layer_sha256": "277ca4af836916cc9effe27f5df0abae19937d7c8678fa1c962dcffc409c1fc2",
+        "text_layer_char_count": 958,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 11,
+        "md_start_line": 359,
+        "md_end_line": 378,
+        "text_layer_sha256": "bd046af51c7cd9a0e5608aaa2ea7927d1d3b56adbfcf14d32814db0730b13fea",
+        "text_layer_char_count": 696,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 12,
+        "md_start_line": 388,
+        "md_end_line": 399,
+        "text_layer_sha256": "773e6cf6c185b5c14dcb02d26845d87e0c315714f16c7e7246c3dee09aece588",
+        "text_layer_char_count": 433,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 13,
+        "md_start_line": 409,
+        "md_end_line": 437,
+        "text_layer_sha256": "0fa53d33738a570ddd10cf108c6acdfc572a0f5563078873b434cd2e46c6b060",
+        "text_layer_char_count": 986,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 14,
+        "md_start_line": 447,
+        "md_end_line": 479,
+        "text_layer_sha256": "fee5adeafd20b181434176b907190048163b89c5560a8c2bac349f0048af431d",
+        "text_layer_char_count": 1232,
+        "image_objects": 1,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 15,
+        "md_start_line": 489,
+        "md_end_line": 513,
+        "text_layer_sha256": "0df26a35d31cdc896670189b30d32955d5b41afbb3d0dc24a1ab33bd520dbcce",
+        "text_layer_char_count": 765,
+        "image_objects": 2,
+        "out_of_page_character_count": 0
+      },
+      {
+        "page": 16,
+        "md_start_line": 523,
+        "md_end_line": 525,
+        "text_layer_sha256": "5b7441e5f9ba58678f4496f53582d5a75934898f18fad8c931c6d57f07d6f817",
+        "text_layer_char_count": 17,
+        "image_objects": 0,
+        "out_of_page_character_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_extracted": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "identity_text_pages_reviewed": [
+        1,
+        15
+      ],
+      "visual_pages_reviewed": [
+        1
+      ],
+      "detail_text_pages_reviewed": [
+        4,
+        7
+      ]
+    }
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent长期记忆.md",
+      "../../20_topics/决策知识结构化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充主题知识；不改变本人记录或自动加入工具库",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed_sources_removed",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/让 Agent 像人一样记忆：本地长期记忆系统 HL-Mem 的设计与取舍.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "2624fd89fe430230b14b3dd9943819aa0e9270f9916e4c784f02eb98a2e45441",
+        "removed_at": "2026-10-12T00:44:57-07:00"
+      },
+      {
+        "original_path": "/Users/iw/Downloads/让 Agent 像人一样记忆 26·09·11.md",
+        "destination_path": "AI_HL-Mem长期记忆.md",
+        "sha256": "be6a5832d1218b59a976f98d2c5e796409828ea2c8aa96396e8933ba930afc3a",
+        "removed_at": "2026-10-12T00:44:57-07:00"
+      }
+    ],
+    "copied_at": "2026-10-12T00:38:05-07:00",
+    "removed_at": "2026-10-12T00:44:57-07:00"
+  },
+  "ai_note": "AI_HL-Mem长期记忆.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

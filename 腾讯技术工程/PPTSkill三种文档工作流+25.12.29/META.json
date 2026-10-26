@@ -1,0 +1,166 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0322",
+  "title": "用AI写PPT，没想到效果这么好啊",
+  "short_title": "PPTSkill三种文档工作流",
+  "account": "腾讯技术工程",
+  "author": "deyuankong",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-12-29T01:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "⽤AI写 PPT，没想到效果这么好啊\n\n腾讯技术⼯程   2025年12⽉29⽇   01:36⼴东19⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n作者：   deyuankong\n\n\n\n  \"明天有个汇报，今晚必须交最终稿        PPT...\" 这场景熟悉吗？ 年底到了，⼜到了写 PPT\n  的 \"煎熬季 \"，也许你正在为写  PPT    ⽽绞尽脑汁、通宵达旦。这⼀次，你可以给\n  CodeBuddy ⼀个写 PPT 的机会，本                     ⽂将详细地⼿把⼿实操，助⼒⼤家写好 PPT。\n\n\n  一、 写PPT的痛点与需求\n\n1.1 四⼤痛点，你中了⼏个？\n\n作为职场上混的⼈免不了要写      PPT，下⾯的痛点你中了⼏个？\n\n● 突然通知 \"明天汇报 \"，你却连模板都没有，缺模版\n\n1、没统⼀模板或缺乏各种思维模型的表达结构的模版，每次从零开始\n\n2、⽹上免费的太丑，付费的太贵（      99-299元/套）\n\n3、想要简洁⼤⽓？⾃⼰设计不来\n\n● 知",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "技能与工作流复用",
+    "AI研发协同",
+    "上下文工程"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/用AI写PPT，没想到效果这么好啊.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:38:58-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "f2f0d8625b349834354b055a251bfca7286efe202aa693df1d2782c2ccdab3cf",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "p31说明作者借助CodeBuddy分析生成10份MD后汇总；未提供分析所基于仓库commit，部分伪代码/API不一致，不能当官方源码精确复刻。",
+        "p39 ShapeData声明与p40构造参数不符、p38一份pml.xsd验证所有XML、p47写sync而非async等示例需修正；页图已确认p41缩进和p47代码原貌。",
+        "p41默认清空所有文本，只回填清单中段落，局部替换若漏填会丢内容；形状按位置重新编号只对同一模板快照稳定。",
+        "p42组坐标只累加偏移未处理缩放/旋转；p47并发任务共享pptx对象，未证明顺序、线程/状态安全或输出完整性。",
+        "XSD和文件完整性验证不能保证内容事实准确；像素级一致、企业级并发等是作者主张无受控性能证据。字体兼容取决于目标平台，预置字体清单不能保证中文字符覆盖。",
+        "多处Prompt/代码长行在PDF右侧截断，原文链接的pptx、zip与源仓库未取得；仅页图1、34、41、47已看，未逐图验证成品效果。"
+      ],
+      "size_bytes": 12471243,
+      "page_count": 51
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:38:58-07:00",
+  "directory": "腾讯技术工程/PPTSkill三种文档工作流+25.12.29",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:38:58-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "f2f0d8625b349834354b055a251bfca7286efe202aa693df1d2782c2ccdab3cf",
+    "output_path": "MD.md",
+    "output_sha256": "9a136de9a2e57e1a490ad9793651b7cc068784b90210e96b0c04b305c97e137e",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 51,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "visual_pages": [
+        1,
+        34,
+        41,
+        47
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "p31说明作者借助CodeBuddy分析生成10份MD后汇总；未提供分析所基于仓库commit，部分伪代码/API不一致，不能当官方源码精确复刻。",
+      "p39 ShapeData声明与p40构造参数不符、p38一份pml.xsd验证所有XML、p47写sync而非async等示例需修正；页图已确认p41缩进和p47代码原貌。",
+      "p41默认清空所有文本，只回填清单中段落，局部替换若漏填会丢内容；形状按位置重新编号只对同一模板快照稳定。",
+      "p42组坐标只累加偏移未处理缩放/旋转；p47并发任务共享pptx对象，未证明顺序、线程/状态安全或输出完整性。",
+      "XSD和文件完整性验证不能保证内容事实准确；像素级一致、企业级并发等是作者主张无受控性能证据。字体兼容取决于目标平台，预置字体清单不能保证中文字符覆盖。",
+      "多处Prompt/代码长行在PDF右侧截断，原文链接的pptx、zip与源仓库未取得；仅页图1、34、41、47已看，未逐图验证成品效果。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/用AI写PPT，没想到效果这么好啊.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/PPTSkill三种文档工作流+25.12.29/RAW.pdf",
+    "sha256": "f2f0d8625b349834354b055a251bfca7286efe202aa693df1d2782c2ccdab3cf",
+    "copied_at": "2026-10-23T06:38:58-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Skill设计与治理.md",
+      "../../20_topics/桌面Agent与工作流.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

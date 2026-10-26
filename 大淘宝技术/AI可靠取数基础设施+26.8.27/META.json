@@ -1,0 +1,323 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0188",
+  "title": "信任需要基础设施：如何让AI可靠的取数",
+  "short_title": "AI可靠取数基础设施",
+  "account": "大淘宝技术",
+  "author": "踏雨",
+  "author_byline": "本文作者踏雨，来自淘天集团-直播技术数据团队。",
+  "source_url": null,
+  "published_at": "2026-08-27",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "直播技术团队 2026年8月27日 19:19 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 10,
+      "text": "本文作者踏雨，来自淘天集团-直播技术数据团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "Agent数据分析",
+    "决策知识结构化",
+    "Harness与模型协同",
+    "Skill设计与治理"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/信任需要基础设施：如何让AI可靠的取数.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T02:20:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "e2310426ed1c887098ee25abd59eda567677cdeff5ab2ee45797a66116d090f4",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.9存在原文叠字笔误（“看取数基建作为为系统的一部分”多出一“为”字）；p.11为PDF末尾空白页。",
+          "pages": [
+            9,
+            11
+          ],
+          "verification_status": "actual_text_review"
+        }
+      ],
+      "size_bytes": 3860928,
+      "page_count": 11
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T02:20:00-07:00",
+  "directory": "大淘宝技术/AI可靠取数基础设施+26.8.27",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI可靠取数基础设施.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0188",
+    "created_at": "2026-10-20T02:20:00-07:00",
+    "updated_at": "2026-10-20T02:20:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "e2310426ed1c887098ee25abd59eda567677cdeff5ab2ee45797a66116d090f4"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "8e319ef90a5318a259364dc6e2c889e209924dc07a16fbbd5d33a0cb8ecd6ae0"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.9存在原文叠字笔误（“看取数基建作为为系统的一部分”多出一“为”字）；p.11为PDF末尾空白页。",
+        "pages": [
+          9,
+          11
+        ],
+        "verification_status": "actual_text_review"
+      }
+    ],
+    "outputs": [
+      "AI_AI可靠取数基础设施.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_AI可靠取数基础设施.md",
+      "sha256": "5324f0b047b676450df61cf5f43350c80bf53a52375f6db6c1d9a29ceed12738"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T02:20:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "e2310426ed1c887098ee25abd59eda567677cdeff5ab2ee45797a66116d090f4"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "8e319ef90a5318a259364dc6e2c889e209924dc07a16fbbd5d33a0cb8ecd6ae0"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "md_end_line": 43,
+        "md_start_line": 14,
+        "page": 1,
+        "text_layer_char_count": 458,
+        "text_layer_sha256": "d321b08bb939bcf1b15ab267534ad14f1745507b666a251434b639c89a6c37d8"
+      },
+      {
+        "md_end_line": 113,
+        "md_start_line": 53,
+        "page": 2,
+        "text_layer_char_count": 866,
+        "text_layer_sha256": "a315443c6344c617552f51e66b05876cfe29bf844d3bc59fa7b463f94a5c46b5"
+      },
+      {
+        "md_end_line": 204,
+        "md_start_line": 123,
+        "page": 3,
+        "text_layer_char_count": 1152,
+        "text_layer_sha256": "17fa5c14e71f356291a74b5ab70297bb14b03597af559c440b33a67677ba38eb"
+      },
+      {
+        "md_end_line": 250,
+        "md_start_line": 214,
+        "page": 4,
+        "text_layer_char_count": 458,
+        "text_layer_sha256": "53aa6f8b801bdf164ea7ab2c336e3865784aabc86a6ef35a0528bf7adfc3326d"
+      },
+      {
+        "md_end_line": 282,
+        "md_start_line": 260,
+        "page": 5,
+        "text_layer_char_count": 455,
+        "text_layer_sha256": "fd2f49ec4f2d76d0b3f209b24dbfe64884132b002a05fe7dd9db05e1c4b43916"
+      },
+      {
+        "md_end_line": 335,
+        "md_start_line": 292,
+        "page": 6,
+        "text_layer_char_count": 529,
+        "text_layer_sha256": "3d2e90a8bd25caed23e13c36786840f9c84a2fed1963bc5a893dfb17358fe6c4"
+      },
+      {
+        "md_end_line": 391,
+        "md_start_line": 345,
+        "page": 7,
+        "text_layer_char_count": 790,
+        "text_layer_sha256": "34c2678bdfc082ad0c6737daf3add6d4ad3326b8c8e07221dc68f1017cb6e4ec"
+      },
+      {
+        "md_end_line": 442,
+        "md_start_line": 401,
+        "page": 8,
+        "text_layer_char_count": 718,
+        "text_layer_sha256": "bb255804ad9dbc95c3685406598c1c21dc3c1c6ce8ddcbecc16fb0c16702c299"
+      },
+      {
+        "md_end_line": 522,
+        "md_start_line": 452,
+        "page": 9,
+        "text_layer_char_count": 840,
+        "text_layer_sha256": "02f79f2cfab5ee00d81b7f8192391babafda23f64a259ccd849808f7b37daa7e"
+      },
+      {
+        "md_end_line": 556,
+        "md_start_line": 532,
+        "page": 10,
+        "text_layer_char_count": 401,
+        "text_layer_sha256": "86d5db2be4524f7ad231910c69b62fd31f8c89ba67ed1d4e824bf33d0e2bfdd9"
+      },
+      {
+        "md_end_line": 566,
+        "md_start_line": 566,
+        "page": 11,
+        "text_layer_char_count": 0,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.9存在原文叠字笔误（“看取数基建作为为系统的一部分”多出一“为”字）；p.11为PDF末尾空白页。",
+        "pages": [
+          9,
+          11
+        ],
+        "verification_status": "actual_text_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent数据分析.md",
+      "../../20_topics/决策知识结构化.md",
+      "../../20_topics/问题澄清.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed_sources_removed",
+    "copied_at": "2026-10-20T02:20:00-07:00",
+    "removed_at": "2026-10-20T02:26:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/信任需要基础设施：如何让AI可靠的取数.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "e2310426ed1c887098ee25abd59eda567677cdeff5ab2ee45797a66116d090f4",
+        "copied_at": "2026-10-20T02:20:00-07:00",
+        "removed_at": "2026-10-20T02:26:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_AI可靠取数基础设施.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

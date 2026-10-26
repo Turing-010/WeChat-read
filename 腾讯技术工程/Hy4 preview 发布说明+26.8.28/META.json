@@ -1,0 +1,296 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0176",
+  "title": "腾讯混元 Hy4 preview 发布，稳居开源模型第一梯队",
+  "short_title": "Hy4 preview 发布说明",
+  "account": "腾讯技术工程",
+  "author": "未注明（署名为腾讯技术工程公众号）",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-28T00:18",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯混元 Hy4 preview 发布，稳居开源模型第一梯队.pdf",
+      "original_filename": "腾讯混元 Hy4 preview 发布，稳居开源模型第一梯队.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "3a9f5cb664d665ba854732c270929f7f236f7390ee8033fdd8cf1b3ac951dacb",
+      "size_bytes": 4072066,
+      "page_count": 5,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "作为模型发布文章，盲测和吞吐结果未提供完整协议/基线配置；产品价格和活动为时点信息。"
+      ],
+      "publication_evidence": "PDF第1页署名行：2026年8月28日 00:18；未发现个人作者。"
+    }
+  ],
+  "tags": [
+    "模型评测与反馈",
+    "大模型产品与服务",
+    "Agent成本与上下文预算",
+    "Agent评测与反馈",
+    "模型与开发工具发布"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/Hy4 preview 发布说明+26.8.28",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Hy4 preview 发布说明.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "腾讯混元 Hy4  preview  发布,稳居开源模型第一梯队\n腾讯程序员 2026 年 8 月 28 日 00 : 18广东腾讯技术工程 60 人\n8 月  28 日,腾讯混元发布并开源新一代大语言模型  Hy4 preview ,总参数  770B 、激活参数\n49B ,上下文长度突破  1M,在代码、办公、科学等真实生产力任务上展现出卓越能力。\nHy4 preview 在模型尺寸、上下文长度、数据规模上都进行了显著的扩展,预训练和后训练的\n共同进步带来了智能水平的又一次巨大提升,稳居开源模型第一梯队。\n混元持续与  CodeBuddy / WorkBuddy  等产品深度协同,优化生产力场景的真实用户体验。\n在腾讯内部组织的   163 名内部专家、 203 个工程任务的盲测\n中,  Hy4 preview (均分  2.99/4 )略优于  GLM 5.3 (均分  2.92/4.00) 和  Kimi K3 (均分\n2.94/4.00 )。\nHy4 preview 定位 “ 为生产力而生 ” 的模型,通过与软件工程、游戏、金融、安全等顶尖腾讯专\n家的高质量数据共建,以及与  WorkBuddy 等产品的深度协同( Co-Design ),模型在各类真实\n生产力任务上取得显著进步。\n具体来看,在软件工程场景下,模型增强了长程开发任务的理解、规划、调试与验证能力,进\n一步提升前端开发的视觉审美和交互质量。\n在真实生产力任务上展现卓越能力。\n",
+    "publication_evidence": "PDF第1页署名行：2026年8月28日 00:18；未发现个人作者。",
+    "full_title_in_capture": "腾讯混元 Hy4 preview 发布，稳居开源模型第一梯队",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0176",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "3a9f5cb664d665ba854732c270929f7f236f7390ee8033fdd8cf1b3ac951dacb"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      "作为模型发布文章，盲测和吞吐结果未提供完整协议/基线配置；产品价格和活动为时点信息。"
+    ],
+    "outputs": [
+      "AI_Hy4 preview 发布说明.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3
+      ]
+    },
+    "coverage": "逐页阅读正文p.1–3，检查全部5页缩略图，放大核对p.1榜单与参数、p.3吞吐/应用入口及定价段落。其余页为文章结尾与留言区域。",
+    "fact_checks": [
+      {
+        "claim": "模型参数与上下文",
+        "source_value": "总参数770B、激活49B、上下文超过1M",
+        "pages": [
+          1
+        ],
+        "result": "放大页面核对一致；归因于发布方"
+      },
+      {
+        "claim": "内部盲测样本与均分",
+        "source_value": "163名专家、203项工程任务；Hy4 2.99/4、GLM 5.3 2.92、Kimi K3 2.94",
+        "pages": [
+          1
+        ],
+        "result": "与页面相符；协议未独立复现"
+      },
+      {
+        "claim": "吞吐提升",
+        "source_value": "端到端吞吐相较基线提升31.8%",
+        "pages": [
+          3
+        ],
+        "result": "按文章报告记录，基线详情不充分"
+      },
+      {
+        "claim": "API定价",
+        "source_value": "输入6元/百万token、输出18元/百万token、缓存命中0.3元/百万token",
+        "pages": [
+          3
+        ],
+        "result": "放大页面核对；不表述为当前价格"
+      },
+      {
+        "claim": "两周免费活动",
+        "source_value": "WorkBuddy/CodeBuddy限时免费两周",
+        "pages": [
+          3
+        ],
+        "result": "按发布时文章陈述记录，未核实当前状态"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_Hy4 preview 发布说明.md",
+      "sha256": "c5e829a41382a9f68379044afae90fb9e8b84bfa9e91875dea97854380263819",
+      "size_bytes": 14357
+    },
+    "independent_crosscheck": {
+      "reviewer": "crosscheck_c",
+      "note_sha256": "c5e829a41382a9f68379044afae90fb9e8b84bfa9e91875dea97854380263819",
+      "review_sha256": "595116d25a98cde8ea5daf53882f57c2a3fd1d28cd4a2c099e7bb7091c3efcba",
+      "status": "passed",
+      "changes": [
+        "Reformatted all eight review cards as single-line 问题::答案 entries and converted the ending校对报告 to the quoted folded block format."
+      ],
+      "source_spotchecks": [
+        "p.1 enlarged image confirms title, 770B/49B/1M+ claims and internal blind-test scores; reading text p.3 supports throughput, pricing and promotion as publication-time claims."
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "3a9f5cb664d665ba854732c270929f7f236f7390ee8033fdd8cf1b3ac951dacb"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "5f9079509f79966b42b6828e07261883af23ec54bc065561cf3915107d2a2c36"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 25,
+        "text_layer_sha256": "2a4fb355abc00dc38b964d851f11e925cf6437a7c4dab1986e2c2c9d5f2ead75",
+        "text_layer_char_count": 634
+      },
+      {
+        "page": 2,
+        "md_start_line": 33,
+        "md_end_line": 39,
+        "text_layer_sha256": "a927dea7f5234f372abdea5d93a93f88a865c38a11b2ca6389d91e074a4d115b",
+        "text_layer_char_count": 168
+      },
+      {
+        "page": 3,
+        "md_start_line": 47,
+        "md_end_line": 63,
+        "text_layer_sha256": "fd25a0db0dce339b7e9cc9bb07adf0d054c5794ac2bac12ab8195f95f99620b7",
+        "text_layer_char_count": 734
+      },
+      {
+        "page": 4,
+        "md_start_line": 71,
+        "md_end_line": 78,
+        "text_layer_sha256": "26265a699df3ab0f3afd8c91ae97e37267f2f671eac20dac520fdd2374780d11",
+        "text_layer_char_count": 77
+      },
+      {
+        "page": 5,
+        "md_start_line": 86,
+        "md_end_line": 85,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3
+      ]
+    },
+    "quality_issues": [
+      "作为模型发布文章，盲测和吞吐结果未提供完整协议/基线配置；产品价格和活动为时点信息。"
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯混元 Hy4 preview 发布，稳居开源模型第一梯队.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "3a9f5cb664d665ba854732c270929f7f236f7390ee8033fdd8cf1b3ac951dacb",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/模型与开发工具发布.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Hy4 preview 发布说明.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

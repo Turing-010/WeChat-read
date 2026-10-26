@@ -1,0 +1,28 @@
+# macOS metadata
+.DS_Store
+._*
+.Spotlight-V100/
+.Trashes/
+
+# Local Obsidian layout, cache, and deleted files
+.obsidian/workspace*.json
+.obsidian/cache/
+.obsidian/graph.json
+.trash/
+
+# Obsidian Git authentication IPC files (never upload credentials)
+.obsidian/plugins/obsidian-git/.git_credentials_input*
+.obsidian/plugins/obsidian-git/obsidian_askpass.sh
+
+# Local processing scratch files and network diagnostics
+.workbuddy/
+**/.wechat-save-pdf/diagnostics/
+**/.wechat-save-pdf/*.pid
+**/.wechat-save-pdf/*.lock
+__pycache__/
+*.pyc
+
+# Local environment secrets
+.env
+.env.*
+!.env.example

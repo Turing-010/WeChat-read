@@ -1,0 +1,362 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0174",
+  "title": "腾讯发布多款具身智能基座模型与智能体，钛螺丝平台迎来全面升级",
+  "short_title": "腾讯具身模型与Tairos",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-07-18T01:29",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯发布多款具身智能基座模型与智能体，钛螺丝平台迎来全面升级.pdf",
+      "original_filename": "腾讯发布多款具身智能基座模型与智能体，钛螺丝平台迎来全面升级.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "19c893c73559291e1089419a6bc57b1cbee29d530401bdce72550d0dc9c9a8ba",
+      "size_bytes": 8290768,
+      "page_count": 7,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "issue": "p.7为推广和留言页；文章发布的评测与生产指标没有完整实验条件。",
+          "pages": [
+            3,
+            4,
+            7
+          ],
+          "impact": "结论按发布方报道归因，不声称独立验证。"
+        }
+      ],
+      "publication_evidence": "PDF p.1: 2026年7月18日 01:29; no timezone stated; no author field shown."
+    }
+  ],
+  "tags": [
+    "具身智能数据闭环",
+    "模型与开发工具发布",
+    "Agent长期记忆"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/腾讯具身模型与Tairos+26.7.18",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_腾讯具身模型与Tairos.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "腾讯发布多款具身智能基座模型与智能体,钛螺丝平台迎来全面升\n级\n2026 年 7 月 18 日 01 : 29广东腾讯技术工程 12 人\n本次发布的具身基座模型包括 Hy-Embodied-VLM-1.0 、 Hy-Embodied-RxBrain-1.0 和  Hy-\nEmbodied-VLA-0.5 。\n这三个模型都基于混元大模型打造,其中VLM 模型像 “ 右脑 ” ,负责理解图像、空间和场景;\nRxBrain 模型像具身 “ 大脑 ” ,统一认知、规划和对未来状态的想象;VLA 模型连接 “ 小脑 ” 和身\n体,把高层目标转化成连续的、可纠错的动作。\n同时发布的两个具身智能体分别是Apexio  和 TairosAgent,它们通过智能体的调度能力,可以\n把前面的 “ 左右脑 ” 、 “ 大脑 ” 、 “ 小脑 ” 和身体整合成完整的系统,让机器人形成一个持续感知、\n持续决策、持续行动的整体。\n7 月 18 日,腾讯 Robotics X 实验室、福田实验室联合腾讯混元发布具身智能系列新模型和智能体新成\n果,首次系统性地打通 “ 感知 — 身体 — 行动 ” 的闭环,推动具身智能从 “ 离身智能 ” 迈向 “ 具身原生智能 ” 、\n从实验室迈向真实生产力应用。\n",
+    "publication_evidence": "PDF p.1: 2026年7月18日 01:29; no timezone stated; no author field shown.",
+    "full_title_in_capture": "腾讯发布多款具身智能基座模型与智能体，钛螺丝平台迎来全面升级",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0174",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "19c893c73559291e1089419a6bc57b1cbee29d530401bdce72550d0dc9c9a8ba"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "issue": "p.7为推广和留言页；文章发布的评测与生产指标没有完整实验条件。",
+        "pages": [
+          3,
+          4,
+          7
+        ],
+        "impact": "结论按发布方报道归因，不声称独立验证。"
+      }
+    ],
+    "outputs": [
+      "AI_腾讯具身模型与Tairos.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "coverage": "全篇7页文本和缩略图已检查；放大复核模型功能、发布会图片、智能体层次、平台生态与小六案例；正文至p.6，p.7为推广/留言。",
+    "fact_checks": [
+      {
+        "item": "发布模型名称",
+        "note_value": "Hy-Embodied-VLM-1.0、Hy-Embodied-RxBrain-1.0、Hy-Embodied-VLA-0.5",
+        "source_value": "相同",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "result": "一致。"
+      },
+      {
+        "item": "VLM评测描述",
+        "note_value": "37项任务；A3B约十分之一计算量接近A32B",
+        "source_value": "相同",
+        "pages": [
+          3
+        ],
+        "result": "一致；发布方报告，评测配置未详述。"
+      },
+      {
+        "item": "VLA示教数据",
+        "note_value": "超过一万小时",
+        "source_value": "超一万小时人类示教数据",
+        "pages": [
+          3
+        ],
+        "result": "一致；报道数据未独立复核。"
+      },
+      {
+        "item": "Apexio感知行动频率",
+        "note_value": "约15Hz",
+        "source_value": "约15Hz",
+        "pages": [
+          4
+        ],
+        "result": "一致。"
+      },
+      {
+        "item": "工厂应用表现",
+        "note_value": "成功率高于95%、快于6秒/件、新SKU采集及后训练少于3天",
+        "source_value": "相同",
+        "pages": [
+          3
+        ],
+        "result": "一致；文章未提供样本、条件或独立验证。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_腾讯具身模型与Tairos.md",
+      "sha256": "23ccf5105c2244f65bd3827f6ea0c4efed3023d15a71a5c525a4ddd28990e1ef"
+    },
+    "independent_crosscheck": {
+      "reviewer": "Codex crosscheck group2",
+      "note_sha256": "23ccf5105c2244f65bd3827f6ea0c4efed3023d15a71a5c525a4ddd28990e1ef",
+      "review_sha256": "4785a331ffc295cb04fc2496061ab6cf9c125307b259d1e5706b89d25805a1bb",
+      "status": "passed",
+      "changes": [
+        "规范旧Q::A卡片和复核记录。"
+      ],
+      "source_spotchecks": [
+        {
+          "source": "reading.txt; sheet-001.jpg",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "finding": "核对VLM/RxBrain/VLA、37项/A3B-A32B、Agent层次、平台及机器人案例；发布指标保留归因。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "19c893c73559291e1089419a6bc57b1cbee29d530401bdce72550d0dc9c9a8ba"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "0152819a0991548625de01698dc0e686c9ed436e113ae9ad08e683d8d8abb4d4"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 23,
+        "text_layer_sha256": "7ea7869991f6b32726f7b7a41b8ff41bfa74a69ae612fb8a75fe8d90338c4e46",
+        "text_layer_char_count": 543
+      },
+      {
+        "page": 2,
+        "md_start_line": 31,
+        "md_end_line": 48,
+        "text_layer_sha256": "3bebc5ba2f78565aad16f43eecc3b8134d743b2f37f5f4a6e3b8fedb114f5d27",
+        "text_layer_char_count": 650
+      },
+      {
+        "page": 3,
+        "md_start_line": 56,
+        "md_end_line": 77,
+        "text_layer_sha256": "ef2698ace566752cf71cf5e6f9560d20735417ca0273e3584f7a666cb4339174",
+        "text_layer_char_count": 861
+      },
+      {
+        "page": 4,
+        "md_start_line": 85,
+        "md_end_line": 101,
+        "text_layer_sha256": "6a259318b8dc46a1a6392793ad88b31fdcaf8ec01c28511915a899582bfdc479",
+        "text_layer_char_count": 559
+      },
+      {
+        "page": 5,
+        "md_start_line": 109,
+        "md_end_line": 118,
+        "text_layer_sha256": "d5635eaad04e86a3ba8ade60c9b7dcfbcead0a9b2c9401c059beea2d45ce2636",
+        "text_layer_char_count": 393
+      },
+      {
+        "page": 6,
+        "md_start_line": 126,
+        "md_end_line": 147,
+        "text_layer_sha256": "56272a15b4d3384fcc829324cd5b3924b1ab45c6c8f544800039990f09341227",
+        "text_layer_char_count": 759
+      },
+      {
+        "page": 7,
+        "md_start_line": 155,
+        "md_end_line": 159,
+        "text_layer_sha256": "a2fa926d7da35e1508f149d4a249ac8812e0030d3431d71a6b6d460bce147244",
+        "text_layer_char_count": 54
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "quality_issues": [
+      {
+        "issue": "p.7为推广和留言页；文章发布的评测与生产指标没有完整实验条件。",
+        "pages": [
+          3,
+          4,
+          7
+        ],
+        "impact": "结论按发布方报道归因，不声称独立验证。"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/腾讯发布多款具身智能基座模型与智能体，钛螺丝平台迎来全面升级.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "19c893c73559291e1089419a6bc57b1cbee29d530401bdce72550d0dc9c9a8ba",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/具身智能数据闭环.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_腾讯具身模型与Tairos.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

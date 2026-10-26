@@ -1,0 +1,809 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0094",
+  "title": "腾讯云 Agent Memory 节省 61% Token 提升 52% 成功率的诀窍：Mermaid 无限画布 × 上下文卸载",
+  "short_title": "可恢复的分层任务记忆",
+  "account": "腾讯技术工程",
+  "author": "kentyhuang",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-05-22T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0522 TencentDB Agent Memory.pdf",
+      "original_filename": "0522 TencentDB Agent Memory.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "8f52fc0eae966480db4957d81bf0b16760650dac241b016845b87edfb36ac678",
+      "size_bytes": 6356786,
+      "page_count": 30,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "多处图片仅显示加载占位，缺失比较图、画布演变、卸载示意和真实反馈图，正文机制只能结合仍可见图及文本解释。",
+          "pages": [
+            9,
+            10,
+            11,
+            12,
+            15,
+            16,
+            17,
+            18,
+            28
+          ],
+          "status": "confirmed_missing"
+        },
+        {
+          "description": "示例代码右侧截断，p.10 连线粘连、p.20 层次代码排版异常；不补造完整 JSON/代码，只使用可见字段和完整 p.7/p.21 示例。",
+          "pages": [
+            10,
+            19,
+            20,
+            21
+          ],
+          "status": "source_layout_truncation"
+        },
+        {
+          "description": "WideSearch 表格 221.51M→85.64M、51.52% 相对提升，与同页正文 174.31M→63.46M、8.5%→12% 冲突；p.1/26 又写 33%→50%，无法确认统一口径。",
+          "pages": [
+            1,
+            24,
+            26
+          ],
+          "status": "unresolved_source_conflict"
+        },
+        {
+          "description": "AA-LCR 表中总 Token 复算约节省 31.01%，概述 30.98%；WideSearch 表格 Token 复算节省约 61.34%，表列 61.38%；保留原数与复算差别。",
+          "pages": [
+            23,
+            24,
+            25,
+            26
+          ],
+          "status": "unresolved_source_discrepancy"
+        },
+        {
+          "description": "Flowchart 约 15% 改善、80% 上下文阈值缺乏本 PDF 内完整实验设置；SWEbench Token 列没有单位；不泛化为普适规律。",
+          "pages": [
+            8,
+            9,
+            14,
+            23
+          ],
+          "status": "qualified"
+        },
+        {
+          "description": "产品化和开源时态混用，长期模块与整套方案范围不同，未据此确认当前实际可用性。",
+          "pages": [
+            1,
+            28,
+            29
+          ],
+          "status": "qualified"
+        }
+      ],
+      "publication_evidence": "PDF p.1 可见 2026-05-22T02:36"
+    }
+  ],
+  "tags": [
+    "Agent长期记忆",
+    "Agent成本与上下文预算",
+    "Agent任务恢复",
+    "Agent评测与反馈"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/可恢复的分层任务记忆+26.5.22",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_可恢复的分层任务记忆.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "腾讯云 Agent  Memory 节省 61 % Token 提升 52 %成功率的诀窍:\nMermaid 无限画布 × 上下文卸载\n腾讯程序员 May  22 , 2026 , 2 : 36  AM广东原创 腾讯技术工程 225  listened\n作者: kentyhuang\n引言:什么是 “ 一语胜千言 ” ?\n我们每天都在做一件很厉害的事:用一句话概括一整段经历。\n朋友问你: “ 昨天约会怎么样? ” 你不会从几点见面、点了什么菜开始复述,而是直接说一句:\n“ 挺灾难的,他全程都在聊前任。 ” 对方立刻就懂了,甚至还能继续追问细节。这句话不仅是总\n结,更像一个 “ 压缩包 ”—— 点开之后,里面有情绪、有判断、有故事。\n但  Agent 还不会主动这样解析输入。\n当它执行一个长任务时,会不断搜索、读文件、调用工具、修改代码。每一步都在产生大量信\n息 —— 几千字、上万字。如果这些内容全部堆进上下文,结果往往是: Token 被迅速耗尽,模\n型被细节淹没,甚至逐渐偏离原本的目标。\n问题不在于信息太多,而在于信息没有被 “ 压缩成最可用的形式 ” 。\n所以我们做了一件事:让  Agent 也学会 “ 一语胜千言 ” 。\nTencentDB Agent Memory 通过上下文卸载  + Mermaid 无限画布,把长任务过程转化为可管\n理的结构化记忆:完整信息被保留在外部,关键状态以高密度形式留在上下文中。在超长\nSession 实验中,该方案最高节省  61.38% Token ,同时把任务通过率最多提升  51.52% 。这\n一能力也将随  TencentDB Agent Memory 产品化及开源。\n本文提出一种基于上下文卸载与结构化图表示的短期记忆压缩方案:通过将完整信息卸载\n至外部文件系统,同时利用  Mermaid 图语言将任务执行过程转化为可导航的结构化记\n忆,使完整信息保留于外部、关键状态以高密度形式留存于上下文。在超长 Session 实验\n中,该方案最高节省  61% Token ,同时把超长 Session 任务的通过率从  33% 提升到\n50% ,相对提升 52% 。从实验结果可以看出,短期记忆压缩能力尤其适合办公提效、创\n作、研究和编程这类长任务和多任务场景,该能力已随  TencentDB Agent Memory 产品\n化节奏发布。\n⭐ Github 仓库地址:https://github.com/Tencent/TencentDB-Agent-Memory。\n",
+    "publication_evidence": "PDF p.1 可见 2026-05-22T02:36",
+    "full_title_in_capture": "腾讯云 Agent Memory 节省 61% Token 提升 52% 成功率的诀窍：Mermaid 无限画布 × 上下文卸载",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0094",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "8f52fc0eae966480db4957d81bf0b16760650dac241b016845b87edfb36ac678"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "多处图片仅显示加载占位，缺失比较图、画布演变、卸载示意和真实反馈图，正文机制只能结合仍可见图及文本解释。",
+        "pages": [
+          9,
+          10,
+          11,
+          12,
+          15,
+          16,
+          17,
+          18,
+          28
+        ],
+        "status": "confirmed_missing"
+      },
+      {
+        "description": "示例代码右侧截断，p.10 连线粘连、p.20 层次代码排版异常；不补造完整 JSON/代码，只使用可见字段和完整 p.7/p.21 示例。",
+        "pages": [
+          10,
+          19,
+          20,
+          21
+        ],
+        "status": "source_layout_truncation"
+      },
+      {
+        "description": "WideSearch 表格 221.51M→85.64M、51.52% 相对提升，与同页正文 174.31M→63.46M、8.5%→12% 冲突；p.1/26 又写 33%→50%，无法确认统一口径。",
+        "pages": [
+          1,
+          24,
+          26
+        ],
+        "status": "unresolved_source_conflict"
+      },
+      {
+        "description": "AA-LCR 表中总 Token 复算约节省 31.01%，概述 30.98%；WideSearch 表格 Token 复算节省约 61.34%，表列 61.38%；保留原数与复算差别。",
+        "pages": [
+          23,
+          24,
+          25,
+          26
+        ],
+        "status": "unresolved_source_discrepancy"
+      },
+      {
+        "description": "Flowchart 约 15% 改善、80% 上下文阈值缺乏本 PDF 内完整实验设置；SWEbench Token 列没有单位；不泛化为普适规律。",
+        "pages": [
+          8,
+          9,
+          14,
+          23
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "产品化和开源时态混用，长期模块与整套方案范围不同，未据此确认当前实际可用性。",
+        "pages": [
+          1,
+          28,
+          29
+        ],
+        "status": "qualified"
+      }
+    ],
+    "outputs": [
+      "AI_可恢复的分层任务记忆.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "detail_pages_reviewed": [
+        1,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        28
+      ]
+    },
+    "coverage": "覆盖符号压缩原则、Flowchart 选型、状态外部化、四层存储与召回、四组长会话实验、消融、长期个性化和发布边界；保留可见完整图例及 metadata，截断示例不猜补；列出 WideSearch 表文冲突和缺图。",
+    "fact_checks": [
+      {
+        "item": "SWEbench 会话组织",
+        "value": "每 50 个任务串在一个 Session；共 500 题",
+        "pages": [
+          22
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "SWEbench GLM 配置完成率",
+        "value": "58.4% 基线到 64.2%，相对 9.93%",
+        "pages": [
+          23
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "SWEbench 最高节省配置",
+        "value": "MiniMax 2.7：33.09%",
+        "pages": [
+          23
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "Toolathlon 样本与通过数",
+        "value": "20 题，4 题增至 6–7 题通过",
+        "pages": [
+          24
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "WideSearch 表格口径",
+        "value": "221.51M→85.64M，节省 61.38%；相对通过率提升 51.52%",
+        "pages": [
+          24
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "WideSearch 冲突正文口径",
+        "value": "174.31M→63.46M，节省 63.59%；8.5%→12%",
+        "pages": [
+          24
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "AA-LCR 准确率",
+        "value": "176/400=44.0%；190/400=47.5%",
+        "pages": [
+          25
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "AA-LCR 总 Token",
+        "value": "无插件 112029517；有插件 77283611",
+        "pages": [
+          25
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "长期记忆数据集",
+        "value": "PersonaMem：6000+ 消息、589 题",
+        "pages": [
+          28
+        ],
+        "result": "核对原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_可恢复的分层任务记忆.md",
+      "sha256": "18ec45b26acc28b1aee1b8e2e89b6fc41ba4f39623bd658339788a595b5b9cbd"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "8f52fc0eae966480db4957d81bf0b16760650dac241b016845b87edfb36ac678"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "f0faf912d0766263b14d59a73dc6856210c54f70f5bbaa06a6344bd665062078"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 36,
+        "text_layer_sha256": "17d4e0abda410e152b2d6135c054a29a6b15aeb5bd664012cd492f390ca453d3",
+        "text_layer_char_count": 1068
+      },
+      {
+        "page": 2,
+        "md_start_line": 44,
+        "md_end_line": 63,
+        "text_layer_sha256": "a55d835451904dfd456f44dfb69f06a231db8afd170a71b65c88fd3b15e32d41",
+        "text_layer_char_count": 656
+      },
+      {
+        "page": 3,
+        "md_start_line": 71,
+        "md_end_line": 91,
+        "text_layer_sha256": "445caa5a537cc6f83e2767e2bc79152501a14237778f6b53e60ac2b08081b562",
+        "text_layer_char_count": 725
+      },
+      {
+        "page": 4,
+        "md_start_line": 99,
+        "md_end_line": 120,
+        "text_layer_sha256": "2125b113767bd399c0afd4e341d6053eccc6f504fe01767a1c0a80348163c5c0",
+        "text_layer_char_count": 729
+      },
+      {
+        "page": 5,
+        "md_start_line": 128,
+        "md_end_line": 152,
+        "text_layer_sha256": "e946de48349f1198af222cd5c80e120d1fa352a5f73be30920966966823c710d",
+        "text_layer_char_count": 855
+      },
+      {
+        "page": 6,
+        "md_start_line": 160,
+        "md_end_line": 183,
+        "text_layer_sha256": "b453a43e2a266a7922e421fe8c2fb8bfacf669a3345947026064147811fd2def",
+        "text_layer_char_count": 678
+      },
+      {
+        "page": 7,
+        "md_start_line": 191,
+        "md_end_line": 213,
+        "text_layer_sha256": "c1a322a21f6878853117a69b0a108491a9c3d5c4f708cfc22218176ba9eb826f",
+        "text_layer_char_count": 825
+      },
+      {
+        "page": 8,
+        "md_start_line": 221,
+        "md_end_line": 252,
+        "text_layer_sha256": "1931122d503feaa2607973f1dfb4fb6c0aa17185b2b054bdac0a53f5840cf3a8",
+        "text_layer_char_count": 1014
+      },
+      {
+        "page": 9,
+        "md_start_line": 260,
+        "md_end_line": 270,
+        "text_layer_sha256": "564ef3cb7723662cff096c278581b3f957fa2a705b6c285a58edbe564a01a353",
+        "text_layer_char_count": 443
+      },
+      {
+        "page": 10,
+        "md_start_line": 278,
+        "md_end_line": 299,
+        "text_layer_sha256": "496caf56ccc194163c07c540c63efeef7c25ae5923b45ca7acfa496bbfb9245c",
+        "text_layer_char_count": 745
+      },
+      {
+        "page": 11,
+        "md_start_line": 307,
+        "md_end_line": 335,
+        "text_layer_sha256": "68814f0024f824b90706187de4d569eda838dcb9bad21ebd55808f8296c50afa",
+        "text_layer_char_count": 1070
+      },
+      {
+        "page": 12,
+        "md_start_line": 343,
+        "md_end_line": 355,
+        "text_layer_sha256": "8c837c0a8b9983d97efaa83a72d7a5aed2944328b4f3d3cced314a251a2c2c42",
+        "text_layer_char_count": 501
+      },
+      {
+        "page": 13,
+        "md_start_line": 363,
+        "md_end_line": 383,
+        "text_layer_sha256": "4a387ac16ccbbdb845b7a39c8e741f4a84eea32b61aeda398021fc027219c1c0",
+        "text_layer_char_count": 737
+      },
+      {
+        "page": 14,
+        "md_start_line": 391,
+        "md_end_line": 417,
+        "text_layer_sha256": "86b2ff197b6fbb5d258976eede22160efd88cad678c85b7a826ba11242e11b8e",
+        "text_layer_char_count": 882
+      },
+      {
+        "page": 15,
+        "md_start_line": 425,
+        "md_end_line": 443,
+        "text_layer_sha256": "3b3b89e3f65034a633c030d25d1aae72fb7a1e87160b47a60012823f30421896",
+        "text_layer_char_count": 854
+      },
+      {
+        "page": 16,
+        "md_start_line": 451,
+        "md_end_line": 472,
+        "text_layer_sha256": "62a99425797aa73ead71372ecbf429fc1686565ee55a69c0d3622fa072d20b57",
+        "text_layer_char_count": 639
+      },
+      {
+        "page": 17,
+        "md_start_line": 480,
+        "md_end_line": 487,
+        "text_layer_sha256": "36ded64651c0af4ad7bb7b27058b54f332a1c2cdb85a4f5ec1a98c8f4712bc9a",
+        "text_layer_char_count": 314
+      },
+      {
+        "page": 18,
+        "md_start_line": 495,
+        "md_end_line": 509,
+        "text_layer_sha256": "6850d7ef3426d06c11a5d1b1ebbad4c65b9f173d6cb0b61c68b8e5f99b6e6ac7",
+        "text_layer_char_count": 507
+      },
+      {
+        "page": 19,
+        "md_start_line": 517,
+        "md_end_line": 550,
+        "text_layer_sha256": "2d16d94c27f3ba8b6d89fdbcb6a5c8e2ea6a4922a71e03adf31b987c38b50ec8",
+        "text_layer_char_count": 1230
+      },
+      {
+        "page": 20,
+        "md_start_line": 558,
+        "md_end_line": 577,
+        "text_layer_sha256": "fbc92f6f7496ffb4ca35455c9a2e17816c73b2bdee92bcff586b24754f2c5f45",
+        "text_layer_char_count": 721
+      },
+      {
+        "page": 21,
+        "md_start_line": 585,
+        "md_end_line": 611,
+        "text_layer_sha256": "e3d76db1614f2ebbc5eae3886c23f79615da0248a3feed4597b3cb13e0dd4383",
+        "text_layer_char_count": 1165
+      },
+      {
+        "page": 22,
+        "md_start_line": 619,
+        "md_end_line": 637,
+        "text_layer_sha256": "5ea58a61a42b9642ae8ebdf75920666e85dba5f43dc377164f9a7ad05b5f7f68",
+        "text_layer_char_count": 760
+      },
+      {
+        "page": 23,
+        "md_start_line": 645,
+        "md_end_line": 677,
+        "text_layer_sha256": "584fc4b42a2c48d7ba3ee6317513c58b89243c841401a6282652ee09a9f9c2a5",
+        "text_layer_char_count": 1370
+      },
+      {
+        "page": 24,
+        "md_start_line": 685,
+        "md_end_line": 723,
+        "text_layer_sha256": "cb6563e180469a44bc942fbaf3a03de0da25b199ccbf2b2db23656498cf877d9",
+        "text_layer_char_count": 1290
+      },
+      {
+        "page": 25,
+        "md_start_line": 731,
+        "md_end_line": 764,
+        "text_layer_sha256": "4e950644ac90a0d81aa4b1bcd01d71082dc38b0e3399657bedc067f9037fa3b1",
+        "text_layer_char_count": 1159
+      },
+      {
+        "page": 26,
+        "md_start_line": 772,
+        "md_end_line": 801,
+        "text_layer_sha256": "90bd0c493b9fc5095933fa74dcba47b7da10313da70c861efccba03cdefb4048",
+        "text_layer_char_count": 1047
+      },
+      {
+        "page": 27,
+        "md_start_line": 809,
+        "md_end_line": 836,
+        "text_layer_sha256": "b46d3d60bb60f17384ac068f6af28d53ebc71416e1845081e11b8b482b9e8333",
+        "text_layer_char_count": 1039
+      },
+      {
+        "page": 28,
+        "md_start_line": 844,
+        "md_end_line": 852,
+        "text_layer_sha256": "94449ad5e6a048993011e382d9c5e65e6697df73f00e2370f8211156000c7658",
+        "text_layer_char_count": 389
+      },
+      {
+        "page": 29,
+        "md_start_line": 860,
+        "md_end_line": 879,
+        "text_layer_sha256": "5b7ed13e765c2bcc663d8ace0af3a84008a60fcaf7231c82946795a03aac9ef8",
+        "text_layer_char_count": 715
+      },
+      {
+        "page": 30,
+        "md_start_line": 887,
+        "md_end_line": 890,
+        "text_layer_sha256": "1236a0ca6cb293c258df9996968a32259aef335260bba4e7cf705ca8a161a711",
+        "text_layer_char_count": 26
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "detail_pages_reviewed": [
+        1,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        28
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "多处图片仅显示加载占位，缺失比较图、画布演变、卸载示意和真实反馈图，正文机制只能结合仍可见图及文本解释。",
+        "pages": [
+          9,
+          10,
+          11,
+          12,
+          15,
+          16,
+          17,
+          18,
+          28
+        ],
+        "status": "confirmed_missing"
+      },
+      {
+        "description": "示例代码右侧截断，p.10 连线粘连、p.20 层次代码排版异常；不补造完整 JSON/代码，只使用可见字段和完整 p.7/p.21 示例。",
+        "pages": [
+          10,
+          19,
+          20,
+          21
+        ],
+        "status": "source_layout_truncation"
+      },
+      {
+        "description": "WideSearch 表格 221.51M→85.64M、51.52% 相对提升，与同页正文 174.31M→63.46M、8.5%→12% 冲突；p.1/26 又写 33%→50%，无法确认统一口径。",
+        "pages": [
+          1,
+          24,
+          26
+        ],
+        "status": "unresolved_source_conflict"
+      },
+      {
+        "description": "AA-LCR 表中总 Token 复算约节省 31.01%，概述 30.98%；WideSearch 表格 Token 复算节省约 61.34%，表列 61.38%；保留原数与复算差别。",
+        "pages": [
+          23,
+          24,
+          25,
+          26
+        ],
+        "status": "unresolved_source_discrepancy"
+      },
+      {
+        "description": "Flowchart 约 15% 改善、80% 上下文阈值缺乏本 PDF 内完整实验设置；SWEbench Token 列没有单位；不泛化为普适规律。",
+        "pages": [
+          8,
+          9,
+          14,
+          23
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "产品化和开源时态混用，长期模块与整套方案范围不同，未据此确认当前实际可用性。",
+        "pages": [
+          1,
+          28,
+          29
+        ],
+        "status": "qualified"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0522 TencentDB Agent Memory.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "8f52fc0eae966480db4957d81bf0b16760650dac241b016845b87edfb36ac678",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent成本与上下文预算.md",
+      "../../20_topics/Agent长期记忆.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_可恢复的分层任务记忆.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

@@ -1,0 +1,164 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0320",
+  "title": "深入AI Agent内核: Google gemini-cli 源码深度解构",
+  "short_title": "GeminiCLI内核源码解构",
+  "account": "腾讯技术工程",
+  "author": "wenconglin",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-11-24T01:38",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "深⼊AI  Agent内  核: Google  gemini-cli 源码深度解构\n\n\n原创 腾讯程序员   腾讯技术⼯程    2025年11⽉24⽇  01:38⼴东  714⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n作者：  wenconglin\n\n\n\n  随着⼤语⾔模型与开发⼯具链的深度融合，命令⾏终端正被重塑为开发者的AI协作界⾯。\n  本⽂以 Google gemini-cli 为范本，通过源码解构，系统性分析其 Agent 内核、ReAct ⼯\n  作流、⼯具调⽤与上下⽂管理等核⼼模块的实现原理。为希望构建终端                  Agent 的开发\n  者，提供⼯程实现的系统化参考。\n\n\n  一、引言\n\n命令⾏终端是开发者的核⼼⼯作区，也是许多开发者完成⼯作的⾸选⼯具。当前，⼤语⾔模型\n正在重塑命令⾏终端的能⼒，使终端不仅能完成命令执⾏，还能让开发者与智能体共同完成命\n令的协作、创造。\n\n近  期 ，Google 开  源  了  其  官  ⽅  实  现 的",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "Agent架构",
+    "MCP与工具接入",
+    "上下文工程",
+    "Agent安全与治理"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/深入AI Agent内核: Google gemini-cli 源码深度解构.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:09:37-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "4403b06a7064ca3db9d815fc395212af8c2f7943d3f2f19e43041f5dfae7d93a",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "p1及p4页图为加载占位，架构图未加载；已读文本机制不代表图完整。",
+        "未给源码提交SHA；context.fileName配置与模块位置可能随版本变化，本任务不查网页。",
+        "案例把修改时间当EXIF缺失的回退值，是不同日期语义；不能称恢复真实拍摄日。",
+        "页图仅1、4、6、8；自动删除原图片等例子只作原文资料，未执行。"
+      ],
+      "size_bytes": 2693534,
+      "page_count": 16
+    },
+    {
+      "capture_id": "capture-002",
+      "path": "RAW_补采001.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/深入AI Agent内核：Google gemini-cli 源码深度解构.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:51:05-07:00",
+      "provenance": "同篇另一份本地PDF；刊头、署名、发布日期及16页文本逐页相同，保留独立采集文件。",
+      "sha256": "5f21ae203a195206f93a6777c25f79a076d8ed72608357271f2d9013a0e83086",
+      "files": [],
+      "completeness": "not_asserted",
+      "size_bytes": 2693474,
+      "page_count": 16,
+      "quality_issues": [
+        "16页文本与capture-001完全一致；采集文件哈希不同。",
+        "入库工作者比对页图1、4、6、8：6、8相同，1、4加载图标像素略有差异；本协调步骤未重看页图。",
+        "p1、p4架构图仍为加载占位，本补采不能视为恢复缺图。"
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:09:37-07:00",
+  "directory": "腾讯技术工程/GeminiCLI内核源码解构+25.11.24",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:09:37-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "4403b06a7064ca3db9d815fc395212af8c2f7943d3f2f19e43041f5dfae7d93a",
+    "output_path": "MD.md",
+    "output_sha256": "9e694b61a4654f0fbe20d415aa7ff358631b7e58b351b7f4129ec39ede1497c7",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 16,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "visual_pages": [
+        1,
+        4,
+        6,
+        8
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "p1及p4页图为加载占位，架构图未加载；已读文本机制不代表图完整。",
+      "未给源码提交SHA；context.fileName配置与模块位置可能随版本变化，本任务不查网页。",
+      "案例把修改时间当EXIF缺失的回退值，是不同日期语义；不能称恢复真实拍摄日。",
+      "页图仅1、4、6、8；自动删除原图片等例子只作原文资料，未执行。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/深入AI Agent内核: Google gemini-cli 源码深度解构.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/GeminiCLI内核源码解构+25.11.24/RAW.pdf",
+    "sha256": "4403b06a7064ca3db9d815fc395212af8c2f7943d3f2f19e43041f5dfae7d93a",
+    "copied_at": "2026-10-23T06:09:37-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive",
+    "supplements": [
+      {
+        "capture_id": "capture-002",
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/深入AI Agent内核：Google gemini-cli 源码深度解构.pdf",
+        "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/GeminiCLI内核源码解构+25.11.24/RAW_补采001.pdf",
+        "sha256": "5f21ae203a195206f93a6777c25f79a076d8ed72608357271f2d9013a0e83086",
+        "copied_at": "2026-10-23T06:51:05-07:00",
+        "verified_at": "2026-10-23T08:25:15-07:00",
+        "removed_at": "2026-10-23T08:25:15-07:00",
+        "status": "original_removed_after_verified_archive"
+      }
+    ]
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42,
+    "additional_capture": {
+      "result": "same_article_different_capture",
+      "capture_id": "capture-002",
+      "method": "第1页完整标题、公众号、作者、发布日期一致；16页文本逐页完全相同；入库工作者另比对4页图。",
+      "verified_at": "2026-10-23T06:51:05-07:00"
+    }
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md",
+      "../../20_topics/桌面Agent与工作流.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

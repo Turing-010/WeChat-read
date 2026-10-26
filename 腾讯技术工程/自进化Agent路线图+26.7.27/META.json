@@ -1,0 +1,563 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0140",
+  "title": "Agent 开始“自我进化”：会出题、会反思，还会自己长出新技能",
+  "short_title": "自进化Agent路线图",
+  "account": "腾讯技术工程",
+  "author": "horacebao、ashexie",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-07-27T02:27",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Agent开始“自我进化”：会出题、会反思，还会自己长出新技能.pdf",
+      "original_filename": "Agent开始“自我进化”：会出题、会反思，还会自己长出新技能.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "94c83ba75c43cbda7c7b4b743cff10866b41018bde281aade01d6ff044da7235",
+      "size_bytes": 7253282,
+      "page_count": 25,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "附录 Dola 案例图片区域在页图中出现空白/加载占位，图像细节无法核对；旁侧正文仍可读。",
+          "pages": [
+            23,
+            24
+          ],
+          "status": "material_missing_visual"
+        }
+      ],
+      "publication_evidence": "PDF p.1 页眉：2026 年 7 月 27 日 02:27；未标时区。"
+    }
+  ],
+  "tags": [
+    "Agent长期记忆",
+    "Agent评测与反馈",
+    "Agent成本与上下文预算",
+    "Agent工程循环"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/自进化Agent路线图+26.7.27",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_自进化Agent路线图.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "Agent 开始“自我进化”:会出题、会反思,还会自己⻓出新技能\n腾讯程序员 2026 年 7 月 27 日 02 : 27广东原创 腾讯技术工程 619 人\n作者: horacebao 、 ashexie\n一个完全自主、越用越强的  Agent ,有可能实现吗?本文聚合了现有的前沿探索工作,向大家\n展现这一方向上的最新成果。话不多说,现就开启学习之旅吧 —— 本次文章覆盖自进化  Agent\n的三大技术路线、代表工作详解、横向对比、关键洞察等话题。\n01 自进化  Agent 介绍\n1.1 什么是自进化  Agent ?\n自进化  Agent( Self-Evolving Agent )指的是一类能够在与环境 / 用户交互过程中自动积累经\n验、提炼能力、并在后续任务中复用与提升的智能体。简单来讲:让  Agent 自己越用越聪\n明,而不是每次都靠人工去喂数据、调提示词、改模型。\n它的核心诉求可以拆成三件事:\n能存:把交互过程中沉淀下来的有价值的东西(成功模式、失败教训、可迁移技能)存下\n来;\n能用:在新任务中能把之前存下来的东西检索 / 调用 / 内化进自己的决策;\n能进化:经验本身是动态的,能更新、能合并、能淘汰,避免越攒越乱。\n1.2 为什么这件事现在被重视起来了?\n回到大模型本身的几个老大难问题:\n当  Agent 自己会出题、自己会答题、还能把答错的经验沉淀成下一次的 \" 技能包 \"—— 一\n个永远在长大的  Agent ,到底能走多远?十几篇论文反复啃读,从 \" 存技能 \" 到 \" 训技能 \" ,\n再到 \" 零数据自训 \" ,我们终于摸清了自进化  Agent 这条赛道的脉络。本文将带你深入\nAgent 的 \" 经验大脑 \"—— 从把经验写进文件,到把经验训进权重,再到完全无人工数据的\n自我循环,一步步拆解研究路径。\n",
+    "publication_evidence": "PDF p.1 页眉：2026 年 7 月 27 日 02:27；未标时区。",
+    "full_title_in_capture": "Agent 开始“自我进化”：会出题、会反思，还会自己长出新技能",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0140",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "94c83ba75c43cbda7c7b4b743cff10866b41018bde281aade01d6ff044da7235"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "附录 Dola 案例图片区域在页图中出现空白/加载占位，图像细节无法核对；旁侧正文仍可读。",
+        "pages": [
+          23,
+          24
+        ],
+        "status": "material_missing_visual"
+      }
+    ],
+    "outputs": [
+      "AI_自进化Agent路线图.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        7,
+        12,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    "coverage": "通读 p.1–25；覆盖自进化定义、三条路线、代表工作、横向比较、开放问题、论文与数据集索引。p.22–24 Dola 附录图表区域出现空白/加载占位，未能核对图片细节；只依据可读正文概括其示例用途。",
+    "fact_checks": [
+      {
+        "item": "路线划分",
+        "original_value": "生成/评估信号、经验反思、技能沉淀复用",
+        "pages": [
+          2,
+          6
+        ],
+        "result": "按文章三类路线复核。"
+      },
+      {
+        "item": "评测瓶颈",
+        "original_value": "任务生成与评判器可靠性限制反馈质量",
+        "pages": [
+          7,
+          10
+        ],
+        "result": "文章归纳的挑战。"
+      },
+      {
+        "item": "经验机制",
+        "original_value": "筛选、压缩、复用经验影响后续行为",
+        "pages": [
+          11,
+          16
+        ],
+        "result": "按案例机制总结。"
+      },
+      {
+        "item": "比较口径",
+        "original_value": "论文任务、反馈与评估设置各不相同",
+        "pages": [
+          18,
+          22
+        ],
+        "result": "非统一基准。"
+      },
+      {
+        "item": "附录图像",
+        "original_value": "Dola图像区域为空白/加载占位",
+        "pages": [
+          23,
+          24
+        ],
+        "result": "未据不可见图片补写。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_自进化Agent路线图.md",
+      "sha256": "5c5e8d6508d11f3eb58854a2d770b4b7ac585443543b4dc2333e9d5372776ccc"
+    },
+    "independent_crosscheck": {
+      "reviewer": "independent_crosscheck",
+      "note_sha256": "5c5e8d6508d11f3eb58854a2d770b4b7ac585443543b4dc2333e9d5372776ccc",
+      "review_sha256": "255b867302e06f96cdcfbbb16591461943148089319005ceb266b05b54a387b4",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "1–2、4",
+          "check": "核对自进化定义（三项：存/用/进化）和按权重更新/人工数据依赖划分的三条路线；EvoSkill角色及Pareto筛选机制与笔记一致。"
+        },
+        {
+          "pages": "6–7、11–13",
+          "check": "核对CoEvoSkills的Surrogate与Oracle两阶段验证、跨模型迁移结果边界，以及SkillRL数字：ALFWorld 89.9% vs 77.6%、WebShop 72.7% vs 66.1%、Search-QA 47.1% vs约38.5%、技能55→100。笔记均作为文章汇总数据呈现。"
+        },
+        {
+          "pages": "22–25",
+          "check": "核对开放问题、数据集索引和尾页；p.23–24 Dola附录图片区域为空/占位，笔记与review均说明只依据可读正文，不补图中细节；p.25为阅读量页。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "94c83ba75c43cbda7c7b4b743cff10866b41018bde281aade01d6ff044da7235"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "9cde951ff552bc43505587111d65cd524d052df36b90e8a8601a2602438bb8cd"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 32,
+        "text_layer_sha256": "5a35dd4f2a5b2889fc0700e2d0bb6a9eefb8c352283fb68d913501c2ead28978",
+        "text_layer_char_count": 778
+      },
+      {
+        "page": 2,
+        "md_start_line": 40,
+        "md_end_line": 76,
+        "text_layer_sha256": "41f3f512158f3f86d3b8fc130fa8e72f7536837d126dd936211b045532e8dd6f",
+        "text_layer_char_count": 1048
+      },
+      {
+        "page": 3,
+        "md_start_line": 84,
+        "md_end_line": 98,
+        "text_layer_sha256": "9ae40f42138aa76f9647fa2e2b70a333c5d45be1f619ef6e3377790a0305ed76",
+        "text_layer_char_count": 517
+      },
+      {
+        "page": 4,
+        "md_start_line": 106,
+        "md_end_line": 127,
+        "text_layer_sha256": "d660d63cb0cc00c91996892a77167b8f55c01d2226e62869c9ef53b318c1f99b",
+        "text_layer_char_count": 972
+      },
+      {
+        "page": 5,
+        "md_start_line": 135,
+        "md_end_line": 156,
+        "text_layer_sha256": "35de514b2f2b781f3eb3bf92811fbc6afad41720ce7fb6aaf770a7043159456b",
+        "text_layer_char_count": 1015
+      },
+      {
+        "page": 6,
+        "md_start_line": 164,
+        "md_end_line": 181,
+        "text_layer_sha256": "092cf53a21548f33b0991522317e3facedf48c943634d627870f06215266edcd",
+        "text_layer_char_count": 862
+      },
+      {
+        "page": 7,
+        "md_start_line": 189,
+        "md_end_line": 212,
+        "text_layer_sha256": "fde4cd405a4df43a54bd3a1cb6d2b87a99a90dc3f53d6b5f7cece8e665278657",
+        "text_layer_char_count": 1179
+      },
+      {
+        "page": 8,
+        "md_start_line": 220,
+        "md_end_line": 240,
+        "text_layer_sha256": "be619a4ef583e45d15187c8a69e5b434a323c17416d3786615f5fc737796b58b",
+        "text_layer_char_count": 977
+      },
+      {
+        "page": 9,
+        "md_start_line": 248,
+        "md_end_line": 279,
+        "text_layer_sha256": "c35ba43288f9bebe953ac433d771e7ce83b39916e4010056f4d0d0f0283f244b",
+        "text_layer_char_count": 1138
+      },
+      {
+        "page": 10,
+        "md_start_line": 287,
+        "md_end_line": 308,
+        "text_layer_sha256": "ebb9b84d4be938a786aa2fbb62f6cdbfd0dc100596d5f28775e345d7cbd8f794",
+        "text_layer_char_count": 729
+      },
+      {
+        "page": 11,
+        "md_start_line": 316,
+        "md_end_line": 332,
+        "text_layer_sha256": "c329d23ea4d6dec3689ad486a49671ca6d254dcbae823cb83a2f42e96f84145c",
+        "text_layer_char_count": 560
+      },
+      {
+        "page": 12,
+        "md_start_line": 340,
+        "md_end_line": 364,
+        "text_layer_sha256": "784665210a3af58cdb49179c1f5e873b33a11e1de3bfc05a14d8620ad3f2e44e",
+        "text_layer_char_count": 683
+      },
+      {
+        "page": 13,
+        "md_start_line": 372,
+        "md_end_line": 401,
+        "text_layer_sha256": "42b2561425bc3e8a65cab142b237335c9f0d772e10efc9c6531d2366551002e3",
+        "text_layer_char_count": 862
+      },
+      {
+        "page": 14,
+        "md_start_line": 409,
+        "md_end_line": 418,
+        "text_layer_sha256": "e27f94403ff8548a451fe0f76ea7005eb76259dc656b2f770f49492e69a1d28e",
+        "text_layer_char_count": 388
+      },
+      {
+        "page": 15,
+        "md_start_line": 426,
+        "md_end_line": 437,
+        "text_layer_sha256": "4e584dfd2e935ff1fb0c667b9622d8f278130e47ddf2b270a2e8e888f044686e",
+        "text_layer_char_count": 227
+      },
+      {
+        "page": 16,
+        "md_start_line": 445,
+        "md_end_line": 466,
+        "text_layer_sha256": "da9ef9bd62687e3023df0afc86ebb6c1b56cf6770e72a90c9f887b7c7cca7c8b",
+        "text_layer_char_count": 720
+      },
+      {
+        "page": 17,
+        "md_start_line": 474,
+        "md_end_line": 488,
+        "text_layer_sha256": "512ed6ebebad286b72a173ee0a4deb937114a4b521d76389d9e89c91ac21ffde",
+        "text_layer_char_count": 545
+      },
+      {
+        "page": 18,
+        "md_start_line": 496,
+        "md_end_line": 519,
+        "text_layer_sha256": "b65c9feb86c28a73abe8265ef3486632668121b4f2f0362636d1b4ca2e4d785c",
+        "text_layer_char_count": 787
+      },
+      {
+        "page": 19,
+        "md_start_line": 527,
+        "md_end_line": 569,
+        "text_layer_sha256": "302123a74c1afa7bdf336f0109501ceb133bd556ad6609dcd649fc0b0d9ed0e4",
+        "text_layer_char_count": 1153
+      },
+      {
+        "page": 20,
+        "md_start_line": 577,
+        "md_end_line": 611,
+        "text_layer_sha256": "957e32e7e0a9fb215652d8edacbe05d00ce1c26e11680ffc907de6c8d7bc5e25",
+        "text_layer_char_count": 866
+      },
+      {
+        "page": 21,
+        "md_start_line": 619,
+        "md_end_line": 649,
+        "text_layer_sha256": "959ff2cf3ccc68072a176a576fdadfdf0c67ee7182b533b0459b2b6c3b7176d8",
+        "text_layer_char_count": 874
+      },
+      {
+        "page": 22,
+        "md_start_line": 657,
+        "md_end_line": 682,
+        "text_layer_sha256": "809bb9f0ae3929ea7bedb51bea34bc6fb71838d396a252e6124303f9bd45f5c1",
+        "text_layer_char_count": 807
+      },
+      {
+        "page": 23,
+        "md_start_line": 690,
+        "md_end_line": 695,
+        "text_layer_sha256": "538cd73bf4c3930f879a9aba87b5d50dfbbe7e29e198bac65112777ab9ad7a1f",
+        "text_layer_char_count": 189
+      },
+      {
+        "page": 24,
+        "md_start_line": 703,
+        "md_end_line": 709,
+        "text_layer_sha256": "e52f9b35d7e542f3052ee7817bc643c551479a7d8f3ab2efc0dba09cdc190c30",
+        "text_layer_char_count": 162
+      },
+      {
+        "page": 25,
+        "md_start_line": 717,
+        "md_end_line": 717,
+        "text_layer_sha256": "378a188ab24901f0d8761f312498fad6e359ed57599380a86338b8a0654bdd03",
+        "text_layer_char_count": 11
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        7,
+        12,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "附录 Dola 案例图片区域在页图中出现空白/加载占位，图像细节无法核对；旁侧正文仍可读。",
+        "pages": [
+          23,
+          24
+        ],
+        "status": "material_missing_visual"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Agent开始“自我进化”：会出题、会反思，还会自己长出新技能.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "94c83ba75c43cbda7c7b4b743cff10866b41018bde281aade01d6ff044da7235",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_自进化Agent路线图.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

@@ -1,0 +1,375 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0041",
+  "title": "实现高质量数据闭环，RoboFlywheel驱动具身智能自衍进",
+  "short_title": "RoboFlywheel具身数据闭环",
+  "account": "阿里技术",
+  "source_account": "阿里数据",
+  "author": "阿里数据",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-09-28T03:54",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "2026年9月28日 03:54",
+  "published_timezone": null,
+  "identity_evidence": "p.1“阿里技术 2026年9月28日 03:54 浙江”；“以下文章来源于阿里数据，作者阿里数据”",
+  "tags": [
+    "具身智能数据闭环"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/实现高质量数据闭环，RoboFlywheel驱动具身智能自衍进.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T03:01:40-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "e8942b2d83d23a84932050a0590eb24d65aa6a3b8b16a7581efc8d1664900c59",
+      "size_bytes": 4099150,
+      "page_count": 7,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "Recipe网站截图标“即将上线”，框架能力介绍与实际开放状态/实验结果需分层记录",
+          "pages": [
+            5
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "原文状态边界"
+        },
+        {
+          "description": "视频仅静态封面，无法复核仿真运动行为",
+          "pages": [
+            3
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "捕获限制"
+        },
+        {
+          "description": "发布介绍未给训练收益对照、模型成功率改进或完整配方材料",
+          "pages": [
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "材料范围"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T03:01:40-07:00",
+  "directory": "阿里技术/RoboFlywheel具身数据闭环+26.9.28",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_RoboFlywheel具身数据闭环.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0041",
+    "created_at": "2026-10-13T03:01:40-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "e8942b2d83d23a84932050a0590eb24d65aa6a3b8b16a7581efc8d1664900c59"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "Recipe网站截图标“即将上线”，框架能力介绍与实际开放状态/实验结果需分层记录",
+        "pages": [
+          5
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文状态边界"
+      },
+      {
+        "description": "视频仅静态封面，无法复核仿真运动行为",
+        "pages": [
+          3
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "捕获限制"
+      },
+      {
+        "description": "发布介绍未给训练收益对照、模型成功率改进或完整配方材料",
+        "pages": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "材料范围"
+      }
+    ],
+    "outputs": [
+      "AI_RoboFlywheel具身数据闭环.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [
+      {
+        "kind": "Skill/Recipe说明",
+        "complete": false,
+        "pages": [
+          4,
+          5
+        ],
+        "scope": "框架三层和算子用途，未提供完整可执行Recipe/Skill"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "coverage": [
+      {
+        "name": "数据价值与四方向",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Sim与Bench",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Recipe框架",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Dataset与共建",
+        "pages": [
+          5,
+          6
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_RoboFlywheel具身数据闭环.md",
+      "sha256": "8abb0e0c2837fec5ef222ada81bbd508b5dbc4e2030c45183b49aede9ea327ed"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T03:01:40-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "e8942b2d83d23a84932050a0590eb24d65aa6a3b8b16a7581efc8d1664900c59"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "013d441883c504633505db8947e0db1b9ccb5b18f1227edb24604456966d84f8"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 31,
+        "text_layer_sha256": "0759b163d31084a790142f1151d21384495ed10dd5e5928dd571e4d7c7871987",
+        "text_layer_char_count": 605
+      },
+      {
+        "page": 2,
+        "md_start_line": 39,
+        "md_end_line": 41,
+        "text_layer_sha256": "0722b641712255be7c698812b3da476b52339330fb995fe45c25005037e9c1ce",
+        "text_layer_char_count": 35
+      },
+      {
+        "page": 3,
+        "md_start_line": 49,
+        "md_end_line": 61,
+        "text_layer_sha256": "e7eeb36e293c920f4ac29232a6a1ac16ab9b262fb29174db4cd69c438e23beff",
+        "text_layer_char_count": 428
+      },
+      {
+        "page": 4,
+        "md_start_line": 69,
+        "md_end_line": 84,
+        "text_layer_sha256": "12a7df5a93a6be59ff93370a6c43218346b944aa450f0a89253c36e327f9ee9e",
+        "text_layer_char_count": 514
+      },
+      {
+        "page": 5,
+        "md_start_line": 92,
+        "md_end_line": 106,
+        "text_layer_sha256": "048ef6eef230472fd7cdd2df79648d6eb23543f124a6c8fc0e9f41f130919a43",
+        "text_layer_char_count": 434
+      },
+      {
+        "page": 6,
+        "md_start_line": 114,
+        "md_end_line": 120,
+        "text_layer_sha256": "1821bc9eb881f86d5c12707feedac1d77fd0b0f8dbfb8ba486d9796014968fd8",
+        "text_layer_char_count": 144
+      },
+      {
+        "page": 7,
+        "md_start_line": 128,
+        "md_end_line": 128,
+        "text_layer_sha256": "4d8cde442345c47ff6a1189defa2fdb2889794ffe4cc5541e2b9400280c157fc",
+        "text_layer_char_count": 10
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "Recipe网站截图标“即将上线”，框架能力介绍与实际开放状态/实验结果需分层记录",
+        "pages": [
+          5
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文状态边界"
+      },
+      {
+        "description": "视频仅静态封面，无法复核仿真运动行为",
+        "pages": [
+          3
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "捕获限制"
+      },
+      {
+        "description": "发布介绍未给训练收益对照、模型成功率改进或完整配方材料",
+        "pages": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "材料范围"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/具身智能数据闭环.md"
+    ],
+    "proposed_topics": [
+      "具身智能数据闭环",
+      "Agent评测与反馈",
+      "Agent工程循环"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T03:01:40-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/实现高质量数据闭环，RoboFlywheel驱动具身智能自衍进.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "e8942b2d83d23a84932050a0590eb24d65aa6a3b8b16a7581efc8d1664900c59",
+        "copied_at": "2026-10-13T03:01:40-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0332",
+  "title": "首发！建议你一定要看的《AI生成代码在野安全风险研究》",
+  "short_title": "AI生成代码在野安全研究",
+  "account": "腾讯技术工程",
+  "author": "悟空代码安全团队",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2025-12-19T01:46",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "⾸发！建议你⼀定要看的《        AI ⽣成代码在野安全⻛险研究》\n\n腾讯技术⼯程  2025年12⽉19⽇   01:46⼴东113⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n 作者：悟空代码安全团队\n\n\n\n  随着   AI 技术加速融⼊软件研发流程，AI 已经成为新时代的“代码贡献者”。在显著提升\n  研发效率的同时，AI ⽣成代码也对软件安全、漏洞治理和⼯程责任边界提出了新的挑\n  战。\n\n  围绕“AI ⽣成代码在真实世界中的表现与安全性”这⼀问题，腾讯安全平台部悟空代码安\n  全团队联合北京⼤学   Narwhal-Lab 与复旦⼤学系统软件与安全实验室，基于开源项⽬与\n  真实漏洞（CVE）数据，开展了系统性的实证研究，分析   AI ⽣成代码的使⽤趋势、安\n  全⻛险及其在漏洞⽣命周期中的⻆⾊演变，并提出⾯向⼯程实践的治理思路。\n\n\n\n⽂末有礼（含 Q币抽奖及完整研究报告  PDF）\n\n\n     腾讯技术⼯程\n     腾讯技术官⽅号。腾讯技术创新、前沿领域发布解读平台",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "Agent安全与治理",
+    "AI评测与可观测性",
+    "AI研发协同"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/首发！建议你一定要看的《AI生成代码在野安全风险研究》.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T06:04:19-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "510438dfa9e5a864c592b8f084b999ae091c30cd1d379c79c64080aef621e53b",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "完整研究报告未随PDF取得，AI代码识别器、误差、抽样窗口与CVE样本量未给，不将相关性写成因果。",
+        "3.5%/9.4%指CVE修复前后AI识别来源转换，不等于AI引入/修复漏洞成功率。",
+        "AST受限输出不保证语义安全；文中训练/RAG/治理是建议，未证明此研究已实施全部措施。",
+        "页图检查限1、4、6、7；无外部事实核查与复现。"
+      ],
+      "size_bytes": 4398025,
+      "page_count": 10
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T06:04:19-07:00",
+  "directory": "腾讯技术工程/AI生成代码在野安全研究+25.12.19",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T06:04:19-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "510438dfa9e5a864c592b8f084b999ae091c30cd1d379c79c64080aef621e53b",
+    "output_path": "MD.md",
+    "output_sha256": "5949eed925d1c46abc4e6c5f95943954f5b51cb485208d15bc76c6bff34672a6",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 10,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "visual_pages": [
+        1,
+        4,
+        6,
+        7
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "完整研究报告未随PDF取得，AI代码识别器、误差、抽样窗口与CVE样本量未给，不将相关性写成因果。",
+      "3.5%/9.4%指CVE修复前后AI识别来源转换，不等于AI引入/修复漏洞成功率。",
+      "AST受限输出不保证语义安全；文中训练/RAG/治理是建议，未证明此研究已实施全部措施。",
+      "页图检查限1、4、6、7；无外部事实核查与复现。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/首发！建议你一定要看的《AI生成代码在野安全风险研究》.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/腾讯技术工程/AI生成代码在野安全研究+25.12.19/RAW.pdf",
+    "sha256": "510438dfa9e5a864c592b8f084b999ae091c30cd1d379c79c64080aef621e53b",
+    "copied_at": "2026-10-23T06:04:19-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md",
+      "../../20_topics/Agent安全与权限.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0032",
+  "title": "云栖首发｜Logics-Parsing-V3 重磅升级：贯通全文，长文无界",
+  "short_title": "LogicsParsing全局文档解析",
+  "account": "阿里技术",
+  "source_account": "阿里数据",
+  "author": "阿里数据",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-09-21T21:30",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "page": 1,
+    "text": [
+      "云栖⾸发｜Logics-Parsing-V3 重磅升级：贯通全⽂，⻓⽂⽆界",
+      "阿⾥技术 Sep 21, 2026, 9:30 PM 浙江 听全⽂",
+      "以下⽂章来源于阿⾥数据 ，作者阿⾥数据",
+      "阿⾥数据",
+      "了解阿⾥数据动态，数据助⼒商业成⻓！"
+    ]
+  },
+  "tags": [
+    "检索与文档解析"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/云栖首发｜Logics-Parsing-V3 重磅升级：贯通全文，长文无界.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:37:19-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "6e0e54cd0262dae8ef6f4395610a096b5efdbf14905cdb7f51a878e09df86b0b",
+      "size_bytes": 6679707,
+      "page_count": 10,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.3“领先端到端第二名PaddleOCR-VL-1.5达4.46分”与p.4可见模型表的对照分组/数值口径不明确，未代为修正。",
+          "pages": [
+            3,
+            4
+          ],
+          "evidence_type": "text_and_image",
+          "classification": "source_inconsistency"
+        },
+        {
+          "description": "p.4称两个模型覆盖四项能力，但p.5矩阵可见仅Ours四项全勾；保留疑点。",
+          "pages": [
+            4,
+            5
+          ],
+          "evidence_type": "text_and_image",
+          "classification": "source_inconsistency"
+        },
+        {
+          "description": "展示截图的小字号代码和题目未逐字提炼为可运行程序/题库；只核对结构与展示用途。",
+          "pages": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "evidence_type": "image",
+          "classification": "partial_legibility"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:37:19-07:00",
+  "directory": "阿里技术/LogicsParsing全局文档解析+26.9.21",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_LogicsParsing全局文档解析.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0032",
+    "created_at": "2026-10-13T02:37:19-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "6e0e54cd0262dae8ef6f4395610a096b5efdbf14905cdb7f51a878e09df86b0b"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.3“领先端到端第二名PaddleOCR-VL-1.5达4.46分”与p.4可见模型表的对照分组/数值口径不明确，未代为修正。",
+        "pages": [
+          3,
+          4
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "source_inconsistency"
+      },
+      {
+        "description": "p.4称两个模型覆盖四项能力，但p.5矩阵可见仅Ours四项全勾；保留疑点。",
+        "pages": [
+          4,
+          5
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "source_inconsistency"
+      },
+      {
+        "description": "展示截图的小字号代码和题目未逐字提炼为可运行程序/题库；只核对结构与展示用途。",
+        "pages": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_type": "image",
+        "classification": "partial_legibility"
+      }
+    ],
+    "outputs": [
+      "AI_LogicsParsing全局文档解析.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    "coverage": [
+      {
+        "name": "全局解析问题",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "name": "循环滑窗机制",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "name": "评测与能力矩阵",
+        "pages": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "跨页和单页案例",
+        "pages": [
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_LogicsParsing全局文档解析.md",
+      "sha256": "bb593f0d6d2c795232dc315c43dfc3d671ededc3a1e9bed0d2bb69f1864ad210"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:37:19-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "6e0e54cd0262dae8ef6f4395610a096b5efdbf14905cdb7f51a878e09df86b0b"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "10a5f1261fedebec299db8809cecf4b3e7476604646852e46a79f7412cc02764"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 37,
+        "text_layer_sha256": "6253c5c6d4883e15b8207677d97a97f9543a992b6c34b78b15673f811b8681e3",
+        "text_layer_char_count": 871
+      },
+      {
+        "page": 2,
+        "md_start_line": 45,
+        "md_end_line": 67,
+        "text_layer_sha256": "c20a1d4938e4caca71cc2295593822295f905e817085900ae353a9731f30009f",
+        "text_layer_char_count": 813
+      },
+      {
+        "page": 3,
+        "md_start_line": 75,
+        "md_end_line": 86,
+        "text_layer_sha256": "071663f048037a0b37255579408e893baf2580597d6495f4c3d6ae3bf3412124",
+        "text_layer_char_count": 376
+      },
+      {
+        "page": 4,
+        "md_start_line": 94,
+        "md_end_line": 99,
+        "text_layer_sha256": "2d2577189782a53c52a2c6f69cb8861b73498cb640d552a79f60110553000788",
+        "text_layer_char_count": 232
+      },
+      {
+        "page": 5,
+        "md_start_line": 107,
+        "md_end_line": 111,
+        "text_layer_sha256": "c641bbfe99350e1a7a7283ba50ef5487222a69e8a0567e2f8dbe3b9e30e804d6",
+        "text_layer_char_count": 33
+      },
+      {
+        "page": 6,
+        "md_start_line": 119,
+        "md_end_line": 121,
+        "text_layer_sha256": "86a713d9f00686bb375f5281f03d4b18d2fd96597c5cb8d1f4c7a869c4548a31",
+        "text_layer_char_count": 20
+      },
+      {
+        "page": 7,
+        "md_start_line": 129,
+        "md_end_line": 132,
+        "text_layer_sha256": "c91d875d6a5ff6a9fc51d7bc94d6a8ff284faf0bd4e2c3d007afa01dce1749bf",
+        "text_layer_char_count": 40
+      },
+      {
+        "page": 8,
+        "md_start_line": 140,
+        "md_end_line": 142,
+        "text_layer_sha256": "3460f7bbcd617d38a44d5fbf3530afa19d41fb55a29bc9b262564d1660577202",
+        "text_layer_char_count": 74
+      },
+      {
+        "page": 9,
+        "md_start_line": 150,
+        "md_end_line": 154,
+        "text_layer_sha256": "af1a774bee7620796adaffc81e449263a10d31562fc8c307f4c64e9f43369248",
+        "text_layer_char_count": 41
+      },
+      {
+        "page": 10,
+        "md_start_line": 162,
+        "md_end_line": 162,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.3“领先端到端第二名PaddleOCR-VL-1.5达4.46分”与p.4可见模型表的对照分组/数值口径不明确，未代为修正。",
+        "pages": [
+          3,
+          4
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "source_inconsistency"
+      },
+      {
+        "description": "p.4称两个模型覆盖四项能力，但p.5矩阵可见仅Ours四项全勾；保留疑点。",
+        "pages": [
+          4,
+          5
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "source_inconsistency"
+      },
+      {
+        "description": "展示截图的小字号代码和题目未逐字提炼为可运行程序/题库；只核对结构与展示用途。",
+        "pages": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_type": "image",
+        "classification": "partial_legibility"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/检索与文档解析.md"
+    ],
+    "proposed_topics": [
+      "决策知识结构化",
+      "Agent评测与反馈"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:37:19-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/云栖首发｜Logics-Parsing-V3 重磅升级：贯通全文，长文无界.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "6e0e54cd0262dae8ef6f4395610a096b5efdbf14905cdb7f51a878e09df86b0b",
+        "copied_at": "2026-10-13T02:37:19-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  },
+  "publication_time_evidence": "Sep 21, 2026, 9:30 PM"
+}

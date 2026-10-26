@@ -1,0 +1,398 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0035",
+  "title": "从榜单走向真实业务负载：Kernel Agent 刷新 Qwen3.8–Max 核心推理算子性能",
+  "short_title": "KernelAgent生产算子优化",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "范睿博",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-09-28T03:54",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "2026年9月28日 03:54",
+  "published_timezone": null,
+  "identity_evidence": {
+    "page": 1,
+    "text": [
+      "从榜单⾛向真实业务负载：Kernel Agent 刷新 Qwen3.8-Max 核⼼",
+      "推理算⼦性能",
+      "原创 范睿博 阿⾥技术 2026年9⽉28⽇ 03:54 浙江 4⼈",
+      "这是2026年的第 64 篇⽂章",
+      "（ 本⽂阅读时间：约 15 分钟 ）"
+    ]
+  },
+  "tags": [
+    "Agent评测与反馈",
+    "Agent工程循环",
+    "Agent成本与上下文预算"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/从榜单走向真实业务负载：Kernel Agent 刷新 Qwen3.8–Max 核心推理算子性能.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:47:41-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "f97943ec8b764c7a8c6372a412005f9441b2a95d809b14a61e65832c9ec411c2",
+      "size_bytes": 4414735,
+      "page_count": 11,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.2图1decode子图模型标签Qwen3.7-Max与全文Qwen3.8-Max不同，未静默统一。",
+          "pages": [
+            2
+          ],
+          "evidence_type": "image",
+          "classification": "source_inconsistency"
+        },
+        {
+          "description": "p.8Harness进化为另一次GDN实验，与主案例不同；更早越线不等于终点时延更低。",
+          "pages": [
+            5,
+            8
+          ],
+          "evidence_type": "text_and_image",
+          "classification": "experiment_scope"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:47:41-07:00",
+  "directory": "阿里技术/KernelAgent生产算子优化+26.9.28",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_KernelAgent生产算子优化.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0035",
+    "created_at": "2026-10-13T02:47:41-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "f97943ec8b764c7a8c6372a412005f9441b2a95d809b14a61e65832c9ec411c2"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.2图1decode子图模型标签Qwen3.7-Max与全文Qwen3.8-Max不同，未静默统一。",
+        "pages": [
+          2
+        ],
+        "evidence_type": "image",
+        "classification": "source_inconsistency"
+      },
+      {
+        "description": "p.8Harness进化为另一次GDN实验，与主案例不同；更早越线不等于终点时延更低。",
+        "pages": [
+          5,
+          8
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "experiment_scope"
+      }
+    ],
+    "outputs": [
+      "AI_KernelAgent生产算子优化.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    "coverage": [
+      {
+        "name": "生产契约与结果",
+        "pages": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "三算子优化案例",
+        "pages": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "系统设计",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      {
+        "name": "Harness自进化",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "name": "开源入口",
+        "pages": [
+          9
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_KernelAgent生产算子优化.md",
+      "sha256": "c22f790f3614f2652220f075e1d1f84571c13818bd291dafdd2c7e1b01543e49"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:47:41-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "f97943ec8b764c7a8c6372a412005f9441b2a95d809b14a61e65832c9ec411c2"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "0efe00843e8de2eaf28b3a749312c535ddf69964145e843246ab3f50b9238ecf"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 30,
+        "text_layer_sha256": "619e497dfccd53984780676e028681d8f161bd9b9f502a17f63fa05d62288980",
+        "text_layer_char_count": 628
+      },
+      {
+        "page": 2,
+        "md_start_line": 38,
+        "md_end_line": 58,
+        "text_layer_sha256": "b223dc5d14df4cb8d940696093c27dc7cf25a4d47adf483c9082d3ca9621d847",
+        "text_layer_char_count": 931
+      },
+      {
+        "page": 3,
+        "md_start_line": 66,
+        "md_end_line": 82,
+        "text_layer_sha256": "fdb42e0ee37172315474cb79c37fcc3ce260a7f83b7bf9c658e27d148583c37d",
+        "text_layer_char_count": 623
+      },
+      {
+        "page": 4,
+        "md_start_line": 90,
+        "md_end_line": 114,
+        "text_layer_sha256": "9507903a31bd0481763224e99ad213d90e0685064871690347364b05dc7239c0",
+        "text_layer_char_count": 1212
+      },
+      {
+        "page": 5,
+        "md_start_line": 122,
+        "md_end_line": 141,
+        "text_layer_sha256": "1d37e724007746af2f41131d06fe894d9ba1b3aaf0792792987c3320dd08fa99",
+        "text_layer_char_count": 907
+      },
+      {
+        "page": 6,
+        "md_start_line": 149,
+        "md_end_line": 175,
+        "text_layer_sha256": "03be556918c662383a05f81c83e3b26198a970c2f262089a0e6a253f5c86941e",
+        "text_layer_char_count": 705
+      },
+      {
+        "page": 7,
+        "md_start_line": 183,
+        "md_end_line": 203,
+        "text_layer_sha256": "d848b0983735c3b3d187988372da202c732ee520fa321059d6756c0985a8ac2e",
+        "text_layer_char_count": 817
+      },
+      {
+        "page": 8,
+        "md_start_line": 211,
+        "md_end_line": 232,
+        "text_layer_sha256": "f301ada84e71ea39fdc781bd19e4636c084a0e4f68a7aff9ed3ca5b11e979aed",
+        "text_layer_char_count": 846
+      },
+      {
+        "page": 9,
+        "md_start_line": 240,
+        "md_end_line": 257,
+        "text_layer_sha256": "9d1fd90e7272936ce54851805de2bb7a5dd77e8ced9908d9ee7c25d6fa67831b",
+        "text_layer_char_count": 771
+      },
+      {
+        "page": 10,
+        "md_start_line": 265,
+        "md_end_line": 273,
+        "text_layer_sha256": "1bcb8ae3f886dcd5114b2a9ea59a26f5e87c4933b72cd9821633d29fe7b2a63c",
+        "text_layer_char_count": 133
+      },
+      {
+        "page": 11,
+        "md_start_line": 281,
+        "md_end_line": 282,
+        "text_layer_sha256": "6f4992c13fb4e95bc36477c12a161b63a3996b5e1c9f1079b0ded5e054a91356",
+        "text_layer_char_count": 7
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.2图1decode子图模型标签Qwen3.7-Max与全文Qwen3.8-Max不同，未静默统一。",
+        "pages": [
+          2
+        ],
+        "evidence_type": "image",
+        "classification": "source_inconsistency"
+      },
+      {
+        "description": "p.8Harness进化为另一次GDN实验，与主案例不同；更早越线不等于终点时延更低。",
+        "pages": [
+          5,
+          8
+        ],
+        "evidence_type": "text_and_image",
+        "classification": "experiment_scope"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md",
+      "../../20_topics/Agent成本与上下文预算.md",
+      "../../20_topics/因果推断与评测归因.md"
+    ],
+    "proposed_topics": [
+      "Agent工程循环",
+      "Agent评测与反馈",
+      "Harness与模型协同"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:47:41-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/从榜单走向真实业务负载：Kernel Agent 刷新 Qwen3.8–Max 核心推理算子性能.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "f97943ec8b764c7a8c6372a412005f9441b2a95d809b14a61e65832c9ec411c2",
+        "copied_at": "2026-10-13T02:47:41-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 3,
+  "article_id": null,
+  "created_at": null,
+  "inputs": [],
+  "method": null,
+  "tools": [],
+  "model": null,
+  "model_version": null,
+  "prompt_version": null,
+  "processing_status": "pending",
+  "source_completeness": "pending_review",
+  "page_mapping_status": "not_established",
+  "quality_issues": [],
+  "outputs": [],
+  "personal_notes_modified": false,
+  "extracted_items": [],
+  "extraction_summary": {
+    "prompts": 0,
+    "skills": 0,
+    "categories": 0
+  },
+  "updated_at": null
+}

@@ -1,0 +1,498 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0020",
+  "title": "5 人 7 天干完 20 人数周的活：Spec-Driven Development 如何重新定义 AI 编程",
+  "short_title": "规格驱动AI编程",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "王砚舒（彦纾）",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-09-04T03:08",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": "p.1 页首“王砚舒（彦纾） 阿里技术 2026年9月4日 03:08 浙江”",
+  "tags": [
+    "AI研发协同",
+    "Agent工程循环"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/5 人 7 天干完 20 人数周的活：Spec-Driven Development 如何重新定义 AI 编程.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:32:40-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "e22f9331c41b3818700f0829524e834d7272938f02d4784e71c1e225ab124f48",
+      "size_bytes": 5925782,
+      "page_count": 18,
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "权限示例禁止新存储组件但Plan和Tasks使用Redis，是否为现有组件未说明",
+          "pages": [
+            4,
+            5
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "原文疑点"
+        },
+        {
+          "description": "外部统计缺完整定位，安全漏洞比例与错误减少比例不同口径，不能作统一对照",
+          "pages": [
+            9,
+            11,
+            13
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "原文疑点"
+        },
+        {
+          "description": "p.3 四阶段单行文本右端略裁切，四阶段表格和正文仍可确认",
+          "pages": [
+            3
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "版面裁切"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:32:40-07:00",
+  "directory": "阿里技术/规格驱动AI编程+26.9.4",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_规格驱动AI编程.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0020",
+    "created_at": "2026-10-13T02:32:40-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "e22f9331c41b3818700f0829524e834d7272938f02d4784e71c1e225ab124f48"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "incomplete",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "权限示例禁止新存储组件但Plan和Tasks使用Redis，是否为现有组件未说明",
+        "pages": [
+          4,
+          5
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文疑点"
+      },
+      {
+        "description": "外部统计缺完整定位，安全漏洞比例与错误减少比例不同口径，不能作统一对照",
+        "pages": [
+          9,
+          11,
+          13
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文疑点"
+      },
+      {
+        "description": "p.3 四阶段单行文本右端略裁切，四阶段表格和正文仍可确认",
+        "pages": [
+          3
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "版面裁切"
+      }
+    ],
+    "outputs": [
+      "AI_规格驱动AI编程.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "detail_pages_reviewed": [
+        1,
+        4,
+        5,
+        9,
+        14
+      ]
+    },
+    "coverage": [
+      {
+        "name": "七天案例",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "SDD流程与文档",
+        "pages": [
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "Spec写作与工具",
+        "pages": [
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "实战数据与Vibe比较",
+        "pages": [
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "陷阱与三级演进",
+        "pages": [
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_规格驱动AI编程.md",
+      "sha256": "3b9ff64effffe027db8a776b8f7d9b71a3efa8ffb34401ad6dc89504931c0551"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:32:40-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "e22f9331c41b3818700f0829524e834d7272938f02d4784e71c1e225ab124f48"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "fbc6b41337e6f5bddb0dc99f2dcf0ce2e9ca111335788608209b15411326e3eb"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 28,
+        "text_layer_sha256": "4a9ac39dfbba1620f5b5fa05e8069b21ebdd39fc79966fd3e2a038587ec9c11e",
+        "text_layer_char_count": 550
+      },
+      {
+        "page": 2,
+        "md_start_line": 36,
+        "md_end_line": 63,
+        "text_layer_sha256": "3a22ed2f6ea3e38363de1d2e7542d60aa6a5e8461485a83ec813d8f68798fad3",
+        "text_layer_char_count": 985
+      },
+      {
+        "page": 3,
+        "md_start_line": 71,
+        "md_end_line": 94,
+        "text_layer_sha256": "d6fd8c4a3614b1fdafdcb18c26f483cab3dbe7b1b0eab315d85b54421254e43e",
+        "text_layer_char_count": 685
+      },
+      {
+        "page": 4,
+        "md_start_line": 102,
+        "md_end_line": 140,
+        "text_layer_sha256": "97161ae7306c34b900fdd618321e6d6554f0013ce8a074fbb591fd9f2299dc8c",
+        "text_layer_char_count": 1133
+      },
+      {
+        "page": 5,
+        "md_start_line": 148,
+        "md_end_line": 185,
+        "text_layer_sha256": "ebd3bd85f2ce74be21f1ecb21e7bc875b198470070bcf84071745be4ed677a5d",
+        "text_layer_char_count": 1104
+      },
+      {
+        "page": 6,
+        "md_start_line": 193,
+        "md_end_line": 221,
+        "text_layer_sha256": "06e7ea31c65b79e7cf1a66c7fd7b9d4ec39654396b6fcd526a7d5af245feb007",
+        "text_layer_char_count": 841
+      },
+      {
+        "page": 7,
+        "md_start_line": 229,
+        "md_end_line": 258,
+        "text_layer_sha256": "5cd772457748d6f88078dbc856fdd539575790b7f3bc69ec6777db15494bfb45",
+        "text_layer_char_count": 947
+      },
+      {
+        "page": 8,
+        "md_start_line": 266,
+        "md_end_line": 303,
+        "text_layer_sha256": "afcc1bdf812e363a311fbd01e34f3b2c35c7d004da1e4f2a9284c83462257b1a",
+        "text_layer_char_count": 932
+      },
+      {
+        "page": 9,
+        "md_start_line": 311,
+        "md_end_line": 338,
+        "text_layer_sha256": "69f3c6f3d5750b73719e74caa3eca89d73dabea66339dac8f394e97a2f280917",
+        "text_layer_char_count": 809
+      },
+      {
+        "page": 10,
+        "md_start_line": 346,
+        "md_end_line": 371,
+        "text_layer_sha256": "48bf9e4963079ed3a7b7f306b56db556999c7a098863f4b8f8d1628c72dc06ad",
+        "text_layer_char_count": 780
+      },
+      {
+        "page": 11,
+        "md_start_line": 379,
+        "md_end_line": 405,
+        "text_layer_sha256": "0a9515a6abbe43d4d96155400cfdba930ac8d3a6509b28c501e9cdfc63f8df86",
+        "text_layer_char_count": 926
+      },
+      {
+        "page": 12,
+        "md_start_line": 413,
+        "md_end_line": 439,
+        "text_layer_sha256": "1adc34d9ffc95f85dc73a149ce682fb03f17cfe48dece25ef144aa51ea932853",
+        "text_layer_char_count": 887
+      },
+      {
+        "page": 13,
+        "md_start_line": 447,
+        "md_end_line": 473,
+        "text_layer_sha256": "b2573299f8e11cbb32c214acb4af48e7d06afa9a53e94ddfd87e709c6fc000b6",
+        "text_layer_char_count": 924
+      },
+      {
+        "page": 14,
+        "md_start_line": 481,
+        "md_end_line": 513,
+        "text_layer_sha256": "016a4ad4a9515200c7109de2e8d06c413636fb430d107f9ee040e911661f1637",
+        "text_layer_char_count": 915
+      },
+      {
+        "page": 15,
+        "md_start_line": 521,
+        "md_end_line": 547,
+        "text_layer_sha256": "007347216e0737a2321aec8ee30ac308c7c9db139373541770f4252ce04b7076",
+        "text_layer_char_count": 912
+      },
+      {
+        "page": 16,
+        "md_start_line": 555,
+        "md_end_line": 561,
+        "text_layer_sha256": "7cc9fa6240a89cf8a5ef0d38021fa49a82656c600127a5e503aaaf4a93ed343e",
+        "text_layer_char_count": 122
+      },
+      {
+        "page": 17,
+        "md_start_line": 569,
+        "md_end_line": 600,
+        "text_layer_sha256": "0339a08e96a8aa0a4b5b4363fd20501301221a07fdc5d9e0cefabfa38f8c47fd",
+        "text_layer_char_count": 947
+      },
+      {
+        "page": 18,
+        "md_start_line": 608,
+        "md_end_line": 608,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "detail_pages_reviewed": [
+        1,
+        4,
+        5,
+        9,
+        14
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "权限示例禁止新存储组件但Plan和Tasks使用Redis，是否为现有组件未说明",
+        "pages": [
+          4,
+          5
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文疑点"
+      },
+      {
+        "description": "外部统计缺完整定位，安全漏洞比例与错误减少比例不同口径，不能作统一对照",
+        "pages": [
+          9,
+          11,
+          13
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文疑点"
+      },
+      {
+        "description": "p.3 四阶段单行文本右端略裁切，四阶段表格和正文仍可确认",
+        "pages": [
+          3
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "版面裁切"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "proposed_topics": [
+      "AI研发协同",
+      "Harness与模型协同",
+      "Agent工程循环"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:32:40-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/5 人 7 天干完 20 人数周的活：Spec-Driven Development 如何重新定义 AI 编程.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "e22f9331c41b3818700f0829524e834d7272938f02d4784e71c1e225ab124f48",
+        "copied_at": "2026-10-13T02:32:40-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  },
+  "publication_time_evidence": "2026年9月4日 03:08"
+}

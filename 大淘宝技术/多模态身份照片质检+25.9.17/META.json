@@ -1,0 +1,115 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0297",
+  "title": "多模态AI质检：身份核验场景实践",
+  "short_title": "多模态身份照片质检",
+  "account": "大淘宝技术",
+  "author": "卫晞",
+  "author_byline": "场景金融技术团队",
+  "source_url": null,
+  "published_at": "2025-09-17T02:42",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "capture_id": "capture-001",
+    "pdf_page": 1,
+    "header_text": "多模态  AI质检：身份核验场景实践\n\n\n原创 场景⾦融技术团队  ⼤淘宝技术  2025年9⽉17⽇ 02:42浙江5⼈\n\n\n\n\n\n\n\n\n\n\n\n\n\n 本⽂介绍了⼀项将多模态AI模型应⽤于身份证照⽚质量检测的实践。针对⽤户上传身份\n 证时常⻅的图⽚问题，项⽬通过引⼊阿⾥云百炼平台的多模态模型，在OCR识别失败时\n\n 进⾏智能检测与反馈，提供对客友好的提示⽂案，从⽽引导⽤户重新上传合格照⽚。该\n ⽅案采⽤“⽆感知预发布+递进+灰度”上线策略，确保稳定性，并在不牺牲安全性的前提\n 下，利⽤⼤模型提升图像理解能⼒。\n\n\n\n\n\n\n                      业务背景\n\n\n\n\n随着现代互联⽹业务的不断发展与深⼊，⽤户身份信息核验已经成为各种应⽤场景中不可或缺\n的⼀部分。身份证上传成为验证⽤户身份的核⼼⼿段之⼀。然⽽，在我们淘天场景⾦融（以下\n简称“场⾦”）项⽬实际运⾏的业务数据表明，⽤户在上传身份证时，存在以下       常⻅的图⽚质量\n问题⽽导致最终⽤户的业务流程中断：\n\n\n\n",
+    "description": "第1页刊头与必要页图核对；作者如正文团队介绍单独署名则采用该署名，保留刊头栏。"
+  },
+  "tags": [
+    "多模态与生成模型",
+    "AI评测与可观测性",
+    "Agent安全与治理"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/多模态AI质检：身份核验场景实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-23T05:53:20-07:00",
+      "provenance": "基线00_inbox本地PDF复制归档；原始采集方法及时间未知。",
+      "sha256": "4205a5dbd88760a5eb5d23eeee825cc092060034348beac8a881b6a948f537c8",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        "页图检查限1、3、4、6；p6计费图未逐字核对。",
+        "价格、Token换算与模型可用性是2025年平台状态，需当前核查。",
+        "原文只定性说明再次失败率下降、转化提升，未给样本量和对照统计，不能认定因果。"
+      ],
+      "size_bytes": 2133949,
+      "page_count": 7
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-23T05:53:20-07:00",
+  "directory": "大淘宝技术/多模态身份照片质检+25.9.17",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md"
+  },
+  "processing": null,
+  "conversion": {
+    "created_at": "2026-10-23T05:53:20-07:00",
+    "input_capture_id": "capture-001",
+    "input_path": "RAW.pdf",
+    "input_sha256": "4205a5dbd88760a5eb5d23eeee825cc092060034348beac8a881b6a948f537c8",
+    "output_path": "MD.md",
+    "output_sha256": "5b4f1d68eb0052a7f0a44daa848df039092d3bcf66c9e76138eefdcb111ec722",
+    "method": "pypdf PdfReader.extract_text(extraction_mode=layout)，保留PDF物理页码，不OCR或补写。",
+    "tool": "bundled Python / pypdf",
+    "page_count": 7,
+    "verification_scope": {
+      "md_full_read": true,
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "visual_pages": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "unreviewed": [
+        "未逐一复核其他页图、图内文字或全部截图细节；正文文本层已逐页阅读。"
+      ]
+    },
+    "quality_issues": [
+      "页图检查限1、3、4、6；p6计费图未逐字核对。",
+      "价格、Token换算与模型可用性是2025年平台状态，需当前核查。",
+      "原文只定性说明再次失败率下降、转化提升，未给样本量和对照统计，不能认定因果。"
+    ],
+    "content_completeness": "not_asserted"
+  },
+  "migration": {
+    "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/多模态AI质检：身份核验场景实践.pdf",
+    "destination_path": "/Users/iw/Documents/WeChat_read/大淘宝技术/多模态身份照片质检+25.9.17/RAW.pdf",
+    "sha256": "4205a5dbd88760a5eb5d23eeee825cc092060034348beac8a881b6a948f537c8",
+    "copied_at": "2026-10-23T05:53:20-07:00",
+    "verified_at": "2026-10-23T08:25:15-07:00",
+    "removed_at": "2026-10-23T08:25:15-07:00",
+    "status": "original_removed_after_verified_archive"
+  },
+  "deduplication": {
+    "compared_baseline_articles": 263,
+    "method": "完整标题归一化、40字正文采样片段对照既有MD、哈希对照；无候选不构成绝对独创证明。",
+    "result": "no_confirmed_same_article_in_baseline",
+    "compared_inbox_count": 42
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/推荐系统与多模态评测.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  }
+}

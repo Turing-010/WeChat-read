@@ -1,0 +1,360 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0123",
+  "title": "腾讯混元AI Infra核心技术重磅开源：推理吞吐提升30%！",
+  "short_title": "HPC-Ops高性能算子",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-01-27T01:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260127_Hunyuan_HPC_Ops.pdf",
+      "original_filename": "20260127_Hunyuan_HPC_Ops.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "4083cdb1ecd3567589901c45764aba884a0b3705f6bea73464670713df052187",
+      "size_bytes": 2667973,
+      "page_count": 6,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "性能提升为文章按指定设备、模型和对照实现报告的结果，本次未独立复测。",
+          "pages": [
+            1,
+            3,
+            4
+          ],
+          "status": "pending_review"
+        }
+      ],
+      "publication_evidence": "PDF第1页日期与时间标注"
+    }
+  ],
+  "tags": [
+    "模型与开发工具发布",
+    "大模型推理与算子优化"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/HPC-Ops高性能算子+26.1.27",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_HPC-Ops高性能算子.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "腾讯混元 AI  Infra 核心技术重磅开源:推理吞吐提升 30 %!\n腾讯程序员 2026 年 1 月 27 日 01 : 36广东腾讯技术工程 832 人\n腾讯混元 AI Infra 团队开源生产级高性能 LLM 推理核心算子库  HPC-Ops ,该算子库基于生产环\n境痛点,采用  CUDA 和  CuTe 从零构建,通过抽象化工程架构、微架构深度适配及指令级极\n致优化等,降低底层算子开发门槛,将核心算子性能逼近硬件峰值,实现了显著性能突破。\n在真实场景下,基于 HPC-Ops ,混元模型推理  QPM 提升 30% , DeepSeek 模型  QPM 提升\n17% 。同时,在单算子性能方面, HPC-Ops 实现 Attention 相比  FlashInfer/FlashAttention 最\n高提升 2.22 倍; GroupGEMM 相比  DeepGEMM 最高提升 1.88 倍; FusedMoE 相比  TensorRT-\nLLM 最高提升 1.49 倍。\n项目开源地址:\n👉   GitHub 项目地址:https://github.com/Tencent/hpc-ops\n在大模型时代,计算效率已成为  AI 应用及发展的关键瓶颈。目前主流算子库(如 FlashInfer 、\nDeepGEMM )多以  NVIDIA H800 等高配训练卡为首要优化目标,但限于客观原因,不少大模\n型的大规模线上推理服务只能采用  H20 等推理型计算卡。现有  SOTA 算子库在这些显卡上往\n往难以发挥硬件峰值能力。同时业务侧对极致吞吐、低延迟以及  Blockwise FP8 等复杂量化\n策略的需求日益迫切,亟需更适配的底层支持。\n现有主流算子库主要存在以下痛点:\n1. 使用成本高:主流算子库设计复杂,核心  Kernel 封装深,在其上修改适配成本非常高,除\n了对代码非常熟悉的开发者,普通的 AI 研究者很难在其上适配修改。而大模型的很多加速\n研究创新,比如量化算法和投机采样等方法都严重依赖于与之匹配的高效算子实现。比如\n最开始 4bit 和 8bit 的量化算法出来后,虽然理论上加载数据量减少,但由于没有与之匹配的\n低精度算子实现,低精度量化在很长的一段时间内都是负优化。\n2. 目标硬件不匹配:现有的主流算子库都是以  H800 等显卡为目标优化、 NVIDIA 提供的\nCUTLASS 等算子更是以  Blackwell 架构为目标,而目前国内主流的推理显卡则有所不\n同。不同硬件间算力带宽的差距导致 Kernel 的优化方法也会不同,因此现有的算子库在国\n内主流推理卡上的表现并未发挥出硬件的全部性能。\n基于以上问题,腾讯混元使用  CUDA 和  CuTe 开发了一套轻量、高效的  LLM 核心算子库,主\n要包括几个模块: FusedMoE 、 Attention 、机内 / 机间通信、 Norm 、 Sampler 、以及各类小算\n子的融合算子,整体算子库架构如图 1 所示。通过分析任务特性和硬件微架构,将任务的划分\n",
+    "publication_evidence": "PDF第1页日期与时间标注",
+    "full_title_in_capture": "腾讯混元AI Infra核心技术重磅开源：推理吞吐提升30%！",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0123",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "4083cdb1ecd3567589901c45764aba884a0b3705f6bea73464670713df052187"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "性能提升为文章按指定设备、模型和对照实现报告的结果，本次未独立复测。",
+        "pages": [
+          1,
+          3,
+          4
+        ],
+        "status": "pending_review"
+      }
+    ],
+    "outputs": [
+      "AI_HPC-Ops高性能算子.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4
+      ]
+    },
+    "coverage": "完整阅读6页文本并浏览全部6页缩略图；放大复核p.2–4架构/SwapAB、GroupGEMM、FusedMoE和Attention说明及图表；笔记补足原文明示的三类内核设计、条件化性能对比和后续规划。未重建柱形精确值，未补写路由算法或通信融合细节。",
+    "fact_checks": [
+      {
+        "topic": "真实推理QPM",
+        "note_value": "混元+30%；DeepSeek+17%",
+        "original_value": "混元+30%；DeepSeek+17%",
+        "pages": [
+          1,
+          3
+        ],
+        "result": "一致；保留为文章报告值。"
+      },
+      {
+        "topic": "GroupGEMM",
+        "note_value": "Batch≤64最高1.88×；大Batch约1.1×；Blockwise与PerTensor性能几乎持平",
+        "original_value": "相同",
+        "pages": [
+          3
+        ],
+        "result": "一致。"
+      },
+      {
+        "topic": "FusedMoE",
+        "note_value": "TP相对TensorRT-LLM最高1.49×；EP模拟均衡最高1.09×",
+        "original_value": "相同",
+        "pages": [
+          3
+        ],
+        "result": "一致。"
+      },
+      {
+        "topic": "Attention",
+        "note_value": "Prefill小batch BF16约1.3×；Decode BF16 1.35–2.22×；FP8依序列长度为近似持平或1.09–2.0×",
+        "original_value": "相同",
+        "pages": [
+          4
+        ],
+        "result": "一致；均限定原文场景。"
+      },
+      {
+        "topic": "实现边界",
+        "note_value": "不把MoE路由和通信融合细节写成已说明机制",
+        "original_value": "p.1只列模块，p.2说明三类一般优化，未给上述实现细节",
+        "pages": [
+          1,
+          2
+        ],
+        "result": "一致。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_HPC-Ops高性能算子.md",
+      "sha256": "614dc3dd4f76f1bcbad6a9948fbcc416e1ea761d1140b0e05912ff38524e772d"
+    },
+    "independent_crosscheck": {
+      "reviewer": "wechat_group1",
+      "note_sha256": "f172558daff634ea9a97b63191b0ebf51c015906d52cc2213e26be7eb7816079",
+      "review_sha256": "12a1ca40c952ee76ed376f5307820c352f9db633d13b42823270538082e89054",
+      "status": "passed",
+      "changes": [
+        "Removed unsupported assertions that the article explains MoE routing and communication fusion; added the three explicitly described design mechanisms, conditional benchmark details, and the distinction between current capability and roadmap. Removed the unrelated Agent成本与上下文预算 association.",
+        "统一格式：自测卡片标题改为复习卡片；原文 PDF 链接置于校对报告前；报告保持末尾引用块。"
+      ],
+      "source_spotchecks": [
+        {
+          "pages": [
+            1,
+            2
+          ],
+          "check": "Magnified architecture and SwapAB pages confirm listed modules, instruction/data-prefetch alignment, wgmma, persistent-kernel scheduling, FP8 Interleave, vec and Layout abstraction; no detailed routing/fused-communication mechanism is given."
+        },
+        {
+          "pages": [
+            3,
+            4
+          ],
+          "check": "Magnified benchmark pages confirm GroupGEMM Batch≤64 up to 1.88x / large-batch ~1.1x, FusedMoE TP up to 1.49x and EP up to 1.09x, and Attention ranges under stated conditions."
+        },
+        {
+          "pages": [
+            4,
+            5
+          ],
+          "check": "Current production/API/precision claims are separated from sparse Attention, broader quantization, and compute-communication work described as future directions; chart bars were not numerically estimated."
+        },
+        {
+          "pages": "note format",
+          "check": "核对复习卡片为单行 问题::答案、YAML date 可识别、唯一一级标题；确认 PDF 链接在校对报告前，报告之后无正文且报告各行以 > 开头。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "4083cdb1ecd3567589901c45764aba884a0b3705f6bea73464670713df052187"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "213c22a641ab0a23036b3bbb649eda1c101e0dd4b3a7a5055984411550c43f8f"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 38,
+        "text_layer_sha256": "bfd4dedda88137dfa6d8c151d8c9da1da1616f834586b3649e623e37acb20b7b",
+        "text_layer_char_count": 1290
+      },
+      {
+        "page": 2,
+        "md_start_line": 46,
+        "md_end_line": 65,
+        "text_layer_sha256": "6c19853594efc513e2202467e0d41dd856426c652f3712f6d6efdb41ac51b89f",
+        "text_layer_char_count": 855
+      },
+      {
+        "page": 3,
+        "md_start_line": 73,
+        "md_end_line": 87,
+        "text_layer_sha256": "3c4e3fee012f98b01820d8fc6f19c144891bc94bbbc0551db8d51da48e5ff68c",
+        "text_layer_char_count": 703
+      },
+      {
+        "page": 4,
+        "md_start_line": 95,
+        "md_end_line": 105,
+        "text_layer_sha256": "38a6c5e9f8f469ab13941194e9a3934e832139b4755f3f03986321a4845523cf",
+        "text_layer_char_count": 498
+      },
+      {
+        "page": 5,
+        "md_start_line": 113,
+        "md_end_line": 129,
+        "text_layer_sha256": "e4459ac5b05070b99a86904787fb179628e12fc5030bcacbedeb6f33df295aa7",
+        "text_layer_char_count": 519
+      },
+      {
+        "page": 6,
+        "md_start_line": 137,
+        "md_end_line": 137,
+        "text_layer_sha256": "c01129305e3f2701794b59ab978930dc476ea9901ce49f19b59c02b18c1e3171",
+        "text_layer_char_count": 11
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "性能提升为文章按指定设备、模型和对照实现报告的结果，本次未独立复测。",
+        "pages": [
+          1,
+          3,
+          4
+        ],
+        "status": "pending_review"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/20260127_Hunyuan_HPC_Ops.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "4083cdb1ecd3567589901c45764aba884a0b3705f6bea73464670713df052187",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/大模型推理与算子优化.md",
+      "../../20_topics/模型与开发工具发布.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_HPC-Ops高性能算子.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

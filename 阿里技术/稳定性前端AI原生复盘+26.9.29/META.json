@@ -1,0 +1,616 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0022",
+  "title": "AI Native 回忆录：稳定性前端 S1 实践复盘",
+  "short_title": "稳定性前端AI原生复盘",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "王僖",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-09-29T05:02",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "2026年9月29日 05:02",
+  "published_timezone": null,
+  "identity_evidence": "p.1“原创 王僖 阿里技术 2026年9月29日 05:02 浙江”",
+  "tags": [
+    "AI研发协同",
+    "异常监控与稳定性"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/AI Native 回忆录：稳定性前端 S1 实践复盘.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:47:41-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "b9325b7d34c941acc93cebc3a364c5bcaaf5efe97deb04fd02c0d3e7b8459807",
+      "size_bytes": 15989861,
+      "page_count": 25,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "应急助手已上线但故障覆盖、诊断时长、采纳率和MTTR缺稳定验证口径",
+          "pages": [
+            22
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "原文自述限制"
+        },
+        {
+          "description": "文章仅提供多个Skill的用途、原理和规则摘要，未提供完整可安装内容",
+          "pages": [
+            4,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "内容范围"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:47:41-07:00",
+  "directory": "阿里技术/稳定性前端AI原生复盘+26.9.29",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_稳定性前端AI原生复盘.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0022",
+    "created_at": "2026-10-13T02:47:41-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "b9325b7d34c941acc93cebc3a364c5bcaaf5efe97deb04fd02c0d3e7b8459807"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "应急助手已上线但故障覆盖、诊断时长、采纳率和MTTR缺稳定验证口径",
+        "pages": [
+          22
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文自述限制"
+      },
+      {
+        "description": "文章仅提供多个Skill的用途、原理和规则摘要，未提供完整可安装内容",
+        "pages": [
+          4,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "内容范围"
+      }
+    ],
+    "outputs": [
+      "AI_稳定性前端AI原生复盘.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [
+      {
+        "kind": "Skill说明",
+        "name": "an-frontend-skill",
+        "complete": false,
+        "pages": [
+          4
+        ],
+        "scope": "用途、规则摘要或原理图；无完整SKILL与依赖脚本"
+      },
+      {
+        "kind": "Skill说明",
+        "name": "ai-drawio",
+        "complete": false,
+        "pages": [
+          14,
+          15
+        ],
+        "scope": "用途、规则摘要或原理图；无完整SKILL与依赖脚本"
+      },
+      {
+        "kind": "Skill说明",
+        "name": "q-sketch",
+        "complete": false,
+        "pages": [
+          16,
+          17
+        ],
+        "scope": "用途、规则摘要或原理图；无完整SKILL与依赖脚本"
+      },
+      {
+        "kind": "Skill说明",
+        "name": "ata-article",
+        "complete": false,
+        "pages": [
+          17,
+          18
+        ],
+        "scope": "用途、规则摘要或原理图；无完整SKILL与依赖脚本"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "detail_pages_reviewed": [
+        1,
+        7,
+        13,
+        15,
+        18,
+        20,
+        21,
+        22
+      ]
+    },
+    "coverage": [
+      {
+        "name": "问题与三条探索",
+        "pages": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Skill和Anchor",
+        "pages": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "设计分库与版本隔离",
+        "pages": [
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "PDFE和跨端边界",
+        "pages": [
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "团队工具沉淀",
+        "pages": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "name": "数据与待验证项",
+        "pages": [
+          21,
+          22,
+          23,
+          24
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 9,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_稳定性前端AI原生复盘.md",
+      "sha256": "ab355836308655d8769bf3a647626f3e13091d1ed37c18c46a3f7d9f1cc9a25b"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:47:41-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "b9325b7d34c941acc93cebc3a364c5bcaaf5efe97deb04fd02c0d3e7b8459807"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "bc820c0ee8fbe966d475b3834e1df76b7e2996f5e941a50483c9d87804d53335"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 35,
+        "text_layer_sha256": "d91d72c736159a0e07bac931fbeeee72bcad1dd9663302709f6f1c438cc08dd1",
+        "text_layer_char_count": 808
+      },
+      {
+        "page": 2,
+        "md_start_line": 43,
+        "md_end_line": 74,
+        "text_layer_sha256": "5a00f5ab60f19510b69664378aafeeacb341cbc51a9f37dc757e4b34d9c3391b",
+        "text_layer_char_count": 1025
+      },
+      {
+        "page": 3,
+        "md_start_line": 82,
+        "md_end_line": 105,
+        "text_layer_sha256": "f0afb5d956ee303f9060af218ec4510b1c43bfa4879b360082088db90359cf42",
+        "text_layer_char_count": 679
+      },
+      {
+        "page": 4,
+        "md_start_line": 113,
+        "md_end_line": 146,
+        "text_layer_sha256": "688281316eeab0cc3524eba26529ab4c5c541c6049252bffd520ef4dae0bd6c6",
+        "text_layer_char_count": 1005
+      },
+      {
+        "page": 5,
+        "md_start_line": 154,
+        "md_end_line": 175,
+        "text_layer_sha256": "2736b6879de8e8852893584b6c4993dc69c1c6f879bcfea0eb0abf6df0df8319",
+        "text_layer_char_count": 768
+      },
+      {
+        "page": 6,
+        "md_start_line": 183,
+        "md_end_line": 207,
+        "text_layer_sha256": "8c2a25cde2eaa8abd8c6314f55499e2bb409c8cd54ec74c2fae9ddd70bdb9998",
+        "text_layer_char_count": 690
+      },
+      {
+        "page": 7,
+        "md_start_line": 215,
+        "md_end_line": 232,
+        "text_layer_sha256": "c33414105dc962a3dd62175cdef504c165e4462b6742a6aee33e5adabc15815c",
+        "text_layer_char_count": 561
+      },
+      {
+        "page": 8,
+        "md_start_line": 240,
+        "md_end_line": 271,
+        "text_layer_sha256": "b2a5f88c071a10652b0ca0e3d19393180c44074d23954f771ccafe05d459af56",
+        "text_layer_char_count": 887
+      },
+      {
+        "page": 9,
+        "md_start_line": 279,
+        "md_end_line": 300,
+        "text_layer_sha256": "4b7f8267bbcb66e4181e05556f1d95b3cd0349ec9f388e5335c109ad81a8e559",
+        "text_layer_char_count": 747
+      },
+      {
+        "page": 10,
+        "md_start_line": 308,
+        "md_end_line": 326,
+        "text_layer_sha256": "677e3b9edbca3df7f3217ac1e4c61fd194108a2a64c36b76a51ccf2d9c8bf66f",
+        "text_layer_char_count": 445
+      },
+      {
+        "page": 11,
+        "md_start_line": 334,
+        "md_end_line": 348,
+        "text_layer_sha256": "efc966878c729426c4ca12e4a2a22a872287775cfa9b2fceb77909978ff96cda",
+        "text_layer_char_count": 405
+      },
+      {
+        "page": 12,
+        "md_start_line": 356,
+        "md_end_line": 372,
+        "text_layer_sha256": "0374909621854fc5acdb8ab94febb89e87f51fcd27dd6196d064f64127408479",
+        "text_layer_char_count": 508
+      },
+      {
+        "page": 13,
+        "md_start_line": 380,
+        "md_end_line": 420,
+        "text_layer_sha256": "7f94e93494adb4933425e7fe64bce13723b7e89b6d64cfc654a03567adcd919c",
+        "text_layer_char_count": 1082
+      },
+      {
+        "page": 14,
+        "md_start_line": 428,
+        "md_end_line": 448,
+        "text_layer_sha256": "ab38ff71966fea6a18a0001931c159e2cd306beac5d01d0f7d18f243c12514e0",
+        "text_layer_char_count": 670
+      },
+      {
+        "page": 15,
+        "md_start_line": 456,
+        "md_end_line": 462,
+        "text_layer_sha256": "778acde53b493c392af4b714d7fd384f11efd14f41190d49363ac4b4400d90c6",
+        "text_layer_char_count": 150
+      },
+      {
+        "page": 16,
+        "md_start_line": 470,
+        "md_end_line": 483,
+        "text_layer_sha256": "48f5efc7c63daea475a7d8452c6d5fc6c24fdd0727706c5f5afa40339aa00a87",
+        "text_layer_char_count": 400
+      },
+      {
+        "page": 17,
+        "md_start_line": 491,
+        "md_end_line": 502,
+        "text_layer_sha256": "28790b45eb6884278f4b0b409c53c2b8fc3047dbb34c251fe53caad7cb49ad0d",
+        "text_layer_char_count": 343
+      },
+      {
+        "page": 18,
+        "md_start_line": 510,
+        "md_end_line": 542,
+        "text_layer_sha256": "5d724ce4449b07cddf68c093546fd43515ea68913bf79d7f5f96618379e254f2",
+        "text_layer_char_count": 655
+      },
+      {
+        "page": 19,
+        "md_start_line": 550,
+        "md_end_line": 563,
+        "text_layer_sha256": "78e786403649a29a1a7ccea6e13c0c2fec5fb0dfbe1b69620479dda092401abb",
+        "text_layer_char_count": 403
+      },
+      {
+        "page": 20,
+        "md_start_line": 571,
+        "md_end_line": 571,
+        "text_layer_sha256": "718b7e5c0f82e76a3449c6d6ba4a6032e6b6f2be398858975689f1d4dfe63060",
+        "text_layer_char_count": 4
+      },
+      {
+        "page": 21,
+        "md_start_line": 579,
+        "md_end_line": 597,
+        "text_layer_sha256": "7d4a04a28db47a69353fe0fd89af833c8db2cb468d465785b8e1809a33897bb0",
+        "text_layer_char_count": 433
+      },
+      {
+        "page": 22,
+        "md_start_line": 605,
+        "md_end_line": 632,
+        "text_layer_sha256": "7f1c8fe34a202b8a7ee51e5068217ebb1bfe9cf1939b42c8cfc5b7770270b8ed",
+        "text_layer_char_count": 770
+      },
+      {
+        "page": 23,
+        "md_start_line": 640,
+        "md_end_line": 652,
+        "text_layer_sha256": "d51d34b1ad3c670dceef3fd4da90377699bfafe8eed14c8a7cecb60b1228c92c",
+        "text_layer_char_count": 310
+      },
+      {
+        "page": 24,
+        "md_start_line": 660,
+        "md_end_line": 672,
+        "text_layer_sha256": "f99f9a5dec9ac3157dd7caabc47b5a285631d2fbd27050d27cdbdad4afda1afa",
+        "text_layer_char_count": 613
+      },
+      {
+        "page": 25,
+        "md_start_line": 680,
+        "md_end_line": 691,
+        "text_layer_sha256": "8b4cbba4641c5dc46c979d9a43186d4dae0b40ed61f3d927cb8df2288c4911d6",
+        "text_layer_char_count": 214
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "detail_pages_reviewed": [
+        1,
+        7,
+        13,
+        15,
+        18,
+        20,
+        21,
+        22
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "应急助手已上线但故障覆盖、诊断时长、采纳率和MTTR缺稳定验证口径",
+        "pages": [
+          22
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文自述限制"
+      },
+      {
+        "description": "文章仅提供多个Skill的用途、原理和规则摘要，未提供完整可安装内容",
+        "pages": [
+          4,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "内容范围"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md"
+    ],
+    "proposed_topics": [
+      "AI研发协同",
+      "Harness与模型协同",
+      "Agent评测与反馈"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:47:41-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/AI Native 回忆录：稳定性前端 S1 实践复盘.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "b9325b7d34c941acc93cebc3a364c5bcaaf5efe97deb04fd02c0d3e7b8459807",
+        "copied_at": "2026-10-13T02:47:41-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

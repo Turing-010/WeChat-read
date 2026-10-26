@@ -1,0 +1,487 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0289",
+  "title": "初探：从0开始的AI-Agent开发踩坑实录",
+  "short_title": "AIAgent开发踩坑实录",
+  "account": "大淘宝技术",
+  "author": "文想",
+  "author_byline": "作者：文想（淘天集团）",
+  "source_url": null,
+  "published_at": "2025-10-15",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "文想 2025年10月15日 01:50 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 1,
+      "text": "作者：文想（淘天集团）",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "Agent工程循环",
+    "Prompt优化",
+    "异常监控与稳定性",
+    "解决问题"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/初探：从0开始的AI-Agent开发踩坑实录.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T19:42:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "89c84f985f03aec33070bd0051d5738ba3a0712493a345f517ea7f4ba6c22a54",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.2, 4, 5, 6, 10, 14, 16, 17含LangChain阶段图、ReAct/Plan-and-Execute/ReWOO架构图、MVP时序图与LangSmith截图（位于PDF图像层），p.20为空白尾页；全部执行日志与核心思考均在文本层完整保留。",
+          "pages": [
+            2,
+            4,
+            5,
+            6,
+            10,
+            14,
+            16,
+            17,
+            20
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 5346086,
+      "page_count": 20
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T19:42:00-07:00",
+  "directory": "大淘宝技术/AIAgent开发踩坑实录+25.10.15",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AIAgent开发踩坑实录.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0289",
+    "created_at": "2026-10-20T19:42:00-07:00",
+    "updated_at": "2026-10-20T19:42:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "89c84f985f03aec33070bd0051d5738ba3a0712493a345f517ea7f4ba6c22a54"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "b862e1bf3f1e508ec3ba7fb77ba62c8d34c68d3cb84430118c61344f87d109de"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.2, 4, 5, 6, 10, 14, 16, 17含LangChain阶段图、ReAct/Plan-and-Execute/ReWOO架构图、MVP时序图与LangSmith截图（位于PDF图像层），p.20为空白尾页；全部执行日志与核心思考均在文本层完整保留。",
+        "pages": [
+          2,
+          4,
+          5,
+          6,
+          10,
+          14,
+          16,
+          17,
+          20
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_AIAgent开发踩坑实录.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_AIAgent开发踩坑实录.md",
+      "sha256": "e09e626e884216c8d6fc56da3319da56e1bc07d4a8784547974fc6510f789a36"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T19:42:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "89c84f985f03aec33070bd0051d5738ba3a0712493a345f517ea7f4ba6c22a54"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "b862e1bf3f1e508ec3ba7fb77ba62c8d34c68d3cb84430118c61344f87d109de"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 47,
+        "md_start_line": 13,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 1,
+        "text_layer_char_count": 602,
+        "text_layer_sha256": "5e56093896ff1e895d9adfc5f067647fb46668513d63a1835cf1545164688344"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 82,
+        "md_start_line": 55,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 2,
+        "text_layer_char_count": 504,
+        "text_layer_sha256": "3665b10b70c7de29e047f0dde247dce3f3c559b98e4c9192cf470049c7c8e6b3"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 143,
+        "md_start_line": 90,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 3,
+        "text_layer_char_count": 893,
+        "text_layer_sha256": "e6796a3a38b7a90952efd660cf4173ee50d53ad444fdf976186b73e11b7381e4"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 237,
+        "md_start_line": 151,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 4,
+        "text_layer_char_count": 810,
+        "text_layer_sha256": "3b875cd161e688eef3345803939fd75e4488d6767f95a118a901f880218c7a96"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 266,
+        "md_start_line": 245,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 5,
+        "text_layer_char_count": 399,
+        "text_layer_sha256": "7b72835ec85e950fae98b3b191b8774f30dd3a415160cbddc81c9799102b58b0"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 321,
+        "md_start_line": 274,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 6,
+        "text_layer_char_count": 754,
+        "text_layer_sha256": "35f59155168fa8a5a6a70ded833daa3942e02385909d0a0b28a2942da50b121d"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 381,
+        "md_start_line": 329,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 7,
+        "text_layer_char_count": 1052,
+        "text_layer_sha256": "3b679c10d7751451c97637d17c41aeabf53713e5a1bcbf9d98fd6d1b53126cd5"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 457,
+        "md_start_line": 389,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 8,
+        "text_layer_char_count": 856,
+        "text_layer_sha256": "002bc8b6eb3069cee83cce5dd269858532819bd2aa3cd529b7fc868496b26732"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 518,
+        "md_start_line": 465,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 9,
+        "text_layer_char_count": 969,
+        "text_layer_sha256": "07d52b155de1072e7027058835219360bde9f8e02a6c1eb26029db50857ee275"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 594,
+        "md_start_line": 526,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 10,
+        "text_layer_char_count": 723,
+        "text_layer_sha256": "bfd6d9cd403b10130ec0382eef947485e5b456b44fe05cab4df46ab1815991bc"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 732,
+        "md_start_line": 602,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 11,
+        "text_layer_char_count": 1675,
+        "text_layer_sha256": "23c88efa16a84e71cf4ad4d8772627481fc41d4fcfe4f9e67de6b378d351d0f4"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 850,
+        "md_start_line": 740,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 12,
+        "text_layer_char_count": 1344,
+        "text_layer_sha256": "a26905353ab6fa3ee5f0ff50e72a465a138f02cf8d245f9f80de5e886c4e6bff"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 944,
+        "md_start_line": 858,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 13,
+        "text_layer_char_count": 1049,
+        "text_layer_sha256": "46f6ddca22096cefac9a5e46ae083e0fabf5b983b543861af0ac421c4a0bf053"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 1013,
+        "md_start_line": 952,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 14,
+        "text_layer_char_count": 991,
+        "text_layer_sha256": "06ae262d2383c8b05bbeb05cdc1738ff73dc2a75dff9f652cd596a230d186b88"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1079,
+        "md_start_line": 1021,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 15,
+        "text_layer_char_count": 849,
+        "text_layer_sha256": "7c1163f7d896f29cfe16abd97372d8284defdb685054069f07a64639d9c075f4"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 1122,
+        "md_start_line": 1087,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 16,
+        "text_layer_char_count": 617,
+        "text_layer_sha256": "6baf806a51cd7914786609781550231b3cce9b9e492e4c59dd7e845642994431"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": true,
+        "md_end_line": 1164,
+        "md_start_line": 1130,
+        "notes": "页面包含大幅图像/架构图/表格截图（位于PDF图像层）；文本层已完整保留。",
+        "page": 17,
+        "text_layer_char_count": 740,
+        "text_layer_sha256": "cb9cbe79ee0662208e101ddbc8567c5f1c0b46a0622a6e0a54f1222d8f7c66f2"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1232,
+        "md_start_line": 1172,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 18,
+        "text_layer_char_count": 938,
+        "text_layer_sha256": "30a9befe13585de212e35f9af4a3c748b40b041f5a1afb6059f88505169be00b"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1258,
+        "md_start_line": 1240,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 19,
+        "text_layer_char_count": 334,
+        "text_layer_sha256": "1ebdd1fdd5bdff71b6e4a31528de2320b6758f99da545c25f8e3cca9d36ff6fd"
+      },
+      {
+        "contains_figures_or_tables_not_in_text_layer": false,
+        "md_end_line": 1268,
+        "md_start_line": 1266,
+        "notes": "纯文本页或常规排版页，文本层已完整转写。",
+        "page": 20,
+        "text_layer_char_count": 0,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.2, 4, 5, 6, 10, 14, 16, 17含LangChain阶段图、ReAct/Plan-and-Execute/ReWOO架构图、MVP时序图与LangSmith截图（位于PDF图像层），p.20为空白尾页；全部执行日志与核心思考均在文本层完整保留。",
+        "pages": [
+          2,
+          4,
+          5,
+          6,
+          10,
+          14,
+          16,
+          17,
+          20
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md",
+      "../../20_topics/Prompt优化.md",
+      "../../20_topics/解决问题.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T19:42:00-07:00",
+    "removed_at": "2026-10-20T19:42:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/初探：从0开始的AI-Agent开发踩坑实录.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "89c84f985f03aec33070bd0051d5738ba3a0712493a345f517ea7f4ba6c22a54",
+        "copied_at": "2026-10-20T19:42:00-07:00",
+        "removed_at": "2026-10-20T19:42:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_AIAgent开发踩坑实录.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

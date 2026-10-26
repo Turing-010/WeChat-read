@@ -1,0 +1,573 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0178",
+  "title": "靠这10个优化点，我们把 Multi-Agent 工作流成本降了50%以上",
+  "short_title": "Multi-Agent降本",
+  "account": "腾讯技术工程",
+  "author": "lemonye",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-21T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/靠这10个优化点，我们把Multi-Agent工作流成本降了50%以上.pdf",
+      "original_filename": "靠这10个优化点，我们把Multi-Agent工作流成本降了50%以上.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "f4875656196768176a73eaf1a8807e403ac0f7371085861b226c9b39b0e96275",
+      "size_bytes": 4803268,
+      "page_count": 15,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "标题称10个优化点，而正文优化表及分项可识别11个方向（渐进披露、确定性脚本、子Agent数据获取、记忆索引、多Agent拆分、专属配置、代码图谱、稳定前缀/状态外化、避免重复Skill、CLI输出压缩、并行调用）。",
+          "pages": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "status": "count_discrepancy_noted"
+        },
+        {
+          "description": "全流程50%–65%是根据Wave消耗和分项降幅反推的估算；结尾表示严格端到端A/B复核仍待补齐。",
+          "pages": [
+            1,
+            13,
+            14
+          ],
+          "status": "estimate_not_end_to_end_ab"
+        },
+        {
+          "description": "CodeBuddy、AgentLens、rtk、GLM-5v、graphify等结果依赖文章所述内部环境/特定命令，未独立复现。",
+          "pages": [
+            3,
+            7,
+            9,
+            10,
+            12,
+            13
+          ],
+          "status": "unverified_claims"
+        },
+        {
+          "description": "PDF p.15为留言尾页。",
+          "pages": [
+            15
+          ],
+          "status": "noted"
+        }
+      ],
+      "publication_evidence": "PDF p.1: Aug 21, 2026, 2:36 AM; no timezone shown."
+    }
+  ],
+  "tags": [
+    "Agent成本与上下文预算",
+    "Harness与模型协同",
+    "Agent工程循环",
+    "检索与文档解析"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:08-07:00",
+  "directory": "腾讯技术工程/Multi-Agent降本+26.8.21",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Multi-Agent降本.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "靠这 10 个优化点,我们把 Multi - Agent 工作流成本降了 50 %以上\n腾讯程序员 Aug  21 , 2026 , 2 : 36  AM广东腾讯技术工程 64  listened\n作者: lemonye\n一、背景与挑战\n1.1 业务背景\n过去半年,我们团队一直在探索用  AI Agent 驱动前后端协同开发 —— 从需求分析、技术方案\n设计,到前后端并行编码、自动化测试、视觉还原验证,全流程由一个叫  tech-leader 的\nharness Skill 统一调度:\nTL (调度层)\n├── Wave 1 (并行):后端  Agent + 前端  Agent\n├── Wave 2 :质量审查  Agent\n├── Wave 3 :测试  Agent (用例生成  + 执行)\n├── Wave 4 :视觉验证  Agent\n└── Wave 5 : Agent 评测\n跑一次完整的中等需求,往往需要经历  5-6 个  Wave 、 20+ 次子  Agent 调用、数百轮工具调\n用。规模一上来, token 成本就成了绕不开的问题。\n我们用  AI Agent 驱动前后端全流程开发 —— 从需求分析到自动化测试,整个  harness 工\n作流由  1 个  TL + 6 个子  Agent 组成。跑起来之后第一个问题就是:钱烧得很快,但完全\n不知道烧在哪。我们先用  AgentLens 把成本拆开看,发现系统提示词、工具返回信息、\n历史消息是大头。围绕 \" 让  AI 只看到当前需要的上下文、减少无关的上下文、减少重复的\n上下文 \" 这三个原则,我们逐一改造了架构拆分、稳定前缀、渐进式披露、代码图谱、 CLI\n替代  MCP 、长期记忆按需索引、工具调用并行化等  10 个方向。整体全流程预估降本\n50%~65% 。\n",
+    "publication_evidence": "PDF p.1: Aug 21, 2026, 2:36 AM; no timezone shown.",
+    "full_title_in_capture": "靠这10个优化点，我们把 Multi-Agent 工作流成本降了50%以上",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0178",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "f4875656196768176a73eaf1a8807e403ac0f7371085861b226c9b39b0e96275"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "标题称10个优化点，而正文优化表及分项可识别11个方向（渐进披露、确定性脚本、子Agent数据获取、记忆索引、多Agent拆分、专属配置、代码图谱、稳定前缀/状态外化、避免重复Skill、CLI输出压缩、并行调用）。",
+        "pages": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "status": "count_discrepancy_noted"
+      },
+      {
+        "description": "全流程50%–65%是根据Wave消耗和分项降幅反推的估算；结尾表示严格端到端A/B复核仍待补齐。",
+        "pages": [
+          1,
+          13,
+          14
+        ],
+        "status": "estimate_not_end_to_end_ab"
+      },
+      {
+        "description": "CodeBuddy、AgentLens、rtk、GLM-5v、graphify等结果依赖文章所述内部环境/特定命令，未独立复现。",
+        "pages": [
+          3,
+          7,
+          9,
+          10,
+          12,
+          13
+        ],
+        "status": "unverified_claims"
+      },
+      {
+        "description": "PDF p.15为留言尾页。",
+        "pages": [
+          15
+        ],
+        "status": "noted"
+      }
+    ],
+    "outputs": [
+      "AI_Multi-Agent降本.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        3,
+        5,
+        7,
+        10,
+        13
+      ]
+    },
+    "coverage": "阅读抽取文本p.1–14并复核全部15页缩略图，放大查看AgentLens成本分布、Skill分层、子Agent数据隔离、代码图谱对比及效果表。覆盖成本分类、十项标题对应的正文实施方向、Token结果和待完成A/B边界。未运行工具或复现成本测量。 已查看全部物理页图；p.15为留言尾页，已查看页图。",
+    "fact_checks": [
+      {
+        "item": "AgentLens测量粒度",
+        "note_value": "可按TraceId追单次调用并按SessionId聚合需求",
+        "source_value": "同笔记",
+        "pages": [
+          3
+        ],
+        "result": "match"
+      },
+      {
+        "item": "MCP数据子Agent结果",
+        "note_value": "单轮input 1,030,000降至634,905，下降38.4%",
+        "source_value": "同笔记",
+        "pages": [
+          7
+        ],
+        "result": "match"
+      },
+      {
+        "item": "代码图谱单任务对比",
+        "note_value": "总Token 875352降至676987，下降22.7%",
+        "source_value": "同笔记",
+        "pages": [
+          10
+        ],
+        "result": "match"
+      },
+      {
+        "item": "主Agent汇总结果",
+        "note_value": "708783/17轮降至315266/9轮，下降55.5%、轮数降47%",
+        "source_value": "同笔记",
+        "pages": [
+          13
+        ],
+        "result": "match"
+      },
+      {
+        "item": "全流程50%–65%",
+        "note_value": "Wave分布及分项收益反推的估算，非严格E2E A/B",
+        "source_value": "同笔记",
+        "pages": [
+          13,
+          14
+        ],
+        "result": "match"
+      },
+      {
+        "item": "优化点数量",
+        "note_value": "标题10点，正文可识别11个分项方向",
+        "source_value": "同笔记",
+        "pages": [
+          4,
+          13,
+          14
+        ],
+        "result": "match"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_Multi-Agent降本.md",
+      "sha256": "1ac3d53e33c2552a17f701702e96e5d94acf3413d32cb80a0876f2b606baaf40",
+      "size_bytes": 26237
+    },
+    "independent_crosscheck": {
+      "reviewer": "root",
+      "note_sha256": "1ac3d53e33c2552a17f701702e96e5d94acf3413d32cb80a0876f2b606baaf40",
+      "review_sha256": "9394bae2e7ae80a1fdeb1833ea4f9f5c3162a77554dae1908f93802e672105f4",
+      "status": "passed",
+      "changes": [
+        "staging format and page-coverage repair: standardized final audit callout and included all visually checked physical pages; no substantive note claims changed"
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "2–9",
+          "check": "核对成本分类、渐进披露、Agent拆分与数据隔离；按文章特定工作流描述。"
+        },
+        {
+          "pages": "10–14",
+          "check": "核对图谱/CLI/并行及表格数据；保留标题称10点但正文可辨识11个方向的差异。"
+        },
+        {
+          "pages": "14–15",
+          "check": "核对作者明确仍待端到端 A/B 的说明；第15页为留言尾页，结果没有外推为普遍保证。"
+        }
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "f4875656196768176a73eaf1a8807e403ac0f7371085861b226c9b39b0e96275"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "cce402a7f5c48e3989e21b0e69db8ad544443200d444793064b28acffe432afb"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 32,
+        "text_layer_sha256": "5cc3b892478a20e8cb195c1619f85d1901e8402747b90d3a7e3f825c5e3cda43",
+        "text_layer_char_count": 782
+      },
+      {
+        "page": 2,
+        "md_start_line": 40,
+        "md_end_line": 68,
+        "text_layer_sha256": "96b4b47c3a66aa49b56e2d5b66b9120dc624a3830d3e0d974a8f83eed8f3d872",
+        "text_layer_char_count": 582
+      },
+      {
+        "page": 3,
+        "md_start_line": 76,
+        "md_end_line": 94,
+        "text_layer_sha256": "844b16d62256836314be50968926be463d100af7212632274289d5ef0d4c05c8",
+        "text_layer_char_count": 640
+      },
+      {
+        "page": 4,
+        "md_start_line": 102,
+        "md_end_line": 130,
+        "text_layer_sha256": "6f56041f43968b2ee02f2ac514451609a739a43eec7d2350f425aeda2f7aeac1",
+        "text_layer_char_count": 623
+      },
+      {
+        "page": 5,
+        "md_start_line": 138,
+        "md_end_line": 155,
+        "text_layer_sha256": "476c5662d3c540a903c58325270d7ac633669c9cdd0dd804a2889dc5a5f4fd6a",
+        "text_layer_char_count": 573
+      },
+      {
+        "page": 6,
+        "md_start_line": 163,
+        "md_end_line": 194,
+        "text_layer_sha256": "d63a54a82d07b8f61ec68a3829f00eacdbf40be76abf564168ab4619c742b5dc",
+        "text_layer_char_count": 1183
+      },
+      {
+        "page": 7,
+        "md_start_line": 202,
+        "md_end_line": 222,
+        "text_layer_sha256": "d885c29389021be16d9f084b15939e23a48dee87514278cebf774a5b3c8e5342",
+        "text_layer_char_count": 918
+      },
+      {
+        "page": 8,
+        "md_start_line": 230,
+        "md_end_line": 255,
+        "text_layer_sha256": "07d72c3dc6b334dd37c21c0b2fce1d69f730d890df9aabbea00cd7b2950364cc",
+        "text_layer_char_count": 1069
+      },
+      {
+        "page": 9,
+        "md_start_line": 263,
+        "md_end_line": 296,
+        "text_layer_sha256": "d9d94e6c5595aa7ffd08102d6907c663915bad1193cef57d1463e4e6b86c15b0",
+        "text_layer_char_count": 1300
+      },
+      {
+        "page": 10,
+        "md_start_line": 304,
+        "md_end_line": 323,
+        "text_layer_sha256": "b5117e920cc3fadffd45a4b43fe5e04de90678214681ecf4860394bc4905cd80",
+        "text_layer_char_count": 536
+      },
+      {
+        "page": 11,
+        "md_start_line": 331,
+        "md_end_line": 361,
+        "text_layer_sha256": "926d43e90a4eb89adf8057bdbcd0fc05599a26b3156d57668409b4cea262ecd5",
+        "text_layer_char_count": 1145
+      },
+      {
+        "page": 12,
+        "md_start_line": 369,
+        "md_end_line": 393,
+        "text_layer_sha256": "eebcf7a3a7c4b2ec0d92ec8dec69958bf972b1cbe72c1bf8b80f8d6839bb286d",
+        "text_layer_char_count": 1037
+      },
+      {
+        "page": 13,
+        "md_start_line": 401,
+        "md_end_line": 430,
+        "text_layer_sha256": "9c0bd7f88c49f4e88f8485f639e3ad2ae711bf1678c34f6e478704fbe598c37a",
+        "text_layer_char_count": 1077
+      },
+      {
+        "page": 14,
+        "md_start_line": 438,
+        "md_end_line": 458,
+        "text_layer_sha256": "aff5f0fb1c39620068ffc2c97fe8334764dfb22bb00bec85db4fb74df1a8c954",
+        "text_layer_char_count": 864
+      },
+      {
+        "page": 15,
+        "md_start_line": 466,
+        "md_end_line": 473,
+        "text_layer_sha256": "7b4e756053174d43385545f392d4d85df3acad1c3df93bc38ec2323bf3a0927f",
+        "text_layer_char_count": 77
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        3,
+        5,
+        7,
+        10,
+        13
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "标题称10个优化点，而正文优化表及分项可识别11个方向（渐进披露、确定性脚本、子Agent数据获取、记忆索引、多Agent拆分、专属配置、代码图谱、稳定前缀/状态外化、避免重复Skill、CLI输出压缩、并行调用）。",
+        "pages": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "status": "count_discrepancy_noted"
+      },
+      {
+        "description": "全流程50%–65%是根据Wave消耗和分项降幅反推的估算；结尾表示严格端到端A/B复核仍待补齐。",
+        "pages": [
+          1,
+          13,
+          14
+        ],
+        "status": "estimate_not_end_to_end_ab"
+      },
+      {
+        "description": "CodeBuddy、AgentLens、rtk、GLM-5v、graphify等结果依赖文章所述内部环境/特定命令，未独立复现。",
+        "pages": [
+          3,
+          7,
+          9,
+          10,
+          12,
+          13
+        ],
+        "status": "unverified_claims"
+      },
+      {
+        "description": "PDF p.15为留言尾页。",
+        "pages": [
+          15
+        ],
+        "status": "noted"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/靠这10个优化点，我们把Multi-Agent工作流成本降了50%以上.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "f4875656196768176a73eaf1a8807e403ac0f7371085861b226c9b39b0e96275",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent成本与上下文预算.md",
+      "../../20_topics/Harness与模型协同.md",
+      "../../20_topics/因果推断与评测归因.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Multi-Agent降本.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

@@ -1,0 +1,420 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0090",
+  "title": "腾讯混元推出轻量翻译大模型，无需联网，手机直接运行！",
+  "short_title": "混元翻译的端侧量化",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-05-15T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0515 Tencent Offline Translation Model.pdf",
+      "original_filename": "0515 Tencent Offline Translation Model.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "4081748e0b31c8fd145bec03950f0a457a29ea1ebc0eb6d8ccd346f017ce0291",
+      "size_bytes": 4685966,
+      "page_count": 8,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "质量胜出、全系机型及零隐私暴露属于发布方表述；PDF 未给完整评测设置、设备兼容表或审计证据。",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "status": "qualified"
+        },
+        {
+          "description": "正文对 1.25-bit 的口语化解释不足，已依据图中 4-bit Value 加 1-bit Sign 说明编码开销；完整格式仍未给出。",
+          "pages": [
+            4
+          ],
+          "status": "qualified"
+        },
+        {
+          "description": "动态演示在 PDF 中为静态帧，无法核验完整速度过程；FP16 八倍速条件已保留。",
+          "pages": [
+            2,
+            4,
+            5,
+            6
+          ],
+          "status": "unverifiable_from_pdf"
+        }
+      ],
+      "publication_evidence": "PDF p.1 可见 2026-05-15T02:36"
+    }
+  ],
+  "tags": [
+    "模型与开发工具发布",
+    "AI基础设施与推理优化",
+    "大模型推理与算子优化"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/混元翻译的端侧量化+26.5.15",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_混元翻译的端侧量化.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "腾讯混元推出轻量翻译大模型,无需联网,手机直接运行!\n2026 年 5 月 15 日 02 : 36广东腾讯技术工程 783 人\n你可能用过各种翻译工具,但是大部分的应用,如果要实现好的翻译效果都有一个共同的条\n件:必须联网。\n设想一下:\n你在异国自驾,警笛声骤然响起。还没回过神,警察就在窗边用陌生的语言严厉发问。你心跳漏了\n半拍:是我违章了?还是前面出了什么大事?你手忙脚乱地掏出手机想翻译询问一下,偏偏此时没\n信号,屏幕上转圈的界面简直让人绝望。到底发生了什么?我应该挪⻋,下⻋还是掉头?\n在这关键时刻,翻译软件掉链子真的让人绝望。\n针对这些难题,腾讯混元团队带来了一份硬核解决方案。\n最近,腾讯混元推出极致量化压缩版本翻译模型 Hy-M T1.5-1.8B-1.25bit,把支持 33 种语\n言的翻译大模型压缩至 440M B,无需联网,下载即可直接在手机本地运行,翻译质量优于谷\n歌翻译。\n来看看这个演示,翻译速度真的很快,质量也很好:\n",
+    "publication_evidence": "PDF p.1 可见 2026-05-15T02:36",
+    "full_title_in_capture": "腾讯混元推出轻量翻译大模型，无需联网，手机直接运行！",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0090",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "4081748e0b31c8fd145bec03950f0a457a29ea1ebc0eb6d8ccd346f017ce0291"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "质量胜出、全系机型及零隐私暴露属于发布方表述；PDF 未给完整评测设置、设备兼容表或审计证据。",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "正文对 1.25-bit 的口语化解释不足，已依据图中 4-bit Value 加 1-bit Sign 说明编码开销；完整格式仍未给出。",
+        "pages": [
+          4
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "动态演示在 PDF 中为静态帧，无法核验完整速度过程；FP16 八倍速条件已保留。",
+        "pages": [
+          2,
+          4,
+          5,
+          6
+        ],
+        "status": "unverifiable_from_pdf"
+      }
+    ],
+    "outputs": [
+      "AI_混元翻译的端侧量化.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4
+      ]
+    },
+    "coverage": "覆盖离线场景、语言方向、SEQ 与 Sherry、图中编码例子、STQ/SME2、质量比较边界及发布入口；核对两张评测图，不逐项抄录未提供设置的柱图分数。PDF 仅保留演示静态帧，未测视频或运行 Demo。",
+    "fact_checks": [
+      {
+        "item": "基础模型规模",
+        "value": "1.8B 参数",
+        "pages": [
+          2
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "语言覆盖",
+        "value": "33 种语言、5 种方言/民汉、1056 个方向",
+        "pages": [
+          2
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "2-bit 大小",
+        "value": "574MB",
+        "pages": [
+          3
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "1.25-bit 大小",
+        "value": "440MB",
+        "pages": [
+          4
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "SEQ 取值",
+        "value": "{-1.5,-0.5,0.5,1.5}",
+        "pages": [
+          3
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "图示编码",
+        "value": "Value 1010 与 Sign 1，合计 5 bit / 4 参数",
+        "pages": [
+          4
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "演示条件",
+        "value": "FP16 画面八倍速；骁龙 888、8GB",
+        "pages": [
+          5
+        ],
+        "result": "核对原文一致"
+      },
+      {
+        "item": "平台边界",
+        "value": "发文时仅安卓 Demo，其他平台计划支持",
+        "pages": [
+          6
+        ],
+        "result": "核对原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_混元翻译的端侧量化.md",
+      "sha256": "8503b1271deec31d8914875de02c7ad161483db7c2c5a352bfb944539deebea2"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "4081748e0b31c8fd145bec03950f0a457a29ea1ebc0eb6d8ccd346f017ce0291"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "184c4d6e7239491e6950a9c34d57190e39f259791128ec54640304965f9a8d4b"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 23,
+        "text_layer_sha256": "56b8890d21a407449153eb60a6a05c88f90bdb8f51ea6a19b2f384ad2280c074",
+        "text_layer_char_count": 425
+      },
+      {
+        "page": 2,
+        "md_start_line": 31,
+        "md_end_line": 39,
+        "text_layer_sha256": "399bf697666187fe2ca5aa9da023405ab94b3d2281d904a9f045a81ff5a9d3da",
+        "text_layer_char_count": 335
+      },
+      {
+        "page": 3,
+        "md_start_line": 47,
+        "md_end_line": 58,
+        "text_layer_sha256": "406bf68a13521fe33411428cfa446ee24fdc94192cb2710e0c63964b797abbac",
+        "text_layer_char_count": 450
+      },
+      {
+        "page": 4,
+        "md_start_line": 66,
+        "md_end_line": 75,
+        "text_layer_sha256": "7141a845b0244009237347671aa7f7bec82e8013ace7a2e41314bc5a89d338d1",
+        "text_layer_char_count": 369
+      },
+      {
+        "page": 5,
+        "md_start_line": 83,
+        "md_end_line": 87,
+        "text_layer_sha256": "489edecdfcd8b3aa9bcdfcb0dab641c18a5185257f68933a611e7fa4085d2220",
+        "text_layer_char_count": 189
+      },
+      {
+        "page": 6,
+        "md_start_line": 95,
+        "md_end_line": 113,
+        "text_layer_sha256": "eb04e3b246315a7535f566272bac42347526b276fb318d2c8b4ba26623535027",
+        "text_layer_char_count": 865
+      },
+      {
+        "page": 7,
+        "md_start_line": 121,
+        "md_end_line": 133,
+        "text_layer_sha256": "bade14cfe091c6823f38b4fb050e07d63020cc3d20c562e05c67f4cb800e1f8f",
+        "text_layer_char_count": 387
+      },
+      {
+        "page": 8,
+        "md_start_line": 141,
+        "md_end_line": 144,
+        "text_layer_sha256": "c4633aaaa8cb1e34c8cd84c83aa1dcb1eff7992b29a02877489108686e79f783",
+        "text_layer_char_count": 29
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "质量胜出、全系机型及零隐私暴露属于发布方表述；PDF 未给完整评测设置、设备兼容表或审计证据。",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "正文对 1.25-bit 的口语化解释不足，已依据图中 4-bit Value 加 1-bit Sign 说明编码开销；完整格式仍未给出。",
+        "pages": [
+          4
+        ],
+        "status": "qualified"
+      },
+      {
+        "description": "动态演示在 PDF 中为静态帧，无法核验完整速度过程；FP16 八倍速条件已保留。",
+        "pages": [
+          2,
+          4,
+          5,
+          6
+        ],
+        "status": "unverifiable_from_pdf"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0515 Tencent Offline Translation Model.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "4081748e0b31c8fd145bec03950f0a457a29ea1ebc0eb6d8ccd346f017ce0291",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/大模型推理与算子优化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_混元翻译的端侧量化.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

@@ -1,0 +1,782 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0003",
+  "title": "从一次 LLM 调用到完整 Harness，Agent 到底经历了什么？",
+  "account": "腾讯技术工程",
+  "author": [
+    "ivanxxie",
+    "davoszhang"
+  ],
+  "source_url": null,
+  "published_at": "2026-09-07T02:36",
+  "tags": [
+    "Agent工程",
+    "Harness",
+    "记忆管理",
+    "Harness与模型协同",
+    "Agent长期记忆",
+    "Agent任务恢复"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/从一次 LLM 调用到完整 Harness，Agent 到底经历了什么？.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-04T00:59:35-07:00",
+      "provenance": "本次由00_inbox复制归档的本地PDF；原始采集方式和时间未知",
+      "sha256": "da1f13f9d535340c5a47fa4569a8ec23a534363ecacf874aed9ff488888b6101",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "PDF原文地址、采集时间和显示时间的时区未确认；外部事实及在线原文一致性未核查。",
+          "verification_status": "unverified",
+          "pages": []
+        }
+      ],
+      "size_bytes": 4980232,
+      "page_count": 17
+    },
+    {
+      "capture_id": "capture-002",
+      "path": "RAW_补采001.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/从一次 LLM 调用到完整 Harness，Agent 到底经历了什么？.pdf",
+      "original_filename": "从一次 LLM 调用到完整 Harness，Agent 到底经历了什么？.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "74c3d75a4b8886730aecc02c70f30761ce1ff4abc83141efe96becf2dd1af27d",
+      "size_bytes": 5076094,
+      "page_count": 16,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [],
+      "publication_evidence": "PDF p.1 页眉 Sep 7, 2026, 2:36 AM；未标时区。"
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-04T00:59:35-07:00",
+  "author_byline": "ivanxxie、davoszhang",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "从一次 LLM  调用到完整 Harness , Agent  到底经历了什么?\n腾讯程序员 Sep  7 , 2026 , 2 : 36  AM广东原创 腾讯技术工程 1215  listened\n作者: ivanxxie 、davoszhang\n今天的  Agent 系统看起来很像一套小型操作系统:它们管理子  Agent 进程,维护长期记忆文\n件,通过工具驱动接触外部世界,还要处理权限、隔离、恢复和观测。可它们的起点并不宏\n大。最初,开发者手里只有一个把输入映射为输出的语言模型。\n复杂性并不是一次设计出来的。每当模型试图越过一次调用的边界,系统就必须在模型外面增\n加一个新部件:模型不知道此前聊了什么,于是出现上下文;模型无法改变世界,于是出现工\n具;一次工具调用解决不了任务,于是出现循环;上下文装不下历史,于是出现记忆;循环开\n始产生真实副作用,于是出现权限与沙箱;一个循环不够并行,于是出现子  Agent...\n从一次模型调用到  Agent\nLLM\n最朴素的大语言模型接口可以被看成一个函数:输入一段  token ,输出另一段  token 。它可以\n在参数中编码世界知识,却不会天然记住某个用户上一轮说过什么,也不知道自己刚刚输出的\n命令是否被执行。\n2020 年,GPT-3  展示了大规模语言模型仅通过文本提示完成多种任务的能力; 2022 年底,\nGPT-3.5 成为  ChatGPT 背后的模型; 2023 年  2 月, Meta 发布  LLaMA,推动开放权重模型\n进入主流研究与本地部署。 GPT 、 LLaMA 以及后来出现的  Claude 、 Gemini 、 Qwen 等模型虽\n然能力不同,但在应用看来仍然共享同一个基本形态:接收上下文, predict next token。\nanswer = LLM(question)\n",
+    "publication_evidence": "PDF p.1 页眉 Sep 7, 2026, 2:36 AM；未标时区。",
+    "full_title_in_capture": "从一次 LLM 调用到完整 Harness，Agent 到底经历了什么?",
+    "identity_comparison": "same title/account/author/publication date and corresponding content; preserve permanent article ID"
+  },
+  "deduplication": {
+    "compared_article_ids": [
+      "art-0001",
+      "art-0002"
+    ],
+    "compared_batch_sha256": [
+      "07b21eb800753fa51f86866bbd7f8d00504cb83d7f060b793f3d4fc32f34e9cc",
+      "da1f13f9d535340c5a47fa4569a8ec23a534363ecacf874aed9ff488888b6101",
+      "af7c929e1ad84758e890d53444ca14569755bf90822baf53415ed45d1a90c13d",
+      "ee6e81186109f2392b01022aa6c057b64aa52e4da17e6c4d1166e13982cfd4bb",
+      "fddcc0be82979dc2978d57059e5cf05704968fc67c472090a9deb9354aae92a8",
+      "7639af2660ba29f38667e80f54d51b94703d79c1f02b7b08be680ca911b9ef04",
+      "da48b5daab2ce87443edf0ef90f09d7e2e72d5d0305af1a177b5e7ed8016c42e"
+    ],
+    "result": "no_existing_identity_or_file_match"
+  },
+  "short_title": "LLM到Harness",
+  "directory": "腾讯技术工程/LLM到Harness+26.9.7",
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0003",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-002",
+        "path": "RAW_补采001.pdf",
+        "sha256": "74c3d75a4b8886730aecc02c70f30761ce1ff4abc83141efe96becf2dd1af27d"
+      }
+    ],
+    "method": "基于全文 MD/PDF 深度拆解并按结构化十模块 Obsidian 学习笔记规范重新生成 AI 总结笔记（含 Mermaid 架构图、数据速查表、可迁移原则、单行双冒号复习卡片与底部折叠校对报告）。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-study-note-v2",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [],
+    "outputs": [
+      "AI_LLM到Harness.md",
+      "AI_LLM到Harness_补充001.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "coverage": "通读 p.1–16；覆盖 LLM/Q&A/ReAct/Tool Calling、三类记忆、Harness 动因及 Pi/OpenCode/Codex/Hermes 比较。尾页图/留言无额外方法正文。",
+    "fact_checks": [
+      {
+        "item": "LLM调用",
+        "original_value": "单次模型调用不自动持有外部状态",
+        "pages": [
+          2,
+          3
+        ],
+        "result": "调用方传入历史/上下文。"
+      },
+      {
+        "item": "ReAct循环",
+        "original_value": "行动观察结果回送模型继续处理",
+        "pages": [
+          4,
+          5
+        ],
+        "result": "与正文流程一致。"
+      },
+      {
+        "item": "记忆类别",
+        "original_value": "文章区分多个范围和用途的记忆",
+        "pages": [
+          6,
+          8
+        ],
+        "result": "按正文分类。"
+      },
+      {
+        "item": "Harness职责",
+        "original_value": "管理上下文、工具、执行、恢复及验证",
+        "pages": [
+          8,
+          11
+        ],
+        "result": "文章的架构归纳。"
+      },
+      {
+        "item": "案例比较",
+        "original_value": "Pi、OpenCode、Codex、Hermes有不同取舍",
+        "pages": [
+          12,
+          14
+        ],
+        "result": "不是独立产品评测。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true,
+      "inline_page_citations_removed": true
+    },
+    "generated_summary": {
+      "path": "AI_LLM到Harness_补充001.md",
+      "sha256": "0751c3ee59da25ed23cd30dd03353eb04705d7a6b0efb042f7dc36e2cba92fc8",
+      "size_bytes": 30292
+    },
+    "independent_crosscheck": {
+      "reviewer": "independent_crosscheck",
+      "note_sha256": "0751c3ee59da25ed23cd30dd03353eb04705d7a6b0efb042f7dc36e2cba92fc8",
+      "review_sha256": "f4de6e11d72d5581413db438099163336f5ddb16a968c47f6f247fe6ccca300b",
+      "status": "passed",
+      "changes": [],
+      "source_spotchecks": [
+        {
+          "pages": "1–5",
+          "check": "核对模型单次调用、Q&A上下文装配、ReAct循环与结构化Tool Calling；笔记区分模型决策和运行时执行，事实与原文流程一致。"
+        },
+        {
+          "pages": "6–10",
+          "check": "核对Harness动因、Working/Long-term Memory、Pi工具面/成本案例、OpenCode事件化状态及Codex Approval/Sandbox分层；基准数字在笔记中归于文章/测评并说明不是通用排名。"
+        },
+        {
+          "pages": "11–14、15–16",
+          "check": "核对Thread/Turn/Item及恢复管理、PAST-Bench 26场景/204 episodes和+0.13总增益；正文总结页后，p.15为账号/留言尾页，p.16空白。笔记保留案例与框架比较的证据边界。"
+        }
+      ]
+    },
+    "updated_at": "2026-10-15T15:40:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-002",
+    "input": {
+      "path": "RAW_补采001.pdf",
+      "sha256": "74c3d75a4b8886730aecc02c70f30761ce1ff4abc83141efe96becf2dd1af27d"
+    },
+    "output": {
+      "path": "MD_补采001.md",
+      "sha256": "15a099bb3710c24bf7d5a83b1168179aea22cadb10d994898c6713771f75dbbb"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 29,
+        "text_layer_sha256": "993e6978bbc3dda578cd5d6fefe71c0a84a90905f14c8c1fe169e972108b007c",
+        "text_layer_char_count": 790
+      },
+      {
+        "page": 2,
+        "md_start_line": 37,
+        "md_end_line": 56,
+        "text_layer_sha256": "09e1437326c1bfff26f6330eb6f191d1746bea1cb1f127bf517a5996a5190e7d",
+        "text_layer_char_count": 621
+      },
+      {
+        "page": 3,
+        "md_start_line": 64,
+        "md_end_line": 87,
+        "text_layer_sha256": "58cb9006b8a25f60aab21eec155d14f8c97bec4dc23ccf8984deb2701703d8d9",
+        "text_layer_char_count": 896
+      },
+      {
+        "page": 4,
+        "md_start_line": 95,
+        "md_end_line": 117,
+        "text_layer_sha256": "753768abe5713811991bd04c1bb2e606d64b4f6b74014b5edea0641f1f909711",
+        "text_layer_char_count": 950
+      },
+      {
+        "page": 5,
+        "md_start_line": 125,
+        "md_end_line": 142,
+        "text_layer_sha256": "27f857e9d3c37baaf2beec8c6a16e53453aa395fd1b6c8a6f1cd8731b23f7c40",
+        "text_layer_char_count": 639
+      },
+      {
+        "page": 6,
+        "md_start_line": 150,
+        "md_end_line": 167,
+        "text_layer_sha256": "fd457d1026b2ab92c457d2a02d20c4c285b2bd5d00a03460797767a1404c5e8c",
+        "text_layer_char_count": 759
+      },
+      {
+        "page": 7,
+        "md_start_line": 175,
+        "md_end_line": 182,
+        "text_layer_sha256": "02e309b75ef1d9826cc41261cf44ddb33cf2a08afae8c69f2901768c41183f93",
+        "text_layer_char_count": 370
+      },
+      {
+        "page": 8,
+        "md_start_line": 190,
+        "md_end_line": 214,
+        "text_layer_sha256": "3213057a1eec1fbd0a3e42166126d2ea5c0f6366071a2dfecbb45410ab86e8b8",
+        "text_layer_char_count": 1211
+      },
+      {
+        "page": 9,
+        "md_start_line": 222,
+        "md_end_line": 244,
+        "text_layer_sha256": "dafc2dff9d0d7f22202b14d406ddc85f86d942c7500c8ef5013ef35878bbcabc",
+        "text_layer_char_count": 1085
+      },
+      {
+        "page": 10,
+        "md_start_line": 252,
+        "md_end_line": 276,
+        "text_layer_sha256": "45e2bb1b72f1ae3352e458e54b3a6040f4d01597fd036a8f8371b210c2753e50",
+        "text_layer_char_count": 1238
+      },
+      {
+        "page": 11,
+        "md_start_line": 284,
+        "md_end_line": 306,
+        "text_layer_sha256": "0370f693c8bfc7205acaccb149f0cf23859bf6471f193d02272700b026040416",
+        "text_layer_char_count": 1037
+      },
+      {
+        "page": 12,
+        "md_start_line": 314,
+        "md_end_line": 338,
+        "text_layer_sha256": "925c9703bced892f615c4ac16b43d1e7e7e42687f0c4d94d3aa5a23d4bf456d0",
+        "text_layer_char_count": 1066
+      },
+      {
+        "page": 13,
+        "md_start_line": 346,
+        "md_end_line": 367,
+        "text_layer_sha256": "17ce037d418e717be5bd03a175a660067c6046bd23c77bf1902d3005dca6eac3",
+        "text_layer_char_count": 1028
+      },
+      {
+        "page": 14,
+        "md_start_line": 375,
+        "md_end_line": 394,
+        "text_layer_sha256": "87fd5eece37ee12a9cd7fa4ea09c3f31e69e3bf4bd7bf3bbbc28602056a582bc",
+        "text_layer_char_count": 821
+      },
+      {
+        "page": 15,
+        "md_start_line": 402,
+        "md_end_line": 409,
+        "text_layer_sha256": "b93ef6c419a578652975e5e97f3f38dbbfa18757f1e67bc650d9ff8d9ba95495",
+        "text_layer_char_count": 77
+      },
+      {
+        "page": 16,
+        "md_start_line": 417,
+        "md_end_line": 416,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "detail_pages_reviewed": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "quality_issues": []
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/从一次 LLM 调用到完整 Harness，Agent 到底经历了什么？.pdf",
+        "destination_path": "RAW_补采001.pdf",
+        "sha256": "74c3d75a4b8886730aecc02c70f30761ce1ff4abc83141efe96becf2dd1af27d",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "files": {
+    "raw": "RAW_补采001.pdf",
+    "markdown": "MD_补采001.md",
+    "ai_summary": "AI_LLM到Harness_补充001.md"
+  },
+  "processing_history": [
+    {
+      "schema_version": 2,
+      "article_id": "art-0003",
+      "created_at": "2026-10-04T00:59:35-07:00",
+      "inputs": [
+        {
+          "capture_id": "capture-001",
+          "path": "RAW.pdf",
+          "sha256": "da1f13f9d535340c5a47fa4569a8ec23a534363ecacf874aed9ff488888b6101"
+        }
+      ],
+      "method": "直接读取PDF文本层；全页缩略检查，重点页面视觉核对；按实际可见内容生成学习笔记及扁平合集。无全文整理产物，无代码执行或Skill安装。",
+      "tools": [
+        "pypdf（PDF文本与链接读取）",
+        "pypdf文本提取",
+        "pdftoppm（PDF页面渲染）",
+        "Pillow（临时缩略图）",
+        "视觉检查",
+        "Python标准库（复制与SHA-256校验）"
+      ],
+      "model": null,
+      "model_version": null,
+      "prompt_version": "本次读取的agent.md与90_templates，未修改",
+      "processing_status": "completed",
+      "source_completeness": "pending_review",
+      "page_mapping_status": "pdf_physical_pages",
+      "quality_issues": [
+        {
+          "description": "PDF原文地址、采集时间和显示时间的时区未确认；外部事实及在线原文一致性未核查。",
+          "verification_status": "unverified",
+          "pages": []
+        }
+      ],
+      "outputs": [
+        "AI_LLM到Harness.md"
+      ],
+      "personal_notes_modified": false,
+      "extracted_items": [],
+      "extraction_summary": {
+        "prompts": 0,
+        "skills": 0,
+        "categories": 0
+      },
+      "updated_at": "2026-10-04T00:59:35-07:00",
+      "review_scope": {
+        "text_pages_read": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "thumbnail_pages_reviewed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "detail_pages_reviewed": [],
+        "limitations": "缩略检查用于识别空白、加载占位与版面异常；未逐字核验全部图片，未核对在线原文。"
+      },
+      "omitted_content": [
+        "各框架功能、模型名称、榜单数字及源码描述为作者在文中的陈述，本次未查验对应仓库版本、测试环境或外部来源。",
+        "已浏览全部17页的缩略图，细小架构图与测评截图未逐字转录，在线原文一致性仍待确认。",
+        "SYSTEM.md、AGENTS.md、SKILL.md、Prompt Templates等仅作为架构概念出现；伪代码也不是独立Prompt／Skill定义，因此不生成合集。"
+      ]
+    }
+  ],
+  "conversion_history": [
+    {
+      "created_at": "2026-10-08",
+      "source_capture_id": "capture-001",
+      "input": {
+        "path": "RAW.pdf",
+        "sha256": "da1f13f9d535340c5a47fa4569a8ec23a534363ecacf874aed9ff488888b6101"
+      },
+      "output": {
+        "path": "MD.md",
+        "sha256": "c869afd6673d187e8477d65b4f4e5c87e5e29f3d4764687b88b10bc94fa8dfce"
+      },
+      "extractor": "pdfplumber 0.11.9; Page.extract_text_lines / Page.extract_text",
+      "page_numbering": "physical_pages_1_based",
+      "status": "text_layer_conversion_completed",
+      "verification_status": "text_extraction_checked; layout_images_and_online_original_not_fully_verified",
+      "pages": [
+        {
+          "page": 1,
+          "md_start_line": 13,
+          "md_end_line": 46,
+          "text_layer_sha256": "675e79284f0bb734f58c4b40d425537c229a62f1196ac64323240b695a565ad4",
+          "text_layer_char_count": 754,
+          "image_objects": 1,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 2,
+          "md_start_line": 51,
+          "md_end_line": 80,
+          "text_layer_sha256": "9725e50a7c4d49aa7e378c97e876b94639f1e82fa1d1aa1ba82c1fe2b3557485",
+          "text_layer_char_count": 569,
+          "image_objects": 2,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 3,
+          "md_start_line": 85,
+          "md_end_line": 120,
+          "text_layer_sha256": "6987cba3220fed5d10ed99b3ce9ca3b5695e666f27416ec403e4d1239816ced2",
+          "text_layer_char_count": 736,
+          "image_objects": 1,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 4,
+          "md_start_line": 125,
+          "md_end_line": 162,
+          "text_layer_sha256": "61524c99694366f350532a14c03a127ae52beba9cd90ff917993b75689d7a234",
+          "text_layer_char_count": 956,
+          "image_objects": 1,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 5,
+          "md_start_line": 167,
+          "md_end_line": 189,
+          "text_layer_sha256": "b7fcdf33f689e245e794a5f37e83d42a1baef1b7f368bf6b6fc7ec4dcdc14c9b",
+          "text_layer_char_count": 405,
+          "image_objects": 1,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 6,
+          "md_start_line": 194,
+          "md_end_line": 230,
+          "text_layer_sha256": "e5c05a3c20ecb8925eb4af41600a0ebecf39ddecfe7a51accad3135d24249949",
+          "text_layer_char_count": 967,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 7,
+          "md_start_line": 235,
+          "md_end_line": 246,
+          "text_layer_sha256": "c0c7f71b2587e8b3f9dbdb24f83ab885e1ee9fef5e3e581eb02602e487ac02f3",
+          "text_layer_char_count": 350,
+          "image_objects": 1,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 8,
+          "md_start_line": 251,
+          "md_end_line": 266,
+          "text_layer_sha256": "6c1cc679fd6483ccfaaca2cdf27bf68ccb4a2ad529a52e06e4714908827af38d",
+          "text_layer_char_count": 481,
+          "image_objects": 2,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 9,
+          "md_start_line": 271,
+          "md_end_line": 307,
+          "text_layer_sha256": "876c73a7882697a9551c2675bc6d6bc4bb7eaeed91a88152229aab8e62a55627",
+          "text_layer_char_count": 1326,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 10,
+          "md_start_line": 312,
+          "md_end_line": 340,
+          "text_layer_sha256": "3a19f7d171eef50140a0c94980277f86b7974a7287349b719e805286ae1b2c41",
+          "text_layer_char_count": 843,
+          "image_objects": 1,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 11,
+          "md_start_line": 345,
+          "md_end_line": 375,
+          "text_layer_sha256": "639fb648a682dd9d27ee39ed3baca24fa55e9d1037f9827ef8bf19ce38b0a38f",
+          "text_layer_char_count": 1090,
+          "image_objects": 1,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 12,
+          "md_start_line": 380,
+          "md_end_line": 399,
+          "text_layer_sha256": "b009dd055a2cb285da1115fe2b2401d2914842d84575a80f162e3ab4c2ac15a8",
+          "text_layer_char_count": 588,
+          "image_objects": 1,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 13,
+          "md_start_line": 404,
+          "md_end_line": 436,
+          "text_layer_sha256": "29573a321e602b1d40a864ec3333abed73b02c41e51ad9f72f89e6b66c5c2daf",
+          "text_layer_char_count": 925,
+          "image_objects": 1,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 14,
+          "md_start_line": 441,
+          "md_end_line": 471,
+          "text_layer_sha256": "b25c33cbd2943d20312a07d28710198c09b14043839461d282226e132784c8ea",
+          "text_layer_char_count": 998,
+          "image_objects": 1,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 15,
+          "md_start_line": 476,
+          "md_end_line": 502,
+          "text_layer_sha256": "b10050944ec3416752973edee86edf85a5c6f08ae047ea3775f7b54ecec9e5b5",
+          "text_layer_char_count": 677,
+          "image_objects": 1,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 16,
+          "md_start_line": 507,
+          "md_end_line": 526,
+          "text_layer_sha256": "b5a00e4e36ad9c4a1f65ad85acff1c365d4408d3ca9d80fea699676cc26408b8",
+          "text_layer_char_count": 219,
+          "image_objects": 3,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 17,
+          "md_start_line": 531,
+          "md_end_line": 532,
+          "text_layer_sha256": "4d8cde442345c47ff6a1189defa2fdb2889794ffe4cc5541e2b9400280c157fc",
+          "text_layer_char_count": 10,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        }
+      ],
+      "quality_issues": [
+        "图片未嵌入MD，使用各页RAW链接核对；保留原始材料的既有质量问题。",
+        "文字来自PDF文本层，字形、阅读顺序、代码缩进、表格结构及裁切显示一致性仍可能需人工核验。"
+      ],
+      "personal_notes_modified": false
+    }
+  ],
+  "migration_history": [
+    {
+      "date": "2026-10-08",
+      "previous_directory": "10_articles/腾讯技术工程/2026-09-07_从LLM调用到Harness__art-0003",
+      "current_directory": "腾讯技术工程/LLM到Harness+26.9.7",
+      "previous_article_readme": "# 从一次 LLM 调用到完整 Harness，Agent 到底经历了什么？\n\n公众号：腾讯技术工程；作者：ivanxxie、davoszhang；页面日期：2026-09-07（时区未确认）。\n\n## 阅读与使用\n\n- [整篇学习笔记](run/learning_note.md)\n\n## 原始材料\n\n- [归档PDF](source/capture-001.pdf)\n\n在线一致性与图片细节待复核。已确认可读内容已整理，未将加工完成标为原文完整核验通过。\n",
+      "file_mapping": {
+        "source/capture-001.pdf": "RAW.pdf",
+        "metadata.json": "META.json",
+        "run/run.json": "META.json",
+        "README.md": "MD.md",
+        "run/learning_note.md": "AI_LLM到Harness.md"
+      },
+      "existing_ai_summaries": "preserved_with_link_updates; no_new_summary_generated",
+      "personal_note_template": "90_templates/个人笔记模板.md; create_only_on_user_request_or_start_of_personal_notes"
+    }
+  ],
+  "identity_evidence_history": [
+    {
+      "description": "PDF第1页可见标题、公众号、署名与日期；对照正文主题和篇章内容，7篇彼此不同，且均不同于已有art-0001。",
+      "pdf_page": 1,
+      "header_text": "从⼀次 LLM  调⽤到完整 Harness ， Agent  到底经历了什么？\n腾讯程序员 Sep  7 , 2026 , 2 : 36  AM⼴东原创 腾讯技术⼯程 1063  listened\n",
+      "source_url_status": "PDF未提供可确认的本篇原文URL，不使用引用文献链接代替。"
+    }
+  ],
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent任务恢复.md",
+      "../../20_topics/Harness与模型协同.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_LLM到Harness_补充001.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

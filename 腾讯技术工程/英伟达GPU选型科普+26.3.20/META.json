@@ -1,0 +1,473 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0066",
+  "title": "英伟达GPU全系列硬核科普手册：一文读懂NVIDIA芯片的定位、规格与应用场景",
+  "short_title": "英伟达GPU选型科普",
+  "account": "腾讯技术工程",
+  "author": "nickycao",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-03-20T02:36",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0320 NVIDIA GPU全系列科普.pdf",
+      "original_filename": "0320 NVIDIA GPU全系列科普.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "2ea632027528db385bd4d26002b723b772dcb87b41cf528d4d5deb8bd0217510",
+      "size_bytes": 8685153,
+      "page_count": 15,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "14B FP16估33.6GB却推荐32GB刚好；70B FP16估168GB却称141GB单卡完整加载，内部容量逻辑不一致",
+          "pages": [
+            12,
+            13
+          ],
+          "status": "unresolved"
+        },
+        {
+          "description": "671B MoE显存按激活参数降低而未说明全权重驻留/卸载条件，不能采用推荐值作为部署结论",
+          "pages": [
+            13
+          ],
+          "status": "pending_review"
+        },
+        {
+          "description": "规格、供应、价格、政策及部分B20/5090D预测均未独立核验，保留历史科普属性",
+          "pages": [
+            6,
+            10,
+            14
+          ],
+          "status": "pending_review"
+        }
+      ],
+      "publication_evidence": "PDF p.1 发布栏 2026-03-20T02:36"
+    }
+  ],
+  "tags": [
+    "模型与开发工具发布",
+    "Agent成本与上下文预算",
+    "大模型推理与算子优化"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/英伟达GPU选型科普+26.3.20",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_英伟达GPU选型科普.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "英伟达 GPU 全系列硬核科普手册:一文读懂 NVIDIA 芯片的定位、规\n格与应用场景\n腾讯程序员 Mar  20 , 2026 , 2 : 36  AM广东原创 腾讯技术工程 1396  listened\n作者: nickycao\n这篇文章是一份英伟达 GPU  全系列的硬核科普手册:从游戏显卡到 AI  超级芯片,覆盖 消\n费级 GeForce ( RTX  5090  ~ RTX  3090 )、工作站 RTX  Pro ( RTX  6000  Ada  / RTX\nA6000 )、推理卡 L / T  系列( L40S  / L4  / T4 )、训练卡 B / H / A  系列( B200  / H200  /\nH100  / A100 )以及中国特供版( H20  / L20  / RTX  4090D )五大产品线。\n核心逻辑只有三条:显存决定模型装不装得下,算力决定算得快不快,互连带宽决定多卡扩\n不扩得动。\n如果你只想快速选型——游戏创作看 GeForce ,专业设计看 RTX  Pro ,推理部署看 L / T ,\n训练研发看 H / B ,国内合规看中国特供版。\n🧭 0 .阅读导图与学习路径\n这篇不是一口气必须读完的论文,而是一份按需查阅的 GPU  百科;先抓住产品线主线,再\n按你的⻆色和场景深入感兴趣的板块。\nH20 、 L20 、 A800 、 RTX  50  系...... 英伟达 GPU  家族庞大又难记?游戏、设计、 AI  训\n练、推理到底该选哪款?别再被型号绕晕!这篇全网最全图解指南,从入⻔到旗舰、从消\n费级到数据中心,一次性讲清 NVIDIA  全系列 GPU  的区别与用法,看完秒变选型高手。\n",
+    "publication_evidence": "PDF p.1 发布栏 2026-03-20T02:36",
+    "full_title_in_capture": "英伟达GPU全系列硬核科普手册：一文读懂NVIDIA芯片的定位、规格与应用场景",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0066",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "2ea632027528db385bd4d26002b723b772dcb87b41cf528d4d5deb8bd0217510"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "14B FP16估33.6GB却推荐32GB刚好；70B FP16估168GB却称141GB单卡完整加载，内部容量逻辑不一致",
+        "pages": [
+          12,
+          13
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "671B MoE显存按激活参数降低而未说明全权重驻留/卸载条件，不能采用推荐值作为部署结论",
+        "pages": [
+          13
+        ],
+        "status": "pending_review"
+      },
+      {
+        "description": "规格、供应、价格、政策及部分B20/5090D预测均未独立核验，保留历史科普属性",
+        "pages": [
+          6,
+          10,
+          14
+        ],
+        "status": "pending_review"
+      }
+    ],
+    "outputs": [
+      "AI_英伟达GPU选型科普.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "coverage": "覆盖导读、架构、命名、概念、五产品线、比较图、算力口径、场景、参数显存与决策树；全部关键图已放大，11–14页追加高分辨率渲染；不逐行抄录所有价格和算力表。",
+    "fact_checks": [
+      {
+        "item": "粗估系数",
+        "value": "1.2",
+        "pages": 11,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "FP16字节",
+        "value": "2字节/参数",
+        "pages": 11,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "7B估算",
+        "value": "16.8/8.4/4.2GB",
+        "pages": 12,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "14B估算",
+        "value": "33.6GB FP16",
+        "pages": 12,
+        "result": "与所读原文一致"
+      },
+      {
+        "item": "70B估算",
+        "value": "168GB FP16",
+        "pages": 13,
+        "result": "与所读原文一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_英伟达GPU选型科普.md",
+      "sha256": "278c71e662978e442caa6ae3721fc16de0cdd71273817c037f398f05f18987b1"
+    },
+    "root_content_review": "主对话通读笔记，检查机制、范围与出处，并对记录中的重点问题回到来源抽查。"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "2ea632027528db385bd4d26002b723b772dcb87b41cf528d4d5deb8bd0217510"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "ba74c658d982cf7bf968b8f8f94f2c266e2aa477af6080ab9b16b93186025311"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 27,
+        "text_layer_sha256": "622708f2f5565d62f4c21f4516d6e3e5e9724469089aae9f02b0ca6b39fa4ed4",
+        "text_layer_char_count": 729
+      },
+      {
+        "page": 2,
+        "md_start_line": 35,
+        "md_end_line": 36,
+        "text_layer_sha256": "83c79167a6783767482e984f0912a8d1a7f0663e67c6f039c88af551c5e138c4",
+        "text_layer_char_count": 56
+      },
+      {
+        "page": 3,
+        "md_start_line": 44,
+        "md_end_line": 46,
+        "text_layer_sha256": "fb4313b7b94c5cee4301f1a414906092e277b0d44d6013c20dfeccca1f2858a2",
+        "text_layer_char_count": 61
+      },
+      {
+        "page": 4,
+        "md_start_line": 54,
+        "md_end_line": 58,
+        "text_layer_sha256": "96e0746379b669e157a97670f58d019c622c0db88ac9ac9796f198d891cc9506",
+        "text_layer_char_count": 149
+      },
+      {
+        "page": 5,
+        "md_start_line": 66,
+        "md_end_line": 78,
+        "text_layer_sha256": "f1d9e3e1398950d925c4b049c410371f1c064e2b7d750e5928b6068276328944",
+        "text_layer_char_count": 427
+      },
+      {
+        "page": 6,
+        "md_start_line": 86,
+        "md_end_line": 91,
+        "text_layer_sha256": "408f182dc759a257d95d36457c98e2c4b147ace731b5bbb501152f6481052717",
+        "text_layer_char_count": 91
+      },
+      {
+        "page": 7,
+        "md_start_line": 99,
+        "md_end_line": 101,
+        "text_layer_sha256": "f6b76a43bf30356ab94a9d2a245c689c4b69bfc4c3e40e0f294cc66c66827ea8",
+        "text_layer_char_count": 41
+      },
+      {
+        "page": 8,
+        "md_start_line": 109,
+        "md_end_line": 113,
+        "text_layer_sha256": "cafc3ac5d28689b2fc1685aedbfec4aa273332ef97f0a7fa340ebe06092c2977",
+        "text_layer_char_count": 196
+      },
+      {
+        "page": 9,
+        "md_start_line": 121,
+        "md_end_line": 120,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 10,
+        "md_start_line": 128,
+        "md_end_line": 129,
+        "text_layer_sha256": "f4d7e9d5160917531c8c11003b33e21b25a9f48e7813a6d33dfdf0d4191a05fb",
+        "text_layer_char_count": 35
+      },
+      {
+        "page": 11,
+        "md_start_line": 137,
+        "md_end_line": 139,
+        "text_layer_sha256": "5404304203261c88698cb2f8643512173449a5b5ac69115592d41d18194b19ed",
+        "text_layer_char_count": 84
+      },
+      {
+        "page": 12,
+        "md_start_line": 147,
+        "md_end_line": 146,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      },
+      {
+        "page": 13,
+        "md_start_line": 154,
+        "md_end_line": 155,
+        "text_layer_sha256": "4bdba20fb81c77603672c148263c07b3991c527f534efe076f52c790dba9b9a9",
+        "text_layer_char_count": 33
+      },
+      {
+        "page": 14,
+        "md_start_line": 163,
+        "md_end_line": 166,
+        "text_layer_sha256": "c925b14d521c66325d28d42ca25b6178048ffeb3b0f06f19ca196141d4de0e53",
+        "text_layer_char_count": 127
+      },
+      {
+        "page": 15,
+        "md_start_line": 174,
+        "md_end_line": 181,
+        "text_layer_sha256": "51cd7caa481830a8d22a6bf84c1cf28129edc1112de1873cf4d76843cccae616",
+        "text_layer_char_count": 74
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "14B FP16估33.6GB却推荐32GB刚好；70B FP16估168GB却称141GB单卡完整加载，内部容量逻辑不一致",
+        "pages": [
+          12,
+          13
+        ],
+        "status": "unresolved"
+      },
+      {
+        "description": "671B MoE显存按激活参数降低而未说明全权重驻留/卸载条件，不能采用推荐值作为部署结论",
+        "pages": [
+          13
+        ],
+        "status": "pending_review"
+      },
+      {
+        "description": "规格、供应、价格、政策及部分B20/5090D预测均未独立核验，保留历史科普属性",
+        "pages": [
+          6,
+          10,
+          14
+        ],
+        "status": "pending_review"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/0320 NVIDIA GPU全系列科普.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "2ea632027528db385bd4d26002b723b772dcb87b41cf528d4d5deb8bd0217510",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/大模型推理与算子优化.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_英伟达GPU选型科普.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

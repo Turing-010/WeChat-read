@@ -1,0 +1,513 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0135",
+  "title": "AI + Kuikly：7.5 小时落地三端「多模态聊天 App」实战",
+  "short_title": "AI+Kuikly三端聊天App",
+  "account": "腾讯技术工程",
+  "author": null,
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-06-30T02:44",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/AI+ Kuikly7.5 App.pdf",
+      "original_filename": "AI+ Kuikly7.5 App.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "e609d6e4f3960e9c3ea4760c1ba8909a0b3c9e149af723a44d7c267b8292bd80",
+      "size_bytes": 6936516,
+      "page_count": 15,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "7.5小时、28轮对话、740字提示和代码量等数字属于作者单次项目自述或估算，文章未提供独立复现或统一基准。",
+          "pages": [
+            1,
+            12,
+            13
+          ],
+          "status": "source_limitation"
+        },
+        {
+          "description": "调试结果为作者对真机问题的叙述，笔记未独立运行其代码或复现环境。",
+          "pages": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "status": "pending_review"
+        }
+      ],
+      "publication_evidence": "PDF第1页刊头显示 Jun 30, 2026, 2:44 AM；未显示个人作者姓名。"
+    }
+  ],
+  "tags": [
+    "AI研发协同",
+    "模型与开发工具发布",
+    "异常监控与稳定性",
+    "跨端开发与性能"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/AI+Kuikly三端聊天App+26.6.30",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_AI+Kuikly三端聊天App.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "AI + Kuikly : 7 . 5 小时 落地三端「多模态聊天 App 」实战\n腾讯程序员 Jun  30 , 2026 , 2 : 44  AM贵州原创 腾讯技术工程 147  listened\n用  28 轮对话、 740 字自然语言,生成约  3500 行代码,完成一套三端可运行的多模态  AI 聊天\nApp 。全程零手写,不看代码, 1 天交付。\n放在传统开发里,同样的功能  iOS 、 Android 、鸿蒙各写一遍,要  30 人天;就算用  Kuikly 手\n写,也得  7.5 人天。这次用  AI 辅助,实际只花了  7.5 小时。最终交付的  App 支持流式\nMarkdown 、拍照识图、相册选取、 SSE ⻓连接、本地会话管理,一套代码即可覆盖\nAndroid 、 iOS 、鸿蒙三端。\n这不是 “Vibe Coding” 的玄学叙事,而是一次 “AI + Kuikly 跨端框架 ” 的实弹演习。 Skills 和  Rules\n让  AI 始终保持在正确的技术上下文中,组件库开箱即用、三端模板一键生成,这套基础设施支\n撑起了 “AI + Kuikly” 的协同效率。之前 搜狗输入法用  Spec Coding 把新⻚面开发从  3 天压到\n1 天, QQ 音乐用  AI 智能转码实现  90%+ 代码采用率  ,效率红利正在被验证。\n说到底,这次实验就想回答一个问题:纯靠对话,能把事情做到什么程度?一天之后,我有了\n答案。\nKuikly  是腾讯开源的高性能跨端框架,基于 Kotlin  Multiplatform  技术,覆盖 Android 、 iOS 、\nHarmonyOS 、 H5 、微信小程序、 Mac  六大平台,支撑业务日活用户超 5 亿。当 Kuikly  搭配真\n正懂它的 AI ,开发会怎样——零手写代码,仅凭自然语言, 7 . 5  小时交付一套支持 Android 、\niOS 、鸿蒙三端的 AI  聊天 App 。看 AI  如何调研组件、扩展原生模块、自行定位 Bug ,感受为\n什么「 AI  + Kuikly 」是当下客户端开发效率最高的组合之一。\n",
+    "publication_evidence": "PDF第1页刊头显示 Jun 30, 2026, 2:44 AM；未显示个人作者姓名。",
+    "full_title_in_capture": "AI + Kuikly：7.5 小时落地三端「多模态聊天 App」实战",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0135",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "e609d6e4f3960e9c3ea4760c1ba8909a0b3c9e149af723a44d7c267b8292bd80"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "7.5小时、28轮对话、740字提示和代码量等数字属于作者单次项目自述或估算，文章未提供独立复现或统一基准。",
+        "pages": [
+          1,
+          12,
+          13
+        ],
+        "status": "source_limitation"
+      },
+      {
+        "description": "调试结果为作者对真机问题的叙述，笔记未独立运行其代码或复现环境。",
+        "pages": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "status": "pending_review"
+      }
+    ],
+    "outputs": [
+      "AI_AI+Kuikly三端聊天App.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13
+      ]
+    },
+    "coverage": "覆盖目标与工时自述、组件复用、SSEModule/ImageModule、框架 Skills/Rules、Android content:// 图片问题、键盘和鸿蒙路由问题、真机迭代及结果边界；p.14–15为互动内容。 PDF末尾核查：p.14留言页，p.15空白；未遗漏技术内容。",
+    "fact_checks": [
+      {
+        "item": "自然语言提示轮数",
+        "note_value": "28轮",
+        "source_value": "28轮",
+        "pages": [
+          1
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "自然语言提示长度",
+        "note_value": "约740字",
+        "source_value": "约740字",
+        "pages": [
+          1
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "生成代码量",
+        "note_value": "约3500行",
+        "source_value": "约3500行",
+        "pages": [
+          1
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "自研跨端模块",
+        "note_value": "SSEModule与ImageModule",
+        "source_value": "SSE长连接与图片处理模块",
+        "pages": [
+          4,
+          5
+        ],
+        "result": "一致"
+      },
+      {
+        "item": "相册缩略图问题根因",
+        "note_value": "模板未处理content:// URI",
+        "source_value": "模板ImageAdapter未识别content://",
+        "pages": [
+          7
+        ],
+        "result": "一致"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_AI+Kuikly三端聊天App.md",
+      "sha256": "4d08016a58d1ceb34b3c9d80c673382114179b1f8a9e2c638d6367fd4ffd19a1"
+    },
+    "independent_crosscheck": {
+      "reviewer": "/root/crosscheck_b",
+      "note_sha256": "4d08016a58d1ceb34b3c9d80c673382114179b1f8a9e2c638d6367fd4ffd19a1",
+      "review_sha256": "2231a99ae3672b96ad38503cc7dc99ee347a5be8477c0b4d57a4588932c69805",
+      "status": "passed",
+      "changes": [
+        "Applied the required note structure: one H1, an explicit 复习卡片 section with one-line Q::A cards, and a final fully quoted folded 校对报告.",
+        "Checked all 15 physical pages; inspected the final blank/comment page in extracted text and page image, recorded the boundary in note and review, and aligned text_pages_read with the full physical page range."
+      ],
+      "source_spotchecks": [
+        {
+          "pages": [
+            7
+          ],
+          "finding": "放大页图与笔记一致：相册缩略图的 content:// provider URI 未被模板 ImageAdapter 处理；作者按日志定位并补 URI 识别。"
+        },
+        {
+          "pages": [
+            1,
+            12,
+            13
+          ],
+          "finding": "7.5 小时等工时/成果是作者单次案例自述，笔记及 review 明确未外推为普遍效率结论。"
+        },
+        {
+          "pages": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "finding": "调试归因和真机验证均保留为作者叙述；没有声称本次复现代码。"
+        },
+        {
+          "pages": [
+            14,
+            15
+          ],
+          "finding": "p.14 抽取文本/页图为留言页，p.15抽取文本为空且页图空白。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "e609d6e4f3960e9c3ea4760c1ba8909a0b3c9e149af723a44d7c267b8292bd80"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "c79ba7eff2aea147b1d4a019ce14088ae071519e1661462be5ee6b04f4f21983"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 28,
+        "text_layer_sha256": "d4062d4229e6d2f9bb69c30f227d8576917bbaa9304931313a1116545db70c74",
+        "text_layer_char_count": 916
+      },
+      {
+        "page": 2,
+        "md_start_line": 36,
+        "md_end_line": 36,
+        "text_layer_sha256": "09421ed8433e368ba67fae3d95f6f0286a1f0ee835fcf59deaa35530b35519f7",
+        "text_layer_char_count": 13
+      },
+      {
+        "page": 3,
+        "md_start_line": 44,
+        "md_end_line": 62,
+        "text_layer_sha256": "e5785c64711c0be20101f283d957a60f9d8600e841398bb77d05f4a8c27c3820",
+        "text_layer_char_count": 682
+      },
+      {
+        "page": 4,
+        "md_start_line": 70,
+        "md_end_line": 100,
+        "text_layer_sha256": "f2aebcf7cb770eb475eacdb9c000ab75e817dc82cecf401747b18c4e2187f189",
+        "text_layer_char_count": 1153
+      },
+      {
+        "page": 5,
+        "md_start_line": 108,
+        "md_end_line": 120,
+        "text_layer_sha256": "99f42b02408670c8c0596ed18e307e99a6147d2c9f5e031c9ca637e665e0dd0c",
+        "text_layer_char_count": 632
+      },
+      {
+        "page": 6,
+        "md_start_line": 128,
+        "md_end_line": 138,
+        "text_layer_sha256": "48caa235f42402f62c8b7444a992ad542ea6c60dbc1fa62628bdd6c4b8f8663a",
+        "text_layer_char_count": 323
+      },
+      {
+        "page": 7,
+        "md_start_line": 146,
+        "md_end_line": 155,
+        "text_layer_sha256": "7205130638f60236f2c0445219da42c353831d6609a1339c56e9b59f8d9996bb",
+        "text_layer_char_count": 418
+      },
+      {
+        "page": 8,
+        "md_start_line": 163,
+        "md_end_line": 178,
+        "text_layer_sha256": "2fb8258e1669d24e17db783d28ced298a242e91a8da522d4d465fa5503c9e19a",
+        "text_layer_char_count": 629
+      },
+      {
+        "page": 9,
+        "md_start_line": 186,
+        "md_end_line": 198,
+        "text_layer_sha256": "f6f3692399ba22b35ab3864597760730476b027143ac2d80fbde5ca007fcc75a",
+        "text_layer_char_count": 542
+      },
+      {
+        "page": 10,
+        "md_start_line": 206,
+        "md_end_line": 221,
+        "text_layer_sha256": "7763856d2c3a8fd5400203215c633cb5ba661b93afb55cdac859f28b8d782605",
+        "text_layer_char_count": 446
+      },
+      {
+        "page": 11,
+        "md_start_line": 229,
+        "md_end_line": 235,
+        "text_layer_sha256": "27655d40278da2a236ade6e9f41cd71f1be2e0385ff12684f527114d6e2fc417",
+        "text_layer_char_count": 181
+      },
+      {
+        "page": 12,
+        "md_start_line": 243,
+        "md_end_line": 260,
+        "text_layer_sha256": "42ff580b1d64758f757fa0c97a2a33a49c0e8f23f10a935dde63f137002efce9",
+        "text_layer_char_count": 802
+      },
+      {
+        "page": 13,
+        "md_start_line": 268,
+        "md_end_line": 287,
+        "text_layer_sha256": "a941ad2f819e72bc7e5ed3c24143bf610d125b05dabb7e3bfdff39684755edc7",
+        "text_layer_char_count": 753
+      },
+      {
+        "page": 14,
+        "md_start_line": 295,
+        "md_end_line": 298,
+        "text_layer_sha256": "03d96e0eba86428bfb7cbc79452665a90dc2daa0439a053dc3e7c95c7890fce2",
+        "text_layer_char_count": 26
+      },
+      {
+        "page": 15,
+        "md_start_line": 306,
+        "md_end_line": 305,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "7.5小时、28轮对话、740字提示和代码量等数字属于作者单次项目自述或估算，文章未提供独立复现或统一基准。",
+        "pages": [
+          1,
+          12,
+          13
+        ],
+        "status": "source_limitation"
+      },
+      {
+        "description": "调试结果为作者对真机问题的叙述，笔记未独立运行其代码或复现环境。",
+        "pages": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "status": "pending_review"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/AI+ Kuikly7.5 App.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "e609d6e4f3960e9c3ea4760c1ba8909a0b3c9e149af723a44d7c267b8292bd80",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI研发协同.md",
+      "../../20_topics/跨端开发与性能.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_AI+Kuikly三端聊天App.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

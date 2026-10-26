@@ -1,0 +1,733 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0006",
+  "title": "聊聊最近爆火的Jev 模型，到底是个啥？",
+  "account": "腾讯技术工程",
+  "author": "mason",
+  "source_url": null,
+  "published_at": "2026-09-20T19:23",
+  "tags": [
+    "Jev",
+    "Agent工程",
+    "模型选型",
+    "有限动作决策与Agent路由",
+    "模型评测与校准",
+    "Agent评测与反馈",
+    "模型与开发工具发布"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/聊聊最近爆火的Jev 模型，到底是个啥？.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-04T00:59:35-07:00",
+      "provenance": "本次由00_inbox复制归档的本地PDF；原始采集方式和时间未知",
+      "sha256": "fddcc0be82979dc2978d57059e5cf05704968fc67c472090a9deb9354aae92a8",
+      "files": [],
+      "completeness": "incomplete",
+      "quality_issues": [
+        {
+          "description": "PDF原文地址、采集时间和显示时间的时区未确认；外部事实及在线原文一致性未核查。",
+          "verification_status": "unverified",
+          "pages": []
+        },
+        {
+          "description": "渲染页面可见图片加载占位区，缺失内容无法从当前PDF恢复。",
+          "verification_status": "visually_observed",
+          "pages": [
+            3,
+            8
+          ]
+        },
+        {
+          "description": "视频只保留封面，未取得动态过程。",
+          "verification_status": "visually_observed",
+          "pages": [
+            1,
+            2,
+            7
+          ]
+        }
+      ],
+      "size_bytes": 4634622,
+      "page_count": 8
+    },
+    {
+      "capture_id": "capture-002",
+      "path": "RAW_补采001.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/聊聊最近爆火的Jev 模型，到底是个啥？.pdf",
+      "original_filename": "聊聊最近爆火的Jev 模型，到底是个啥？.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:08-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "b78fa2f2730c144cc97b5bccfcd9a6014b41e70d5100a6140cf5d874bc2bcd58",
+      "size_bytes": 6798297,
+      "page_count": 11,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.8–11 含读者评论与微信 AI 生成摘要；笔记将其作为附加材料而非作者结论。",
+          "pages": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "status": "reviewed_comments_and_summary"
+        }
+      ],
+      "publication_evidence": "PDF p.1 页眉：2026 年 9 月 20 日 19:23；未标时区。"
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-04T00:59:35-07:00",
+  "author_byline": "mason，Principal Research Leader",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "聊聊最近爆火的 Jev  模型,到底是个啥?\n腾讯程序员 2026 年 9 月 20 日 19 : 23广东原创 腾讯技术工程 1035 人\n作者: mason , Principal Research Leader\n一、老惯例,先看看 Jev 到底是什么?\nJev 是  TypeSafe AI 在  9 月份推出的决策模型 。创始人是  Diogo Almeida ,他曾在\nOpenAI 参与过让语言模型更会听指令、跟人对话的相关研究。\nTypeSafe 默默开发了两年,发布一个官方称为  System One Models的模型。使用方式简\n单可以理解成:把当前情况和问题给它,让它返回程序能直接使用的结果。其实本质上是分\n类模型。官方介绍\n丨 导语 最近看到了一个挺有意思的东⻄,就是 TypeSafe  AI  做的 Jev 。 Reddit  上很多人用它玩\nDOOM ,也有人拿它玩 Mario 。我申请之后,拿到 API  Key  后,也做了一个网⻚小游戏,想看\n看它到底在里面起什么作用。一开始,我最想弄清楚的其实很简单:同样是让 AI  操作游戏,为\n什么要用 Jev ? GPT  不能做吗?当然能。做完这个 demo ,再看了一圈资料,我觉得可能值得\n讨论的是另一个问题:我们现在搭 Agent ,经常让一个通用大模型反复决定下一步。这里面有多\n少事情,真的需要大模型完整的生成和推理能力?\n",
+    "publication_evidence": "PDF p.1 页眉：2026 年 9 月 20 日 19:23；未标时区。",
+    "full_title_in_capture": "聊聊最近爆火的 Jev 模型，到底是个啥?",
+    "identity_comparison": "same title/account/author/publication date and corresponding content; preserve permanent article ID"
+  },
+  "deduplication": {
+    "compared_article_ids": [
+      "art-0001",
+      "art-0002",
+      "art-0003",
+      "art-0004",
+      "art-0005"
+    ],
+    "compared_batch_sha256": [
+      "07b21eb800753fa51f86866bbd7f8d00504cb83d7f060b793f3d4fc32f34e9cc",
+      "da1f13f9d535340c5a47fa4569a8ec23a534363ecacf874aed9ff488888b6101",
+      "af7c929e1ad84758e890d53444ca14569755bf90822baf53415ed45d1a90c13d",
+      "ee6e81186109f2392b01022aa6c057b64aa52e4da17e6c4d1166e13982cfd4bb",
+      "fddcc0be82979dc2978d57059e5cf05704968fc67c472090a9deb9354aae92a8",
+      "7639af2660ba29f38667e80f54d51b94703d79c1f02b7b08be680ca911b9ef04",
+      "da48b5daab2ce87443edf0ef90f09d7e2e72d5d0305af1a177b5e7ed8016c42e"
+    ],
+    "result": "no_existing_identity_or_file_match"
+  },
+  "short_title": "Jev模型",
+  "directory": "腾讯技术工程/Jev模型+26.9.20",
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0006",
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-002",
+        "path": "RAW_补采001.pdf",
+        "sha256": "b78fa2f2730c144cc97b5bccfcd9a6014b41e70d5100a6140cf5d874bc2bcd58"
+      },
+      {
+        "path": "MD_补采001.md",
+        "sha256": "87dab1e2830bfb02e842ac0537ec2818cec18b621dc474bd00ef6c28907e9c95"
+      }
+    ],
+    "method": "按用户指定Obsidian学习笔记提示词（基于MD_补采001.md与既有PDF核验记录）重新生成中文学习笔记；正文、数据表、图注与复习卡片均去除页码标注，核验结果统一置于文末折叠校对报告；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对",
+      "MD_补采001.md全文核对与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "user_custom_obsidian_prompt_20261015",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71",
+      "override_note": "用户于2026-10-15会话中直接提供完整结构化Obsidian学习笔记提示词（去除正文/表格/卡片内页码标注，保留文末折叠校对报告）。"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.8–11 含读者评论与微信 AI 生成摘要；笔记将其作为附加材料而非作者结论。",
+        "pages": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "status": "reviewed_comments_and_summary"
+      }
+    ],
+    "outputs": [
+      "AI_Jev模型_补充001.md",
+      "AI_Jev模型.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10
+      ]
+    },
+    "coverage": "通读 p.1–11；覆盖接口、游戏循环、Browser Use、适用场景与限制。p.8–11 的评论和自动摘要未并入作者论证。",
+    "fact_checks": [
+      {
+        "item": "接口类型",
+        "original_value": "Choice、Score、原文拼作Noul的是非接口",
+        "pages": [
+          1,
+          2
+        ],
+        "result": "保留原文拼写。"
+      },
+      {
+        "item": "API调用",
+        "original_value": "游戏演示记录6次真实API调用",
+        "pages": [
+          2
+        ],
+        "result": "一次演示记录。"
+      },
+      {
+        "item": "概率与confidence",
+        "original_value": "攻击选项概率约95%，confidence约93%",
+        "pages": [
+          2
+        ],
+        "result": "两个不同值，不等于胜率。"
+      },
+      {
+        "item": "浏览器调用",
+        "original_value": "7.073秒、17次Jev请求、2次文本生成调用",
+        "pages": [
+          3,
+          4
+        ],
+        "result": "不含初始打开和最后校验；未购票。"
+      },
+      {
+        "item": "对比局限",
+        "original_value": "未完成与GPT同场有效对比；校准需自有数据验证",
+        "pages": [
+          5,
+          7
+        ],
+        "result": "与作者局限一致。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 8,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading",
+        "clean body without inline page citations"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Jev模型_补充001.md",
+      "sha256": "0fdbd1851c6b397d9b2cc6819e4d6b651971dd12a5b7d856876f2210285616d6",
+      "previous_sha256": "3a43c904228c8a43f578548014753a6fcde8b2095ec4c2c72ccf316ff42bb3d5",
+      "synced_legacy_path": "AI_Jev模型.md",
+      "synced_legacy_sha256": "6c6860e47c1831a3d5c36528206037ee05f93fabcb670780cb145b09a6e84702"
+    },
+    "independent_crosscheck": {
+      "reviewer": "regenerated_with_user_prompt_20261015",
+      "note_sha256": "0fdbd1851c6b397d9b2cc6819e4d6b651971dd12a5b7d856876f2210285616d6",
+      "review_sha256": "75b86d14f0b80967b85ba60ac6200864a461853b2e94cf321f3e6554b595fb0e",
+      "status": "passed",
+      "changes": [
+        "Regenerated study note from MD_补采001.md per user prompt (2026-10-15): structured 10 modules, removed inline page citations from body/tables/flashcards, and consolidated verification in the folded 校对报告."
+      ],
+      "source_spotchecks": [
+        {
+          "pages": "1–4",
+          "check": "核对Choice/Score/Noul三类输出、游戏代码执行与模型选择的分工、6次真实API调用、95%动作概率和93% confidence；笔记区分两数且不称其为胜率。"
+        },
+        {
+          "pages": "3–5",
+          "check": "核对Browser Use 7.073秒、17次Jev/2次生成及计时不含初始打开和末尾独立校验；成本和延迟作为厂商/单次任务口径。"
+        },
+        {
+          "pages": "5–7",
+          "check": "核对confidence需业务校准、90%/60%只是示例、模型与传统分类器竞争边界；未发现过度外推。"
+        },
+        {
+          "pages": "8–11",
+          "check": "检查尾部图页：评论及一段微信AI生成摘要与作者正文分开，笔记未纳入技术结论；尾页属于留言延续，无新增正文主张。"
+        }
+      ],
+      "previous_note_sha256": "d3af336661bc13be93f445c6f70b72984d9334fc7d60138787f1433ce09e5461"
+    },
+    "updated_at": "2026-10-15T08:21:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:08-07:00",
+    "source_capture_id": "capture-002",
+    "input": {
+      "path": "RAW_补采001.pdf",
+      "sha256": "b78fa2f2730c144cc97b5bccfcd9a6014b41e70d5100a6140cf5d874bc2bcd58"
+    },
+    "output": {
+      "path": "MD_补采001.md",
+      "sha256": "87dab1e2830bfb02e842ac0537ec2818cec18b621dc474bd00ef6c28907e9c95"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 24,
+        "text_layer_sha256": "c8e8aff0ef7ef3c1ec4f98cfd878ca8649e18217ba0849f32eb20f11dcd28103",
+        "text_layer_char_count": 611
+      },
+      {
+        "page": 2,
+        "md_start_line": 32,
+        "md_end_line": 55,
+        "text_layer_sha256": "b20cf8156115a57cf4cce8821ca91c7a4407f472103a2f9a24ba30157135567c",
+        "text_layer_char_count": 832
+      },
+      {
+        "page": 3,
+        "md_start_line": 63,
+        "md_end_line": 77,
+        "text_layer_sha256": "f021848429f07e09ca8f9411316fa3594fa9b225c9c3a1479c13909583024641",
+        "text_layer_char_count": 490
+      },
+      {
+        "page": 4,
+        "md_start_line": 85,
+        "md_end_line": 120,
+        "text_layer_sha256": "cbcc0c49046ffc44630fb91695a18569c16b703b5f36cd373298898b1155f408",
+        "text_layer_char_count": 1022
+      },
+      {
+        "page": 5,
+        "md_start_line": 128,
+        "md_end_line": 160,
+        "text_layer_sha256": "2042c2c114fdd12b49fa21194d70357a745fb72a4f0cf07caaf92c40ab54dd58",
+        "text_layer_char_count": 1276
+      },
+      {
+        "page": 6,
+        "md_start_line": 168,
+        "md_end_line": 201,
+        "text_layer_sha256": "f6f07161d6f7988a1f603b449a33fcee76d513cbfa759b840db0d4f28e1ab784",
+        "text_layer_char_count": 1159
+      },
+      {
+        "page": 7,
+        "md_start_line": 209,
+        "md_end_line": 226,
+        "text_layer_sha256": "566000c325235c6f0bfa105bdc76f995839c9815bd12b72314a12a1b74a546cb",
+        "text_layer_char_count": 629
+      },
+      {
+        "page": 8,
+        "md_start_line": 234,
+        "md_end_line": 256,
+        "text_layer_sha256": "e9efa0521ff122cbc8470c566b88f111496fc7b73153ecd8d5017852c27ec95d",
+        "text_layer_char_count": 323
+      },
+      {
+        "page": 9,
+        "md_start_line": 264,
+        "md_end_line": 310,
+        "text_layer_sha256": "a3509e0dd1520c3f2a75aa74e80593f8816313cb66beb4705a4cd2584820d4e0",
+        "text_layer_char_count": 1004
+      },
+      {
+        "page": 10,
+        "md_start_line": 318,
+        "md_end_line": 360,
+        "text_layer_sha256": "d96d48d0398de5c58f749d06dfbd61b0bdbac200483fe420798ccab3dbb1bf79",
+        "text_layer_char_count": 911
+      },
+      {
+        "page": 11,
+        "md_start_line": 368,
+        "md_end_line": 367,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.8–11 含读者评论与微信 AI 生成摘要；笔记将其作为附加材料而非作者结论。",
+        "pages": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "status": "reviewed_comments_and_summary"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:08-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/聊聊最近爆火的Jev 模型，到底是个啥？.pdf",
+        "destination_path": "RAW_补采001.pdf",
+        "sha256": "b78fa2f2730c144cc97b5bccfcd9a6014b41e70d5100a6140cf5d874bc2bcd58",
+        "copied_at": "2026-10-14T23:52:08-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "files": {
+    "raw": "RAW_补采001.pdf",
+    "markdown": "MD_补采001.md",
+    "ai_summary": "AI_Jev模型_补充001.md",
+    "prompts": "PROMPT.md"
+  },
+  "processing_history": [
+    {
+      "schema_version": 2,
+      "article_id": "art-0006",
+      "created_at": "2026-10-04T00:59:35-07:00",
+      "inputs": [
+        {
+          "capture_id": "capture-001",
+          "path": "RAW.pdf",
+          "sha256": "fddcc0be82979dc2978d57059e5cf05704968fc67c472090a9deb9354aae92a8"
+        }
+      ],
+      "method": "直接读取PDF文本层；全页缩略检查，重点页面视觉核对；按实际可见内容生成学习笔记及扁平合集。无全文整理产物，无代码执行或Skill安装。",
+      "tools": [
+        "pypdf（PDF文本与链接读取）",
+        "pypdf文本提取",
+        "pdftoppm（PDF页面渲染）",
+        "Pillow（临时缩略图）",
+        "视觉检查",
+        "Python标准库（复制与SHA-256校验）"
+      ],
+      "model": null,
+      "model_version": null,
+      "prompt_version": "本次读取的agent.md与90_templates，未修改",
+      "processing_status": "completed",
+      "source_completeness": "incomplete",
+      "page_mapping_status": "pdf_physical_pages",
+      "quality_issues": [
+        {
+          "description": "PDF原文地址、采集时间和显示时间的时区未确认；外部事实及在线原文一致性未核查。",
+          "verification_status": "unverified",
+          "pages": []
+        },
+        {
+          "description": "渲染页面可见图片加载占位区，缺失内容无法从当前PDF恢复。",
+          "verification_status": "visually_observed",
+          "pages": [
+            3,
+            8
+          ]
+        },
+        {
+          "description": "视频只保留封面，未取得动态过程。",
+          "verification_status": "visually_observed",
+          "pages": [
+            1,
+            2,
+            7
+          ]
+        }
+      ],
+      "outputs": [
+        "AI_Jev模型.md",
+        "PROMPT.md"
+      ],
+      "personal_notes_modified": false,
+      "extracted_items": [
+        {
+          "type": "prompt",
+          "name": "游戏状态下一步动作选择",
+          "path": "PROMPT.md",
+          "heading": "1. 游戏状态下一步动作选择",
+          "capture_id": "capture-001",
+          "content_status": "example",
+          "locator": {
+            "type": "pdf_page_text_spans",
+            "page_numbering": "physical_pages_1_based",
+            "extractor": "pypdf.PageObject.extract_text",
+            "segments": [
+              {
+                "page": 2,
+                "start_char": 652,
+                "end_char": 698
+              }
+            ],
+            "joining": "按页面阅读顺序以一个换行连接各摘录段，未改写字符"
+          },
+          "excerpt_sha256": "70e1012b8475f6698d996d71f54724da7b4f9bcaa457a5a6a3ed98be600785f8",
+          "verification": "text_spans_exact; relevant_page_images_reviewed",
+          "personal_validation": "unconfirmed"
+        }
+      ],
+      "extraction_summary": {
+        "prompts": 1,
+        "skills": 0,
+        "categories": 0
+      },
+      "updated_at": "2026-10-04T00:59:35-07:00",
+      "review_scope": {
+        "text_pages_read": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "thumbnail_pages_reviewed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "detail_pages_reviewed": [
+          2
+        ],
+        "limitations": "缩略检查用于识别空白、加载占位与版面异常；未逐字核验全部图片，未核对在线原文。"
+      },
+      "omitted_content": [
+        "游戏与对话视频在PDF中只有封面，视频过程未取得；第3、8页有加载占位区。",
+        "价格、延迟、厂商技术细节及社区效果都是文中信息，未进行当前外部核查。",
+        "提取1条游戏动作问题示例；表格里的“问谁／风险／转人工”等是接口含义举例，未提供独立模板或Skill。"
+      ]
+    }
+  ],
+  "conversion_history": [
+    {
+      "created_at": "2026-10-08",
+      "source_capture_id": "capture-001",
+      "input": {
+        "path": "RAW.pdf",
+        "sha256": "fddcc0be82979dc2978d57059e5cf05704968fc67c472090a9deb9354aae92a8"
+      },
+      "output": {
+        "path": "MD.md",
+        "sha256": "ab6367cb7deb151d73cb91ee0a2a27522faf2a3d67cbf257c0f93521c2112ece"
+      },
+      "extractor": "pdfplumber 0.11.9; Page.extract_text_lines / Page.extract_text",
+      "page_numbering": "physical_pages_1_based",
+      "status": "text_layer_conversion_completed",
+      "verification_status": "text_extraction_checked; layout_images_and_online_original_not_fully_verified",
+      "pages": [
+        {
+          "page": 1,
+          "md_start_line": 15,
+          "md_end_line": 39,
+          "text_layer_sha256": "b6ce7367e1e88f12ce81ae715a022176edbeedc08f83005891c19887edc5d229",
+          "text_layer_char_count": 568,
+          "image_objects": 2,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 2,
+          "md_start_line": 44,
+          "md_end_line": 82,
+          "text_layer_sha256": "e4ee4177c2f6fa9f64a97aafb0c056889be26a0262c559f79120c686ae60376d",
+          "text_layer_char_count": 678,
+          "image_objects": 2,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 3,
+          "md_start_line": 87,
+          "md_end_line": 107,
+          "text_layer_sha256": "6766f46cad7cdc9e403afc8f33978e30f506f99eca855ba950a091e89a5b8d56",
+          "text_layer_char_count": 403,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 4,
+          "md_start_line": 112,
+          "md_end_line": 165,
+          "text_layer_sha256": "66a580551a3002053cba88275e8c6e7f1c90d7e28935942bc1e87ed092d57c7b",
+          "text_layer_char_count": 952,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 5,
+          "md_start_line": 170,
+          "md_end_line": 225,
+          "text_layer_sha256": "32aa73530930c2e733ad7129cc0a29ac593172dccd449804ebc4e9663fa494e3",
+          "text_layer_char_count": 1247,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 6,
+          "md_start_line": 230,
+          "md_end_line": 287,
+          "text_layer_sha256": "44ac625871a88c4366e5d5eede568422cb6945063d752530d7f701ba54b7d0af",
+          "text_layer_char_count": 1138,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 7,
+          "md_start_line": 292,
+          "md_end_line": 328,
+          "text_layer_sha256": "03a24a4dc26c92dc7e704e70a69b6d954c1a47ef8c54c84e27a055788d1d27d1",
+          "text_layer_char_count": 764,
+          "image_objects": 2,
+          "status": "text_layer_extracted"
+        },
+        {
+          "page": 8,
+          "md_start_line": 333,
+          "md_end_line": 336,
+          "text_layer_sha256": "75fc00f85a9e6197147bab81643fa9bf19c710f32d99e7e4193f0208198f4a5b",
+          "text_layer_char_count": 7,
+          "image_objects": 0,
+          "status": "text_layer_extracted"
+        }
+      ],
+      "quality_issues": [
+        "图片未嵌入MD，使用各页RAW链接核对；保留原始材料的既有质量问题。",
+        "文字来自PDF文本层，字形、阅读顺序、代码缩进、表格结构及裁切显示一致性仍可能需人工核验。"
+      ],
+      "personal_notes_modified": false
+    }
+  ],
+  "migration_history": [
+    {
+      "date": "2026-10-08",
+      "previous_directory": "10_articles/腾讯技术工程/2026-09-20_Jev模型与高频决策__art-0006",
+      "current_directory": "腾讯技术工程/Jev模型+26.9.20",
+      "previous_article_readme": "# 聊聊最近爆火的Jev 模型，到底是个啥？\n\n公众号：腾讯技术工程；作者：mason；页面日期：2026-09-20（时区未确认）。\n\n## 阅读与使用\n\n- [整篇学习笔记](run/learning_note.md)\n- [Prompt合集](run/prompts.md)\n\n## 原始材料\n\n- [归档PDF](source/capture-001.pdf)\n\n图片或附件有缺失，详见下文。已确认可读内容已整理，未将加工完成标为原文完整核验通过。\n",
+      "file_mapping": {
+        "source/capture-001.pdf": "RAW.pdf",
+        "metadata.json": "META.json",
+        "run/run.json": "META.json",
+        "README.md": "MD.md",
+        "run/learning_note.md": "AI_Jev模型.md",
+        "run/prompts.md": "PROMPT.md"
+      },
+      "existing_ai_summaries": "preserved_with_link_updates; no_new_summary_generated",
+      "personal_note_template": "90_templates/个人笔记模板.md; create_only_on_user_request_or_start_of_personal_notes"
+    }
+  ],
+  "identity_evidence_history": [
+    {
+      "description": "PDF第1页可见标题、公众号、署名与日期；对照正文主题和篇章内容，7篇彼此不同，且均不同于已有art-0001。",
+      "pdf_page": 1,
+      "header_text": "聊聊最近爆⽕的 Jev  模型，到底是个啥？\n腾讯程序员 2026 年 9 ⽉ 20 ⽇ 19 : 23⼴东原创 腾讯技术⼯程 1025 ⼈\n",
+      "source_url_status": "PDF未提供可确认的本篇原文URL，不使用引用文献链接代替。"
+    }
+  ],
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Harness与模型协同.md",
+      "../../20_topics/模型与开发工具发布.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Jev模型_补充001.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

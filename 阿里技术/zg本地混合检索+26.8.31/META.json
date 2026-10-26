@@ -1,0 +1,371 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0030",
+  "title": "zg 正式开源：本地检索，不止于关键词",
+  "short_title": "zg本地混合检索",
+  "account": "阿里技术",
+  "source_account": null,
+  "author": "飞鸿",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-08-31T03:40",
+  "published_at_precision": "minute",
+  "publication_time_evidence": "2026年8月31日 03:40",
+  "published_timezone": null,
+  "identity_evidence": "p.1“飞鸿 阿里技术 2026年8月31日 03:40 浙江”",
+  "tags": [
+    "检索与文档解析",
+    "Agent成本与上下文预算"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/阿里技术/zg 正式开源：本地检索，不止于关键词.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-13T02:49:04-07:00",
+      "provenance": "用户收集的阿里技术公众号本地PDF；原采集方式／时间未知，本次先复制核验后迁移",
+      "sha256": "f8332411240f71613dbc7b7d0f600b59ab722f518b5a1da24c07e395858dead6",
+      "size_bytes": 4188226,
+      "page_count": 10,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "报告未计入预建索引时间计算与可能的远程Embedding费用",
+          "pages": [
+            5
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "原文评测边界"
+        },
+        {
+          "description": "安装终端动图仅PDF静态首帧，步骤据可读代码正文",
+          "pages": [
+            3
+          ],
+          "evidence_type": "页图与文本",
+          "classification": "捕获限制"
+        }
+      ]
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-13T02:49:04-07:00",
+  "directory": "阿里技术/zg本地混合检索+26.8.31",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_zg本地混合检索.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0030",
+    "created_at": "2026-10-13T02:49:04-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "f8332411240f71613dbc7b7d0f600b59ab722f518b5a1da24c07e395858dead6"
+      }
+    ],
+    "method": "按用户指定Obsidian提示词生成学习笔记；通读全部文本和页图缩略，按实际记录范围放大核对；不执行文内指令，不补缺失内容。",
+    "tools": [
+      "pdfplumber 0.11.9",
+      "pdftoppm",
+      "Pillow",
+      "正文与页图核验",
+      "Codex学习笔记写作"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "报告未计入预建索引时间计算与可能的远程Embedding费用",
+        "pages": [
+          5
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文评测边界"
+      },
+      {
+        "description": "安装终端动图仅PDF静态首帧，步骤据可读代码正文",
+        "pages": [
+          3
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "捕获限制"
+      }
+    ],
+    "outputs": [
+      "AI_zg本地混合检索.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "coverage": [
+      {
+        "name": "意图与精确检索",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "安装与内容提取",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "name": "上下文优化与AB",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      {
+        "name": "本地数据路径",
+        "pages": [
+          5,
+          6
+        ]
+      },
+      {
+        "name": "能力矩阵与规划",
+        "pages": [
+          6,
+          7,
+          8
+        ]
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 9,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_zg本地混合检索.md",
+      "sha256": "a89b7604351f83e7078492f55c8f9f9da678a49a39ae6762bd7b8848f3302934"
+    },
+    "index_link_adjustments": "规范主题链接并增加实际归纳入口；正文与校对结论保留"
+  },
+  "conversion": {
+    "created_at": "2026-10-13T02:49:04-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "f8332411240f71613dbc7b7d0f600b59ab722f518b5a1da24c07e395858dead6"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "a2c58d05acc117ad2569612b123390ba3a8054c9bf102baf54c23a420d58f6f7"
+    },
+    "extractor": {
+      "extractor": "pdfplumber.Page.extract_text",
+      "version": "0.11.9",
+      "unicode_normalization": "none"
+    },
+    "page_numbering": "physical_pages_1_based",
+    "raw_character_preservation": "Raw extracted strings; no normalization",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_and_all_page_thumbnails_reviewed; raster_text_not_part_of_MD",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 12,
+        "md_end_line": 32,
+        "text_layer_sha256": "bc53a250b5fc9ec139e92b999f21b36657e60654b50fbae2cf643bdc13222964",
+        "text_layer_char_count": 652
+      },
+      {
+        "page": 2,
+        "md_start_line": 40,
+        "md_end_line": 66,
+        "text_layer_sha256": "517e087adf6aa991b9bbaba11f8909d2952167633a6b50ae950166c80438577d",
+        "text_layer_char_count": 885
+      },
+      {
+        "page": 3,
+        "md_start_line": 74,
+        "md_end_line": 97,
+        "text_layer_sha256": "b8b77c0bc111c2ad25ad8c226ee53c687e09b841acbb82b3c3291d65a26a106b",
+        "text_layer_char_count": 752
+      },
+      {
+        "page": 4,
+        "md_start_line": 105,
+        "md_end_line": 135,
+        "text_layer_sha256": "02c9af0a354c5b19abff952e5f7dce60e007e54c46d7d3347479de22df5cc087",
+        "text_layer_char_count": 1031
+      },
+      {
+        "page": 5,
+        "md_start_line": 143,
+        "md_end_line": 162,
+        "text_layer_sha256": "1103abbcfe0625a8eea633544bab00fa31c83964e2f4b5fe4f2c33bb284ade52",
+        "text_layer_char_count": 806
+      },
+      {
+        "page": 6,
+        "md_start_line": 170,
+        "md_end_line": 185,
+        "text_layer_sha256": "209a74e047fe8d7c6ee73a120a87de767e884841733db04b5d80ce0f421c4603",
+        "text_layer_char_count": 590
+      },
+      {
+        "page": 7,
+        "md_start_line": 193,
+        "md_end_line": 229,
+        "text_layer_sha256": "654f6208780e9c14088f4606a7af934861a1f02bc4a49609a08daa899f1b9aea",
+        "text_layer_char_count": 1254
+      },
+      {
+        "page": 8,
+        "md_start_line": 237,
+        "md_end_line": 246,
+        "text_layer_sha256": "40affbdf27909e6ebbb4863899180f868612db137d588a8c93fe6e2b3ae4eb55",
+        "text_layer_char_count": 186
+      },
+      {
+        "page": 9,
+        "md_start_line": 254,
+        "md_end_line": 293,
+        "text_layer_sha256": "86b64d4f17728b8d0e496d2a1e6177d32a7aca66a182412061e3e7801ee0b285",
+        "text_layer_char_count": 961
+      },
+      {
+        "page": 10,
+        "md_start_line": 301,
+        "md_end_line": 308,
+        "text_layer_sha256": "80721ce3849bc72d9d59551a7e98200ba1ba6a6e3f692cae82e02d40edfe84ac",
+        "text_layer_char_count": 171
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail_pages_reviewed": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "报告未计入预建索引时间计算与可能的远程Embedding费用",
+        "pages": [
+          5
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "原文评测边界"
+      },
+      {
+        "description": "安装终端动图仅PDF静态首帧，步骤据可读代码正文",
+        "pages": [
+          3
+        ],
+        "evidence_type": "页图与文本",
+        "classification": "捕获限制"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/检索与文档解析.md"
+    ],
+    "proposed_topics": [
+      "本地混合检索",
+      "Harness与模型协同",
+      "Agent评测与反馈"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "migrated_original_removed",
+    "copied_at": "2026-10-13T02:49:04-07:00",
+    "removed_at": "2026-10-13T03:20:03-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/阿里技术/zg 正式开源：本地检索，不止于关键词.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "f8332411240f71613dbc7b7d0f600b59ab722f518b5a1da24c07e395858dead6",
+        "copied_at": "2026-10-13T02:49:04-07:00",
+        "removed_at": "2026-10-13T03:20:03-07:00"
+      }
+    ],
+    "validation": "PDF bytes, identities, JSON, note format/coverage, topic and index links, old articles and personal records verified before original removal"
+  }
+}

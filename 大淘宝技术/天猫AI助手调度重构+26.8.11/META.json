@@ -1,0 +1,392 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0195",
+  "title": "天猫AI助手：调度框架重构与AI Coding工程化实践",
+  "short_title": "天猫AI助手调度重构",
+  "account": "大淘宝技术",
+  "author": "依凡",
+  "author_byline": "本文作者依凡，来自淘天集团—天猫APP技术团队。",
+  "source_url": null,
+  "published_at": "2026-08-11",
+  "published_at_precision": "date",
+  "published_timezone": null,
+  "identity_evidence": {
+    "publication": {
+      "page": 1,
+      "text": "天猫技术团队 2026年8月11日 19:21 浙江",
+      "source_type": "header_text",
+      "timezone": null
+    },
+    "author": {
+      "page": 15,
+      "text": "本文作者依凡，来自淘天集团—天猫APP技术团队。",
+      "source_type": "body_text"
+    },
+    "evidence_type": "actual_pdf_text_layer"
+  },
+  "tags": [
+    "AI研发协同",
+    "Harness与模型协同",
+    "Agent工程循环"
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "00_inbox/大淘宝技术/天猫AI助手：调度框架重构与AI Coding工程化实践.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-20T06:06:00-07:00",
+      "provenance": "用户收集于00_inbox/大淘宝技术的公众号PDF；本次按时间顺序（从新到旧）筛选技术文章后复制核验并归档",
+      "sha256": "397738102549dfee5d8ccdd125ea43e08be055b3506458987d480d7320d327dd",
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "p.3-14含多张DDD分层架构图、六步主链路与PhaseHook时序图（位于PDF图像层），核心架构职责与CLAUDE.md分层规范已在正文中完整阐述。",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "verification_status": "actual_text_and_structure_review"
+        }
+      ],
+      "size_bytes": 4302389,
+      "page_count": 15
+    }
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-20T06:06:00-07:00",
+  "directory": "大淘宝技术/天猫AI助手调度重构+26.8.11",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_天猫AI助手调度重构.md"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0195",
+    "created_at": "2026-10-20T06:06:00-07:00",
+    "updated_at": "2026-10-20T06:06:00-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "397738102549dfee5d8ccdd125ea43e08be055b3506458987d480d7320d327dd"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "ceee818c076b979297a421ee3e6a2d3913268bed439222e1fd9bdcaf2e64bd0c"
+      }
+    ],
+    "method": "按 wechat-knowledge-integration 技能内置 Obsidian 10节技术精读规范生成学习笔记；逐页读取全部PDF文本层并核查图像对象分布、代码裁切与数值一致性；正文严格零内联页码，页码溯源与质量边界统一置于文末折叠校对报告。",
+    "tools": [
+      "macOS PDFKit (Swift)",
+      "CoreGraphics CGPDFDocument XObject Inspector",
+      "Python 3 标准库 (hashlib / json)",
+      "kb_tools.py (check-notes / verify / index)"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "obsidian-note-prompt-10-sections",
+    "prompt_reference": {
+      "path": "/Users/iw/Documents/WeChat_read/30_toolkit/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "d98f976a8db43d46dc11ca77976d06b21011be9767301b7fe09760270e702f07"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "p.3-14含多张DDD分层架构图、六步主链路与PhaseHook时序图（位于PDF图像层），核心架构职责与CLAUDE.md分层规范已在正文中完整阐述。",
+        "pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ],
+    "outputs": [
+      "AI_天猫AI助手调度重构.md"
+    ],
+    "personal_notes_modified": false,
+    "extracted_items": [],
+    "extraction_summary": {
+      "prompts": 0,
+      "skills": 0,
+      "categories": 0
+    },
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "note_validation": {
+      "frontmatter_parsed": true,
+      "h1_count": 1,
+      "h2_ten_sections": true,
+      "zero_inline_page_citations": true,
+      "folded_audit_report": true,
+      "flashcard_count": 6,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false
+    },
+    "generated_summary": {
+      "path": "AI_天猫AI助手调度重构.md",
+      "sha256": "531a609a1b5369c825a8543e463dcdf7902eb2f161f40ed690f961de144eff01"
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-20T06:06:00-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "397738102549dfee5d8ccdd125ea43e08be055b3506458987d480d7320d327dd"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "ceee818c076b979297a421ee3e6a2d3913268bed439222e1fd9bdcaf2e64bd0c"
+    },
+    "extractor": "macOS PDFKit PDFPage.string (physical pages 1-based)",
+    "raw_character_preservation": "No Unicode normalization; CR/LF unified to LF only",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all_text_pages_reviewed; raster_images_not_in_MD_text_layer",
+    "pages": [
+      {
+        "md_end_line": 42,
+        "md_start_line": 14,
+        "page": 1,
+        "text_layer_char_count": 852,
+        "text_layer_sha256": "af9149e4aa029c802d72ee2e6e6a4612a5618fa29e2a219653503a04655b7ead"
+      },
+      {
+        "md_end_line": 93,
+        "md_start_line": 52,
+        "page": 2,
+        "text_layer_char_count": 1019,
+        "text_layer_sha256": "b14119aa15cc8f1b0b36a962d1cfd91eb6454fb5c7acf7071e22a54877a3dd5d"
+      },
+      {
+        "md_end_line": 157,
+        "md_start_line": 103,
+        "page": 3,
+        "text_layer_char_count": 820,
+        "text_layer_sha256": "c357900e09223e14350b11a1aa3b95e3d2f45e257f72e77b61a1034b58e69169"
+      },
+      {
+        "md_end_line": 224,
+        "md_start_line": 167,
+        "page": 4,
+        "text_layer_char_count": 769,
+        "text_layer_sha256": "0de6e0b514228f7fb3f1a72912b43ecc857fe8316140fe5a72ec4ea7aae26d71"
+      },
+      {
+        "md_end_line": 266,
+        "md_start_line": 234,
+        "page": 5,
+        "text_layer_char_count": 766,
+        "text_layer_sha256": "48cb27fbce97c1ca98286d6018a1d4653fe06eb3862e0aa5b6770836af462b6b"
+      },
+      {
+        "md_end_line": 345,
+        "md_start_line": 276,
+        "page": 6,
+        "text_layer_char_count": 1276,
+        "text_layer_sha256": "48c90694561dccabf223018dcba47475e0961e9576f4a8a5c8e50cfae421b9cb"
+      },
+      {
+        "md_end_line": 398,
+        "md_start_line": 355,
+        "page": 7,
+        "text_layer_char_count": 502,
+        "text_layer_sha256": "a4d6367e88a3bee2eb70010d05445d9a626b12038564124a9ce8229a42917358"
+      },
+      {
+        "md_end_line": 446,
+        "md_start_line": 408,
+        "page": 8,
+        "text_layer_char_count": 599,
+        "text_layer_sha256": "e9df5a5397f69b6244c2a402068790bed00b48fa43cf839c844c89c4ab16e94c"
+      },
+      {
+        "md_end_line": 510,
+        "md_start_line": 456,
+        "page": 9,
+        "text_layer_char_count": 1165,
+        "text_layer_sha256": "f8111f488d741fee7b45ebf9831dcf206ebdccba10ca23283dbb551f5f1d89ef"
+      },
+      {
+        "md_end_line": 548,
+        "md_start_line": 520,
+        "page": 10,
+        "text_layer_char_count": 487,
+        "text_layer_sha256": "d6eb778b37cf2c3caef5e540a811acbef9a2cd8b60364021d246314594f565c6"
+      },
+      {
+        "md_end_line": 613,
+        "md_start_line": 558,
+        "page": 11,
+        "text_layer_char_count": 1089,
+        "text_layer_sha256": "7b45d2bc78a1add1aa6d27ae5735344114e16dce076f5b975b8516e3bc8d4362"
+      },
+      {
+        "md_end_line": 667,
+        "md_start_line": 623,
+        "page": 12,
+        "text_layer_char_count": 1012,
+        "text_layer_sha256": "6e076c0d3a6e5b520e7916970529619841bbd548ecfe70a62d53ede1988177b6"
+      },
+      {
+        "md_end_line": 733,
+        "md_start_line": 677,
+        "page": 13,
+        "text_layer_char_count": 985,
+        "text_layer_sha256": "004196570b1ae859f5d67f698909911945f6bc01842cb1055ef78d68a2ea8e14"
+      },
+      {
+        "md_end_line": 776,
+        "md_start_line": 743,
+        "page": 14,
+        "text_layer_char_count": 612,
+        "text_layer_sha256": "1d87fd48d7199582796b5784d15e250b8563736ccbc1f01aabcc5aefca00aa4b"
+      },
+      {
+        "md_end_line": 790,
+        "md_start_line": 786,
+        "page": 15,
+        "text_layer_char_count": 40,
+        "text_layer_sha256": "e285bafcd6f477905d50ee4418bf2915cac3bf23e4ae6c500354087e37c58631"
+      }
+    ],
+    "review_scope": {
+      "text_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "p.3-14含多张DDD分层架构图、六步主链路与PhaseHook时序图（位于PDF图像层），核心架构职责与CLAUDE.md分层规范已在正文中完整阐述。",
+        "pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13
+        ],
+        "verification_status": "actual_text_and_structure_review"
+      }
+    ]
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "relation": "补充与已有文章的主题关联；不改变本人阅读／掌握状态",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "migration": {
+    "status": "completed",
+    "copied_at": "2026-10-20T06:06:00-07:00",
+    "removed_at": "2026-10-20T06:06:00-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/大淘宝技术/天猫AI助手：调度框架重构与AI Coding工程化实践.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "397738102549dfee5d8ccdd125ea43e08be055b3506458987d480d7320d327dd",
+        "copied_at": "2026-10-20T06:06:00-07:00",
+        "removed_at": "2026-10-20T06:06:00-07:00"
+      }
+    ]
+  },
+  "ai_note": "AI_天猫AI助手调度重构.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-20"
+}

@@ -1,0 +1,348 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0152",
+  "title": "WorkBuddy资料库：从三大场景开始，让多人多Agent轻松协作",
+  "short_title": "WorkBuddy 多人协作",
+  "account": "腾讯技术工程",
+  "author": "夏夏；WorkBuddy资料库产品运营",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-09-17T02:50",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/WorkBuddy资料库：从三大场景开始，让多人多Agent轻松协作.pdf",
+      "original_filename": "WorkBuddy资料库：从三大场景开始，让多人多Agent轻松协作.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "843a1aa54ff0da67301cc80380aa72eb8644946de463417ddee669ffe6ebd52c",
+      "size_bytes": 4239448,
+      "page_count": 6,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "description": "产品介绍未披露架构、权限、并发编辑冲突和量化结果；PPT 协作在文章发布时仍处于内测。",
+          "pages": [
+            2,
+            3,
+            4
+          ],
+          "status": "已标明文章给出的功能状态和信息边界"
+        }
+      ],
+      "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。"
+    }
+  ],
+  "tags": [
+    "AI研发协同",
+    "Agent工程循环",
+    "AI技术活动与资料",
+    "桌面Agent与工作流"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/WorkBuddy 多人协作+26.9.17",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_WorkBuddy 多人协作.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "WorkBuddy 资料库:从三大场景开始,让多人多 Agent 轻松协作\n腾讯程序员 Sep  17 , 2026 , 2 : 50  AM广东原创 腾讯技术工程 289  listened\n作者:夏夏,workbuddy 资料库  产品运营  \n你有没有遇到过这样的时刻?好不容易做出一个 demo 分享给同事,结果因为文件是本地格\n式,发给同事看,展示处处有问题?\n最近和不少团队沟通,发现大家都有个极度相似的痛点:用  AI 生成一个产物,不用像古法时\n代一样一步一步手搓了;可一旦要把这个东⻄分享给同事,熟悉的麻烦感立刻回来了。\n以前一星期才能手搓出来的东⻄,现在  AI 几秒钟就塞给你了,但产出越快,协作反而越卡\n壳:\n产品经理用  AI 拼出新功能  Demo ,手里只有个本地  HTML 。拿给研发讨论,改一个交互就要\n改代码、重新打包、再发一次;\n销售用  AI 整理完客户方案  PPT ,再让产品、技术确认细节,结果一个群里发出了十几个版\n本,改到最后谁也说不清哪一版才是最新的。\n运营赶着上线活动,用  AI 搭建了一个⻚面,上线前晚才发现移动端按钮错位,连夜拉上一大\n群看着截图一头雾水的研发排查问题,沟通费时费力;\n你会发现,当下的核心矛盾已经变了:不再是 \"AI 能不能帮我把东⻄做出来 \" ,而是 \" 东⻄做\n出来之后,怎么让团队顺畅地接过去、继续高效地做下去 \" 。\n一、产品  Demo 交接:告别本地文件难协作,把  Demo 变成协作现场\n",
+    "publication_evidence": "PDF 第1页显示原始发布时间；按页面时分记录，不推断时区。",
+    "full_title_in_capture": "WorkBuddy资料库：从三大场景开始，让多人多Agent轻松协作",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0152",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "843a1aa54ff0da67301cc80380aa72eb8644946de463417ddee669ffe6ebd52c"
+      },
+      {
+        "path": "MD.md",
+        "sha256": "4afe93a0f830b1a82a5f62560376e90e3e789cdbf658c744648101ca5fac2341"
+      }
+    ],
+    "method": "按用户指定Obsidian学习笔记提示词（基于MD.md与既有PDF核验记录）重新生成中文学习笔记；正文、数据表、图注与复习卡片均去除页码标注，核验结果统一置于文末折叠校对报告；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对",
+      "MD.md全文核对与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": "user_custom_obsidian_prompt_20261015",
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71",
+      "override_note": "用户于2026-10-15会话中直接提供完整结构化Obsidian学习笔记提示词（去除正文/表格/卡片内页码标注，保留文末折叠校对报告）。"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "description": "产品介绍未披露架构、权限、并发编辑冲突和量化结果；PPT 协作在文章发布时仍处于内测。",
+        "pages": [
+          2,
+          3,
+          4
+        ],
+        "status": "已标明文章给出的功能状态和信息边界"
+      }
+    ],
+    "outputs": [
+      "AI_WorkBuddy 多人协作.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4
+      ]
+    },
+    "coverage": "覆盖三个协作场景：本地生成 HTML Demo 转为可评论的在线页面、多人多 Agent 协同编辑 PPT（文中明确仍在内测）、活动页面现场修复并复用同一链接。说明围绕共享版本、页面圈选反馈和 Agent 执行展开。 PDF末页核查：p.6仅公众号页脚/留言区，无新增产品内容。",
+    "fact_checks": [
+      {
+        "claim": "场景共三类",
+        "page": "p.1–4",
+        "result": "文章结构"
+      },
+      {
+        "claim": "PPT 协作当时处于内测",
+        "page": "p.3",
+        "result": "页面明确标注"
+      },
+      {
+        "claim": "HTML 页面支持评论/圈选反馈",
+        "page": "p.2",
+        "result": "产品演示描述"
+      },
+      {
+        "claim": "活动页面可在共享页修复",
+        "page": "p.4",
+        "result": "产品演示描述"
+      },
+      {
+        "claim": "文章未给出量化效率结果",
+        "page": "p.1–6",
+        "result": "通读全文未见量化测量"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 5,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading",
+        "clean body without inline page citations"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_WorkBuddy 多人协作.md",
+      "sha256": "5978723154f7038b1737d6a7e7d5ac448e8cb5ea896a1c7d41323cc423a5b98b",
+      "previous_sha256": "21257afebfa11bfc8fd6f93fc469f49a36f23adccdbc34411558b034b7af2662"
+    },
+    "independent_crosscheck": {
+      "reviewer": "regenerated_with_user_prompt_20261015",
+      "note_sha256": "bbe02316f4374475499ef75d0e99f1947e13e8e19889dcb98c472318ccb0f360",
+      "review_sha256": "aa51ab3f3a7fb0888782536dc795838537e44f818871526bd4cea169f217567a",
+      "status": "passed",
+      "changes": [
+        "Applied the required note structure: one H1, an explicit 复习卡片 section with one-line Q::A cards, and a final fully quoted folded 校对报告.",
+        "Checked all 6 physical pages; inspected the final blank/comment page in extracted text and page image, recorded the boundary in note and review, and aligned text_pages_read with the full physical page range.",
+        "Regenerated study note from MD.md per user prompt (2026-10-15): structured 10 modules, removed inline page citations from body/tables/flashcards, and consolidated verification in the folded 校对报告."
+      ],
+      "source_spotchecks": [
+        {
+          "pages": [
+            2,
+            3,
+            4
+          ],
+          "finding": "三类产品场景覆盖完整；放大 p.3 确认 PPT 多人/多 Agent 协作发布时仍处内测，笔记保留此状态。"
+        },
+        {
+          "pages": [
+            1,
+            6
+          ],
+          "finding": "署名/发布日期与 review 一致；未披露的权限、并发冲突和架构被明确标为资料缺失。"
+        },
+        {
+          "pages": [
+            6
+          ],
+          "finding": "p.6抽取文本/页图为公众号页脚、阅读量与留言区，无新产品说明。"
+        }
+      ],
+      "previous_note_sha256": "09b2e57a4940df114fa439657a21f60142fa318f80825c6826b7e0cb1dc21097"
+    },
+    "updated_at": "2026-10-15T08:21:00-07:00"
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "843a1aa54ff0da67301cc80380aa72eb8644946de463417ddee669ffe6ebd52c"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "4afe93a0f830b1a82a5f62560376e90e3e789cdbf658c744648101ca5fac2341"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 27,
+        "text_layer_sha256": "834364775eb779822d2d6c9ed95843c9e90213704e9d569d6e2c273463b6e94c",
+        "text_layer_char_count": 642
+      },
+      {
+        "page": 2,
+        "md_start_line": 35,
+        "md_end_line": 49,
+        "text_layer_sha256": "0ae8ecb30596594bc53d8183d306fac3e9605751f3895d85aa8e2128557af4b5",
+        "text_layer_char_count": 533
+      },
+      {
+        "page": 3,
+        "md_start_line": 57,
+        "md_end_line": 69,
+        "text_layer_sha256": "c0048ff425d7f79e101fef95be40f70b5a6aba121aa9a9cd13e5400be77a7828",
+        "text_layer_char_count": 482
+      },
+      {
+        "page": 4,
+        "md_start_line": 77,
+        "md_end_line": 91,
+        "text_layer_sha256": "c8f26d75f5eddca22ef958c6b0b4a9e391bf3f597c8e7e2a84804b84fe2a6653",
+        "text_layer_char_count": 552
+      },
+      {
+        "page": 5,
+        "md_start_line": 99,
+        "md_end_line": 113,
+        "text_layer_sha256": "eec30377fbd5853a52e09df2e996f7efe95796bbcaaed761b40027dbb7ef823f",
+        "text_layer_char_count": 535
+      },
+      {
+        "page": 6,
+        "md_start_line": 121,
+        "md_end_line": 124,
+        "text_layer_sha256": "6639821d3b40ee779871b46b8200ac03a1dd813b669cef8435040633341b707c",
+        "text_layer_char_count": 26
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "detail_pages_reviewed": [
+        2,
+        3,
+        4
+      ]
+    },
+    "quality_issues": [
+      {
+        "description": "产品介绍未披露架构、权限、并发编辑冲突和量化结果；PPT 协作在文章发布时仍处于内测。",
+        "pages": [
+          2,
+          3,
+          4
+        ],
+        "status": "已标明文章给出的功能状态和信息边界"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/WorkBuddy资料库：从三大场景开始，让多人多Agent轻松协作.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "843a1aa54ff0da67301cc80380aa72eb8644946de463417ddee669ffe6ebd52c",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/AI技术活动与资料.md",
+      "../../20_topics/AI研发协同.md",
+      "../../20_topics/桌面Agent与工作流.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_WorkBuddy 多人协作.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

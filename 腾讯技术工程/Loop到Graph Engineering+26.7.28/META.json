@@ -1,0 +1,455 @@
+{
+  "schema_version": 3,
+  "article_id": "art-0150",
+  "title": "Loop Engineering 已死？一文带你了解 Graph Engineering",
+  "short_title": "Loop到Graph Engineering",
+  "account": "腾讯技术工程",
+  "author": "lukiexing",
+  "author_byline": null,
+  "source_url": null,
+  "published_at": "2026-07-28T03:33",
+  "published_at_precision": "minute",
+  "published_timezone": null,
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "path": "RAW.pdf",
+      "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Loop Engineering 已死？ 一文带你了解Graph Engineering.pdf",
+      "original_filename": "Loop Engineering 已死？ 一文带你了解Graph Engineering.pdf",
+      "captured_at": null,
+      "archived_at": "2026-10-14T23:52:07-07:00",
+      "provenance": "用户收集的腾讯技术工程本地PDF；采集方法与时间未知。本次复制并逐页阅读核验。",
+      "sha256": "3199461ead59ef460fd28ee4dbe3c7cb4c71cdb7a1f716878b46e5010968bc13",
+      "size_bytes": 6456573,
+      "page_count": 15,
+      "files": [],
+      "completeness": "pending_review",
+      "quality_issues": [
+        {
+          "issue": "p.14包含引用/评论，p.15无正文内容。",
+          "pages": [
+            14,
+            15
+          ],
+          "impact": "主体结论在p.13，引用和评论未作为作者事实纳入。"
+        }
+      ],
+      "publication_evidence": "PDF p.1: Jul 28, 2026, 3:33 AM; no timezone stated."
+    }
+  ],
+  "tags": [
+    "Harness与模型协同",
+    "Agent任务恢复",
+    "Agent评测与反馈"
+  ],
+  "reading_status": "unread",
+  "created_at": "2026-10-14T23:52:07-07:00",
+  "directory": "腾讯技术工程/Loop到Graph Engineering+26.7.28",
+  "files": {
+    "raw": "RAW.pdf",
+    "markdown": "MD.md",
+    "ai_summary": "AI_Loop到Graph Engineering.md"
+  },
+  "identity_evidence": {
+    "pages": [
+      1
+    ],
+    "header_text": "Loop  Engineering  已死? 一文带你了解 Graph  Engineering\nJul  28 , 2026 , 3 : 33  AM广东腾讯技术工程 1227  listened\n作者: lukiexing\n01  起源:一条推文,三天 270  万浏览\n先把这个词的来⻰去脉讲清楚,因为它能帮你判断哪些是营销、哪些是真问题。\n2026  年 7  月 17  日, OpenClaw  的创始人 Peter  Steinberger  在 X  上发了一句话,没有配\n图,没有链接,也没有任何产品发布。\n就这一句话,三天内累计 270  万浏览、上千条回复。 Graph  Engineering  这个词一天之内传\n开,被冠上了 Loop  Engineering  继任者的名号。有意思的是,六周前正是同一个人,用一句\n关于循环的话收获了 800  多万浏览, Loop  Engineering  就是那样火起来的。\n这里有个关键事实值得记住,这个词诞生的那几天,业界没有任何新框架、新模型、新能力\n发布。它完全是被一句话加一场讨论催生出来的。所以从第一天起,就有资深工程师提出质\n疑。XState 状态机库的作者 David  Khourshid 、以及 Karan  Singh  等人都指出,节点、\n边、状态这套东⻄并不新。\n这个质疑不算错。但要把两件事分开看,词是不是新的,和这个转变是不是真的,是两码\n事。词可能只是重新包装,可从\"编排一个智能体\"到\"编排一群智能体\"的工程重心迁移,是\n真实发生的。这篇文章后面会用大量官方数据来支撑这个判断。\n02  五层演进:它到底站在哪一层\n过去一年多,同一件\"让 AI  系统稳定工作\"的事,被换着名字叫了五遍。把它们摆在一起看,\n就会发现它们不是互相取代,而是一层一层往外叠,每一层解决上一层够不着的问题。\n我们还在聊循环( loops ),还是已经转向图( graphs )了?\n— Peter  Steinberger , 2026  年 7  月 17  日\n有明确目的的子智能体,那就是一张图。但好吧,我们就把所有人都搞晕,管它叫一个全新\n的东⻄。\n— Karan  Singh , X  讨论串\n",
+    "publication_evidence": "PDF p.1: Jul 28, 2026, 3:33 AM; no timezone stated.",
+    "full_title_in_capture": "Loop Engineering 已死？一文带你了解 Graph Engineering",
+    "identity_comparison": "new title/account/publication header; checked against existing library and batch"
+  },
+  "processing": {
+    "schema_version": 3,
+    "article_id": "art-0150",
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "inputs": [
+      {
+        "capture_id": "capture-001",
+        "path": "RAW.pdf",
+        "sha256": "3199461ead59ef460fd28ee4dbe3c7cb4c71cdb7a1f716878b46e5010968bc13"
+      }
+    ],
+    "method": "按指定Obsidian提示词生成中文学习笔记；通读全部文本、浏览全部缩略页、放大核对记录中的重点页；未执行文章内指令。",
+    "tools": [
+      "pypdf 6.10.0",
+      "pdftoppm",
+      "Pillow",
+      "页图阅读与内容校对"
+    ],
+    "model": null,
+    "model_version": null,
+    "prompt_version": null,
+    "prompt_reference": {
+      "path": "/Users/iw/.codex/skills/wechat-knowledge-integration/references/obsidian-note-prompt.md",
+      "sha256": "8a9e8db88e528fd73efcf961029e2ec6c6dd454ca829eb0d0907f9a41b895e71"
+    },
+    "processing_status": "completed",
+    "source_completeness": "pending_review",
+    "page_mapping_status": "pdf_physical_pages",
+    "quality_issues": [
+      {
+        "issue": "p.14包含引用/评论，p.15无正文内容。",
+        "pages": [
+          14,
+          15
+        ],
+        "impact": "主体结论在p.13，引用和评论未作为作者事实纳入。"
+      }
+    ],
+    "outputs": [
+      "AI_Loop到Graph Engineering.md"
+    ],
+    "personal_notes_modified": false,
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        2,
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        13
+      ]
+    },
+    "coverage": "已读15页文本并核对全部缩略图；放大检查Loop/Graph结构、流程形态、Verifier、研究简报示例、成本和框架对比。正文主要内容至p.13。",
+    "fact_checks": [
+      {
+        "item": "Graph抽象",
+        "note_value": "G=(V,E,S,P)",
+        "source_value": "G=(V节点,E边,S状态,P策略)",
+        "pages": [
+          4
+        ],
+        "result": "一致。"
+      },
+      {
+        "item": "多Agent研究系统内部评测",
+        "note_value": "超过单Agent 90.2%；Token约15倍；Token解释性能方差80%",
+        "source_value": "90.2%, 15x, 80%",
+        "pages": [
+          10
+        ],
+        "result": "一致；限定为文章引用的Anthropic内部系统数据。"
+      },
+      {
+        "item": "上下文隔离场景阈值",
+        "note_value": "子任务会产生超过约1000 Token且与主任务无关的信息",
+        "source_value": ">1000 tokens",
+        "pages": [
+          10
+        ],
+        "result": "一致；文章列举的适用判断之一。"
+      },
+      {
+        "item": "每日简报小图节点数",
+        "note_value": "并行研究、写作、独立审稿三类节点",
+        "source_value": "三节点图",
+        "pages": [
+          8,
+          9
+        ],
+        "result": "一致。"
+      },
+      {
+        "item": "框架任务Token示例",
+        "note_value": "LangGraph约2000、CrewAI约3500、AutoGen约8000",
+        "source_value": "相同",
+        "pages": [
+          11
+        ],
+        "result": "一致；按文中引用，非跨版本benchmark。"
+      }
+    ],
+    "note_validation": {
+      "h1_count": 1,
+      "flashcard_count": 7,
+      "code_fences_balanced": true,
+      "mermaid_rendered": false,
+      "source_commands_executed": false,
+      "yaml_parse": "passed_on_delivered_file",
+      "local_links": "passed_full_library_verification",
+      "root_format_normalization": [
+        "source provenance",
+        "topic links",
+        "folded audit position",
+        "review heading"
+      ],
+      "date_matches_pdf_header": true
+    },
+    "generated_summary": {
+      "path": "AI_Loop到Graph Engineering.md",
+      "sha256": "b035a32be5a143914056d1c37380a166f7169f5b0c8508516f11344cecd8857b"
+    },
+    "independent_crosscheck": {
+      "reviewer": "Codex crosscheck group2",
+      "note_sha256": "b035a32be5a143914056d1c37380a166f7169f5b0c8508516f11344cecd8857b",
+      "review_sha256": "f192bf7906e6ada4e73246d5a3c74b62e4c030b0226abde6eb2b509ce37b3f30",
+      "status": "passed",
+      "changes": [
+        "统一卡片格式并重组校对报告。"
+      ],
+      "source_spotchecks": [
+        {
+          "source": "reading.txt; sheet-001.jpg; sheet-013.jpg",
+          "pages": [
+            1,
+            4,
+            5,
+            8,
+            9,
+            10,
+            12,
+            13,
+            14,
+            15
+          ],
+          "finding": "核对Graph四元组、三类图形、Verifier、Loop/Graph对照及引述成本；旧卡片已改为标准单行问答。"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "created_at": "2026-10-14T23:52:07-07:00",
+    "source_capture_id": "capture-001",
+    "input": {
+      "path": "RAW.pdf",
+      "sha256": "3199461ead59ef460fd28ee4dbe3c7cb4c71cdb7a1f716878b46e5010968bc13"
+    },
+    "output": {
+      "path": "MD.md",
+      "sha256": "24af48841dadf982d30ff654c35d77fb61d67841a99438eca4277b1d8aae9606"
+    },
+    "extractor": "pypdf 6.10.0",
+    "raw_character_preservation": "Raw extracted text; no Unicode normalization in MD; layout and image text are not transcribed",
+    "page_numbering": "physical_pages_1_based",
+    "status": "text_layer_conversion_completed",
+    "verification_status": "all text pages and all thumbnails read; detail image scope recorded separately",
+    "pages": [
+      {
+        "page": 1,
+        "md_start_line": 10,
+        "md_end_line": 34,
+        "text_layer_sha256": "3e0f766dbaeaecedb7b0d0b980a7827be94963a998bc0c936a99e5eb5abfddb1",
+        "text_layer_char_count": 944
+      },
+      {
+        "page": 2,
+        "md_start_line": 42,
+        "md_end_line": 63,
+        "text_layer_sha256": "e9f3d8272e99b07cec605ed0b997fa528235a3acba48b7091a8b22208860ca20",
+        "text_layer_char_count": 855
+      },
+      {
+        "page": 3,
+        "md_start_line": 71,
+        "md_end_line": 101,
+        "text_layer_sha256": "9814eb4b0ce92fb65b9afbda69a077076ea39ab079e4982245ae3fc7c200036b",
+        "text_layer_char_count": 887
+      },
+      {
+        "page": 4,
+        "md_start_line": 109,
+        "md_end_line": 130,
+        "text_layer_sha256": "0c1f5171c294ba82540f916481dfc76d46c20a82b926c9bcfb636a66c2035c49",
+        "text_layer_char_count": 667
+      },
+      {
+        "page": 5,
+        "md_start_line": 138,
+        "md_end_line": 162,
+        "text_layer_sha256": "975ba2f1bc1fd49fde0c3149dd848c58523921605648e955ffa8ebb1db4bd77e",
+        "text_layer_char_count": 935
+      },
+      {
+        "page": 6,
+        "md_start_line": 170,
+        "md_end_line": 214,
+        "text_layer_sha256": "d34767936755d05dd778e84fa5cbe6e42e5073209179aa2807bfd9033b65db75",
+        "text_layer_char_count": 779
+      },
+      {
+        "page": 7,
+        "md_start_line": 222,
+        "md_end_line": 246,
+        "text_layer_sha256": "95c87ea684424be4f2be03622fa9e11abe85597c95c8348dd63d5d2ec7addc8b",
+        "text_layer_char_count": 748
+      },
+      {
+        "page": 8,
+        "md_start_line": 254,
+        "md_end_line": 282,
+        "text_layer_sha256": "b0e0b33984b256a199d6f9dfbe30ed0dac3896a375b4c7f86bfc64f90ff3c800",
+        "text_layer_char_count": 935
+      },
+      {
+        "page": 9,
+        "md_start_line": 290,
+        "md_end_line": 310,
+        "text_layer_sha256": "dccc347f988d0b5c2ff563a5b953b5ae60bf52479a70515d30e4231369dcbf57",
+        "text_layer_char_count": 666
+      },
+      {
+        "page": 10,
+        "md_start_line": 318,
+        "md_end_line": 343,
+        "text_layer_sha256": "d562248254decfa04be8859c27560627df2f18a2d6268abfec2371a3c945d926",
+        "text_layer_char_count": 768
+      },
+      {
+        "page": 11,
+        "md_start_line": 351,
+        "md_end_line": 394,
+        "text_layer_sha256": "6bd8c5d18d0c11fd09cc1796e56775b358282e261b84ec590285f8431ee2eef7",
+        "text_layer_char_count": 1014
+      },
+      {
+        "page": 12,
+        "md_start_line": 402,
+        "md_end_line": 426,
+        "text_layer_sha256": "88e0723932e8ec9d50aa5ae0e1e9b6d79ee5ec0a79862059132af97e86e7b22d",
+        "text_layer_char_count": 927
+      },
+      {
+        "page": 13,
+        "md_start_line": 434,
+        "md_end_line": 469,
+        "text_layer_sha256": "4c9baa41d7127f9db278e3de1cd63e99ab9339d907a9f1f79a831629a1f1e60a",
+        "text_layer_char_count": 1299
+      },
+      {
+        "page": 14,
+        "md_start_line": 477,
+        "md_end_line": 491,
+        "text_layer_sha256": "738be01e31eedd9ba0cddbe84ef958ed914869bda740a7075dcd9cc2a8c6fb0b",
+        "text_layer_char_count": 328
+      },
+      {
+        "page": 15,
+        "md_start_line": 499,
+        "md_end_line": 498,
+        "text_layer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text_layer_char_count": 0
+      }
+    ],
+    "review_scope": {
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "thumbnail_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detail_pages_reviewed": [
+        2,
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        13
+      ]
+    },
+    "quality_issues": [
+      {
+        "issue": "p.14包含引用/评论，p.15无正文内容。",
+        "pages": [
+          14,
+          15
+        ],
+        "impact": "主体结论在p.13，引用和评论未作为作者事实纳入。"
+      }
+    ]
+  },
+  "migration": {
+    "status": "migrated_verified",
+    "copied_at": "2026-10-14T23:52:07-07:00",
+    "removed_at": "2026-10-14T23:54:25-07:00",
+    "files": [
+      {
+        "original_path": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程/Loop Engineering 已死？ 一文带你了解Graph Engineering.pdf",
+        "destination_path": "RAW.pdf",
+        "sha256": "3199461ead59ef460fd28ee4dbe3c7cb4c71cdb7a1f716878b46e5010968bc13",
+        "copied_at": "2026-10-14T23:52:07-07:00",
+        "removed_at": "2026-10-14T23:54:25-07:00"
+      }
+    ],
+    "verified_at": "2026-10-14T23:54:24-07:00"
+  },
+  "knowledge_integration": {
+    "updated_at": "2026-10-23T08:22:30-07:00",
+    "topics": [
+      "../../20_topics/Agent工程循环.md"
+    ],
+    "verification_status": "source_bound_synthesis_pending_personal_review",
+    "personal_records_modified": false,
+    "synthesis_audit": "../../知识整理核验_20261023.json",
+    "synthesis_date": "2026-10-23"
+  },
+  "ai_note": "AI_Loop到Graph Engineering.md",
+  "ai_note_status": "completed",
+  "ai_note_updated_at": "2026-10-16"
+}

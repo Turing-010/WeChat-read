@@ -1,0 +1,31 @@
+{
+  "directory": "/Users/iw/Documents/WeChat_read/00_inbox/腾讯技术工程",
+  "requested": null,
+  "scope": {
+    "mode": "year",
+    "year": 2026
+  },
+  "before": {},
+  "saved": [],
+  "version": 2,
+  "cursor": {
+    "last_success": null,
+    "next_article": null,
+    "boundary": null
+  },
+  "timing": {
+    "totals": {},
+    "articles": {},
+    "active": {
+      "name": "open",
+      "started_at": 1792490580.408948,
+      "article_id": null
+    },
+    "unmeasured": [],
+    "waits": {},
+    "awaiting_title": true,
+    "unassigned": {}
+  },
+  "current_id": null,
+  "current": null
+}
