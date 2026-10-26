@@ -3,14 +3,23 @@
 ._*
 .Spotlight-V100/
 .Trashes/
+Thumbs.db
+desktop.ini
+
+# Inbox stays local until materials are archived
+/00_inbox/
 
 # Local Obsidian layout, cache, and deleted files
 .obsidian/workspace*.json
 .obsidian/cache/
+.obsidian/.cache/
+.obsidian/logs/
 .obsidian/graph.json
+.obsidian/sync.json
 .trash/
 
-# Obsidian Git authentication IPC files (never upload credentials)
+# Device-specific Git settings and authentication IPC files
+.obsidian/plugins/obsidian-git/data.json
 .obsidian/plugins/obsidian-git/.git_credentials_input*
 .obsidian/plugins/obsidian-git/obsidian_askpass.sh
 
