@@ -1,0 +1,411 @@
+{
+  "schema": "llm_wiki_topic_trial_v1",
+  "date": "2026-10-27",
+  "timezone": "America/Los_Angeles",
+  "status": "completed_for_document_trial",
+  "topic": "20_topics/Agent任务恢复.md",
+  "scope": {
+    "archived_articles_before": 301,
+    "archived_articles_after": 301,
+    "topic_sources_before": 14,
+    "topic_sources_after": 15,
+    "newly_associated_article": "art-0094",
+    "newly_archived_articles": 0,
+    "focused_text_review": {
+      "art-0094": [
+        1,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "art-0009": [
+        5,
+        6,
+        7,
+        11,
+        12,
+        13
+      ],
+      "art-0324": [
+        3,
+        8,
+        21
+      ],
+      "art-0040": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "art-0167": [
+        5
+      ]
+    },
+    "reviewed_physical_page_segments": 28,
+    "new_visual_review": false,
+    "runtime_fault_injection": false,
+    "user_learning_assessed": false
+  },
+  "baseline": {
+    "git_commit": "2f0b227b380a8199e76f93bd5cb3171c6f8cc7d4",
+    "working_tree_was_clean": true,
+    "files_hashed": 1939,
+    "snapshot_sha256": "212faf4f14a8c735f0d71f36871260c163664c65a3b4783bd2c4a4d9d1901595",
+    "topic_sha256": "5f8a5fd9ecfbfed2198fe75f3a594178714bcaf2c2e2d4733b2317d2fdf5cf9f",
+    "verification": {
+      "articles": 301,
+      "hashes": 1108,
+      "local_links": 9666,
+      "errors": [],
+      "warnings": []
+    },
+    "excluded": "Git internals, Obsidian application state, Python caches and .DS_Store"
+  },
+  "changes": [
+    {
+      "path": "20_topics/Agent任务恢复.md",
+      "before_sha256": "5f8a5fd9ecfbfed2198fe75f3a594178714bcaf2c2e2d4733b2317d2fdf5cf9f",
+      "after_sha256": "02828b763b040af11665b2ef3d26e2ac6b41c9ab9e38186714df42624000acde"
+    },
+    {
+      "path": "README.md",
+      "before_sha256": "f278dfefc59becaacd298babf7675fa26cda7da15218b6f171a63110cf91f75f",
+      "after_sha256": "c0f4899871780bf91eead7b20abd20d4d91bf49d481506577b8ad617eae6e489"
+    },
+    {
+      "path": "腾讯技术工程/可恢复的分层任务记忆+26.5.22/META.json",
+      "before_sha256": "fd5bec3a3312520cdc3b8b393d04d52ca31c53bff41b5770f341403f08998401",
+      "after_sha256": "caae04add1de15e3042048f19674efbf4d8709033390f00fe4eef280f7974d81"
+    }
+  ],
+  "new_files": [
+    "LLMWiki试运行核验_20261027.json"
+  ],
+  "protection": {
+    "unchanged_baseline_files": 1936,
+    "unexpected_changes": [],
+    "pdf_files_byte_identical": 311,
+    "personal_blocks_byte_identical": 63,
+    "target_topic_personal_blocks_byte_identical": 2,
+    "article_metadata_changed_only_in": "knowledge_integration for art-0094",
+    "all_existing_learning_and_practice_files_byte_identical": true
+  },
+  "verification": {
+    "articles": 301,
+    "hashes": 1108,
+    "local_links": 9692,
+    "errors": [],
+    "warnings": []
+  },
+  "markdown_anchor_checks": {
+    "checked": 8,
+    "errors": [],
+    "targets": [
+      {
+        "from": "20_topics/Agent任务恢复.md",
+        "target": "#检查点与人工中断怎样合作"
+      },
+      {
+        "from": "20_topics/Agent任务恢复.md",
+        "target": "#检查点与人工中断怎样合作"
+      },
+      {
+        "from": "20_topics/Agent任务恢复.md",
+        "target": "#文件沙箱与客户端恢复的边界"
+      },
+      {
+        "from": "20_topics/Agent任务恢复.md",
+        "target": "#检查点何时真正落下"
+      },
+      {
+        "from": "20_topics/Agent任务恢复.md",
+        "target": "#上下文压缩后怎样找回任务依据"
+      },
+      {
+        "from": "20_topics/Agent任务恢复.md",
+        "target": "#提交成功但回执丢了"
+      },
+      {
+        "from": "20_topics/Agent任务恢复.md",
+        "target": "#当前核查与验证练习"
+      },
+      {
+        "from": "README.md",
+        "target": "20_topics/Agent任务恢复.md#试运行记录"
+      }
+    ]
+  },
+  "source_identity_checks": [
+    {
+      "article_id": "art-0306",
+      "capture_id": "capture-001",
+      "raw": "腾讯技术工程/Agent框架与Workflow选型+25.10.20/RAW.pdf",
+      "raw_sha256": "9935f24bebb9a737021b325038350c307e419e020ece0450813f5447594836ef",
+      "markdown": "腾讯技术工程/Agent框架与Workflow选型+25.10.20/MD.md",
+      "markdown_sha256": "aa4b0d47c9c79ce2ae8bbb8e58f696e442bb7e248e9b71b3776dd9d1daad7c5d"
+    },
+    {
+      "article_id": "art-0330",
+      "capture_id": "capture-001",
+      "raw": "腾讯技术工程/LangGraph长短期记忆实践+25.12.8/RAW.pdf",
+      "raw_sha256": "1a21850d296c77d82a54f7a391169518cf35795c20aff77c21bdea20b4c5a4d8",
+      "markdown": "腾讯技术工程/LangGraph长短期记忆实践+25.12.8/MD.md",
+      "markdown_sha256": "d3bf338ab7628f7ba5a4604744bb65da831527a02eed70447c1b5d6ed577efa0"
+    },
+    {
+      "article_id": "art-0324",
+      "capture_id": "capture-001",
+      "raw": "腾讯技术工程/LangGraph人工干预与恢复+25.12.15/RAW.pdf",
+      "raw_sha256": "170284a94557ab3e876277fa83c13118a27a963e52086767fd90e4dfe48078d1",
+      "markdown": "腾讯技术工程/LangGraph人工干预与恢复+25.12.15/MD.md",
+      "markdown_sha256": "eee82f9ea1a7d0b75b55069646ad04d8ca7cf660bd452a0c685486fadd4aceba"
+    },
+    {
+      "article_id": "art-0094",
+      "capture_id": "capture-001",
+      "raw": "腾讯技术工程/可恢复的分层任务记忆+26.5.22/RAW.pdf",
+      "raw_sha256": "8f52fc0eae966480db4957d81bf0b16760650dac241b016845b87edfb36ac678",
+      "markdown": "腾讯技术工程/可恢复的分层任务记忆+26.5.22/MD.md",
+      "markdown_sha256": "f0faf912d0766263b14d59a73dc6856210c54f70f5bbaa06a6344bd665062078"
+    },
+    {
+      "article_id": "art-0203",
+      "capture_id": "capture-001",
+      "raw": "大淘宝技术/数据需求24h交付Skill+26.7.19/RAW.pdf",
+      "raw_sha256": "125e83e5d7f7ac9f3d0733008a4b71f4b728977233c2b281f8d6d3c14de6f71d",
+      "markdown": "大淘宝技术/数据需求24h交付Skill+26.7.19/MD.md",
+      "markdown_sha256": "6dcf39acece626437e26456454f57c4b3ebcf3df02d835e10a0a988c61f0f96c"
+    },
+    {
+      "article_id": "art-0170",
+      "capture_id": "capture-001",
+      "raw": "腾讯技术工程/腾讯Omega AI BI架构+26.8.3/RAW.pdf",
+      "raw_sha256": "9920015728278d6029bdbb9086bc06c73b265d7a6bb202fca95942829264d22a",
+      "markdown": "腾讯技术工程/腾讯Omega AI BI架构+26.8.3/MD.md",
+      "markdown_sha256": "922a03a4e13b5a4ade7031258c515b30de33b23339247f01a93ab55de0c4f406"
+    },
+    {
+      "article_id": "art-0142",
+      "capture_id": "capture-001",
+      "raw": "腾讯技术工程/CubeSandbox 0.7.0+26.8.31/RAW.pdf",
+      "raw_sha256": "efbb4c642cee4da1db06730b303776c3fc27ee34f73338a649fd4a313c450cce",
+      "markdown": "腾讯技术工程/CubeSandbox 0.7.0+26.8.31/MD.md",
+      "markdown_sha256": "d6839f56e8a257fb1ef7736847de4d73194af5100aedb3d4d8dca711c26da9b2"
+    },
+    {
+      "article_id": "art-0003",
+      "capture_id": "capture-002",
+      "raw": "腾讯技术工程/LLM到Harness+26.9.7/RAW_补采001.pdf",
+      "raw_sha256": "74c3d75a4b8886730aecc02c70f30761ce1ff4abc83141efe96becf2dd1af27d",
+      "markdown": "腾讯技术工程/LLM到Harness+26.9.7/MD_补采001.md",
+      "markdown_sha256": "15a099bb3710c24bf7d5a83b1168179aea22cadb10d994898c6713771f75dbbb"
+    },
+    {
+      "article_id": "art-0167",
+      "capture_id": "capture-001",
+      "raw": "腾讯技术工程/Kuikly远程控制DSH+26.9.8/RAW.pdf",
+      "raw_sha256": "91395dc4c190712fff19e9d801b9563713c07e6a4770e122ca77bd4bd3120f96",
+      "markdown": "腾讯技术工程/Kuikly远程控制DSH+26.9.8/MD.md",
+      "markdown_sha256": "035882a5e441a89eeee6142007ad05e1aa9903f34f4f47b761ee750199fa6fca"
+    },
+    {
+      "article_id": "art-0009",
+      "capture_id": "capture-001",
+      "raw": "大淘宝技术/长程任务断点续传+26.9.9/RAW.pdf",
+      "raw_sha256": "3afc2dfe6495f215897f26e52e4eb6658c8518b512b1a62f39663fadd8e1684b",
+      "markdown": "大淘宝技术/长程任务断点续传+26.9.9/MD.md",
+      "markdown_sha256": "5dec371e89ca7236bacc24ed2cdd5322cc79968b15f162da398e756039c20015"
+    },
+    {
+      "article_id": "art-0114",
+      "capture_id": "capture-001",
+      "raw": "腾讯技术工程/WorkBuddy使用技巧+26.9.9/RAW.pdf",
+      "raw_sha256": "19e2cdf8ba6819a107a8462a04117103de8c874d48b74d524c3601d5506b8ce2",
+      "markdown": "腾讯技术工程/WorkBuddy使用技巧+26.9.9/MD.md",
+      "markdown_sha256": "d0091c5da7e9135776fdd0a56897035409d61ca5c193b99084390b0a7cac4cce"
+    },
+    {
+      "article_id": "art-0040",
+      "capture_id": "capture-001",
+      "raw": "阿里技术/垂类生产级Agent落地+26.9.16/RAW.pdf",
+      "raw_sha256": "0bb45916b95940383ffa2f8c5bd93f86544c10ced9b8ae3afedb3edbb3c56eb9",
+      "markdown": "阿里技术/垂类生产级Agent落地+26.9.16/MD.md",
+      "markdown_sha256": "930a1912cab62d1ec106c601f3759676d6f4431f7002b459a9022df5113e063c"
+    },
+    {
+      "article_id": "art-0013",
+      "capture_id": "capture-001",
+      "raw": "大淘宝技术/Loop工程循环+26.9.20/RAW.pdf",
+      "raw_sha256": "bfc3870b4b6c50d35c27574df6d869ef7eb53296ddc868c69193a16f4c49f498",
+      "markdown": "大淘宝技术/Loop工程循环+26.9.20/MD.md",
+      "markdown_sha256": "6a486859e68112cb9027c75987024ff6e572db0975c27744c15669f71cedcec2"
+    },
+    {
+      "article_id": "art-0051",
+      "capture_id": "capture-001",
+      "raw": "阿里技术/本地生活分析Agent实践+26.9.30/RAW.pdf",
+      "raw_sha256": "87bf8dae6295fc95637c9837f97f74a9a0bda25a166ece5de316e8cbc335cb30",
+      "markdown": "阿里技术/本地生活分析Agent实践+26.9.30/MD.md",
+      "markdown_sha256": "86d5fb0e114a6857123f769a00df7671340e156bbb972a87e96cca73c85d5b4d"
+    },
+    {
+      "article_id": "art-0184",
+      "capture_id": "capture-001",
+      "raw": "大淘宝技术/会场Agent Harness+26.10.19/RAW.pdf",
+      "raw_sha256": "79592d6ccce600636a8ab601fb325e8831150dce3c3e45b9823ceab30dcc3c53",
+      "markdown": "大淘宝技术/会场Agent Harness+26.10.19/MD.md",
+      "markdown_sha256": "edca1892f07513d3eaf50420a8170da687bb1a2e78d016ef590c2d2e8fde863d"
+    }
+  ],
+  "query_review": {
+    "method": "同一编辑AI对旧稿与更新稿逐题进行内容核对；非独立盲测，未测时延、Token或用户掌握程度。",
+    "questions": [
+      {
+        "id": "Q1",
+        "question": "有thread_id为何重启后仍找不回任务",
+        "before": "检查点与人工中断怎样合作",
+        "after": "检查点与人工中断怎样合作",
+        "result": "保留既有解释并复核官方说明",
+        "sources": [
+          "art-0330",
+          "https://docs.langchain.com/oss/python/langgraph/persistence"
+        ],
+        "before_section_sha256": "3cb28d707e0f24c4e1129b1e5739e869a13012fac9ba4aaa665ec90bbe97d801",
+        "after_section_sha256": "73752ac8ac8e52035629f84030a92e09e3a1293c002b59d55cfed1cf87b1fc85"
+      },
+      {
+        "id": "Q2",
+        "question": "人工批准后从哪一行继续",
+        "before": "检查点与人工中断怎样合作",
+        "after": "当前核查与验证练习",
+        "result": "保留节点重跑解释，明确原文不同表述的取舍",
+        "sources": [
+          "art-0324 p.3,8,21",
+          "https://docs.langchain.com/oss/python/langgraph/interrupts"
+        ],
+        "before_section_sha256": "3cb28d707e0f24c4e1129b1e5739e869a13012fac9ba4aaa665ec90bbe97d801",
+        "after_section_sha256": "083b677c12d1c486dc79e4d9ac58395f87e2f51fa92e8dd6ecad36200a527e1a"
+      },
+      {
+        "id": "Q3",
+        "question": "手机重连是否需要重发任务",
+        "before": "跨篇对照：恢复文件、沙箱和连接并非同一能力",
+        "after": "文件沙箱与客户端恢复的边界",
+        "result": "保留既有解释并增加问题入口",
+        "sources": [
+          "art-0167 p.5"
+        ],
+        "before_section_sha256": "f4b4ca1c82489688556c90efe80f2844bee5a331ab2cd04fad3c4df9d00988c0",
+        "after_section_sha256": "f4b4ca1c82489688556c90efe80f2844bee5a331ab2cd04fad3c4df9d00988c0"
+      },
+      {
+        "id": "Q4",
+        "question": "数据库后端是否足以保证中途崩溃恢复",
+        "before": "检查点与人工中断怎样合作",
+        "after": "检查点何时真正落下",
+        "result": "补充写入时机与三种durability模式",
+        "sources": [
+          "https://docs.langchain.com/oss/python/langgraph/checkpointers#durability-modes"
+        ],
+        "before_section_sha256": "3cb28d707e0f24c4e1129b1e5739e869a13012fac9ba4aaa665ec90bbe97d801",
+        "after_section_sha256": "a51ab714d5d307dcc119bcb23a2b9ba47ef78b2622534fe0b2099cc9d3ea6ba4"
+      },
+      {
+        "id": "Q5",
+        "question": "上下文压缩后如何逐级找回原始依据",
+        "before": "恢复的对象至少有四层",
+        "after": "上下文压缩后怎样找回任务依据",
+        "result": "补充metadata、MMD、JSONL、refs的关联机制",
+        "sources": [
+          "art-0094 p.18-22"
+        ],
+        "before_section_sha256": "9eac2b6e33be1e576bb587e4921b8d05420bbb1c88333b59c9d767c1305ecbf3",
+        "after_section_sha256": "41c6314d1994913c4b2b4bc0459e31a8cd35ef7183c719dabe9bdc8e4a59cd8e"
+      },
+      {
+        "id": "Q6",
+        "question": "外部提交可能成功但本地未收到回执怎么办",
+        "before": "最小例子：提交成功但回执丢了",
+        "after": "提交成功但回执丢了",
+        "result": "将既有三分支回答整理成表，补充查询与幂等契约前提",
+        "sources": [
+          "art-0040 p.21-23",
+          "art-0324 p.8"
+        ],
+        "before_section_sha256": "3bf01e868a358d2ffc25f65b54c3832ee26cdf2bf821dc2fc0e108299c33784c",
+        "after_section_sha256": "d6bcc3308ad465080582af56edeec0e73edf33f64bc7759dc6b803140fd58a8a"
+      },
+      {
+        "id": "Q7",
+        "question": "文章能否证明当前SAA安装版本已修复消息顺序",
+        "before": "当前核查与验证练习",
+        "after": "当前核查与验证练习",
+        "result": "保留版本未确认边界，标明既有核查日期与本轮范围",
+        "sources": [
+          "art-0009 p.5,13",
+          "inherited 2026-10-23 upstream review not rerun"
+        ],
+        "before_section_sha256": "09843370370aa86da43bd85cf1de1bbf741fc59c0fbfecf52af2aa0d34cf3f8a",
+        "after_section_sha256": "083b677c12d1c486dc79e4d9ac58395f87e2f51fa92e8dd6ecad36200a527e1a"
+      }
+    ],
+    "existing_answers_retained": 5,
+    "mechanisms_expanded": 2
+  },
+  "official_references": [
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/persistence",
+      "checked_on": "2026-10-27",
+      "local_archive": false
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/interrupts",
+      "checked_on": "2026-10-27",
+      "local_archive": false
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/checkpointers",
+      "checked_on": "2026-10-27",
+      "local_archive": false
+    }
+  ],
+  "source_semantics_review": [
+    {
+      "issue": "上下文逐级找回与进程状态恢复属于不同层",
+      "resolution": "新增art-0094机制与教学边界，未将作者性能指标写成本库效果"
+    },
+    {
+      "issue": "原专题未区分检查点写入模式",
+      "resolution": "补充官方三种模式；外部副作用一致性明确标为跨材料推导"
+    },
+    {
+      "issue": "SAA调度推导可能被误读为作者完整实现",
+      "resolution": "分开文章方案和待验证协议，扫描、租约、心跳标为可选设计"
+    },
+    {
+      "issue": "原文概括与节点重跑的具体语义不同",
+      "resolution": "采用art-0324 p.8并与官方Interrupts说明交叉核对"
+    },
+    {
+      "issue": "首次链接核验发现一处新增路径漏字",
+      "resolution": "按art-0324身份与META默认RAW路径修正；最终全库核验通过"
+    }
+  ],
+  "limits": [
+    "本次完整交付的是专题文档试运行，未运行真实Agent恢复实验。",
+    "编辑者内容核对不证明问答性能或用户学习效率已提高。",
+    "在线官方文档未本地归档，落地仍需核对项目使用版本。",
+    "原文既有缺图、代码截断和指标口径问题保留；未扩大原文核验范围。",
+    "SAA首个包含修复的发行版本与具体环境回归结果仍未确认。"
+  ]
+}
