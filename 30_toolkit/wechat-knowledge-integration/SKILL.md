@@ -1,107 +1,103 @@
 ---
 name: wechat-knowledge-integration
-description: Use when integrating WeChat public-account PDFs and AI Markdown summaries into a local knowledge library, batch-generating or upgrading 10-section technical study notes (AI_*.md) from MD.md/RAW.pdf, syncing META.json, deleting confirmed articles, or verifying and repairing local links, note quality gates, and metadata. Does not export articles through the WeChat UI.
+description: Use when organizing WeChat public-account articles crawled by wechatMPtool in 00_inbox/<Account>/, clustering articles into incremental learning themes (themes.json & README.md), generating 10-section technical study notes (AI_精读.md) and guided Q&A notes (NOTE.md) with Opus/Flash, or synthesizing/updating theme review articles (_themes/Txx_*.md) and 20_topics/ with Gemini Argon. Also supports legacy root-level archive verification.
 ---
-# 微信文章入库与学习笔记
+# 微信文章就地管理与四步主题学习工作流
 
-将原文、AI加工、个人记录分开保存，让文章按来源归档、知识按主题关联。适用于本地文件知识库；不引入数据库或后台服务。
+将 `wechatMPtool` 采集的多模态原始数据、Opus 深度精读构建、Gemini Flash 互动解惑与 Gemini Argon 主题综述有机结合，在 `00_inbox/<公众号>/` 内实现**零搬家就地闭环（In-Place Learning）**与**持续增量演进**。
 
-## 先确定本库约定
+## 一、 核心目录约定（`00_inbox` 就地架构）
 
-用户指定的资料库优先；此个人技能的常用库为 `/Users/iw/Documents/WeChat_read`。先读目标库的 `agent.md`，再读相关 `META.json`、模板及将要修改的文件。遵守当前目录约定，不将别的库的结构强加过来。
+常用库路径为 `/Users/iw/Documents/WeChat_read`。执行前先读根目录 [agent.md](../../agent.md) 及目标公众号下的 `themes.json` 与 `README.md`。
 
-当前常用库的文章平铺为：
+**不再向根目录各公众号文件夹搬家复制**。所有新采集文章直接保存在 `00_inbox/<公众号>/<文章原标题>/` 下，单篇目录及公众号级文件职责如下：
 
-| 文件 | 职责 |
-| --- | --- |
-| `RAW.pdf` | 原PDF，校验字节后保留 |
-| `MD.md` | 按PDF物理页码转写文本；图表和布局的限制显式说明 |
-| `AI_短标题.md` | 导入的总结或明确要求新生成／重写的10节技术精读学习笔记 |
-| `META.json` | 永久文章ID、来源、采集与加工记录、质量和实际文件路径 |
-| `NOTE.md` | 已有本人记录；保持原样，按本库规则按需创建 |
+| 位置 / 文件 | 职责说明 |
+| :--- | :--- |
+| `00_inbox/<公众号>/README.md` | 由 `30_toolkit/generate_inbox_readme.py` 自动生成的**主题学习工作台与全量索引** |
+| `00_inbox/<公众号>/themes.json` | 公众号级**主题聚类状态库**（记录主题划分、推荐学习顺序、是否已纳入综述、非技术跳过项） |
+| `00_inbox/<公众号>/_themes/Txx_*.md` | 由 **Gemini Argon** 生成并随新文章持续迭代的**主题综述文章** |
+| `<文章目录>/<原标题>.pdf` | **原始基准 PDF**（人类阅读、视觉架构图与物理页码 `p.X` 的唯一基准，只读） |
+| `<文章目录>/content.txt` & `*.html` | `wechatMPtool` 采集的完整文本与网页（辅助 AI 零截断读取长代码块，补齐 PDF 排版裁切） |
+| `<文章目录>/metadata.json` | 官方 `publish_time`、完整标题、作者、微信原文 URL |
+| `<文章目录>/AI_精读.md` | **Opus** 初次深度理解构建的 **10 节标准技术精读笔记** |
+| `<文章目录>/NOTE.md` | **Opus** 生成的 3 道费曼导读追问 + **Gemini Flash** 快速解惑沉淀 + 本人思考记录 |
 
-文章目录为“公众号／短标题+年.月.日”，未知发布日期用“日期未知”。当前库不创建文章README、LEARNING.md、source或run子目录。同篇复用原article_id；不同文章在全库确认ID不重复后分配。
+> **历史存量兼容**：根目录旧公众号文件夹（`大淘宝技术/`、`腾讯技术工程/`、`阿里技术/`、`数字生命卡兹克/`，共 301 篇）作为只读旧档保留，`generate_inbox_readme.py` 会自动比对标题/URL 并在 `00_inbox` 索引中挂载 `[🔗旧档总结]`。
 
-## 先筛选，再加工与归档
+---
 
-默认适用于后续所有公众号批次。先读原标题、导语和正文结构，必要时查看页图，按正文实质判定；不能只看标题、公众号或AI总结。详细规则见目标库`agent.md`的“入库前内容筛选”；本人明确另行指定保留的材料按当次要求处理。
+## 二、 四步闭环操作规程
 
-- **纳入**：主体讲解技术原理、具体实现或工程实践，能定位机制、实现路径或真实问题的约束、解决过程与验证依据。无需强求每篇都有代码；概念推导、架构设计、排障和性能分析可以纳入。
-- **排除**：活动福利与招募宣传、生活/人物访谈、漫画、作品展示与功能合集、观点杂谈或趋势预测。仅提到AI、代码、程序员或技术名词，不构成纳入依据；不为这些内容生成笔记、分配归档ID、导入下载总结或补充主题知识，也不加入正式README。
-- **边界**：正文主体有实质原理或工程过程的文章，可忽略附带宣传；纯作品截图、产品功能宣传、经验口号和主观期待仍排除。无法判断时列为待判，先留原位置，不用批量生成笔记来代替筛选。
+### 第一步：收集（`wechatMPtool`）
+爬虫采集的公众号文件夹直接存放在 `00_inbox/<公众号>/` 下，保持原始文件结构不变。
 
-在本批处理记录或交付清单中列明纳入、排除和待判的原标题、理由与正文依据。排除和待判材料默认保留在inbox或下载原位置；自动移除原件仍只适用于已核验归档的纳入文章。本人明确要求删除时才按指定范围删除。这项规则不触发既有全库的追溯清理。
+### 第二步：整理（增量扫描、主题聚类与 `README` 索引更新）
+1. **扫描新增未归类文章**：
+   ```bash
+   python3 30_toolkit/generate_inbox_readme.py 00_inbox/<公众号> --scan-new
+   ```
+2. **去噪与增量主题路由（更新 `themes.json`）**：
+   - 读取新增文章的 `metadata.json` 与 `content.txt` 前段导语；
+   - 将峰会宣传、参会指南、放假通知、社区招募等非技术内容加入 `themes.json` 的 `skipped` 列表（保留原文件夹，在 `README.md` 底部折叠）；
+   - 将实质技术文章按核心工程问题归入既有主题 `T01`、`T02`…（或开辟新主题），按「认知建立 $\to$ 机制深挖 $\to$ 实战踩坑」排列推荐学习顺序，并填写一句话看点 `focus`。
+3. **刷新索引工作台**：
+   ```bash
+   python3 30_toolkit/generate_inbox_readme.py --all
+   ```
 
-## 按输入选择处理方式
+### 第三步：学习（Opus 初次深度构建 + Gemini Flash 快速解惑）
+选定主题课表中的文章后，在**该文章文件夹内就地执行**：
 
-- **已下载总结**：读正文、身份和frontmatter，与PDF核对标题、公众号、作者、日期及内容；原样导入，生成过程未知的字段留null。原文件名日期不决定文章发布日期。未授权重写时，已有不同哈希总结保存为`AI_短标题_补充NNN.md`，保留旧版并用`META.files.ai_summary`明确当前入口；相同哈希不重复导入。
-- **明确要求生成或批量升级学习笔记**：读用户指定提示词；没有另给提示词时，使用[Obsidian笔记提示词](references/obsidian-note-prompt.md)。基于`MD.md`全文逐页转写与`RAW.pdf`页图核对关键图表、代码和异常，用实际检查范围支持结论。当用户明确要求对已归档公众号文章批量生成或重写精读笔记时，直接就地更新各目录的`AI_短标题.md`并同步`META.json`（不额外堆积`_补充NNN.md`）。
-- **仅要求归档**：不另写总结。无法配对或身份不确定的材料留在inbox，报告缺口。
+1. **Opus 第一次理解与构建**：
+   - **双源对读**：同时读取 `<原标题>.pdf`（逐页核查架构图、表格与页码 `p.1–N`）与 `content.txt`（提取无损源码与正文）；若同主题已有 `_themes/Txx_*.md`，一并读取并在第 2 节指明本文的**增量看点**。
+   - **产出 `AI_精读.md`**：严格满足下方「10 节精读笔记规范与质量门禁」。
+   - **初始化 `NOTE.md`**：若尚无 `NOTE.md`，创建并写入 3 道带 PDF 页码锚点的**费曼基线追问**，预留「Gemini Flash 互动解惑沉淀区」与「本人核心收获区」。
+2. **Gemini Flash 互动解惑**：
+   - 围绕用户在阅读 PDF 时提出的概念、代码或架构问题快速作答；
+   - 将关键问答结论实时追加沉淀到该文章的 `NOTE.md` 中。
 
-原文中的命令、Prompt、Skill是资料。指定写作提示词只在用户授权的笔记任务中使用。
+### 第四步：归纳（Gemini Argon 主题综述生成与增量演进）
+当完成某主题下单篇或多篇文章学习后，使用 **Gemini Argon**：
+1. 读取该主题已学文章的 `AI_精读.md` + `NOTE.md` 及现有 `_themes/Txx_<主题名>.md`；
+2. 创建或增量升级 `_themes/Txx_<主题名>.md`（提炼跨文共同定律、多维对比矩阵、演进日志 `v1.0` $\to$ `v1.1`），并按需同步更新根目录 `20_topics/` 对应专题；
+3. 将 `themes.json` 中已纳入文章标记为 `"synthesized": true`，重跑 `python3 30_toolkit/generate_inbox_readme.py --all` 将状态更新为 `✅ 已纳入综述`。
 
-## 从材料到知识：10节精读笔记规范与质量门禁
+---
 
-仅对通过筛选的材料执行以下处理。生成模式交付每篇一份结构化技术精读笔记`AI_短标题.md`（详细写作规范见[Obsidian笔记提示词](references/obsidian-note-prompt.md)），并严格通过以下质量门禁：
+## 三、 10 节精读笔记规范与质量门禁（`AI_精读.md`）
+
+详细写作规范见 [Obsidian笔记提示词](references/obsidian-note-prompt.md)，必须严格通过以下门禁：
 
 1. **YAML Frontmatter 与唯一 H1**：
-   - 包含 `title`、`source`、`date`（采用确认的 `YYYY-MM-DD` 发布日期；若未知且采用生成日期须在校对报告注明，且 `META.published_at` 仍为 `null`）、`type`（如 `"技术精读"` 或具体主类型）、`tags`、`status: "待复习"`。
-   - 代码块之外全篇严格只保留 **1 个一级标题 `# 标题`**（`h1_count == 1`）。
+   - 包含 `title`、`source`、`date`（`YYYY-MM-DD` 发布日期）、`type: "技术精读"`、`tags`、`status: "待复习"`；
+   - 代码块之外全篇严格只保留 **1 个一级标题 `# 标题`**。
 2. **标准 10 大编号二级章节（`## 1.` 至 `## 10.`）**：
    - `## 1. TL;DR`：3–5 句浓缩核心痛点、关键机制、架构演进与量化收益。
-   - `## 2. 问题定义与背景`（或 `## 2. 核心概念`）：界定真实痛点、前置概念与边界约束。
-   - `## 3. 知识框架`：必须包含至少一张 `mermaid`（`flowchart` 或 `mindmap`）全景架构图。
-   - `## 4. 核心内容拆解`（或 `## 4. 关键要点与机制详解`）：按演进阶段或架构分层讲透“问题 $\to$ 机制 $\to$ 为什么有效 $\to$ 代价与边界”，保留核心公式、配置与命令细节。
-   - `## 5. 数据速查表`：采用 `| 指标 | 原文数值 | 语境 / 条件 |` 结构化汇总全部关键实测数据、超参数与对比基准。
-   - `## 6. 踩坑与教训 / 可迁移的设计原则`：采用 `| 错误做法 | 失败表现或原因 | 原文应对（可迁移的设计原则） |` 提炼工程防呆护栏。
-   - `## 7. 记忆锚点`：1–2 条高辨识度口诀或机制公式（助记改写不篡改事实条件）。
-   - `## 8. 复习卡片`：包含 **5–10 条**单行 `问题::答案` 格式闪卡，聚焦机制原理、方案取舍与失败根因。
-   - `## 9. 知识关联`：同时挂载本库真实存在的 `../../20_topics/xxx.md` 相对路径链接与候选 `[[双链]]`。
-   - `## 10. 原文参考资料`：列出原文标题、作者、发布日期及文内引用的开源仓库或论文链接。
-3. **正文零内联页码与文末折叠校对报告（核心约束）**：
-   - **正文零内联页码**：在文末 `> [!note]- 校对报告` 之前的正文、表格、图注和复习卡片中，**严禁出现任何内联页码标注（如 `p.X`、`p.X–Y` 或 `第X页`）**，保持精读笔记正文干净易读。
-   - **底部折叠 `> [!note]- 校对报告`**：统一置于文件最末尾，集中记录各章节页码溯源汇总（`p.X–Y`）、关键数值一致性抽查、以及原文勘误／代码裁切／缺图等质量边界说明。
+   - `## 2. 问题定义与背景`（或 `## 2. 核心概念`）：界定真实痛点、边界约束及主题内增量关系。
+   - `## 3. 知识框架`：必须包含至少一张 `mermaid` 全景架构图。
+   - `## 4. 核心内容拆解`：按演进阶段或架构分层讲透“问题 $\to$ 机制 $\to$ 为什么有效 $\to$ 代价与边界”，利用 `content.txt` 完整保留源码细节。
+   - `## 5. 数据速查表`：结构化汇总全部关键实测数据、参数与对比基准。
+   - `## 6. 踩坑与教训 / 可迁移的设计原则`：采用 `| 错误做法 | 失败表现或原因 | 原文应对（可迁移的设计原则） |` 提炼防呆护栏。
+   - `## 7. 记忆锚点`：1–2 条高辨识度口诀或机制判据。
+   - `## 8. 复习卡片`：**5–10 条**单行 `问题::答案` 格式闪卡。
+   - `## 9. 知识关联`：挂载 `../../20_topics/xxx.md`（相对于旧档）或 `../../../20_topics/xxx.md` / `../../20_topics/xxx.md` 真实相对路径链接、同主题文章链接与候选 `[[双链]]`。
+   - `## 10. 原文参考资料`：列出原标题、作者、发布日期、微信 URL 及本地 PDF / `content.txt` 链接。
+3. **正文零内联页码与文末折叠校对报告**：
+   - 在文末 `> [!note]- 校对报告` 之前的正文中**严禁出现任何内联页码（如 `p.X` 或 `第X页`）**；
+   - 底部统一放置折叠的 `> [!note]- 校对报告`，记录各章节 PDF 页码溯源（`p.X–Y`）、双源互补说明（PDF 图表 + `content.txt` 完整代码）与勘误。
 
-批量生成或重写存量公众号笔记时，可按公众号 `README.md` 倒序编号（`#1`–`#N`）分批推进：先读取每篇 `MD.md` 与 `META.json`（复用已确认的作者、发布日期、`quality_issues` 与 `20_topics` 关联链接），生成笔记后批量校验上述门禁并同步更新 `META.json`。
+---
 
-在`20_topics`对照新旧文章，记录重复、补充、冲突或修正、来源定位和边界；保留本人理解与实践区。`30_toolkit`仅加入本人选定或要求改编／验证的方法，不批量升级作者模板。
-
-## 核验与迁移
-
-先复制并记录原路径及SHA-256，再生成产物和入口。使用`META.json`记录实际输入、提示词校验值、工具、已知模型信息、页图检查范围及质量问题；外部总结放`received_artifacts`，不作为原文capture。生成或重写`AI_短标题.md`后，必须同步更新`META.json`中的：
-- `files.ai_summary`（指向当前 `AI_短标题.md`）
-- `processing.generated_summary`（更新 `path` 与最新 `sha256`）
-- `ai_note`、`ai_note_status: "completed"` 与 `ai_note_updated_at`（记录批次完成日期）
-
-更新根入口和已启用的公众号README。公众号目录只列原标题、AI总结和PDF链接，按`published_at`倒序，未知日期排末尾；以META生成，不手工维护第二套日期。
-
-核验当前路径、ID、校验值、正文与笔记范围、索引、个人文件及链接。检查后再次比较源文件和归档副本，才移除本次已授权、已归档、未变化的原位置文件。材料有缺失可以忠实归档并保留问题；归档字节有效不表示资料完整。失败时保留源文件与已有效保存的产物，按META和哈希续做，不覆盖用户编辑。
-
-## 每次整理或删除后的全库核验与修复
-
-整理、导入、迁移、改名、批量重写笔记、更新主题或删除文章时，先做一次全库只读核验并记录原有问题；完成变更后再次核验全库本地链接、笔记门禁与META，不限于本次公众号。按以下规则处理查出的既有和新增问题，修复后重跑，作为本次任务的必要收尾，无需本人另行要求。常用库的详细规则见其`agent.md`“全库链接与元数据修复”。
-
-- 先读引用上下文、目标META及实际材料，以永久ID、标题、公众号、作者、日期和文件哈希确认归属。查找本库及本次已授权的输入位置；不只凭相似文件名替换，不恢复本人已明确删除的文章。
-- 找到同一归档版本时修正路径；只有同篇其他采集版本可用时，逐项核对所引内容和页码，确认对应后才改链，并同步capture_id、定位、当前默认文件及对应加工／转写记录。不同版本的页数、哈希、核验范围与质量问题不能混用。
-- 找不到对应材料时，清理目录和主题中的失效引用，以及仅由该材料支持的AI归纳；混合段落只移除失去依据的部分。清理META当前文件、采集、输入输出和主题关联中的无效声明；缺失版本可保留为明确标注不可用的历史记录，不继续作为当前入口。原迁移日志及历史original_path不要求仍存在。
-- 保留原文、Prompt／Skill摘录、AI笔记正文和本人记录。本人记录中的失效引用、身份有歧义的候选或不能证明的内容对应，列出待确认，不能擅自删改或用其他文章凑齐链接；不得修改预期哈希来掩盖文件异常。
-- 复核根目录及已启用公众号README、主题来源与元数据一致，公众号仍按发布时间倒序；核对受保护内容未变。交付本次修复／清理数量、全库检查范围和剩余问题；仍有未决错误时明确报告，不能称全库核验通过。核验成功不表示原始材料完整或技术效果已验证。
-
-## 可复用核验工具
-
-脚本使用Python标准库。设`SKILL_DIR`为本技能目录，`KB_ROOT`为本次资料库路径：
+## 四、 常用命令速查
 
 ```bash
-# 1. 全库只读核验（检查本地链接、article_id唯一性、META路径与包含 generated_summary 在内的全部文件 SHA-256）
-python3 "$SKILL_DIR/scripts/kb_tools.py" verify --root "$KB_ROOT"
+# 1. 更新 00_inbox 下全部公众号的 README 学习工作台与索引
+python3 30_toolkit/generate_inbox_readme.py --all
 
-# 2. 校验指定公众号或全库 AI_*.md 的 10 节结构、单 H1、Mermaid、闪卡数与正文零内联页码，并可选同步 META.json
-python3 "$SKILL_DIR/scripts/kb_tools.py" check-notes --account "$KB_ROOT/腾讯技术工程" --sync-meta
+# 2. 增量扫描某个公众号下新爬入、未归入 themes.json 的文章
+python3 30_toolkit/generate_inbox_readme.py 00_inbox/腾讯云开发者 --scan-new
 
-# 3. 预览或更新公众号 README 索引（加 --write 写入）
-python3 "$SKILL_DIR/scripts/kb_tools.py" index --account "$KB_ROOT/腾讯技术工程"
+# 3. （历史旧档维护）只读核验根目录存量 301 篇旧档链接与哈希
+python3 30_toolkit/wechat-knowledge-integration/scripts/kb_tools.py verify --root /Users/iw/Documents/WeChat_read
 ```
-
-`verify`只读检查Markdown本地链接、永久ID、META当前路径及记录的文件哈希（含`captures`、`conversion`、`received_artifacts`与`processing.generated_summary`）；`check-notes`专门检查`AI_*.md`是否符合10节编号结构、唯一H1、Mermaid图、5–10张`::`复习卡片、底部折叠`> [!note]- 校对报告`以及正文零内联页码（加`--sync-meta`可自动同步`META.json`中的`generated_summary.sha256`与`ai_note_status`）。索引命令默认预览，确认本次授权覆盖该公众号后加`--write`更新其README。
-
-重跑工具测试：`python3 "$SKILL_DIR/scripts/test_kb_tools.py"`。最终报告实际处理篇数、入口、未解决问题与迁移结果，不把未渲染的Mermaid或未运行的代码报告为通过。
