@@ -183,9 +183,12 @@ def check_note_content(text, label='note'):
 
 
 def check_notes(target_dir, sync_meta=False, updated_at=None):
-    """Check all AI_*.md notes under an account directory or library root, optionally syncing META.json."""
+    """Check legacy and in-place notes under a library, account, or article directory.
+
+    Only existing legacy META.json files are eligible for metadata synchronization.
+    """
     target_dir = Path(target_dir).resolve()
-    meta_paths = sorted(target_dir.glob('*/META.json')) or sorted(target_dir.glob('*/*/META.json'))
+    meta_paths = sorted(target_dir.rglob('META.json'))
     issues = []
     checked = 0
     synced = 0
@@ -218,6 +221,15 @@ def check_notes(target_dir, sync_meta=False, updated_at=None):
             meta['ai_note_updated_at'] = stamp
             meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
             synced += 1
+
+    # In-place articles use crawler metadata.json/data.json instead of META.json.
+    # Discover their notes directly and leave all source metadata untouched.
+    for note_path in sorted(target_dir.rglob('AI_*.md')):
+        if (note_path.parent / 'META.json').exists() or not note_path.is_file():
+            continue
+        text = note_path.read_text(encoding='utf-8')
+        checked += 1
+        issues.extend(check_note_content(text, note_path.relative_to(target_dir).as_posix()))
     return {'checked_notes': checked, 'synced_meta': synced, 'errors': issues}
 
 
@@ -263,7 +275,7 @@ def main():
     check.add_argument('--baseline', type=Path, help='JSON mapping library-relative paths to sha256')
     check.add_argument('--allow-change', action='append', default=[], help='Explicit baseline exception; repeatable')
     notes = sub.add_parser('check-notes', help='Validate 10-section AI_*.md study notes and optionally sync META.json')
-    notes.add_argument('--account', type=Path, required=True, help='Account folder or library root')
+    notes.add_argument('--account', type=Path, required=True, help='Library root, inbox root, account folder, or article folder')
     notes.add_argument('--sync-meta', action='store_true', help='Update generated_summary sha256 and ai_note_status in META.json')
     notes.add_argument('--updated-at', type=str, default=None, help='Optional YYYY-MM-DD date string for ai_note_updated_at')
     index = sub.add_parser('index', help='Render one account README; dry run unless --write')

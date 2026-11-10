@@ -102,4 +102,35 @@ class KnowledgeToolsTests(unittest.TestCase):
   self.article(note_text=bad_note)
   res=self.mod.check_notes(self.root/'公众号')
   self.assertTrue(any('inline page citations' in e for e in res['errors']))
+ def test_check_notes_accepts_legacy_article_directory(self):
+  article,_=self.article(note_text=VALID_NOTE)
+  self.assertEqual(self.mod.check_notes(article),{'checked_notes':1,'synced_meta':0,'errors':[]})
+ def test_check_notes_finds_inbox_notes_at_each_supported_scope(self):
+  account=self.root/'00_inbox'/'腾讯云开发者'
+  article=account/'文章原标题';article.mkdir(parents=True)
+  (article/'metadata.json').write_text('{"title": "文章原标题"}', encoding='utf-8')
+  (article/'AI_精读.md').write_text(VALID_NOTE, encoding='utf-8')
+  (article/'AI_补充.md').write_text(VALID_NOTE.replace('核心摘要。','核心摘要（p.3）。'), encoding='utf-8')
+  (article/'NOTE.md').write_text('本人想法', encoding='utf-8')
+  for scope in (self.root,self.root/'00_inbox',account,article):
+   with self.subTest(scope=scope.relative_to(self.root)):
+    res=self.mod.check_notes(scope)
+    self.assertEqual(res['checked_notes'],2)
+    self.assertEqual(res['synced_meta'],0)
+    self.assertEqual(len(res['errors']),1)
+    self.assertIn('AI_补充.md',res['errors'][0])
+    self.assertIn('inline page citations',res['errors'][0])
+ def test_sync_meta_preserves_inbox_sources_while_syncing_legacy_note(self):
+  legacy,_=self.article(note_text=VALID_NOTE)
+  article=self.root/'00_inbox'/'腾讯云开发者'/'文章原标题';article.mkdir(parents=True)
+  for name,content in {'metadata.json':'{"title": "文章原标题"}','data.json':'{"publish_time": 0}','NOTE.md':'本人想法','AI_精读.md':VALID_NOTE}.items():
+   (article/name).write_text(content, encoding='utf-8')
+  before={path.name:path.read_bytes() for path in article.iterdir()}
+  res=self.mod.check_notes(self.root,sync_meta=True,updated_at='2026-11-05')
+  self.assertEqual(res,{'checked_notes':2,'synced_meta':1,'errors':[]})
+  self.assertEqual({path.name:path.read_bytes() for path in article.iterdir()},before)
+  updated_meta=json.loads((legacy/'META.json').read_text(encoding='utf-8'))
+  self.assertEqual(updated_meta['ai_note_status'],'completed')
+  self.assertEqual(updated_meta['ai_note_updated_at'],'2026-11-05')
+  self.assertEqual(updated_meta['processing']['generated_summary']['sha256'],sha(legacy/'AI_文章.md'))
 if __name__=='__main__': unittest.main()

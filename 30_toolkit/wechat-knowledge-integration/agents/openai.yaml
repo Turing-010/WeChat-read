@@ -1,4 +1,4 @@
 interface:
-  display_name: "微信文章入库与学习笔记"
-  short_description: "筛选并归档公众号PDF与AI总结，批量生成10节技术精读笔记，核验修复全库链接与META"
-  default_prompt: "使用 $wechat-knowledge-integration 处理本次公众号材料：支持新文章筛选入库，或按10节技术精读规范（含Mermaid框架图、数据速查表、踩坑原则表、单行闪卡、正文零内联页码及底部折叠校对报告）批量生成/升级 AI_*.md 学习笔记，并同步更新 META.json 与全库校验。"
+  display_name: "微信文章就地整理与学习"
+  short_description: "就地组织公众号文章与主题，基于原文带学并区分资料产物和个人理解证据"
+  default_prompt: "使用 $wechat-knowledge-integration，先读资料库 agent.md，复用已有文章与笔记开展本次整理或学习；新文章保留在 00_inbox，资料状态与个人学习证据分开，不代填个人回答。"

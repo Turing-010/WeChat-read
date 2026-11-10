@@ -1,0 +1,198 @@
+{
+  "date": "2026-11-06",
+  "authorization": {
+    "retained": "整个00_inbox，目录名不变",
+    "removed_from_active_library": "四个旧公众号目录和旧20_topics一起移到库外，后续按新原生材料重建",
+    "method": "同一文件系统目录重命名；没有永久删除原件或清空Git历史"
+  },
+  "archive": "/Users/iw/Documents/WeChat_read_历史归档/20261106-072225",
+  "archived": {
+    "article_directories": 301,
+    "pdf_files": 308,
+    "old_topic_files": 32,
+    "directory_files": 1295,
+    "historical_reports": 4,
+    "all_archived_hashes_match_before": true
+  },
+  "inbox_integrity": {
+    "before_files": 6272,
+    "after_files": 6272,
+    "missing": [],
+    "new": [],
+    "modified_navigation_files": [
+      "00_inbox/README.md",
+      "00_inbox/大淘宝技术/README.md",
+      "00_inbox/大淘宝技术/从 AI Friendly 架构到可复制的 AI 迁移能力 - 淘宝直播搜推在线架构升级实践/AI_直播搜推架构迁移_概念导读.md",
+      "00_inbox/腾讯云开发者/README.md",
+      "00_inbox/腾讯云开发者/_themes/T01_Harness工程与确定性验证闭环.md",
+      "00_inbox/腾讯云开发者/themes.json",
+      "00_inbox/腾讯云开发者/一文讲透确定性Harness/AI_精读.md",
+      "00_inbox/腾讯云开发者/边开飞机边换引擎：Harness如何解决验证难题/AI_精读.md",
+      "00_inbox/阿里云云原生/Durable Agent 详解：如何让 Agent 在云端长期稳定运行/AI_精读.md",
+      "00_inbox/阿里云云原生/README.md",
+      "00_inbox/阿里云云原生/_themes/T01_Agent架构与Harness控制.md",
+      "00_inbox/阿里云云原生/_themes/T02_Agent运行时与沙箱.md",
+      "00_inbox/阿里云云原生/_themes/T03_记忆上下文与评估进化.md",
+      "00_inbox/阿里云云原生/_themes/T04_多智能体协作与异步消息.md",
+      "00_inbox/阿里云云原生/_themes/T05_MCP-A2A-Skills资产治理.md",
+      "00_inbox/阿里云云原生/_themes/T06_AI网关安全与成本.md",
+      "00_inbox/阿里云云原生/_themes/T07_Agent全链路可观测与审计.md",
+      "00_inbox/阿里云云原生/_themes/T08_运维语义建模与根因诊断.md",
+      "00_inbox/阿里云云原生/_themes/T09_应用体验与性能观测.md",
+      "00_inbox/阿里云云原生/_themes/T10_消息事件与实时数据系统.md",
+      "00_inbox/阿里云云原生/_themes/T11_云原生服务治理与计算优化.md",
+      "00_inbox/阿里云云原生/_themes/T12_AI研发协同与应用开发.md",
+      "00_inbox/阿里云云原生/themes.json"
+    ],
+    "unchanged_files": 6249,
+    "capture_files_changed": [],
+    "note_files": 3,
+    "note_files_unchanged": true,
+    "theme_article_entries_unchanged": 453
+  },
+  "preserved": [
+    "30_toolkit",
+    "40_learning",
+    "50_practice",
+    "90_templates",
+    ".git",
+    ".obsidian"
+  ],
+  "navigation": {
+    "related_topic_paths_retired": 43,
+    "history_links_relocated": 10,
+    "current_topics": "20_topics/README.md only; all old 32 pages in external archive",
+    "details": [
+      {
+        "path": "40_learning/可恢复资料入库.md",
+        "removed_active_legacy_links": 0,
+        "relocated_history_links": 6
+      },
+      {
+        "path": "30_toolkit/微信文章入库与学习笔记.md",
+        "removed_active_legacy_links": 0,
+        "relocated_history_links": 4
+      },
+      {
+        "path": "00_inbox/腾讯云开发者/边开飞机边换引擎：Harness如何解决验证难题/AI_精读.md",
+        "removed_active_legacy_links": 3,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/腾讯云开发者/_themes/T01_Harness工程与确定性验证闭环.md",
+        "removed_active_legacy_links": 3,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/腾讯云开发者/一文讲透确定性Harness/AI_精读.md",
+        "removed_active_legacy_links": 3,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/阿里云云原生/_themes/T06_AI网关安全与成本.md",
+        "removed_active_legacy_links": 2,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/阿里云云原生/_themes/T09_应用体验与性能观测.md",
+        "removed_active_legacy_links": 2,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/阿里云云原生/_themes/T04_多智能体协作与异步消息.md",
+        "removed_active_legacy_links": 3,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/阿里云云原生/_themes/T02_Agent运行时与沙箱.md",
+        "removed_active_legacy_links": 2,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/阿里云云原生/_themes/T11_云原生服务治理与计算优化.md",
+        "removed_active_legacy_links": 3,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/阿里云云原生/_themes/T01_Agent架构与Harness控制.md",
+        "removed_active_legacy_links": 2,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/阿里云云原生/_themes/T03_记忆上下文与评估进化.md",
+        "removed_active_legacy_links": 3,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/阿里云云原生/_themes/T05_MCP-A2A-Skills资产治理.md",
+        "removed_active_legacy_links": 2,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/阿里云云原生/_themes/T12_AI研发协同与应用开发.md",
+        "removed_active_legacy_links": 3,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/阿里云云原生/_themes/T08_运维语义建模与根因诊断.md",
+        "removed_active_legacy_links": 3,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/阿里云云原生/_themes/T10_消息事件与实时数据系统.md",
+        "removed_active_legacy_links": 2,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/阿里云云原生/_themes/T07_Agent全链路可观测与审计.md",
+        "removed_active_legacy_links": 3,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/阿里云云原生/Durable Agent 详解：如何让 Agent 在云端长期稳定运行/AI_精读.md",
+        "removed_active_legacy_links": 3,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/大淘宝技术/从 AI Friendly 架构到可复制的 AI 迁移能力 - 淘宝直播搜推在线架构升级实践/AI_直播搜推架构迁移_概念导读.md",
+        "removed_active_legacy_links": 3,
+        "relocated_history_links": 0
+      },
+      {
+        "path": "00_inbox/腾讯云开发者/themes.json",
+        "retired_related_topic_paths": 13
+      },
+      {
+        "path": "00_inbox/阿里云云原生/themes.json",
+        "retired_related_topic_paths": 30
+      }
+    ]
+  },
+  "note_structure": {
+    "checked_notes": 3,
+    "errors": []
+  },
+  "library_verify_before": {
+    "articles": 301,
+    "hashes": 1108,
+    "local_links": 15384,
+    "errors": [
+      "art-0184 processing.generated_summary: sha256 mismatch"
+    ],
+    "warnings": []
+  },
+  "library_verify_after": {
+    "articles": 0,
+    "hashes": 0,
+    "local_links": 5247,
+    "errors": [],
+    "warnings": []
+  },
+  "verification_scope": "verify 的 articles/hash 数为旧 META 档案数量，移出后为0；inbox保留性另以6272逐文件路径与SHA-256核验。仅索引、配置和导航文字发生白名单内变化，个人答案和学习状态未改。",
+  "historical_issue": "原art-0184 generated_summary哈希不匹配随原文件保留在库外，未修改预期哈希；当前库无该历史META。",
+  "recovery_evidence": {
+    "baseline": "/Users/iw/Documents/WeChat_read_历史归档/20261106-072225/_清理记录/清理前指纹.json",
+    "entry_snapshots": "/Users/iw/Documents/WeChat_read_历史归档/20261106-072225/_清理记录/修改前入口"
+  },
+  "independent_review": "已独立核对旧目录/专题数量、inbox路径集合、NOTE哈希与themes个人状态。"
+}
