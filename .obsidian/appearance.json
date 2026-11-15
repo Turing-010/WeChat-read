@@ -3,5 +3,6 @@
   "translucency": true,
   "baseFontSizeAction": true,
   "accentColor": "#952dcd",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "showRibbon": true
 }
